@@ -166,6 +166,29 @@ VisText is the primary source. It explicitly stops at L3 — the L4 gap is the a
 - Python 3.11+
 - Node.js 18+
 
+#### Installing Node.js (first time, no admin rights needed)
+
+If `npm` is not found on your system (common on shared Linux servers/clusters), install Node.js via **nvm** — no sudo required:
+
+```bash
+# 1. Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 2. Load nvm into your current shell (or open a new terminal)
+export NVM_DIR="$HOME/.nvm"
+source "$NVM_DIR/nvm.sh"
+
+# 3. Install Node 20 LTS and set it as default
+nvm install 20
+nvm use 20
+
+# 4. Verify
+node --version   # v20.x.x
+npm --version
+```
+
+The install script appends the `source` lines to your `~/.bashrc` automatically, so future terminals will have `npm` available without any extra steps.
+
 ### Backend
 
 ```bash
