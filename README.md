@@ -151,6 +151,7 @@ Each chart in `charts.json` follows this schema:
 |--------|-------------------|-------------|---------------------------|
 | **VisText** (MIT Vis, 2023) | 8,822 (full) · 150 (curated subset) | bar, line | Scene graph (JSON), Vega-Lite spec, L1 caption, L2/L3 captions, data table |
 | **Olli Gallery** (MIT VIS, 2022) | 22 | bar, line, scatter, heatmap, pie, multi-series | Vega-Lite spec, inline data table, `olli_tree` (manual) |
+| **HCI Alt Texts** (ASSETS / HCI papers) | 1,011 | other | Human-written alt text, paper figure captions, source URL |
 | **Visa Chart Components** | ~40 | bar, line, scatter, heatmap | Full ARIA roles, screen reader descriptions, keyboard nav |
 
 VisText is the primary source. It explicitly stops at L3 — the L4 gap is the annotation contribution of this benchmark.
@@ -228,10 +229,10 @@ Open the command palette → **Python: Select Interpreter** → choose `backend/
 
 | Provider | Models |
 |----------|--------|
-| Anthropic | Claude Opus 4.8, Sonnet 4.6, Haiku 4.5 |
-| OpenAI | GPT-4o, GPT-4 Turbo, GPT-3.5 Turbo |
-| Google | Gemini 1.5 Pro, Gemini 1.5 Flash |
-| Meta (via Groq) | Llama 3.1 70B |
+| Google AI Studio | Gemini 2.5 Flash, Gemini 2.5 Flash-Lite, Gemini 2.5 Pro, Gemma 2 9B |
+| Groq | Llama 3.2 Vision 11B, Llama 3.2 Vision 90B, Llama 3.3 70B, Gemma 2 9B |
+| Anthropic | Claude Opus 4.8, Claude Sonnet 4.6 |
+| OpenAI | GPT-4o, GPT-4o Mini |
 
 Add new models by appending to `LLM_MODELS` in [frontend/lib/types.ts](frontend/lib/types.ts) and ensuring the model ID prefix is handled in [backend/app/core/llm_manager.py](backend/app/core/llm_manager.py).
 
