@@ -1,0 +1,81 @@
+{
+  "output_id": "c895bd56-a923-4999-81cd-2fff65e4cf6b",
+  "chart_id": "vistext_1",
+  "dataset_source": "vistext",
+  "model_id": "gemini-2.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "l1_caption",
+    "l2_caption",
+    "scene_graph"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table provides year and ticket price values, but includes extraneous 'Dec, 31.0' entries and is truncated before the end year stated in the title (2019).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 5,\n        \"justification\": \"The data clearly shows average ticket prices over time, allowing for direct observation and calculation of trends and magnitudes.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The chart title explicitly states the subject as 'National Football League average ticket price' and the domain as sports economics.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No domain expert context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart illustrates the average ticket price for the National Football League (NFL) in U.S. dollars over the period from 2006 to 2019 [DIRECT]. It belongs to the domain of sports economics and business analytics, specifically focusing on the financial aspects of professional football [DIRECT]. The purpose of such a chart is typically to track revenue trends, assess market demand, and inform pricing strategies for the league and its teams [SPECULATIVE].\",\n    \"domain_specific_explanations\": \"The data shows a consistent upward trend in the average cost of attending an NFL game [DIRECT]. Starting at an average of $67.11 in 2006, the price steadily increased, reaching $100.26 by 2017 [DIRECT]. This continuous rise suggests strong consumer demand for NFL games, allowing the league and teams to increase prices without significant drops in attendance [SPECULATIVE]. Factors contributing to these price increases likely include general economic inflation, rising operational costs for teams, player salaries, and investments in stadium infrastructure and fan experience [SPECULATIVE]. The average ticket price is a key metric for the NFL, reflecting the league's economic health and its ability to generate revenue from live attendance [SPECULATIVE].\",\n    \"real_world_significance\": \"The increasing cost of NFL tickets directly impacts the affordability of attending games for the average fan [SPECULATIVE]. This trend could lead to a demographic shift among attendees, potentially making live games less accessible to lower-income fans and creating a more exclusive in-stadium experience [SPECULATIVE]. For the NFL and its franchises, higher ticket prices translate into increased revenue, which supports team operations, player contracts, and investments in facilities [SPECULATIVE]. This data is vital for league executives and team owners to make informed decisions regarding future ticket pricing, marketing efforts, and fan engagement initiatives [SPECULATIVE]. The sustained demand despite rising prices indicates the enduring popularity and cultural significance of the NFL in the United States [SPECULATIVE].\",\n    \"other\": \"The provided data table contains extraneous \\\"Dec, 31.0\\\" entries that do not correspond to the annual ticket price data [DIRECT]. While the chart title specifies data up to 2019, the provided data table truncates at 2017, missing the final years of the stated period [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart illustrates the average ticket price for the National Football League (NFL) in U.S. dollars over the period from 2006 to 2019\",\n      \"It belongs to the domain of sports economics and business analytics, specifically focusing on the financial aspects of professional football\",\n      \"The data shows a consistent upward trend in the average cost of attending an NFL game\",\n      \"Starting at an average of $67.11 in 2006, the price steadily increased, reaching $100.26 by 2017\",\n      \"The provided data table contains extraneous \\\"Dec, 31.0\\\" entries that do not correspond to the annual ticket price data\",\n      \"While the chart title specifies data up to 2019, the provided data table truncates at 2017, missing the final years of the stated period\"\n    ],\n    \"speculative_claims\": [\n      \"The purpose of such a chart is typically to track revenue trends, assess market demand, and inform pricing strategies for the league and its teams\",\n      \"This continuous rise suggests strong consumer demand for NFL games, allowing the league and teams to increase prices without significant drops in attendance\",\n      \"Factors contributing to these price increases likely include general economic inflation, rising operational costs for teams, player salaries, and investments in stadium infrastructure and fan experience\",\n      \"The average ticket price is a key metric for the NFL, reflecting the league's economic health and its ability to generate revenue from live attendance\",\n      \"The increasing cost of NFL tickets directly impacts the affordability of attending games for the average fan\",\n      \"This trend could lead to a demographic shift among attendees, potentially making live games less accessible to lower-income fans and creating a more exclusive in-stadium experience\",\n      \"For the NFL and its franchises, higher ticket prices translate into increased revenue, which supports team operations, player contracts, and investments in facilities\",\n      \"This data is vital for league executives and team owners to make informed decisions regarding future ticket pricing, marketing efforts, and fan engagement initiatives\",\n      \"The sustained demand despite rising prices indicates the enduring popularity and cultural significance of the NFL in the United States\"\n    ],\n    \"unverified_claims\": [],\n    \"total_flag_count\": 15,\n    \"direct_count\": 6,\n    \"speculative_count\": 9,\n    \"unverified_count\": 0\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides year and ticket price values, but includes extraneous 'Dec, 31.0' entries and is truncated before the end year stated in the title (2019)."
+        },
+        "trend_magnitude": {
+          "score": 5,
+          "justification": "The data clearly shows average ticket prices over time, allowing for direct observation and calculation of trends and magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart title explicitly states the subject as 'National Football League average ticket price' and the domain as sports economics."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No domain expert context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart illustrates the average ticket price for the National Football League (NFL) in U.S. dollars over the period from 2006 to 2019 [DIRECT]. It belongs to the domain of sports economics and business analytics, specifically focusing on the financial aspects of professional football [DIRECT]. The purpose of such a chart is typically to track revenue trends, assess market demand, and inform pricing strategies for the league and its teams [SPECULATIVE].",
+      "domain_specific_explanations": "The data shows a consistent upward trend in the average cost of attending an NFL game [DIRECT]. Starting at an average of $67.11 in 2006, the price steadily increased, reaching $100.26 by 2017 [DIRECT]. This continuous rise suggests strong consumer demand for NFL games, allowing the league and teams to increase prices without significant drops in attendance [SPECULATIVE]. Factors contributing to these price increases likely include general economic inflation, rising operational costs for teams, player salaries, and investments in stadium infrastructure and fan experience [SPECULATIVE]. The average ticket price is a key metric for the NFL, reflecting the league's economic health and its ability to generate revenue from live attendance [SPECULATIVE].",
+      "real_world_significance": "The increasing cost of NFL tickets directly impacts the affordability of attending games for the average fan [SPECULATIVE]. This trend could lead to a demographic shift among attendees, potentially making live games less accessible to lower-income fans and creating a more exclusive in-stadium experience [SPECULATIVE]. For the NFL and its franchises, higher ticket prices translate into increased revenue, which supports team operations, player contracts, and investments in facilities [SPECULATIVE]. This data is vital for league executives and team owners to make informed decisions regarding future ticket pricing, marketing efforts, and fan engagement initiatives [SPECULATIVE]. The sustained demand despite rising prices indicates the enduring popularity and cultural significance of the NFL in the United States [SPECULATIVE].",
+      "other": "The provided data table contains extraneous \"Dec, 31.0\" entries that do not correspond to the annual ticket price data [DIRECT]. While the chart title specifies data up to 2019, the provided data table truncates at 2017, missing the final years of the stated period [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart illustrates the average ticket price for the National Football League (NFL) in U.S. dollars over the period from 2006 to 2019",
+        "It belongs to the domain of sports economics and business analytics, specifically focusing on the financial aspects of professional football",
+        "The data shows a consistent upward trend in the average cost of attending an NFL game",
+        "Starting at an average of $67.11 in 2006, the price steadily increased, reaching $100.26 by 2017",
+        "The provided data table contains extraneous \"Dec, 31.0\" entries that do not correspond to the annual ticket price data",
+        "While the chart title specifies data up to 2019, the provided data table truncates at 2017, missing the final years of the stated period"
+      ],
+      "speculative_claims": [
+        "The purpose of such a chart is typically to track revenue trends, assess market demand, and inform pricing strategies for the league and its teams",
+        "This continuous rise suggests strong consumer demand for NFL games, allowing the league and teams to increase prices without significant drops in attendance",
+        "Factors contributing to these price increases likely include general economic inflation, rising operational costs for teams, player salaries, and investments in stadium infrastructure and fan experience",
+        "The average ticket price is a key metric for the NFL, reflecting the league's economic health and its ability to generate revenue from live attendance",
+        "The increasing cost of NFL tickets directly impacts the affordability of attending games for the average fan",
+        "This trend could lead to a demographic shift among attendees, potentially making live games less accessible to lower-income fans and creating a more exclusive in-stadium experience",
+        "For the NFL and its franchises, higher ticket prices translate into increased revenue, which supports team operations, player contracts, and investments in facilities",
+        "This data is vital for league executives and team owners to make informed decisions regarding future ticket pricing, marketing efforts, and fan engagement initiatives",
+        "The sustained demand despite rising prices indicates the enduring popularity and cultural significance of the NFL in the United States"
+      ],
+      "unverified_claims": [],
+      "total_flag_count": 15,
+      "direct_count": 6,
+      "speculative_count": 9,
+      "unverified_count": 0
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15905.772041063756,
+  "created_at": "2026-06-25T19:41:45.663622Z"
+}
