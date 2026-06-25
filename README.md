@@ -150,11 +150,12 @@ Each chart in `charts.json` follows this schema:
 | Source | Charts (converted) | Chart types | Key accessibility features |
 |--------|-------------------|-------------|---------------------------|
 | **VisText** (MIT Vis, 2023) | 8,822 (full) · 150 (curated subset) | bar, line | Scene graph (JSON), Vega-Lite spec, L1 caption, L2/L3 captions, data table |
-| **Olli Gallery** (MIT VIS, 2022) | 22 | bar, line, scatter, heatmap, pie, multi-series | Vega-Lite spec, inline data table, `olli_tree` (manual) |
-| **HCI Alt Texts** (ASSETS / HCI papers) | 1,011 | other | Human-written alt text, paper figure captions, source URL |
-| **Visa Chart Components** | ~40 | bar, line, scatter, heatmap | Full ARIA roles, screen reader descriptions, keyboard nav |
+| **Our World in Data** | 4,492 | line | Data tables, source URLs, mostly time-series line charts |
+| **Olli Gallery** (MIT VIS, 2022) | 22 | bar, line, scatter, heatmap | Vega-Lite spec, inline data table, `olli_tree` (manual) |
+| **HCI Alt Texts** (ASSETS / HCI papers) | 1,011 | bar, box_plot, heatmap, line, other, scatter | Human-written alt text, paper figure captions, source URL |
+| **Visa Chart Components** | 12 | bar, line, scatter, heatmap, other | ARIA labels, captions, inline data tables |
 
-VisText is the primary source. It explicitly stops at L3 — the L4 gap is the annotation contribution of this benchmark.
+VisText is the primary source. It explicitly stops at L3 — the L4 gap is the annotation contribution of this benchmark. The other sources broaden the benchmark with supplemental accessibility markup and real-world chart contexts.
 
 ---
 
