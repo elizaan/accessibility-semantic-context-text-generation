@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight, Trash2, Pencil, Check, X } from "lucide-react";
-import { getCollection, getCollectionCharts, removeChartsFromCollection, updateCollection, getChartImageUrl } from "@/lib/api";
+import { ChevronRight, Trash2, Pencil, Check, X, FolderInput } from "lucide-react";
+import { getCollection, getCollectionCharts, removeChartsFromCollection, addChartsToCollection, getCollections, updateCollection, getChartImageUrl } from "@/lib/api";
 import type { Collection, Chart } from "@/lib/types";
 
 export default function CollectionDetailPage() {
@@ -16,6 +16,11 @@ export default function CollectionDetailPage() {
   const [nameInput, setNameInput] = useState("");
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [selectMode, setSelectMode] = useState(false);
+
+  // Move-to-collection dialog
+  const [showMoveDialog, setShowMoveDialog] = useState(false);
+  const [otherCollections, setOtherCollections] = useState<Collection[]>([]);
+  const [moving, setMoving] = useState(false);
 
   useEffect(() => {
     Promise.all([getCollection(id), getCollectionCharts(id)])
@@ -45,6 +50,30 @@ export default function CollectionDetailPage() {
     setCharts((prev) => prev.filter((c) => !selected.has(c.chart_id)));
     setSelected(new Set());
     setSelectMode(false);
+  };
+
+  const openMoveDialog = async () => {
+    const cols = await getCollections();
+    setOtherCollections(cols.filter((c) => c.collection_id !== id));
+    setShowMoveDialog(true);
+  };
+
+  const handleMoveSelected = async (targetId: string, targetName: string) => {
+    if (!collection || selected.size === 0) return;
+    setMoving(true);
+    try {
+      const ids = Array.from(selected);
+      await addChartsToCollection(targetId, ids);
+      const updated = await removeChartsFromCollection(id, ids);
+      setCollection(updated);
+      setCharts((prev) => prev.filter((c) => !selected.has(c.chart_id)));
+      setSelected(new Set());
+      setSelectMode(false);
+      setShowMoveDialog(false);
+      alert(`Moved ${ids.length} chart(s) to "${targetName}".`);
+    } finally {
+      setMoving(false);
+    }
   };
 
   const saveName = async () => {
@@ -96,12 +125,20 @@ export default function CollectionDetailPage() {
 
         <div className="flex items-center gap-2 shrink-0">
           {selectMode && selected.size > 0 && (
-            <button
-              onClick={handleRemoveSelected}
-              className="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-destructive text-destructive hover:bg-destructive/10 transition-colors"
-            >
-              <Trash2 className="h-3.5 w-3.5" /> Remove {selected.size}
-            </button>
+            <>
+              <button
+                onClick={openMoveDialog}
+                className="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border hover:bg-accent transition-colors"
+              >
+                <FolderInput className="h-3.5 w-3.5" /> Move {selected.size}
+              </button>
+              <button
+                onClick={handleRemoveSelected}
+                className="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-destructive text-destructive hover:bg-destructive/10 transition-colors"
+              >
+                <Trash2 className="h-3.5 w-3.5" /> Remove {selected.size}
+              </button>
+            </>
           )}
           <button
             onClick={() => { setSelectMode((v) => !v); setSelected(new Set()); }}
@@ -191,6 +228,43 @@ export default function CollectionDetailPage() {
           );
         })}
       </div>
+
+      {/* Move to collection dialog */}
+      {showMoveDialog && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+          onClick={(e) => { if (e.target === e.currentTarget) setShowMoveDialog(false); }}
+        >
+          <div className="bg-background border rounded-2xl shadow-2xl w-full max-w-md mx-4 overflow-hidden">
+            <div className="px-5 py-4 border-b flex items-center justify-between">
+              <h2 className="font-semibold">Move {selected.size} chart{selected.size !== 1 ? "s" : ""} to…</h2>
+              <button onClick={() => setShowMoveDialog(false)} className="text-muted-foreground hover:text-foreground">
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+
+            <div className="p-5 space-y-1.5 max-h-[70vh] overflow-y-auto">
+              {otherCollections.length === 0 && (
+                <p className="text-sm text-muted-foreground">No other collections yet. Create one from the Collections page first.</p>
+              )}
+              {otherCollections.map((col) => (
+                <button
+                  key={col.collection_id}
+                  onClick={() => handleMoveSelected(col.collection_id, col.name)}
+                  disabled={moving}
+                  className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg border hover:bg-accent transition-colors text-left disabled:opacity-50"
+                >
+                  <div>
+                    <div className="text-sm font-medium">{col.name}</div>
+                    <div className="text-xs text-muted-foreground">{col.chart_ids.length} charts</div>
+                  </div>
+                  <FolderInput className="h-4 w-4 text-primary shrink-0" />
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

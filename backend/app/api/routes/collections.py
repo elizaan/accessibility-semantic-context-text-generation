@@ -12,6 +12,11 @@ def list_collections():
     return collection_service.list_collections()
 
 
+@router.put("/reorder", response_model=list[Collection])
+def reorder_collections(ordered_ids: list[str]):
+    return collection_service.reorder_collections(ordered_ids)
+
+
 @router.post("", response_model=Collection, status_code=201)
 def create_collection(req: CreateCollectionRequest):
     return collection_service.create_collection(

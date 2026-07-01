@@ -96,3 +96,13 @@ def delete_collection(collection_id: str) -> bool:
         return False
     _save(new_cols)
     return True
+
+
+def reorder_collections(ordered_ids: list[str]) -> list[Collection]:
+    cols = _load()
+    by_id = {c.collection_id: c for c in cols}
+    reordered = [by_id[cid] for cid in ordered_ids if cid in by_id]
+    remaining = [c for c in cols if c.collection_id not in set(ordered_ids)]
+    new_cols = reordered + remaining
+    _save(new_cols)
+    return new_cols

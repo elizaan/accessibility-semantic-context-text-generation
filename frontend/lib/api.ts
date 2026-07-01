@@ -116,6 +116,11 @@ export async function deleteCollection(id: string): Promise<void> {
   await api.delete(`/collections/${id}`);
 }
 
+export async function reorderCollections(orderedIds: string[]): Promise<Collection[]> {
+  const { data } = await api.put("/collections/reorder", orderedIds);
+  return data;
+}
+
 // Images are served directly from FastAPI's static file mount of /data
 export function getChartImageUrl(imagePath: string): string {
   const base = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";

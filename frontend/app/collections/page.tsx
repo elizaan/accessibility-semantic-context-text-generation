@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type DragEvent } from "react";
 import Link from "next/link";
-import { Bookmark, ChevronRight, Plus, Trash2 } from "lucide-react";
-import { createCollection, deleteCollection, getCollections } from "@/lib/api";
+import { Bookmark, ChevronRight, Plus, Trash2, Pencil, Check, X, GripVertical } from "lucide-react";
+import { createCollection, deleteCollection, getCollections, updateCollection, reorderCollections } from "@/lib/api";
 import type { Collection } from "@/lib/types";
 
 export default function CollectionsPage() {
@@ -12,6 +12,10 @@ export default function CollectionsPage() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [saving, setSaving] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editName, setEditName] = useState("");
+  const [draggedId, setDraggedId] = useState<string | null>(null);
+  const [dragOverId, setDragOverId] = useState<string | null>(null);
 
   useEffect(() => {
     getCollections()
@@ -46,6 +50,49 @@ export default function CollectionsPage() {
     if (!confirm(`Delete collection "${collectionName}"?`)) return;
     await deleteCollection(id);
     setCollections((prev) => prev.filter((c) => c.collection_id !== id));
+  };
+
+  const startEdit = (col: Collection) => {
+    setEditingId(col.collection_id);
+    setEditName(col.name);
+  };
+
+  const cancelEdit = () => setEditingId(null);
+
+  const saveEdit = async (id: string) => {
+    if (!editName.trim()) return;
+    const updated = await updateCollection(id, { name: editName.trim() });
+    setCollections((prev) => prev.map((c) => (c.collection_id === id ? updated : c)));
+    setEditingId(null);
+  };
+
+  const handleDragOver = (e: DragEvent, id: string) => {
+    e.preventDefault();
+    if (id !== draggedId) setDragOverId(id);
+  };
+
+  const handleDrop = async (e: DragEvent, targetId: string) => {
+    e.preventDefault();
+    const sourceId = draggedId;
+    setDraggedId(null);
+    setDragOverId(null);
+    if (!sourceId || sourceId === targetId) return;
+
+    const prevOrder = collections;
+    const newOrder = [...collections];
+    const fromIdx = newOrder.findIndex((c) => c.collection_id === sourceId);
+    const toIdx = newOrder.findIndex((c) => c.collection_id === targetId);
+    if (fromIdx === -1 || toIdx === -1) return;
+    const [moved] = newOrder.splice(fromIdx, 1);
+    newOrder.splice(toIdx, 0, moved);
+    setCollections(newOrder);
+
+    try {
+      await reorderCollections(newOrder.map((c) => c.collection_id));
+    } catch (err) {
+      console.error(err);
+      setCollections(prevOrder);
+    }
   };
 
   return (
@@ -119,12 +166,54 @@ export default function CollectionsPage() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {collections.map((col) => (
-            <div key={col.collection_id} className="border rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-              <Link href={`/collections/${col.collection_id}`} className="block p-4">
+            <div
+              key={col.collection_id}
+              draggable={editingId !== col.collection_id}
+              onDragStart={() => setDraggedId(col.collection_id)}
+              onDragOver={(e) => handleDragOver(e, col.collection_id)}
+              onDragLeave={() => setDragOverId((prev) => (prev === col.collection_id ? null : prev))}
+              onDrop={(e) => handleDrop(e, col.collection_id)}
+              onDragEnd={() => { setDraggedId(null); setDragOverId(null); }}
+              className={`border rounded-xl overflow-hidden hover:shadow-md transition-shadow ${
+                draggedId === col.collection_id ? "opacity-40" : ""
+              } ${dragOverId === col.collection_id ? "ring-2 ring-primary" : ""}`}
+            >
+              <Link href={`/collections/${col.collection_id}`} draggable={false} className="block p-4">
                 <div className="flex items-start gap-3">
+                  <GripVertical className="h-4 w-4 text-muted-foreground/50 shrink-0 mt-1 cursor-grab" />
                   <Bookmark className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <div className="min-w-0">
-                    <div className="font-semibold text-sm truncate">{col.name}</div>
+                  <div className="min-w-0 flex-1">
+                    {editingId === col.collection_id ? (
+                      <div className="flex items-center gap-1.5" onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
+                        <input
+                          autoFocus
+                          value={editName}
+                          onChange={(e) => setEditName(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") saveEdit(col.collection_id);
+                            if (e.key === "Escape") cancelEdit();
+                          }}
+                          className="w-full text-sm font-semibold border-b border-primary bg-transparent outline-none"
+                        />
+                        <button onClick={() => saveEdit(col.collection_id)} className="text-green-600 hover:text-green-700 shrink-0">
+                          <Check className="h-4 w-4" />
+                        </button>
+                        <button onClick={cancelEdit} className="text-muted-foreground hover:text-foreground shrink-0">
+                          <X className="h-4 w-4" />
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-1.5 group/name">
+                        <div className="font-semibold text-sm truncate">{col.name}</div>
+                        <button
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); startEdit(col); }}
+                          className="text-muted-foreground hover:text-foreground shrink-0 opacity-0 group-hover/name:opacity-100 transition-opacity"
+                          title="Rename collection"
+                        >
+                          <Pencil className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    )}
                     {col.description && (
                       <p className="text-xs text-muted-foreground mt-0.5 line-clamp-2">{col.description}</p>
                     )}
