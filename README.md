@@ -30,6 +30,137 @@ VisText (the primary dataset) explicitly stops at L3 and notes L4 as future work
 
 ---
 
+## Setup
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js 18+
+
+#### Installing Node.js (first time, no admin rights needed)
+
+If `npm` is not found on your system (common on shared Linux servers/clusters), install Node.js via **nvm** — no sudo required:
+
+```bash
+# 1. Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 2. Load nvm into your current shell (or open a new terminal)
+export NVM_DIR="$HOME/.nvm"
+source "$NVM_DIR/nvm.sh"
+
+# 3. Install Node 20 LTS and set it as default
+nvm install 20
+nvm use 20
+
+# 4. Verify
+node --version   # v20.x.x
+npm --version
+```
+
+The install script appends the `source` lines to your `~/.bashrc` automatically, so future terminals will have `npm` available without any extra steps.
+
+### First-time data setup
+
+The `data/` folder is not committed to git (dataset images and chart JSONs are too large). Before running the app for the first time, place your datasets folder inside `data/`:
+
+```
+data/
+└── datasets/
+    ├── vistext/        ← drop the VisText files here, then run convert_vistext.py
+    ├── olli/           ← populated automatically by fetch_olli_specs.mjs + convert_olli.py
+    ├── vcc/            ← populated manually
+    └── ...
+```
+
+See the [Loading Data](#loading-data) section below for the exact file layout and conversion commands for each dataset. The `data/collections/` and `data/outputs/` folders are tracked by git and will be present after cloning.
+
+### Backend
+
+```bash
+cd backend
+
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure API keys
+cp .env.example .env
+# Edit .env and fill in your keys:
+#   ANTHROPIC_API_KEY
+#   OPENAI_API_KEY
+#   GOOGLE_API_KEY
+#   GROQ_API_KEY  (for Llama via Groq)
+#   DATA_DIR=../data
+#   OUTPUTS_DIR=../data/outputs
+
+# Start the server
+uvicorn app.main:app --reload
+# → http://localhost:8000
+# → http://localhost:8000/docs  (auto-generated API docs)
+```
+
+### Localhost Quick Run
+
+Run backend and frontend in separate terminals:
+
+```bash
+# terminal 1
+cd backend
+source .venv/bin/activate
+uvicorn app.main:app --reload
+
+# terminal 2
+cd frontend
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+# → http://localhost:3000
+```
+
+### VS Code — fix "Unable to import" errors
+
+Open the command palette → **Python: Select Interpreter** → choose `backend/.venv/bin/python3`.
+
+---
+
+## Dataset Sources
+
+| Source | Charts (converted) | Chart types | Key accessibility features |
+|--------|-------------------|-------------|---------------------------|
+| **VisText** (MIT Vis, 2023) | 8,822 (full) · 150 (curated subset) | bar, line | Scene graph (JSON), Vega-Lite spec, L1 caption, L2/L3 captions, data table |
+| **Our World in Data** | 4,492 | line | Data tables, source URLs, mostly time-series line charts |
+| **Olli Gallery** (MIT VIS, 2022) | 22 | bar, line, scatter, heatmap | Vega-Lite spec, inline data table, `olli_tree` (manual) |
+| **HCI Alt Texts** (ASSETS / HCI papers) | 1,011 | bar, box_plot, heatmap, line, other, scatter | Human-written alt text, paper figure captions, source URL |
+| **Visa Chart Components** | 12 | bar, line, scatter, heatmap, other | ARIA labels, captions, inline data tables |
+
+VisText is the primary source. It explicitly stops at L3 — the L4 gap is the annotation contribution of this benchmark. The other sources broaden the benchmark with supplemental accessibility markup and real-world chart contexts.
+
+---
+
+## Supported LLM Models
+
+| Provider | Models |
+|----------|--------|
+| Google AI Studio | Gemini 2.5 Flash, Gemini 2.5 Flash-Lite, Gemini 2.5 Pro, Gemma 2 9B |
+| Groq | Llama 3.2 Vision 11B, Llama 3.2 Vision 90B, Llama 3.3 70B, Gemma 2 9B |
+| Anthropic | Claude Opus 4.8, Claude Sonnet 4.6 |
+| OpenAI | GPT-4o, GPT-4o Mini |
+
+Add new models by appending to `LLM_MODELS` in [frontend/lib/types.ts](frontend/lib/types.ts) and ensuring the model ID prefix is handled in [backend/app/core/llm_manager.py](backend/app/core/llm_manager.py).
+
+---
 ## Project Structure
 
 ```
@@ -144,99 +275,6 @@ Each chart in `charts.json` follows this schema:
 `null` fields are displayed as grayed-out (unavailable) checkboxes in the UI. Only non-null fields are sent to the LLM.
 
 ---
-
-## Dataset Sources
-
-| Source | Charts (converted) | Chart types | Key accessibility features |
-|--------|-------------------|-------------|---------------------------|
-| **VisText** (MIT Vis, 2023) | 8,822 (full) · 150 (curated subset) | bar, line | Scene graph (JSON), Vega-Lite spec, L1 caption, L2/L3 captions, data table |
-| **Olli Gallery** (MIT VIS, 2022) | 22 | bar, line, scatter, heatmap, pie, multi-series | Vega-Lite spec, inline data table, `olli_tree` (manual) |
-| **Visa Chart Components** | ~40 | bar, line, scatter, heatmap | Full ARIA roles, screen reader descriptions, keyboard nav |
-
-VisText is the primary source. It explicitly stops at L3 — the L4 gap is the annotation contribution of this benchmark.
-
----
-
-## Setup
-
-### Prerequisites
-
-- Python 3.11+
-- Node.js 18+
-
-### Backend
-
-```bash
-cd backend
-
-# Create and activate virtual environment
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure API keys
-cp .env.example .env
-# Edit .env and fill in your keys:
-#   ANTHROPIC_API_KEY
-#   OPENAI_API_KEY
-#   GOOGLE_API_KEY
-#   GROQ_API_KEY  (for Llama via Groq)
-#   DATA_DIR=../data
-#   OUTPUTS_DIR=../data/outputs
-
-# Start the server
-uvicorn app.main:app --reload
-# → http://localhost:8000
-# → http://localhost:8000/docs  (auto-generated API docs)
-```
-
-### Localhost Quick Run
-
-Run backend and frontend in separate terminals:
-
-```bash
-# terminal 1
-cd backend
-source .venv/bin/activate
-uvicorn app.main:app --reload
-
-# terminal 2
-cd frontend
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-# → http://localhost:3000
-```
-
-### VS Code — fix "Unable to import" errors
-
-Open the command palette → **Python: Select Interpreter** → choose `backend/.venv/bin/python3`.
-
----
-
-## Supported LLM Models
-
-| Provider | Models |
-|----------|--------|
-| Anthropic | Claude Opus 4.8, Sonnet 4.6, Haiku 4.5 |
-| OpenAI | GPT-4o, GPT-4 Turbo, GPT-3.5 Turbo |
-| Google | Gemini 1.5 Pro, Gemini 1.5 Flash |
-| Meta (via Groq) | Llama 3.1 70B |
-
-Add new models by appending to `LLM_MODELS` in [frontend/lib/types.ts](frontend/lib/types.ts) and ensuring the model ID prefix is handled in [backend/app/core/llm_manager.py](backend/app/core/llm_manager.py).
-
----
-
 ## How It Works
 
 ### Accessibility feature ablation
