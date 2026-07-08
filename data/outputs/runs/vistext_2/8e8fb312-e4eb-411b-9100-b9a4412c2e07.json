@@ -1,0 +1,79 @@
+{
+  "output_id": "8e8fb312-e4eb-411b-9100-b9a4412c2e07",
+  "chart_id": "vistext_2",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table is truncated, but the general range and trend are visible from the chart image and L1/L2 captions.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption describes the overall trend of gradual increase followed by a drastic increase in 2020, though exact peak values must be estimated from the image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (gaming, Twitch streaming, Minecraft) is clearly defined in the title and axes.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart tracks the average worldwide viewership of Minecraft on the streaming platform Twitch from January 2018 to November 2020 [DIRECT]. The data reveals that Minecraft viewership remained relatively low and stable throughout 2018, mostly staying under 10,000 average viewers [DERIVED: Calculated from the early data points in the table and chart trend]. However, the game experienced a massive, unprecedented surge in 2020, with viewership skyrocketing to over 100,000 average viewers by November 2020 [DERIVED: Read from the dramatic spike at the end of the chart image].\",\n    \"domain_specific_explanations\": \"In the context of live-streaming, 'average viewers' represents the concurrent audience watching Minecraft streams at any given time worldwide [SPECULATIVE: Twitch Platform Metrics]. Minecraft's initial bump in mid-2019, which peaked at over 40,000 viewers [DERIVED: Read from the peak in the chart image between 2019 and 2020], was likely driven by the game's 10th-anniversary updates and a wave of high-profile creators returning to the platform [SPECULATIVE: Gaming History].\",\n    \"real_world_significance\": \"The dramatic spike in viewership starting in early 2020 directly coincides with the onset of the global COVID-19 pandemic [SPECULATIVE: COVID-19 Pandemic Impact]. With lockdowns forcing millions of people to stay home, digital entertainment and live-streaming platforms like Twitch saw explosive growth [SPECULATIVE: COVID-19 Pandemic Impact]. Minecraft, as a highly accessible and collaborative sandbox game, became a primary social and creative outlet during this period of isolation [SPECULATIVE: Media Studies]. This trend highlights how global social crises can rapidly accelerate the adoption and consumption of digital media [SPECULATIVE: Sociology].\",\n    \"other\": \"The y-axis measures the number of viewers in thousands, ranging from 0 to over 100 [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart tracks the average worldwide viewership of Minecraft on the streaming platform Twitch from January 2018 to November 2020\",\n      \"The y-axis measures the number of viewers in thousands, ranging from 0 to over 100\"\n    ],\n    \"derived_claims\": [\n      \"Viewership remained relatively low and stable throughout 2018, mostly staying under 10,000 average viewers\",\n      \"A massive, unprecedented surge occurred in 2020, with viewership skyrocketing to over 100,000 average viewers by November 2020\",\n      \"Minecraft's initial bump in mid-2019, which peaked at over 40,000 viewers\"\n    ],\n    \"speculative_claims\": [\n      \"In the context of live-streaming, 'average viewers' represents the concurrent audience watching Minecraft streams at any given time worldwide\",\n      \"Minecraft's initial bump in mid-2019 was likely driven by the game's 10th-anniversary updates and a wave of high-profile creators returning to the platform\",\n      \"The dramatic spike in viewership starting in early 2020 directly coincides with the onset of the global COVID-19 pandemic\",\n      \"With lockdowns forcing millions of people to stay home, digital entertainment and live-streaming platforms like Twitch saw explosive growth\",\n      \"Minecraft, as a highly accessible and collaborative sandbox game, became a primary social and creative outlet during this period of isolation\",\n      \"This trend highlights how global social crises can rapidly accelerate the adoption and consumption of digital media\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table is truncated, but the general range and trend are visible from the chart image and L1/L2 captions."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption describes the overall trend of gradual increase followed by a drastic increase in 2020, though exact peak values must be estimated from the image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (gaming, Twitch streaming, Minecraft) is clearly defined in the title and axes."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart tracks the average worldwide viewership of Minecraft on the streaming platform Twitch from January 2018 to November 2020 [DIRECT]. The data reveals that Minecraft viewership remained relatively low and stable throughout 2018, mostly staying under 10,000 average viewers [DERIVED: Calculated from the early data points in the table and chart trend]. However, the game experienced a massive, unprecedented surge in 2020, with viewership skyrocketing to over 100,000 average viewers by November 2020 [DERIVED: Read from the dramatic spike at the end of the chart image].",
+      "domain_specific_explanations": "In the context of live-streaming, 'average viewers' represents the concurrent audience watching Minecraft streams at any given time worldwide [SPECULATIVE: Twitch Platform Metrics]. Minecraft's initial bump in mid-2019, which peaked at over 40,000 viewers [DERIVED: Read from the peak in the chart image between 2019 and 2020], was likely driven by the game's 10th-anniversary updates and a wave of high-profile creators returning to the platform [SPECULATIVE: Gaming History].",
+      "real_world_significance": "The dramatic spike in viewership starting in early 2020 directly coincides with the onset of the global COVID-19 pandemic [SPECULATIVE: COVID-19 Pandemic Impact]. With lockdowns forcing millions of people to stay home, digital entertainment and live-streaming platforms like Twitch saw explosive growth [SPECULATIVE: COVID-19 Pandemic Impact]. Minecraft, as a highly accessible and collaborative sandbox game, became a primary social and creative outlet during this period of isolation [SPECULATIVE: Media Studies]. This trend highlights how global social crises can rapidly accelerate the adoption and consumption of digital media [SPECULATIVE: Sociology].",
+      "other": "The y-axis measures the number of viewers in thousands, ranging from 0 to over 100 [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart tracks the average worldwide viewership of Minecraft on the streaming platform Twitch from January 2018 to November 2020",
+        "The y-axis measures the number of viewers in thousands, ranging from 0 to over 100"
+      ],
+      "derived_claims": [
+        "Viewership remained relatively low and stable throughout 2018, mostly staying under 10,000 average viewers",
+        "A massive, unprecedented surge occurred in 2020, with viewership skyrocketing to over 100,000 average viewers by November 2020",
+        "Minecraft's initial bump in mid-2019, which peaked at over 40,000 viewers"
+      ],
+      "speculative_claims": [
+        "In the context of live-streaming, 'average viewers' represents the concurrent audience watching Minecraft streams at any given time worldwide",
+        "Minecraft's initial bump in mid-2019 was likely driven by the game's 10th-anniversary updates and a wave of high-profile creators returning to the platform",
+        "The dramatic spike in viewership starting in early 2020 directly coincides with the onset of the global COVID-19 pandemic",
+        "With lockdowns forcing millions of people to stay home, digital entertainment and live-streaming platforms like Twitch saw explosive growth",
+        "Minecraft, as a highly accessible and collaborative sandbox game, became a primary social and creative outlet during this period of isolation",
+        "This trend highlights how global social crises can rapidly accelerate the adoption and consumption of digital media"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 9300.855416979175,
+  "created_at": "2026-07-07T22:41:01.609553Z"
+}

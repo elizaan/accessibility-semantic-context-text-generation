@@ -1,0 +1,79 @@
+{
+  "output_id": "88205f0f-0148-4364-bd5b-f1691ee67f51",
+  "chart_id": "owid_prevalence_of_undernourishment_vs_daily_supply_of_calories",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The dataset provides 2024 undernourishment percentages for many regions, but the daily supply of calories column is entirely unpopulated in the snippet, and some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Since only one year (2024) is provided and the second variable is missing, no temporal trends or correlation trends can be directly calculated.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and entity names clearly define the subject of global undernourishment.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"A clear definition of undernourishment is provided in the expert domain story.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled \\\"Share of people who are undernourished vs. daily supply of calories\\\" [DIRECT], presents global and regional data for the year 2024 [DIRECT]. The data is primarily sourced from the Food and Agriculture Organization (FAO), as indicated by the entity labels [DERIVED: Read from entity names containing '(FAO)']. Although the title suggests a comparison between undernourishment and daily calorie supply, the calorie supply data is not populated in the provided dataset [DERIVED: Observed empty values in the 'Average daily supply of calories' column].\",\n    \"domain_specific_explanations\": \"Undernourishment measures the share of the population whose caloric intake falls below the minimum energy requirements needed to lead an active and healthy life [DIRECT]. In the dataset, several highly developed regions—such as Europe, Northern America, and High-income economies—all show a flat rate of 2.5% [DERIVED: Observed that Europe, Northern America, and High-income economies all have exactly 2.5% undernourishment]. This likely represents a baseline or minimum threshold for reporting rather than absolute zero undernourishment [SPECULATIVE: Food and Agriculture Organization methodology]. Conversely, low-income economies experience an undernourishment rate of 28.4% [DIRECT], which is more than eleven times higher than that of high-income economies [DERIVED: Calculated 28.4% divided by 2.5%].\",\n    \"real_world_significance\": \"This data underscores the stark disparities in global food security, showing that hunger is heavily concentrated in specific geographic and economic brackets [SPECULATIVE: Global Development Studies]. For instance, Middle Africa (30.2%), Eastern Africa (25.9%), and Melanesia (25.5%) face severe food crises where more than a quarter of the population is undernourished [DERIVED: Compared regional values in the table]. These statistics are vital for international bodies tracking progress toward United Nations Sustainable Development Goal 2, which aims to achieve \\\"Zero Hunger\\\" by 2030 [SPECULATIVE: United Nations SDGs]. Persistent high rates of undernourishment in these regions can lead to stunted childhood development, lower economic productivity, and increased vulnerability to disease [SPECULATIVE: Public Health].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart, titled \\\"Share of people who are undernourished vs. daily supply of calories\\\"\",\n      \"presents global and regional data for the year 2024\",\n      \"Undernourishment measures the share of the population whose caloric intake falls below the minimum energy requirements needed to lead an active and healthy life\",\n      \"low-income economies experience an undernourishment rate of 28.4%\"\n    ],\n    \"derived_claims\": [\n      \"The data is primarily sourced from the Food and Agriculture Organization (FAO), as indicated by the entity labels [derived from reading '(FAO)' in entity names]\",\n      \"the calorie supply data is not populated in the provided dataset [derived from observing empty values in the 'Average daily supply of calories' column]\",\n      \"several highly developed regions—such as Europe, Northern America, and High-income economies—all show a flat rate of 2.5% [derived from observing identical 2.5% values for these entities]\",\n      \"which is more than eleven times higher than that of high-income economies [derived from calculating 28.4 / 2.5 = 11.36]\",\n      \"Middle Africa (30.2%), Eastern Africa (25.9%), and Melanesia (25.5%) face severe food crises where more than a quarter of the population is undernourished [derived from comparing regional values in the table]\"\n    ],\n    \"speculative_claims\": [\n      \"This likely represents a baseline or minimum threshold for reporting rather than absolute zero undernourishment [source: Food and Agriculture Organization methodology]\",\n      \"This data underscores the stark disparities in global food security, showing that hunger is heavily concentrated in specific geographic and economic brackets [source: Global Development Studies]\",\n      \"These statistics are vital for international bodies tracking progress toward United Nations Sustainable Development Goal 2, which aims to achieve \\\"Zero Hunger\\\" by 2030 [source: United Nations SDGs]\",\n      \"Persistent high rates of undernourishment in these regions can lead to stunted childhood development, lower economic productivity, and increased vulnerability to disease [source: Public Health]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 4,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The dataset provides 2024 undernourishment percentages for many regions, but the daily supply of calories column is entirely unpopulated in the snippet, and some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Since only one year (2024) is provided and the second variable is missing, no temporal trends or correlation trends can be directly calculated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and entity names clearly define the subject of global undernourishment."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "A clear definition of undernourishment is provided in the expert domain story."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled \"Share of people who are undernourished vs. daily supply of calories\" [DIRECT], presents global and regional data for the year 2024 [DIRECT]. The data is primarily sourced from the Food and Agriculture Organization (FAO), as indicated by the entity labels [DERIVED: Read from entity names containing '(FAO)']. Although the title suggests a comparison between undernourishment and daily calorie supply, the calorie supply data is not populated in the provided dataset [DERIVED: Observed empty values in the 'Average daily supply of calories' column].",
+      "domain_specific_explanations": "Undernourishment measures the share of the population whose caloric intake falls below the minimum energy requirements needed to lead an active and healthy life [DIRECT]. In the dataset, several highly developed regions—such as Europe, Northern America, and High-income economies—all show a flat rate of 2.5% [DERIVED: Observed that Europe, Northern America, and High-income economies all have exactly 2.5% undernourishment]. This likely represents a baseline or minimum threshold for reporting rather than absolute zero undernourishment [SPECULATIVE: Food and Agriculture Organization methodology]. Conversely, low-income economies experience an undernourishment rate of 28.4% [DIRECT], which is more than eleven times higher than that of high-income economies [DERIVED: Calculated 28.4% divided by 2.5%].",
+      "real_world_significance": "This data underscores the stark disparities in global food security, showing that hunger is heavily concentrated in specific geographic and economic brackets [SPECULATIVE: Global Development Studies]. For instance, Middle Africa (30.2%), Eastern Africa (25.9%), and Melanesia (25.5%) face severe food crises where more than a quarter of the population is undernourished [DERIVED: Compared regional values in the table]. These statistics are vital for international bodies tracking progress toward United Nations Sustainable Development Goal 2, which aims to achieve \"Zero Hunger\" by 2030 [SPECULATIVE: United Nations SDGs]. Persistent high rates of undernourishment in these regions can lead to stunted childhood development, lower economic productivity, and increased vulnerability to disease [SPECULATIVE: Public Health].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart, titled \"Share of people who are undernourished vs. daily supply of calories\"",
+        "presents global and regional data for the year 2024",
+        "Undernourishment measures the share of the population whose caloric intake falls below the minimum energy requirements needed to lead an active and healthy life",
+        "low-income economies experience an undernourishment rate of 28.4%"
+      ],
+      "derived_claims": [
+        "The data is primarily sourced from the Food and Agriculture Organization (FAO), as indicated by the entity labels [derived from reading '(FAO)' in entity names]",
+        "the calorie supply data is not populated in the provided dataset [derived from observing empty values in the 'Average daily supply of calories' column]",
+        "several highly developed regions—such as Europe, Northern America, and High-income economies—all show a flat rate of 2.5% [derived from observing identical 2.5% values for these entities]",
+        "which is more than eleven times higher than that of high-income economies [derived from calculating 28.4 / 2.5 = 11.36]",
+        "Middle Africa (30.2%), Eastern Africa (25.9%), and Melanesia (25.5%) face severe food crises where more than a quarter of the population is undernourished [derived from comparing regional values in the table]"
+      ],
+      "speculative_claims": [
+        "This likely represents a baseline or minimum threshold for reporting rather than absolute zero undernourishment [source: Food and Agriculture Organization methodology]",
+        "This data underscores the stark disparities in global food security, showing that hunger is heavily concentrated in specific geographic and economic brackets [source: Global Development Studies]",
+        "These statistics are vital for international bodies tracking progress toward United Nations Sustainable Development Goal 2, which aims to achieve \"Zero Hunger\" by 2030 [source: United Nations SDGs]",
+        "Persistent high rates of undernourishment in these regions can lead to stunted childhood development, lower economic productivity, and increased vulnerability to disease [source: Public Health]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 4,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14099.846749973949,
+  "created_at": "2026-07-07T23:21:11.250628Z"
+}

@@ -1,0 +1,77 @@
+{
+  "output_id": "cdd4d3a7-346a-45ac-bffd-48193119a768",
+  "chart_id": "hci_8bba1845a85370618cd5c400ec8be42208554549_Image_004",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values and coordinates for the scatter plot are completely missing, though we know the variables plotted.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The trend is identified as a positive correlation, but no specific correlation coefficient or statistical strength is provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (crowdsourced transcription quality and word error rates) is clearly defined in the alt text and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides excellent context regarding the paper's origin (ASSETS 2018) and the practical implications of the correlation.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No explicit stakeholder context is provided, though it can be inferred from the domain expert story.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a scatter plot from a research paper published at the ASSETS 2018 conference [DIRECT]. It examines the relationship between the quality of a single randomly sampled transcription from a unique crowd worker and the average quality of the remaining transcriptions they submitted [DIRECT]. The chart demonstrates a positive correlation between these two groups across the collected data [DIRECT].\",\n    \"domain_specific_explanations\": \"In transcription and speech recognition tasks, 'word error rate' (WER) is a standard metric where lower values represent higher quality transcriptions [SPECULATIVE: Speech Recognition / NLP]. The positive correlation shown in the chart indicates that a worker who performs well (achieving a low word error rate) on a single randomly sampled clip is highly likely to perform well on average across all their other submitted clips [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]. Conversely, a worker with a high error rate on one clip is likely to have a high average error rate overall [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text].\",\n    \"real_world_significance\": \"This finding has practical implications for quality control in crowdsourced transcription workflows [DIRECT]. Specifically, it suggests that system designers can filter or vet crowd workers based on their performance on just a single clip, rather than needing to evaluate their entire output [DIRECT]. This can significantly reduce the evaluation cost of quality assurance while still improving the overall average quality of the final transcriptions [DERIVED: inferred from the expert story's suggestion that filtering on one clip improves average quality]. For accessibility-focused venues like ASSETS, improving transcription workflows is crucial for creating high-quality, cost-effective captions for deaf or hard-of-hearing individuals [SPECULATIVE: Assistive Technology / Accessibility].\",\n    \"other\": \"The X-axis of the scatter plot represents the word error rate of one randomly sampled crowd worker transcription, while the Y-axis represents the average word error rate of the rest of the transcriptions they submitted [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a scatter plot from a research paper published at the ASSETS 2018 conference\",\n      \"It examines the relationship between the quality of a single randomly sampled transcription from a unique crowd worker and the average quality of the remaining transcriptions they submitted\",\n      \"The chart demonstrates a positive correlation between these two groups across the collected data\",\n      \"This finding has practical implications for quality control in crowdsourced transcription workflows\",\n      \"Specifically, it suggests that system designers can filter or vet crowd workers based on their performance on just a single clip, rather than needing to evaluate their entire output\",\n      \"The X-axis of the scatter plot represents the word error rate of one randomly sampled crowd worker transcription, while the Y-axis represents the average word error rate of the rest of the transcriptions they submitted\"\n    ],\n    \"derived_claims\": [\n      \"The positive correlation shows that a worker who performs well (achieving a low word error rate) on a single randomly sampled clip is highly likely to perform well on average across all their other submitted clips [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]\",\n      \"Conversely, a worker with a high error rate on one clip is likely to have a high average error rate overall [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]\",\n      \"This can significantly reduce the evaluation cost of quality assurance while still improving the overall average quality of the final transcriptions [DERIVED: inferred from the expert story's suggestion that filtering on one clip improves average quality]\"\n    ],\n    \"speculative_claims\": [\n      \"In transcription and speech recognition tasks, 'word error rate' (WER) is a standard metric where lower values represent higher quality transcriptions [SPECULATIVE: Speech Recognition / NLP]\",\n      \"For accessibility-focused venues like ASSETS, improving transcription workflows is crucial for creating high-quality, cost-effective captions for deaf or hard-of-hearing individuals [SPECULATIVE: Assistive Technology / Accessibility]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 6,\n    \"derived_count\": 3,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values and coordinates for the scatter plot are completely missing, though we know the variables plotted."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The trend is identified as a positive correlation, but no specific correlation coefficient or statistical strength is provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (crowdsourced transcription quality and word error rates) is clearly defined in the alt text and expert story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides excellent context regarding the paper's origin (ASSETS 2018) and the practical implications of the correlation."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No explicit stakeholder context is provided, though it can be inferred from the domain expert story."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a scatter plot from a research paper published at the ASSETS 2018 conference [DIRECT]. It examines the relationship between the quality of a single randomly sampled transcription from a unique crowd worker and the average quality of the remaining transcriptions they submitted [DIRECT]. The chart demonstrates a positive correlation between these two groups across the collected data [DIRECT].",
+      "domain_specific_explanations": "In transcription and speech recognition tasks, 'word error rate' (WER) is a standard metric where lower values represent higher quality transcriptions [SPECULATIVE: Speech Recognition / NLP]. The positive correlation shown in the chart indicates that a worker who performs well (achieving a low word error rate) on a single randomly sampled clip is highly likely to perform well on average across all their other submitted clips [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]. Conversely, a worker with a high error rate on one clip is likely to have a high average error rate overall [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text].",
+      "real_world_significance": "This finding has practical implications for quality control in crowdsourced transcription workflows [DIRECT]. Specifically, it suggests that system designers can filter or vet crowd workers based on their performance on just a single clip, rather than needing to evaluate their entire output [DIRECT]. This can significantly reduce the evaluation cost of quality assurance while still improving the overall average quality of the final transcriptions [DERIVED: inferred from the expert story's suggestion that filtering on one clip improves average quality]. For accessibility-focused venues like ASSETS, improving transcription workflows is crucial for creating high-quality, cost-effective captions for deaf or hard-of-hearing individuals [SPECULATIVE: Assistive Technology / Accessibility].",
+      "other": "The X-axis of the scatter plot represents the word error rate of one randomly sampled crowd worker transcription, while the Y-axis represents the average word error rate of the rest of the transcriptions they submitted [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a scatter plot from a research paper published at the ASSETS 2018 conference",
+        "It examines the relationship between the quality of a single randomly sampled transcription from a unique crowd worker and the average quality of the remaining transcriptions they submitted",
+        "The chart demonstrates a positive correlation between these two groups across the collected data",
+        "This finding has practical implications for quality control in crowdsourced transcription workflows",
+        "Specifically, it suggests that system designers can filter or vet crowd workers based on their performance on just a single clip, rather than needing to evaluate their entire output",
+        "The X-axis of the scatter plot represents the word error rate of one randomly sampled crowd worker transcription, while the Y-axis represents the average word error rate of the rest of the transcriptions they submitted"
+      ],
+      "derived_claims": [
+        "The positive correlation shows that a worker who performs well (achieving a low word error rate) on a single randomly sampled clip is highly likely to perform well on average across all their other submitted clips [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]",
+        "Conversely, a worker with a high error rate on one clip is likely to have a high average error rate overall [DERIVED: inferred from the positive correlation between the sample and the remainder described in the alt text]",
+        "This can significantly reduce the evaluation cost of quality assurance while still improving the overall average quality of the final transcriptions [DERIVED: inferred from the expert story's suggestion that filtering on one clip improves average quality]"
+      ],
+      "speculative_claims": [
+        "In transcription and speech recognition tasks, 'word error rate' (WER) is a standard metric where lower values represent higher quality transcriptions [SPECULATIVE: Speech Recognition / NLP]",
+        "For accessibility-focused venues like ASSETS, improving transcription workflows is crucial for creating high-quality, cost-effective captions for deaf or hard-of-hearing individuals [SPECULATIVE: Assistive Technology / Accessibility]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 6,
+      "derived_count": 3,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11626.772375020664,
+  "created_at": "2026-07-07T23:34:09.787479Z"
+}

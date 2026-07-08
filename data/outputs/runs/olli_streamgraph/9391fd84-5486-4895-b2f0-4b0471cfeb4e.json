@@ -1,0 +1,68 @@
+{
+  "output_id": "9391fd84-5486-4895-b2f0-4b0471cfeb4e",
+  "chart_id": "olli_streamgraph",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"Data values are not provided directly, but the OLLI screen reader tree provides detailed information about the data.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The OLLI screen reader tree provides average sum counts for different date ranges and series, which helps in understanding trends and magnitudes.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The expert domain story describes the chart as a streamgraph of unemployment across industries, providing context for the subject domain.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a streamgraph showing unemployment trends across various industries from January 2000 to February 2010 [DIRECT]. The data is represented as a stacked area chart with date on the X-axis and count on the Y-axis [DIRECT]. The chart is divided into 14 series, each representing a different industry [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart measures unemployment counts across different industries over time [DERIVED: from chart title and axis labels]. The industries include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade [DIRECT]. The average sum count for each series varies, with Wholesale and Retail Trade having the highest average at 1178 and Mining and Extraction having the lowest at 32 [DERIVED: from OLLI screen reader tree].\",\n    \"real_world_significance\": \"This data matters as it shows the unemployment trends across various industries over a decade [SPECULATIVE: general knowledge of economic indicators]. The trends can inform economic policies, industry-specific interventions, and workforce development programs [SPECULATIVE: knowledge of economic policy-making]. For instance, the significant increase in unemployment in Wholesale and Retail Trade towards the end of the period may indicate a need for targeted support in this sector [DERIVED: from visual trend].\",\n    \"other\": \"The chart does not provide direct information on the causes of unemployment or the total number of people employed in each industry, only the count of unemployed individuals [SPECULATIVE: general knowledge of chart limitations].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a streamgraph showing unemployment trends across various industries from January 2000 to February 2010\",\n      \"The data is represented as a stacked area chart with date on the X-axis and count on the Y-axis\",\n      \"The chart is divided into 14 series, each representing a different industry\",\n      \"The industries include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade\"\n    ],\n    \"derived_claims\": [\n      \"The chart measures unemployment counts across different industries over time\",\n      \"The average sum count for each series varies, with Wholesale and Retail Trade having the highest average at 1178 and Mining and Extraction having the lowest at 32\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters as it shows the unemployment trends across various industries over a decade\",\n      \"The trends can inform economic policies, industry-specific interventions, and workforce development programs\",\n      \"The significant increase in unemployment in Wholesale and Retail Trade towards the end of the period may indicate a need for targeted support in this sector\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "Data values are not provided directly, but the OLLI screen reader tree provides detailed information about the data."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The OLLI screen reader tree provides average sum counts for different date ranges and series, which helps in understanding trends and magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story describes the chart as a streamgraph of unemployment across industries, providing context for the subject domain."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a streamgraph showing unemployment trends across various industries from January 2000 to February 2010 [DIRECT]. The data is represented as a stacked area chart with date on the X-axis and count on the Y-axis [DIRECT]. The chart is divided into 14 series, each representing a different industry [DIRECT].",
+      "domain_specific_explanations": "The chart measures unemployment counts across different industries over time [DERIVED: from chart title and axis labels]. The industries include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade [DIRECT]. The average sum count for each series varies, with Wholesale and Retail Trade having the highest average at 1178 and Mining and Extraction having the lowest at 32 [DERIVED: from OLLI screen reader tree].",
+      "real_world_significance": "This data matters as it shows the unemployment trends across various industries over a decade [SPECULATIVE: general knowledge of economic indicators]. The trends can inform economic policies, industry-specific interventions, and workforce development programs [SPECULATIVE: knowledge of economic policy-making]. For instance, the significant increase in unemployment in Wholesale and Retail Trade towards the end of the period may indicate a need for targeted support in this sector [DERIVED: from visual trend].",
+      "other": "The chart does not provide direct information on the causes of unemployment or the total number of people employed in each industry, only the count of unemployed individuals [SPECULATIVE: general knowledge of chart limitations]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a streamgraph showing unemployment trends across various industries from January 2000 to February 2010",
+        "The data is represented as a stacked area chart with date on the X-axis and count on the Y-axis",
+        "The chart is divided into 14 series, each representing a different industry",
+        "The industries include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade"
+      ],
+      "derived_claims": [
+        "The chart measures unemployment counts across different industries over time",
+        "The average sum count for each series varies, with Wholesale and Retail Trade having the highest average at 1178 and Mining and Extraction having the lowest at 32"
+      ],
+      "speculative_claims": [
+        "This data matters as it shows the unemployment trends across various industries over a decade",
+        "The trends can inform economic policies, industry-specific interventions, and workforce development programs",
+        "The significant increase in unemployment in Wholesale and Retail Trade towards the end of the period may indicate a need for targeted support in this sector"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2805,
+    "output": 807
+  },
+  "latency_ms": 3358.4533329703845,
+  "created_at": "2026-07-08T14:19:58.459199Z"
+}

@@ -1,0 +1,71 @@
+{
+  "output_id": "2daddbc5-9e6a-4335-9bc2-120a3476a0d1",
+  "chart_id": "olli_stacked-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact data table is missing, but the Olli screen reader tree provides highly useful aggregated averages for both varieties and sites.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The Olli tree and the visual chart allow for clear comparisons of which varieties and sites perform best and worst.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story identifies the crop as barley, and the site names point directly to the famous Minnesota barley dataset.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays barley crop yields across 10 different varieties and 6 experimental sites [DIRECT]. The data is presented as a horizontal stacked bar chart where the total length of each bar represents the cumulative yield of a variety across all six sites [DERIVED: Read from the chart axes and legend]. This dataset is likely the classic 1930s Minnesota barley yield dataset, a famous historical dataset used frequently in statistical visualization literature [SPECULATIVE: Agricultural History / Statistics].\",\n    \"domain_specific_explanations\": \"In agricultural trials, 'variety' refers to different genetic strains of a crop (in this case, barley), while 'site' represents different geographic locations with varying soil and weather conditions [SPECULATIVE: Agronomy]. The 'yield' represents the amount of crop harvested, typically measured in bushels per acre [SPECULATIVE: Agronomy]. Comparing the average sum yields, the varieties 'Trebi' (78.80) and 'Wisconsin No. 38' (78.79) produced the highest overall yields [DERIVED: Compared average sum yields from the Olli tree]. Conversely, 'Svansota' had the lowest average sum yield at 60.76 [DERIVED: Compared average sum yields from the Olli tree]. Among the sites, 'Waseca' was by far the most productive location with an average sum yield of 96.22, while 'Grand Rapids' was the least productive at 49.86 [DERIVED: Compared site averages from the Olli tree].\",\n    \"real_world_significance\": \"Understanding which barley varieties perform best across different environments helps farmers and agricultural scientists select resilient strains to maximize food production [SPECULATIVE: Agronomy / Food Security]. The significant variation in yield between sites like Waseca and Grand Rapids highlights the critical impact of local environmental factors (such as soil quality, rainfall, and temperature) on crop success [SPECULATIVE: Agronomy]. Historically, these trials (conducted in Minnesota in 1931 and 1932) were crucial for developing modern agricultural statistical methods, including the design of experiments and analysis of variance (ANOVA) [SPECULATIVE: History of Statistics].\",\n    \"other\": \"The stacked structure allows for a quick visual comparison of both the total yield per variety (the overall bar length) and the relative contribution of each site to that total [DERIVED: Analyzed chart layout].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays barley crop yields across 10 different varieties and 6 experimental sites\"\n    ],\n    \"derived_claims\": [\n      \"The data is presented as a horizontal stacked bar chart where the total length of each bar represents the cumulative yield of a variety across all six sites\",\n      \"Comparing the average sum yields, the varieties 'Trebi' (78.80) and 'Wisconsin No. 38' (78.79) produced the highest overall yields\",\n      \"Conversely, 'Svansota' had the lowest average sum yield at 60.76\",\n      \"Among the sites, 'Waseca' was by far the most productive location with an average sum yield of 96.22, while 'Grand Rapids' was the least productive at 49.86\",\n      \"The stacked structure allows for a quick visual comparison of both the total yield per variety (the overall bar length) and the relative contribution of each site to that total\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset is likely the classic 1930s Minnesota barley yield dataset, a famous historical dataset used frequently in statistical visualization literature\",\n      \"In agricultural trials, 'variety' refers to different genetic strains of a crop (in this case, barley), while 'site' represents different geographic locations with varying soil and weather conditions\",\n      \"The 'yield' represents the amount of crop harvested, typically measured in bushels per acre\",\n      \"Understanding which barley varieties perform best across different environments helps farmers and agricultural scientists select resilient strains to maximize food production\",\n      \"The significant variation in yield between sites like Waseca and Grand Rapids highlights the critical impact of local environmental factors (such as soil quality, rainfall, and temperature) on crop success\",\n      \"Historically, these trials (conducted in Minnesota in 1931 and 1932) were crucial for developing modern agricultural statistical methods, including the design of experiments and analysis of variance (ANOVA)\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact data table is missing, but the Olli screen reader tree provides highly useful aggregated averages for both varieties and sites."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The Olli tree and the visual chart allow for clear comparisons of which varieties and sites perform best and worst."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story identifies the crop as barley, and the site names point directly to the famous Minnesota barley dataset."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays barley crop yields across 10 different varieties and 6 experimental sites [DIRECT]. The data is presented as a horizontal stacked bar chart where the total length of each bar represents the cumulative yield of a variety across all six sites [DERIVED: Read from the chart axes and legend]. This dataset is likely the classic 1930s Minnesota barley yield dataset, a famous historical dataset used frequently in statistical visualization literature [SPECULATIVE: Agricultural History / Statistics].",
+      "domain_specific_explanations": "In agricultural trials, 'variety' refers to different genetic strains of a crop (in this case, barley), while 'site' represents different geographic locations with varying soil and weather conditions [SPECULATIVE: Agronomy]. The 'yield' represents the amount of crop harvested, typically measured in bushels per acre [SPECULATIVE: Agronomy]. Comparing the average sum yields, the varieties 'Trebi' (78.80) and 'Wisconsin No. 38' (78.79) produced the highest overall yields [DERIVED: Compared average sum yields from the Olli tree]. Conversely, 'Svansota' had the lowest average sum yield at 60.76 [DERIVED: Compared average sum yields from the Olli tree]. Among the sites, 'Waseca' was by far the most productive location with an average sum yield of 96.22, while 'Grand Rapids' was the least productive at 49.86 [DERIVED: Compared site averages from the Olli tree].",
+      "real_world_significance": "Understanding which barley varieties perform best across different environments helps farmers and agricultural scientists select resilient strains to maximize food production [SPECULATIVE: Agronomy / Food Security]. The significant variation in yield between sites like Waseca and Grand Rapids highlights the critical impact of local environmental factors (such as soil quality, rainfall, and temperature) on crop success [SPECULATIVE: Agronomy]. Historically, these trials (conducted in Minnesota in 1931 and 1932) were crucial for developing modern agricultural statistical methods, including the design of experiments and analysis of variance (ANOVA) [SPECULATIVE: History of Statistics].",
+      "other": "The stacked structure allows for a quick visual comparison of both the total yield per variety (the overall bar length) and the relative contribution of each site to that total [DERIVED: Analyzed chart layout]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays barley crop yields across 10 different varieties and 6 experimental sites"
+      ],
+      "derived_claims": [
+        "The data is presented as a horizontal stacked bar chart where the total length of each bar represents the cumulative yield of a variety across all six sites",
+        "Comparing the average sum yields, the varieties 'Trebi' (78.80) and 'Wisconsin No. 38' (78.79) produced the highest overall yields",
+        "Conversely, 'Svansota' had the lowest average sum yield at 60.76",
+        "Among the sites, 'Waseca' was by far the most productive location with an average sum yield of 96.22, while 'Grand Rapids' was the least productive at 49.86",
+        "The stacked structure allows for a quick visual comparison of both the total yield per variety (the overall bar length) and the relative contribution of each site to that total"
+      ],
+      "speculative_claims": [
+        "This dataset is likely the classic 1930s Minnesota barley yield dataset, a famous historical dataset used frequently in statistical visualization literature",
+        "In agricultural trials, 'variety' refers to different genetic strains of a crop (in this case, barley), while 'site' represents different geographic locations with varying soil and weather conditions",
+        "The 'yield' represents the amount of crop harvested, typically measured in bushels per acre",
+        "Understanding which barley varieties perform best across different environments helps farmers and agricultural scientists select resilient strains to maximize food production",
+        "The significant variation in yield between sites like Waseca and Grand Rapids highlights the critical impact of local environmental factors (such as soil quality, rainfall, and temperature) on crop success",
+        "Historically, these trials (conducted in Minnesota in 1931 and 1932) were crucial for developing modern agricultural statistical methods, including the design of experiments and analysis of variance (ANOVA)"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14569.496833952144,
+  "created_at": "2026-07-08T14:27:44.440347Z"
+}

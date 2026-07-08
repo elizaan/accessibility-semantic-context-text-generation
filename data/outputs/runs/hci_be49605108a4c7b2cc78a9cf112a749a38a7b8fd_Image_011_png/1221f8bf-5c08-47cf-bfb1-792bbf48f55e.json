@@ -1,0 +1,71 @@
+{
+  "output_id": "1221f8bf-5c08-47cf-bfb1-792bbf48f55e",
+  "chart_id": "hci_be49605108a4c7b2cc78a9cf112a749a38a7b8fd_Image_011_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The subplots are labeled with angular positions (0° to 315°), but there are no axis labels, units, or numerical scales on the grid lines to determine the exact values of the data points.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The directional trend of the offsets is clearly visible and can be compared across subplots, but the physical magnitude of the error cannot be quantified due to the lack of scale.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 1,\n        \"justification\": \"No text or labels explicitly state the domain, though the layout strongly suggests spatial coordinate tracking, calibration, or target acquisition.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context, metadata, or background information is provided with the image.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"There is no information regarding who collected this data, what system it belongs to, or how it impacts stakeholders.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart consists of eight subplots labeled with angular positions from 0° to 315° in 45° increments [DIRECT]. Each subplot contains a target reference point and a dense cloud of measured data points [DIRECT]. This multi-panel scatter plot is designed to evaluate directional accuracy or calibration offsets across different angles in a 2D coordinate space [SPECULATIVE: Human-Computer Interaction].\",\n    \"domain_specific_explanations\": \"Across all subplots, the measured data points are systematically offset from the target reference point in the direction opposite to the labeled angle (for example, at 0° the cloud is to the left of the target, and at 90° it is below the target) [DERIVED: compared the spatial relationship between the measured data clouds and target points across all eight subplots]. This pattern is highly characteristic of spatial target acquisition, pointing tasks, or eye-tracking calibration where measurements tend to undershoot peripheral targets towards a central fixation point [SPECULATIVE: Human-Computer Interaction / Eye-Tracking]. In eye-tracking, this systematic error is often caused by calibration drift, head movement, or natural physiological undershoot of saccades [SPECULATIVE: Ophthalmology / Eye-Tracking].\",\n    \"real_world_significance\": \"If left uncorrected, this systematic bias leads to poor accuracy in gaze-controlled interfaces or target selection systems, particularly for elements located near the edges of the screen [SPECULATIVE: Usability Engineering]. Engineers and researchers use these error distributions to design calibration correction algorithms that map the offset coordinates back to the intended target locations, ensuring reliable and accessible user interfaces [SPECULATIVE: Software Engineering].\",\n    \"other\": \"The consistent direction of the offset relative to the target across all eight angles suggests a highly predictable, radial systematic error rather than random noise [DERIVED: analyzed the consistency of the offset direction relative to the target across all subplots].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart consists of eight subplots labeled with angular positions from 0° to 315° in 45° increments.\",\n      \"Each subplot contains a target reference point and a dense cloud of measured data points.\"\n    ],\n    \"derived_claims\": [\n      \"Across all subplots, the measured data points are systematically offset from the target reference point in the direction opposite to the labeled angle (for example, at 0° the cloud is to the left of the target, and at 90° it is below the target). [Derived from comparing the spatial relationship between the measured data clouds and target points across all eight subplots]\",\n      \"The consistent direction of the offset relative to the target across all eight angles suggests a highly predictable, radial systematic error rather than random noise. [Derived from analyzing the consistency of the offset direction relative to the target across all subplots]\"\n    ],\n    \"speculative_claims\": [\n      \"This multi-panel scatter plot is designed to evaluate directional accuracy or calibration offsets across different angles in a 2D coordinate space. [Source: Human-Computer Interaction]\",\n      \"This pattern is highly characteristic of spatial target acquisition, pointing tasks, or eye-tracking calibration where measurements tend to undershoot peripheral targets towards a central fixation point. [Source: Human-Computer Interaction / Eye-Tracking]\",\n      \"In eye-tracking, this systematic error is often caused by calibration drift, head movement, or natural physiological undershoot of saccades. [Source: Ophthalmology / Eye-Tracking]\",\n      \"If left uncorrected, this systematic bias leads to poor accuracy in gaze-controlled interfaces or target selection systems, particularly for elements located near the edges of the screen. [Source: Usability Engineering]\",\n      \"Engineers and researchers use these error distributions to design calibration correction algorithms that map the offset coordinates back to the intended target locations, ensuring reliable and accessible user interfaces. [Source: Software Engineering]\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The subplots are labeled with angular positions (0° to 315°), but there are no axis labels, units, or numerical scales on the grid lines to determine the exact values of the data points."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The directional trend of the offsets is clearly visible and can be compared across subplots, but the physical magnitude of the error cannot be quantified due to the lack of scale."
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "No text or labels explicitly state the domain, though the layout strongly suggests spatial coordinate tracking, calibration, or target acquisition."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context, metadata, or background information is provided with the image."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "There is no information regarding who collected this data, what system it belongs to, or how it impacts stakeholders."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart consists of eight subplots labeled with angular positions from 0° to 315° in 45° increments [DIRECT]. Each subplot contains a target reference point and a dense cloud of measured data points [DIRECT]. This multi-panel scatter plot is designed to evaluate directional accuracy or calibration offsets across different angles in a 2D coordinate space [SPECULATIVE: Human-Computer Interaction].",
+      "domain_specific_explanations": "Across all subplots, the measured data points are systematically offset from the target reference point in the direction opposite to the labeled angle (for example, at 0° the cloud is to the left of the target, and at 90° it is below the target) [DERIVED: compared the spatial relationship between the measured data clouds and target points across all eight subplots]. This pattern is highly characteristic of spatial target acquisition, pointing tasks, or eye-tracking calibration where measurements tend to undershoot peripheral targets towards a central fixation point [SPECULATIVE: Human-Computer Interaction / Eye-Tracking]. In eye-tracking, this systematic error is often caused by calibration drift, head movement, or natural physiological undershoot of saccades [SPECULATIVE: Ophthalmology / Eye-Tracking].",
+      "real_world_significance": "If left uncorrected, this systematic bias leads to poor accuracy in gaze-controlled interfaces or target selection systems, particularly for elements located near the edges of the screen [SPECULATIVE: Usability Engineering]. Engineers and researchers use these error distributions to design calibration correction algorithms that map the offset coordinates back to the intended target locations, ensuring reliable and accessible user interfaces [SPECULATIVE: Software Engineering].",
+      "other": "The consistent direction of the offset relative to the target across all eight angles suggests a highly predictable, radial systematic error rather than random noise [DERIVED: analyzed the consistency of the offset direction relative to the target across all subplots]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart consists of eight subplots labeled with angular positions from 0° to 315° in 45° increments.",
+        "Each subplot contains a target reference point and a dense cloud of measured data points."
+      ],
+      "derived_claims": [
+        "Across all subplots, the measured data points are systematically offset from the target reference point in the direction opposite to the labeled angle (for example, at 0° the cloud is to the left of the target, and at 90° it is below the target). [Derived from comparing the spatial relationship between the measured data clouds and target points across all eight subplots]",
+        "The consistent direction of the offset relative to the target across all eight angles suggests a highly predictable, radial systematic error rather than random noise. [Derived from analyzing the consistency of the offset direction relative to the target across all subplots]"
+      ],
+      "speculative_claims": [
+        "This multi-panel scatter plot is designed to evaluate directional accuracy or calibration offsets across different angles in a 2D coordinate space. [Source: Human-Computer Interaction]",
+        "This pattern is highly characteristic of spatial target acquisition, pointing tasks, or eye-tracking calibration where measurements tend to undershoot peripheral targets towards a central fixation point. [Source: Human-Computer Interaction / Eye-Tracking]",
+        "In eye-tracking, this systematic error is often caused by calibration drift, head movement, or natural physiological undershoot of saccades. [Source: Ophthalmology / Eye-Tracking]",
+        "If left uncorrected, this systematic bias leads to poor accuracy in gaze-controlled interfaces or target selection systems, particularly for elements located near the edges of the screen. [Source: Usability Engineering]",
+        "Engineers and researchers use these error distributions to design calibration correction algorithms that map the offset coordinates back to the intended target locations, ensuring reliable and accessible user interfaces. [Source: Software Engineering]"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 18771.612084005028,
+  "created_at": "2026-07-07T21:36:30.888006Z"
+}

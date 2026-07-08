@@ -1,0 +1,75 @@
+{
+  "output_id": "b1112c69-cc74-4483-abf8-8687452df1db",
+  "chart_id": "owid_pig_production_greenhouse_gas_emissions_vs_cost_to_animal_welfare",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend descriptions or statistical summaries were provided in the metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 1,\n        \"justification\": \"Only the chart title was provided; the rest of the metadata fields are empty.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 0.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot published by Our World in Data [DIRECT]. It visualizes the relationship between greenhouse gas emissions and the cost to animal welfare across 91 pig production systems in the United Kingdom and Brazil [DIRECT]. The data is sourced from a 2024 study by Harriet Bartlett et al. titled 'Trade-offs in the externalities of pig production are not inevitable' [DIRECT].\",\n    \"domain_specific_explanations\": \"The Y-axis measures greenhouse gas emissions in kilograms per kilogram of pig deadweight [DERIVED: read from Y-axis label]. The X-axis measures 'welfare cost', where negative values represent better animal welfare (benefits) and positive values represent worse animal welfare (costs) [DIRECT]. The systems are categorized into six types: Outdoor, Slatted, Slatted + Straw yard, Solid floor, Straw yard, and Straw yard + outdoor [DIRECT]. Outdoor systems tend to have lower welfare costs, often falling on the negative (good) side of the scale, but exhibit highly variable emissions, with some systems exceeding 8 kg or even 12 kg per kilogram deadweight [DERIVED: analyzed the distribution of purple dots on the scatter plot]. Conversely, slatted systems are clustered on the positive (bad) side of the welfare cost scale, mostly between 0 and 0.5, but maintain lower and more concentrated emissions, generally between 1.5 kg and 5 kg [DERIVED: analyzed the distribution of teal dots on the scatter plot]. This illustrates a classic environmental vs. ethical trade-off in agriculture: intensive indoor systems (like slatted floors) often minimize greenhouse gas emissions per unit of meat due to efficiency, but at a higher cost to animal welfare, whereas extensive outdoor systems improve welfare but can result in higher emissions per kilogram of meat [SPECULATIVE: agricultural economics].\",\n    \"real_world_significance\": \"This data is crucial for policymakers, agricultural scientists, and consumers trying to balance climate change mitigation with ethical food production [SPECULATIVE: environmental policy]. Crucially, the data shows that some systems achieve both low emissions (under 4 kg) and good welfare (negative welfare cost), supporting the author's note that trade-offs are not inevitable [DERIVED: observed dots in the bottom-left quadrant of the plot]. Identifying and promoting these 'win-win' systems could help transition the pork industry toward more sustainable and humane practices without forcing a hard choice between the planet and animal well-being [SPECULATIVE: sustainable agriculture].\",\n    \"other\": \"One outlier system (Straw yard + outdoor) shows exceptionally high emissions of over 12 kg per kilogram deadweight while maintaining a relatively good welfare cost of around -0.3 [DERIVED: identified the single brown dot at the top-left of the plot].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a scatter plot published by Our World in Data.\",\n      \"It visualizes the relationship between greenhouse gas emissions and the cost to animal welfare across 91 pig production systems in the United Kingdom and Brazil.\",\n      \"The data is sourced from a 2024 study by Harriet Bartlett et al. titled 'Trade-offs in the externalities of pig production are not inevitable'.\",\n      \"The X-axis measures 'welfare cost', where negative values represent better animal welfare (benefits) and positive values represent worse animal welfare (costs).\",\n      \"The systems are categorized into six types: Outdoor, Slatted, Slatted + Straw yard, Solid floor, Straw yard, and Straw yard + outdoor.\"\n    ],\n    \"derived_claims\": [\n      \"The Y-axis measures greenhouse gas emissions in kilograms per kilogram of pig deadweight.\",\n      \"Outdoor systems tend to have lower welfare costs, often falling on the negative (good) side of the scale, but exhibit highly variable emissions, with some systems exceeding 8 kg or even 12 kg per kilogram deadweight.\",\n      \"Conversely, slatted systems are clustered on the positive (bad) side of the welfare cost scale, mostly between 0 and 0.5, but maintain lower and more concentrated emissions, generally between 1.5 kg and 5 kg.\",\n      \"Crucially, the data shows that some systems achieve both low emissions (under 4 kg) and good welfare (negative welfare cost), supporting the author's note that trade-offs are not inevitable.\",\n      \"One outlier system (Straw yard + outdoor) shows exceptionally high emissions of over 12 kg per kilogram deadweight while maintaining a relatively good welfare cost of around -0.3.\"\n    ],\n    \"speculative_claims\": [\n      \"This illustrates a classic environmental vs. ethical trade-off in agriculture: intensive indoor systems (like slatted floors) often minimize greenhouse gas emissions per unit of meat due to efficiency, but at a higher cost to animal welfare, whereas extensive outdoor systems improve welfare but can result in higher emissions per kilogram of meat.\",\n      \"This data is crucial for policymakers, agricultural scientists, and consumers trying to balance climate change mitigation with ethical food production.\",\n      \"Identifying and promoting these 'win-win' systems could help transition the pork industry toward more sustainable and humane practices without forcing a hard choice between the planet and animal well-being.\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 5,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend descriptions or statistical summaries were provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "Only the chart title was provided; the rest of the metadata fields are empty."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 0.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot published by Our World in Data [DIRECT]. It visualizes the relationship between greenhouse gas emissions and the cost to animal welfare across 91 pig production systems in the United Kingdom and Brazil [DIRECT]. The data is sourced from a 2024 study by Harriet Bartlett et al. titled 'Trade-offs in the externalities of pig production are not inevitable' [DIRECT].",
+      "domain_specific_explanations": "The Y-axis measures greenhouse gas emissions in kilograms per kilogram of pig deadweight [DERIVED: read from Y-axis label]. The X-axis measures 'welfare cost', where negative values represent better animal welfare (benefits) and positive values represent worse animal welfare (costs) [DIRECT]. The systems are categorized into six types: Outdoor, Slatted, Slatted + Straw yard, Solid floor, Straw yard, and Straw yard + outdoor [DIRECT]. Outdoor systems tend to have lower welfare costs, often falling on the negative (good) side of the scale, but exhibit highly variable emissions, with some systems exceeding 8 kg or even 12 kg per kilogram deadweight [DERIVED: analyzed the distribution of purple dots on the scatter plot]. Conversely, slatted systems are clustered on the positive (bad) side of the welfare cost scale, mostly between 0 and 0.5, but maintain lower and more concentrated emissions, generally between 1.5 kg and 5 kg [DERIVED: analyzed the distribution of teal dots on the scatter plot]. This illustrates a classic environmental vs. ethical trade-off in agriculture: intensive indoor systems (like slatted floors) often minimize greenhouse gas emissions per unit of meat due to efficiency, but at a higher cost to animal welfare, whereas extensive outdoor systems improve welfare but can result in higher emissions per kilogram of meat [SPECULATIVE: agricultural economics].",
+      "real_world_significance": "This data is crucial for policymakers, agricultural scientists, and consumers trying to balance climate change mitigation with ethical food production [SPECULATIVE: environmental policy]. Crucially, the data shows that some systems achieve both low emissions (under 4 kg) and good welfare (negative welfare cost), supporting the author's note that trade-offs are not inevitable [DERIVED: observed dots in the bottom-left quadrant of the plot]. Identifying and promoting these 'win-win' systems could help transition the pork industry toward more sustainable and humane practices without forcing a hard choice between the planet and animal well-being [SPECULATIVE: sustainable agriculture].",
+      "other": "One outlier system (Straw yard + outdoor) shows exceptionally high emissions of over 12 kg per kilogram deadweight while maintaining a relatively good welfare cost of around -0.3 [DERIVED: identified the single brown dot at the top-left of the plot]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a scatter plot published by Our World in Data.",
+        "It visualizes the relationship between greenhouse gas emissions and the cost to animal welfare across 91 pig production systems in the United Kingdom and Brazil.",
+        "The data is sourced from a 2024 study by Harriet Bartlett et al. titled 'Trade-offs in the externalities of pig production are not inevitable'.",
+        "The X-axis measures 'welfare cost', where negative values represent better animal welfare (benefits) and positive values represent worse animal welfare (costs).",
+        "The systems are categorized into six types: Outdoor, Slatted, Slatted + Straw yard, Solid floor, Straw yard, and Straw yard + outdoor."
+      ],
+      "derived_claims": [
+        "The Y-axis measures greenhouse gas emissions in kilograms per kilogram of pig deadweight.",
+        "Outdoor systems tend to have lower welfare costs, often falling on the negative (good) side of the scale, but exhibit highly variable emissions, with some systems exceeding 8 kg or even 12 kg per kilogram deadweight.",
+        "Conversely, slatted systems are clustered on the positive (bad) side of the welfare cost scale, mostly between 0 and 0.5, but maintain lower and more concentrated emissions, generally between 1.5 kg and 5 kg.",
+        "Crucially, the data shows that some systems achieve both low emissions (under 4 kg) and good welfare (negative welfare cost), supporting the author's note that trade-offs are not inevitable.",
+        "One outlier system (Straw yard + outdoor) shows exceptionally high emissions of over 12 kg per kilogram deadweight while maintaining a relatively good welfare cost of around -0.3."
+      ],
+      "speculative_claims": [
+        "This illustrates a classic environmental vs. ethical trade-off in agriculture: intensive indoor systems (like slatted floors) often minimize greenhouse gas emissions per unit of meat due to efficiency, but at a higher cost to animal welfare, whereas extensive outdoor systems improve welfare but can result in higher emissions per kilogram of meat.",
+        "This data is crucial for policymakers, agricultural scientists, and consumers trying to balance climate change mitigation with ethical food production.",
+        "Identifying and promoting these 'win-win' systems could help transition the pork industry toward more sustainable and humane practices without forcing a hard choice between the planet and animal well-being."
+      ],
+      "total_flag_count": 13,
+      "direct_count": 5,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12973.490834003314,
+  "created_at": "2026-07-07T23:16:14.864443Z"
+}

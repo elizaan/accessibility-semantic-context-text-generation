@@ -1,0 +1,73 @@
+{
+  "output_id": "6bacbafc-92ac-452d-a217-09660587440d",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data values are not provided in text form, but approximate values can be read from the y-axis scale.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall downward trend and specific peaks/troughs can be estimated visually, though precise rates of change are withheld.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject domain: US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No external domain metadata, expert commentary, or contextual background was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No information about stakeholders, policy implications, or real-world impact was provided in the metadata.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows the proportion of US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019 [DIRECT]. The x-axis is labeled 'Response' but represents years from 1979 to 2019 [DERIVED: read from x-axis labels and title]. The data likely originates from the US Bureau of Labor Statistics (BLS) or a similar federal agency tracking labor statistics [SPECULATIVE: US Bureau of Labor Statistics].\",\n    \"domain_specific_explanations\": \"The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress [SPECULATIVE: US Labor Law]. Workers paid below the minimum wage typically include tipped employees, student-learners, or disabled workers under specific Fair Labor Standards Act (FLSA) exemptions [SPECULATIVE: Fair Labor Standards Act]. The spikes in the chart (e.g., around 1990-1991 and 2007-2010) correspond to periods when the federal minimum wage was raised, which temporarily increases the share of workers earning exactly that rate [SPECULATIVE: US Minimum Wage History]. Conversely, during long periods without minimum wage increases (like the 1980s or 2010s), inflation and market wage growth naturally push workers' nominal wages above the stagnant federal minimum, causing the share to decline [SPECULATIVE: Labor Economics].\",\n    \"real_world_significance\": \"A declining share of workers at or below the federal minimum wage does not necessarily mean low-wage workers are better off; it often reflects the erosion of the real value of the minimum wage due to inflation [SPECULATIVE: Labor Economics]. The peak in 1981 at approximately 15% shows that a much larger portion of the workforce was directly affected by the federal minimum wage standard back then compared to 2019, where it fell to around 2% [DERIVED: compared 1981 peak of ~15% to 2019 end of ~2%]. This trend highlights the growing divergence between the federal minimum wage (stagnant at $7.25 since 2009) and state-level minimum wages, many of which have been raised independently [SPECULATIVE: US Labor Policy].\",\n    \"other\": \"The overall trend shows a significant long-term decline in the share of workers earning at or below the federal minimum wage over the 40-year period [DERIVED: observed overall downward trend from 1979 to 2019].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows the proportion of US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019\"\n    ],\n    \"derived_claims\": [\n      \"The x-axis is labeled 'Response' but represents years from 1979 to 2019\",\n      \"The peak in 1981 at approximately 15% shows that a much larger portion of the workforce was directly affected by the federal minimum wage standard back then compared to 2019, where it fell to around 2%\",\n      \"The overall trend shows a significant long-term decline in the share of workers earning at or below the federal minimum wage over the 40-year period\"\n    ],\n    \"speculative_claims\": [\n      \"The data likely originates from the US Bureau of Labor Statistics (BLS) or a similar federal agency tracking labor statistics\",\n      \"The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress\",\n      \"Workers paid below the minimum wage typically include tipped employees, student-learners, or disabled workers under specific Fair Labor Standards Act (FLSA) exemptions\",\n      \"The spikes in the chart (e.g., around 1990-1991 and 2007-2010) correspond to periods when the federal minimum wage was raised, which temporarily increases the share of workers earning exactly that rate\",\n      \"Conversely, during long periods without minimum wage increases (like the 1980s or 2010s), inflation and market wage growth naturally push workers' nominal wages above the stagnant federal minimum, causing the share to decline\",\n      \"A declining share of workers at or below the federal minimum wage does not necessarily mean low-wage workers are better off; it often reflects the erosion of the real value of the minimum wage due to inflation\",\n      \"This trend highlights the growing divergence between the federal minimum wage (stagnant at $7.25 since 2009) and state-level minimum wages, many of which have been raised independently\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data values are not provided in text form, but approximate values can be read from the y-axis scale."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall downward trend and specific peaks/troughs can be estimated visually, though precise rates of change are withheld."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject domain: US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No external domain metadata, expert commentary, or contextual background was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No information about stakeholders, policy implications, or real-world impact was provided in the metadata."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows the proportion of US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019 [DIRECT]. The x-axis is labeled 'Response' but represents years from 1979 to 2019 [DERIVED: read from x-axis labels and title]. The data likely originates from the US Bureau of Labor Statistics (BLS) or a similar federal agency tracking labor statistics [SPECULATIVE: US Bureau of Labor Statistics].",
+      "domain_specific_explanations": "The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress [SPECULATIVE: US Labor Law]. Workers paid below the minimum wage typically include tipped employees, student-learners, or disabled workers under specific Fair Labor Standards Act (FLSA) exemptions [SPECULATIVE: Fair Labor Standards Act]. The spikes in the chart (e.g., around 1990-1991 and 2007-2010) correspond to periods when the federal minimum wage was raised, which temporarily increases the share of workers earning exactly that rate [SPECULATIVE: US Minimum Wage History]. Conversely, during long periods without minimum wage increases (like the 1980s or 2010s), inflation and market wage growth naturally push workers' nominal wages above the stagnant federal minimum, causing the share to decline [SPECULATIVE: Labor Economics].",
+      "real_world_significance": "A declining share of workers at or below the federal minimum wage does not necessarily mean low-wage workers are better off; it often reflects the erosion of the real value of the minimum wage due to inflation [SPECULATIVE: Labor Economics]. The peak in 1981 at approximately 15% shows that a much larger portion of the workforce was directly affected by the federal minimum wage standard back then compared to 2019, where it fell to around 2% [DERIVED: compared 1981 peak of ~15% to 2019 end of ~2%]. This trend highlights the growing divergence between the federal minimum wage (stagnant at $7.25 since 2009) and state-level minimum wages, many of which have been raised independently [SPECULATIVE: US Labor Policy].",
+      "other": "The overall trend shows a significant long-term decline in the share of workers earning at or below the federal minimum wage over the 40-year period [DERIVED: observed overall downward trend from 1979 to 2019]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows the proportion of US wage and salary workers earning at or below the federal minimum wage from 1979 to 2019"
+      ],
+      "derived_claims": [
+        "The x-axis is labeled 'Response' but represents years from 1979 to 2019",
+        "The peak in 1981 at approximately 15% shows that a much larger portion of the workforce was directly affected by the federal minimum wage standard back then compared to 2019, where it fell to around 2%",
+        "The overall trend shows a significant long-term decline in the share of workers earning at or below the federal minimum wage over the 40-year period"
+      ],
+      "speculative_claims": [
+        "The data likely originates from the US Bureau of Labor Statistics (BLS) or a similar federal agency tracking labor statistics",
+        "The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress",
+        "Workers paid below the minimum wage typically include tipped employees, student-learners, or disabled workers under specific Fair Labor Standards Act (FLSA) exemptions",
+        "The spikes in the chart (e.g., around 1990-1991 and 2007-2010) correspond to periods when the federal minimum wage was raised, which temporarily increases the share of workers earning exactly that rate",
+        "Conversely, during long periods without minimum wage increases (like the 1980s or 2010s), inflation and market wage growth naturally push workers' nominal wages above the stagnant federal minimum, causing the share to decline",
+        "A declining share of workers at or below the federal minimum wage does not necessarily mean low-wage workers are better off; it often reflects the erosion of the real value of the minimum wage due to inflation",
+        "This trend highlights the growing divergence between the federal minimum wage (stagnant at $7.25 since 2009) and state-level minimum wages, many of which have been raised independently"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12235.23995897267,
+  "created_at": "2026-07-07T22:20:26.679715Z"
+}

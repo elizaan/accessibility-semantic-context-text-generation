@@ -1,0 +1,79 @@
+{
+  "output_id": "ddf25782-77a5-44ee-861c-19c3935b465f",
+  "chart_id": "hci_79b8dcb17db71e75b3401e6743e194cf0943b960_Image_003",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact data table is not provided, but the human-written alt text contains a substantial number of precise percentage values for various categories and groups.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text provides raw percentages, but does not synthesize overall trends or comparisons across the groups.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (digital technology use in infant feeding practices among different parental roles) is clearly identifiable from the alt text and expert domain story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The expert domain story only provides a citation link to a CHI 2021 paper, without summarizing the paper's core findings or context.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context is provided in the metadata.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2021) [DIRECT]. It investigates how different stakeholders in infant feeding—specifically breastfeeding parents, bottle-feeding parents, and partners—utilize digital technology to support their practices [DIRECT]. The technology uses are categorized into four main areas: relating to others' experiences, assuring feeding practices, finding solutions to challenges, and logging feeding practices [DIRECT].\",\n    \"domain_specific_explanations\": \"The data represents Likert-scale responses (ranging from strongly disagree to strongly agree) measuring agreement with different utility aspects of digital technology [DERIVED: Read from the chart legend and alt text]. 'Logging practice' shows a highly polarized response, especially among breastfeeding parents (34.92% strongly disagree vs 25.40% strongly agree) and partners (31.25% strongly disagree vs 31.25% strongly agree), whereas 50% of bottle-feeding parents strongly agree with logging [DERIVED: Compared percentages from alt text]. This suggests that bottle-feeding parents might find tracking volumes and times more critical or easier to log digitally compared to breastfeeding parents [SPECULATIVE: Human-Computer Interaction / Infant Care]. Conversely, 'finding solutions to challenges' has very high agreement across all groups, with 83.6% of breastfeeding parents, 66.66% of bottle-feeding parents, and 68.75% of partners agreeing or strongly agreeing [DERIVED: Summed agree and strongly agree percentages from alt text]. This indicates that digital technology is widely viewed as a crucial troubleshooting tool during the early stages of parenting [SPECULATIVE: Human-Computer Interaction / Infant Care].\",\n    \"real_world_significance\": \"Understanding these patterns helps Human-Computer Interaction (HCI) researchers and app developers design more inclusive and targeted digital health tools for new parents [SPECULATIVE: Human-Computer Interaction]. For instance, the high reliance on technology for 'finding solutions to challenges' highlights the need for accurate, evidence-based information in parenting apps to prevent the spread of misinformation [SPECULATIVE: Public Health / Digital Health]. Furthermore, the differences between breastfeeding parents, bottle-feeding parents, and partners suggest that a 'one-size-fits-all' design for baby tracking apps may not satisfy all users, pointing to a need for customizable interfaces [SPECULATIVE: Human-Computer Interaction].\",\n    \"other\": \"Partners show a relatively high neutral ('neither agree nor disagree') or disagree response in categories like 'assuring practices' (23.53% disagree) and 'relating to experiences' (23.53% neither) compared to primary feeding parents [DERIVED: Compared partner percentages to breastfeeding/bottle-feeding parents in alt text]. This might reflect different levels of anxiety or involvement in specific feeding decisions [SPECULATIVE: Family Studies / Psychology].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2021)\",\n      \"It investigates how different stakeholders in infant feeding—specifically breastfeeding parents, bottle-feeding parents, and partners—utilize digital technology to support their practices\",\n      \"The technology uses are categorized into four main areas: relating to others' experiences, assuring feeding practices, finding solutions to challenges, and logging feeding practices\"\n    ],\n    \"derived_claims\": [\n      \"The data represents Likert-scale responses (ranging from strongly disagree to strongly agree) measuring agreement with different utility aspects of digital technology\",\n      \"'Logging practice' shows a highly polarized response, especially among breastfeeding parents (34.92% strongly disagree vs 25.40% strongly agree) and partners (31.25% strongly disagree vs 31.25% strongly agree), whereas 50% of bottle-feeding parents strongly agree with logging\",\n      \"Conversely, 'finding solutions to challenges' has very high agreement across all groups, with 83.6% of breastfeeding parents, 66.66% of bottle-feeding parents, and 68.75% of partners agreeing or strongly agreeing\",\n      \"Partners show a relatively high neutral ('neither agree nor disagree') or disagree response in categories like 'assuring practices' (23.53% disagree) and 'relating to experiences' (23.53% neither) compared to primary feeding parents\"\n    ],\n    \"speculative_claims\": [\n      \"This suggests that bottle-feeding parents might find tracking volumes and times more critical or easier to log digitally compared to breastfeeding parents\",\n      \"This indicates that digital technology is widely viewed as a crucial troubleshooting tool during the early stages of parenting\",\n      \"Understanding these patterns helps Human-Computer Interaction (HCI) researchers and app developers design more inclusive and targeted digital health tools for new parents\",\n      \"For instance, the high reliance on technology for 'finding solutions to challenges' highlights the need for accurate, evidence-based information in parenting apps to prevent the spread of misinformation\",\n      \"The differences between breastfeeding parents, bottle-feeding parents, and partners suggest that a 'one-size-fits-all' design for baby tracking apps may not satisfy all users, pointing to a need for customizable interfaces\",\n      \"This might reflect different levels of anxiety or involvement in specific feeding decisions\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact data table is not provided, but the human-written alt text contains a substantial number of precise percentage values for various categories and groups."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text provides raw percentages, but does not synthesize overall trends or comparisons across the groups."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (digital technology use in infant feeding practices among different parental roles) is clearly identifiable from the alt text and expert domain story."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The expert domain story only provides a citation link to a CHI 2021 paper, without summarizing the paper's core findings or context."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided in the metadata."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2021) [DIRECT]. It investigates how different stakeholders in infant feeding—specifically breastfeeding parents, bottle-feeding parents, and partners—utilize digital technology to support their practices [DIRECT]. The technology uses are categorized into four main areas: relating to others' experiences, assuring feeding practices, finding solutions to challenges, and logging feeding practices [DIRECT].",
+      "domain_specific_explanations": "The data represents Likert-scale responses (ranging from strongly disagree to strongly agree) measuring agreement with different utility aspects of digital technology [DERIVED: Read from the chart legend and alt text]. 'Logging practice' shows a highly polarized response, especially among breastfeeding parents (34.92% strongly disagree vs 25.40% strongly agree) and partners (31.25% strongly disagree vs 31.25% strongly agree), whereas 50% of bottle-feeding parents strongly agree with logging [DERIVED: Compared percentages from alt text]. This suggests that bottle-feeding parents might find tracking volumes and times more critical or easier to log digitally compared to breastfeeding parents [SPECULATIVE: Human-Computer Interaction / Infant Care]. Conversely, 'finding solutions to challenges' has very high agreement across all groups, with 83.6% of breastfeeding parents, 66.66% of bottle-feeding parents, and 68.75% of partners agreeing or strongly agreeing [DERIVED: Summed agree and strongly agree percentages from alt text]. This indicates that digital technology is widely viewed as a crucial troubleshooting tool during the early stages of parenting [SPECULATIVE: Human-Computer Interaction / Infant Care].",
+      "real_world_significance": "Understanding these patterns helps Human-Computer Interaction (HCI) researchers and app developers design more inclusive and targeted digital health tools for new parents [SPECULATIVE: Human-Computer Interaction]. For instance, the high reliance on technology for 'finding solutions to challenges' highlights the need for accurate, evidence-based information in parenting apps to prevent the spread of misinformation [SPECULATIVE: Public Health / Digital Health]. Furthermore, the differences between breastfeeding parents, bottle-feeding parents, and partners suggest that a 'one-size-fits-all' design for baby tracking apps may not satisfy all users, pointing to a need for customizable interfaces [SPECULATIVE: Human-Computer Interaction].",
+      "other": "Partners show a relatively high neutral ('neither agree nor disagree') or disagree response in categories like 'assuring practices' (23.53% disagree) and 'relating to experiences' (23.53% neither) compared to primary feeding parents [DERIVED: Compared partner percentages to breastfeeding/bottle-feeding parents in alt text]. This might reflect different levels of anxiety or involvement in specific feeding decisions [SPECULATIVE: Family Studies / Psychology]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2021)",
+        "It investigates how different stakeholders in infant feeding—specifically breastfeeding parents, bottle-feeding parents, and partners—utilize digital technology to support their practices",
+        "The technology uses are categorized into four main areas: relating to others' experiences, assuring feeding practices, finding solutions to challenges, and logging feeding practices"
+      ],
+      "derived_claims": [
+        "The data represents Likert-scale responses (ranging from strongly disagree to strongly agree) measuring agreement with different utility aspects of digital technology",
+        "'Logging practice' shows a highly polarized response, especially among breastfeeding parents (34.92% strongly disagree vs 25.40% strongly agree) and partners (31.25% strongly disagree vs 31.25% strongly agree), whereas 50% of bottle-feeding parents strongly agree with logging",
+        "Conversely, 'finding solutions to challenges' has very high agreement across all groups, with 83.6% of breastfeeding parents, 66.66% of bottle-feeding parents, and 68.75% of partners agreeing or strongly agreeing",
+        "Partners show a relatively high neutral ('neither agree nor disagree') or disagree response in categories like 'assuring practices' (23.53% disagree) and 'relating to experiences' (23.53% neither) compared to primary feeding parents"
+      ],
+      "speculative_claims": [
+        "This suggests that bottle-feeding parents might find tracking volumes and times more critical or easier to log digitally compared to breastfeeding parents",
+        "This indicates that digital technology is widely viewed as a crucial troubleshooting tool during the early stages of parenting",
+        "Understanding these patterns helps Human-Computer Interaction (HCI) researchers and app developers design more inclusive and targeted digital health tools for new parents",
+        "For instance, the high reliance on technology for 'finding solutions to challenges' highlights the need for accurate, evidence-based information in parenting apps to prevent the spread of misinformation",
+        "The differences between breastfeeding parents, bottle-feeding parents, and partners suggest that a 'one-size-fits-all' design for baby tracking apps may not satisfy all users, pointing to a need for customizable interfaces",
+        "This might reflect different levels of anxiety or involvement in specific feeding decisions"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14561.372334021144,
+  "created_at": "2026-07-07T23:27:13.330574Z"
+}

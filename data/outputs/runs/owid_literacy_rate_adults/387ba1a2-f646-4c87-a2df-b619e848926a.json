@@ -1,0 +1,77 @@
+{
+  "output_id": "387ba1a2-f646-4c87-a2df-b619e848926a",
+  "chart_id": "owid_literacy_rate_adults",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table contains exact values for 25 countries and regions, but 5 rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The spatial distribution and regional differences can be derived from the data table and map image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and subtitle clearly define the subject (adult literacy rates in 2023).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The source is identified as Our World in Data, but detailed expert commentary is minimal.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context is provided.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This is a choropleth map showing the adult literacy rate globally in 2023 [DERIVED: read from the chart image], produced by Our World in Data [DIRECT]. The data is sourced from the UNESCO Institute for Statistics [DERIVED: read from the image footer]. It defines adult literacy as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DERIVED: read from the image subtitle].\",\n    \"domain_specific_explanations\": \"Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: Development Economics]. The data shows a stark contrast between high-income regions and low-income regions. For instance, Azerbaijan has a 100% literacy rate and Europe and Central Asia (WB) has 98.68871%, while low-income countries average 63.03853% and Senegal is at 50.35582% [DERIVED: compared Azerbaijan (100), Europe and Central Asia (98.68871), low-income countries (63.03853), and Senegal (50.35582) from the data table]. Sub-Saharan Africa (SDG) has a literacy rate of 68.5022%, which is significantly lower than regions like East Asia and Pacific (WB) at 96.43049% [DERIVED: compared Sub-Saharan Africa (68.5022) and East Asia and Pacific (96.43049) from the data table].\",\n    \"real_world_significance\": \"Adult literacy is crucial for economic development, health outcomes, and political participation [SPECULATIVE: Development Economics]. Low literacy rates in regions like Sub-Saharan Africa and low-income countries highlight the ongoing need for targeted educational interventions and international aid to achieve Sustainable Development Goal 4 (Quality Education) [SPECULATIVE: United Nations SDGs]. High literacy rates in countries like Azerbaijan, Georgia (99.55547%), and Bahrain (98%) reflect successful historical or current educational policies [DERIVED: compared Georgia (99.55547) and Bahrain (98) from the data table].\",\n    \"other\": \"Several major regions are represented as aggregates in the data, such as Latin America and the Caribbean (94.79%) and South Asia (75.00885%), showing regional disparities [DERIVED: read from the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"produced by Our World in Data\"\n    ],\n    \"derived_claims\": [\n      \"This is a choropleth map showing the adult literacy rate globally in 2023\",\n      \"The data is sourced from the UNESCO Institute for Statistics\",\n      \"It defines adult literacy as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life\",\n      \"The data shows a stark contrast between high-income regions and low-income regions. For instance, Azerbaijan has a 100% literacy rate and Europe and Central Asia (WB) has 98.68871%, while low-income countries average 63.03853% and Senegal is at 50.35582%\",\n      \"Sub-Saharan Africa (SDG) has a literacy rate of 68.5022%, which is significantly lower than regions like East Asia and Pacific (WB) at 96.43049%\",\n      \"High literacy rates in countries like Azerbaijan, Georgia (99.55547%), and Bahrain (98%) reflect successful historical or current educational policies\",\n      \"Several major regions are represented as aggregates in the data, such as Latin America and the Caribbean (94.79%) and South Asia (75.00885%), showing regional disparities\"\n    ],\n    \"speculative_claims\": [\n      \"Literacy is a fundamental metric of educational attainment and human capital\",\n      \"Adult literacy is crucial for economic development, health outcomes, and political participation\",\n      \"Low literacy rates in regions like Sub-Saharan Africa and low-income countries highlight the ongoing need for targeted educational interventions and international aid to achieve Sustainable Development Goal 4 (Quality Education)\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 7,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table contains exact values for 25 countries and regions, but 5 rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The spatial distribution and regional differences can be derived from the data table and map image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and subtitle clearly define the subject (adult literacy rates in 2023)."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The source is identified as Our World in Data, but detailed expert commentary is minimal."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This is a choropleth map showing the adult literacy rate globally in 2023 [DERIVED: read from the chart image], produced by Our World in Data [DIRECT]. The data is sourced from the UNESCO Institute for Statistics [DERIVED: read from the image footer]. It defines adult literacy as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DERIVED: read from the image subtitle].",
+      "domain_specific_explanations": "Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: Development Economics]. The data shows a stark contrast between high-income regions and low-income regions. For instance, Azerbaijan has a 100% literacy rate and Europe and Central Asia (WB) has 98.68871%, while low-income countries average 63.03853% and Senegal is at 50.35582% [DERIVED: compared Azerbaijan (100), Europe and Central Asia (98.68871), low-income countries (63.03853), and Senegal (50.35582) from the data table]. Sub-Saharan Africa (SDG) has a literacy rate of 68.5022%, which is significantly lower than regions like East Asia and Pacific (WB) at 96.43049% [DERIVED: compared Sub-Saharan Africa (68.5022) and East Asia and Pacific (96.43049) from the data table].",
+      "real_world_significance": "Adult literacy is crucial for economic development, health outcomes, and political participation [SPECULATIVE: Development Economics]. Low literacy rates in regions like Sub-Saharan Africa and low-income countries highlight the ongoing need for targeted educational interventions and international aid to achieve Sustainable Development Goal 4 (Quality Education) [SPECULATIVE: United Nations SDGs]. High literacy rates in countries like Azerbaijan, Georgia (99.55547%), and Bahrain (98%) reflect successful historical or current educational policies [DERIVED: compared Georgia (99.55547) and Bahrain (98) from the data table].",
+      "other": "Several major regions are represented as aggregates in the data, such as Latin America and the Caribbean (94.79%) and South Asia (75.00885%), showing regional disparities [DERIVED: read from the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "produced by Our World in Data"
+      ],
+      "derived_claims": [
+        "This is a choropleth map showing the adult literacy rate globally in 2023",
+        "The data is sourced from the UNESCO Institute for Statistics",
+        "It defines adult literacy as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life",
+        "The data shows a stark contrast between high-income regions and low-income regions. For instance, Azerbaijan has a 100% literacy rate and Europe and Central Asia (WB) has 98.68871%, while low-income countries average 63.03853% and Senegal is at 50.35582%",
+        "Sub-Saharan Africa (SDG) has a literacy rate of 68.5022%, which is significantly lower than regions like East Asia and Pacific (WB) at 96.43049%",
+        "High literacy rates in countries like Azerbaijan, Georgia (99.55547%), and Bahrain (98%) reflect successful historical or current educational policies",
+        "Several major regions are represented as aggregates in the data, such as Latin America and the Caribbean (94.79%) and South Asia (75.00885%), showing regional disparities"
+      ],
+      "speculative_claims": [
+        "Literacy is a fundamental metric of educational attainment and human capital",
+        "Adult literacy is crucial for economic development, health outcomes, and political participation",
+        "Low literacy rates in regions like Sub-Saharan Africa and low-income countries highlight the ongoing need for targeted educational interventions and international aid to achieve Sustainable Development Goal 4 (Quality Education)"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 7,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 17373.073958035093,
+  "created_at": "2026-07-07T22:59:30.957310Z"
+}

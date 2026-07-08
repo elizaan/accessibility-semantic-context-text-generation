@@ -1,0 +1,63 @@
+{
+  "output_id": "d2b2e301-d846-4b34-af89-6132d38a0c65",
+  "chart_id": "olli_streamgraph",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"The y-axis is completely unlabeled, leaving the absolute values and units of the data entirely unknown.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"While relative changes in the stream's thickness can be observed over time, the lack of a y-axis scale makes it impossible to quantify the magnitude of these trends.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The x-axis label 'date (year-month)' and the legend containing industry sectors (e.g., Construction, Manufacturing, Government) make it clear that this is US labor/employment sector data from 2000 to 2010.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a streamgraph showing industry-level data over time from 2000 to 2010 [DIRECT]. The categories in the legend represent various economic sectors such as Agriculture, Construction, Manufacturing, and Government [DIRECT]. This dataset is highly likely the classic US Bureau of Labor Statistics (BLS) dataset showing the number of unemployed individuals by industry, commonly used in data visualization packages like Vega-Lite [SPECULATIVE: Vega-Lite / BLS dataset].\",\n    \"domain_specific_explanations\": \"The vertical thickness of each colored band represents the relative magnitude of that industry's metric at a given point in time [DERIVED: streamgraph visual encoding]. The dramatic widening of the stream starting in late 2008 and peaking in 2009-2010 corresponds to the Great Recession [DERIVED: comparison of stream thickness over time]. During this recession period, sectors like Construction, Manufacturing, and Wholesale and Retail Trade show substantial expansion in their bands [DERIVED: visual expansion of specific bands in 2008-2010].\",\n    \"real_world_significance\": \"The Great Recession was triggered by the subprime mortgage crisis, which directly devastated the Construction and Finance sectors [SPECULATIVE: Macroeconomics]. The massive spike in unemployment shown in 2008-2009 led to widespread economic hardship, requiring unprecedented monetary policy intervention by the Federal Reserve and fiscal stimulus from the US government [SPECULATIVE: US Economic History]. Understanding which sectors shed the most jobs helps policymakers design targeted re-employment and training programs [SPECULATIVE: Public Policy].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a streamgraph showing industry-level data over time from 2000 to 2010\",\n      \"The categories in the legend represent various economic sectors such as Agriculture, Construction, Manufacturing, and Government\"\n    ],\n    \"derived_claims\": [\n      \"The vertical thickness of each colored band represents the relative magnitude of that industry's metric at a given point in time [derived from streamgraph visual encoding]\",\n      \"The dramatic widening of the stream starting in late 2008 and peaking in 2009-2010 corresponds to the Great Recession [derived from comparison of stream thickness over time]\",\n      \"During this recession period, sectors like Construction, Manufacturing, and Wholesale and Retail Trade show substantial expansion in their bands [derived from visual expansion of specific bands in 2008-2010]\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset is highly likely the classic US Bureau of Labor Statistics (BLS) dataset showing the number of unemployed individuals by industry [source: Vega-Lite / BLS dataset]\",\n      \"The Great Recession was triggered by the subprime mortgage crisis, which directly devastated the Construction and Finance sectors [source: Macroeconomics]\",\n      \"The massive spike in unemployment shown in 2008-2009 led to widespread economic hardship, requiring unprecedented monetary policy intervention by the Federal Reserve and fiscal stimulus from the US government [source: US Economic History]\",\n      \"Understanding which sectors shed the most jobs helps policymakers design targeted re-employment and training programs [source: Public Policy]\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The y-axis is completely unlabeled, leaving the absolute values and units of the data entirely unknown."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "While relative changes in the stream's thickness can be observed over time, the lack of a y-axis scale makes it impossible to quantify the magnitude of these trends."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The x-axis label 'date (year-month)' and the legend containing industry sectors (e.g., Construction, Manufacturing, Government) make it clear that this is US labor/employment sector data from 2000 to 2010."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a streamgraph showing industry-level data over time from 2000 to 2010 [DIRECT]. The categories in the legend represent various economic sectors such as Agriculture, Construction, Manufacturing, and Government [DIRECT]. This dataset is highly likely the classic US Bureau of Labor Statistics (BLS) dataset showing the number of unemployed individuals by industry, commonly used in data visualization packages like Vega-Lite [SPECULATIVE: Vega-Lite / BLS dataset].",
+      "domain_specific_explanations": "The vertical thickness of each colored band represents the relative magnitude of that industry's metric at a given point in time [DERIVED: streamgraph visual encoding]. The dramatic widening of the stream starting in late 2008 and peaking in 2009-2010 corresponds to the Great Recession [DERIVED: comparison of stream thickness over time]. During this recession period, sectors like Construction, Manufacturing, and Wholesale and Retail Trade show substantial expansion in their bands [DERIVED: visual expansion of specific bands in 2008-2010].",
+      "real_world_significance": "The Great Recession was triggered by the subprime mortgage crisis, which directly devastated the Construction and Finance sectors [SPECULATIVE: Macroeconomics]. The massive spike in unemployment shown in 2008-2009 led to widespread economic hardship, requiring unprecedented monetary policy intervention by the Federal Reserve and fiscal stimulus from the US government [SPECULATIVE: US Economic History]. Understanding which sectors shed the most jobs helps policymakers design targeted re-employment and training programs [SPECULATIVE: Public Policy].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a streamgraph showing industry-level data over time from 2000 to 2010",
+        "The categories in the legend represent various economic sectors such as Agriculture, Construction, Manufacturing, and Government"
+      ],
+      "derived_claims": [
+        "The vertical thickness of each colored band represents the relative magnitude of that industry's metric at a given point in time [derived from streamgraph visual encoding]",
+        "The dramatic widening of the stream starting in late 2008 and peaking in 2009-2010 corresponds to the Great Recession [derived from comparison of stream thickness over time]",
+        "During this recession period, sectors like Construction, Manufacturing, and Wholesale and Retail Trade show substantial expansion in their bands [derived from visual expansion of specific bands in 2008-2010]"
+      ],
+      "speculative_claims": [
+        "This dataset is highly likely the classic US Bureau of Labor Statistics (BLS) dataset showing the number of unemployed individuals by industry [source: Vega-Lite / BLS dataset]",
+        "The Great Recession was triggered by the subprime mortgage crisis, which directly devastated the Construction and Finance sectors [source: Macroeconomics]",
+        "The massive spike in unemployment shown in 2008-2009 led to widespread economic hardship, requiring unprecedented monetary policy intervention by the Federal Reserve and fiscal stimulus from the US government [source: US Economic History]",
+        "Understanding which sectors shed the most jobs helps policymakers design targeted re-employment and training programs [source: Public Policy]"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12743.461375008337,
+  "created_at": "2026-07-08T14:30:24.012568Z"
+}

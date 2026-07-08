@@ -1,0 +1,80 @@
+{
+  "output_id": "e2ebc0e6-c4bf-450b-a50f-ba7ed32fbcb3",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated, but the start of the series is provided, and the rest of the trend is clearly visible in the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption notes a significant drop over time, but lacks specific start and end values.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axes clearly define the subject as U.S. hourly workers earning at or below the federal minimum wage from 1979 to 2019.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The data likely originates from the U.S. Bureau of Labor Statistics (BLS), which regularly tracks labor force characteristics and minimum wage demographics [SPECULATIVE: U.S. Bureau of Labor Statistics]. Over this 40-year span, the share of workers at or below the minimum wage peaked at approximately 15.1% in 1979-1980 and fell to a low of around 1.9% by 2019 [DERIVED: Read from data table and chart trend].\",\n    \"domain_specific_explanations\": \"The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress under the Fair Labor Standards Act [SPECULATIVE: U.S. Labor Law]. Workers earning *below* the minimum wage typically include those in exempt categories, such as tipped employees, student-learners, or certain agricultural workers [SPECULATIVE: Fair Labor Standards Act]. The data shows sharp spikes in the share of minimum wage workers around 1990-1991, 1997-1998, and 2010 [DERIVED: Visual analysis of peaks in the line graph]. These spikes correspond to periods immediately following statutory increases in the federal minimum wage, which naturally sweeps more workers into the minimum wage bracket [SPECULATIVE: Labor Economics]. Conversely, during periods without federal minimum wage increases, such as the 1980s and the 2010s, the share of workers at or below the minimum wage steadily declined [DERIVED: Visual analysis of downward trends during specific decades].\",\n    \"real_world_significance\": \"The overall downward trend from over 15% in 1980 to under 2% in 2019 indicates that the federal minimum wage has played a decreasingly direct role in setting baseline wages for the vast majority of U.S. hourly workers [DERIVED: Comparison of 1980 and 2019 data points]. This decline is heavily influenced by state-level policies, as many U.S. states have established minimum wages significantly higher than the federal rate ($7.25 since 2009), rendering the federal baseline obsolete for millions of workers [SPECULATIVE: State Labor Policies]. For policymakers and labor advocates, this trend highlights the erosion of the federal minimum wage's purchasing power and its diminishing relevance in the modern U.S. economy without automatic inflation adjustments [SPECULATIVE: Labor Economics].\",\n    \"other\": \"The x-axis label 'Response' in the metadata is a misnomer, as the axis actually represents chronological years from 1979 to 2019 [DERIVED: Comparison of axis label with chart image timeline].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned at or below the prevailing federal minimum wage from 1979 to 2019.\"\n    ],\n    \"derived_claims\": [\n      \"Over this 40-year span, the share of workers at or below the minimum wage peaked at approximately 15.1% in 1979-1980 and fell to a low of around 1.9% by 2019.\",\n      \"The data shows sharp spikes in the share of minimum wage workers around 1990-1991, 1997-1998, and 2010.\",\n      \"During periods without federal minimum wage increases, such as the 1980s and the 2010s, the share of workers at or below the minimum wage steadily declined.\",\n      \"The overall downward trend from over 15% in 1980 to under 2% in 2019 indicates that the federal minimum wage has played a decreasingly direct role in setting baseline wages for the vast majority of U.S. hourly workers.\",\n      \"The x-axis label 'Response' in the metadata is a misnomer, as the axis actually represents chronological years from 1979 to 2019.\"\n    ],\n    \"speculative_claims\": [\n      \"The data likely originates from the U.S. Bureau of Labor Statistics (BLS), which regularly tracks labor force characteristics and minimum wage demographics.\",\n      \"The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress under the Fair Labor Standards Act.\",\n      \"Workers earning below the minimum wage typically include those in exempt categories, such as tipped employees, student-learners, or certain agricultural workers.\",\n      \"These spikes correspond to periods immediately following statutory increases in the federal minimum wage, which naturally sweeps more workers into the minimum wage bracket.\",\n      \"This decline is heavily influenced by state-level policies, as many U.S. states have established minimum wages significantly higher than the federal rate ($7.25 since 2009), rendering the federal baseline obsolete for millions of workers.\",\n      \"For policymakers and labor advocates, this trend highlights the erosion of the federal minimum wage's purchasing power and its diminishing relevance in the modern U.S. economy without automatic inflation adjustments.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated, but the start of the series is provided, and the rest of the trend is clearly visible in the chart image."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption notes a significant drop over time, but lacks specific start and end values."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axes clearly define the subject as U.S. hourly workers earning at or below the federal minimum wage from 1979 to 2019."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The data likely originates from the U.S. Bureau of Labor Statistics (BLS), which regularly tracks labor force characteristics and minimum wage demographics [SPECULATIVE: U.S. Bureau of Labor Statistics]. Over this 40-year span, the share of workers at or below the minimum wage peaked at approximately 15.1% in 1979-1980 and fell to a low of around 1.9% by 2019 [DERIVED: Read from data table and chart trend].",
+      "domain_specific_explanations": "The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress under the Fair Labor Standards Act [SPECULATIVE: U.S. Labor Law]. Workers earning *below* the minimum wage typically include those in exempt categories, such as tipped employees, student-learners, or certain agricultural workers [SPECULATIVE: Fair Labor Standards Act]. The data shows sharp spikes in the share of minimum wage workers around 1990-1991, 1997-1998, and 2010 [DERIVED: Visual analysis of peaks in the line graph]. These spikes correspond to periods immediately following statutory increases in the federal minimum wage, which naturally sweeps more workers into the minimum wage bracket [SPECULATIVE: Labor Economics]. Conversely, during periods without federal minimum wage increases, such as the 1980s and the 2010s, the share of workers at or below the minimum wage steadily declined [DERIVED: Visual analysis of downward trends during specific decades].",
+      "real_world_significance": "The overall downward trend from over 15% in 1980 to under 2% in 2019 indicates that the federal minimum wage has played a decreasingly direct role in setting baseline wages for the vast majority of U.S. hourly workers [DERIVED: Comparison of 1980 and 2019 data points]. This decline is heavily influenced by state-level policies, as many U.S. states have established minimum wages significantly higher than the federal rate ($7.25 since 2009), rendering the federal baseline obsolete for millions of workers [SPECULATIVE: State Labor Policies]. For policymakers and labor advocates, this trend highlights the erosion of the federal minimum wage's purchasing power and its diminishing relevance in the modern U.S. economy without automatic inflation adjustments [SPECULATIVE: Labor Economics].",
+      "other": "The x-axis label 'Response' in the metadata is a misnomer, as the axis actually represents chronological years from 1979 to 2019 [DERIVED: Comparison of axis label with chart image timeline]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned at or below the prevailing federal minimum wage from 1979 to 2019."
+      ],
+      "derived_claims": [
+        "Over this 40-year span, the share of workers at or below the minimum wage peaked at approximately 15.1% in 1979-1980 and fell to a low of around 1.9% by 2019.",
+        "The data shows sharp spikes in the share of minimum wage workers around 1990-1991, 1997-1998, and 2010.",
+        "During periods without federal minimum wage increases, such as the 1980s and the 2010s, the share of workers at or below the minimum wage steadily declined.",
+        "The overall downward trend from over 15% in 1980 to under 2% in 2019 indicates that the federal minimum wage has played a decreasingly direct role in setting baseline wages for the vast majority of U.S. hourly workers.",
+        "The x-axis label 'Response' in the metadata is a misnomer, as the axis actually represents chronological years from 1979 to 2019."
+      ],
+      "speculative_claims": [
+        "The data likely originates from the U.S. Bureau of Labor Statistics (BLS), which regularly tracks labor force characteristics and minimum wage demographics.",
+        "The 'prevailing federal minimum wage' is the baseline hourly rate set by Congress under the Fair Labor Standards Act.",
+        "Workers earning below the minimum wage typically include those in exempt categories, such as tipped employees, student-learners, or certain agricultural workers.",
+        "These spikes correspond to periods immediately following statutory increases in the federal minimum wage, which naturally sweeps more workers into the minimum wage bracket.",
+        "This decline is heavily influenced by state-level policies, as many U.S. states have established minimum wages significantly higher than the federal rate ($7.25 since 2009), rendering the federal baseline obsolete for millions of workers.",
+        "For policymakers and labor advocates, this trend highlights the erosion of the federal minimum wage's purchasing power and its diminishing relevance in the modern U.S. economy without automatic inflation adjustments."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12150.28037497541,
+  "created_at": "2026-07-07T22:20:57.039076Z"
+}

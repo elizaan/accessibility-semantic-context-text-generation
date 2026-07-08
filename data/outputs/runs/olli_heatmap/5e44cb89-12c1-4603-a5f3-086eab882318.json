@@ -1,0 +1,65 @@
+{
+  "output_id": "5e44cb89-12c1-4603-a5f3-086eab882318",
+  "chart_id": "olli_heatmap",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table not provided, but some data values are given in the OLLI screen reader tree\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"No information on trend magnitude is provided\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"Domain is mentioned as 'Daily max temperatures' and location 'Seattle'\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a heatmap showing daily maximum temperatures in Seattle [DIRECT]. The chart is organized by day of the month on the x-axis and month of the year on the y-axis [DIRECT]. The data is presented as average maximum temperatures for each day across 12 months [DERIVED: from OLLI screen reader tree].\",\n    \"domain_specific_explanations\": \"The data represents daily maximum temperatures in Seattle, which is a common metric used in meteorology and climate science [SPECULATIVE: general knowledge of meteorology]. The temperatures are likely to be in degrees Celsius or Fahrenheit, but the unit is not specified [NOT PROVIDED].\",\n    \"real_world_significance\": \"This data matters for understanding temperature patterns in Seattle, which can inform decisions related to outdoor activities, agriculture, and urban planning [SPECULATIVE: general knowledge of climate science]. The data can also be used to identify trends and patterns in temperature changes over time [DERIVED: from domain story].\",\n    \"other\": \"The chart provides a comprehensive view of daily maximum temperatures in Seattle across 12 months, which can be useful for understanding seasonal temperature patterns [DERIVED: from OLLI screen reader tree].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a heatmap showing daily maximum temperatures in Seattle\",\n      \"The chart is organized by day of the month on the x-axis and month of the year on the y-axis\"\n    ],\n    \"derived_claims\": [\n      \"The data is presented as average maximum temperatures for each day across 12 months\",\n      \"The chart provides a comprehensive view of daily maximum temperatures in Seattle across 12 months\"\n    ],\n    \"speculative_claims\": [\n      \"The data represents daily maximum temperatures in Seattle, which is a common metric used in meteorology and climate science\",\n      \"This data matters for understanding temperature patterns in Seattle, which can inform decisions related to outdoor activities, agriculture, and urban planning\"\n    ],\n    \"total_flag_count\": 6,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table not provided, but some data values are given in the OLLI screen reader tree"
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No information on trend magnitude is provided"
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "Domain is mentioned as 'Daily max temperatures' and location 'Seattle'"
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a heatmap showing daily maximum temperatures in Seattle [DIRECT]. The chart is organized by day of the month on the x-axis and month of the year on the y-axis [DIRECT]. The data is presented as average maximum temperatures for each day across 12 months [DERIVED: from OLLI screen reader tree].",
+      "domain_specific_explanations": "The data represents daily maximum temperatures in Seattle, which is a common metric used in meteorology and climate science [SPECULATIVE: general knowledge of meteorology]. The temperatures are likely to be in degrees Celsius or Fahrenheit, but the unit is not specified [NOT PROVIDED].",
+      "real_world_significance": "This data matters for understanding temperature patterns in Seattle, which can inform decisions related to outdoor activities, agriculture, and urban planning [SPECULATIVE: general knowledge of climate science]. The data can also be used to identify trends and patterns in temperature changes over time [DERIVED: from domain story].",
+      "other": "The chart provides a comprehensive view of daily maximum temperatures in Seattle across 12 months, which can be useful for understanding seasonal temperature patterns [DERIVED: from OLLI screen reader tree]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a heatmap showing daily maximum temperatures in Seattle",
+        "The chart is organized by day of the month on the x-axis and month of the year on the y-axis"
+      ],
+      "derived_claims": [
+        "The data is presented as average maximum temperatures for each day across 12 months",
+        "The chart provides a comprehensive view of daily maximum temperatures in Seattle across 12 months"
+      ],
+      "speculative_claims": [
+        "The data represents daily maximum temperatures in Seattle, which is a common metric used in meteorology and climate science",
+        "This data matters for understanding temperature patterns in Seattle, which can inform decisions related to outdoor activities, agriculture, and urban planning"
+      ],
+      "total_flag_count": 6,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2186,
+    "output": 592
+  },
+  "latency_ms": 3369.00445795618,
+  "created_at": "2026-07-08T14:23:55.732299Z"
+}

@@ -1,0 +1,76 @@
+{
+  "output_id": "ab39f9c9-8e33-4341-8f30-bb9314122410",
+  "chart_id": "hci_be49605108a4c7b2cc78a9cf112a749a38a7b8fd_Image_011_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The raw data values are not provided, but the human-written alt text describes the structure of the scatter plots (nucleus and tail representing controller and HMD positions).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The directional trends of the 'comet tails' relative to the 'nuclei' can be visually derived from the subplots, though exact numerical magnitudes are absent.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly identified as Virtual Reality (VR) / Augmented Reality (AR) interaction research from a CHI 2020 paper.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story provides the exact paper citation and figure caption, which helps contextualize the HMD and controller movements.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No explicit stakeholder context is provided, but it can be inferred that VR/AR researchers and interaction designers are the primary audience.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a CHI 2020 research paper focusing on human-computer interaction in virtual reality (VR) or augmented reality (AR) [DIRECT]. It visualizes the relationship between Head-Mounted Display (HMD) and controller angular movements during target selection trials [DIRECT]. The data is plotted across eight different target positions/angles: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [DERIVED: read from the subplot titles in the image].\",\n    \"domain_specific_explanations\": \"In VR/AR research, understanding the coordination between head gaze (HMD) and hand pointing (controller) is crucial for designing efficient selection techniques [SPECULATIVE: Human-Computer Interaction / VR]. The 'nucleus' represents the controller's pointing direction at the moment of selection (the click), while the 'tail' represents where the user's head (HMD) was looking [DIRECT]. The tails extend outward from the nucleus back toward the center or origin, indicating that the head (HMD) lags behind or coordinates differently with the controller depending on the target's angular position [DERIVED: observed the directional orientation of the orange tails relative to the blue dots in each subplot]. For example, at Position 0° (right), the tail extends to the left; at Position 90° (top), the tail extends downwards [DERIVED: observed the specific direction of tails in the subplots].\",\n    \"real_world_significance\": \"This data helps VR/AR system designers understand user coordination patterns, which can be used to optimize target acquisition algorithms, predict user intent, or design better spatial user interfaces [SPECULATIVE: Human-Computer Interaction / VR]. If head and controller movements are highly predictable or show consistent offsets (as indicated by the tight, directional comet tails), systems can compensate for latency or head-gaze offsets to improve selection accuracy [SPECULATIVE: Human-Computer Interaction / VR].\",\n    \"other\": \"The eight subplots correspond to cardinal and intercardinal directions, suggesting a circular target layout was used in the user study [DERIVED: inferred from the 45-degree increments of the subplots].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a CHI 2020 research paper focusing on human-computer interaction in virtual reality (VR) or augmented reality (AR)\",\n      \"It visualizes the relationship between Head-Mounted Display (HMD) and controller angular movements during target selection trials\",\n      \"The 'nucleus' represents the controller's pointing direction at the moment of selection (the click), while the 'tail' represents where the user's head (HMD) was looking\"\n    ],\n    \"derived_claims\": [\n      \"The data is plotted across eight different target positions/angles: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [derived from reading the subplot titles in the image]\",\n      \"The tails extend outward from the nucleus back toward the center or origin, indicating that the head (HMD) lags behind or coordinates differently with the controller depending on the target's angular position [derived from observing the directional orientation of the orange tails relative to the blue dots in each subplot]\",\n      \"For example, at Position 0° (right), the tail extends to the left; at Position 90° (top), the tail extends downwards [derived from observing the specific direction of tails in the subplots]\",\n      \"The eight subplots correspond to cardinal and intercardinal directions, suggesting a circular target layout was used in the user study [derived from inferring from the 45-degree increments of the subplots]\"\n    ],\n    \"speculative_claims\": [\n      \"In VR/AR research, understanding the coordination between head gaze (HMD) and hand pointing (controller) is crucial for designing efficient selection techniques [source: Human-Computer Interaction / VR]\",\n      \"This data helps VR/AR system designers understand user coordination patterns, which can be used to optimize target acquisition algorithms, predict user intent, or design better spatial user interfaces [source: Human-Computer Interaction / VR]\",\n      \"If head and controller movements are highly predictable or show consistent offsets (as indicated by the tight, directional comet tails), systems can compensate for latency or head-gaze offsets to improve selection accuracy [source: Human-Computer Interaction / VR]\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The raw data values are not provided, but the human-written alt text describes the structure of the scatter plots (nucleus and tail representing controller and HMD positions)."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The directional trends of the 'comet tails' relative to the 'nuclei' can be visually derived from the subplots, though exact numerical magnitudes are absent."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly identified as Virtual Reality (VR) / Augmented Reality (AR) interaction research from a CHI 2020 paper."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story provides the exact paper citation and figure caption, which helps contextualize the HMD and controller movements."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No explicit stakeholder context is provided, but it can be inferred that VR/AR researchers and interaction designers are the primary audience."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a CHI 2020 research paper focusing on human-computer interaction in virtual reality (VR) or augmented reality (AR) [DIRECT]. It visualizes the relationship between Head-Mounted Display (HMD) and controller angular movements during target selection trials [DIRECT]. The data is plotted across eight different target positions/angles: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [DERIVED: read from the subplot titles in the image].",
+      "domain_specific_explanations": "In VR/AR research, understanding the coordination between head gaze (HMD) and hand pointing (controller) is crucial for designing efficient selection techniques [SPECULATIVE: Human-Computer Interaction / VR]. The 'nucleus' represents the controller's pointing direction at the moment of selection (the click), while the 'tail' represents where the user's head (HMD) was looking [DIRECT]. The tails extend outward from the nucleus back toward the center or origin, indicating that the head (HMD) lags behind or coordinates differently with the controller depending on the target's angular position [DERIVED: observed the directional orientation of the orange tails relative to the blue dots in each subplot]. For example, at Position 0° (right), the tail extends to the left; at Position 90° (top), the tail extends downwards [DERIVED: observed the specific direction of tails in the subplots].",
+      "real_world_significance": "This data helps VR/AR system designers understand user coordination patterns, which can be used to optimize target acquisition algorithms, predict user intent, or design better spatial user interfaces [SPECULATIVE: Human-Computer Interaction / VR]. If head and controller movements are highly predictable or show consistent offsets (as indicated by the tight, directional comet tails), systems can compensate for latency or head-gaze offsets to improve selection accuracy [SPECULATIVE: Human-Computer Interaction / VR].",
+      "other": "The eight subplots correspond to cardinal and intercardinal directions, suggesting a circular target layout was used in the user study [DERIVED: inferred from the 45-degree increments of the subplots]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a CHI 2020 research paper focusing on human-computer interaction in virtual reality (VR) or augmented reality (AR)",
+        "It visualizes the relationship between Head-Mounted Display (HMD) and controller angular movements during target selection trials",
+        "The 'nucleus' represents the controller's pointing direction at the moment of selection (the click), while the 'tail' represents where the user's head (HMD) was looking"
+      ],
+      "derived_claims": [
+        "The data is plotted across eight different target positions/angles: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [derived from reading the subplot titles in the image]",
+        "The tails extend outward from the nucleus back toward the center or origin, indicating that the head (HMD) lags behind or coordinates differently with the controller depending on the target's angular position [derived from observing the directional orientation of the orange tails relative to the blue dots in each subplot]",
+        "For example, at Position 0° (right), the tail extends to the left; at Position 90° (top), the tail extends downwards [derived from observing the specific direction of tails in the subplots]",
+        "The eight subplots correspond to cardinal and intercardinal directions, suggesting a circular target layout was used in the user study [derived from inferring from the 45-degree increments of the subplots]"
+      ],
+      "speculative_claims": [
+        "In VR/AR research, understanding the coordination between head gaze (HMD) and hand pointing (controller) is crucial for designing efficient selection techniques [source: Human-Computer Interaction / VR]",
+        "This data helps VR/AR system designers understand user coordination patterns, which can be used to optimize target acquisition algorithms, predict user intent, or design better spatial user interfaces [source: Human-Computer Interaction / VR]",
+        "If head and controller movements are highly predictable or show consistent offsets (as indicated by the tight, directional comet tails), systems can compensate for latency or head-gaze offsets to improve selection accuracy [source: Human-Computer Interaction / VR]"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12919.260499998927,
+  "created_at": "2026-07-07T21:32:50.310152Z"
+}

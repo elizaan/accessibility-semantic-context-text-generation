@@ -1,0 +1,79 @@
+{
+  "output_id": "af0c39c0-bf43-4b1c-9dc9-7f40d4b7dcd5",
+  "chart_id": "vistext_887",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated, but the initial values and the overall range (0 to 120,000) are provided in the L1 caption and scene graph.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The L2 caption notes an overall decline, but the exact magnitude or percentage of the decline is not specified.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly identify the subject as Brazil's IBOVESPA stock index in 2020.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the performance of Brazil's primary stock market index, the IBOVESPA, measured in Brazilian reals (BRL) from January 2 to October 15, 2020 [DIRECT]. The index started the year 2020 at approximately 118,573 BRL on January 2 [DIRECT]. Over the course of the period shown, the index experienced an overall decline [DIRECT]. This chart is likely used by financial analysts, investors, and economists to track the health of the Brazilian equity market during a highly volatile year [SPECULATIVE: Financial Markets].\",\n    \"domain_specific_explanations\": \"The IBOVESPA (Ibovespa Brasil Sao Paulo Stock Exchange Index) is a gross return index weighted by market value, representing the performance of the most liquid stocks traded on the B3 exchange [SPECULATIVE: Financial Markets]. A decline in the index indicates that, on average, the market capitalization and stock prices of Brazil's largest publicly traded companies decreased over this period [DERIVED: Interpreted from the L2 caption stating the index declined]. The year 2020 was marked by the global COVID-19 pandemic, which caused massive disruptions in global financial markets, including a major crash in March 2020 followed by a gradual, volatile recovery [SPECULATIVE: Economic History].\",\n    \"real_world_significance\": \"The decline in the IBOVESPA during 2020 reflects the severe economic impact of the COVID-19 pandemic on Brazil's economy, which faced lockdowns, supply chain disruptions, and fiscal strain [SPECULATIVE: Macroeconomics]. For investors, a declining index means reduced portfolio values and potential capital losses, particularly for those heavily exposed to Brazilian equities [SPECULATIVE: Investment Management]. For the Brazilian government and policymakers, a depressed stock market often correlates with lower business confidence, reduced foreign direct investment, and pressure to implement stimulative monetary or fiscal policies [SPECULATIVE: Public Policy].\",\n    \"other\": \"Although the X-axis is labeled 'Year' in the metadata, the actual data points and axis labels (such as 'April', 'July', and 'October') represent months within the single year of 2020 [DERIVED: Compared the X-axis label 'Year' with the scene graph labels and title dates].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the performance of Brazil's primary stock market index, the IBOVESPA, measured in Brazilian reals (BRL) from January 2 to October 15, 2020\",\n      \"The index started the year 2020 at approximately 118,573 BRL on January 2\",\n      \"Over the course of the period shown, the index experienced an overall decline\"\n    ],\n    \"derived_claims\": [\n      \"A decline in the index indicates that, on average, the market capitalization and stock prices of Brazil's largest publicly traded companies decreased over this period [derived from the L2 caption stating the index declined]\",\n      \"Although the X-axis is labeled 'Year' in the metadata, the actual data points and axis labels (such as 'April', 'July', and 'October') represent months within the single year of 2020 [derived from comparing the X-axis label 'Year' with the scene graph labels and title dates]\"\n    ],\n    \"speculative_claims\": [\n      \"This chart is likely used by financial analysts, investors, and economists to track the health of the Brazilian equity market during a highly volatile year [source: Financial Markets]\",\n      \"The IBOVESPA (Ibovespa Brasil Sao Paulo Stock Exchange Index) is a gross return index weighted by market value, representing the performance of the most liquid stocks traded on the B3 exchange [source: Financial Markets]\",\n      \"The year 2020 was marked by the global COVID-19 pandemic, which caused massive disruptions in global financial markets, including a major crash in March 2020 followed by a gradual, volatile recovery [source: Economic History]\",\n      \"The decline in the IBOVESPA during 2020 reflects the severe economic impact of the COVID-19 pandemic on Brazil's economy, which faced lockdowns, supply chain disruptions, and fiscal strain [source: Macroeconomics]\",\n      \"For investors, a declining index means reduced portfolio values and potential capital losses, particularly for those heavily exposed to Brazilian equities [source: Investment Management]\",\n      \"For the Brazilian government and policymakers, a depressed stock market often correlates with lower business confidence, reduced foreign direct investment, and pressure to implement stimulative monetary or fiscal policies [source: Public Policy]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated, but the initial values and the overall range (0 to 120,000) are provided in the L1 caption and scene graph."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The L2 caption notes an overall decline, but the exact magnitude or percentage of the decline is not specified."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly identify the subject as Brazil's IBOVESPA stock index in 2020."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the performance of Brazil's primary stock market index, the IBOVESPA, measured in Brazilian reals (BRL) from January 2 to October 15, 2020 [DIRECT]. The index started the year 2020 at approximately 118,573 BRL on January 2 [DIRECT]. Over the course of the period shown, the index experienced an overall decline [DIRECT]. This chart is likely used by financial analysts, investors, and economists to track the health of the Brazilian equity market during a highly volatile year [SPECULATIVE: Financial Markets].",
+      "domain_specific_explanations": "The IBOVESPA (Ibovespa Brasil Sao Paulo Stock Exchange Index) is a gross return index weighted by market value, representing the performance of the most liquid stocks traded on the B3 exchange [SPECULATIVE: Financial Markets]. A decline in the index indicates that, on average, the market capitalization and stock prices of Brazil's largest publicly traded companies decreased over this period [DERIVED: Interpreted from the L2 caption stating the index declined]. The year 2020 was marked by the global COVID-19 pandemic, which caused massive disruptions in global financial markets, including a major crash in March 2020 followed by a gradual, volatile recovery [SPECULATIVE: Economic History].",
+      "real_world_significance": "The decline in the IBOVESPA during 2020 reflects the severe economic impact of the COVID-19 pandemic on Brazil's economy, which faced lockdowns, supply chain disruptions, and fiscal strain [SPECULATIVE: Macroeconomics]. For investors, a declining index means reduced portfolio values and potential capital losses, particularly for those heavily exposed to Brazilian equities [SPECULATIVE: Investment Management]. For the Brazilian government and policymakers, a depressed stock market often correlates with lower business confidence, reduced foreign direct investment, and pressure to implement stimulative monetary or fiscal policies [SPECULATIVE: Public Policy].",
+      "other": "Although the X-axis is labeled 'Year' in the metadata, the actual data points and axis labels (such as 'April', 'July', and 'October') represent months within the single year of 2020 [DERIVED: Compared the X-axis label 'Year' with the scene graph labels and title dates]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the performance of Brazil's primary stock market index, the IBOVESPA, measured in Brazilian reals (BRL) from January 2 to October 15, 2020",
+        "The index started the year 2020 at approximately 118,573 BRL on January 2",
+        "Over the course of the period shown, the index experienced an overall decline"
+      ],
+      "derived_claims": [
+        "A decline in the index indicates that, on average, the market capitalization and stock prices of Brazil's largest publicly traded companies decreased over this period [derived from the L2 caption stating the index declined]",
+        "Although the X-axis is labeled 'Year' in the metadata, the actual data points and axis labels (such as 'April', 'July', and 'October') represent months within the single year of 2020 [derived from comparing the X-axis label 'Year' with the scene graph labels and title dates]"
+      ],
+      "speculative_claims": [
+        "This chart is likely used by financial analysts, investors, and economists to track the health of the Brazilian equity market during a highly volatile year [source: Financial Markets]",
+        "The IBOVESPA (Ibovespa Brasil Sao Paulo Stock Exchange Index) is a gross return index weighted by market value, representing the performance of the most liquid stocks traded on the B3 exchange [source: Financial Markets]",
+        "The year 2020 was marked by the global COVID-19 pandemic, which caused massive disruptions in global financial markets, including a major crash in March 2020 followed by a gradual, volatile recovery [source: Economic History]",
+        "The decline in the IBOVESPA during 2020 reflects the severe economic impact of the COVID-19 pandemic on Brazil's economy, which faced lockdowns, supply chain disruptions, and fiscal strain [source: Macroeconomics]",
+        "For investors, a declining index means reduced portfolio values and potential capital losses, particularly for those heavily exposed to Brazilian equities [source: Investment Management]",
+        "For the Brazilian government and policymakers, a depressed stock market often correlates with lower business confidence, reduced foreign direct investment, and pressure to implement stimulative monetary or fiscal policies [source: Public Policy]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11428.24166599894,
+  "created_at": "2026-07-07T22:40:02.959868Z"
+}

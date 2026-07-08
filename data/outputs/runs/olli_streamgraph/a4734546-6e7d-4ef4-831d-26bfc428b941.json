@@ -1,0 +1,64 @@
+{
+  "output_id": "a4734546-6e7d-4ef4-831d-26bfc428b941",
+  "chart_id": "olli_streamgraph",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No underlying data table or exact values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No statistical trends or magnitudes were provided in the metadata, though visual trends can be observed in the chart image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The subject domain (industry sectors/employment over time) is identifiable from the chart's legend and x-axis, but no explicit domain metadata was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a streamgraph showing employment or economic activity across various industry sectors from 2000 to 2010 [DERIVED: read from x-axis and legend in the chart image]. The sectors tracked include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade [DERIVED: read from the chart legend]. This dataset likely originates from the US Bureau of Labor Statistics (BLS) or a similar economic monitoring agency tracking employment trends over a decade [SPECULATIVE: US Bureau of Labor Statistics].\",\n    \"domain_specific_explanations\": \"A streamgraph is a type of stacked area graph displaced around a central, wavy axis, designed to show relative changes in proportions over time rather than absolute values [SPECULATIVE: Data Visualization Theory]. The x-axis represents time in year-month format, spanning from 2000 to 2010 [DERIVED: read from x-axis in the chart image]. The thickness of each colored stream represents the relative size or volume of that industry sector at a given point in time [SPECULATIVE: Data Visualization Theory]. A major shift is visible starting around late 2008, where the overall shape of the streamgraph shifts downwards and some streams contract, corresponding to the Great Recession [DERIVED: observed contraction and shift starting in late 2008 on the x-axis].\",\n    \"real_world_significance\": \"The period from 2000 to 2010 captures major economic events, most notably the 2008 global financial crisis (Great Recession) [SPECULATIVE: Modern Economic History]. During the recession starting in late 2007/2008, sectors like Construction, Manufacturing, and Financial activities experienced significant contractions, which is reflected in the narrowing of their respective streams or the overall downward shift of the streamgraph [DERIVED: observed narrowing of streams like Construction and Manufacturing and overall shift post-2008]. Conversely, sectors like Education and Health often remain relatively stable or grow during economic downturns due to their non-cyclical nature [SPECULATIVE: Labor Economics]. Policymakers and economists use this type of longitudinal industry data to identify structural shifts in the labor market and target economic recovery efforts [SPECULATIVE: Labor Economics].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"The chart is a streamgraph showing employment or economic activity across various industry sectors from 2000 to 2010\",\n      \"The sectors tracked include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade\",\n      \"The x-axis represents time in year-month format, spanning from 2000 to 2010\",\n      \"A major shift is visible starting around late 2008, where the overall shape of the streamgraph shifts downwards and some streams contract, corresponding to the Great Recession\",\n      \"During the recession starting in late 2007/2008, sectors like Construction, Manufacturing, and Financial activities experienced significant contractions, which is reflected in the narrowing of their respective streams or the overall downward shift of the streamgraph\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset likely originates from the US Bureau of Labor Statistics (BLS) or a similar economic monitoring agency tracking employment trends over a decade\",\n      \"A streamgraph is a type of stacked area graph displaced around a central, wavy axis, designed to show relative changes in proportions over time rather than absolute values\",\n      \"The thickness of each colored stream represents the relative size or volume of that industry sector at a given point in time\",\n      \"The period from 2000 to 2010 captures major economic events, most notably the 2008 global financial crisis (Great Recession)\",\n      \"Conversely, sectors like Education and Health often remain relatively stable or grow during economic downturns due to their non-cyclical nature\",\n      \"Policymakers and economists use this type of longitudinal industry data to identify structural shifts in the labor market and target economic recovery efforts\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 0,\n    \"derived_count\": 5,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No underlying data table or exact values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No statistical trends or magnitudes were provided in the metadata, though visual trends can be observed in the chart image."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The subject domain (industry sectors/employment over time) is identifiable from the chart's legend and x-axis, but no explicit domain metadata was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a streamgraph showing employment or economic activity across various industry sectors from 2000 to 2010 [DERIVED: read from x-axis and legend in the chart image]. The sectors tracked include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade [DERIVED: read from the chart legend]. This dataset likely originates from the US Bureau of Labor Statistics (BLS) or a similar economic monitoring agency tracking employment trends over a decade [SPECULATIVE: US Bureau of Labor Statistics].",
+      "domain_specific_explanations": "A streamgraph is a type of stacked area graph displaced around a central, wavy axis, designed to show relative changes in proportions over time rather than absolute values [SPECULATIVE: Data Visualization Theory]. The x-axis represents time in year-month format, spanning from 2000 to 2010 [DERIVED: read from x-axis in the chart image]. The thickness of each colored stream represents the relative size or volume of that industry sector at a given point in time [SPECULATIVE: Data Visualization Theory]. A major shift is visible starting around late 2008, where the overall shape of the streamgraph shifts downwards and some streams contract, corresponding to the Great Recession [DERIVED: observed contraction and shift starting in late 2008 on the x-axis].",
+      "real_world_significance": "The period from 2000 to 2010 captures major economic events, most notably the 2008 global financial crisis (Great Recession) [SPECULATIVE: Modern Economic History]. During the recession starting in late 2007/2008, sectors like Construction, Manufacturing, and Financial activities experienced significant contractions, which is reflected in the narrowing of their respective streams or the overall downward shift of the streamgraph [DERIVED: observed narrowing of streams like Construction and Manufacturing and overall shift post-2008]. Conversely, sectors like Education and Health often remain relatively stable or grow during economic downturns due to their non-cyclical nature [SPECULATIVE: Labor Economics]. Policymakers and economists use this type of longitudinal industry data to identify structural shifts in the labor market and target economic recovery efforts [SPECULATIVE: Labor Economics].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "The chart is a streamgraph showing employment or economic activity across various industry sectors from 2000 to 2010",
+        "The sectors tracked include Agriculture, Business services, Construction, Education and Health, Finance, Government, Information, Leisure and hospitality, Manufacturing, Mining and Extraction, Other, Self-employed, Transportation and Utilities, and Wholesale and Retail Trade",
+        "The x-axis represents time in year-month format, spanning from 2000 to 2010",
+        "A major shift is visible starting around late 2008, where the overall shape of the streamgraph shifts downwards and some streams contract, corresponding to the Great Recession",
+        "During the recession starting in late 2007/2008, sectors like Construction, Manufacturing, and Financial activities experienced significant contractions, which is reflected in the narrowing of their respective streams or the overall downward shift of the streamgraph"
+      ],
+      "speculative_claims": [
+        "This dataset likely originates from the US Bureau of Labor Statistics (BLS) or a similar economic monitoring agency tracking employment trends over a decade",
+        "A streamgraph is a type of stacked area graph displaced around a central, wavy axis, designed to show relative changes in proportions over time rather than absolute values",
+        "The thickness of each colored stream represents the relative size or volume of that industry sector at a given point in time",
+        "The period from 2000 to 2010 captures major economic events, most notably the 2008 global financial crisis (Great Recession)",
+        "Conversely, sectors like Education and Health often remain relatively stable or grow during economic downturns due to their non-cyclical nature",
+        "Policymakers and economists use this type of longitudinal industry data to identify structural shifts in the labor market and target economic recovery efforts"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 0,
+      "derived_count": 5,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12868.289957987145,
+  "created_at": "2026-07-08T14:30:05.922470Z"
+}

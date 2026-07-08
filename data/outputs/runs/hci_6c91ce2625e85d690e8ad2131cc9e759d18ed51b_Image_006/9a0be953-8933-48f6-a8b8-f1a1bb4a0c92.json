@@ -1,0 +1,80 @@
+{
+  "output_id": "9a0be953-8933-48f6-a8b8-f1a1bb4a0c92",
+  "chart_id": "hci_6c91ce2625e85d690e8ad2131cc9e759d18ed51b_Image_006",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data table is not provided, but some raw counts are visible on the chart bars in the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The alt text and title describe the general trend of varying awareness, but specific percentages are not fully detailed in text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (Online Status Indicators in popular apps) is clearly defined by the title and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides excellent context from a CHI 2020 paper, explaining the design factors influencing the data.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No explicit stakeholder context is provided, though it can be inferred for UX designers and privacy researchers.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a research paper published at the CHI 2020 conference [DIRECT]. It investigates user awareness of Online Status Indicators (OSIs) across 15 popular apps used by at least 10% of study participants [DIRECT]. The chart displays the percentage of participants who answered 'YES', 'NO', or 'NOT SURE' when asked if they think a specific app has OSIs [DERIVED: read from chart labels and legend]. The apps surveyed include Messenger, Discord, Skype, Facebook, Steam, Google Hangouts, Twitch, WhatsApp, Google Docs, Instagram, WordsWithFriends, Waze, Tumblr, LinkedIn, and MyFitnessPal [DERIVED: read from chart x-axis].\",\n    \"domain_specific_explanations\": \"Online Status Indicators (OSIs) are interface elements that show whether a user is currently active or online on a platform [SPECULATIVE: Human-Computer Interaction / UX Design]. The data shows a wide variation in user awareness of OSIs across different platforms [DERIVED: compared the distribution of answers across the 15 apps]. For some apps like Messenger and Discord, a vast majority of users correctly identified that they have OSIs [DERIVED: observed high 'YES' counts and proportions for Messenger and Discord]. Conversely, for apps like MyFitnessPal, very few users knew that the app had OSIs, with a high proportion of 'NOT SURE' responses [DIRECT]. The differences in awareness may be closely tied to how OSIs are designed and integrated into each app's user interface [DIRECT]. For example, OSIs on Instagram are only visible to users of its messaging feature, which likely means awareness correlates with whether a participant actually uses that specific feature [DIRECT].\",\n    \"real_world_significance\": \"Understanding user awareness of OSIs is critical for privacy and user experience design, as users may be broadcasting their online status without realizing it [SPECULATIVE: Privacy and UX Design]. If users are unaware that an app like MyFitnessPal has OSIs, they might inadvertently share their active status, potentially raising privacy concerns [SPECULATIVE: Privacy and UX Design]. For designers, this data suggests that the visibility and placement of OSIs significantly impact user awareness, and more explicit consent or clearer indicators may be needed for apps where OSIs are less expected, such as fitness or professional networking apps [SPECULATIVE: UX Design / CHI 2020].\",\n    \"other\": \"The data indicates a clear gradient of awareness, where communication-centric apps generally have higher OSI awareness compared to utility, fitness, or professional apps [DERIVED: compared app categories along the x-axis gradient].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a research paper published at the CHI 2020 conference\",\n      \"It investigates user awareness of Online Status Indicators (OSIs) across 15 popular apps used by at least 10% of study participants\",\n      \"For apps like MyFitnessPal, very few users knew that the app had OSIs\",\n      \"The differences in awareness may be closely tied to how OSIs are designed and integrated into each app's user interface\",\n      \"OSIs on Instagram are only visible to users of its messaging feature, which likely means awareness correlates with whether a participant actually uses that specific feature\"\n    ],\n    \"derived_claims\": [\n      \"The chart displays the percentage of participants who answered 'YES', 'NO', or 'NOT SURE' when asked if they think a specific app has OSIs\",\n      \"The apps surveyed include Messenger, Discord, Skype, Facebook, Steam, Google Hangouts, Twitch, WhatsApp, Google Docs, Instagram, WordsWithFriends, Waze, Tumblr, LinkedIn, and MyFitnessPal\",\n      \"The data shows a wide variation in user awareness of OSIs across different platforms\",\n      \"For some apps like Messenger and Discord, a vast majority of users correctly identified that they have OSIs\",\n      \"The data indicates a clear gradient of awareness, where communication-centric apps generally have higher OSI awareness compared to utility, fitness, or professional apps\"\n    ],\n    \"speculative_claims\": [\n      \"Online Status Indicators (OSIs) are interface elements that show whether a user is currently active or online on a platform\",\n      \"Understanding user awareness of OSIs is critical for privacy and user experience design, as users may be broadcasting their online status without realizing it\",\n      \"If users are unaware that an app like MyFitnessPal has OSIs, they might inadvertently share their active status, potentially raising privacy concerns\",\n      \"For designers, this data suggests that the visibility and placement of OSIs significantly impact user awareness, and more explicit consent or clearer indicators may be needed for apps where OSIs are less expected, such as fitness or professional networking apps\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 5,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data table is not provided, but some raw counts are visible on the chart bars in the image."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The alt text and title describe the general trend of varying awareness, but specific percentages are not fully detailed in text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (Online Status Indicators in popular apps) is clearly defined by the title and expert story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides excellent context from a CHI 2020 paper, explaining the design factors influencing the data."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No explicit stakeholder context is provided, though it can be inferred for UX designers and privacy researchers."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a research paper published at the CHI 2020 conference [DIRECT]. It investigates user awareness of Online Status Indicators (OSIs) across 15 popular apps used by at least 10% of study participants [DIRECT]. The chart displays the percentage of participants who answered 'YES', 'NO', or 'NOT SURE' when asked if they think a specific app has OSIs [DERIVED: read from chart labels and legend]. The apps surveyed include Messenger, Discord, Skype, Facebook, Steam, Google Hangouts, Twitch, WhatsApp, Google Docs, Instagram, WordsWithFriends, Waze, Tumblr, LinkedIn, and MyFitnessPal [DERIVED: read from chart x-axis].",
+      "domain_specific_explanations": "Online Status Indicators (OSIs) are interface elements that show whether a user is currently active or online on a platform [SPECULATIVE: Human-Computer Interaction / UX Design]. The data shows a wide variation in user awareness of OSIs across different platforms [DERIVED: compared the distribution of answers across the 15 apps]. For some apps like Messenger and Discord, a vast majority of users correctly identified that they have OSIs [DERIVED: observed high 'YES' counts and proportions for Messenger and Discord]. Conversely, for apps like MyFitnessPal, very few users knew that the app had OSIs, with a high proportion of 'NOT SURE' responses [DIRECT]. The differences in awareness may be closely tied to how OSIs are designed and integrated into each app's user interface [DIRECT]. For example, OSIs on Instagram are only visible to users of its messaging feature, which likely means awareness correlates with whether a participant actually uses that specific feature [DIRECT].",
+      "real_world_significance": "Understanding user awareness of OSIs is critical for privacy and user experience design, as users may be broadcasting their online status without realizing it [SPECULATIVE: Privacy and UX Design]. If users are unaware that an app like MyFitnessPal has OSIs, they might inadvertently share their active status, potentially raising privacy concerns [SPECULATIVE: Privacy and UX Design]. For designers, this data suggests that the visibility and placement of OSIs significantly impact user awareness, and more explicit consent or clearer indicators may be needed for apps where OSIs are less expected, such as fitness or professional networking apps [SPECULATIVE: UX Design / CHI 2020].",
+      "other": "The data indicates a clear gradient of awareness, where communication-centric apps generally have higher OSI awareness compared to utility, fitness, or professional apps [DERIVED: compared app categories along the x-axis gradient]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a research paper published at the CHI 2020 conference",
+        "It investigates user awareness of Online Status Indicators (OSIs) across 15 popular apps used by at least 10% of study participants",
+        "For apps like MyFitnessPal, very few users knew that the app had OSIs",
+        "The differences in awareness may be closely tied to how OSIs are designed and integrated into each app's user interface",
+        "OSIs on Instagram are only visible to users of its messaging feature, which likely means awareness correlates with whether a participant actually uses that specific feature"
+      ],
+      "derived_claims": [
+        "The chart displays the percentage of participants who answered 'YES', 'NO', or 'NOT SURE' when asked if they think a specific app has OSIs",
+        "The apps surveyed include Messenger, Discord, Skype, Facebook, Steam, Google Hangouts, Twitch, WhatsApp, Google Docs, Instagram, WordsWithFriends, Waze, Tumblr, LinkedIn, and MyFitnessPal",
+        "The data shows a wide variation in user awareness of OSIs across different platforms",
+        "For some apps like Messenger and Discord, a vast majority of users correctly identified that they have OSIs",
+        "The data indicates a clear gradient of awareness, where communication-centric apps generally have higher OSI awareness compared to utility, fitness, or professional apps"
+      ],
+      "speculative_claims": [
+        "Online Status Indicators (OSIs) are interface elements that show whether a user is currently active or online on a platform",
+        "Understanding user awareness of OSIs is critical for privacy and user experience design, as users may be broadcasting their online status without realizing it",
+        "If users are unaware that an app like MyFitnessPal has OSIs, they might inadvertently share their active status, potentially raising privacy concerns",
+        "For designers, this data suggests that the visibility and placement of OSIs significantly impact user awareness, and more explicit consent or clearer indicators may be needed for apps where OSIs are less expected, such as fitness or professional networking apps"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 5,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12369.354416034184,
+  "created_at": "2026-07-07T23:29:36.484958Z"
+}

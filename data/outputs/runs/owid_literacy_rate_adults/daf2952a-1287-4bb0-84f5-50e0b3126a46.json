@@ -1,0 +1,77 @@
+{
+  "output_id": "daf2952a-1287-4bb0-84f5-50e0b3126a46",
+  "chart_id": "owid_literacy_rate_adults",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The map provides categorized ranges (10% intervals) for countries rather than precise continuous values, and several major regions are marked as 'No data'.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The chart is a single-year snapshot (2023) and does not show temporal trends or changes over time.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, subtitle, and data source clearly define the subject domain as global adult literacy rates.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The definition of literacy is provided, but deeper domain context regarding how UNESCO collects this data or why certain countries lack data is absent.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"The chart does not explicitly mention policy implications, stakeholders, or the real-world impact of these literacy rates.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a world map showing adult literacy rates in 2023, published by Our World in Data [DIRECT]. It defines literacy as the share of adults aged 15 and older who can read and write a simple sentence about their daily life [DIRECT]. The data is sourced from the UNESCO Institute for Statistics (2025) [DIRECT]. Notably, many high-income nations (such as the US, Canada, Western Europe, and Australia) are marked as 'No data' [DERIVED: read from map legend and hatched regions]. This lack of data for developed nations might be because these countries often do not collect basic literacy data in standard census formats anymore, assuming near-universal literacy, or because UNESCO's reporting cycles differ [SPECULATIVE: international education statistics].\",\n    \"domain_specific_explanations\": \"Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: development economics]. The threshold used here—reading and writing a simple sentence—represents basic literacy rather than functional or digital literacy [DERIVED: compared subtitle definition to broader definitions of literacy]. The map shows that most of Latin America, Northern Asia (Russia), East Asia (China), and Southeast Asia have achieved high adult literacy rates of 90% to 100% [DERIVED: read from map colors and legend]. In contrast, parts of Sub-Saharan Africa and South/Central Asia (such as Afghanistan) exhibit much lower literacy rates, with some regions falling below 50% [DERIVED: read from map colors and legend]. These disparities often reflect historical underinvestment in primary education, gender gaps in school enrollment, and ongoing regional conflicts [SPECULATIVE: development economics].\",\n    \"real_world_significance\": \"Low literacy rates directly hinder economic development, as individuals without basic reading and writing skills face severe barriers to formal employment and financial inclusion [SPECULATIVE: development economics]. Improving literacy is a core target of the United Nations Sustainable Development Goal 4 (Quality Education) [SPECULATIVE: United Nations SDGs]. The high literacy rates (90-100%) across South America and East Asia suggest successful historical literacy campaigns and widespread primary education access over the past several decades [SPECULATIVE: global education history]. Conversely, the low rates in regions like the Sahel and Afghanistan highlight where international aid and national policy interventions are most urgently needed to combat poverty and inequality [SPECULATIVE: international development policy].\",\n    \"other\": \"The map uses a 10-percentage-point interval scale to categorize literacy rates globally [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a world map showing adult literacy rates in 2023, published by Our World in Data\",\n      \"It defines literacy as the share of adults aged 15 and older who can read and write a simple sentence about their daily life\",\n      \"The data is sourced from the UNESCO Institute for Statistics (2025)\",\n      \"The map uses a 10-percentage-point interval scale to categorize literacy rates globally\"\n    ],\n    \"derived_claims\": [\n      \"Many high-income nations (such as the US, Canada, Western Europe, and Australia) are marked as 'No data'\",\n      \"The threshold used here—reading and writing a simple sentence—represents basic literacy rather than functional or digital literacy\",\n      \"The map shows that most of Latin America, Northern Asia (Russia), East Asia (China), and Southeast Asia have achieved high adult literacy rates of 90% to 100%\",\n      \"In contrast, parts of Sub-Saharan Africa and South/Central Asia (such as Afghanistan) exhibit much lower literacy rates, with some regions falling below 50%\"\n    ],\n    \"speculative_claims\": [\n      \"This lack of data for developed nations might be because these countries often do not collect basic literacy data in standard census formats anymore, assuming near-universal literacy, or because UNESCO's reporting cycles differ\",\n      \"Literacy is a fundamental metric of educational attainment and human capital\",\n      \"These disparities often reflect historical underinvestment in primary education, gender gaps in school enrollment, and ongoing regional conflicts\",\n      \"Low literacy rates directly hinder economic development, as individuals without basic reading and writing skills face severe barriers to formal employment and financial inclusion\",\n      \"Improving literacy is a core target of the United Nations Sustainable Development Goal 4 (Quality Education)\",\n      \"The high literacy rates (90-100%) across South America and East Asia suggest successful historical literacy campaigns and widespread primary education access over the past several decades\",\n      \"Conversely, the low rates in regions like the Sahel and Afghanistan highlight where international aid and national policy interventions are most urgently needed to combat poverty and inequality\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The map provides categorized ranges (10% intervals) for countries rather than precise continuous values, and several major regions are marked as 'No data'."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart is a single-year snapshot (2023) and does not show temporal trends or changes over time."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, subtitle, and data source clearly define the subject domain as global adult literacy rates."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The definition of literacy is provided, but deeper domain context regarding how UNESCO collects this data or why certain countries lack data is absent."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "The chart does not explicitly mention policy implications, stakeholders, or the real-world impact of these literacy rates."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a world map showing adult literacy rates in 2023, published by Our World in Data [DIRECT]. It defines literacy as the share of adults aged 15 and older who can read and write a simple sentence about their daily life [DIRECT]. The data is sourced from the UNESCO Institute for Statistics (2025) [DIRECT]. Notably, many high-income nations (such as the US, Canada, Western Europe, and Australia) are marked as 'No data' [DERIVED: read from map legend and hatched regions]. This lack of data for developed nations might be because these countries often do not collect basic literacy data in standard census formats anymore, assuming near-universal literacy, or because UNESCO's reporting cycles differ [SPECULATIVE: international education statistics].",
+      "domain_specific_explanations": "Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: development economics]. The threshold used here—reading and writing a simple sentence—represents basic literacy rather than functional or digital literacy [DERIVED: compared subtitle definition to broader definitions of literacy]. The map shows that most of Latin America, Northern Asia (Russia), East Asia (China), and Southeast Asia have achieved high adult literacy rates of 90% to 100% [DERIVED: read from map colors and legend]. In contrast, parts of Sub-Saharan Africa and South/Central Asia (such as Afghanistan) exhibit much lower literacy rates, with some regions falling below 50% [DERIVED: read from map colors and legend]. These disparities often reflect historical underinvestment in primary education, gender gaps in school enrollment, and ongoing regional conflicts [SPECULATIVE: development economics].",
+      "real_world_significance": "Low literacy rates directly hinder economic development, as individuals without basic reading and writing skills face severe barriers to formal employment and financial inclusion [SPECULATIVE: development economics]. Improving literacy is a core target of the United Nations Sustainable Development Goal 4 (Quality Education) [SPECULATIVE: United Nations SDGs]. The high literacy rates (90-100%) across South America and East Asia suggest successful historical literacy campaigns and widespread primary education access over the past several decades [SPECULATIVE: global education history]. Conversely, the low rates in regions like the Sahel and Afghanistan highlight where international aid and national policy interventions are most urgently needed to combat poverty and inequality [SPECULATIVE: international development policy].",
+      "other": "The map uses a 10-percentage-point interval scale to categorize literacy rates globally [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a world map showing adult literacy rates in 2023, published by Our World in Data",
+        "It defines literacy as the share of adults aged 15 and older who can read and write a simple sentence about their daily life",
+        "The data is sourced from the UNESCO Institute for Statistics (2025)",
+        "The map uses a 10-percentage-point interval scale to categorize literacy rates globally"
+      ],
+      "derived_claims": [
+        "Many high-income nations (such as the US, Canada, Western Europe, and Australia) are marked as 'No data'",
+        "The threshold used here—reading and writing a simple sentence—represents basic literacy rather than functional or digital literacy",
+        "The map shows that most of Latin America, Northern Asia (Russia), East Asia (China), and Southeast Asia have achieved high adult literacy rates of 90% to 100%",
+        "In contrast, parts of Sub-Saharan Africa and South/Central Asia (such as Afghanistan) exhibit much lower literacy rates, with some regions falling below 50%"
+      ],
+      "speculative_claims": [
+        "This lack of data for developed nations might be because these countries often do not collect basic literacy data in standard census formats anymore, assuming near-universal literacy, or because UNESCO's reporting cycles differ",
+        "Literacy is a fundamental metric of educational attainment and human capital",
+        "These disparities often reflect historical underinvestment in primary education, gender gaps in school enrollment, and ongoing regional conflicts",
+        "Low literacy rates directly hinder economic development, as individuals without basic reading and writing skills face severe barriers to formal employment and financial inclusion",
+        "Improving literacy is a core target of the United Nations Sustainable Development Goal 4 (Quality Education)",
+        "The high literacy rates (90-100%) across South America and East Asia suggest successful historical literacy campaigns and widespread primary education access over the past several decades",
+        "Conversely, the low rates in regions like the Sahel and Afghanistan highlight where international aid and national policy interventions are most urgently needed to combat poverty and inequality"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13634.34241595678,
+  "created_at": "2026-07-07T22:58:40.981204Z"
+}

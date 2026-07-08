@@ -1,0 +1,73 @@
+{
+  "output_id": "a33ace21-d7ea-4053-b920-a071a34e449f",
+  "chart_id": "owid_literacy_rate_adults",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table provided but does not include all countries or regions shown on the map.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No specific trend magnitudes provided.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"Domain is education/literacy, but some context is assumed.\"},\n      \"domain_expert_context\": {\"score\": 4, \"justification\": \"Expert domain story provided, but could be more detailed.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context provided.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows literacy rates among adults aged 15 years and older in 2023 [DIRECT]. It is produced by Our World in Data, an organization that provides data-driven insights on various topics [SPECULATIVE: https://ourworldindata.org/]. The data is sourced from the UNESCO Institute for Statistics [DIRECT].\",\n    \"domain_specific_explanations\": \"Literacy rate is defined as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DIRECT]. The data ranges from 0% to 100%, with higher values indicating higher literacy rates [DIRECT].\",\n    \"real_world_significance\": \"Literacy rates have significant implications for education, economic development, and social mobility [SPECULATIVE: general knowledge of education and economics]. Countries with high literacy rates tend to have better economic outcomes and higher standards of living [SPECULATIVE: general knowledge of education and economics].\",\n    \"other\": \"The chart uses a color-coded map to display literacy rates across different countries [DIRECT]. Countries with no data are shown in a distinct pattern [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows literacy rates among adults aged 15 years and older in 2023\",\n      \"The data is sourced from the UNESCO Institute for Statistics\",\n      \"Literacy rate is defined as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life\",\n      \"The chart uses a color-coded map to display literacy rates across different countries\",\n      \"Countries with no data are shown in a distinct pattern\"\n    ],\n    \"derived_claims\": [],\n    \"speculative_claims\": [\n      \"It is produced by Our World in Data, an organization that provides data-driven insights on various topics\",\n      \"Literacy rates have significant implications for education, economic development, and social mobility\",\n      \"Countries with high literacy rates tend to have better economic outcomes and higher standards of living\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 5,\n    \"derived_count\": 0,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table provided but does not include all countries or regions shown on the map."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No specific trend magnitudes provided."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "Domain is education/literacy, but some context is assumed."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "Expert domain story provided, but could be more detailed."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows literacy rates among adults aged 15 years and older in 2023 [DIRECT]. It is produced by Our World in Data, an organization that provides data-driven insights on various topics [SPECULATIVE: https://ourworldindata.org/]. The data is sourced from the UNESCO Institute for Statistics [DIRECT].",
+      "domain_specific_explanations": "Literacy rate is defined as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DIRECT]. The data ranges from 0% to 100%, with higher values indicating higher literacy rates [DIRECT].",
+      "real_world_significance": "Literacy rates have significant implications for education, economic development, and social mobility [SPECULATIVE: general knowledge of education and economics]. Countries with high literacy rates tend to have better economic outcomes and higher standards of living [SPECULATIVE: general knowledge of education and economics].",
+      "other": "The chart uses a color-coded map to display literacy rates across different countries [DIRECT]. Countries with no data are shown in a distinct pattern [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows literacy rates among adults aged 15 years and older in 2023",
+        "The data is sourced from the UNESCO Institute for Statistics",
+        "Literacy rate is defined as the share of adults aged 15 years and older who can read and write a simple sentence about their daily life",
+        "The chart uses a color-coded map to display literacy rates across different countries",
+        "Countries with no data are shown in a distinct pattern"
+      ],
+      "derived_claims": [],
+      "speculative_claims": [
+        "It is produced by Our World in Data, an organization that provides data-driven insights on various topics",
+        "Literacy rates have significant implications for education, economic development, and social mobility",
+        "Countries with high literacy rates tend to have better economic outcomes and higher standards of living"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 5,
+      "derived_count": 0,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 2528,
+    "output": 645
+  },
+  "latency_ms": 2166.7242919793352,
+  "created_at": "2026-07-08T00:16:58.102124Z"
+}

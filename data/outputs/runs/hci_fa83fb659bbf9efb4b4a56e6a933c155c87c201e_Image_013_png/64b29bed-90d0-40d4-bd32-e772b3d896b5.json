@@ -1,0 +1,73 @@
+{
+  "output_id": "64b29bed-90d0-40d4-bd32-e772b3d896b5",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_013_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The scatter plot shows individual data points and axes with ranges, but the exact numerical values for each participant's scores are not accessible without the raw dataset.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The regression lines clearly show a negative trend, but specific statistical values such as correlation coefficients (r), slopes, R-squared, or p-values are not provided on the chart.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The axis labels ('CES-D Depression Score' and '2way SSS Social Support') and legend ('discriminated?') make it highly clear that the chart belongs to the domain of psychology, mental health, or behavioral sciences.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 1,\n        \"justification\": \"No background information is provided regarding the study's cohort, sample size, geographic location, or specific methodology.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"There is no explicit context regarding how this data will be used, who the stakeholders are, or what decisions depend on these findings.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot with linear regression lines showing the relationship between depression scores and social support, grouped by experiences of discrimination [DERIVED: read from axes, legend, and plot elements]. The X-axis represents the 'CES-D Depression Score' and the Y-axis represents '2way SSS Social Support' [DIRECT]. The data is split into two groups based on whether the participants experienced discrimination ('YES' or 'NO') [DIRECT]. This chart likely comes from a psychological or sociological study examining the buffering effects of social support on depression, or how discrimination impacts these variables [SPECULATIVE: Psychology/Sociology literature].\",\n    \"domain_specific_explanations\": \"The CES-D (Center for Epidemiologic Studies Depression Scale) is a widely used self-report measure where higher scores indicate greater depressive symptomatology, typically ranging from 0 to 60 [SPECULATIVE: Clinical Psychology]. The '2way SSS' likely refers to the Two-Way Social Support Scale, which measures both receiving and giving social support [SPECULATIVE: Psychometrics]. Both groups ('YES' and 'NO' for discrimination) show a negative correlation: higher depression scores are associated with lower social support [DERIVED: observed negative slopes of both regression lines]. The regression line for those who experienced discrimination ('YES') has a steeper negative slope compared to those who did not ('NO'), suggesting that the decline in social support as depression increases is more pronounced among those experiencing discrimination [DERIVED: comparison of the slopes of the orange and blue lines].\",\n    \"real_world_significance\": \"This data highlights the critical intersection of discrimination, social support, and mental health [SPECULATIVE: Public Health]. For individuals experiencing discrimination, maintaining high social support may be more difficult or more critical, as indicated by the steeper decline in the orange regression line [DERIVED: interpretation of the steeper orange slope]. Mental health professionals and policymakers can use this to design targeted interventions that bolster social support networks specifically for marginalized groups facing discrimination [SPECULATIVE: Social Policy].\",\n    \"other\": \"The confidence intervals (shaded regions) widen significantly at higher CES-D scores, indicating fewer data points and greater uncertainty in the relationship at extreme depression levels [DERIVED: observation of the widening shaded bands at the right side of the plot].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The X-axis represents the 'CES-D Depression Score' and the Y-axis represents '2way SSS Social Support'.\",\n      \"The data is split into two groups based on whether the participants experienced discrimination ('YES' or 'NO').\"\n    ],\n    \"derived_claims\": [\n      \"The chart is a scatter plot with linear regression lines showing the relationship between depression scores and social support, grouped by experiences of discrimination [derived from reading axes, legend, and plot elements].\",\n      \"Both groups ('YES' and 'NO' for discrimination) show a negative correlation: higher depression scores are associated with lower social support [derived from observing negative slopes of both regression lines].\",\n      \"The regression line for those who experienced discrimination ('YES') has a steeper negative slope compared to those who did not ('NO') [derived from comparing the slopes of the orange and blue lines].\",\n      \"The confidence intervals (shaded regions) widen significantly at higher CES-D scores, indicating fewer data points and greater uncertainty in the relationship at extreme depression levels [derived from observing the widening shaded bands at the right side of the plot].\"\n    ],\n    \"speculative_claims\": [\n      \"This chart likely comes from a psychological or sociological study examining the buffering effects of social support on depression, or how discrimination impacts these variables [Source: Psychology/Sociology literature].\",\n      \"The CES-D (Center for Epidemiologic Studies Depression Scale) is a widely used self-report measure where higher scores indicate greater depressive symptomatology, typically ranging from 0 to 60 [Source: Clinical Psychology].\",\n      \"The '2way SSS' likely refers to the Two-Way Social Support Scale, which measures both receiving and giving social support [Source: Psychometrics].\",\n      \"This data highlights the critical intersection of discrimination, social support, and mental health [Source: Public Health].\",\n      \"Mental health professionals and policymakers can use this to design targeted interventions that bolster social support networks specifically for marginalized groups facing discrimination [Source: Social Policy].\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The scatter plot shows individual data points and axes with ranges, but the exact numerical values for each participant's scores are not accessible without the raw dataset."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The regression lines clearly show a negative trend, but specific statistical values such as correlation coefficients (r), slopes, R-squared, or p-values are not provided on the chart."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The axis labels ('CES-D Depression Score' and '2way SSS Social Support') and legend ('discriminated?') make it highly clear that the chart belongs to the domain of psychology, mental health, or behavioral sciences."
+        },
+        "domain_expert_context": {
+          "score": 1,
+          "justification": "No background information is provided regarding the study's cohort, sample size, geographic location, or specific methodology."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "There is no explicit context regarding how this data will be used, who the stakeholders are, or what decisions depend on these findings."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot with linear regression lines showing the relationship between depression scores and social support, grouped by experiences of discrimination [DERIVED: read from axes, legend, and plot elements]. The X-axis represents the 'CES-D Depression Score' and the Y-axis represents '2way SSS Social Support' [DIRECT]. The data is split into two groups based on whether the participants experienced discrimination ('YES' or 'NO') [DIRECT]. This chart likely comes from a psychological or sociological study examining the buffering effects of social support on depression, or how discrimination impacts these variables [SPECULATIVE: Psychology/Sociology literature].",
+      "domain_specific_explanations": "The CES-D (Center for Epidemiologic Studies Depression Scale) is a widely used self-report measure where higher scores indicate greater depressive symptomatology, typically ranging from 0 to 60 [SPECULATIVE: Clinical Psychology]. The '2way SSS' likely refers to the Two-Way Social Support Scale, which measures both receiving and giving social support [SPECULATIVE: Psychometrics]. Both groups ('YES' and 'NO' for discrimination) show a negative correlation: higher depression scores are associated with lower social support [DERIVED: observed negative slopes of both regression lines]. The regression line for those who experienced discrimination ('YES') has a steeper negative slope compared to those who did not ('NO'), suggesting that the decline in social support as depression increases is more pronounced among those experiencing discrimination [DERIVED: comparison of the slopes of the orange and blue lines].",
+      "real_world_significance": "This data highlights the critical intersection of discrimination, social support, and mental health [SPECULATIVE: Public Health]. For individuals experiencing discrimination, maintaining high social support may be more difficult or more critical, as indicated by the steeper decline in the orange regression line [DERIVED: interpretation of the steeper orange slope]. Mental health professionals and policymakers can use this to design targeted interventions that bolster social support networks specifically for marginalized groups facing discrimination [SPECULATIVE: Social Policy].",
+      "other": "The confidence intervals (shaded regions) widen significantly at higher CES-D scores, indicating fewer data points and greater uncertainty in the relationship at extreme depression levels [DERIVED: observation of the widening shaded bands at the right side of the plot]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The X-axis represents the 'CES-D Depression Score' and the Y-axis represents '2way SSS Social Support'.",
+        "The data is split into two groups based on whether the participants experienced discrimination ('YES' or 'NO')."
+      ],
+      "derived_claims": [
+        "The chart is a scatter plot with linear regression lines showing the relationship between depression scores and social support, grouped by experiences of discrimination [derived from reading axes, legend, and plot elements].",
+        "Both groups ('YES' and 'NO' for discrimination) show a negative correlation: higher depression scores are associated with lower social support [derived from observing negative slopes of both regression lines].",
+        "The regression line for those who experienced discrimination ('YES') has a steeper negative slope compared to those who did not ('NO') [derived from comparing the slopes of the orange and blue lines].",
+        "The confidence intervals (shaded regions) widen significantly at higher CES-D scores, indicating fewer data points and greater uncertainty in the relationship at extreme depression levels [derived from observing the widening shaded bands at the right side of the plot]."
+      ],
+      "speculative_claims": [
+        "This chart likely comes from a psychological or sociological study examining the buffering effects of social support on depression, or how discrimination impacts these variables [Source: Psychology/Sociology literature].",
+        "The CES-D (Center for Epidemiologic Studies Depression Scale) is a widely used self-report measure where higher scores indicate greater depressive symptomatology, typically ranging from 0 to 60 [Source: Clinical Psychology].",
+        "The '2way SSS' likely refers to the Two-Way Social Support Scale, which measures both receiving and giving social support [Source: Psychometrics].",
+        "This data highlights the critical intersection of discrimination, social support, and mental health [Source: Public Health].",
+        "Mental health professionals and policymakers can use this to design targeted interventions that bolster social support networks specifically for marginalized groups facing discrimination [Source: Social Policy]."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12905.73041595053,
+  "created_at": "2026-07-07T23:34:57.922293Z"
+}

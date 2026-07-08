@@ -1,0 +1,82 @@
+{
+  "output_id": "567830a7-be05-42b1-b1ba-4309191a97b0",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides 2023/2024 cross-sectional data for many countries, including France, but does not contain the full historical time-series data for France (1816-2023) shown in the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The historical trends and dramatic mortality spikes are highly visible in the image but cannot be calculated from the single-year snapshot provided in the data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain of demography, cohort survival, and life expectancy is clear from the title and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 5,\n        \"justification\": \"The expert domain story provides an excellent, clear explanation of how to interpret the survival percentile lines.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Survival ages across the population, France, 1816 to 2023', is a longitudinal demographic visualization [DERIVED: Read from chart image]. Published by Our World in Data, it tracks how survival ages across different percentiles of the French population have evolved over more than two centuries [SPECULATIVE: Our World in Data website]. While the chart image focuses on France's historical trajectory, the accompanying dataset provides a modern global comparison of these survival percentiles for the years 2023 and 2024 [DERIVED: Compared chart image title with data table entities].\",\n    \"domain_specific_explanations\": \"Each line represents the age to which a specific percentage of a cohort born in a given year would survive if they experienced that year's age-specific mortality rates throughout their lives [DIRECT]. For example, the '99%' line indicates the age that 99% of the population survived past [DERIVED: Interpreted from expert domain story]. In France in 2023, 99% of the population survived to at least 32.79 years of age [DIRECT], whereas in 1816, the 99% survival age was near zero, indicating that more than 1% of infants died shortly after birth [DERIVED: Read from chart image]. Conversely, the 'Top 1%' line represents the age reached by the longest-lived 1% of the population [DIRECT], which for France in 2023 was 102.67 years [DIRECT].\",\n    \"real_world_significance\": \"The dramatic upward shift of the lower percentile lines (such as the 99% and 90% lines) over the 20th century reflects the monumental public health achievements in reducing infant and child mortality through clean water, sanitation, vaccines, and modern medicine [SPECULATIVE: Public Health History]. The historical timeline for France is marked by severe downward spikes, most notably during the Franco-Prussian War (1870-1871), World War I (1914-1918) combined with the Spanish Flu pandemic, and World War II (1939-1945), illustrating how conflict and disease catastrophically lowered survival ages across all cohorts [SPECULATIVE: European History]. Today, these metrics are vital for actuaries, pension planners, and policymakers who must design sustainable social security and healthcare systems for rapidly aging populations [SPECULATIVE: Actuarial Science and Public Policy].\",\n    \"other\": \"Comparing France's 2023 data to other nations in the dataset, France's Top 1% survival age of 102.67 years [DIRECT] is slightly lower than Hong Kong's (105.3 years) [DERIVED: Compared rows in data table] but higher than that of the United States (101.67 years) [DERIVED: Compared rows in data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"Each line represents the age to which a specific percentage of a cohort born in a given year would survive if they experienced that year's age-specific mortality rates throughout their lives.\",\n      \"In France in 2023, 99% of the population survived to at least 32.79 years of age.\",\n      \"the 'Top 1%' line represents the age reached by the longest-lived 1% of the population\",\n      \"for France in 2023 was 102.67 years\",\n      \"France's Top 1% survival age of 102.67 years\"\n    ],\n    \"derived_claims\": [\n      \"The chart, titled 'Survival ages across the population, France, 1816 to 2023', is a longitudinal demographic visualization [derived from reading the chart image title and axes].\",\n      \"tracks how survival ages across different percentiles of the French population have evolved over more than two centuries [derived from reading the chart image x-axis and line labels].\",\n      \"Compared chart image title with data table entities [derived from comparing the France-only image with the multi-country data table].\",\n      \"the '99%' line indicates the age that 99% of the population survived past [derived from applying the expert domain story explanation to the 99% metric].\",\n      \"whereas in 1816, the 99% survival age was near zero, indicating that more than 1% of infants died shortly after birth [derived from reading the 99% line at the year 1816 on the chart image].\",\n      \"Compared rows in data table [derived from comparing France's 102.67 years to Hong Kong's 105.3 years].\",\n      \"Compared rows in data table [derived from comparing France's 102.67 years to the United States' 101.67 years].\"\n    ],\n    \"speculative_claims\": [\n      \"Published by Our World in Data [source: Our World in Data website/logo]\",\n      \"reflects the monumental public health achievements in reducing infant and child mortality through clean water, sanitation, vaccines, and modern medicine [source: Public Health History]\",\n      \"most notably during the Franco-Prussian War (1870-1871), World War I (1914-1918) combined with the Spanish Flu pandemic, and World War II (1939-1945) [source: European History]\",\n      \"These metrics are vital for actuaries, pension planners, and policymakers who must design sustainable social security and healthcare systems for rapidly aging populations [source: Actuarial Science and Public Policy]\"\n    ],\n    \"total_flag_count\": 16,\n    \"direct_count\": 5,\n    \"derived_count\": 7,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides 2023/2024 cross-sectional data for many countries, including France, but does not contain the full historical time-series data for France (1816-2023) shown in the chart image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The historical trends and dramatic mortality spikes are highly visible in the image but cannot be calculated from the single-year snapshot provided in the data table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain of demography, cohort survival, and life expectancy is clear from the title and expert story."
+        },
+        "domain_expert_context": {
+          "score": 5,
+          "justification": "The expert domain story provides an excellent, clear explanation of how to interpret the survival percentile lines."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Survival ages across the population, France, 1816 to 2023', is a longitudinal demographic visualization [DERIVED: Read from chart image]. Published by Our World in Data, it tracks how survival ages across different percentiles of the French population have evolved over more than two centuries [SPECULATIVE: Our World in Data website]. While the chart image focuses on France's historical trajectory, the accompanying dataset provides a modern global comparison of these survival percentiles for the years 2023 and 2024 [DERIVED: Compared chart image title with data table entities].",
+      "domain_specific_explanations": "Each line represents the age to which a specific percentage of a cohort born in a given year would survive if they experienced that year's age-specific mortality rates throughout their lives [DIRECT]. For example, the '99%' line indicates the age that 99% of the population survived past [DERIVED: Interpreted from expert domain story]. In France in 2023, 99% of the population survived to at least 32.79 years of age [DIRECT], whereas in 1816, the 99% survival age was near zero, indicating that more than 1% of infants died shortly after birth [DERIVED: Read from chart image]. Conversely, the 'Top 1%' line represents the age reached by the longest-lived 1% of the population [DIRECT], which for France in 2023 was 102.67 years [DIRECT].",
+      "real_world_significance": "The dramatic upward shift of the lower percentile lines (such as the 99% and 90% lines) over the 20th century reflects the monumental public health achievements in reducing infant and child mortality through clean water, sanitation, vaccines, and modern medicine [SPECULATIVE: Public Health History]. The historical timeline for France is marked by severe downward spikes, most notably during the Franco-Prussian War (1870-1871), World War I (1914-1918) combined with the Spanish Flu pandemic, and World War II (1939-1945), illustrating how conflict and disease catastrophically lowered survival ages across all cohorts [SPECULATIVE: European History]. Today, these metrics are vital for actuaries, pension planners, and policymakers who must design sustainable social security and healthcare systems for rapidly aging populations [SPECULATIVE: Actuarial Science and Public Policy].",
+      "other": "Comparing France's 2023 data to other nations in the dataset, France's Top 1% survival age of 102.67 years [DIRECT] is slightly lower than Hong Kong's (105.3 years) [DERIVED: Compared rows in data table] but higher than that of the United States (101.67 years) [DERIVED: Compared rows in data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "Each line represents the age to which a specific percentage of a cohort born in a given year would survive if they experienced that year's age-specific mortality rates throughout their lives.",
+        "In France in 2023, 99% of the population survived to at least 32.79 years of age.",
+        "the 'Top 1%' line represents the age reached by the longest-lived 1% of the population",
+        "for France in 2023 was 102.67 years",
+        "France's Top 1% survival age of 102.67 years"
+      ],
+      "derived_claims": [
+        "The chart, titled 'Survival ages across the population, France, 1816 to 2023', is a longitudinal demographic visualization [derived from reading the chart image title and axes].",
+        "tracks how survival ages across different percentiles of the French population have evolved over more than two centuries [derived from reading the chart image x-axis and line labels].",
+        "Compared chart image title with data table entities [derived from comparing the France-only image with the multi-country data table].",
+        "the '99%' line indicates the age that 99% of the population survived past [derived from applying the expert domain story explanation to the 99% metric].",
+        "whereas in 1816, the 99% survival age was near zero, indicating that more than 1% of infants died shortly after birth [derived from reading the 99% line at the year 1816 on the chart image].",
+        "Compared rows in data table [derived from comparing France's 102.67 years to Hong Kong's 105.3 years].",
+        "Compared rows in data table [derived from comparing France's 102.67 years to the United States' 101.67 years]."
+      ],
+      "speculative_claims": [
+        "Published by Our World in Data [source: Our World in Data website/logo]",
+        "reflects the monumental public health achievements in reducing infant and child mortality through clean water, sanitation, vaccines, and modern medicine [source: Public Health History]",
+        "most notably during the Franco-Prussian War (1870-1871), World War I (1914-1918) combined with the Spanish Flu pandemic, and World War II (1939-1945) [source: European History]",
+        "These metrics are vital for actuaries, pension planners, and policymakers who must design sustainable social security and healthcare systems for rapidly aging populations [source: Actuarial Science and Public Policy]"
+      ],
+      "total_flag_count": 16,
+      "direct_count": 5,
+      "derived_count": 7,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13687.618999974802,
+  "created_at": "2026-07-07T22:43:47.629439Z"
+}

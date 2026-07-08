@@ -1,0 +1,74 @@
+{
+  "output_id": "6375b0b4-9345-433e-bb08-568914631e3a",
+  "chart_id": "vistext_887",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides some exact values but is mostly truncated.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart image and L2 caption provide information about the trend and its magnitude.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and axis labels clearly indicate the subject domain as Brazil's IBOVESPA stock exchange index.\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No expert domain story or stakeholder context is provided.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context is provided.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart represents Brazil's IBOVESPA stock exchange index from January 2 to October 15, 2020, measured in Brazilian reals [DIRECT]. The index is a benchmark for the Brazilian stock market [SPECULATIVE: general knowledge of stock market indices].\",\n    \"domain_specific_explanations\": \"The IBOVESPA index is a stock index that represents the performance of the Brazilian stock market [SPECULATIVE: general knowledge of stock market indices]. The values on the y-axis range from 0 to 120,000 Brazilian reals [DIRECT]. The chart shows a decline in the index from January 2 to April 2020, followed by a relatively stable trend from April to October 2020 [DERIVED: from chart image and L2 caption].\",\n    \"real_world_significance\": \"The decline in the IBOVESPA index from January to April 2020 may be attributed to the economic impacts of the COVID-19 pandemic [SPECULATIVE: general knowledge of economic impacts of COVID-19]. A decline in the stock market index can affect investors, businesses, and the overall economy [SPECULATIVE: general knowledge of stock market impacts].\",\n    \"other\": \"The chart provides a visual representation of the IBOVESPA index trend over a specific period, allowing users to understand the market's performance [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart represents Brazil's IBOVESPA stock exchange index from January 2 to October 15, 2020, measured in Brazilian reals\",\n      \"The values on the y-axis range from 0 to 120,000 Brazilian reals\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows a decline in the index from January 2 to April 2020, followed by a relatively stable trend from April to October 2020\"\n    ],\n    \"speculative_claims\": [\n      \"The IBOVESPA index is a stock index that represents the performance of the Brazilian stock market\",\n      \"The decline in the IBOVESPA index from January to April 2020 may be attributed to the economic impacts of the COVID-19 pandemic\",\n      \"A decline in the stock market index can affect investors, businesses, and the overall economy\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 2,\n    \"derived_count\": 1,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides some exact values but is mostly truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart image and L2 caption provide information about the trend and its magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and axis labels clearly indicate the subject domain as Brazil's IBOVESPA stock exchange index."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or stakeholder context is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart represents Brazil's IBOVESPA stock exchange index from January 2 to October 15, 2020, measured in Brazilian reals [DIRECT]. The index is a benchmark for the Brazilian stock market [SPECULATIVE: general knowledge of stock market indices].",
+      "domain_specific_explanations": "The IBOVESPA index is a stock index that represents the performance of the Brazilian stock market [SPECULATIVE: general knowledge of stock market indices]. The values on the y-axis range from 0 to 120,000 Brazilian reals [DIRECT]. The chart shows a decline in the index from January 2 to April 2020, followed by a relatively stable trend from April to October 2020 [DERIVED: from chart image and L2 caption].",
+      "real_world_significance": "The decline in the IBOVESPA index from January to April 2020 may be attributed to the economic impacts of the COVID-19 pandemic [SPECULATIVE: general knowledge of economic impacts of COVID-19]. A decline in the stock market index can affect investors, businesses, and the overall economy [SPECULATIVE: general knowledge of stock market impacts].",
+      "other": "The chart provides a visual representation of the IBOVESPA index trend over a specific period, allowing users to understand the market's performance [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart represents Brazil's IBOVESPA stock exchange index from January 2 to October 15, 2020, measured in Brazilian reals",
+        "The values on the y-axis range from 0 to 120,000 Brazilian reals"
+      ],
+      "derived_claims": [
+        "The chart shows a decline in the index from January 2 to April 2020, followed by a relatively stable trend from April to October 2020"
+      ],
+      "speculative_claims": [
+        "The IBOVESPA index is a stock index that represents the performance of the Brazilian stock market",
+        "The decline in the IBOVESPA index from January to April 2020 may be attributed to the economic impacts of the COVID-19 pandemic",
+        "A decline in the stock market index can affect investors, businesses, and the overall economy"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 2,
+      "derived_count": 1,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 3722,
+    "output": 718
+  },
+  "latency_ms": 2214.8786659818143,
+  "created_at": "2026-07-08T00:11:22.220391Z"
+}

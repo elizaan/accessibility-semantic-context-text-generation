@@ -1,0 +1,72 @@
+{
+  "output_id": "3fcbeba0-a3f7-4485-a100-dcdde4424f64",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data values or data tables are provided; values must be visually estimated from the chart's y-axis.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The overall upward trend is clear, but the exact magnitude of change (e.g., decimal values of years gained) is incomplete without precise data points.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly identifies the subject (life expectancy at birth), geographic focus (Madagascar), and timeframe (2008 to 2018).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context, metadata, or background information was provided with the image.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No information about stakeholders, target audience, or real-world decision-making context was provided.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. This dataset belongs to the public health and demography domain [SPECULATIVE: Demography and Public Health]. It is likely compiled by international development or statistical organizations, such as the World Bank or the World Health Organization, to monitor national development and health outcomes over time [SPECULATIVE: Global Health Statistics].\",\n    \"domain_specific_explanations\": \"Life expectancy at birth is a key demographic indicator representing the average number of years a newborn is expected to live if prevailing mortality patterns remain constant throughout their life [SPECULATIVE: Demography]. The chart shows a steady, gradual increase from approximately 62.5 years in 2008 to nearly 67 years in 2018 [DERIVED: read values from the y-axis and x-axis endpoints]. This positive trajectory of roughly 4.5 years over a decade typically reflects incremental improvements in basic living standards, healthcare access, or childhood survival rates [SPECULATIVE: Public Health].\",\n    \"real_world_significance\": \"This upward trend indicates that Madagascar made progress in improving overall population health and survival rates during this decade [SPECULATIVE: Public Health]. However, a life expectancy of under 67 years in 2018 remains significantly below the global average, highlighting ongoing challenges such as poverty, malnutrition, and limited healthcare infrastructure in the country [SPECULATIVE: Global Development]. Policymakers, non-governmental organizations, and international aid agencies use these trends to evaluate the long-term impact of health interventions and to allocate resources for future development programs [SPECULATIVE: Public Policy].\",\n    \"other\": \"The chart uses a filled area format starting from a baseline of 0, which visually emphasizes the overall volume of years lived rather than focusing solely on the incremental changes between years [DERIVED: visual analysis of the chart's filled area starting at y=0].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows a steady, gradual increase from approximately 62.5 years in 2008 to nearly 67 years in 2018\",\n      \"The chart uses a filled area format starting from a baseline of 0, which visually emphasizes the overall volume of years lived rather than focusing solely on the incremental changes between years\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset belongs to the public health and demography domain\",\n      \"It is likely compiled by international development or statistical organizations, such as the World Bank or the World Health Organization, to monitor national development and health outcomes over time\",\n      \"Life expectancy at birth is a key demographic indicator representing the average number of years a newborn is expected to live if prevailing mortality patterns remain constant throughout their life\",\n      \"This positive trajectory of roughly 4.5 years over a decade typically reflects incremental improvements in basic living standards, healthcare access, or childhood survival rates\",\n      \"This upward trend indicates that Madagascar made progress in improving overall population health and survival rates during this decade\",\n      \"However, a life expectancy of under 67 years in 2018 remains significantly below the global average, highlighting ongoing challenges such as poverty, malnutrition, and limited healthcare infrastructure in the country\",\n      \"Policymakers, non-governmental organizations, and international aid agencies use these trends to evaluate the long-term impact of health interventions and to allocate resources for future development programs\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 2,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data values or data tables are provided; values must be visually estimated from the chart's y-axis."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The overall upward trend is clear, but the exact magnitude of change (e.g., decimal values of years gained) is incomplete without precise data points."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly identifies the subject (life expectancy at birth), geographic focus (Madagascar), and timeframe (2008 to 2018)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context, metadata, or background information was provided with the image."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No information about stakeholders, target audience, or real-world decision-making context was provided."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. This dataset belongs to the public health and demography domain [SPECULATIVE: Demography and Public Health]. It is likely compiled by international development or statistical organizations, such as the World Bank or the World Health Organization, to monitor national development and health outcomes over time [SPECULATIVE: Global Health Statistics].",
+      "domain_specific_explanations": "Life expectancy at birth is a key demographic indicator representing the average number of years a newborn is expected to live if prevailing mortality patterns remain constant throughout their life [SPECULATIVE: Demography]. The chart shows a steady, gradual increase from approximately 62.5 years in 2008 to nearly 67 years in 2018 [DERIVED: read values from the y-axis and x-axis endpoints]. This positive trajectory of roughly 4.5 years over a decade typically reflects incremental improvements in basic living standards, healthcare access, or childhood survival rates [SPECULATIVE: Public Health].",
+      "real_world_significance": "This upward trend indicates that Madagascar made progress in improving overall population health and survival rates during this decade [SPECULATIVE: Public Health]. However, a life expectancy of under 67 years in 2018 remains significantly below the global average, highlighting ongoing challenges such as poverty, malnutrition, and limited healthcare infrastructure in the country [SPECULATIVE: Global Development]. Policymakers, non-governmental organizations, and international aid agencies use these trends to evaluate the long-term impact of health interventions and to allocate resources for future development programs [SPECULATIVE: Public Policy].",
+      "other": "The chart uses a filled area format starting from a baseline of 0, which visually emphasizes the overall volume of years lived rather than focusing solely on the incremental changes between years [DERIVED: visual analysis of the chart's filled area starting at y=0]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018"
+      ],
+      "derived_claims": [
+        "The chart shows a steady, gradual increase from approximately 62.5 years in 2008 to nearly 67 years in 2018",
+        "The chart uses a filled area format starting from a baseline of 0, which visually emphasizes the overall volume of years lived rather than focusing solely on the incremental changes between years"
+      ],
+      "speculative_claims": [
+        "This dataset belongs to the public health and demography domain",
+        "It is likely compiled by international development or statistical organizations, such as the World Bank or the World Health Organization, to monitor national development and health outcomes over time",
+        "Life expectancy at birth is a key demographic indicator representing the average number of years a newborn is expected to live if prevailing mortality patterns remain constant throughout their life",
+        "This positive trajectory of roughly 4.5 years over a decade typically reflects incremental improvements in basic living standards, healthcare access, or childhood survival rates",
+        "This upward trend indicates that Madagascar made progress in improving overall population health and survival rates during this decade",
+        "However, a life expectancy of under 67 years in 2018 remains significantly below the global average, highlighting ongoing challenges such as poverty, malnutrition, and limited healthcare infrastructure in the country",
+        "Policymakers, non-governmental organizations, and international aid agencies use these trends to evaluate the long-term impact of health interventions and to allocate resources for future development programs"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 2,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 9674.457458022516,
+  "created_at": "2026-07-07T22:41:51.308269Z"
+}

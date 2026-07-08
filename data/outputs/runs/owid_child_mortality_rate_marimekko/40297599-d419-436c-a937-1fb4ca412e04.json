@@ -1,0 +1,78 @@
+{
+  "output_id": "40297599-d419-436c-a937-1fb4ca412e04",
+  "chart_id": "owid_child_mortality_rate_marimekko",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for many countries, but is truncated at the end.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall distribution and regional disparities are clearly visible in the chart image, though the truncated table limits exact calculations for all countries.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and source clearly define the subject as global child mortality rates in 2023.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides a clear definition of child mortality rate.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was explicitly provided in the metadata.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This is a Marimekko chart published by Our World in Data representing global child mortality rates in 2023 [DERIVED: read from chart title and visual structure]. The chart visualizes child mortality rates on the vertical axis and country populations as a share of the global total on the horizontal axis [DERIVED: read from chart axes and labels]. The data is sourced from the United Nations Inter-agency Group for Child Mortality Estimation (2025) [DERIVED: read from image footer].\",\n    \"domain_specific_explanations\": \"Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five [DIRECT]. In a Marimekko chart, the area of each bar represents the absolute number of child deaths, as it multiplies the rate (height) by the population size (width) [SPECULATIVE: general knowledge of Marimekko charts]. African nations (colored purple) like Niger and Angola exhibit some of the highest child mortality rates, with Niger exceeding 10% [DERIVED: read from image and data table]. Highly populated countries like India and China span large widths on the X-axis, representing their massive shares of the global population [DERIVED: read from image]. India's child mortality rate is around 2.8%, while China's is significantly lower, under 1% [DERIVED: read from image].\",\n    \"real_world_significance\": \"Child mortality is a key indicator of child health and well-being, reflecting access to basic healthcare, clean water, sanitation, and nutrition [SPECULATIVE: public health domain knowledge]. The stark contrast between regions—such as European nations having rates well below 1% (e.g., Belarus at 0.24%) compared to African nations with rates above 5% or 10%—highlights deep global inequalities in healthcare infrastructure and living standards [DERIVED: comparison of European and African data points]. Policymakers and global health organizations (like UNICEF or WHO) use this data to target interventions and resources to high-burden areas to meet Sustainable Development Goals (SDGs) related to child survival [SPECULATIVE: global health policy].\",\n    \"other\": \"The chart groups countries by world regions, showing that Europe and North America generally cluster at the low-mortality, right-hand side of the distribution, while Africa dominates the high-mortality, left-hand side [DERIVED: visual grouping by color and position on the chart].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five.\"\n    ],\n    \"derived_claims\": [\n      \"This is a Marimekko chart published by Our World in Data representing global child mortality rates in 2023.\",\n      \"The chart visualizes child mortality rates on the vertical axis and country populations as a share of the global total on the horizontal axis.\",\n      \"The data is sourced from the United Nations Inter-agency Group for Child Mortality Estimation (2025).\",\n      \"African nations (colored purple) like Niger and Angola exhibit some of the highest child mortality rates, with Niger exceeding 10%.\",\n      \"Highly populated countries like India and China span large widths on the X-axis, representing their massive shares of the global population.\",\n      \"India's child mortality rate is around 2.8%, while China's is significantly lower, under 1%.\",\n      \"The stark contrast between regions—such as European nations having rates well below 1% (e.g., Belarus at 0.24%) compared to African nations with rates above 5% or 10%—highlights deep global inequalities in healthcare infrastructure and living standards.\",\n      \"The chart groups countries by world regions, showing that Europe and North America generally cluster at the low-mortality, right-hand side of the distribution, while Africa dominates the high-mortality, left-hand side.\"\n    ],\n    \"speculative_claims\": [\n      \"In a Marimekko chart, the area of each bar represents the absolute number of child deaths, as it multiplies the rate (height) by the population size (width).\",\n      \"Child mortality is a key indicator of child health and well-being, reflecting access to basic healthcare, clean water, sanitation, and nutrition.\",\n      \"Policymakers and global health organizations (like UNICEF or WHO) use this data to target interventions and resources to high-burden areas to meet Sustainable Development Goals (SDGs) related to child survival.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 8,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for many countries, but is truncated at the end."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall distribution and regional disparities are clearly visible in the chart image, though the truncated table limits exact calculations for all countries."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and source clearly define the subject as global child mortality rates in 2023."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides a clear definition of child mortality rate."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was explicitly provided in the metadata."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This is a Marimekko chart published by Our World in Data representing global child mortality rates in 2023 [DERIVED: read from chart title and visual structure]. The chart visualizes child mortality rates on the vertical axis and country populations as a share of the global total on the horizontal axis [DERIVED: read from chart axes and labels]. The data is sourced from the United Nations Inter-agency Group for Child Mortality Estimation (2025) [DERIVED: read from image footer].",
+      "domain_specific_explanations": "Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five [DIRECT]. In a Marimekko chart, the area of each bar represents the absolute number of child deaths, as it multiplies the rate (height) by the population size (width) [SPECULATIVE: general knowledge of Marimekko charts]. African nations (colored purple) like Niger and Angola exhibit some of the highest child mortality rates, with Niger exceeding 10% [DERIVED: read from image and data table]. Highly populated countries like India and China span large widths on the X-axis, representing their massive shares of the global population [DERIVED: read from image]. India's child mortality rate is around 2.8%, while China's is significantly lower, under 1% [DERIVED: read from image].",
+      "real_world_significance": "Child mortality is a key indicator of child health and well-being, reflecting access to basic healthcare, clean water, sanitation, and nutrition [SPECULATIVE: public health domain knowledge]. The stark contrast between regions—such as European nations having rates well below 1% (e.g., Belarus at 0.24%) compared to African nations with rates above 5% or 10%—highlights deep global inequalities in healthcare infrastructure and living standards [DERIVED: comparison of European and African data points]. Policymakers and global health organizations (like UNICEF or WHO) use this data to target interventions and resources to high-burden areas to meet Sustainable Development Goals (SDGs) related to child survival [SPECULATIVE: global health policy].",
+      "other": "The chart groups countries by world regions, showing that Europe and North America generally cluster at the low-mortality, right-hand side of the distribution, while Africa dominates the high-mortality, left-hand side [DERIVED: visual grouping by color and position on the chart]."
+    },
+    "flags": {
+      "direct_claims": [
+        "Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five."
+      ],
+      "derived_claims": [
+        "This is a Marimekko chart published by Our World in Data representing global child mortality rates in 2023.",
+        "The chart visualizes child mortality rates on the vertical axis and country populations as a share of the global total on the horizontal axis.",
+        "The data is sourced from the United Nations Inter-agency Group for Child Mortality Estimation (2025).",
+        "African nations (colored purple) like Niger and Angola exhibit some of the highest child mortality rates, with Niger exceeding 10%.",
+        "Highly populated countries like India and China span large widths on the X-axis, representing their massive shares of the global population.",
+        "India's child mortality rate is around 2.8%, while China's is significantly lower, under 1%.",
+        "The stark contrast between regions—such as European nations having rates well below 1% (e.g., Belarus at 0.24%) compared to African nations with rates above 5% or 10%—highlights deep global inequalities in healthcare infrastructure and living standards.",
+        "The chart groups countries by world regions, showing that Europe and North America generally cluster at the low-mortality, right-hand side of the distribution, while Africa dominates the high-mortality, left-hand side."
+      ],
+      "speculative_claims": [
+        "In a Marimekko chart, the area of each bar represents the absolute number of child deaths, as it multiplies the rate (height) by the population size (width).",
+        "Child mortality is a key indicator of child health and well-being, reflecting access to basic healthcare, clean water, sanitation, and nutrition.",
+        "Policymakers and global health organizations (like UNICEF or WHO) use this data to target interventions and resources to high-burden areas to meet Sustainable Development Goals (SDGs) related to child survival."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 8,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11290.918041020632,
+  "created_at": "2026-07-07T23:11:16.311364Z"
+}

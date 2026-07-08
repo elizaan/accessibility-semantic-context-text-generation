@@ -1,0 +1,77 @@
+{
+  "output_id": "dba87650-26fc-417f-a5ff-fad0594c1d0d",
+  "chart_id": "owid_participants_in_ongoing_state_based_conflicts_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact data values are provided only for the final year (2024), while the historical data from 1946 to 2023 is only visible in the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall trend can be visually interpreted from the chart image, but exact historical magnitudes are not provided in the data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The chart subject, domain, and source are clearly defined in the title, subtitle, and expert domain story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly defines what constitutes a state's involvement in a conflict.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart tracks the number of states involved in state-based conflicts globally and across five key regions from 1946 to 2024 [DERIVED: Read from chart image x-axis and title]. The data is compiled by the Uppsala Conflict Data Program and the Peace Research Institute Oslo (2025) and published by Our World in Data [DIRECT]. It serves to monitor long-term global and regional trends in state-level warfare and armed conflict [SPECULATIVE: Peace and Conflict Studies].\",\n    \"domain_specific_explanations\": \"In this context, 'involved' states are defined as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during a given year [DIRECT]. In 2024, a total of 34 states globally met this definition [DIRECT]. Regionally, Africa had the highest number of involved states with 17, followed by Asia and Oceania with 7, the Middle East with 6, and Europe and the Americas with 2 each [DIRECT]. Historically, the chart reveals a peak in state involvement in the late 1980s (exceeding 40 states), a subsequent decline during the late 1990s and 2000s, and a modern resurgence leading up to 2024 [DERIVED: Visual analysis of the stacked bar chart trends over time].\",\n    \"real_world_significance\": \"This data is vital for international bodies like the United Nations, diplomats, and humanitarian organizations to identify where conflict-resolution resources and peacekeeping efforts are most urgently needed [SPECULATIVE: International Relations]. The recent rise in conflict participation, particularly the heavy concentration of 17 involved states in Africa in 2024, signals a worrying reversal of the post-Cold War decline in state-based violence [DERIVED: Comparing the 1990s/2000s decline to the 2024 regional data showing Africa represents half of the global total]. If these trends continue, they could lead to severe humanitarian crises, increased forced displacement, and regional economic instability [SPECULATIVE: Humanitarian Studies].\",\n    \"other\": \"The sum of the regional counts in 2024 (17 in Africa, 7 in Asia and Oceania, 6 in the Middle East, 2 in Europe, and 2 in the Americas) perfectly matches the global total of 34 states [DERIVED: Summed regional values from the 2024 data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The data is compiled by the Uppsala Conflict Data Program and the Peace Research Institute Oslo (2025) and published by Our World in Data\",\n      \"In this context, 'involved' states are defined as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during a given year\",\n      \"In 2024, a total of 34 states globally met this definition\",\n      \"Regionally, Africa had the highest number of involved states with 17, followed by Asia and Oceania with 7, the Middle East with 6, and Europe and the Americas with 2 each\"\n    ],\n    \"derived_claims\": [\n      \"This chart tracks the number of states involved in state-based conflicts globally and across five key regions from 1946 to 2024\",\n      \"Historically, the chart reveals a peak in state involvement in the late 1980s (exceeding 40 states), a subsequent decline during the late 1990s and 2000s, and a modern resurgence leading up to 2024\",\n      \"The recent rise in conflict participation, particularly the heavy concentration of 17 involved states in Africa in 2024, signals a worrying reversal of the post-Cold War decline in state-based violence\",\n      \"The sum of the regional counts in 2024 (17 in Africa, 7 in Asia and Oceania, 6 in the Middle East, 2 in Europe, and 2 in the Americas) perfectly matches the global total of 34 states\"\n    ],\n    \"speculative_claims\": [\n      \"It serves to monitor long-term global and regional trends in state-level warfare and armed conflict\",\n      \"This data is vital for international bodies like the United Nations, diplomats, and humanitarian organizations to identify where conflict-resolution resources and peacekeeping efforts are most urgently needed\",\n      \"If these trends continue, they could lead to severe humanitarian crises, increased forced displacement, and regional economic instability\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact data values are provided only for the final year (2024), while the historical data from 1946 to 2023 is only visible in the chart image."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall trend can be visually interpreted from the chart image, but exact historical magnitudes are not provided in the data table."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart subject, domain, and source are clearly defined in the title, subtitle, and expert domain story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story clearly defines what constitutes a state's involvement in a conflict."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart tracks the number of states involved in state-based conflicts globally and across five key regions from 1946 to 2024 [DERIVED: Read from chart image x-axis and title]. The data is compiled by the Uppsala Conflict Data Program and the Peace Research Institute Oslo (2025) and published by Our World in Data [DIRECT]. It serves to monitor long-term global and regional trends in state-level warfare and armed conflict [SPECULATIVE: Peace and Conflict Studies].",
+      "domain_specific_explanations": "In this context, 'involved' states are defined as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during a given year [DIRECT]. In 2024, a total of 34 states globally met this definition [DIRECT]. Regionally, Africa had the highest number of involved states with 17, followed by Asia and Oceania with 7, the Middle East with 6, and Europe and the Americas with 2 each [DIRECT]. Historically, the chart reveals a peak in state involvement in the late 1980s (exceeding 40 states), a subsequent decline during the late 1990s and 2000s, and a modern resurgence leading up to 2024 [DERIVED: Visual analysis of the stacked bar chart trends over time].",
+      "real_world_significance": "This data is vital for international bodies like the United Nations, diplomats, and humanitarian organizations to identify where conflict-resolution resources and peacekeeping efforts are most urgently needed [SPECULATIVE: International Relations]. The recent rise in conflict participation, particularly the heavy concentration of 17 involved states in Africa in 2024, signals a worrying reversal of the post-Cold War decline in state-based violence [DERIVED: Comparing the 1990s/2000s decline to the 2024 regional data showing Africa represents half of the global total]. If these trends continue, they could lead to severe humanitarian crises, increased forced displacement, and regional economic instability [SPECULATIVE: Humanitarian Studies].",
+      "other": "The sum of the regional counts in 2024 (17 in Africa, 7 in Asia and Oceania, 6 in the Middle East, 2 in Europe, and 2 in the Americas) perfectly matches the global total of 34 states [DERIVED: Summed regional values from the 2024 data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The data is compiled by the Uppsala Conflict Data Program and the Peace Research Institute Oslo (2025) and published by Our World in Data",
+        "In this context, 'involved' states are defined as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during a given year",
+        "In 2024, a total of 34 states globally met this definition",
+        "Regionally, Africa had the highest number of involved states with 17, followed by Asia and Oceania with 7, the Middle East with 6, and Europe and the Americas with 2 each"
+      ],
+      "derived_claims": [
+        "This chart tracks the number of states involved in state-based conflicts globally and across five key regions from 1946 to 2024",
+        "Historically, the chart reveals a peak in state involvement in the late 1980s (exceeding 40 states), a subsequent decline during the late 1990s and 2000s, and a modern resurgence leading up to 2024",
+        "The recent rise in conflict participation, particularly the heavy concentration of 17 involved states in Africa in 2024, signals a worrying reversal of the post-Cold War decline in state-based violence",
+        "The sum of the regional counts in 2024 (17 in Africa, 7 in Asia and Oceania, 6 in the Middle East, 2 in Europe, and 2 in the Americas) perfectly matches the global total of 34 states"
+      ],
+      "speculative_claims": [
+        "It serves to monitor long-term global and regional trends in state-level warfare and armed conflict",
+        "This data is vital for international bodies like the United Nations, diplomats, and humanitarian organizations to identify where conflict-resolution resources and peacekeeping efforts are most urgently needed",
+        "If these trends continue, they could lead to severe humanitarian crises, increased forced displacement, and regional economic instability"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12425.663125002757,
+  "created_at": "2026-07-07T23:07:23.996863Z"
+}

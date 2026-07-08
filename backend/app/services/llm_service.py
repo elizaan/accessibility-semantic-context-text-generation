@@ -21,36 +21,49 @@ from app.core.config import settings
 from app.core.llm_manager import get_llm, is_vision_capable
 from app.models.chart import Chart
 from app.models.output import GenerationOutput, GenerationRequest, TokenUsage
-from app.services.prompt_service import build_prompt
+from app.services.prompt_service import build_prompt, classify_variant
 
 
 def generate(chart: Chart, req: GenerationRequest) -> GenerationOutput:
+    # Variant 4 (metadata withheld) can't be inferred from a checkbox
+    # selection, so it's the one value honored as sent. 1/2/3 are always
+    # recomputed from what was actually selected for this chart — datasets
+    # vary in what metadata they have, so a fixed field list can't define
+    # "full metadata" across sources (see classify_variant).
+    metacognition = req.variant == 4
+    wants_image = True if metacognition else req.include_image
+
+    # Vision capability and file presence narrow the request down to what's
+    # actually attached, so the prompt text always matches what's sent.
+    attach_image = bool(
+        wants_image
+        and is_vision_capable(req.model_id)
+        and chart.image_path
+        and (settings.datasets_dir / chart.image_path).exists()
+    )
+
+    variant = 4 if metacognition else classify_variant(chart, req.enabled_features, attach_image)
+
     system_prompt, user_prompt = build_prompt(
         chart=chart,
         enabled_features=req.enabled_features,
-        include_image=req.include_image,
-        variant=req.variant,
+        include_image=attach_image,
+        variant=variant,
         custom_suffix=req.custom_prompt_suffix,
     )
 
     llm = get_llm(req.model_id)
 
-    # Build user message — attach image only for vision-capable models.
-    # Text-only models (Gemma) silently skip the image regardless of request.
     # SystemMessage is always sent fresh; no prior messages ever included.
-    attach_image = req.include_image and is_vision_capable(req.model_id)
-    if attach_image and chart.image_path:
+    if attach_image:
         image_path = settings.datasets_dir / chart.image_path
-        if image_path.exists():  # noqa: SIM102
-            img_bytes = image_path.read_bytes()
-            b64 = base64.standard_b64encode(img_bytes).decode()
-            mime = "image/jpeg" if image_path.suffix.lower() in (".jpg", ".jpeg") else "image/png"
-            user_content: list = [
-                {"type": "text", "text": user_prompt},
-                {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
-            ]
-        else:
-            user_content = [{"type": "text", "text": user_prompt}]
+        img_bytes = image_path.read_bytes()
+        b64 = base64.standard_b64encode(img_bytes).decode()
+        mime = "image/jpeg" if image_path.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+        user_content: list = [
+            {"type": "text", "text": user_prompt},
+            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
+        ]
     else:
         user_content = user_prompt  # type: ignore[assignment]
 
@@ -72,7 +85,7 @@ def generate(chart: Chart, req: GenerationRequest) -> GenerationOutput:
         chart_id=chart.chart_id,
         dataset_source=chart.source,
         model_id=req.model_id,
-        variant=req.variant,
+        variant=variant,
         enabled_features=req.enabled_features,
         include_image=attach_image,
         generated_description=raw_text,

@@ -1,0 +1,70 @@
+{
+  "output_id": "73d9ef1b-ce50-4de7-b539-ce480cfcd48a",
+  "chart_id": "olli_streamgraph",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data table is not provided, but the OLLI screen reader tree provides highly detailed aggregated statistics, including average sum counts for 14 series and 9 date intervals.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The OLLI tree clearly outlines the average sum counts across different time intervals, allowing for a clear understanding of the trend's magnitude over time.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story explicitly identifies the chart as a streamgraph of unemployment across industries, giving clear domain context.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a streamgraph depicting unemployment across 14 different industries from January 2000 to February 2010 [DIRECT]. The data spans a decade that includes two major economic recessions: the early 2000s dot-com recession and the Great Recession of 2007–2009 [SPECULATIVE: US Economic History]. The total average unemployment count across all industries was relatively stable between 2000 and 2007, hovering between 414 and 581, but spiked dramatically to an average of 964 between December 2008 and February 2010 [DERIVED: Compared the average sum counts across the date intervals in the OLLI tree].\",\n    \"domain_specific_explanations\": \"In this streamgraph, the 'count' represents the number of unemployed individuals (typically measured in thousands) within each specified industry sector [SPECULATIVE: Bureau of Labor Statistics]. The 14 series represent major sectors of the economy, with Wholesale and Retail Trade (average 1,178), Manufacturing (average 1,021), Leisure and Hospitality (average 994), and Business Services (average 910) representing the largest shares of unemployed individuals over the decade [DERIVED: Compared average sum counts across the 14 series in the OLLI tree]. Conversely, Mining and Extraction (average 32) and Agriculture (average 132) represent the smallest shares of unemployment counts [DERIVED: Compared average sum counts across the 14 series in the OLLI tree]. The massive increase in average sum count to 964 in the late 2000s reflects the widespread job losses associated with the subprime mortgage crisis and subsequent financial collapse [SPECULATIVE: Macroeconomics].\",\n    \"real_world_significance\": \"The dramatic rise in unemployment from late 2008 to early 2010 highlights the severe human toll of the Great Recession, where millions of workers lost their livelihoods [SPECULATIVE: Social History]. Industries like Manufacturing and Wholesale/Retail Trade are highly cyclical, meaning they are heavily impacted by economic downturns as consumer spending drops [SPECULATIVE: Economics]. This data is critical for policymakers, labor economists, and social service agencies to allocate unemployment benefits, design job retraining programs, and implement monetary or fiscal policies to stimulate recovery [SPECULATIVE: Public Policy].\",\n    \"other\": \"The data ends in February 2010, which aligns with the period immediately following the official end of the Great Recession (June 2009), capturing the peak of the employment crisis [SPECULATIVE: National Bureau of Economic Research].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a streamgraph depicting unemployment across 14 different industries from January 2000 to February 2010\"\n    ],\n    \"derived_claims\": [\n      \"The total average unemployment count across all industries was relatively stable between 2000 and 2007, hovering between 414 and 581, but spiked dramatically to an average of 964 between December 2008 and February 2010\",\n      \"The 14 series represent major sectors of the economy, with Wholesale and Retail Trade (average 1,178), Manufacturing (average 1,021), Leisure and Hospitality (average 994), and Business Services (average 910) representing the largest shares of unemployed individuals over the decade\",\n      \"Conversely, Mining and Extraction (average 32) and Agriculture (average 132) represent the smallest shares of unemployment counts\"\n    ],\n    \"speculative_claims\": [\n      \"The data spans a decade that includes two major economic recessions: the early 2000s dot-com recession and the Great Recession of 2007–2009\",\n      \"In this streamgraph, the 'count' represents the number of unemployed individuals (typically measured in thousands) within each specified industry sector\",\n      \"The massive increase in average sum count to 964 in the late 2000s reflects the widespread job losses associated with the subprime mortgage crisis and subsequent financial collapse\",\n      \"The dramatic rise in unemployment from late 2008 to early 2010 highlights the severe human toll of the Great Recession, where millions of workers lost their livelihoods\",\n      \"Industries like Manufacturing and Wholesale/Retail Trade are highly cyclical, meaning they are heavily impacted by economic downturns as consumer spending drops\",\n      \"This data is critical for policymakers, labor economists, and social service agencies to allocate unemployment benefits, design job retraining programs, and implement monetary or fiscal policies to stimulate recovery\",\n      \"The data ends in February 2010, which aligns with the period immediately following the official end of the Great Recession (June 2009), capturing the peak of the employment crisis\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data table is not provided, but the OLLI screen reader tree provides highly detailed aggregated statistics, including average sum counts for 14 series and 9 date intervals."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The OLLI tree clearly outlines the average sum counts across different time intervals, allowing for a clear understanding of the trend's magnitude over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story explicitly identifies the chart as a streamgraph of unemployment across industries, giving clear domain context."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a streamgraph depicting unemployment across 14 different industries from January 2000 to February 2010 [DIRECT]. The data spans a decade that includes two major economic recessions: the early 2000s dot-com recession and the Great Recession of 2007–2009 [SPECULATIVE: US Economic History]. The total average unemployment count across all industries was relatively stable between 2000 and 2007, hovering between 414 and 581, but spiked dramatically to an average of 964 between December 2008 and February 2010 [DERIVED: Compared the average sum counts across the date intervals in the OLLI tree].",
+      "domain_specific_explanations": "In this streamgraph, the 'count' represents the number of unemployed individuals (typically measured in thousands) within each specified industry sector [SPECULATIVE: Bureau of Labor Statistics]. The 14 series represent major sectors of the economy, with Wholesale and Retail Trade (average 1,178), Manufacturing (average 1,021), Leisure and Hospitality (average 994), and Business Services (average 910) representing the largest shares of unemployed individuals over the decade [DERIVED: Compared average sum counts across the 14 series in the OLLI tree]. Conversely, Mining and Extraction (average 32) and Agriculture (average 132) represent the smallest shares of unemployment counts [DERIVED: Compared average sum counts across the 14 series in the OLLI tree]. The massive increase in average sum count to 964 in the late 2000s reflects the widespread job losses associated with the subprime mortgage crisis and subsequent financial collapse [SPECULATIVE: Macroeconomics].",
+      "real_world_significance": "The dramatic rise in unemployment from late 2008 to early 2010 highlights the severe human toll of the Great Recession, where millions of workers lost their livelihoods [SPECULATIVE: Social History]. Industries like Manufacturing and Wholesale/Retail Trade are highly cyclical, meaning they are heavily impacted by economic downturns as consumer spending drops [SPECULATIVE: Economics]. This data is critical for policymakers, labor economists, and social service agencies to allocate unemployment benefits, design job retraining programs, and implement monetary or fiscal policies to stimulate recovery [SPECULATIVE: Public Policy].",
+      "other": "The data ends in February 2010, which aligns with the period immediately following the official end of the Great Recession (June 2009), capturing the peak of the employment crisis [SPECULATIVE: National Bureau of Economic Research]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a streamgraph depicting unemployment across 14 different industries from January 2000 to February 2010"
+      ],
+      "derived_claims": [
+        "The total average unemployment count across all industries was relatively stable between 2000 and 2007, hovering between 414 and 581, but spiked dramatically to an average of 964 between December 2008 and February 2010",
+        "The 14 series represent major sectors of the economy, with Wholesale and Retail Trade (average 1,178), Manufacturing (average 1,021), Leisure and Hospitality (average 994), and Business Services (average 910) representing the largest shares of unemployed individuals over the decade",
+        "Conversely, Mining and Extraction (average 32) and Agriculture (average 132) represent the smallest shares of unemployment counts"
+      ],
+      "speculative_claims": [
+        "The data spans a decade that includes two major economic recessions: the early 2000s dot-com recession and the Great Recession of 2007–2009",
+        "In this streamgraph, the 'count' represents the number of unemployed individuals (typically measured in thousands) within each specified industry sector",
+        "The massive increase in average sum count to 964 in the late 2000s reflects the widespread job losses associated with the subprime mortgage crisis and subsequent financial collapse",
+        "The dramatic rise in unemployment from late 2008 to early 2010 highlights the severe human toll of the Great Recession, where millions of workers lost their livelihoods",
+        "Industries like Manufacturing and Wholesale/Retail Trade are highly cyclical, meaning they are heavily impacted by economic downturns as consumer spending drops",
+        "This data is critical for policymakers, labor economists, and social service agencies to allocate unemployment benefits, design job retraining programs, and implement monetary or fiscal policies to stimulate recovery",
+        "The data ends in February 2010, which aligns with the period immediately following the official end of the Great Recession (June 2009), capturing the peak of the employment crisis"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13644.35770898126,
+  "created_at": "2026-07-08T14:31:03.262946Z"
+}

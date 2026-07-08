@@ -1,0 +1,69 @@
+{
+  "output_id": "886cf9cd-2e8c-4a8b-a12a-b6f726206fc3",
+  "chart_id": "olli_population-pyramid",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table not provided, but some data present in OLLI screen reader tree\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"No explicit trend magnitude information\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"Chart title and expert domain story provide context\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This is a population pyramid for the US in 2000 [DIRECT]. It is a stacked bar chart showing population distribution by age and gender [DIRECT]. The chart is rendered as a diverging bar chart [DIRECT].\",\n    \"domain_specific_explanations\": \"The population pyramid shows the distribution of population by age and gender [DIRECT]. The x-axis represents population, and the y-axis represents age [DIRECT]. Each bar represents a specific age group, with the width of the bar indicating the population size [DERIVED: from chart description]. The negative values on the x-axis represent the female population, while the positive values represent the male population [DIRECT].\",\n    \"real_world_significance\": \"This data matters for understanding demographic trends in the US population in 2000 [SPECULATIVE: demography]. It can inform decisions related to resource allocation, healthcare, education, and social services [SPECULATIVE: public policy]. The pyramid shape indicates a large youth population and a smaller elderly population [DERIVED: from chart description].\",\n    \"other\": \"The total female population is approximately -7555646 [DIRECT], and the total male population is approximately 7255971 [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This is a population pyramid for the US in 2000\",\n      \"It is a stacked bar chart showing population distribution by age and gender\",\n      \"The chart is rendered as a diverging bar chart\",\n      \"The x-axis represents population, and the y-axis represents age\",\n      \"The negative values on the x-axis represent the female population, while the positive values represent the male population\",\n      \"The total female population is approximately -7555646\",\n      \"The total male population is approximately 7255971\"\n    ],\n    \"derived_claims\": [\n      \"Each bar represents a specific age group, with the width of the bar indicating the population size\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for understanding demographic trends in the US population in 2000\",\n      \"It can inform decisions related to resource allocation, healthcare, education, and social services\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 7,\n    \"derived_count\": 1,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table not provided, but some data present in OLLI screen reader tree"
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No explicit trend magnitude information"
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "Chart title and expert domain story provide context"
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This is a population pyramid for the US in 2000 [DIRECT]. It is a stacked bar chart showing population distribution by age and gender [DIRECT]. The chart is rendered as a diverging bar chart [DIRECT].",
+      "domain_specific_explanations": "The population pyramid shows the distribution of population by age and gender [DIRECT]. The x-axis represents population, and the y-axis represents age [DIRECT]. Each bar represents a specific age group, with the width of the bar indicating the population size [DERIVED: from chart description]. The negative values on the x-axis represent the female population, while the positive values represent the male population [DIRECT].",
+      "real_world_significance": "This data matters for understanding demographic trends in the US population in 2000 [SPECULATIVE: demography]. It can inform decisions related to resource allocation, healthcare, education, and social services [SPECULATIVE: public policy]. The pyramid shape indicates a large youth population and a smaller elderly population [DERIVED: from chart description].",
+      "other": "The total female population is approximately -7555646 [DIRECT], and the total male population is approximately 7255971 [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This is a population pyramid for the US in 2000",
+        "It is a stacked bar chart showing population distribution by age and gender",
+        "The chart is rendered as a diverging bar chart",
+        "The x-axis represents population, and the y-axis represents age",
+        "The negative values on the x-axis represent the female population, while the positive values represent the male population",
+        "The total female population is approximately -7555646",
+        "The total male population is approximately 7255971"
+      ],
+      "derived_claims": [
+        "Each bar represents a specific age group, with the width of the bar indicating the population size"
+      ],
+      "speculative_claims": [
+        "This data matters for understanding demographic trends in the US population in 2000",
+        "It can inform decisions related to resource allocation, healthcare, education, and social services"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 7,
+      "derived_count": 1,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2302,
+    "output": 614
+  },
+  "latency_ms": 2811.1836669850163,
+  "created_at": "2026-07-08T14:18:22.514146Z"
+}

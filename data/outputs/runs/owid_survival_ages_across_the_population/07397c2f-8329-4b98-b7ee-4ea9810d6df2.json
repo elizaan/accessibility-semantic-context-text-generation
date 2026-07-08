@@ -1,0 +1,74 @@
+{
+  "output_id": "07397c2f-8329-4b98-b7ee-4ea9810d6df2",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data values or precise coordinates are provided in text form; they must be estimated visually from the axes.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"General trends can be estimated (e.g., the 99% survival age rising from 0 to over 30 years), but exact magnitudes of change are not provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, and source labels clearly identify the subject as historical demographic survival rates in France.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No external domain-specific metadata or expert commentary was provided with the image.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No information about stakeholders, policy implications, or real-world decision-making context was provided.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows survival ages across different percentiles of the population in France from 1816 to 2023 [DIRECT]. It was published by Our World in Data, using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025) [DIRECT]. The purpose of the visualization is to illustrate how long different segments of the French population (from the longest-lived 1% to the shortest-lived 99%) survived based on period life tables across more than two centuries [DERIVED: interpreted from the subtitle and axis labels].\",\n    \"domain_specific_explanations\": \"The lines represent the age to which a specific percentage of a birth cohort would survive if they experienced the age-specific mortality rates of that specific year [DIRECT]. For example, the 99% line represents the age that 99% of the population survived past, meaning only 1% died before this age [DERIVED: interpreted from the subtitle's explanation of percentiles]. In the 19th century, the 99% line is near 0 years, indicating that at least 1% of the population died in infancy [DERIVED: observed 99% line at ~0 years from 1816 to around 1900]. The top 1% of survivors in 2023 lived to over 100 years, compared to around 90 years in 1816 [DERIVED: compared the top line's start and end values on the Y-axis]. There are sharp downward spikes in survival ages across almost all percentiles around 1870, 1914-1918, and 1940-1945 [DERIVED: observed sharp dips in the lines at these specific X-axis intervals].\",\n    \"real_world_significance\": \"The dramatic rise of the lower percentiles (such as the 90% and 99% lines) in the 20th century reflects the triumph of modern medicine, clean water, and public health in virtually eliminating high infant and child mortality [SPECULATIVE: public health history]. The historical dips correspond directly to major conflicts and crises in French history: the Franco-Prussian War (1870-1871), World War I and the Spanish Flu (1914-1918), and World War II (1939-1945) [SPECULATIVE: French history]. The steady rise of the top percentiles highlights the ongoing extension of the maximum human lifespan, which has significant implications for pension systems, healthcare infrastructure, and elder care [SPECULATIVE: demography and social policy].\",\n    \"other\": \"The compression of mortality (where the lines for the 10th through 90th percentiles draw closer together at older ages over time) indicates that death is increasingly concentrated at older ages rather than distributed throughout life [DERIVED: observed the narrowing vertical gap between the middle percentile lines over time].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows survival ages across different percentiles of the population in France from 1816 to 2023\",\n      \"It was published by Our World in Data, using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025)\",\n      \"The lines represent the age to which a specific percentage of a birth cohort would survive if they experienced the age-specific mortality rates of that specific year\"\n    ],\n    \"derived_claims\": [\n      \"The purpose of the visualization is to illustrate how long different segments of the French population (from the longest-lived 1% to the shortest-lived 99%) survived based on period life tables across more than two centuries\",\n      \"The 99% line represents the age that 99% of the population survived past, meaning only 1% died before this age\",\n      \"In the 19th century, the 99% line is near 0 years, indicating that at least 1% of the population died in infancy\",\n      \"The top 1% of survivors in 2023 lived to over 100 years, compared to around 90 years in 1816\",\n      \"There are sharp downward spikes in survival ages across almost all percentiles around 1870, 1914-1918, and 1940-1945\",\n      \"The compression of mortality (where the lines for the 10th through 90th percentiles draw closer together at older ages over time) indicates that death is increasingly concentrated at older ages rather than distributed throughout life\"\n    ],\n    \"speculative_claims\": [\n      \"The dramatic rise of the lower percentiles (such as the 90% and 99% lines) in the 20th century reflects the triumph of modern medicine, clean water, and public health in virtually eliminating high infant and child mortality\",\n      \"The historical dips correspond directly to major conflicts and crises in French history: the Franco-Prussian War (1870-1871), World War I and the Spanish Flu (1914-1918), and World War II (1939-1945)\",\n      \"The steady rise of the top percentiles highlights the ongoing extension of the maximum human lifespan, which has significant implications for pension systems, healthcare infrastructure, and elder care\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 6,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data values or precise coordinates are provided in text form; they must be estimated visually from the axes."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "General trends can be estimated (e.g., the 99% survival age rising from 0 to over 30 years), but exact magnitudes of change are not provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, and source labels clearly identify the subject as historical demographic survival rates in France."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No external domain-specific metadata or expert commentary was provided with the image."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No information about stakeholders, policy implications, or real-world decision-making context was provided."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows survival ages across different percentiles of the population in France from 1816 to 2023 [DIRECT]. It was published by Our World in Data, using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025) [DIRECT]. The purpose of the visualization is to illustrate how long different segments of the French population (from the longest-lived 1% to the shortest-lived 99%) survived based on period life tables across more than two centuries [DERIVED: interpreted from the subtitle and axis labels].",
+      "domain_specific_explanations": "The lines represent the age to which a specific percentage of a birth cohort would survive if they experienced the age-specific mortality rates of that specific year [DIRECT]. For example, the 99% line represents the age that 99% of the population survived past, meaning only 1% died before this age [DERIVED: interpreted from the subtitle's explanation of percentiles]. In the 19th century, the 99% line is near 0 years, indicating that at least 1% of the population died in infancy [DERIVED: observed 99% line at ~0 years from 1816 to around 1900]. The top 1% of survivors in 2023 lived to over 100 years, compared to around 90 years in 1816 [DERIVED: compared the top line's start and end values on the Y-axis]. There are sharp downward spikes in survival ages across almost all percentiles around 1870, 1914-1918, and 1940-1945 [DERIVED: observed sharp dips in the lines at these specific X-axis intervals].",
+      "real_world_significance": "The dramatic rise of the lower percentiles (such as the 90% and 99% lines) in the 20th century reflects the triumph of modern medicine, clean water, and public health in virtually eliminating high infant and child mortality [SPECULATIVE: public health history]. The historical dips correspond directly to major conflicts and crises in French history: the Franco-Prussian War (1870-1871), World War I and the Spanish Flu (1914-1918), and World War II (1939-1945) [SPECULATIVE: French history]. The steady rise of the top percentiles highlights the ongoing extension of the maximum human lifespan, which has significant implications for pension systems, healthcare infrastructure, and elder care [SPECULATIVE: demography and social policy].",
+      "other": "The compression of mortality (where the lines for the 10th through 90th percentiles draw closer together at older ages over time) indicates that death is increasingly concentrated at older ages rather than distributed throughout life [DERIVED: observed the narrowing vertical gap between the middle percentile lines over time]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows survival ages across different percentiles of the population in France from 1816 to 2023",
+        "It was published by Our World in Data, using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025)",
+        "The lines represent the age to which a specific percentage of a birth cohort would survive if they experienced the age-specific mortality rates of that specific year"
+      ],
+      "derived_claims": [
+        "The purpose of the visualization is to illustrate how long different segments of the French population (from the longest-lived 1% to the shortest-lived 99%) survived based on period life tables across more than two centuries",
+        "The 99% line represents the age that 99% of the population survived past, meaning only 1% died before this age",
+        "In the 19th century, the 99% line is near 0 years, indicating that at least 1% of the population died in infancy",
+        "The top 1% of survivors in 2023 lived to over 100 years, compared to around 90 years in 1816",
+        "There are sharp downward spikes in survival ages across almost all percentiles around 1870, 1914-1918, and 1940-1945",
+        "The compression of mortality (where the lines for the 10th through 90th percentiles draw closer together at older ages over time) indicates that death is increasingly concentrated at older ages rather than distributed throughout life"
+      ],
+      "speculative_claims": [
+        "The dramatic rise of the lower percentiles (such as the 90% and 99% lines) in the 20th century reflects the triumph of modern medicine, clean water, and public health in virtually eliminating high infant and child mortality",
+        "The historical dips correspond directly to major conflicts and crises in French history: the Franco-Prussian War (1870-1871), World War I and the Spanish Flu (1914-1918), and World War II (1939-1945)",
+        "The steady rise of the top percentiles highlights the ongoing extension of the maximum human lifespan, which has significant implications for pension systems, healthcare infrastructure, and elder care"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 6,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14161.637916986365,
+  "created_at": "2026-07-07T22:43:25.417380Z"
+}

@@ -1,0 +1,75 @@
+{
+  "output_id": "baf50e9e-a2bb-41a0-a0b6-7fdce9b069b1",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No underlying data table or exact numerical values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No textual descriptions of trends or magnitudes were provided in the metadata, though the chart image itself clearly shows them.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The title is provided in the metadata, but it lacks the geographic and temporal scope ('France, 1816 to 2023') which is only visible in the image.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Survival ages across the population, France, 1816 to 2023', is published by Our World in Data using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025) [DIRECT]. It illustrates how long different percentiles of the French population survived if they experienced the age-specific death rates of their birth year [DIRECT]. This visualization belongs to the fields of historical demography and public health, tracking the long-term transition from high-mortality societies to modern low-mortality societies [SPECULATIVE: Demography].\",\n    \"domain_specific_explanations\": \"The lines represent percentiles of survival, ranging from the top 1% (the longest-lived individuals) down to the 99% mark (representing nearly the entire population) [DIRECT]. In demography, the 50% line represents the median life expectancy of a cohort [SPECULATIVE: Demography]. The dramatic upward trend of the lower percentiles (such as the 90% and 99% lines) indicates a massive reduction in early-life mortality [DERIVED: Observing the steep rise of the 90% and 99% lines over time]. Historically, the sharp downward spikes in survival ages—most notably around 1870-1871, 1914-1918, and 1939-1945—reflect periods of extreme excess mortality [DERIVED: Identifying the years of the sharpest drops on the X-axis]. These correspond to major historical crises in France, including the Franco-Prussian War, World War I, the 1918 Spanish Flu pandemic, and World War II [SPECULATIVE: French History].\",\n    \"real_world_significance\": \"This data highlights one of humanity's greatest achievements: the near-elimination of premature childhood death. In 1816, the 99% survival line was near 0 years, meaning more than 1% of infants died almost immediately, and the 90% survival line was around 20 years, meaning a tenth of the population did not reach adulthood [DERIVED: Reading the 1816 start points of the 99% and 90% lines]. By 2023, the 99% survival line has risen to over 30 years, and the 90% line is near 60 years, showing that childhood death has become extremely rare [DERIVED: Reading the 2023 end points of the 99% and 90% lines]. This transition was driven by public health interventions like clean water, sanitation, vaccination, and improved infant care [SPECULATIVE: Public Health History]. Today, these high survival rates across all percentiles underpin the demographic shift toward aging societies, which presents new challenges for pension systems, retirement planning, and geriatric healthcare [SPECULATIVE: Economics/Sociology].\",\n    \"other\": \"The narrowing gap between the upper percentiles (e.g., 10% to 50%) in recent decades demonstrates a phenomenon known as the 'compression of mortality,' where deaths are increasingly concentrated at older ages [SPECULATIVE: Demography].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart, titled 'Survival ages across the population, France, 1816 to 2023', is published by Our World in Data using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025)\",\n      \"It illustrates how long different percentiles of the French population survived if they experienced the age-specific death rates of their birth year\",\n      \"The lines represent percentiles of survival, ranging from the top 1% (the longest-lived individuals) down to the 99% mark (representing nearly the entire population)\"\n    ],\n    \"derived_claims\": [\n      \"The dramatic upward trend of the lower percentiles (such as the 90% and 99% lines) indicates a massive reduction in early-life mortality\",\n      \"Historically, the sharp downward spikes in survival ages—most notably around 1870-1871, 1914-1918, and 1939-1945—reflect periods of extreme excess mortality\",\n      \"In 1816, the 99% survival line was near 0 years, meaning more than 1% of infants died almost immediately, and the 90% survival line was around 20 years, meaning a tenth of the population did not reach adulthood\",\n      \"By 2023, the 99% survival line has risen to over 30 years, and the 90% line is near 60 years, showing that childhood death has become extremely rare\"\n    ],\n    \"speculative_claims\": [\n      \"This visualization belongs to the fields of historical demography and public health, tracking the long-term transition from high-mortality societies to modern low-mortality societies\",\n      \"In demography, the 50% line represents the median life expectancy of a cohort\",\n      \"These correspond to major historical crises in France, including the Franco-Prussian War, World War I, the 1918 Spanish Flu pandemic, and World War II\",\n      \"This transition was driven by public health interventions like clean water, sanitation, vaccination, and improved infant care\",\n      \"Today, these high survival rates across all percentiles underpin the demographic shift toward aging societies, which presents new challenges for pension systems, retirement planning, and geriatric healthcare\",\n      \"The narrowing gap between the upper percentiles (e.g., 10% to 50%) in recent decades demonstrates a phenomenon known as the 'compression of mortality,' where deaths are increasingly concentrated at older ages\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No underlying data table or exact numerical values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No textual descriptions of trends or magnitudes were provided in the metadata, though the chart image itself clearly shows them."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The title is provided in the metadata, but it lacks the geographic and temporal scope ('France, 1816 to 2023') which is only visible in the image."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Survival ages across the population, France, 1816 to 2023', is published by Our World in Data using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025) [DIRECT]. It illustrates how long different percentiles of the French population survived if they experienced the age-specific death rates of their birth year [DIRECT]. This visualization belongs to the fields of historical demography and public health, tracking the long-term transition from high-mortality societies to modern low-mortality societies [SPECULATIVE: Demography].",
+      "domain_specific_explanations": "The lines represent percentiles of survival, ranging from the top 1% (the longest-lived individuals) down to the 99% mark (representing nearly the entire population) [DIRECT]. In demography, the 50% line represents the median life expectancy of a cohort [SPECULATIVE: Demography]. The dramatic upward trend of the lower percentiles (such as the 90% and 99% lines) indicates a massive reduction in early-life mortality [DERIVED: Observing the steep rise of the 90% and 99% lines over time]. Historically, the sharp downward spikes in survival ages—most notably around 1870-1871, 1914-1918, and 1939-1945—reflect periods of extreme excess mortality [DERIVED: Identifying the years of the sharpest drops on the X-axis]. These correspond to major historical crises in France, including the Franco-Prussian War, World War I, the 1918 Spanish Flu pandemic, and World War II [SPECULATIVE: French History].",
+      "real_world_significance": "This data highlights one of humanity's greatest achievements: the near-elimination of premature childhood death. In 1816, the 99% survival line was near 0 years, meaning more than 1% of infants died almost immediately, and the 90% survival line was around 20 years, meaning a tenth of the population did not reach adulthood [DERIVED: Reading the 1816 start points of the 99% and 90% lines]. By 2023, the 99% survival line has risen to over 30 years, and the 90% line is near 60 years, showing that childhood death has become extremely rare [DERIVED: Reading the 2023 end points of the 99% and 90% lines]. This transition was driven by public health interventions like clean water, sanitation, vaccination, and improved infant care [SPECULATIVE: Public Health History]. Today, these high survival rates across all percentiles underpin the demographic shift toward aging societies, which presents new challenges for pension systems, retirement planning, and geriatric healthcare [SPECULATIVE: Economics/Sociology].",
+      "other": "The narrowing gap between the upper percentiles (e.g., 10% to 50%) in recent decades demonstrates a phenomenon known as the 'compression of mortality,' where deaths are increasingly concentrated at older ages [SPECULATIVE: Demography]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart, titled 'Survival ages across the population, France, 1816 to 2023', is published by Our World in Data using data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025)",
+        "It illustrates how long different percentiles of the French population survived if they experienced the age-specific death rates of their birth year",
+        "The lines represent percentiles of survival, ranging from the top 1% (the longest-lived individuals) down to the 99% mark (representing nearly the entire population)"
+      ],
+      "derived_claims": [
+        "The dramatic upward trend of the lower percentiles (such as the 90% and 99% lines) indicates a massive reduction in early-life mortality",
+        "Historically, the sharp downward spikes in survival ages—most notably around 1870-1871, 1914-1918, and 1939-1945—reflect periods of extreme excess mortality",
+        "In 1816, the 99% survival line was near 0 years, meaning more than 1% of infants died almost immediately, and the 90% survival line was around 20 years, meaning a tenth of the population did not reach adulthood",
+        "By 2023, the 99% survival line has risen to over 30 years, and the 90% line is near 60 years, showing that childhood death has become extremely rare"
+      ],
+      "speculative_claims": [
+        "This visualization belongs to the fields of historical demography and public health, tracking the long-term transition from high-mortality societies to modern low-mortality societies",
+        "In demography, the 50% line represents the median life expectancy of a cohort",
+        "These correspond to major historical crises in France, including the Franco-Prussian War, World War I, the 1918 Spanish Flu pandemic, and World War II",
+        "This transition was driven by public health interventions like clean water, sanitation, vaccination, and improved infant care",
+        "Today, these high survival rates across all percentiles underpin the demographic shift toward aging societies, which presents new challenges for pension systems, retirement planning, and geriatric healthcare",
+        "The narrowing gap between the upper percentiles (e.g., 10% to 50%) in recent decades demonstrates a phenomenon known as the 'compression of mortality,' where deaths are increasingly concentrated at older ages"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14447.002166998573,
+  "created_at": "2026-07-07T22:43:08.824453Z"
+}

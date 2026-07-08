@@ -1,0 +1,71 @@
+{
+  "output_id": "616d097c-0aae-4ade-9a7c-158ab52a0a42",
+  "chart_id": "olli_faceted-chart",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table not provided, but some summary statistics are available in the OLLI screen reader tree.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"Some summary statistics provided, but detailed trend analysis is not possible without exact data values.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The domain (barley yield) is mentioned, and some context is provided in the expert domain story.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a faceted plot showing barley yield data across different sites and varieties [DIRECT]. The data is presented for two years: 1931 and 1932 [DIRECT]. The chart is attributed to Becker's Barley Trellis Plot [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart displays yield values for various barley varieties across multiple sites [DIRECT]. The yield values range from 14.43 to 65.77 [DIRECT]. There are 10 varieties of barley and data for two years: 1931 and 1932 [DIRECT]. The average yield for each variety and year is provided in the OLLI screen reader tree [DERIVED: from OLLI screen reader tree data].\",\n    \"real_world_significance\": \"This data is significant for agricultural research and decision-making regarding barley cultivation [SPECULATIVE: agricultural research]. The yield differences across varieties and sites can inform planting decisions [SPECULATIVE: agricultural practice]. The data may also be used to compare the performance of different barley varieties over time [SPECULATIVE: agricultural research].\",\n    \"other\": \"The chart uses a trellis plot design to facilitate comparison across sites and varieties [DIRECT]. The use of different colors (blue and orange) represents the two years (1931 and 1932) [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a faceted plot showing barley yield data across different sites and varieties\",\n      \"The data is presented for two years: 1931 and 1932\",\n      \"The chart is attributed to Becker's Barley Trellis Plot\",\n      \"The chart displays yield values for various barley varieties across multiple sites\",\n      \"The yield values range from 14.43 to 65.77\",\n      \"There are 10 varieties of barley and data for two years: 1931 and 1932\",\n      \"The chart uses a trellis plot design to facilitate comparison across sites and varieties\",\n      \"The use of different colors (blue and orange) represents the two years (1931 and 1932)\"\n    ],\n    \"derived_claims\": [\n      \"The average yield for each variety and year is provided in the OLLI screen reader tree\"\n    ],\n    \"speculative_claims\": [\n      \"This data is significant for agricultural research and decision-making regarding barley cultivation\",\n      \"The yield differences across varieties and sites can inform planting decisions\",\n      \"The data may also be used to compare the performance of different barley varieties over time\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 8,\n    \"derived_count\": 1,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table not provided, but some summary statistics are available in the OLLI screen reader tree."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Some summary statistics provided, but detailed trend analysis is not possible without exact data values."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The domain (barley yield) is mentioned, and some context is provided in the expert domain story."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a faceted plot showing barley yield data across different sites and varieties [DIRECT]. The data is presented for two years: 1931 and 1932 [DIRECT]. The chart is attributed to Becker's Barley Trellis Plot [DIRECT].",
+      "domain_specific_explanations": "The chart displays yield values for various barley varieties across multiple sites [DIRECT]. The yield values range from 14.43 to 65.77 [DIRECT]. There are 10 varieties of barley and data for two years: 1931 and 1932 [DIRECT]. The average yield for each variety and year is provided in the OLLI screen reader tree [DERIVED: from OLLI screen reader tree data].",
+      "real_world_significance": "This data is significant for agricultural research and decision-making regarding barley cultivation [SPECULATIVE: agricultural research]. The yield differences across varieties and sites can inform planting decisions [SPECULATIVE: agricultural practice]. The data may also be used to compare the performance of different barley varieties over time [SPECULATIVE: agricultural research].",
+      "other": "The chart uses a trellis plot design to facilitate comparison across sites and varieties [DIRECT]. The use of different colors (blue and orange) represents the two years (1931 and 1932) [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a faceted plot showing barley yield data across different sites and varieties",
+        "The data is presented for two years: 1931 and 1932",
+        "The chart is attributed to Becker's Barley Trellis Plot",
+        "The chart displays yield values for various barley varieties across multiple sites",
+        "The yield values range from 14.43 to 65.77",
+        "There are 10 varieties of barley and data for two years: 1931 and 1932",
+        "The chart uses a trellis plot design to facilitate comparison across sites and varieties",
+        "The use of different colors (blue and orange) represents the two years (1931 and 1932)"
+      ],
+      "derived_claims": [
+        "The average yield for each variety and year is provided in the OLLI screen reader tree"
+      ],
+      "speculative_claims": [
+        "This data is significant for agricultural research and decision-making regarding barley cultivation",
+        "The yield differences across varieties and sites can inform planting decisions",
+        "The data may also be used to compare the performance of different barley varieties over time"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 8,
+      "derived_count": 1,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 4425,
+    "output": 725
+  },
+  "latency_ms": 3269.0606670221314,
+  "created_at": "2026-07-08T14:26:41.979242Z"
+}

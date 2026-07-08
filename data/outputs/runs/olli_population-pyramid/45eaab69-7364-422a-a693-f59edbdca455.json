@@ -1,0 +1,73 @@
+{
+  "output_id": "45eaab69-7364-422a-a693-f59edbdca455",
+  "chart_id": "olli_population-pyramid",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact raw data table is missing, but the OLLI screen reader tree provides aggregated average sum values for each age cohort and gender, which allows for structural analysis.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The general demographic trends and gender ratios can be derived from the aggregated values in the OLLI tree, though precise individual cohort sizes are not fully detailed.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, axis labels, and expert domain story clearly identify this as a US population pyramid from the year 2000.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a population pyramid representing the demographic structure of the United States in the year 2000 [DIRECT]. It is structured as a diverging bar chart with age groups on the Y-axis and population on the X-axis [DIRECT]. The chart divides the population by gender (Female and Male) [DIRECT] and age cohorts ranging from 0 to 90 years old [DIRECT]. The data is sourced from a public visualization gallery demonstrating accessible chart representations (OLLI) [DIRECT].\",\n    \"domain_specific_explanations\": \"In demography, a population pyramid is used to show the distribution of various age groups in a population, which typically forms the shape of a pyramid when the population is growing [SPECULATIVE: Demography]. In this dataset's encoding, females are represented by negative values and males by positive values [DERIVED: Comparison of gender average sums in OLLI tree]. The age cohorts are grouped in 5-year intervals [DIRECT]. The average sum of people per age group transitions from positive at younger ages (0 to 30) to negative at older ages (35 to 90) [DERIVED: Observation of age-level average sums in OLLI tree]. This transition indicates a demographic shift from a male majority at birth and youth to a female majority in older age groups [DERIVED: Logical deduction from gender encodings and age-level sums].\",\n    \"real_world_significance\": \"The year 2000 data represents a specific historical snapshot of the US population at the turn of the millennium [SPECULATIVE: US History]. The transition from a male majority in youth to a female majority in older age groups aligns with well-documented demographic trends where more males are born globally, but females have a longer life expectancy, leading to a female-dominated elderly population [SPECULATIVE: Demography]. The total average sum for females (-7.55M) and males (7.25M) indicates a relatively balanced gender ratio with a slight female majority in the overall average sum [DERIVED: Comparison of absolute values of female and male average sums]. Analyzing the distribution of younger cohorts versus older cohorts helps policymakers and urban planners project future needs for education, healthcare, and social security [SPECULATIVE: Public Policy].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a population pyramid representing the demographic structure of the United States in the year 2000\",\n      \"It is structured as a diverging bar chart with age groups on the Y-axis and population on the X-axis\",\n      \"The chart divides the population by gender (Female and Male)\",\n      \"and age cohorts ranging from 0 to 90 years old\",\n      \"The data is sourced from a public visualization gallery demonstrating accessible chart representations (OLLI)\",\n      \"The age cohorts are grouped in 5-year intervals\"\n    ],\n    \"derived_claims\": [\n      \"In this dataset's encoding, females are represented by negative values and males by positive values [derived from Comparison of gender average sums in OLLI tree]\",\n      \"The average sum of people per age group transitions from positive at younger ages (0 to 30) to negative at older ages (35 to 90) [derived from Observation of age-level average sums in OLLI tree]\",\n      \"This transition indicates a demographic shift from a male majority at birth and youth to a female majority in older age groups [derived from Logical deduction from gender encodings and age-level sums]\",\n      \"The total average sum for females (-7.55M) and males (7.25M) indicates a relatively balanced gender ratio with a slight female majority in the overall average sum [derived from Comparison of absolute values of female and male average sums]\"\n    ],\n    \"speculative_claims\": [\n      \"In demography, a population pyramid is used to show the distribution of various age groups in a population, which typically forms the shape of a pyramid when the population is growing [Source: Demography]\",\n      \"The year 2000 data represents a specific historical snapshot of the US population at the turn of the millennium [Source: US History]\",\n      \"The transition from a male majority in youth to a female majority in older age groups aligns with well-documented demographic trends where more males are born globally, but females have a longer life expectancy, leading to a female-dominated elderly population [Source: Demography]\",\n      \"Analyzing the distribution of younger cohorts versus older cohorts helps policymakers and urban planners project future needs for education, healthcare, and social security [Source: Public Policy]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 6,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact raw data table is missing, but the OLLI screen reader tree provides aggregated average sum values for each age cohort and gender, which allows for structural analysis."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The general demographic trends and gender ratios can be derived from the aggregated values in the OLLI tree, though precise individual cohort sizes are not fully detailed."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, axis labels, and expert domain story clearly identify this as a US population pyramid from the year 2000."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a population pyramid representing the demographic structure of the United States in the year 2000 [DIRECT]. It is structured as a diverging bar chart with age groups on the Y-axis and population on the X-axis [DIRECT]. The chart divides the population by gender (Female and Male) [DIRECT] and age cohorts ranging from 0 to 90 years old [DIRECT]. The data is sourced from a public visualization gallery demonstrating accessible chart representations (OLLI) [DIRECT].",
+      "domain_specific_explanations": "In demography, a population pyramid is used to show the distribution of various age groups in a population, which typically forms the shape of a pyramid when the population is growing [SPECULATIVE: Demography]. In this dataset's encoding, females are represented by negative values and males by positive values [DERIVED: Comparison of gender average sums in OLLI tree]. The age cohorts are grouped in 5-year intervals [DIRECT]. The average sum of people per age group transitions from positive at younger ages (0 to 30) to negative at older ages (35 to 90) [DERIVED: Observation of age-level average sums in OLLI tree]. This transition indicates a demographic shift from a male majority at birth and youth to a female majority in older age groups [DERIVED: Logical deduction from gender encodings and age-level sums].",
+      "real_world_significance": "The year 2000 data represents a specific historical snapshot of the US population at the turn of the millennium [SPECULATIVE: US History]. The transition from a male majority in youth to a female majority in older age groups aligns with well-documented demographic trends where more males are born globally, but females have a longer life expectancy, leading to a female-dominated elderly population [SPECULATIVE: Demography]. The total average sum for females (-7.55M) and males (7.25M) indicates a relatively balanced gender ratio with a slight female majority in the overall average sum [DERIVED: Comparison of absolute values of female and male average sums]. Analyzing the distribution of younger cohorts versus older cohorts helps policymakers and urban planners project future needs for education, healthcare, and social security [SPECULATIVE: Public Policy].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a population pyramid representing the demographic structure of the United States in the year 2000",
+        "It is structured as a diverging bar chart with age groups on the Y-axis and population on the X-axis",
+        "The chart divides the population by gender (Female and Male)",
+        "and age cohorts ranging from 0 to 90 years old",
+        "The data is sourced from a public visualization gallery demonstrating accessible chart representations (OLLI)",
+        "The age cohorts are grouped in 5-year intervals"
+      ],
+      "derived_claims": [
+        "In this dataset's encoding, females are represented by negative values and males by positive values [derived from Comparison of gender average sums in OLLI tree]",
+        "The average sum of people per age group transitions from positive at younger ages (0 to 30) to negative at older ages (35 to 90) [derived from Observation of age-level average sums in OLLI tree]",
+        "This transition indicates a demographic shift from a male majority at birth and youth to a female majority in older age groups [derived from Logical deduction from gender encodings and age-level sums]",
+        "The total average sum for females (-7.55M) and males (7.25M) indicates a relatively balanced gender ratio with a slight female majority in the overall average sum [derived from Comparison of absolute values of female and male average sums]"
+      ],
+      "speculative_claims": [
+        "In demography, a population pyramid is used to show the distribution of various age groups in a population, which typically forms the shape of a pyramid when the population is growing [Source: Demography]",
+        "The year 2000 data represents a specific historical snapshot of the US population at the turn of the millennium [Source: US History]",
+        "The transition from a male majority in youth to a female majority in older age groups aligns with well-documented demographic trends where more males are born globally, but females have a longer life expectancy, leading to a female-dominated elderly population [Source: Demography]",
+        "Analyzing the distribution of younger cohorts versus older cohorts helps policymakers and urban planners project future needs for education, healthcare, and social security [Source: Public Policy]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 6,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16394.950499990955,
+  "created_at": "2026-07-08T14:29:38.667958Z"
+}

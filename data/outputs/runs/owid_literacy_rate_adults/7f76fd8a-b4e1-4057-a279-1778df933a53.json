@@ -1,0 +1,76 @@
+{
+  "output_id": "7f76fd8a-b4e1-4057-a279-1778df933a53",
+  "chart_id": "owid_literacy_rate_adults",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No explicit trend values are provided, though general geographic trends can be read from the map image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The title in the metadata and the image text clearly identify the domain as global adult literacy.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart title provided in the metadata is 'Literacy rates - by age group and gender' [DIRECT], though the actual image displays the title 'Literacy rates among adults, 2023' [DERIVED: read from chart image]. The chart is published by Our World in Data, using data sourced from the UNESCO Institute for Statistics (2025) [DERIVED: read from chart image]. It measures the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DERIVED: read from chart image subtitle]. Notably, many high-income regions like North America, Western Europe, and Australia are marked as 'No data' on this map [DERIVED: read from map visualization].\",\n    \"domain_specific_explanations\": \"Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: Development Economics]. The definition used here—being able to read and write a simple sentence—represents basic functional literacy rather than advanced literacy or digital literacy [DERIVED: read from chart image subtitle]. The map shows a stark geographic divide: northern and southern temperate zones (like Russia, China, and South America) show very high literacy rates of 90% or above [DERIVED: read from map colors and legend], while the Sahel region of Africa and parts of South/Central Asia (like Afghanistan) show much lower rates, often below 60% [DERIVED: read from map colors and legend].\",\n    \"real_world_significance\": \"Adult literacy is crucial for economic development, health outcomes, and gender equality [SPECULATIVE: International Development]. Low literacy rates in regions like Sub-Saharan Africa highlight ongoing challenges in primary education infrastructure and historical educational deficits [SPECULATIVE: Education Policy]. Governments and international organizations like UNESCO use this data to target educational funding, literacy programs, and development aid to regions with the greatest need [SPECULATIVE: Public Policy]. If these disparities persist, the economic gap between highly literate nations and those with low literacy rates is likely to widen, limiting the latter's participation in the global digital economy [SPECULATIVE: Global Economics].\",\n    \"other\": \"The lack of data for several developed nations (e.g., USA, Canada, Australia) might be because these countries do not regularly collect basic literacy data in the same standardized format, often focusing instead on more complex literacy assessments [SPECULATIVE: Educational Statistics].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart title provided in the metadata is 'Literacy rates - by age group and gender'\"\n    ],\n    \"derived_claims\": [\n      \"the actual image displays the title 'Literacy rates among adults, 2023', derived from reading the chart image\",\n      \"The chart is published by Our World in Data, using data sourced from the UNESCO Institute for Statistics (2025), derived from reading the chart image\",\n      \"It measures the share of adults aged 15 years and older who can read and write a simple sentence about their daily life, derived from reading the chart image subtitle\",\n      \"Many high-income regions like North America, Western Europe, and Australia are marked as 'No data' on this map, derived from reading the map visualization\",\n      \"The definition used here—being able to read and write a simple sentence—represents basic functional literacy rather than advanced literacy or digital literacy, derived from reading the chart image subtitle\",\n      \"The map shows a stark geographic divide: northern and southern temperate zones (like Russia, China, and South America) show very high literacy rates of 90% or above, derived from reading the map colors and legend\",\n      \"the Sahel region of Africa and parts of South/Central Asia (like Afghanistan) show much lower rates, often below 60%, derived from reading the map colors and legend\"\n    ],\n    \"speculative_claims\": [\n      \"Literacy is a fundamental metric of educational attainment and human capital, sourced from Development Economics\",\n      \"Adult literacy is crucial for economic development, health outcomes, and gender equality, sourced from International Development\",\n      \"Low literacy rates in regions like Sub-Saharan Africa highlight ongoing challenges in primary education infrastructure and historical educational deficits, sourced from Education Policy\",\n      \"Governments and international organizations like UNESCO use this data to target educational funding, literacy programs, and development aid to regions with the greatest need, sourced from Public Policy\",\n      \"If these disparities persist, the economic gap between highly literate nations and those with low literacy rates is likely to widen, limiting the latter's participation in the global digital economy, sourced from Global Economics\",\n      \"The lack of data for several developed nations (e.g., USA, Canada, Australia) might be because these countries do not regularly collect basic literacy data in the same standardized format, often focusing instead on more complex literacy assessments, sourced from Educational Statistics\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 1,\n    \"derived_count\": 7,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No explicit trend values are provided, though general geographic trends can be read from the map image."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The title in the metadata and the image text clearly identify the domain as global adult literacy."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart title provided in the metadata is 'Literacy rates - by age group and gender' [DIRECT], though the actual image displays the title 'Literacy rates among adults, 2023' [DERIVED: read from chart image]. The chart is published by Our World in Data, using data sourced from the UNESCO Institute for Statistics (2025) [DERIVED: read from chart image]. It measures the share of adults aged 15 years and older who can read and write a simple sentence about their daily life [DERIVED: read from chart image subtitle]. Notably, many high-income regions like North America, Western Europe, and Australia are marked as 'No data' on this map [DERIVED: read from map visualization].",
+      "domain_specific_explanations": "Literacy is a fundamental metric of educational attainment and human capital [SPECULATIVE: Development Economics]. The definition used here—being able to read and write a simple sentence—represents basic functional literacy rather than advanced literacy or digital literacy [DERIVED: read from chart image subtitle]. The map shows a stark geographic divide: northern and southern temperate zones (like Russia, China, and South America) show very high literacy rates of 90% or above [DERIVED: read from map colors and legend], while the Sahel region of Africa and parts of South/Central Asia (like Afghanistan) show much lower rates, often below 60% [DERIVED: read from map colors and legend].",
+      "real_world_significance": "Adult literacy is crucial for economic development, health outcomes, and gender equality [SPECULATIVE: International Development]. Low literacy rates in regions like Sub-Saharan Africa highlight ongoing challenges in primary education infrastructure and historical educational deficits [SPECULATIVE: Education Policy]. Governments and international organizations like UNESCO use this data to target educational funding, literacy programs, and development aid to regions with the greatest need [SPECULATIVE: Public Policy]. If these disparities persist, the economic gap between highly literate nations and those with low literacy rates is likely to widen, limiting the latter's participation in the global digital economy [SPECULATIVE: Global Economics].",
+      "other": "The lack of data for several developed nations (e.g., USA, Canada, Australia) might be because these countries do not regularly collect basic literacy data in the same standardized format, often focusing instead on more complex literacy assessments [SPECULATIVE: Educational Statistics]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart title provided in the metadata is 'Literacy rates - by age group and gender'"
+      ],
+      "derived_claims": [
+        "the actual image displays the title 'Literacy rates among adults, 2023', derived from reading the chart image",
+        "The chart is published by Our World in Data, using data sourced from the UNESCO Institute for Statistics (2025), derived from reading the chart image",
+        "It measures the share of adults aged 15 years and older who can read and write a simple sentence about their daily life, derived from reading the chart image subtitle",
+        "Many high-income regions like North America, Western Europe, and Australia are marked as 'No data' on this map, derived from reading the map visualization",
+        "The definition used here—being able to read and write a simple sentence—represents basic functional literacy rather than advanced literacy or digital literacy, derived from reading the chart image subtitle",
+        "The map shows a stark geographic divide: northern and southern temperate zones (like Russia, China, and South America) show very high literacy rates of 90% or above, derived from reading the map colors and legend",
+        "the Sahel region of Africa and parts of South/Central Asia (like Afghanistan) show much lower rates, often below 60%, derived from reading the map colors and legend"
+      ],
+      "speculative_claims": [
+        "Literacy is a fundamental metric of educational attainment and human capital, sourced from Development Economics",
+        "Adult literacy is crucial for economic development, health outcomes, and gender equality, sourced from International Development",
+        "Low literacy rates in regions like Sub-Saharan Africa highlight ongoing challenges in primary education infrastructure and historical educational deficits, sourced from Education Policy",
+        "Governments and international organizations like UNESCO use this data to target educational funding, literacy programs, and development aid to regions with the greatest need, sourced from Public Policy",
+        "If these disparities persist, the economic gap between highly literate nations and those with low literacy rates is likely to widen, limiting the latter's participation in the global digital economy, sourced from Global Economics",
+        "The lack of data for several developed nations (e.g., USA, Canada, Australia) might be because these countries do not regularly collect basic literacy data in the same standardized format, often focusing instead on more complex literacy assessments, sourced from Educational Statistics"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 1,
+      "derived_count": 7,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16066.894499992486,
+  "created_at": "2026-07-07T22:58:23.129259Z"
+}

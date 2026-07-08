@@ -1,0 +1,69 @@
+{
+  "output_id": "64ae6a38-1a79-4da1-8b3c-07cf035dcddb",
+  "chart_id": "olli_faceted-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The OLLI screen reader tree provides partial data values and averages for several sites, but the full raw data table is truncated and not fully provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The OLLI tree provides average yields per year and variety for some sites, allowing for partial trend analysis, but lacks the complete dataset.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The expert domain story and OLLI tree clearly identify this as Becker's Barley Trellis Plot, a well-known statistical dataset.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a trellis display of Becker's Barley dataset, displaying the yield of 10 varieties of barley across 6 different sites for the years 1931 and 1932 [DIRECT]. The visualization is a classic example of a multi-panel trellis plot popularized by William S. Cleveland and colleagues at Bell Labs to demonstrate the power of trellis graphics in identifying data anomalies [SPECULATIVE: Data Visualization History].\",\n    \"domain_specific_explanations\": \"The chart plots 'yield' on the X-axis against 'variety' on the Y-axis, grouped by 'site' (the facets) and distinguished by 'year' (1931 vs 1932) [DIRECT]. In agricultural trials, comparing crop yields across multiple locations and years helps researchers understand genotype-by-environment interactions [SPECULATIVE: Agronomy]. Looking at the Morris site, the yields for 1932 are systematically higher than 1931 for almost all varieties, which is the reverse of the trend seen in other sites like Crookston, Grand Rapids, and Duluth where 1931 yields were generally higher [DERIVED: Comparing the dot positions for 1931 (blue) and 1932 (orange) across the Morris panel versus other panels in the image]. This anomaly in the Morris data is a famous example of a potential data entry error (a year-switch) first spotted using this trellis visualization technique [SPECULATIVE: Data Visualization History].\",\n    \"real_world_significance\": \"This dataset and its visualization are historically significant in the field of statistics and data science because they illustrate how visual trellis designs can reveal errors (like the Morris year-switch anomaly) that might be missed by summary statistics alone [SPECULATIVE: Data Science History]. For agricultural planning, understanding which barley varieties consistently perform well across different microclimates (sites) and weather years is crucial for recommending resilient crop strains to farmers [SPECULATIVE: Agronomy].\",\n    \"other\": \"The six sites represented are Crookston, Duluth, Grand Rapids, University Farm, Morris, and Waseca [DERIVED: Reading the facet titles from the chart image]. The ten varieties of barley include Manchuria, Glabron, Svansota, Velvet, Trebi, No. 457, No. 462, Peatland, No. 475, and Wisconsin No. 38 [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a trellis display of Becker's Barley dataset, displaying the yield of 10 varieties of barley across 6 different sites for the years 1931 and 1932\",\n      \"The chart plots 'yield' on the X-axis against 'variety' on the Y-axis, grouped by 'site' (the facets) and distinguished by 'year' (1931 vs 1932)\",\n      \"The ten varieties of barley include Manchuria, Glabron, Svansota, Velvet, Trebi, No. 457, No. 462, Peatland, No. 475, and Wisconsin No. 38\"\n    ],\n    \"derived_claims\": [\n      \"Looking at the Morris site, the yields for 1932 are systematically higher than 1931 for almost all varieties, which is the reverse of the trend seen in other sites like Crookston, Grand Rapids, and Duluth where 1931 yields were generally higher [DERIVED: Comparing the dot positions for 1931 (blue) and 1932 (orange) across the Morris panel versus other panels in the image]\",\n      \"The six sites represented are Crookston, Duluth, Grand Rapids, University Farm, Morris, and Waseca [DERIVED: Reading the facet titles from the chart image]\"\n    ],\n    \"speculative_claims\": [\n      \"The visualization is a classic example of a multi-panel trellis plot popularized by William S. Cleveland and colleagues at Bell Labs to demonstrate the power of trellis graphics in identifying data anomalies [SPECULATIVE: Data Visualization History]\",\n      \"In agricultural trials, comparing crop yields across multiple locations and years helps researchers understand genotype-by-environment interactions [SPECULATIVE: Agronomy]\",\n      \"This anomaly in the Morris data is a famous example of a potential data entry error (a year-switch) first spotted using this trellis visualization technique [SPECULATIVE: Data Visualization History]\",\n      \"This dataset and its visualization are historically significant in the field of statistics and data science because they illustrate how visual trellis designs can reveal errors (like the Morris year-switch anomaly) that might be missed by summary statistics alone [SPECULATIVE: Data Science History]\",\n      \"For agricultural planning, understanding which barley varieties consistently perform well across different microclimates (sites) and weather years is crucial for recommending resilient crop strains to farmers [SPECULATIVE: Agronomy]\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The OLLI screen reader tree provides partial data values and averages for several sites, but the full raw data table is truncated and not fully provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The OLLI tree provides average yields per year and variety for some sites, allowing for partial trend analysis, but lacks the complete dataset."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The expert domain story and OLLI tree clearly identify this as Becker's Barley Trellis Plot, a well-known statistical dataset."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a trellis display of Becker's Barley dataset, displaying the yield of 10 varieties of barley across 6 different sites for the years 1931 and 1932 [DIRECT]. The visualization is a classic example of a multi-panel trellis plot popularized by William S. Cleveland and colleagues at Bell Labs to demonstrate the power of trellis graphics in identifying data anomalies [SPECULATIVE: Data Visualization History].",
+      "domain_specific_explanations": "The chart plots 'yield' on the X-axis against 'variety' on the Y-axis, grouped by 'site' (the facets) and distinguished by 'year' (1931 vs 1932) [DIRECT]. In agricultural trials, comparing crop yields across multiple locations and years helps researchers understand genotype-by-environment interactions [SPECULATIVE: Agronomy]. Looking at the Morris site, the yields for 1932 are systematically higher than 1931 for almost all varieties, which is the reverse of the trend seen in other sites like Crookston, Grand Rapids, and Duluth where 1931 yields were generally higher [DERIVED: Comparing the dot positions for 1931 (blue) and 1932 (orange) across the Morris panel versus other panels in the image]. This anomaly in the Morris data is a famous example of a potential data entry error (a year-switch) first spotted using this trellis visualization technique [SPECULATIVE: Data Visualization History].",
+      "real_world_significance": "This dataset and its visualization are historically significant in the field of statistics and data science because they illustrate how visual trellis designs can reveal errors (like the Morris year-switch anomaly) that might be missed by summary statistics alone [SPECULATIVE: Data Science History]. For agricultural planning, understanding which barley varieties consistently perform well across different microclimates (sites) and weather years is crucial for recommending resilient crop strains to farmers [SPECULATIVE: Agronomy].",
+      "other": "The six sites represented are Crookston, Duluth, Grand Rapids, University Farm, Morris, and Waseca [DERIVED: Reading the facet titles from the chart image]. The ten varieties of barley include Manchuria, Glabron, Svansota, Velvet, Trebi, No. 457, No. 462, Peatland, No. 475, and Wisconsin No. 38 [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a trellis display of Becker's Barley dataset, displaying the yield of 10 varieties of barley across 6 different sites for the years 1931 and 1932",
+        "The chart plots 'yield' on the X-axis against 'variety' on the Y-axis, grouped by 'site' (the facets) and distinguished by 'year' (1931 vs 1932)",
+        "The ten varieties of barley include Manchuria, Glabron, Svansota, Velvet, Trebi, No. 457, No. 462, Peatland, No. 475, and Wisconsin No. 38"
+      ],
+      "derived_claims": [
+        "Looking at the Morris site, the yields for 1932 are systematically higher than 1931 for almost all varieties, which is the reverse of the trend seen in other sites like Crookston, Grand Rapids, and Duluth where 1931 yields were generally higher [DERIVED: Comparing the dot positions for 1931 (blue) and 1932 (orange) across the Morris panel versus other panels in the image]",
+        "The six sites represented are Crookston, Duluth, Grand Rapids, University Farm, Morris, and Waseca [DERIVED: Reading the facet titles from the chart image]"
+      ],
+      "speculative_claims": [
+        "The visualization is a classic example of a multi-panel trellis plot popularized by William S. Cleveland and colleagues at Bell Labs to demonstrate the power of trellis graphics in identifying data anomalies [SPECULATIVE: Data Visualization History]",
+        "In agricultural trials, comparing crop yields across multiple locations and years helps researchers understand genotype-by-environment interactions [SPECULATIVE: Agronomy]",
+        "This anomaly in the Morris data is a famous example of a potential data entry error (a year-switch) first spotted using this trellis visualization technique [SPECULATIVE: Data Visualization History]",
+        "This dataset and its visualization are historically significant in the field of statistics and data science because they illustrate how visual trellis designs can reveal errors (like the Morris year-switch anomaly) that might be missed by summary statistics alone [SPECULATIVE: Data Science History]",
+        "For agricultural planning, understanding which barley varieties consistently perform well across different microclimates (sites) and weather years is crucial for recommending resilient crop strains to farmers [SPECULATIVE: Agronomy]"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14680.963790975511,
+  "created_at": "2026-07-08T14:25:42.557053Z"
+}

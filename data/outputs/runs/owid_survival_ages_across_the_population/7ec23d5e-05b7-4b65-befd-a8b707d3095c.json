@@ -1,0 +1,72 @@
+{
+  "output_id": "7ec23d5e-05b7-4b65-befd-a8b707d3095c",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides a clear visual representation of survival ages across the population in France from 1816 to 2023, but does not include explicit data values.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart shows trends in survival ages over time, with a clear indication of how survival ages have changed for different percentiles of the population.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is clearly related to demography and mortality studies, with a focus on survival ages across different percentiles of the population.\"},\n      \"domain_expert_context\": {\"score\": 2, \"justification\": \"The chart provides some context through its title and description, but lacks detailed expert interpretation or analysis.\"},\n      \"stakeholder_impact\": {\"score\": 2, \"justification\": \"The chart implies that the data could be important for policymakers, researchers, and others interested in demographic trends, but does not explicitly state the impact.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart illustrates the number of years that specific shares of the population in France would survive if they were born in a given year and experienced age-specific death rates of that year. It covers the period from 1816 to 2023. [DIRECT] The chart is part of demography and mortality studies. [SPECULATIVE: demography] It was produced by Our World in Data. [DIRECT]\",\n    \"domain_specific_explanations\": \"The chart shows that for any given year, a certain percentage of the population can expect to live a certain number of years. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival. [DIRECT] This data is crucial for understanding mortality rates and life expectancy trends over time. [SPECULATIVE: mortality studies] The lines on the chart represent different percentiles (1%, 10%, 20%, ..., 99%) of the population. [DIRECT]\",\n    \"real_world_significance\": \"The data matters because it helps in understanding how life expectancy has changed over time in France. [SPECULATIVE: demography] It can inform healthcare policy, retirement planning, and other decisions that depend on life expectancy. [SPECULATIVE: policy-making] For instance, the significant dips in survival ages around certain years (e.g., around 1850, 1915, and 1940) likely correspond to historical events such as wars and epidemics that increased mortality rates. [DERIVED: historical events]\",\n    \"other\": \"The chart uses a multi-line graph to show the survival ages for different percentiles of the population over time. [DIRECT] The y-axis represents the number of years survived, and the x-axis represents the years from 1816 to 2023. [DIRECT]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart illustrates the number of years that specific shares of the population in France would survive if they were born in a given year and experienced age-specific death rates of that year.\",\n      \"The chart covers the period from 1816 to 2023.\",\n      \"The line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival.\",\n      \"The chart was produced by Our World in Data.\",\n      \"The lines on the chart represent different percentiles (1%, 10%, 20%, ..., 99%) of the population.\",\n      \"The y-axis represents the number of years survived, and the x-axis represents the years from 1816 to 2023.\"\n    ],\n    \"derived_claims\": [\n      \"The significant dips in survival ages around certain years (e.g., around 1850, 1915, and 1940) likely correspond to historical events such as wars and epidemics that increased mortality rates.\"\n    ],\n    \"speculative_claims\": [\n      \"This data is crucial for understanding mortality rates and life expectancy trends over time.\",\n      \"It can inform healthcare policy, retirement planning, and other decisions that depend on life expectancy.\",\n      \"The chart is part of demography and mortality studies.\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a clear visual representation of survival ages across the population in France from 1816 to 2023, but does not include explicit data values."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart shows trends in survival ages over time, with a clear indication of how survival ages have changed for different percentiles of the population."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is clearly related to demography and mortality studies, with a focus on survival ages across different percentiles of the population."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The chart provides some context through its title and description, but lacks detailed expert interpretation or analysis."
+        },
+        "stakeholder_impact": {
+          "score": 2,
+          "justification": "The chart implies that the data could be important for policymakers, researchers, and others interested in demographic trends, but does not explicitly state the impact."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart illustrates the number of years that specific shares of the population in France would survive if they were born in a given year and experienced age-specific death rates of that year. It covers the period from 1816 to 2023. [DIRECT] The chart is part of demography and mortality studies. [SPECULATIVE: demography] It was produced by Our World in Data. [DIRECT]",
+      "domain_specific_explanations": "The chart shows that for any given year, a certain percentage of the population can expect to live a certain number of years. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival. [DIRECT] This data is crucial for understanding mortality rates and life expectancy trends over time. [SPECULATIVE: mortality studies] The lines on the chart represent different percentiles (1%, 10%, 20%, ..., 99%) of the population. [DIRECT]",
+      "real_world_significance": "The data matters because it helps in understanding how life expectancy has changed over time in France. [SPECULATIVE: demography] It can inform healthcare policy, retirement planning, and other decisions that depend on life expectancy. [SPECULATIVE: policy-making] For instance, the significant dips in survival ages around certain years (e.g., around 1850, 1915, and 1940) likely correspond to historical events such as wars and epidemics that increased mortality rates. [DERIVED: historical events]",
+      "other": "The chart uses a multi-line graph to show the survival ages for different percentiles of the population over time. [DIRECT] The y-axis represents the number of years survived, and the x-axis represents the years from 1816 to 2023. [DIRECT]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart illustrates the number of years that specific shares of the population in France would survive if they were born in a given year and experienced age-specific death rates of that year.",
+        "The chart covers the period from 1816 to 2023.",
+        "The line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival.",
+        "The chart was produced by Our World in Data.",
+        "The lines on the chart represent different percentiles (1%, 10%, 20%, ..., 99%) of the population.",
+        "The y-axis represents the number of years survived, and the x-axis represents the years from 1816 to 2023."
+      ],
+      "derived_claims": [
+        "The significant dips in survival ages around certain years (e.g., around 1850, 1915, and 1940) likely correspond to historical events such as wars and epidemics that increased mortality rates."
+      ],
+      "speculative_claims": [
+        "This data is crucial for understanding mortality rates and life expectancy trends over time.",
+        "It can inform healthcare policy, retirement planning, and other decisions that depend on life expectancy.",
+        "The chart is part of demography and mortality studies."
+      ],
+      "total_flag_count": 15,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2187,
+    "output": 968
+  },
+  "latency_ms": 3149.6291670482606,
+  "created_at": "2026-07-08T00:14:59.323905Z"
+}

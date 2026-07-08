@@ -1,0 +1,73 @@
+{
+  "output_id": "021603f5-0528-4a39-b979-2b9488253818",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The map categorizes countries into 5-year intervals (e.g., 50, 55, 60 years) using a color scale, but exact country-level numerical values are not directly readable as text.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The chart is a single-year snapshot (2023), so temporal trends are absent, though spatial disparities across regions are clearly visible.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, and source clearly define the domain as global health, demography, and life expectancy.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 1,\n        \"justification\": \"No expert context or detailed background is provided in the image itself beyond the basic definition of period life expectancy.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"The image does not explicitly mention stakeholders or the real-world policy implications of these data points.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a global choropleth map showing period life expectancy across different countries in the year 2023 [DIRECT]. It was produced by Our World in Data using data compiled from Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (HMD 2025), and the United Nations World Population Prospects (UN WPP 2024) [DIRECT]. The map's primary purpose is to illustrate the geographic distribution and inequalities of life expectancy worldwide [DERIVED: reading the map's spatial distribution].\",\n    \"domain_specific_explanations\": \"Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates observed in 2023 throughout their entire life [DIRECT]. The data reveals that regions such as North America, Western Europe, Japan, and Australia have life expectancies exceeding 80 years [DERIVED: reading the >80 years category on the map for these regions]. In contrast, many countries in Sub-Saharan Africa have life expectancies ranging between 50 and 65 years [DERIVED: reading the 50-65 years categories on the map for these regions]. In demography, these differences are heavily influenced by infant and child mortality rates, access to healthcare, clean water, nutrition, and infectious disease burdens [SPECULATIVE: Demography and Public Health].\",\n    \"real_world_significance\": \"These disparities highlight deep global inequalities in living standards, healthcare infrastructure, and economic development [SPECULATIVE: Global Development]. A difference of over 30 years in life expectancy between the highest and lowest regions indicates that basic human survival remains highly dependent on geographic lottery [DERIVED: comparing the >80 years regions with the ~50 years regions]. Policymakers and international organizations like the WHO use this data to target aid, improve healthcare delivery, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development].\",\n    \"other\": \"The data represents a snapshot of 2023, meaning it reflects the post-COVID-19 pandemic recovery phase for global mortality rates [SPECULATIVE: Epidemiology].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a global choropleth map showing period life expectancy across different countries in the year 2023\",\n      \"It was produced by Our World in Data using data compiled from Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (HMD 2025), and the United Nations World Population Prospects (UN WPP 2024)\",\n      \"Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates observed in 2023 throughout their entire life\"\n    ],\n    \"derived_claims\": [\n      \"The map's primary purpose is to illustrate the geographic distribution and inequalities of life expectancy worldwide\",\n      \"The data reveals that regions such as North America, Western Europe, Japan, and Australia have life expectancies exceeding 80 years\",\n      \"In contrast, many countries in Sub-Saharan Africa have life expectancies ranging between 50 and 65 years\",\n      \"A difference of over 30 years in life expectancy between the highest and lowest regions indicates that basic human survival remains highly dependent on geographic lottery\"\n    ],\n    \"speculative_claims\": [\n      \"In demography, these differences are heavily influenced by infant and child mortality rates, access to healthcare, clean water, nutrition, and infectious disease burdens\",\n      \"These disparities highlight deep global inequalities in living standards, healthcare infrastructure, and economic development\",\n      \"Policymakers and international organizations like the WHO use this data to target aid, improve healthcare delivery, and monitor progress toward Sustainable Development Goals\",\n      \"The data represents a snapshot of 2023, meaning it reflects the post-COVID-19 pandemic recovery phase for global mortality rates\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The map categorizes countries into 5-year intervals (e.g., 50, 55, 60 years) using a color scale, but exact country-level numerical values are not directly readable as text."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart is a single-year snapshot (2023), so temporal trends are absent, though spatial disparities across regions are clearly visible."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, and source clearly define the domain as global health, demography, and life expectancy."
+        },
+        "domain_expert_context": {
+          "score": 1,
+          "justification": "No expert context or detailed background is provided in the image itself beyond the basic definition of period life expectancy."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "The image does not explicitly mention stakeholders or the real-world policy implications of these data points."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a global choropleth map showing period life expectancy across different countries in the year 2023 [DIRECT]. It was produced by Our World in Data using data compiled from Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (HMD 2025), and the United Nations World Population Prospects (UN WPP 2024) [DIRECT]. The map's primary purpose is to illustrate the geographic distribution and inequalities of life expectancy worldwide [DERIVED: reading the map's spatial distribution].",
+      "domain_specific_explanations": "Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates observed in 2023 throughout their entire life [DIRECT]. The data reveals that regions such as North America, Western Europe, Japan, and Australia have life expectancies exceeding 80 years [DERIVED: reading the >80 years category on the map for these regions]. In contrast, many countries in Sub-Saharan Africa have life expectancies ranging between 50 and 65 years [DERIVED: reading the 50-65 years categories on the map for these regions]. In demography, these differences are heavily influenced by infant and child mortality rates, access to healthcare, clean water, nutrition, and infectious disease burdens [SPECULATIVE: Demography and Public Health].",
+      "real_world_significance": "These disparities highlight deep global inequalities in living standards, healthcare infrastructure, and economic development [SPECULATIVE: Global Development]. A difference of over 30 years in life expectancy between the highest and lowest regions indicates that basic human survival remains highly dependent on geographic lottery [DERIVED: comparing the >80 years regions with the ~50 years regions]. Policymakers and international organizations like the WHO use this data to target aid, improve healthcare delivery, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development].",
+      "other": "The data represents a snapshot of 2023, meaning it reflects the post-COVID-19 pandemic recovery phase for global mortality rates [SPECULATIVE: Epidemiology]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a global choropleth map showing period life expectancy across different countries in the year 2023",
+        "It was produced by Our World in Data using data compiled from Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (HMD 2025), and the United Nations World Population Prospects (UN WPP 2024)",
+        "Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates observed in 2023 throughout their entire life"
+      ],
+      "derived_claims": [
+        "The map's primary purpose is to illustrate the geographic distribution and inequalities of life expectancy worldwide",
+        "The data reveals that regions such as North America, Western Europe, Japan, and Australia have life expectancies exceeding 80 years",
+        "In contrast, many countries in Sub-Saharan Africa have life expectancies ranging between 50 and 65 years",
+        "A difference of over 30 years in life expectancy between the highest and lowest regions indicates that basic human survival remains highly dependent on geographic lottery"
+      ],
+      "speculative_claims": [
+        "In demography, these differences are heavily influenced by infant and child mortality rates, access to healthcare, clean water, nutrition, and infectious disease burdens",
+        "These disparities highlight deep global inequalities in living standards, healthcare infrastructure, and economic development",
+        "Policymakers and international organizations like the WHO use this data to target aid, improve healthcare delivery, and monitor progress toward Sustainable Development Goals",
+        "The data represents a snapshot of 2023, meaning it reflects the post-COVID-19 pandemic recovery phase for global mortality rates"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12824.656832963228,
+  "created_at": "2026-07-07T23:02:16.454184Z"
+}

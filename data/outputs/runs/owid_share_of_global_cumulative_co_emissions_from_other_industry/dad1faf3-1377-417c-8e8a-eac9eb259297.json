@@ -1,0 +1,81 @@
+{
+  "output_id": "dad1faf3-1377-417c-8e8a-eac9eb259297",
+  "chart_id": "owid_share_of_global_cumulative_co_emissions_from_other_industry",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact cumulative emission shares for 2024 across several countries and regions, though five rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only data for the year 2024 is provided, making it impossible to determine historical trends or changes over time directly from the dataset.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject as the share of global cumulative CO2 emissions from 'other industry'.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The source is identified as Our World in Data with a specific URL, but no detailed expert commentary is provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context or target audience information is provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart, published by Our World in Data, displays the share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' across various countries and regions for the year 2024 [DIRECT]. 'Other industry' generally encompasses emissions from manufacturing, construction, and chemical processes that are not classified under direct energy production [SPECULATIVE: IPCC]. The data reveals that Asia holds the largest regional share at 44.41% [DIRECT], heavily driven by China, which alone accounts for 37.11% of the global cumulative total [DIRECT].\",\n    \"domain_specific_explanations\": \"In climate science, 'cumulative' emissions are crucial because CO₂ persists in the atmosphere for centuries, meaning historical emissions dictate current warming levels [SPECULATIVE: Climate Science]. High-income countries account for a majority share of 58.60% [DIRECT], reflecting their early and prolonged industrialization [SPECULATIVE: Economic History]. By comparing Asia's total (44.41%) [DIRECT] to Asia excluding China and India (7.31%) [DIRECT], we can derive that China and India combined represent the vast majority (approximately 37.11%) of Asia's cumulative industrial emissions [DERIVED: subtracted Asia (excl. China and India) from total Asia].\",\n    \"real_world_significance\": \"These cumulative figures are central to global climate justice debates, particularly under the United Nations Framework Convention on Climate Change (UNFCCC), where developing nations argue that historically high-emitting high-income countries (holding 58.60% of the cumulative share [DIRECT]) should bear the financial burden of climate mitigation [SPECULATIVE: International Climate Policy]. Furthermore, decarbonizing 'other industry' sectors like cement and steel is highly challenging, requiring deep technological shifts and substantial capital [SPECULATIVE: Industrial Decarbonization].\",\n    \"other\": \"Among the European nations listed, Germany has the highest cumulative share at 2.14% [DIRECT], which is more than double that of France at 1.03% [DERIVED: compared Germany's 2.14% to France's 1.03%].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart, published by Our World in Data, displays the share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' across various countries and regions for the year 2024\",\n      \"The data reveals that Asia holds the largest regional share at 44.41%\",\n      \"China, which alone accounts for 37.11% of the global cumulative total\",\n      \"High-income countries account for a majority share of 58.60%\",\n      \"Asia's total (44.41%)\",\n      \"Asia excluding China and India (7.31%)\",\n      \"historically high-emitting high-income countries (holding 58.60% of the cumulative share)\",\n      \"Germany has the highest cumulative share at 2.14%\"\n    ],\n    \"derived_claims\": [\n      \"China and India combined represent the vast majority (approximately 37.11%) of Asia's cumulative industrial emissions [DERIVED: subtracted Asia (excl. China and India) from total Asia]\",\n      \"which is more than double that of France at 1.03% [DERIVED: compared Germany's 2.14% to France's 1.03%]\"\n    ],\n    \"speculative_claims\": [\n      \"'Other industry' generally encompasses emissions from manufacturing, construction, and chemical processes that are not classified under direct energy production [SPECULATIVE: IPCC]\",\n      \"In climate science, 'cumulative' emissions are crucial because CO₂ persists in the atmosphere for centuries, meaning historical emissions dictate current warming levels [SPECULATIVE: Climate Science]\",\n      \"reflecting their early and prolonged industrialization [SPECULATIVE: Economic History]\",\n      \"These cumulative figures are central to global climate justice debates, particularly under the United Nations Framework Convention on Climate Change (UNFCCC), where developing nations argue that historically high-emitting high-income countries... should bear the financial burden of climate mitigation [SPECULATIVE: International Climate Policy]\",\n      \"Furthermore, decarbonizing 'other industry' sectors like cement and steel is highly challenging, requiring deep technological shifts and substantial capital [SPECULATIVE: Industrial Decarbonization]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 8,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact cumulative emission shares for 2024 across several countries and regions, though five rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only data for the year 2024 is provided, making it impossible to determine historical trends or changes over time directly from the dataset."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject as the share of global cumulative CO2 emissions from 'other industry'."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The source is identified as Our World in Data with a specific URL, but no detailed expert commentary is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context or target audience information is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart, published by Our World in Data, displays the share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' across various countries and regions for the year 2024 [DIRECT]. 'Other industry' generally encompasses emissions from manufacturing, construction, and chemical processes that are not classified under direct energy production [SPECULATIVE: IPCC]. The data reveals that Asia holds the largest regional share at 44.41% [DIRECT], heavily driven by China, which alone accounts for 37.11% of the global cumulative total [DIRECT].",
+      "domain_specific_explanations": "In climate science, 'cumulative' emissions are crucial because CO₂ persists in the atmosphere for centuries, meaning historical emissions dictate current warming levels [SPECULATIVE: Climate Science]. High-income countries account for a majority share of 58.60% [DIRECT], reflecting their early and prolonged industrialization [SPECULATIVE: Economic History]. By comparing Asia's total (44.41%) [DIRECT] to Asia excluding China and India (7.31%) [DIRECT], we can derive that China and India combined represent the vast majority (approximately 37.11%) of Asia's cumulative industrial emissions [DERIVED: subtracted Asia (excl. China and India) from total Asia].",
+      "real_world_significance": "These cumulative figures are central to global climate justice debates, particularly under the United Nations Framework Convention on Climate Change (UNFCCC), where developing nations argue that historically high-emitting high-income countries (holding 58.60% of the cumulative share [DIRECT]) should bear the financial burden of climate mitigation [SPECULATIVE: International Climate Policy]. Furthermore, decarbonizing 'other industry' sectors like cement and steel is highly challenging, requiring deep technological shifts and substantial capital [SPECULATIVE: Industrial Decarbonization].",
+      "other": "Among the European nations listed, Germany has the highest cumulative share at 2.14% [DIRECT], which is more than double that of France at 1.03% [DERIVED: compared Germany's 2.14% to France's 1.03%]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart, published by Our World in Data, displays the share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' across various countries and regions for the year 2024",
+        "The data reveals that Asia holds the largest regional share at 44.41%",
+        "China, which alone accounts for 37.11% of the global cumulative total",
+        "High-income countries account for a majority share of 58.60%",
+        "Asia's total (44.41%)",
+        "Asia excluding China and India (7.31%)",
+        "historically high-emitting high-income countries (holding 58.60% of the cumulative share)",
+        "Germany has the highest cumulative share at 2.14%"
+      ],
+      "derived_claims": [
+        "China and India combined represent the vast majority (approximately 37.11%) of Asia's cumulative industrial emissions [DERIVED: subtracted Asia (excl. China and India) from total Asia]",
+        "which is more than double that of France at 1.03% [DERIVED: compared Germany's 2.14% to France's 1.03%]"
+      ],
+      "speculative_claims": [
+        "'Other industry' generally encompasses emissions from manufacturing, construction, and chemical processes that are not classified under direct energy production [SPECULATIVE: IPCC]",
+        "In climate science, 'cumulative' emissions are crucial because CO₂ persists in the atmosphere for centuries, meaning historical emissions dictate current warming levels [SPECULATIVE: Climate Science]",
+        "reflecting their early and prolonged industrialization [SPECULATIVE: Economic History]",
+        "These cumulative figures are central to global climate justice debates, particularly under the United Nations Framework Convention on Climate Change (UNFCCC), where developing nations argue that historically high-emitting high-income countries... should bear the financial burden of climate mitigation [SPECULATIVE: International Climate Policy]",
+        "Furthermore, decarbonizing 'other industry' sectors like cement and steel is highly challenging, requiring deep technological shifts and substantial capital [SPECULATIVE: Industrial Decarbonization]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 8,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14710.798291955143,
+  "created_at": "2026-07-07T23:01:27.887046Z"
+}

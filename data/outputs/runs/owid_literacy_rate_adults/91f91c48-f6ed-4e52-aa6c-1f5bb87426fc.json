@@ -1,0 +1,70 @@
+{
+  "output_id": "91f91c48-f6ed-4e52-aa6c-1f5bb87426fc",
+  "chart_id": "owid_literacy_rate_adults",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides data values for literacy rates, but the exact numbers are not specified, only color-coded.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart shows a general trend of literacy rates by country, but the magnitude is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain is education, specifically adult literacy rates.\"},\n      \"domain_expert_context\": {\"score\": 3, \"justification\": \"The chart provides some context about literacy rates, but expert interpretation is needed to fully understand the implications.\"},\n      \"stakeholder_impact\": {\"score\": 2, \"justification\": \"The chart suggests that stakeholders in education and policy may be impacted, but the exact impact is not clear.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the literacy rates among adults aged 15 years and older in 2023 [DIRECT]. It appears to be a global map showing the share of adults who can read and write a simple sentence about their daily life [DIRECT]. The data is sourced from the UNESCO Institute for Statistics (2025) [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart indicates that literacy rates vary significantly across countries [DERIVED: from the color-coded map]. Countries with higher literacy rates (darker blue) have a larger share of adults who can read and write [DERIVED: from the color-coded map]. The literacy rate is an important indicator of education and human development [SPECULATIVE: education domain].\",\n    \"real_world_significance\": \"The literacy rate has significant implications for a country's economic development, workforce productivity, and social mobility [SPECULATIVE: economics and education domain]. Countries with low literacy rates may face challenges in providing education and skills training to their populations [SPECULATIVE: education and policy domain]. Improving literacy rates can lead to better health outcomes, increased civic engagement, and more economic opportunities [SPECULATIVE: education and health domain].\",\n    \"other\": \"The chart does not provide information on the methodology used to collect the data or the sample size [DERIVED: from the lack of information]. The chart is produced by Our World in Data, which suggests that it is intended for a general audience interested in global data and trends [DERIVED: from the source].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the literacy rates among adults aged 15 years and older in 2023\",\n      \"It appears to be a global map showing the share of adults who can read and write a simple sentence about their daily life\",\n      \"The data is sourced from the UNESCO Institute for Statistics (2025)\"\n    ],\n    \"derived_claims\": [\n      \"Countries with higher literacy rates (darker blue) have a larger share of adults who can read and write\",\n      \"The chart does not provide information on the methodology used to collect the data or the sample size\"\n    ],\n    \"speculative_claims\": [\n      \"The literacy rate is an important indicator of education and human development\",\n      \"The literacy rate has significant implications for a country's economic development, workforce productivity, and social mobility\",\n      \"Improving literacy rates can lead to better health outcomes, increased civic engagement, and more economic opportunities\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides data values for literacy rates, but the exact numbers are not specified, only color-coded."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart shows a general trend of literacy rates by country, but the magnitude is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain is education, specifically adult literacy rates."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The chart provides some context about literacy rates, but expert interpretation is needed to fully understand the implications."
+        },
+        "stakeholder_impact": {
+          "score": 2,
+          "justification": "The chart suggests that stakeholders in education and policy may be impacted, but the exact impact is not clear."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the literacy rates among adults aged 15 years and older in 2023 [DIRECT]. It appears to be a global map showing the share of adults who can read and write a simple sentence about their daily life [DIRECT]. The data is sourced from the UNESCO Institute for Statistics (2025) [DIRECT].",
+      "domain_specific_explanations": "The chart indicates that literacy rates vary significantly across countries [DERIVED: from the color-coded map]. Countries with higher literacy rates (darker blue) have a larger share of adults who can read and write [DERIVED: from the color-coded map]. The literacy rate is an important indicator of education and human development [SPECULATIVE: education domain].",
+      "real_world_significance": "The literacy rate has significant implications for a country's economic development, workforce productivity, and social mobility [SPECULATIVE: economics and education domain]. Countries with low literacy rates may face challenges in providing education and skills training to their populations [SPECULATIVE: education and policy domain]. Improving literacy rates can lead to better health outcomes, increased civic engagement, and more economic opportunities [SPECULATIVE: education and health domain].",
+      "other": "The chart does not provide information on the methodology used to collect the data or the sample size [DERIVED: from the lack of information]. The chart is produced by Our World in Data, which suggests that it is intended for a general audience interested in global data and trends [DERIVED: from the source]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the literacy rates among adults aged 15 years and older in 2023",
+        "It appears to be a global map showing the share of adults who can read and write a simple sentence about their daily life",
+        "The data is sourced from the UNESCO Institute for Statistics (2025)"
+      ],
+      "derived_claims": [
+        "Countries with higher literacy rates (darker blue) have a larger share of adults who can read and write",
+        "The chart does not provide information on the methodology used to collect the data or the sample size"
+      ],
+      "speculative_claims": [
+        "The literacy rate is an important indicator of education and human development",
+        "The literacy rate has significant implications for a country's economic development, workforce productivity, and social mobility",
+        "Improving literacy rates can lead to better health outcomes, increased civic engagement, and more economic opportunities"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1965,
+    "output": 782
+  },
+  "latency_ms": 2810.4260000400245,
+  "created_at": "2026-07-08T00:16:46.493429Z"
+}

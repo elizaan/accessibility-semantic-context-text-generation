@@ -1,0 +1,74 @@
+{
+  "output_id": "13a2464c-b406-436e-ae49-95a8c5c4cf62",
+  "chart_id": "owid_prevalence_of_undernourishment_vs_daily_supply_of_calories",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No data table is provided, but individual country data points and their approximate values can be read directly from the scatter plot.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The overall negative correlation between caloric supply and undernourishment is highly visible and easy to interpret from the image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, and axis concepts clearly define the domain of global nutrition and food security.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided in the metadata.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.8\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot published by Our World in Data showing the relationship between the share of undernourished people and the average daily supply of calories per person across various countries in 2023 [DIRECT]. The data is sourced from the Food and Agriculture Organization (FAO) of the United Nations [DIRECT]. The chart categorizes countries by continent, including Africa, Asia, Europe, North America, South America, and Oceania [DIRECT].\",\n    \"domain_specific_explanations\": \"Undernourishment is defined as having a caloric intake that falls below the minimum dietary energy requirement needed to maintain a healthy and active life [DIRECT]. The chart shows a strong negative correlation: countries with a lower average daily supply of calories tend to have a much higher share of undernourished people [DERIVED: visual analysis of the downward trend from left to right]. For instance, Haiti has an average daily supply of under 2,000 kcal and an undernourishment rate exceeding 50% [DERIVED: reading data points for Haiti]. Conversely, once a country's average daily supply of calories exceeds approximately 3,200 kcal per person, the share of undernourished people consistently drops to the minimum reported level of 2.5% or lower [DERIVED: observing the flattening of the curve at the bottom right]. This reflects how national food availability (measured by daily caloric supply) is a primary driver of individual food security, though distribution inequalities can still exist [SPECULATIVE: global development economics].\",\n    \"real_world_significance\": \"This data is critical for international organizations like the FAO, World Food Programme, and policymakers to target food aid and agricultural development programs [SPECULATIVE: international development]. High undernourishment rates in countries like Haiti, DR Congo, and Syria highlight the devastating impact of political instability, conflict, and economic crises on food security [SPECULATIVE: geopolitical analysis]. Achieving a daily supply of at least 3,000 kcal per person appears to be a key threshold for virtually eliminating high rates of undernourishment at a national level [DERIVED: observing that almost all countries above 3,000 kcal have undernourishment rates below 10%].\",\n    \"other\": \"A note on the chart indicates that values between 0% and 2.5% are shown as 2.5% on the chart, which explains why many high-income countries cluster in a flat line at the bottom right [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a scatter plot published by Our World in Data showing the relationship between the share of undernourished people and the average daily supply of calories per person across various countries in 2023\",\n      \"The data is sourced from the Food and Agriculture Organization (FAO) of the United Nations\",\n      \"The chart categorizes countries by continent, including Africa, Asia, Europe, North America, South America, and Oceania\",\n      \"Undernourishment is defined as having a caloric intake that falls below the minimum dietary energy requirement needed to maintain a healthy and active life\",\n      \"A note on the chart indicates that values between 0% and 2.5% are shown as 2.5% on the chart, which explains why many high-income countries cluster in a flat line at the bottom right\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows a strong negative correlation: countries with a lower average daily supply of calories tend to have a much higher share of undernourished people\",\n      \"Haiti has an average daily supply of under 2,000 kcal and an undernourishment rate exceeding 50%\",\n      \"Once a country's average daily supply of calories exceeds approximately 3,200 kcal per person, the share of undernourished people consistently drops to the minimum reported level of 2.5% or lower\",\n      \"Achieving a daily supply of at least 3,000 kcal per person appears to be a key threshold for virtually eliminating high rates of undernourishment at a national level\"\n    ],\n    \"speculative_claims\": [\n      \"This reflects how national food availability (measured by daily caloric supply) is a primary driver of individual food security, though distribution inequalities can still exist\",\n      \"This data is critical for international organizations like the FAO, World Food Programme, and policymakers to target food aid and agricultural development programs\",\n      \"High undernourishment rates in countries like Haiti, DR Congo, and Syria highlight the devastating impact of political instability, conflict, and economic crises on food security\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No data table is provided, but individual country data points and their approximate values can be read directly from the scatter plot."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The overall negative correlation between caloric supply and undernourishment is highly visible and easy to interpret from the image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, and axis concepts clearly define the domain of global nutrition and food security."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided in the metadata."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.8
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot published by Our World in Data showing the relationship between the share of undernourished people and the average daily supply of calories per person across various countries in 2023 [DIRECT]. The data is sourced from the Food and Agriculture Organization (FAO) of the United Nations [DIRECT]. The chart categorizes countries by continent, including Africa, Asia, Europe, North America, South America, and Oceania [DIRECT].",
+      "domain_specific_explanations": "Undernourishment is defined as having a caloric intake that falls below the minimum dietary energy requirement needed to maintain a healthy and active life [DIRECT]. The chart shows a strong negative correlation: countries with a lower average daily supply of calories tend to have a much higher share of undernourished people [DERIVED: visual analysis of the downward trend from left to right]. For instance, Haiti has an average daily supply of under 2,000 kcal and an undernourishment rate exceeding 50% [DERIVED: reading data points for Haiti]. Conversely, once a country's average daily supply of calories exceeds approximately 3,200 kcal per person, the share of undernourished people consistently drops to the minimum reported level of 2.5% or lower [DERIVED: observing the flattening of the curve at the bottom right]. This reflects how national food availability (measured by daily caloric supply) is a primary driver of individual food security, though distribution inequalities can still exist [SPECULATIVE: global development economics].",
+      "real_world_significance": "This data is critical for international organizations like the FAO, World Food Programme, and policymakers to target food aid and agricultural development programs [SPECULATIVE: international development]. High undernourishment rates in countries like Haiti, DR Congo, and Syria highlight the devastating impact of political instability, conflict, and economic crises on food security [SPECULATIVE: geopolitical analysis]. Achieving a daily supply of at least 3,000 kcal per person appears to be a key threshold for virtually eliminating high rates of undernourishment at a national level [DERIVED: observing that almost all countries above 3,000 kcal have undernourishment rates below 10%].",
+      "other": "A note on the chart indicates that values between 0% and 2.5% are shown as 2.5% on the chart, which explains why many high-income countries cluster in a flat line at the bottom right [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a scatter plot published by Our World in Data showing the relationship between the share of undernourished people and the average daily supply of calories per person across various countries in 2023",
+        "The data is sourced from the Food and Agriculture Organization (FAO) of the United Nations",
+        "The chart categorizes countries by continent, including Africa, Asia, Europe, North America, South America, and Oceania",
+        "Undernourishment is defined as having a caloric intake that falls below the minimum dietary energy requirement needed to maintain a healthy and active life",
+        "A note on the chart indicates that values between 0% and 2.5% are shown as 2.5% on the chart, which explains why many high-income countries cluster in a flat line at the bottom right"
+      ],
+      "derived_claims": [
+        "The chart shows a strong negative correlation: countries with a lower average daily supply of calories tend to have a much higher share of undernourished people",
+        "Haiti has an average daily supply of under 2,000 kcal and an undernourishment rate exceeding 50%",
+        "Once a country's average daily supply of calories exceeds approximately 3,200 kcal per person, the share of undernourished people consistently drops to the minimum reported level of 2.5% or lower",
+        "Achieving a daily supply of at least 3,000 kcal per person appears to be a key threshold for virtually eliminating high rates of undernourishment at a national level"
+      ],
+      "speculative_claims": [
+        "This reflects how national food availability (measured by daily caloric supply) is a primary driver of individual food security, though distribution inequalities can still exist",
+        "This data is critical for international organizations like the FAO, World Food Programme, and policymakers to target food aid and agricultural development programs",
+        "High undernourishment rates in countries like Haiti, DR Congo, and Syria highlight the devastating impact of political instability, conflict, and economic crises on food security"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11719.999166030902,
+  "created_at": "2026-07-07T23:20:13.071237Z"
+}

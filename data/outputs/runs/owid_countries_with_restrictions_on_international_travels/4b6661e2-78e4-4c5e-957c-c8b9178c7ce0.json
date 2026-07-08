@@ -1,0 +1,64 @@
+{
+  "output_id": "4b6661e2-78e4-4c5e-957c-c8b9178c7ce0",
+  "chart_id": "owid_countries_with_restrictions_on_international_travels",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table and exact values underlying the chart are not provided.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart image shows a clear trend, but the axis labels are not provided.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and expert domain story provide sufficient information about the domain.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the number of recorded countries with different types of restrictions on international travel arrivals due to COVID-19 [DIRECT]. It was produced by Our World in Data [SPECULATIVE: https://ourworldindata.org/grapher/countries-with-restrictions-on-international-travels]. The data spans from January 1, 2020, to December 31, 2022 [DERIVED: from the chart image].\",\n    \"domain_specific_explanations\": \"The chart categorizes restrictions into five types: no restrictions, screening arrivals, quarantine on some arrivals, partial ban, and complete ban [DIRECT]. The data source is the Blavatnik School of Government, University of Oxford (2023) [DIRECT]. The coding system refers to the most stringent policy in the country at a given time [DIRECT].\",\n    \"real_world_significance\": \"This data matters because it shows how countries have responded to the COVID-19 pandemic through travel restrictions [SPECULATIVE: general knowledge of COVID-19 response]. The restrictions have affected international travel and economies [SPECULATIVE: general knowledge of economics and travel]. As the number of countries with restrictions changes, it indicates shifts in global travel policies [DERIVED: from the chart image].\",\n    \"other\": \"The chart image shows a clear trend of decreasing restrictions over time [DERIVED: from the chart image]. By December 31, 2022, most countries had no restrictions or only screening arrivals [DERIVED: from the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the number of recorded countries with different types of restrictions on international travel arrivals due to COVID-19\",\n      \"The data source is the Blavatnik School of Government, University of Oxford (2023)\",\n      \"The coding system refers to the most stringent policy in the country at a given time\"\n    ],\n    \"derived_claims\": [\n      \"The data spans from January 1, 2020, to December 31, 2022\",\n      \"By December 31, 2022, most countries had no restrictions or only screening arrivals\"\n    ],\n    \"speculative_claims\": [\n      \"It was produced by Our World in Data\",\n      \"The restrictions have affected international travel and economies\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table and exact values underlying the chart are not provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart image shows a clear trend, but the axis labels are not provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and expert domain story provide sufficient information about the domain."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the number of recorded countries with different types of restrictions on international travel arrivals due to COVID-19 [DIRECT]. It was produced by Our World in Data [SPECULATIVE: https://ourworldindata.org/grapher/countries-with-restrictions-on-international-travels]. The data spans from January 1, 2020, to December 31, 2022 [DERIVED: from the chart image].",
+      "domain_specific_explanations": "The chart categorizes restrictions into five types: no restrictions, screening arrivals, quarantine on some arrivals, partial ban, and complete ban [DIRECT]. The data source is the Blavatnik School of Government, University of Oxford (2023) [DIRECT]. The coding system refers to the most stringent policy in the country at a given time [DIRECT].",
+      "real_world_significance": "This data matters because it shows how countries have responded to the COVID-19 pandemic through travel restrictions [SPECULATIVE: general knowledge of COVID-19 response]. The restrictions have affected international travel and economies [SPECULATIVE: general knowledge of economics and travel]. As the number of countries with restrictions changes, it indicates shifts in global travel policies [DERIVED: from the chart image].",
+      "other": "The chart image shows a clear trend of decreasing restrictions over time [DERIVED: from the chart image]. By December 31, 2022, most countries had no restrictions or only screening arrivals [DERIVED: from the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the number of recorded countries with different types of restrictions on international travel arrivals due to COVID-19",
+        "The data source is the Blavatnik School of Government, University of Oxford (2023)",
+        "The coding system refers to the most stringent policy in the country at a given time"
+      ],
+      "derived_claims": [
+        "The data spans from January 1, 2020, to December 31, 2022",
+        "By December 31, 2022, most countries had no restrictions or only screening arrivals"
+      ],
+      "speculative_claims": [
+        "It was produced by Our World in Data",
+        "The restrictions have affected international travel and economies"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 2182,
+    "output": 661
+  },
+  "latency_ms": 3236.741999979131,
+  "created_at": "2026-07-08T13:14:12.708836Z"
+}

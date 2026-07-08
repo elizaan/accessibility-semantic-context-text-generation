@@ -1,0 +1,61 @@
+{
+  "output_id": "eea4bd9d-bbf6-4900-9009-1b8bc3b2e578",
+  "chart_id": "hci_a38749fbb390ae3939225efb60a72157cfe7c396_Image_010",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"The actual data values underlying the chart are not provided.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No information on trend magnitude is given.\"},\n      \"chart_subject_domain\": {\"score\": 2, \"justification\": \"The domain seems to involve psychology or neuroscience, possibly related to motor impairments and trial times, but specific details are limited.\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart consists of two scatterplots showing the relationship between age and mean trial time for two groups: the 32 fastest participants and the 32 slowest participants. The plots differentiate between participants with and without motor impairments [DIRECT].\",\n    \"domain_specific_explanations\": \"The data appears to explore how age and the presence of motor impairments affect trial times. Participants are divided into fastest and slowest deciles based on their mean trial times. The presence of motor impairments (MI) is a key variable, with 'Has MI' and 'No MI' indicating whether participants have reported motor impairments [DIRECT].\",\n    \"real_world_significance\": \"The study seems to have implications for understanding how age and motor impairments affect performance in tasks, possibly relevant in fields like rehabilitation, psychology, or neurology. The distinction between the fastest and slowest participants could help in identifying factors that contribute to slower performance, which might be crucial for support or intervention strategies [SPECULATIVE: based on general knowledge of psychological and neurological studies].\",\n    \"other\": \"The alt text provides a summary of participant demographics and distribution across age and impairment categories. For the fastest participants, most are between 18-40 years old, with a few older, and 7 have reported motor impairments. The slowest participants are more age-diverse, ranging from just over 25 to almost 70, with 5 without motor impairments [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart consists of two scatterplots showing the relationship between age and mean trial time for two groups: the 32 fastest participants and the 32 slowest participants. The plots differentiate between participants with and without motor impairments\",\n      \"The presence of motor impairments (MI) is a key variable, with 'Has MI' and 'No MI' indicating whether participants have reported motor impairments\",\n      \"For the fastest participants, most are between 18-40 years old, with a few older, and 7 have reported motor impairments. The slowest participants are more age-diverse, ranging from just over 25 to almost 70, with 5 without motor impairments\"\n    ],\n    \"derived_claims\": [],\n    \"speculative_claims\": [\n      \"The study seems to have implications for understanding how age and motor impairments affect performance in tasks, possibly relevant in fields like rehabilitation, psychology, or neurology. The distinction between the fastest and slowest participants could help in identifying factors that contribute to slower performance, which might be crucial for support or intervention strategies\"\n    ],\n    \"total_flag_count\": 3,\n    \"direct_count\": 3,\n    \"derived_count\": 0,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The actual data values underlying the chart are not provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No information on trend magnitude is given."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The domain seems to involve psychology or neuroscience, possibly related to motor impairments and trial times, but specific details are limited."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart consists of two scatterplots showing the relationship between age and mean trial time for two groups: the 32 fastest participants and the 32 slowest participants. The plots differentiate between participants with and without motor impairments [DIRECT].",
+      "domain_specific_explanations": "The data appears to explore how age and the presence of motor impairments affect trial times. Participants are divided into fastest and slowest deciles based on their mean trial times. The presence of motor impairments (MI) is a key variable, with 'Has MI' and 'No MI' indicating whether participants have reported motor impairments [DIRECT].",
+      "real_world_significance": "The study seems to have implications for understanding how age and motor impairments affect performance in tasks, possibly relevant in fields like rehabilitation, psychology, or neurology. The distinction between the fastest and slowest participants could help in identifying factors that contribute to slower performance, which might be crucial for support or intervention strategies [SPECULATIVE: based on general knowledge of psychological and neurological studies].",
+      "other": "The alt text provides a summary of participant demographics and distribution across age and impairment categories. For the fastest participants, most are between 18-40 years old, with a few older, and 7 have reported motor impairments. The slowest participants are more age-diverse, ranging from just over 25 to almost 70, with 5 without motor impairments [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart consists of two scatterplots showing the relationship between age and mean trial time for two groups: the 32 fastest participants and the 32 slowest participants. The plots differentiate between participants with and without motor impairments",
+        "The presence of motor impairments (MI) is a key variable, with 'Has MI' and 'No MI' indicating whether participants have reported motor impairments",
+        "For the fastest participants, most are between 18-40 years old, with a few older, and 7 have reported motor impairments. The slowest participants are more age-diverse, ranging from just over 25 to almost 70, with 5 without motor impairments"
+      ],
+      "derived_claims": [],
+      "speculative_claims": [
+        "The study seems to have implications for understanding how age and motor impairments affect performance in tasks, possibly relevant in fields like rehabilitation, psychology, or neurology. The distinction between the fastest and slowest participants could help in identifying factors that contribute to slower performance, which might be crucial for support or intervention strategies"
+      ],
+      "total_flag_count": 3,
+      "direct_count": 3,
+      "derived_count": 0,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 1662,
+    "output": 700
+  },
+  "latency_ms": 2492.0488329953514,
+  "created_at": "2026-07-08T14:16:13.987500Z"
+}

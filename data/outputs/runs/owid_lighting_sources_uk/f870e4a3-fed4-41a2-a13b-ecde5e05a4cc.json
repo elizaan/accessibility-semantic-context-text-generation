@@ -1,0 +1,74 @@
+{
+  "output_id": "f870e4a3-fed4-41a2-a13b-ecde5e05a4cc",
+  "chart_id": "owid_lighting_sources_uk",
+  "dataset_source": "our_world_data",
+  "model_id": "gpt-5.4",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The exact underlying data table is provided for the single entity-year observation, including values for Candles, Whale oil, Kerosene, Gas, and Electricity.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only one year, 2025, is provided, so no time trend or magnitude of change can be measured from the metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly indicate the chart concerns lighting sources in the United Kingdom and the share of lighting by energy source, but axis labels and stakeholder context are not provided.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is about lighting sources in the United Kingdom. [DIRECT] The provided data table contains one observation for the United Kingdom in 2025. [DIRECT] In that observation, electricity accounts for 100 while candles, whale oil, kerosene, and gas are all 0. [DIRECT] Because all listed alternatives are zero and electricity is 100, the chart indicates that the entire recorded share of lighting comes from electricity in this 2025 entry. [DERIVED: read category values and infer full allocation from 100 total with all others at 0] The linked source is Our World in Data. [DIRECT]\",\n    \"domain_specific_explanations\": \"The values appear to represent shares of lighting by source rather than absolute quantities of energy or number of lamps. [DIRECT] In this dataset entry, the United Kingdom has complete dependence on electricity among the listed lighting sources. [DERIVED: interpreted category shares from the domain story and the 2025 values] In energy-history terms, candles, whale oil, and kerosene are older lighting technologies, while gas and electricity are later systems used for illumination. [SPECULATIVE: energy history] A value of 100 for electricity most naturally reads as 100 percent of lighting share, given the domain story's wording about 'share of lighting.' [DERIVED: interpreted the domain story phrase 'share of lighting' together with category totals]\"\n    ,\n    \"real_world_significance\": \"The data suggests that, for this 2025 record, modern lighting in the United Kingdom is fully represented by electricity rather than combustible lighting fuels. [DERIVED: compared the 2025 source shares across categories] This matters because access to lighting would therefore depend heavily on the reliability, affordability, and reach of the electrical system. [SPECULATIVE: energy systems] If this representation is used in historical transition analysis, it would mark the endpoint of a long shift away from flame-based and fuel-based household lighting. [SPECULATIVE: economic history] Policymakers, energy planners, and historians could use this kind of information to understand infrastructure dependence and technological transition. [SPECULATIVE: public policy and history]\",\n    \"other\": \"The metadata supports a strong statement about the 2025 composition of lighting sources, but it does not support any statement about change over time because no earlier years are included here. [DIRECT] The absence of the chart image, axis labels, and alt text does not prevent interpretation of the single data row because the exact values are available in the table. [DIRECT] The chart title is plural, but the provided table contains only one entity-year record for the United Kingdom in 2025. [DIRECT]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is about lighting sources in the United Kingdom.\",\n      \"The provided data table contains one observation for the United Kingdom in 2025.\",\n      \"In that observation, electricity accounts for 100 while candles, whale oil, kerosene, and gas are all 0.\",\n      \"The linked source is Our World in Data.\",\n      \"The values appear to represent shares of lighting by source rather than absolute quantities of energy or number of lamps.\",\n      \"The metadata supports a strong statement about the 2025 composition of lighting sources, but it does not support any statement about change over time because no earlier years are included here.\",\n      \"The absence of the chart image, axis labels, and alt text does not prevent interpretation of the single data row because the exact values are available in the table.\",\n      \"The chart title is plural, but the provided table contains only one entity-year record for the United Kingdom in 2025.\"\n    ],\n    \"derived_claims\": [\n      \"Because all listed alternatives are zero and electricity is 100, the chart indicates that the entire recorded share of lighting comes from electricity in this 2025 entry. — derived from category values summing to a full allocation with electricity at 100 and all others at 0.\",\n      \"In this dataset entry, the United Kingdom has complete dependence on electricity among the listed lighting sources. — derived from the 2025 source shares in the data table.\",\n      \"A value of 100 for electricity most naturally reads as 100 percent of lighting share, given the domain story's wording about 'share of lighting.' — derived from the expert domain story plus the category values.\",\n      \"The data suggests that, for this 2025 record, modern lighting in the United Kingdom is fully represented by electricity rather than combustible lighting fuels. — derived by comparing the 2025 source shares across categories.\"\n    ],\n    \"speculative_claims\": [\n      \"In energy-history terms, candles, whale oil, and kerosene are older lighting technologies, while gas and electricity are later systems used for illumination. — source: energy history\",\n      \"This matters because access to lighting would therefore depend heavily on the reliability, affordability, and reach of the electrical system. — source: energy systems\",\n      \"If this representation is used in historical transition analysis, it would mark the endpoint of a long shift away from flame-based and fuel-based household lighting. — source: economic history\",\n      \"Policymakers, energy planners, and historians could use this kind of information to understand infrastructure dependence and technological transition. — source: public policy and history\"\n    ],\n    \"total_flag_count\": 16,\n    \"direct_count\": 8,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The exact underlying data table is provided for the single entity-year observation, including values for Candles, Whale oil, Kerosene, Gas, and Electricity."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only one year, 2025, is provided, so no time trend or magnitude of change can be measured from the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly indicate the chart concerns lighting sources in the United Kingdom and the share of lighting by energy source, but axis labels and stakeholder context are not provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is about lighting sources in the United Kingdom. [DIRECT] The provided data table contains one observation for the United Kingdom in 2025. [DIRECT] In that observation, electricity accounts for 100 while candles, whale oil, kerosene, and gas are all 0. [DIRECT] Because all listed alternatives are zero and electricity is 100, the chart indicates that the entire recorded share of lighting comes from electricity in this 2025 entry. [DERIVED: read category values and infer full allocation from 100 total with all others at 0] The linked source is Our World in Data. [DIRECT]",
+      "domain_specific_explanations": "The values appear to represent shares of lighting by source rather than absolute quantities of energy or number of lamps. [DIRECT] In this dataset entry, the United Kingdom has complete dependence on electricity among the listed lighting sources. [DERIVED: interpreted category shares from the domain story and the 2025 values] In energy-history terms, candles, whale oil, and kerosene are older lighting technologies, while gas and electricity are later systems used for illumination. [SPECULATIVE: energy history] A value of 100 for electricity most naturally reads as 100 percent of lighting share, given the domain story's wording about 'share of lighting.' [DERIVED: interpreted the domain story phrase 'share of lighting' together with category totals]",
+      "real_world_significance": "The data suggests that, for this 2025 record, modern lighting in the United Kingdom is fully represented by electricity rather than combustible lighting fuels. [DERIVED: compared the 2025 source shares across categories] This matters because access to lighting would therefore depend heavily on the reliability, affordability, and reach of the electrical system. [SPECULATIVE: energy systems] If this representation is used in historical transition analysis, it would mark the endpoint of a long shift away from flame-based and fuel-based household lighting. [SPECULATIVE: economic history] Policymakers, energy planners, and historians could use this kind of information to understand infrastructure dependence and technological transition. [SPECULATIVE: public policy and history]",
+      "other": "The metadata supports a strong statement about the 2025 composition of lighting sources, but it does not support any statement about change over time because no earlier years are included here. [DIRECT] The absence of the chart image, axis labels, and alt text does not prevent interpretation of the single data row because the exact values are available in the table. [DIRECT] The chart title is plural, but the provided table contains only one entity-year record for the United Kingdom in 2025. [DIRECT]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is about lighting sources in the United Kingdom.",
+        "The provided data table contains one observation for the United Kingdom in 2025.",
+        "In that observation, electricity accounts for 100 while candles, whale oil, kerosene, and gas are all 0.",
+        "The linked source is Our World in Data.",
+        "The values appear to represent shares of lighting by source rather than absolute quantities of energy or number of lamps.",
+        "The metadata supports a strong statement about the 2025 composition of lighting sources, but it does not support any statement about change over time because no earlier years are included here.",
+        "The absence of the chart image, axis labels, and alt text does not prevent interpretation of the single data row because the exact values are available in the table.",
+        "The chart title is plural, but the provided table contains only one entity-year record for the United Kingdom in 2025."
+      ],
+      "derived_claims": [
+        "Because all listed alternatives are zero and electricity is 100, the chart indicates that the entire recorded share of lighting comes from electricity in this 2025 entry. — derived from category values summing to a full allocation with electricity at 100 and all others at 0.",
+        "In this dataset entry, the United Kingdom has complete dependence on electricity among the listed lighting sources. — derived from the 2025 source shares in the data table.",
+        "A value of 100 for electricity most naturally reads as 100 percent of lighting share, given the domain story's wording about 'share of lighting.' — derived from the expert domain story plus the category values.",
+        "The data suggests that, for this 2025 record, modern lighting in the United Kingdom is fully represented by electricity rather than combustible lighting fuels. — derived by comparing the 2025 source shares across categories."
+      ],
+      "speculative_claims": [
+        "In energy-history terms, candles, whale oil, and kerosene are older lighting technologies, while gas and electricity are later systems used for illumination. — source: energy history",
+        "This matters because access to lighting would therefore depend heavily on the reliability, affordability, and reach of the electrical system. — source: energy systems",
+        "If this representation is used in historical transition analysis, it would mark the endpoint of a long shift away from flame-based and fuel-based household lighting. — source: economic history",
+        "Policymakers, energy planners, and historians could use this kind of information to understand infrastructure dependence and technological transition. — source: public policy and history"
+      ],
+      "total_flag_count": 16,
+      "direct_count": 8,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1202,
+    "output": 1340
+  },
+  "latency_ms": 12127.643250045367,
+  "created_at": "2026-07-08T13:23:31.088462Z"
+}

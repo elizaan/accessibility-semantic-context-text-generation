@@ -1,0 +1,80 @@
+{
+  "output_id": "bede2dd0-97bd-4d91-85ee-11c8682c969b",
+  "chart_id": "owid_annual_death_rates_in_different_age_groups_females",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The data table provides exact mortality rates for multiple age groups across a wide range of countries and regions, though the list is slightly truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"We can easily calculate and compare trends across age groups and countries, but the truncation limits a complete global analysis.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The subject domain (demography and public health mortality rates) is clearly defined by the title and data columns.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides the exact definition of the metric (annual death rate per 1,000 people of a given age for females) and its source.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the annual death rates for females across different age groups (0, 10, 25, 45, 65, and 80 years old) for various countries and regions in the year 2023 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. It covers global regions (like Africa (UN), Americas, Asia (UN)) as well as individual nations ranging alphabetically from Afghanistan to Benin [DIRECT].\",\n    \"domain_specific_explanations\": \"The values represent the annual death rate per 1,000 females of a specific age group [DIRECT]. Across all listed entities, mortality rates follow a classic 'U-shaped' or 'J-shaped' curve typical of human demography, where death rates are relatively high at infancy (0 years old), drop to their lowest points around age 10, and then progressively rise through adulthood (25, 45, 65) to their highest levels at age 80 [DERIVED: Compared values across age columns for all visible rows, noting that age 10 is consistently the lowest and age 80 is the highest, with age 0 being higher than ages 10-45]. There is a stark contrast between developing and developed nations; for instance, the infant mortality rate (0 years old) in Angola (45.32 per 1,000) or Benin (49.51 per 1,000) is more than 15 times higher than that of Australia (3.07 per 1,000) or Austria (2.38 per 1,000) [DERIVED: Calculated ratio of infant mortality rates between Angola/Benin and Australia/Austria]. Similarly, at age 80, a female in Afghanistan has a death rate of 112.09 per 1,000, whereas in Australia it is 28.98 per 1,000 [DERIVED: Compared 80-year-old mortality rates between Afghanistan and Australia].\",\n    \"real_world_significance\": \"These disparities highlight massive global inequalities in healthcare access, sanitation, maternal care, and socioeconomic development [SPECULATIVE: Public Health]. High infant mortality rates (0 years old) in regions like Africa (UN) (41.34 per 1,000) compared to the Americas (9.64 per 1,000) [DERIVED: Compared infant mortality rates of Africa (UN) and Americas] point to critical gaps in neonatal and pediatric healthcare infrastructure [SPECULATIVE: Global Health Policy]. Policymakers and international aid organizations use this data to target healthcare interventions, improve maternal-child health programs, and evaluate the effectiveness of public health systems [SPECULATIVE: Global Health Policy].\",\n    \"other\": \"The data is limited to females, meaning it does not capture sex-based differences in mortality [SPECULATIVE: Demography]. The year of the data is 2023 [DIRECT], representing a post-COVID-19 pandemic baseline for global mortality [SPECULATIVE: Epidemiology].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the annual death rates for females across different age groups (0, 10, 25, 45, 65, and 80 years old) for various countries and regions in the year 2023\",\n      \"The data is sourced from Our World in Data\",\n      \"It covers global regions (like Africa (UN), Americas, Asia (UN)) as well as individual nations ranging alphabetically from Afghanistan to Benin\",\n      \"The values represent the annual death rate per 1,000 females of a specific age group\",\n      \"The year of the data is 2023\"\n    ],\n    \"derived_claims\": [\n      \"Across all listed entities, mortality rates follow a classic 'U-shaped' or 'J-shaped' curve typical of human demography, where death rates are relatively high at infancy (0 years old), drop to their lowest points around age 10, and then progressively rise through adulthood (25, 45, 65) to their highest levels at age 80 [DERIVED: Compared values across age columns for all visible rows, noting that age 10 is consistently the lowest and age 80 is the highest, with age 0 being higher than ages 10-45]\",\n      \"There is a stark contrast between developing and developed nations; for instance, the infant mortality rate (0 years old) in Angola (45.32 per 1,000) or Benin (49.51 per 1,000) is more than 15 times higher than that of Australia (3.07 per 1,000) or Austria (2.38 per 1,000) [DERIVED: Calculated ratio of infant mortality rates between Angola/Benin and Australia/Austria]\",\n      \"Similarly, at age 80, a female in Afghanistan has a death rate of 112.09 per 1,000, whereas in Australia it is 28.98 per 1,000 [DERIVED: Compared 80-year-old mortality rates between Afghanistan and Australia]\",\n      \"High infant mortality rates (0 years old) in regions like Africa (UN) (41.34 per 1,000) compared to the Americas (9.64 per 1,000) [DERIVED: Compared infant mortality rates of Africa (UN) and Americas]\"\n    ],\n    \"speculative_claims\": [\n      \"These disparities highlight massive global inequalities in healthcare access, sanitation, maternal care, and socioeconomic development [SPECULATIVE: Public Health]\",\n      \"point to critical gaps in neonatal and pediatric healthcare infrastructure [SPECULATIVE: Global Health Policy]\",\n      \"Policymakers and international aid organizations use this data to target healthcare interventions, improve maternal-child health programs, and evaluate the effectiveness of public health systems [SPECULATIVE: Global Health Policy]\",\n      \"The data is limited to females, meaning it does not capture sex-based differences in mortality [SPECULATIVE: Demography]\",\n      \"representing a post-COVID-19 pandemic baseline for global mortality [SPECULATIVE: Epidemiology]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides exact mortality rates for multiple age groups across a wide range of countries and regions, though the list is slightly truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "We can easily calculate and compare trends across age groups and countries, but the truncation limits a complete global analysis."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The subject domain (demography and public health mortality rates) is clearly defined by the title and data columns."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides the exact definition of the metric (annual death rate per 1,000 people of a given age for females) and its source."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the annual death rates for females across different age groups (0, 10, 25, 45, 65, and 80 years old) for various countries and regions in the year 2023 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. It covers global regions (like Africa (UN), Americas, Asia (UN)) as well as individual nations ranging alphabetically from Afghanistan to Benin [DIRECT].",
+      "domain_specific_explanations": "The values represent the annual death rate per 1,000 females of a specific age group [DIRECT]. Across all listed entities, mortality rates follow a classic 'U-shaped' or 'J-shaped' curve typical of human demography, where death rates are relatively high at infancy (0 years old), drop to their lowest points around age 10, and then progressively rise through adulthood (25, 45, 65) to their highest levels at age 80 [DERIVED: Compared values across age columns for all visible rows, noting that age 10 is consistently the lowest and age 80 is the highest, with age 0 being higher than ages 10-45]. There is a stark contrast between developing and developed nations; for instance, the infant mortality rate (0 years old) in Angola (45.32 per 1,000) or Benin (49.51 per 1,000) is more than 15 times higher than that of Australia (3.07 per 1,000) or Austria (2.38 per 1,000) [DERIVED: Calculated ratio of infant mortality rates between Angola/Benin and Australia/Austria]. Similarly, at age 80, a female in Afghanistan has a death rate of 112.09 per 1,000, whereas in Australia it is 28.98 per 1,000 [DERIVED: Compared 80-year-old mortality rates between Afghanistan and Australia].",
+      "real_world_significance": "These disparities highlight massive global inequalities in healthcare access, sanitation, maternal care, and socioeconomic development [SPECULATIVE: Public Health]. High infant mortality rates (0 years old) in regions like Africa (UN) (41.34 per 1,000) compared to the Americas (9.64 per 1,000) [DERIVED: Compared infant mortality rates of Africa (UN) and Americas] point to critical gaps in neonatal and pediatric healthcare infrastructure [SPECULATIVE: Global Health Policy]. Policymakers and international aid organizations use this data to target healthcare interventions, improve maternal-child health programs, and evaluate the effectiveness of public health systems [SPECULATIVE: Global Health Policy].",
+      "other": "The data is limited to females, meaning it does not capture sex-based differences in mortality [SPECULATIVE: Demography]. The year of the data is 2023 [DIRECT], representing a post-COVID-19 pandemic baseline for global mortality [SPECULATIVE: Epidemiology]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the annual death rates for females across different age groups (0, 10, 25, 45, 65, and 80 years old) for various countries and regions in the year 2023",
+        "The data is sourced from Our World in Data",
+        "It covers global regions (like Africa (UN), Americas, Asia (UN)) as well as individual nations ranging alphabetically from Afghanistan to Benin",
+        "The values represent the annual death rate per 1,000 females of a specific age group",
+        "The year of the data is 2023"
+      ],
+      "derived_claims": [
+        "Across all listed entities, mortality rates follow a classic 'U-shaped' or 'J-shaped' curve typical of human demography, where death rates are relatively high at infancy (0 years old), drop to their lowest points around age 10, and then progressively rise through adulthood (25, 45, 65) to their highest levels at age 80 [DERIVED: Compared values across age columns for all visible rows, noting that age 10 is consistently the lowest and age 80 is the highest, with age 0 being higher than ages 10-45]",
+        "There is a stark contrast between developing and developed nations; for instance, the infant mortality rate (0 years old) in Angola (45.32 per 1,000) or Benin (49.51 per 1,000) is more than 15 times higher than that of Australia (3.07 per 1,000) or Austria (2.38 per 1,000) [DERIVED: Calculated ratio of infant mortality rates between Angola/Benin and Australia/Austria]",
+        "Similarly, at age 80, a female in Afghanistan has a death rate of 112.09 per 1,000, whereas in Australia it is 28.98 per 1,000 [DERIVED: Compared 80-year-old mortality rates between Afghanistan and Australia]",
+        "High infant mortality rates (0 years old) in regions like Africa (UN) (41.34 per 1,000) compared to the Americas (9.64 per 1,000) [DERIVED: Compared infant mortality rates of Africa (UN) and Americas]"
+      ],
+      "speculative_claims": [
+        "These disparities highlight massive global inequalities in healthcare access, sanitation, maternal care, and socioeconomic development [SPECULATIVE: Public Health]",
+        "point to critical gaps in neonatal and pediatric healthcare infrastructure [SPECULATIVE: Global Health Policy]",
+        "Policymakers and international aid organizations use this data to target healthcare interventions, improve maternal-child health programs, and evaluate the effectiveness of public health systems [SPECULATIVE: Global Health Policy]",
+        "The data is limited to females, meaning it does not capture sex-based differences in mortality [SPECULATIVE: Demography]",
+        "representing a post-COVID-19 pandemic baseline for global mortality [SPECULATIVE: Epidemiology]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16271.734334004577,
+  "created_at": "2026-07-07T22:50:47.370605Z"
+}

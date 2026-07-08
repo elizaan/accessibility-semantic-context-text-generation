@@ -1,0 +1,76 @@
+{
+  "output_id": "774c188f-db35-4575-8b3b-55e7730be76c",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_015_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"Some data values are labeled directly on the bars in the chart image, but the complete underlying data table is not provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relative significance of features across different days can be clearly compared using the bar heights and significance thresholds.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The chart title and legend indicate a study on behavioral and psychological features over time, likely in a digital health or psychology context.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context or domain story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day window relative to a central event (Day 0) [DERIVED: read from chart image]. The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical activities (Total Minutes Asleep, Time in Bed, Range of Activities during day, Number of steps), and emotional states (Anxious, Depressed, Frustrated) [DERIVED: read from chart legend]. This analysis is characteristic of personal informatics or mobile health (mHealth) studies that investigate how daily behaviors correlate with psychological well-being around specific events or interventions [SPECULATIVE: mHealth and personal informatics].\",\n    \"domain_specific_explanations\": \"In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship [SPECULATIVE: statistics]. The chart features two horizontal threshold lines at p = 0.05 and p = 0.01, which are standard benchmarks for determining statistical significance [DERIVED: read from chart image]. Solid bars represent features that meet the significance threshold (p < 0.05), while striped or patterned bars represent non-significant features (p >= 0.05) [DERIVED: observed bar styling relative to the 0.05 threshold line]. On Day 0 (the day of the event), multiple behavioral features are highly significant, including Morning Screen Use (p = 0.032), Calls (p = 0.048), Time in Bed (p = 0.048), Range of Activities (p = 0.050), and Number of steps (p = 0.045), alongside the emotional state of Anxiety (p = 0.026) [DERIVED: read values from Day 0]. On Day 1, the significance shifts entirely to emotional states, specifically Depressed (p = 0.002) and Frustrated (p = 0.026) [DERIVED: read values from Day 1]. By Day 2, only Morning Screen Use remains statistically significant (p = 0.006) [DERIVED: read values from Day 2]. No features show statistical significance on Day -1 [DERIVED: observed all bars on Day -1 are striped and above the 0.05 threshold].\",\n    \"real_world_significance\": \"This temporal pattern reveals a clear sequence of behavioral and emotional responses to an event: behavioral disruptions and anxiety peak immediately on the day of the event (Day 0) [DERIVED: based on significant p-values on Day 0], followed by a delayed emotional toll of depression and frustration the next day (Day 1) [DERIVED: based on significant p-values on Day 1], and a lingering digital behavior change (increased morning screen use) two days later (Day 2) [DERIVED: based on significant p-value on Day 2]. In clinical and therapeutic settings, understanding these lag effects is crucial because it allows digital health systems or clinicians to predict emotional downturns based on preceding behavioral changes, enabling timely and proactive interventions [SPECULATIVE: clinical psychology and digital health].\",\n    \"other\": \"The use of striped bars capped at default high values (such as 0.10 or 0.20) is a visual shorthand to indicate that a feature did not reach statistical significance on that day without cluttering the chart with precise, non-significant p-values [DERIVED: observed striped bar heights].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day window relative to a central event (Day 0)\",\n      \"The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical activities (Total Minutes Asleep, Time in Bed, Range of Activities during day, Number of steps), and emotional states (Anxious, Depressed, Frustrated)\",\n      \"The chart features two horizontal threshold lines at p = 0.05 and p = 0.01, which are standard benchmarks for determining statistical significance\",\n      \"Solid bars represent features that meet the significance threshold (p < 0.05), while striped or patterned bars represent non-significant features (p >= 0.05)\",\n      \"On Day 0 (the day of the event), multiple behavioral features are highly significant, including Morning Screen Use (p = 0.032), Calls (p = 0.048), Time in Bed (p = 0.048), Range of Activities (p = 0.050), and Number of steps (p = 0.045), alongside the emotional state of Anxiety (p = 0.026)\",\n      \"On Day 1, the significance shifts entirely to emotional states, specifically Depressed (p = 0.002) and Frustrated (p = 0.026)\",\n      \"By Day 2, only Morning Screen Use remains statistically significant (p = 0.006)\",\n      \"No features show statistical significance on Day -1\",\n      \"behavioral disruptions and anxiety peak immediately on the day of the event (Day 0)\",\n      \"followed by a delayed emotional toll of depression and frustration the next day (Day 1)\",\n      \"and a lingering digital behavior change (increased morning screen use) two days later (Day 2)\",\n      \"The use of striped bars capped at default high values (such as 0.10 or 0.20) is a visual shorthand to indicate that a feature did not reach statistical significance on that day without cluttering the chart with precise, non-significant p-values\"\n    ],\n    \"speculative_claims\": [\n      \"This analysis is characteristic of personal informatics or mobile health (mHealth) studies that investigate how daily behaviors correlate with psychological well-being around specific events or interventions\",\n      \"In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship\",\n      \"In clinical and therapeutic settings, understanding these lag effects is crucial because it allows digital health systems or clinicians to predict emotional downturns based on preceding behavioral changes, enabling timely and proactive interventions\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 0,\n    \"derived_count\": 12,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Some data values are labeled directly on the bars in the chart image, but the complete underlying data table is not provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relative significance of features across different days can be clearly compared using the bar heights and significance thresholds."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The chart title and legend indicate a study on behavioral and psychological features over time, likely in a digital health or psychology context."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context or domain story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day window relative to a central event (Day 0) [DERIVED: read from chart image]. The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical activities (Total Minutes Asleep, Time in Bed, Range of Activities during day, Number of steps), and emotional states (Anxious, Depressed, Frustrated) [DERIVED: read from chart legend]. This analysis is characteristic of personal informatics or mobile health (mHealth) studies that investigate how daily behaviors correlate with psychological well-being around specific events or interventions [SPECULATIVE: mHealth and personal informatics].",
+      "domain_specific_explanations": "In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship [SPECULATIVE: statistics]. The chart features two horizontal threshold lines at p = 0.05 and p = 0.01, which are standard benchmarks for determining statistical significance [DERIVED: read from chart image]. Solid bars represent features that meet the significance threshold (p < 0.05), while striped or patterned bars represent non-significant features (p >= 0.05) [DERIVED: observed bar styling relative to the 0.05 threshold line]. On Day 0 (the day of the event), multiple behavioral features are highly significant, including Morning Screen Use (p = 0.032), Calls (p = 0.048), Time in Bed (p = 0.048), Range of Activities (p = 0.050), and Number of steps (p = 0.045), alongside the emotional state of Anxiety (p = 0.026) [DERIVED: read values from Day 0]. On Day 1, the significance shifts entirely to emotional states, specifically Depressed (p = 0.002) and Frustrated (p = 0.026) [DERIVED: read values from Day 1]. By Day 2, only Morning Screen Use remains statistically significant (p = 0.006) [DERIVED: read values from Day 2]. No features show statistical significance on Day -1 [DERIVED: observed all bars on Day -1 are striped and above the 0.05 threshold].",
+      "real_world_significance": "This temporal pattern reveals a clear sequence of behavioral and emotional responses to an event: behavioral disruptions and anxiety peak immediately on the day of the event (Day 0) [DERIVED: based on significant p-values on Day 0], followed by a delayed emotional toll of depression and frustration the next day (Day 1) [DERIVED: based on significant p-values on Day 1], and a lingering digital behavior change (increased morning screen use) two days later (Day 2) [DERIVED: based on significant p-value on Day 2]. In clinical and therapeutic settings, understanding these lag effects is crucial because it allows digital health systems or clinicians to predict emotional downturns based on preceding behavioral changes, enabling timely and proactive interventions [SPECULATIVE: clinical psychology and digital health].",
+      "other": "The use of striped bars capped at default high values (such as 0.10 or 0.20) is a visual shorthand to indicate that a feature did not reach statistical significance on that day without cluttering the chart with precise, non-significant p-values [DERIVED: observed striped bar heights]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day window relative to a central event (Day 0)",
+        "The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical activities (Total Minutes Asleep, Time in Bed, Range of Activities during day, Number of steps), and emotional states (Anxious, Depressed, Frustrated)",
+        "The chart features two horizontal threshold lines at p = 0.05 and p = 0.01, which are standard benchmarks for determining statistical significance",
+        "Solid bars represent features that meet the significance threshold (p < 0.05), while striped or patterned bars represent non-significant features (p >= 0.05)",
+        "On Day 0 (the day of the event), multiple behavioral features are highly significant, including Morning Screen Use (p = 0.032), Calls (p = 0.048), Time in Bed (p = 0.048), Range of Activities (p = 0.050), and Number of steps (p = 0.045), alongside the emotional state of Anxiety (p = 0.026)",
+        "On Day 1, the significance shifts entirely to emotional states, specifically Depressed (p = 0.002) and Frustrated (p = 0.026)",
+        "By Day 2, only Morning Screen Use remains statistically significant (p = 0.006)",
+        "No features show statistical significance on Day -1",
+        "behavioral disruptions and anxiety peak immediately on the day of the event (Day 0)",
+        "followed by a delayed emotional toll of depression and frustration the next day (Day 1)",
+        "and a lingering digital behavior change (increased morning screen use) two days later (Day 2)",
+        "The use of striped bars capped at default high values (such as 0.10 or 0.20) is a visual shorthand to indicate that a feature did not reach statistical significance on that day without cluttering the chart with precise, non-significant p-values"
+      ],
+      "speculative_claims": [
+        "This analysis is characteristic of personal informatics or mobile health (mHealth) studies that investigate how daily behaviors correlate with psychological well-being around specific events or interventions",
+        "In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship",
+        "In clinical and therapeutic settings, understanding these lag effects is crucial because it allows digital health systems or clinicians to predict emotional downturns based on preceding behavioral changes, enabling timely and proactive interventions"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 0,
+      "derived_count": 12,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16883.363041037228,
+  "created_at": "2026-07-07T23:21:57.214429Z"
+}

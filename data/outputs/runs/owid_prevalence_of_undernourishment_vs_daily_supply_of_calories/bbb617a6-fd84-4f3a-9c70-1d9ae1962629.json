@@ -1,0 +1,63 @@
+{
+  "output_id": "bbb617a6-fd84-4f3a-9c70-1d9ae1962629",
+  "chart_id": "owid_prevalence_of_undernourishment_vs_daily_supply_of_calories",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides data values for share of people undernourished and daily supply of calories, but lacks detailed metadata.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart shows a clear trend between share of people undernourished and daily supply of calories, but the magnitude is not fully quantified.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain is nutrition and food security, which is clearly indicated.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares the share of people who are undernourished with the average daily supply of calories across various countries in 2023. It highlights the relationship between caloric intake and undernourishment [DIRECT]. The data is sourced from the Food and Agriculture Organization of the United Nations [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart shows that countries with lower daily supply of calories tend to have a higher share of people who are undernourished [DERIVED: from chart observation]. For example, Haiti, DR Congo, and Liberia have high percentages of undernourished people and lower caloric intake [DIRECT]. In contrast, countries like Austria, Australia, and Albania have lower percentages of undernourished people and higher caloric intake [DIRECT].\",\n    \"real_world_significance\": \"This data matters because it highlights the issue of food security and nutrition across different countries [SPECULATIVE: general knowledge of global issues]. Countries with low caloric intake and high undernourishment rates may face significant challenges in ensuring their populations' basic nutritional needs are met [SPECULATIVE: knowledge of nutrition and food security]. Policy makers and international organizations can use this data to identify areas of concern and allocate resources effectively [SPECULATIVE: knowledge of policy making and resource allocation].\",\n    \"other\": \"The chart also indicates that there is a wide range of caloric intake and undernourishment rates across countries, suggesting diverse levels of food security and access to nutritious food [DERIVED: from chart observation].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares the share of people who are undernourished with the average daily supply of calories across various countries in 2023.\",\n      \"The data is sourced from the Food and Agriculture Organization of the United Nations.\",\n      \"Haiti, DR Congo, and Liberia have high percentages of undernourished people and lower caloric intake.\",\n      \"Austria, Australia, and Albania have lower percentages of undernourished people and higher caloric intake.\"\n    ],\n    \"derived_claims\": [\n      \"Countries with lower daily supply of calories tend to have a higher share of people who are undernourished.\",\n      \"There is a wide range of caloric intake and undernourishment rates across countries.\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it highlights the issue of food security and nutrition across different countries.\",\n      \"Countries with low caloric intake and high undernourishment rates may face significant challenges in ensuring their populations' basic nutritional needs are met.\",\n      \"Policy makers and international organizations can use this data to identify areas of concern and allocate resources effectively.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides data values for share of people undernourished and daily supply of calories, but lacks detailed metadata."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart shows a clear trend between share of people undernourished and daily supply of calories, but the magnitude is not fully quantified."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain is nutrition and food security, which is clearly indicated."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares the share of people who are undernourished with the average daily supply of calories across various countries in 2023. It highlights the relationship between caloric intake and undernourishment [DIRECT]. The data is sourced from the Food and Agriculture Organization of the United Nations [DIRECT].",
+      "domain_specific_explanations": "The chart shows that countries with lower daily supply of calories tend to have a higher share of people who are undernourished [DERIVED: from chart observation]. For example, Haiti, DR Congo, and Liberia have high percentages of undernourished people and lower caloric intake [DIRECT]. In contrast, countries like Austria, Australia, and Albania have lower percentages of undernourished people and higher caloric intake [DIRECT].",
+      "real_world_significance": "This data matters because it highlights the issue of food security and nutrition across different countries [SPECULATIVE: general knowledge of global issues]. Countries with low caloric intake and high undernourishment rates may face significant challenges in ensuring their populations' basic nutritional needs are met [SPECULATIVE: knowledge of nutrition and food security]. Policy makers and international organizations can use this data to identify areas of concern and allocate resources effectively [SPECULATIVE: knowledge of policy making and resource allocation].",
+      "other": "The chart also indicates that there is a wide range of caloric intake and undernourishment rates across countries, suggesting diverse levels of food security and access to nutritious food [DERIVED: from chart observation]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares the share of people who are undernourished with the average daily supply of calories across various countries in 2023.",
+        "The data is sourced from the Food and Agriculture Organization of the United Nations.",
+        "Haiti, DR Congo, and Liberia have high percentages of undernourished people and lower caloric intake.",
+        "Austria, Australia, and Albania have lower percentages of undernourished people and higher caloric intake."
+      ],
+      "derived_claims": [
+        "Countries with lower daily supply of calories tend to have a higher share of people who are undernourished.",
+        "There is a wide range of caloric intake and undernourishment rates across countries."
+      ],
+      "speculative_claims": [
+        "This data matters because it highlights the issue of food security and nutrition across different countries.",
+        "Countries with low caloric intake and high undernourishment rates may face significant challenges in ensuring their populations' basic nutritional needs are met.",
+        "Policy makers and international organizations can use this data to identify areas of concern and allocate resources effectively."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 1927,
+    "output": 767
+  },
+  "latency_ms": 2602.103666984476,
+  "created_at": "2026-07-08T13:19:04.305268Z"
+}

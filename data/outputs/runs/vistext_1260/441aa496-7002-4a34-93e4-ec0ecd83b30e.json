@@ -1,0 +1,69 @@
+{
+  "output_id": "441aa496-7002-4a34-93e4-ec0ecd83b30e",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"No data values provided\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No data values provided\"},\n      \"chart_subject_domain\": {\"score\": 2, \"justification\": \"Chart title provides some context\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No expert context provided\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context provided\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The chart is a line graph with years on the x-axis and share of workers on the y-axis [DERIVED: from chart image].\",\n    \"domain_specific_explanations\": \"The chart is related to labor economics and the federal minimum wage in the United States [SPECULATIVE: labor economics]. The share of workers paid hourly rates at or below the federal minimum wage has been declining over time [DERIVED: from chart image].\",\n    \"real_world_significance\": \"This data matters because it shows the proportion of workers who are paid the minimum wage or less [SPECULATIVE: labor economics]. A decline in this share may indicate an improvement in wage standards [SPECULATIVE: labor economics].\",\n    \"other\": \"The chart does not provide specific data values, but it appears to show a general downward trend in the share of workers paid hourly rates at or below the federal minimum wage [DERIVED: from chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\"This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019\"],\n    \"derived_claims\": [\"The chart is a line graph with years on the x-axis and share of workers on the y-axis\", \"The share of workers paid hourly rates at or below the federal minimum wage has been declining over time\", \"The chart does not provide specific data values, but it appears to show a general downward trend in the share of workers paid hourly rates at or below the federal minimum wage\"],\n    \"speculative_claims\": [\"This chart is related to labor economics and the federal minimum wage in the United States\", \"This data matters because it shows the proportion of workers who are paid the minimum wage or less\", \"A decline in this share may indicate an improvement in wage standards\"],\n    \"total_flag_count\": 8,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data values provided"
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No data values provided"
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "Chart title provides some context"
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context provided"
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context provided"
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The chart is a line graph with years on the x-axis and share of workers on the y-axis [DERIVED: from chart image].",
+      "domain_specific_explanations": "The chart is related to labor economics and the federal minimum wage in the United States [SPECULATIVE: labor economics]. The share of workers paid hourly rates at or below the federal minimum wage has been declining over time [DERIVED: from chart image].",
+      "real_world_significance": "This data matters because it shows the proportion of workers who are paid the minimum wage or less [SPECULATIVE: labor economics]. A decline in this share may indicate an improvement in wage standards [SPECULATIVE: labor economics].",
+      "other": "The chart does not provide specific data values, but it appears to show a general downward trend in the share of workers paid hourly rates at or below the federal minimum wage [DERIVED: from chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019"
+      ],
+      "derived_claims": [
+        "The chart is a line graph with years on the x-axis and share of workers on the y-axis",
+        "The share of workers paid hourly rates at or below the federal minimum wage has been declining over time",
+        "The chart does not provide specific data values, but it appears to show a general downward trend in the share of workers paid hourly rates at or below the federal minimum wage"
+      ],
+      "speculative_claims": [
+        "This chart is related to labor economics and the federal minimum wage in the United States",
+        "This data matters because it shows the proportion of workers who are paid the minimum wage or less",
+        "A decline in this share may indicate an improvement in wage standards"
+      ],
+      "total_flag_count": 8,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1920,
+    "output": 623
+  },
+  "latency_ms": 2010.0205829949118,
+  "created_at": "2026-07-08T00:07:04.266712Z"
+}

@@ -1,0 +1,81 @@
+{
+  "output_id": "95c56a50-0249-4d7c-bf95-28369a42e73d",
+  "chart_id": "hci_88b5f0341afb94f658ade33d8cef8a30bde358b4_Image_007",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact success percentages for all 11 tasks are provided in the human-written alt text, though the raw data table is missing.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"We can easily compare the success rates across tasks to identify the highest and lowest performing areas, though no pre-calculated statistical trends are provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly identify this as a task-based usability test from a CHI 2021 paper.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story provides the publication venue (CHI 2021) and the exact figure caption, but lacks the full paper text.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.8\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart presents the success rates of participants completing 11 interpretive tasks in a usability test [DIRECT]. This study was published at the ACM CHI Conference on Human Factors in Computing Systems in 2021 [DIRECT]. The tasks involve interpreting visual elements on a slide, such as identifying objects, colors, widths, positions, and spatial relationships [DIRECT]. The success rate represents the percentage of participants who were able to partially or fully succeed in completing each task [DIRECT].\",\n    \"domain_specific_explanations\": \"The tasks test how well users can interpret slide layouts and object properties, which is a common challenge in screen reader accessibility or non-visual slide representation tools [SPECULATIVE: Human-Computer Interaction / Accessibility]. Identifying the arrow's direction had a 0.0% success rate [DIRECT] and identifying rectangle color had a 25.0% success rate [DIRECT], suggesting significant usability barriers in perceiving specific visual attributes. Conversely, identifying objects on a pre-made slide (91.7%) [DIRECT] and identifying text in a text box (90.9%) [DIRECT] had very high success rates, indicating that basic object identification and text reading are highly successful compared to spatial and visual attribute tasks [DERIVED: Comparing success rates of Tasks 1 and 10 against Tasks 2, 5, 8, and 11]. Spatial relationship tasks show moderate-to-low success, highlighting the difficulty of conveying relative spatial layouts [DERIVED: Comparing spatial task success rates (36.4% for Tasks 5 and 11) to basic identification tasks (over 90%)].\",\n    \"real_world_significance\": \"This research likely addresses accessibility in presentation software (like PowerPoint or Google Slides) for blind or low-vision users, as tasks focus heavily on spatial layout, object relationships, and visual properties that are typically hard to access non-visually [SPECULATIVE: Assistive Technology / Accessibility]. The 0% success rate in determining arrow direction highlights a critical failure point in current assistive designs for graphics, showing that directional vectors are particularly difficult to convey [SPECULATIVE: Assistive Technology]. Improving these systems based on these usability results could help blind and low-vision creators or viewers better understand and author visual presentations, promoting digital inclusion in professional and educational settings [SPECULATIVE: Digital Inclusion / Accessibility].\",\n    \"other\": \"There is a stark contrast between text/object identification (over 90% success) and spatial/attribute interpretation (mostly under 60% success) [DERIVED: Comparing text/object tasks to spatial/attribute tasks], indicating a clear divide between semantic content accessibility and spatial/visual layout accessibility.\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart presents the success rates of participants completing 11 interpretive tasks in a usability test\",\n      \"This study was published at the ACM CHI Conference on Human Factors in Computing Systems in 2021\",\n      \"The tasks involve interpreting visual elements on a slide, such as identifying objects, colors, widths, positions, and spatial relationships\",\n      \"The success rate represents the percentage of participants who were able to partially or fully succeed in completing each task\",\n      \"Identifying the arrow's direction had a 0.0% success rate\",\n      \"Identifying rectangle color had a 25.0% success rate\",\n      \"Identifying objects on a pre-made slide had a 91.7% success rate\",\n      \"Identifying text in a text box had a 90.9% success rate\"\n    ],\n    \"derived_claims\": [\n      \"basic object identification and text reading are highly successful compared to spatial and visual attribute tasks [DERIVED: Comparing success rates of Tasks 1 and 10 against Tasks 2, 5, 8, and 11]\",\n      \"Spatial relationship tasks show moderate-to-low success, highlighting the difficulty of conveying relative spatial layouts [DERIVED: Comparing spatial task success rates (36.4% for Tasks 5 and 11) to basic identification tasks (over 90%)]\",\n      \"There is a stark contrast between text/object identification (over 90% success) and spatial/attribute interpretation (mostly under 60% success) [DERIVED: Comparing text/object tasks to spatial/attribute tasks]\"\n    ],\n    \"speculative_claims\": [\n      \"The tasks test how well users can interpret slide layouts and object properties, which is a common challenge in screen reader accessibility or non-visual slide representation tools [SPECULATIVE: Human-Computer Interaction / Accessibility]\",\n      \"This research likely addresses accessibility in presentation software (like PowerPoint or Google Slides) for blind or low-vision users, as tasks focus heavily on spatial layout, object relationships, and visual properties that are typically hard to access non-visually [SPECULATIVE: Assistive Technology / Accessibility]\",\n      \"The 0% success rate in determining arrow direction highlights a critical failure point in current assistive designs for graphics, showing that directional vectors are particularly difficult to convey [SPECULATIVE: Assistive Technology]\",\n      \"Improving these systems based on these usability results could help blind and low-vision creators or viewers better understand and author visual presentations, promoting digital inclusion in professional and educational settings [SPECULATIVE: Digital Inclusion / Accessibility]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 8,\n    \"derived_count\": 3,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact success percentages for all 11 tasks are provided in the human-written alt text, though the raw data table is missing."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "We can easily compare the success rates across tasks to identify the highest and lowest performing areas, though no pre-calculated statistical trends are provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly identify this as a task-based usability test from a CHI 2021 paper."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story provides the publication venue (CHI 2021) and the exact figure caption, but lacks the full paper text."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.8
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart presents the success rates of participants completing 11 interpretive tasks in a usability test [DIRECT]. This study was published at the ACM CHI Conference on Human Factors in Computing Systems in 2021 [DIRECT]. The tasks involve interpreting visual elements on a slide, such as identifying objects, colors, widths, positions, and spatial relationships [DIRECT]. The success rate represents the percentage of participants who were able to partially or fully succeed in completing each task [DIRECT].",
+      "domain_specific_explanations": "The tasks test how well users can interpret slide layouts and object properties, which is a common challenge in screen reader accessibility or non-visual slide representation tools [SPECULATIVE: Human-Computer Interaction / Accessibility]. Identifying the arrow's direction had a 0.0% success rate [DIRECT] and identifying rectangle color had a 25.0% success rate [DIRECT], suggesting significant usability barriers in perceiving specific visual attributes. Conversely, identifying objects on a pre-made slide (91.7%) [DIRECT] and identifying text in a text box (90.9%) [DIRECT] had very high success rates, indicating that basic object identification and text reading are highly successful compared to spatial and visual attribute tasks [DERIVED: Comparing success rates of Tasks 1 and 10 against Tasks 2, 5, 8, and 11]. Spatial relationship tasks show moderate-to-low success, highlighting the difficulty of conveying relative spatial layouts [DERIVED: Comparing spatial task success rates (36.4% for Tasks 5 and 11) to basic identification tasks (over 90%)].",
+      "real_world_significance": "This research likely addresses accessibility in presentation software (like PowerPoint or Google Slides) for blind or low-vision users, as tasks focus heavily on spatial layout, object relationships, and visual properties that are typically hard to access non-visually [SPECULATIVE: Assistive Technology / Accessibility]. The 0% success rate in determining arrow direction highlights a critical failure point in current assistive designs for graphics, showing that directional vectors are particularly difficult to convey [SPECULATIVE: Assistive Technology]. Improving these systems based on these usability results could help blind and low-vision creators or viewers better understand and author visual presentations, promoting digital inclusion in professional and educational settings [SPECULATIVE: Digital Inclusion / Accessibility].",
+      "other": "There is a stark contrast between text/object identification (over 90% success) and spatial/attribute interpretation (mostly under 60% success) [DERIVED: Comparing text/object tasks to spatial/attribute tasks], indicating a clear divide between semantic content accessibility and spatial/visual layout accessibility."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart presents the success rates of participants completing 11 interpretive tasks in a usability test",
+        "This study was published at the ACM CHI Conference on Human Factors in Computing Systems in 2021",
+        "The tasks involve interpreting visual elements on a slide, such as identifying objects, colors, widths, positions, and spatial relationships",
+        "The success rate represents the percentage of participants who were able to partially or fully succeed in completing each task",
+        "Identifying the arrow's direction had a 0.0% success rate",
+        "Identifying rectangle color had a 25.0% success rate",
+        "Identifying objects on a pre-made slide had a 91.7% success rate",
+        "Identifying text in a text box had a 90.9% success rate"
+      ],
+      "derived_claims": [
+        "basic object identification and text reading are highly successful compared to spatial and visual attribute tasks [DERIVED: Comparing success rates of Tasks 1 and 10 against Tasks 2, 5, 8, and 11]",
+        "Spatial relationship tasks show moderate-to-low success, highlighting the difficulty of conveying relative spatial layouts [DERIVED: Comparing spatial task success rates (36.4% for Tasks 5 and 11) to basic identification tasks (over 90%)]",
+        "There is a stark contrast between text/object identification (over 90% success) and spatial/attribute interpretation (mostly under 60% success) [DERIVED: Comparing text/object tasks to spatial/attribute tasks]"
+      ],
+      "speculative_claims": [
+        "The tasks test how well users can interpret slide layouts and object properties, which is a common challenge in screen reader accessibility or non-visual slide representation tools [SPECULATIVE: Human-Computer Interaction / Accessibility]",
+        "This research likely addresses accessibility in presentation software (like PowerPoint or Google Slides) for blind or low-vision users, as tasks focus heavily on spatial layout, object relationships, and visual properties that are typically hard to access non-visually [SPECULATIVE: Assistive Technology / Accessibility]",
+        "The 0% success rate in determining arrow direction highlights a critical failure point in current assistive designs for graphics, showing that directional vectors are particularly difficult to convey [SPECULATIVE: Assistive Technology]",
+        "Improving these systems based on these usability results could help blind and low-vision creators or viewers better understand and author visual presentations, promoting digital inclusion in professional and educational settings [SPECULATIVE: Digital Inclusion / Accessibility]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 8,
+      "derived_count": 3,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12474.521583004389,
+  "created_at": "2026-07-07T23:25:48.141215Z"
+}

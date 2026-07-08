@@ -1,0 +1,66 @@
+{
+  "output_id": "031bf2c2-7947-4a61-93e6-cc2f5e1a986c",
+  "chart_id": "olli_stacked-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No underlying data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No trend descriptions or statistical summaries were provided in the metadata, though the visual trends are readable from the image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The metadata does not explicitly name the dataset, but the labels 'variety' and 'site' (with specific Minnesota locations) strongly point to the classic agricultural Barley dataset.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a horizontal stacked bar chart showing the sum of crop yields for different barley varieties across multiple experimental sites in Minnesota [DERIVED: read from axis labels 'variety', 'Sum of yield', and legend 'site' containing Minnesota locations like Crookston, Duluth, Waseca]. This dataset is the classic 'Barley' dataset, originally from a 1930s agricultural experiment in Minnesota, often used in statistical graphics literature [SPECULATIVE: agricultural history / statistical graphics literature]. The varieties listed include Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38 [DIRECT]. The sites listed are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DIRECT].\",\n    \"domain_specific_explanations\": \"In agricultural studies, 'Sum of yield' represents the cumulative crop yield (typically measured in bushels per acre) across the years of the study (usually 1931 and 1932) for each variety at each site [SPECULATIVE: agronomy / Barley dataset history]. By stacking the yields, the chart allows comparison of the total performance of each barley variety across all six sites combined [DERIVED: visual analysis of stacked bar structure]. For instance, Trebi and Wisconsin No. 38 show the highest cumulative yields, approaching nearly 475 units [DERIVED: visual estimation of the longest bars on the X-axis]. Conversely, Svansota and Manchuria show lower cumulative yields, totaling under 400 units [DERIVED: visual estimation of the shortest bars on the X-axis].\",\n    \"real_world_significance\": \"In agricultural research, understanding which crop varieties perform consistently well across diverse geographic locations (sites) is crucial for recommending resilient strains to farmers [SPECULATIVE: agronomy]. A variety like Trebi, which performs well across multiple sites, represents a robust option for regional cultivation [DERIVED: visual analysis of Trebi's large segment sizes across sites]. Historically, this dataset is famous for a suspected data entry error (an anomaly at the University Farm site where 1931 and 1932 data may have been swapped), though a simple stacked sum chart aggregates these years and hides temporal anomalies [SPECULATIVE: statistical graphics history].\",\n    \"other\": \"The segments within each bar are ordered consistently by site: Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DERIVED: visual inspection of the segment order from left to right matching the legend order].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The varieties listed include Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38\",\n      \"The sites listed are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca\"\n    ],\n    \"derived_claims\": [\n      \"The chart is a horizontal stacked bar chart showing the sum of crop yields for different barley varieties across multiple experimental sites in Minnesota\",\n      \"By stacking the yields, the chart allows comparison of the total performance of each barley variety across all six sites combined\",\n      \"For instance, Trebi and Wisconsin No. 38 show the highest cumulative yields, approaching nearly 475 units\",\n      \"Svansota and Manchuria show lower cumulative yields, totaling under 400 units\",\n      \"A variety like Trebi, which performs well across multiple sites, represents a robust option for regional cultivation\",\n      \"The segments within each bar are ordered consistently by site: Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset is the classic 'Barley' dataset, originally from a 1930s agricultural experiment in Minnesota, often used in statistical graphics literature\",\n      \"Sum of yield' represents the cumulative crop yield (typically measured in bushels per acre) across the years of the study (usually 1931 and 1932) for each variety at each site\",\n      \"In agricultural research, understanding which crop varieties perform consistently well across diverse geographic locations (sites) is crucial for recommending resilient strains to farmers\",\n      \"Historically, this dataset is famous for a suspected data entry error (an anomaly at the University Farm site where 1931 and 1932 data may have been swapped), though a simple stacked sum chart aggregates these years and hides temporal anomalies\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 6,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No underlying data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No trend descriptions or statistical summaries were provided in the metadata, though the visual trends are readable from the image."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The metadata does not explicitly name the dataset, but the labels 'variety' and 'site' (with specific Minnesota locations) strongly point to the classic agricultural Barley dataset."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a horizontal stacked bar chart showing the sum of crop yields for different barley varieties across multiple experimental sites in Minnesota [DERIVED: read from axis labels 'variety', 'Sum of yield', and legend 'site' containing Minnesota locations like Crookston, Duluth, Waseca]. This dataset is the classic 'Barley' dataset, originally from a 1930s agricultural experiment in Minnesota, often used in statistical graphics literature [SPECULATIVE: agricultural history / statistical graphics literature]. The varieties listed include Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38 [DIRECT]. The sites listed are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DIRECT].",
+      "domain_specific_explanations": "In agricultural studies, 'Sum of yield' represents the cumulative crop yield (typically measured in bushels per acre) across the years of the study (usually 1931 and 1932) for each variety at each site [SPECULATIVE: agronomy / Barley dataset history]. By stacking the yields, the chart allows comparison of the total performance of each barley variety across all six sites combined [DERIVED: visual analysis of stacked bar structure]. For instance, Trebi and Wisconsin No. 38 show the highest cumulative yields, approaching nearly 475 units [DERIVED: visual estimation of the longest bars on the X-axis]. Conversely, Svansota and Manchuria show lower cumulative yields, totaling under 400 units [DERIVED: visual estimation of the shortest bars on the X-axis].",
+      "real_world_significance": "In agricultural research, understanding which crop varieties perform consistently well across diverse geographic locations (sites) is crucial for recommending resilient strains to farmers [SPECULATIVE: agronomy]. A variety like Trebi, which performs well across multiple sites, represents a robust option for regional cultivation [DERIVED: visual analysis of Trebi's large segment sizes across sites]. Historically, this dataset is famous for a suspected data entry error (an anomaly at the University Farm site where 1931 and 1932 data may have been swapped), though a simple stacked sum chart aggregates these years and hides temporal anomalies [SPECULATIVE: statistical graphics history].",
+      "other": "The segments within each bar are ordered consistently by site: Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DERIVED: visual inspection of the segment order from left to right matching the legend order]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The varieties listed include Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38",
+        "The sites listed are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca"
+      ],
+      "derived_claims": [
+        "The chart is a horizontal stacked bar chart showing the sum of crop yields for different barley varieties across multiple experimental sites in Minnesota",
+        "By stacking the yields, the chart allows comparison of the total performance of each barley variety across all six sites combined",
+        "For instance, Trebi and Wisconsin No. 38 show the highest cumulative yields, approaching nearly 475 units",
+        "Svansota and Manchuria show lower cumulative yields, totaling under 400 units",
+        "A variety like Trebi, which performs well across multiple sites, represents a robust option for regional cultivation",
+        "The segments within each bar are ordered consistently by site: Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca"
+      ],
+      "speculative_claims": [
+        "This dataset is the classic 'Barley' dataset, originally from a 1930s agricultural experiment in Minnesota, often used in statistical graphics literature",
+        "Sum of yield' represents the cumulative crop yield (typically measured in bushels per acre) across the years of the study (usually 1931 and 1932) for each variety at each site",
+        "In agricultural research, understanding which crop varieties perform consistently well across diverse geographic locations (sites) is crucial for recommending resilient strains to farmers",
+        "Historically, this dataset is famous for a suspected data entry error (an anomaly at the University Farm site where 1931 and 1932 data may have been swapped), though a simple stacked sum chart aggregates these years and hides temporal anomalies"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 6,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12302.408290968742,
+  "created_at": "2026-07-08T14:26:28.635658Z"
+}

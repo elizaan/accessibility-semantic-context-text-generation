@@ -1,0 +1,63 @@
+{
+  "output_id": "12dd230d-3b71-4c4c-969d-59d30d9f1e40",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_013_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"No exact data values provided\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No specific trend magnitude information provided\"},\n      \"chart_subject_domain\": {\"score\": 2, \"justification\": \"The domain seems to be related to social sciences or psychology, but specific details are lacking\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart appears to be a scatter plot showing the relationship between social support and depression scores for individuals who have reported discrimination and those who have not [DERIVED: from the chart image and alt text]. The chart is likely from a study on the impact of discrimination on mental health [SPECULATIVE: based on the expert domain story and common research areas].\",\n    \"domain_specific_explanations\": \"The chart suggests that there is a negative correlation between social support and depression scores, meaning that higher social support is associated with lower depression scores [DIRECT]. The data points are differentiated by whether individuals have reported discrimination or not, indicating that discrimination may have an impact on this relationship [DERIVED: from the chart image].\",\n    \"real_world_significance\": \"This data likely matters for understanding how discrimination affects mental health and the role of social support in mitigating depression [SPECULATIVE: based on common knowledge in psychology and social sciences]. Individuals who have experienced discrimination may have lower social support and higher depression scores, highlighting the need for targeted interventions [DERIVED: from the chart image and common knowledge in the field].\",\n    \"other\": \"The chart does not provide specific data values, but it visually represents a clear trend [DIRECT]. The regression lines for both groups (those who have reported discrimination and those who have not) show a similar negative slope, but are separated, suggesting a consistent impact of discrimination on mental health [DERIVED: from the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"There is a negative correlation between social support and depression scores.\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows a relationship between social support and depression scores for individuals who have reported discrimination and those who have not.\",\n      \"The data points are differentiated by whether individuals have reported discrimination or not.\"\n    ],\n    \"speculative_claims\": [\n      \"This chart is likely from a study on the impact of discrimination on mental health.\",\n      \"Individuals who have experienced discrimination may have lower social support and higher depression scores, highlighting the need for targeted interventions.\"\n    ],\n    \"total_flag_count\": 4,\n    \"direct_count\": 1,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No exact data values provided"
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No specific trend magnitude information provided"
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The domain seems to be related to social sciences or psychology, but specific details are lacking"
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart appears to be a scatter plot showing the relationship between social support and depression scores for individuals who have reported discrimination and those who have not [DERIVED: from the chart image and alt text]. The chart is likely from a study on the impact of discrimination on mental health [SPECULATIVE: based on the expert domain story and common research areas].",
+      "domain_specific_explanations": "The chart suggests that there is a negative correlation between social support and depression scores, meaning that higher social support is associated with lower depression scores [DIRECT]. The data points are differentiated by whether individuals have reported discrimination or not, indicating that discrimination may have an impact on this relationship [DERIVED: from the chart image].",
+      "real_world_significance": "This data likely matters for understanding how discrimination affects mental health and the role of social support in mitigating depression [SPECULATIVE: based on common knowledge in psychology and social sciences]. Individuals who have experienced discrimination may have lower social support and higher depression scores, highlighting the need for targeted interventions [DERIVED: from the chart image and common knowledge in the field].",
+      "other": "The chart does not provide specific data values, but it visually represents a clear trend [DIRECT]. The regression lines for both groups (those who have reported discrimination and those who have not) show a similar negative slope, but are separated, suggesting a consistent impact of discrimination on mental health [DERIVED: from the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "There is a negative correlation between social support and depression scores."
+      ],
+      "derived_claims": [
+        "The chart shows a relationship between social support and depression scores for individuals who have reported discrimination and those who have not.",
+        "The data points are differentiated by whether individuals have reported discrimination or not."
+      ],
+      "speculative_claims": [
+        "This chart is likely from a study on the impact of discrimination on mental health.",
+        "Individuals who have experienced discrimination may have lower social support and higher depression scores, highlighting the need for targeted interventions."
+      ],
+      "total_flag_count": 4,
+      "direct_count": 1,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 1321,
+    "output": 599
+  },
+  "latency_ms": 2615.5516249709763,
+  "created_at": "2026-07-08T14:12:11.985866Z"
+}

@@ -1,0 +1,72 @@
+{
+  "output_id": "d9f1eb45-7df1-4955-96a2-5333c433ba27",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_013_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No explicit trend statistics or magnitudes were provided, though they can be visually estimated from the regression lines in the image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The subject domain (psychology/mental health) can be inferred from the axis labels 'CES-D Depression Score' and '2way SSS Social Support' visible in the image.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context or domain stories were provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder information was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot with linear regression lines illustrating the relationship between depression scores and perceived social support, categorized by whether participants experienced discrimination [DERIVED: read from chart axes and legend]. The x-axis represents the 'CES-D Depression Score' and the y-axis represents '2way SSS Social Support' [DERIVED: read from chart axes]. CES-D is a standard acronym for the Center for Epidemiologic Studies Depression Scale, which is a widely used self-report measure of depressive symptoms [SPECULATIVE: Clinical Psychology].\",\n    \"domain_specific_explanations\": \"Both regression lines show a negative correlation, meaning that higher depression scores are associated with lower perceived social support [DERIVED: observed negative slopes of both regression lines]. The regression line for individuals who experienced discrimination ('YES') has a steeper negative slope than the line for those who did not ('NO') [DERIVED: compared slopes of the 'YES' and 'NO' regression lines]. This suggests that for individuals experiencing discrimination, the decline in perceived social support is more pronounced as depressive symptoms increase [DERIVED: interpreted the steeper slope of the 'YES' group]. The shaded bands represent confidence intervals, which widen significantly at higher depression scores (above 40) due to a smaller sample size of individuals with very high depression scores in this dataset [DERIVED: observed widening of shaded bands on the right side of the plot].\",\n    \"real_world_significance\": \"This data is highly relevant to mental health researchers and public health policymakers studying the social determinants of mental health [SPECULATIVE: Public Health]. The steeper decline in social support for discriminated individuals highlights how systemic biases can compound mental health challenges, potentially making recovery more difficult [SPECULATIVE: Sociology/Mental Health]. Interventions aiming to alleviate depression may need to incorporate specialized social support strategies for individuals who face discrimination, as their natural support systems may erode more quickly under stress [SPECULATIVE: Clinical Psychology].\",\n    \"other\": \"The majority of data points are clustered at depression scores below 30 and social support scores above 60 [DERIVED: observed density of scatter points in the upper-left quadrant].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"The chart is a scatter plot with linear regression lines illustrating the relationship between depression scores and perceived social support, categorized by whether participants experienced discrimination\",\n      \"The x-axis represents the 'CES-D Depression Score' and the y-axis represents '2way SSS Social Support'\",\n      \"Both regression lines show a negative correlation, meaning that higher depression scores are associated with lower perceived social support\",\n      \"The regression line for individuals who experienced discrimination ('YES') has a steeper negative slope than the line for those who did not ('NO')\",\n      \"This suggests that for individuals experiencing discrimination, the decline in perceived social support is more pronounced as depressive symptoms increase\",\n      \"The shaded bands represent confidence intervals, which widen significantly at higher depression scores (above 40) due to a smaller sample size of individuals with very high depression scores in this dataset\",\n      \"The majority of data points are clustered at depression scores below 30 and social support scores above 60\"\n    ],\n    \"speculative_claims\": [\n      \"CES-D is a standard acronym for the Center for Epidemiologic Studies Depression Scale, which is a widely used self-report measure of depressive symptoms\",\n      \"This data is highly relevant to mental health researchers and public health policymakers studying the social determinants of mental health\",\n      \"The steeper decline in social support for discriminated individuals highlights how systemic biases can compound mental health challenges, potentially making recovery more difficult\",\n      \"Interventions aiming to alleviate depression may need to incorporate specialized social support strategies for individuals who face discrimination, as their natural support systems may erode more quickly under stress\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 0,\n    \"derived_count\": 7,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No explicit trend statistics or magnitudes were provided, though they can be visually estimated from the regression lines in the image."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The subject domain (psychology/mental health) can be inferred from the axis labels 'CES-D Depression Score' and '2way SSS Social Support' visible in the image."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context or domain stories were provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder information was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot with linear regression lines illustrating the relationship between depression scores and perceived social support, categorized by whether participants experienced discrimination [DERIVED: read from chart axes and legend]. The x-axis represents the 'CES-D Depression Score' and the y-axis represents '2way SSS Social Support' [DERIVED: read from chart axes]. CES-D is a standard acronym for the Center for Epidemiologic Studies Depression Scale, which is a widely used self-report measure of depressive symptoms [SPECULATIVE: Clinical Psychology].",
+      "domain_specific_explanations": "Both regression lines show a negative correlation, meaning that higher depression scores are associated with lower perceived social support [DERIVED: observed negative slopes of both regression lines]. The regression line for individuals who experienced discrimination ('YES') has a steeper negative slope than the line for those who did not ('NO') [DERIVED: compared slopes of the 'YES' and 'NO' regression lines]. This suggests that for individuals experiencing discrimination, the decline in perceived social support is more pronounced as depressive symptoms increase [DERIVED: interpreted the steeper slope of the 'YES' group]. The shaded bands represent confidence intervals, which widen significantly at higher depression scores (above 40) due to a smaller sample size of individuals with very high depression scores in this dataset [DERIVED: observed widening of shaded bands on the right side of the plot].",
+      "real_world_significance": "This data is highly relevant to mental health researchers and public health policymakers studying the social determinants of mental health [SPECULATIVE: Public Health]. The steeper decline in social support for discriminated individuals highlights how systemic biases can compound mental health challenges, potentially making recovery more difficult [SPECULATIVE: Sociology/Mental Health]. Interventions aiming to alleviate depression may need to incorporate specialized social support strategies for individuals who face discrimination, as their natural support systems may erode more quickly under stress [SPECULATIVE: Clinical Psychology].",
+      "other": "The majority of data points are clustered at depression scores below 30 and social support scores above 60 [DERIVED: observed density of scatter points in the upper-left quadrant]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "The chart is a scatter plot with linear regression lines illustrating the relationship between depression scores and perceived social support, categorized by whether participants experienced discrimination",
+        "The x-axis represents the 'CES-D Depression Score' and the y-axis represents '2way SSS Social Support'",
+        "Both regression lines show a negative correlation, meaning that higher depression scores are associated with lower perceived social support",
+        "The regression line for individuals who experienced discrimination ('YES') has a steeper negative slope than the line for those who did not ('NO')",
+        "This suggests that for individuals experiencing discrimination, the decline in perceived social support is more pronounced as depressive symptoms increase",
+        "The shaded bands represent confidence intervals, which widen significantly at higher depression scores (above 40) due to a smaller sample size of individuals with very high depression scores in this dataset",
+        "The majority of data points are clustered at depression scores below 30 and social support scores above 60"
+      ],
+      "speculative_claims": [
+        "CES-D is a standard acronym for the Center for Epidemiologic Studies Depression Scale, which is a widely used self-report measure of depressive symptoms",
+        "This data is highly relevant to mental health researchers and public health policymakers studying the social determinants of mental health",
+        "The steeper decline in social support for discriminated individuals highlights how systemic biases can compound mental health challenges, potentially making recovery more difficult",
+        "Interventions aiming to alleviate depression may need to incorporate specialized social support strategies for individuals who face discrimination, as their natural support systems may erode more quickly under stress"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 0,
+      "derived_count": 7,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13612.670583010186,
+  "created_at": "2026-07-07T23:34:40.296534Z"
+}

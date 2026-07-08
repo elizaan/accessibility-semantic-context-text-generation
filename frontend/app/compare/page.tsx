@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { getOutputsForChart, listCharts } from "@/lib/api";
 import type { Chart, GenerationOutput } from "@/lib/types";
 import { GitCompare } from "lucide-react";
+import { ParsedOutputView } from "@/components/output/ParsedOutputView";
 
 export default function ComparePage() {
   const [charts, setCharts] = useState<Chart[]>([]);
@@ -88,17 +89,26 @@ export default function ComparePage() {
                 {byModel[modelId].map((output) => (
                   <div key={output.output_id} className="space-y-2">
                     {/* Feature variant badge row */}
-                    <div className="flex flex-wrap gap-1">
+                    <div className="flex flex-wrap gap-1 items-center">
+                      <span className="text-xs bg-purple-100 text-purple-700 rounded px-1.5 py-0.5">
+                        V{output.variant}
+                      </span>
                       {output.enabled_features.map((f) => (
                         <span key={f} className="text-xs bg-blue-100 text-blue-700 rounded px-1.5 py-0.5">
                           {f}
                         </span>
                       ))}
-                      {output.include_image && (
-                        <span className="text-xs bg-green-100 text-green-700 rounded px-1.5 py-0.5">+image</span>
-                      )}
+                      <span
+                        className={`text-xs rounded px-1.5 py-0.5 ${
+                          output.include_image
+                            ? "bg-green-100 text-green-700"
+                            : "bg-gray-100 text-gray-500"
+                        }`}
+                      >
+                        {output.include_image ? "+image" : "no image"}
+                      </span>
                     </div>
-                    <p className="text-sm leading-relaxed">{output.generated_description}</p>
+                    <ParsedOutputView parsed={output.parsed_output} rawText={output.generated_description} />
                     <div className="text-xs text-muted-foreground border-t pt-1">
                       {output.tokens_used.input}+{output.tokens_used.output} tok ·{" "}
                       {(output.latency_ms / 1000).toFixed(1)}s

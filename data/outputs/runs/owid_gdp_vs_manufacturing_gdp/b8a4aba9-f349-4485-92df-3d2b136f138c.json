@@ -1,0 +1,64 @@
+{
+  "output_id": "b8a4aba9-f349-4485-92df-3d2b136f138c",
+  "chart_id": "owid_gdp_vs_manufacturing_gdp",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides data values for various countries but does not include a comprehensive data table.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart shows a general trend but does not provide specific trend magnitudes.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart is related to economics, specifically the relationship between industry share of GDP and GDP per capita.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares the share of industry in GDP versus GDP per capita across various countries in 2016 [DIRECT]. The chart is produced by Our World in Data [DIRECT]. The data is sourced from Herrendorf et al. and Groningen Growth and Development Centre (2015); Bolt and van Zanden - Maddison Project Database 2023 [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart illustrates the relationship between the share of manufacturing in GDP and GDP per capita, adjusted for inflation and differences in living costs [DIRECT]. The vertical axis represents the share of manufacturing in GDP (% GDP), and the horizontal axis represents GDP per capita in international-$ at 2011 prices [DIRECT]. The size of the circles corresponds to the population of each country [DIRECT].\",\n    \"real_world_significance\": \"This data matters for understanding the industrialization and economic development of various countries [SPECULATIVE: Economics]. Policymakers use such data to assess the structure of their economies and make informed decisions about economic development strategies [SPECULATIVE: Economics]. For instance, countries with a high share of industry in GDP and low GDP per capita might prioritize infrastructure development [SPECULATIVE: Economics].\",\n    \"other\": \"The chart does not provide information on the services or agriculture sectors [DERIVED: from the provided information]. The data points are color-coded by region, indicating different economic patterns across North America, South America, Africa, Europe, and Asia [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares the share of industry in GDP versus GDP per capita across various countries in 2016\",\n      \"The chart is produced by Our World in Data\",\n      \"The data is sourced from Herrendorf et al. and Groningen Growth and Development Centre (2015); Bolt and van Zanden - Maddison Project Database 2023\",\n      \"The chart illustrates the relationship between the share of manufacturing in GDP and GDP per capita, adjusted for inflation and differences in living costs\",\n      \"The vertical axis represents the share of manufacturing in GDP (% GDP), and the horizontal axis represents GDP per capita in international-$ at 2011 prices\",\n      \"The size of the circles corresponds to the population of each country\"\n    ],\n    \"derived_claims\": [\n      \"The chart does not provide information on the services or agriculture sectors\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for understanding the industrialization and economic development of various countries\",\n      \"Policymakers use such data to assess the structure of their economies and make informed decisions about economic development strategies\",\n      \"Countries with a high share of industry in GDP and low GDP per capita might prioritize infrastructure development\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides data values for various countries but does not include a comprehensive data table."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart shows a general trend but does not provide specific trend magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart is related to economics, specifically the relationship between industry share of GDP and GDP per capita."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares the share of industry in GDP versus GDP per capita across various countries in 2016 [DIRECT]. The chart is produced by Our World in Data [DIRECT]. The data is sourced from Herrendorf et al. and Groningen Growth and Development Centre (2015); Bolt and van Zanden - Maddison Project Database 2023 [DIRECT].",
+      "domain_specific_explanations": "The chart illustrates the relationship between the share of manufacturing in GDP and GDP per capita, adjusted for inflation and differences in living costs [DIRECT]. The vertical axis represents the share of manufacturing in GDP (% GDP), and the horizontal axis represents GDP per capita in international-$ at 2011 prices [DIRECT]. The size of the circles corresponds to the population of each country [DIRECT].",
+      "real_world_significance": "This data matters for understanding the industrialization and economic development of various countries [SPECULATIVE: Economics]. Policymakers use such data to assess the structure of their economies and make informed decisions about economic development strategies [SPECULATIVE: Economics]. For instance, countries with a high share of industry in GDP and low GDP per capita might prioritize infrastructure development [SPECULATIVE: Economics].",
+      "other": "The chart does not provide information on the services or agriculture sectors [DERIVED: from the provided information]. The data points are color-coded by region, indicating different economic patterns across North America, South America, Africa, Europe, and Asia [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares the share of industry in GDP versus GDP per capita across various countries in 2016",
+        "The chart is produced by Our World in Data",
+        "The data is sourced from Herrendorf et al. and Groningen Growth and Development Centre (2015); Bolt and van Zanden - Maddison Project Database 2023",
+        "The chart illustrates the relationship between the share of manufacturing in GDP and GDP per capita, adjusted for inflation and differences in living costs",
+        "The vertical axis represents the share of manufacturing in GDP (% GDP), and the horizontal axis represents GDP per capita in international-$ at 2011 prices",
+        "The size of the circles corresponds to the population of each country"
+      ],
+      "derived_claims": [
+        "The chart does not provide information on the services or agriculture sectors"
+      ],
+      "speculative_claims": [
+        "This data matters for understanding the industrialization and economic development of various countries",
+        "Policymakers use such data to assess the structure of their economies and make informed decisions about economic development strategies",
+        "Countries with a high share of industry in GDP and low GDP per capita might prioritize infrastructure development"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2154,
+    "output": 750
+  },
+  "latency_ms": 3144.299916981254,
+  "created_at": "2026-07-08T13:17:43.039358Z"
+}

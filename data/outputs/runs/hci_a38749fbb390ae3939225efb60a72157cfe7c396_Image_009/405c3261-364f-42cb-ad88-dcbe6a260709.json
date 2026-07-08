@@ -1,0 +1,77 @@
+{
+  "output_id": "405c3261-364f-42cb-ad88-dcbe6a260709",
+  "chart_id": "hci_a38749fbb390ae3939225efb60a72157cfe7c396_Image_009",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data table is missing, but the alt text provides approximate start and end values for the trend lines of each task.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The alt text describes the direction and approximate percentage changes of the fit lines for all four tasks.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The combination of the task names (pointing, dragging, crossing, steering), the cohorts (motor impairments vs. no motor impairments), and the ASSETS conference context makes the domain highly clear.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The expert context identifies the source paper's venue (ASSETS 2020) but does not provide detailed narrative context.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is from a research paper published at the ASSETS 2020 conference [DIRECT]. The study evaluates the relationship between age and error rates across four common computer interaction tasks: pointing, dragging, crossing, and steering [DERIVED: read from image sub-captions and axes]. It compares two cohorts: individuals with motor impairments ('Has MI') and those without ('No MI') [DERIVED: read from image legends].\",\n    \"domain_specific_explanations\": \"In Human-Computer Interaction (HCI), tasks like pointing, dragging, crossing, and steering represent fundamental motor actions required to navigate graphical user interfaces (GUIs) [SPECULATIVE: Human-Computer Interaction]. For pointing, dragging, and crossing, error rates generally decrease slightly from younger to older ages for both groups [DERIVED: compared fit line trends from alt text]. However, steering tasks exhibit the highest error rates among all four tasks, reaching up to 15% for participants with motor impairments [DERIVED: compared maximum fit line values across tasks from alt text]. This indicates that steering (e.g., navigating a cursor through a narrow path) is a significantly more demanding motor task than simple pointing or dragging [SPECULATIVE: Human-Computer Interaction].\",\n    \"real_world_significance\": \"These findings are crucial for inclusive design and digital accessibility [SPECULATIVE: Inclusive Design]. The high error rates in steering suggest that software designers should minimize steering-based interactions, such as narrow cascading drop-down menus, to improve accessibility for users with motor impairments [SPECULATIVE: Inclusive Design / HCI]. Furthermore, the stable or slightly improving error rates with age across these tasks challenge common stereotypes that older adults inherently perform worse on digital tasks [SPECULATIVE: Gerontechnology].\",\n    \"other\": \"The scatterplots show a high degree of individual data point dispersion, indicating substantial variability in performance within both groups regardless of age [DERIVED: observed scatter of points in the image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is from a research paper published at the ASSETS 2020 conference\"\n    ],\n    \"derived_claims\": [\n      \"The study evaluates the relationship between age and error rates across four common computer interaction tasks: pointing, dragging, crossing, and steering\",\n      \"It compares two cohorts: individuals with motor impairments ('Has MI') and those without ('No MI')\",\n      \"For pointing, dragging, and crossing, error rates generally decrease slightly from younger to older ages for both groups\",\n      \"However, steering tasks exhibit the highest error rates among all four tasks, reaching up to 15% for participants with motor impairments\",\n      \"The scatterplots show a high degree of individual data point dispersion, indicating substantial variability in performance within both groups regardless of age\"\n    ],\n    \"speculative_claims\": [\n      \"In Human-Computer Interaction (HCI), tasks like pointing, dragging, crossing, and steering represent fundamental motor actions required to navigate graphical user interfaces (GUIs)\",\n      \"This indicates that steering (e.g., navigating a cursor through a narrow path) is a significantly more demanding motor task than simple pointing or dragging\",\n      \"These findings are crucial for inclusive design and digital accessibility\",\n      \"The high error rates in steering suggest that software designers should minimize steering-based interactions, such as narrow cascading drop-down menus, to improve accessibility for users with motor impairments\",\n      \"Furthermore, the stable or slightly improving error rates with age across these tasks challenge common stereotypes that older adults inherently perform worse on digital tasks\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data table is missing, but the alt text provides approximate start and end values for the trend lines of each task."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The alt text describes the direction and approximate percentage changes of the fit lines for all four tasks."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The combination of the task names (pointing, dragging, crossing, steering), the cohorts (motor impairments vs. no motor impairments), and the ASSETS conference context makes the domain highly clear."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The expert context identifies the source paper's venue (ASSETS 2020) but does not provide detailed narrative context."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is from a research paper published at the ASSETS 2020 conference [DIRECT]. The study evaluates the relationship between age and error rates across four common computer interaction tasks: pointing, dragging, crossing, and steering [DERIVED: read from image sub-captions and axes]. It compares two cohorts: individuals with motor impairments ('Has MI') and those without ('No MI') [DERIVED: read from image legends].",
+      "domain_specific_explanations": "In Human-Computer Interaction (HCI), tasks like pointing, dragging, crossing, and steering represent fundamental motor actions required to navigate graphical user interfaces (GUIs) [SPECULATIVE: Human-Computer Interaction]. For pointing, dragging, and crossing, error rates generally decrease slightly from younger to older ages for both groups [DERIVED: compared fit line trends from alt text]. However, steering tasks exhibit the highest error rates among all four tasks, reaching up to 15% for participants with motor impairments [DERIVED: compared maximum fit line values across tasks from alt text]. This indicates that steering (e.g., navigating a cursor through a narrow path) is a significantly more demanding motor task than simple pointing or dragging [SPECULATIVE: Human-Computer Interaction].",
+      "real_world_significance": "These findings are crucial for inclusive design and digital accessibility [SPECULATIVE: Inclusive Design]. The high error rates in steering suggest that software designers should minimize steering-based interactions, such as narrow cascading drop-down menus, to improve accessibility for users with motor impairments [SPECULATIVE: Inclusive Design / HCI]. Furthermore, the stable or slightly improving error rates with age across these tasks challenge common stereotypes that older adults inherently perform worse on digital tasks [SPECULATIVE: Gerontechnology].",
+      "other": "The scatterplots show a high degree of individual data point dispersion, indicating substantial variability in performance within both groups regardless of age [DERIVED: observed scatter of points in the image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is from a research paper published at the ASSETS 2020 conference"
+      ],
+      "derived_claims": [
+        "The study evaluates the relationship between age and error rates across four common computer interaction tasks: pointing, dragging, crossing, and steering",
+        "It compares two cohorts: individuals with motor impairments ('Has MI') and those without ('No MI')",
+        "For pointing, dragging, and crossing, error rates generally decrease slightly from younger to older ages for both groups",
+        "However, steering tasks exhibit the highest error rates among all four tasks, reaching up to 15% for participants with motor impairments",
+        "The scatterplots show a high degree of individual data point dispersion, indicating substantial variability in performance within both groups regardless of age"
+      ],
+      "speculative_claims": [
+        "In Human-Computer Interaction (HCI), tasks like pointing, dragging, crossing, and steering represent fundamental motor actions required to navigate graphical user interfaces (GUIs)",
+        "This indicates that steering (e.g., navigating a cursor through a narrow path) is a significantly more demanding motor task than simple pointing or dragging",
+        "These findings are crucial for inclusive design and digital accessibility",
+        "The high error rates in steering suggest that software designers should minimize steering-based interactions, such as narrow cascading drop-down menus, to improve accessibility for users with motor impairments",
+        "Furthermore, the stable or slightly improving error rates with age across these tasks challenge common stereotypes that older adults inherently perform worse on digital tasks"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12161.897416983265,
+  "created_at": "2026-07-07T23:38:35.936906Z"
+}

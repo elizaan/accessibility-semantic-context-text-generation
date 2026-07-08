@@ -1,0 +1,71 @@
+{
+  "output_id": "697a7525-9bfc-474c-b56a-974c1bfde835",
+  "chart_id": "olli_stacked-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact raw data table is missing, but the Olli screen reader tree provides the average sum yields for all 10 varieties and 6 sites.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relative performance of varieties and sites can be derived from the average sum yields provided in the Olli tree.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story explicitly identifies the chart as representing barley yield by variety and site, which points directly to agricultural research.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays barley agricultural yields across 10 different varieties and 6 experimental sites [DIRECT]. The data is sourced from a classic agricultural experiment, likely the famous 1930s Minnesota barley yield dataset [SPECULATIVE: agricultural history / Immer et al. 1934 study]. The chart is structured as a stacked bar chart where the total length of each bar represents the cumulative or average sum yield of a barley variety, segmented by the contribution of each experimental site [DIRECT].\",\n    \"domain_specific_explanations\": \"In agronomy, 'yield' typically refers to the amount of crop harvested per unit of land, such as bushels per acre [SPECULATIVE: agronomy]. The varieties listed (such as Trebi, Velvet, Glabron, and Wisconsin No. 38) represent different genetic strains of barley bred for specific traits like disease resistance or yield optimization [SPECULATIVE: crop science]. The sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca) represent distinct geographic and climatic regions in Minnesota, which helps researchers evaluate genotype-by-environment (GxE) interactions [SPECULATIVE: agricultural statistics]. Comparing the average sum yields, Trebi (78.80) and Wisconsin No. 38 (78.79) are the highest-performing varieties, while Svansota (60.76) has the lowest average sum yield [DERIVED: compared average sum yields of varieties from the Olli tree]. Among the sites, Waseca has the highest average sum yield at 96.22, whereas Grand Rapids has the lowest at 49.86 [DERIVED: compared average sum yields of sites from the Olli tree].\",\n    \"real_world_significance\": \"Understanding which barley varieties perform best in specific environments is crucial for farmers to maximize crop production and economic returns [SPECULATIVE: agricultural economics]. The significant variation in yield between sites like Waseca and Grand Rapids highlights how local soil quality, rainfall, and temperature affect agricultural output [SPECULATIVE: environmental science]. Historically, studies like the Minnesota barley trial laid the groundwork for modern statistical methods in agriculture, including the analysis of variance (ANOVA) to separate genetic effects from environmental effects [SPECULATIVE: history of statistics].\",\n    \"other\": \"The dataset contains 6 values per variety and 10 values per site, indicating a balanced experimental design where every variety was tested at every site [DERIVED: observed that each of the 10 varieties has 6 values and each of the 6 sites has 10 values in the Olli tree].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays barley agricultural yields across 10 different varieties and 6 experimental sites.\",\n      \"The chart is structured as a stacked bar chart where the total length of each bar represents the cumulative or average sum yield of a barley variety, segmented by the contribution of each experimental site.\"\n    ],\n    \"derived_claims\": [\n      \"Comparing the average sum yields, Trebi (78.80) and Wisconsin No. 38 (78.79) are the highest-performing varieties, while Svansota (60.76) has the lowest average sum yield [derived from comparing average sum yields of varieties from the Olli tree].\",\n      \"Among the sites, Waseca has the highest average sum yield at 96.22, whereas Grand Rapids has the lowest at 49.86 [derived from comparing average sum yields of sites from the Olli tree].\",\n      \"The dataset contains 6 values per variety and 10 values per site, indicating a balanced experimental design where every variety was tested at every site [derived from observing that each of the 10 varieties has 6 values and each of the 6 sites has 10 values in the Olli tree].\"\n    ],\n    \"speculative_claims\": [\n      \"The data is sourced from a classic agricultural experiment, likely the famous 1930s Minnesota barley yield dataset [source: agricultural history / Immer et al. 1934 study].\",\n      \"In agronomy, 'yield' typically refers to the amount of crop harvested per unit of land, such as bushels per acre [source: agronomy].\",\n      \"The varieties listed (such as Trebi, Velvet, Glabron, and Wisconsin No. 38) represent different genetic strains of barley bred for specific traits like disease resistance or yield optimization [source: crop science].\",\n      \"The sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca) represent distinct geographic and climatic regions in Minnesota, which helps researchers evaluate genotype-by-environment (GxE) interactions [source: agricultural statistics].\",\n      \"Understanding which barley varieties perform best in specific environments is crucial for farmers to maximize crop production and economic returns [source: agricultural economics].\",\n      \"The significant variation in yield between sites like Waseca and Grand Rapids highlights how local soil quality, rainfall, and temperature affect agricultural output [source: environmental science].\",\n      \"Historically, studies like the Minnesota barley trial laid the groundwork for modern statistical methods in agriculture, including the analysis of variance (ANOVA) to separate genetic effects from environmental effects [source: history of statistics].\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact raw data table is missing, but the Olli screen reader tree provides the average sum yields for all 10 varieties and 6 sites."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relative performance of varieties and sites can be derived from the average sum yields provided in the Olli tree."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story explicitly identifies the chart as representing barley yield by variety and site, which points directly to agricultural research."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays barley agricultural yields across 10 different varieties and 6 experimental sites [DIRECT]. The data is sourced from a classic agricultural experiment, likely the famous 1930s Minnesota barley yield dataset [SPECULATIVE: agricultural history / Immer et al. 1934 study]. The chart is structured as a stacked bar chart where the total length of each bar represents the cumulative or average sum yield of a barley variety, segmented by the contribution of each experimental site [DIRECT].",
+      "domain_specific_explanations": "In agronomy, 'yield' typically refers to the amount of crop harvested per unit of land, such as bushels per acre [SPECULATIVE: agronomy]. The varieties listed (such as Trebi, Velvet, Glabron, and Wisconsin No. 38) represent different genetic strains of barley bred for specific traits like disease resistance or yield optimization [SPECULATIVE: crop science]. The sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca) represent distinct geographic and climatic regions in Minnesota, which helps researchers evaluate genotype-by-environment (GxE) interactions [SPECULATIVE: agricultural statistics]. Comparing the average sum yields, Trebi (78.80) and Wisconsin No. 38 (78.79) are the highest-performing varieties, while Svansota (60.76) has the lowest average sum yield [DERIVED: compared average sum yields of varieties from the Olli tree]. Among the sites, Waseca has the highest average sum yield at 96.22, whereas Grand Rapids has the lowest at 49.86 [DERIVED: compared average sum yields of sites from the Olli tree].",
+      "real_world_significance": "Understanding which barley varieties perform best in specific environments is crucial for farmers to maximize crop production and economic returns [SPECULATIVE: agricultural economics]. The significant variation in yield between sites like Waseca and Grand Rapids highlights how local soil quality, rainfall, and temperature affect agricultural output [SPECULATIVE: environmental science]. Historically, studies like the Minnesota barley trial laid the groundwork for modern statistical methods in agriculture, including the analysis of variance (ANOVA) to separate genetic effects from environmental effects [SPECULATIVE: history of statistics].",
+      "other": "The dataset contains 6 values per variety and 10 values per site, indicating a balanced experimental design where every variety was tested at every site [DERIVED: observed that each of the 10 varieties has 6 values and each of the 6 sites has 10 values in the Olli tree]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays barley agricultural yields across 10 different varieties and 6 experimental sites.",
+        "The chart is structured as a stacked bar chart where the total length of each bar represents the cumulative or average sum yield of a barley variety, segmented by the contribution of each experimental site."
+      ],
+      "derived_claims": [
+        "Comparing the average sum yields, Trebi (78.80) and Wisconsin No. 38 (78.79) are the highest-performing varieties, while Svansota (60.76) has the lowest average sum yield [derived from comparing average sum yields of varieties from the Olli tree].",
+        "Among the sites, Waseca has the highest average sum yield at 96.22, whereas Grand Rapids has the lowest at 49.86 [derived from comparing average sum yields of sites from the Olli tree].",
+        "The dataset contains 6 values per variety and 10 values per site, indicating a balanced experimental design where every variety was tested at every site [derived from observing that each of the 10 varieties has 6 values and each of the 6 sites has 10 values in the Olli tree]."
+      ],
+      "speculative_claims": [
+        "The data is sourced from a classic agricultural experiment, likely the famous 1930s Minnesota barley yield dataset [source: agricultural history / Immer et al. 1934 study].",
+        "In agronomy, 'yield' typically refers to the amount of crop harvested per unit of land, such as bushels per acre [source: agronomy].",
+        "The varieties listed (such as Trebi, Velvet, Glabron, and Wisconsin No. 38) represent different genetic strains of barley bred for specific traits like disease resistance or yield optimization [source: crop science].",
+        "The sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca) represent distinct geographic and climatic regions in Minnesota, which helps researchers evaluate genotype-by-environment (GxE) interactions [source: agricultural statistics].",
+        "Understanding which barley varieties perform best in specific environments is crucial for farmers to maximize crop production and economic returns [source: agricultural economics].",
+        "The significant variation in yield between sites like Waseca and Grand Rapids highlights how local soil quality, rainfall, and temperature affect agricultural output [source: environmental science].",
+        "Historically, studies like the Minnesota barley trial laid the groundwork for modern statistical methods in agriculture, including the analysis of variance (ANOVA) to separate genetic effects from environmental effects [source: history of statistics]."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13312.752792029642,
+  "created_at": "2026-07-08T14:28:01.134559Z"
+}

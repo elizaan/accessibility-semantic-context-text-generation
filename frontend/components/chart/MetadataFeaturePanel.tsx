@@ -2,18 +2,18 @@
 
 import { useState, useCallback } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import type { Chart, MetadataKey } from "@/lib/types";
+import type { Chart, SelectableMetadataKey } from "@/lib/types";
 import { METADATA_FEATURE_CONFIG } from "@/lib/types";
 
 interface Props {
   chart: Chart;
-  enabledFeatures: MetadataKey[];
-  onChange: (enabled: MetadataKey[]) => void;
+  enabledFeatures: SelectableMetadataKey[];
+  onChange: (enabled: SelectableMetadataKey[]) => void;
 }
 
 function groupedFeatures() {
-  const groups: Record<string, MetadataKey[]> = {};
-  for (const [key, config] of Object.entries(METADATA_FEATURE_CONFIG) as [MetadataKey, typeof METADATA_FEATURE_CONFIG[MetadataKey]][]) {
+  const groups: Record<string, SelectableMetadataKey[]> = {};
+  for (const [key, config] of Object.entries(METADATA_FEATURE_CONFIG) as [SelectableMetadataKey, typeof METADATA_FEATURE_CONFIG[SelectableMetadataKey]][]) {
     (groups[config.group] ??= []).push(key);
   }
   return groups;
@@ -25,7 +25,7 @@ export function MetadataFeaturePanel({ chart, enabledFeatures, onChange }: Props
   const enabled = new Set(enabledFeatures);
 
   const toggle = useCallback(
-    (key: MetadataKey) => {
+    (key: SelectableMetadataKey) => {
       const next = new Set(enabledFeatures);
       next.has(key) ? next.delete(key) : next.add(key);
       onChange(Array.from(next));
@@ -35,16 +35,35 @@ export function MetadataFeaturePanel({ chart, enabledFeatures, onChange }: Props
 
   const enableAll = () =>
     onChange(
-      (Object.keys(METADATA_FEATURE_CONFIG) as MetadataKey[]).filter(
+      (Object.keys(METADATA_FEATURE_CONFIG) as SelectableMetadataKey[]).filter(
         (k) => chart.metadata[k] !== null
       )
     );
 
   const disableAll = () => onChange([]);
 
-  const availableCount = (Object.keys(METADATA_FEATURE_CONFIG) as MetadataKey[]).filter(
+  const availableCount = (Object.keys(METADATA_FEATURE_CONFIG) as SelectableMetadataKey[]).filter(
     (k) => chart.metadata[k] !== null
   ).length;
+
+  const enableGroup = useCallback(
+    (keys: SelectableMetadataKey[]) => {
+      const available = keys.filter((k) => chart.metadata[k] !== null);
+      const next = new Set(enabledFeatures);
+      available.forEach((k) => next.add(k));
+      onChange(Array.from(next));
+    },
+    [chart, enabledFeatures, onChange]
+  );
+
+  const disableGroup = useCallback(
+    (keys: SelectableMetadataKey[]) => {
+      const next = new Set(enabledFeatures);
+      keys.forEach((k) => next.delete(k));
+      onChange(Array.from(next));
+    },
+    [enabledFeatures, onChange]
+  );
 
   return (
     <div className="border rounded-xl overflow-hidden">
@@ -73,11 +92,37 @@ export function MetadataFeaturePanel({ chart, enabledFeatures, onChange }: Props
       </div>
 
       <div className="p-4 space-y-5">
-        {Object.entries(GROUPS).map(([groupName, keys]) => (
+        {Object.entries(GROUPS).map(([groupName, keys]) => {
+          const groupAvailable = keys.filter((k) => chart.metadata[k] !== null);
+          const groupEnabledCount = keys.filter((k) => enabled.has(k)).length;
+
+          return (
           <div key={groupName}>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-              {groupName}
-            </h3>
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                {groupName}
+                <span className="ml-1.5 font-normal normal-case text-muted-foreground/70">
+                  ({groupEnabledCount}/{groupAvailable.length} available)
+                </span>
+              </h3>
+              <div className="flex gap-1.5 shrink-0">
+                <button
+                  onClick={() => enableGroup(keys)}
+                  disabled={groupAvailable.length === 0}
+                  className="text-xs text-blue-600 hover:underline disabled:opacity-40 disabled:no-underline disabled:cursor-not-allowed"
+                >
+                  All
+                </button>
+                <span className="text-muted-foreground text-xs">·</span>
+                <button
+                  onClick={() => disableGroup(keys)}
+                  disabled={groupEnabledCount === 0}
+                  className="text-xs text-muted-foreground hover:underline disabled:opacity-40 disabled:no-underline disabled:cursor-not-allowed"
+                >
+                  None
+                </button>
+              </div>
+            </div>
             <div className="space-y-2">
               {keys.map((key) => {
                 const config = METADATA_FEATURE_CONFIG[key];
@@ -120,7 +165,8 @@ export function MetadataFeaturePanel({ chart, enabledFeatures, onChange }: Props
               })}
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
@@ -128,7 +174,7 @@ export function MetadataFeaturePanel({ chart, enabledFeatures, onChange }: Props
 
 const COLLAPSED_LINES = 5;
 
-function MetadataPreview({ metaKey, chart }: { metaKey: MetadataKey; chart: Chart }) {
+function MetadataPreview({ metaKey, chart }: { metaKey: SelectableMetadataKey; chart: Chart }) {
   const [expanded, setExpanded] = useState(false);
   const value = chart.metadata[metaKey];
   if (!value) return null;

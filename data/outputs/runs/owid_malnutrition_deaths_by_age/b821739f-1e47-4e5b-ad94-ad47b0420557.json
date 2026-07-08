@@ -1,0 +1,76 @@
+{
+  "output_id": "b821739f-1e47-4e5b-ad94-ad47b0420557",
+  "chart_id": "owid_malnutrition_deaths_by_age",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No trend analysis was provided in the metadata, though the visual trend is clear from the image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The title and subtitle are visible in the image, but the metadata fields themselves are empty.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, broken down by age groups [DIRECT]. The chart was produced by Our World in Data using data from the IHME, Global Burden of Disease (2025) [DIRECT]. Its primary purpose is to track global progress in reducing severe malnutrition-related mortality across different age demographics over a span of more than four decades [SPECULATIVE: Public Health / Global Development].\",\n    \"domain_specific_explanations\": \"Protein-energy malnutrition results from insufficient caloric and protein intake [DIRECT]. The data shows a substantial overall decline in global deaths from protein-energy malnutrition, falling from over 500,000 in 1980 to approximately 250,000 in 2023 [DERIVED: Derived from reading the y-axis values at the start and end of the timeline]. Historically, the vast majority of deaths occurred in children under 5 years old, represented by the largest band at the bottom of the stack [DERIVED: Derived from comparing the area of the Under-5s band to other age bands]. There are prominent spikes in deaths, most notably in the mid-1980s, peaking near 780,000 deaths around 1983-1984, and a smaller spike around 2010-2011 peaking around 400,000 [DERIVED: Derived from reading peak values on the y-axis]. These spikes likely correspond to major historical famine events, such as the 1983–1985 famine in Ethiopia and East Africa, and the 2011 East Africa drought and famine [SPECULATIVE: Historical Famine Records].\",\n    \"real_world_significance\": \"The overall downward trend reflects massive global improvements in food security, agricultural productivity, humanitarian aid distribution, and pediatric healthcare over the last four decades [SPECULATIVE: Global Health and Development]. The shrinking proportion of under-5 deaths indicates successful targeted interventions like therapeutic feeding programs and childhood immunization, which prevent secondary infections that exacerbate malnutrition [SPECULATIVE: Pediatric Medicine / WHO]. However, the persistent baseline of approximately 250,000 deaths in recent years, along with the growing relative share of deaths in older populations (70+ years old), highlights a shifting demographic challenge where elderly malnutrition and chronic neglect in aging populations require more attention [DERIVED: Derived from comparing the proportion of bands over time]. Furthermore, the spikes demonstrate that despite long-term progress, acute geopolitical crises, climate shocks, and conflicts can still cause sudden, devastating surges in starvation deaths [SPECULATIVE: Humanitarian Studies].\",\n    \"other\": \"The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, broken down by age groups.\",\n      \"The chart was produced by Our World in Data using data from the IHME, Global Burden of Disease (2025).\",\n      \"Protein-energy malnutrition results from insufficient caloric and protein intake.\",\n      \"The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification.\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a substantial overall decline in global deaths from protein-energy malnutrition, falling from over 500,000 in 1980 to approximately 250,000 in 2023 [derived from reading the y-axis values at the start and end of the timeline].\",\n      \"Historically, the vast majority of deaths occurred in children under 5 years old, represented by the largest band at the bottom of the stack [derived from comparing the area of the Under-5s band to other age bands].\",\n      \"There are prominent spikes in deaths, most notably in the mid-1980s, peaking near 780,000 deaths around 1983-1984, and a smaller spike around 2010-2011 peaking around 400,000 [derived from reading peak values on the y-axis].\",\n      \"The relative share of deaths in older populations (70+ years old) has grown more visible as under-5 deaths have declined [derived from comparing the proportion of bands over time].\"\n    ],\n    \"speculative_claims\": [\n      \"The chart's purpose is to track global progress in reducing severe malnutrition-related mortality across different age demographics over a span of more than four decades [source: Public Health / Global Development].\",\n      \"The massive spike in the mid-1980s likely corresponds to major historical famine events, such as the 1983–1985 famine in Ethiopia and East Africa [source: Historical Famine Records].\",\n      \"The smaller spike around 2010-2011 likely corresponds to the 2011 East Africa drought and famine [source: Historical Famine Records].\",\n      \"The overall downward trend reflects massive global improvements in food security, agricultural productivity, humanitarian aid distribution, and pediatric healthcare over the last four decades [source: Global Health and Development].\",\n      \"The shrinking proportion of under-5 deaths indicates successful targeted interventions like therapeutic feeding programs and childhood immunization, which prevent secondary infections that exacerbate malnutrition [source: Pediatric Medicine / WHO].\",\n      \"The spikes demonstrate that despite long-term progress, acute geopolitical crises, climate shocks, and conflicts can still cause sudden, devastating surges in starvation deaths [source: Humanitarian Studies].\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No trend analysis was provided in the metadata, though the visual trend is clear from the image."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The title and subtitle are visible in the image, but the metadata fields themselves are empty."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, broken down by age groups [DIRECT]. The chart was produced by Our World in Data using data from the IHME, Global Burden of Disease (2025) [DIRECT]. Its primary purpose is to track global progress in reducing severe malnutrition-related mortality across different age demographics over a span of more than four decades [SPECULATIVE: Public Health / Global Development].",
+      "domain_specific_explanations": "Protein-energy malnutrition results from insufficient caloric and protein intake [DIRECT]. The data shows a substantial overall decline in global deaths from protein-energy malnutrition, falling from over 500,000 in 1980 to approximately 250,000 in 2023 [DERIVED: Derived from reading the y-axis values at the start and end of the timeline]. Historically, the vast majority of deaths occurred in children under 5 years old, represented by the largest band at the bottom of the stack [DERIVED: Derived from comparing the area of the Under-5s band to other age bands]. There are prominent spikes in deaths, most notably in the mid-1980s, peaking near 780,000 deaths around 1983-1984, and a smaller spike around 2010-2011 peaking around 400,000 [DERIVED: Derived from reading peak values on the y-axis]. These spikes likely correspond to major historical famine events, such as the 1983–1985 famine in Ethiopia and East Africa, and the 2011 East Africa drought and famine [SPECULATIVE: Historical Famine Records].",
+      "real_world_significance": "The overall downward trend reflects massive global improvements in food security, agricultural productivity, humanitarian aid distribution, and pediatric healthcare over the last four decades [SPECULATIVE: Global Health and Development]. The shrinking proportion of under-5 deaths indicates successful targeted interventions like therapeutic feeding programs and childhood immunization, which prevent secondary infections that exacerbate malnutrition [SPECULATIVE: Pediatric Medicine / WHO]. However, the persistent baseline of approximately 250,000 deaths in recent years, along with the growing relative share of deaths in older populations (70+ years old), highlights a shifting demographic challenge where elderly malnutrition and chronic neglect in aging populations require more attention [DERIVED: Derived from comparing the proportion of bands over time]. Furthermore, the spikes demonstrate that despite long-term progress, acute geopolitical crises, climate shocks, and conflicts can still cause sudden, devastating surges in starvation deaths [SPECULATIVE: Humanitarian Studies].",
+      "other": "The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, broken down by age groups.",
+        "The chart was produced by Our World in Data using data from the IHME, Global Burden of Disease (2025).",
+        "Protein-energy malnutrition results from insufficient caloric and protein intake.",
+        "The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification."
+      ],
+      "derived_claims": [
+        "The data shows a substantial overall decline in global deaths from protein-energy malnutrition, falling from over 500,000 in 1980 to approximately 250,000 in 2023 [derived from reading the y-axis values at the start and end of the timeline].",
+        "Historically, the vast majority of deaths occurred in children under 5 years old, represented by the largest band at the bottom of the stack [derived from comparing the area of the Under-5s band to other age bands].",
+        "There are prominent spikes in deaths, most notably in the mid-1980s, peaking near 780,000 deaths around 1983-1984, and a smaller spike around 2010-2011 peaking around 400,000 [derived from reading peak values on the y-axis].",
+        "The relative share of deaths in older populations (70+ years old) has grown more visible as under-5 deaths have declined [derived from comparing the proportion of bands over time]."
+      ],
+      "speculative_claims": [
+        "The chart's purpose is to track global progress in reducing severe malnutrition-related mortality across different age demographics over a span of more than four decades [source: Public Health / Global Development].",
+        "The massive spike in the mid-1980s likely corresponds to major historical famine events, such as the 1983–1985 famine in Ethiopia and East Africa [source: Historical Famine Records].",
+        "The smaller spike around 2010-2011 likely corresponds to the 2011 East Africa drought and famine [source: Historical Famine Records].",
+        "The overall downward trend reflects massive global improvements in food security, agricultural productivity, humanitarian aid distribution, and pediatric healthcare over the last four decades [source: Global Health and Development].",
+        "The shrinking proportion of under-5 deaths indicates successful targeted interventions like therapeutic feeding programs and childhood immunization, which prevent secondary infections that exacerbate malnutrition [source: Pediatric Medicine / WHO].",
+        "The spikes demonstrate that despite long-term progress, acute geopolitical crises, climate shocks, and conflicts can still cause sudden, devastating surges in starvation deaths [source: Humanitarian Studies]."
+      ],
+      "total_flag_count": 14,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13154.152375005651,
+  "created_at": "2026-07-07T22:08:20.470734Z"
+}

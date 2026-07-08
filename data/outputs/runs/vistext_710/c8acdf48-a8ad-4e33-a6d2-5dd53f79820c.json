@@ -1,0 +1,76 @@
+{
+  "output_id": "c8acdf48-a8ad-4e33-a6d2-5dd53f79820c",
+  "chart_id": "vistext_710",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The chart provides a comprehensive data table with net income values for the New York Times Company from 2006 to 2019.\"},\n      \"trend_magnitude\": {\"score\": 4, \"justification\": \"The chart shows the trend and magnitude of net income over the years, but some values are missing or not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 5, \"justification\": \"The chart clearly states that it represents the New York Times Company's net income.\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No domain expert context is provided.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder impact information is provided.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart represents the New York Times Company's net income from 2006 to 2019 in million U.S. dollars [DIRECT]. The data shows a significant fluctuation in net income over the years [DERIVED: from the data table].\",\n    \"domain_specific_explanations\": \"The net income values range from -600 million to 200 million U.S. dollars [DIRECT]. The company's net income was negative in 2006, indicating a loss [DERIVED: from the data table]. The net income increased over the years, with some fluctuations [DERIVED: from the data table].\",\n    \"real_world_significance\": \"The New York Times Company's net income trend may impact investors' decisions [SPECULATIVE: general knowledge of business and finance]. The company's financial performance may also affect its ability to invest in new projects or expand its operations [SPECULATIVE: general knowledge of business and finance].\",\n    \"other\": \"The chart does not provide information on the company's revenue or other financial metrics [DERIVED: from the chart title and data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart represents the New York Times Company's net income from 2006 to 2019 in million U.S. dollars\",\n      \"The net income values range from -600 million to 200 million U.S. dollars\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a significant fluctuation in net income over the years\",\n      \"The company's net income was negative in 2006, indicating a loss\",\n      \"The net income increased over the years, with some fluctuations\",\n      \"The chart does not provide information on the company's revenue or other financial metrics\"\n    ],\n    \"speculative_claims\": [\n      \"The New York Times Company's net income trend may impact investors' decisions\",\n      \"The company's financial performance may also affect its ability to invest in new projects or expand its operations\"\n    ],\n    \"total_flag_count\": 6,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The chart provides a comprehensive data table with net income values for the New York Times Company from 2006 to 2019."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The chart shows the trend and magnitude of net income over the years, but some values are missing or not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart clearly states that it represents the New York Times Company's net income."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No domain expert context is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder impact information is provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart represents the New York Times Company's net income from 2006 to 2019 in million U.S. dollars [DIRECT]. The data shows a significant fluctuation in net income over the years [DERIVED: from the data table].",
+      "domain_specific_explanations": "The net income values range from -600 million to 200 million U.S. dollars [DIRECT]. The company's net income was negative in 2006, indicating a loss [DERIVED: from the data table]. The net income increased over the years, with some fluctuations [DERIVED: from the data table].",
+      "real_world_significance": "The New York Times Company's net income trend may impact investors' decisions [SPECULATIVE: general knowledge of business and finance]. The company's financial performance may also affect its ability to invest in new projects or expand its operations [SPECULATIVE: general knowledge of business and finance].",
+      "other": "The chart does not provide information on the company's revenue or other financial metrics [DERIVED: from the chart title and data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart represents the New York Times Company's net income from 2006 to 2019 in million U.S. dollars",
+        "The net income values range from -600 million to 200 million U.S. dollars"
+      ],
+      "derived_claims": [
+        "The data shows a significant fluctuation in net income over the years",
+        "The company's net income was negative in 2006, indicating a loss",
+        "The net income increased over the years, with some fluctuations",
+        "The chart does not provide information on the company's revenue or other financial metrics"
+      ],
+      "speculative_claims": [
+        "The New York Times Company's net income trend may impact investors' decisions",
+        "The company's financial performance may also affect its ability to invest in new projects or expand its operations"
+      ],
+      "total_flag_count": 6,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 3784,
+    "output": 659
+  },
+  "latency_ms": 2259.8327079904266,
+  "created_at": "2026-07-08T00:10:09.547748Z"
+}

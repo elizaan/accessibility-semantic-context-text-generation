@@ -2,13 +2,19 @@
 LangChain LLM factory — one stateless chat model per call.
 
 Routing by model_id prefix:
-  gemini-*              → ChatGoogleGenerativeAI  (Google AI Studio, free, vision ✓)
-  gemma-*               → ChatGoogleGenerativeAI  (Google AI Studio, free, text-only)
-  gemma2-*              → ChatGroq                (Groq free tier, text-only)
-  llama-* / llama3*     → ChatGroq                (Groq free tier, llama-3.2-*-vision has vision ✓)
-  mixtral-*             → ChatGroq                (Groq free tier)
-  gpt-*                 → ChatOpenAI              (paid, vision ✓)
-  claude-*              → ChatAnthropic           (paid, vision ✓)
+  gemini-*               → ChatGoogleGenerativeAI  (Google AI Studio, free, vision ✓)
+  gemma-*                → ChatGoogleGenerativeAI  (Google AI Studio, free, text-only)
+  gemma2-*               → ChatGroq                (Groq free tier, text-only)
+  llama-*                → ChatGroq                (Groq free tier, text-only)
+  meta-llama/llama-4-*   → ChatGroq                (Groq free tier, vision ✓)
+  qwen/*                 → ChatGroq                (Groq free tier, qwen3.6-27b has vision ✓)
+  mixtral-*              → ChatGroq                (Groq free tier, text-only)
+  gpt-*                  → ChatOpenAI              (paid, vision ✓)
+  claude-*               → ChatAnthropic           (paid, vision ✓)
+
+Groq deprecates models on short notice (see console.groq.com/docs/deprecations) —
+if a model_id here starts failing with `model_decommissioned`, check
+console.groq.com/docs/models for its replacement before assuming it's a bug.
 """
 
 from __future__ import annotations
@@ -29,7 +35,7 @@ _TEXT_ONLY_MODELS: frozenset[str] = frozenset({
     "gemma-2-9b-it",
     "gemma2-9b-it",
     "llama-3.3-70b-versatile",
-    "llama-3.1-70b-versatile",
+    "llama-3.1-8b-instant",
     "mixtral-8x7b-32768",
 })
 
@@ -54,8 +60,14 @@ def get_llm(model_id: str) -> BaseChatModel:
             generation_config={"response_mime_type": "application/json"} if m.startswith("gemini") else {},
         )
 
-    # ── Groq (Llama, Gemma2, Mixtral) ─────────────────────────────────────────
-    if m.startswith("llama") or m.startswith("gemma2") or m.startswith("mixtral"):
+    # ── Groq (Llama, Gemma2, Mixtral, Qwen) ───────────────────────────────────
+    if (
+        m.startswith("llama")
+        or m.startswith("meta-llama/")
+        or m.startswith("gemma2")
+        or m.startswith("mixtral")
+        or m.startswith("qwen")
+    ):
         from langchain_groq import ChatGroq
         return ChatGroq(
             model=model_id,
@@ -76,10 +88,13 @@ def get_llm(model_id: str) -> BaseChatModel:
     # ── Anthropic (paid) ───────────────────────────────────────────────────────
     if m.startswith("claude"):
         from langchain_anthropic import ChatAnthropic
+        # Unlike ChatOpenAI/ChatGoogleGenerativeAI, ChatAnthropic's installed
+        # version rejects max_tokens=None outright (pydantic validation error)
+        # instead of treating it as "no explicit limit" — it needs a real value.
         return ChatAnthropic(
             model=model_id,
             api_key=settings.anthropic_api_key,
-            max_tokens=None,
+            max_tokens=8192,
         )
 
     raise ValueError(

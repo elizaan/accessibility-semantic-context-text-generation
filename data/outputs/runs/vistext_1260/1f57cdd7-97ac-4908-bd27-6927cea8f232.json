@@ -1,0 +1,81 @@
+{
+  "output_id": "1f57cdd7-97ac-4908-bd27-6927cea8f232",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table is truncated, showing only the years 1978 to 1989, leaving the remaining years up to 2019 missing from the raw table.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The L2 caption notes a significant drop over time, and the early data shows a drop from 15.1% to 5.1%, but the exact values for the latter half of the chart are not provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject: the share of US wage and salary workers paid hourly rates at or below the federal minimum wage from 1979 to 2019.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned wages at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. This dataset spans four decades, capturing long-term shifts in the US labor market and wage structures [DERIVED: The chart covers 1979 to 2019, which is exactly 40 years or four decades]. The data likely originates from the US Bureau of Labor Statistics (BLS), which regularly tracks characteristics of minimum wage workers [SPECULATIVE: US Bureau of Labor Statistics].\",\n    \"domain_specific_explanations\": \"\\\"At or below\\\" the federal minimum wage includes workers who receive the exact statutory minimum, as well as those who may legally be paid less, such as tipped employees, student-learners, or disabled workers under specific exemptions [SPECULATIVE: US Labor Law / Fair Labor Standards Act]. The data shows a significant downward trend over the 40-year period [DERIVED: L2 caption states that the number of workers on or below minimum wage dropped significantly]. In the late 1970s and early 1980s, a much higher share of hourly workers earned at or below the minimum wage, peaking at 15.1% in 1979 and 1980 [DERIVED: Data table shows 0.151 for 1979 and 1980]. By 1989, this share had fallen to 5.1% [DERIVED: Data table shows 0.051 in 1989]. This decline does not necessarily mean low-income workers are better off; it often reflects the fact that the federal minimum wage remained stagnant for long periods, causing inflation to push nominal wages above the frozen federal minimum while reducing their real purchasing power [SPECULATIVE: Macroeconomics / Labor Economics].\",\n    \"real_world_significance\": \"The federal minimum wage is a highly debated policy tool in the United States, affecting labor costs, poverty rates, and income inequality [SPECULATIVE: Public Policy / Labor Economics]. When the federal minimum wage is not adjusted for inflation, fewer workers are paid exactly at or below it, but the real value of what those workers earn decreases [SPECULATIVE: Labor Economics]. Additionally, many US states have established state-level minimum wages that are higher than the federal rate, which naturally reduces the share of workers bound strictly by the federal minimum [SPECULATIVE: US Labor Policy]. Understanding this trend is crucial for policymakers, labor unions, and economists debating whether to raise the federal minimum wage, which has been set at $7.25 since 2009 [SPECULATIVE: US Labor Policy].\",\n    \"other\": \"The X-axis is labeled \\\"Response\\\" in the metadata, but the axis tick marks and data values clearly indicate that it represents years from 1979 to 2019 [DERIVED: X-axis labels in scene graph show '1980', '1990', '2000', '2010' and data table shows years].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned wages at or below the prevailing federal minimum wage from 1979 to 2019\"\n    ],\n    \"derived_claims\": [\n      \"This dataset spans four decades, capturing long-term shifts in the US labor market and wage structures\",\n      \"The data shows a significant downward trend over the 40-year period\",\n      \"In the late 1970s and early 1980s, a much higher share of hourly workers earned at or below the minimum wage, peaking at 15.1% in 1979 and 1980\",\n      \"By 1989, this share had fallen to 5.1%\",\n      \"The X-axis is labeled \\\"Response\\\" in the metadata, but the axis tick marks and data values clearly indicate that it represents years from 1979 to 2019\"\n    ],\n    \"speculative_claims\": [\n      \"The data likely originates from the US Bureau of Labor Statistics (BLS), which regularly tracks characteristics of minimum wage workers\",\n      \"\\\"At or below\\\" the federal minimum wage includes workers who receive the exact statutory minimum, as well as those who may legally be paid less, such as tipped employees, student-learners, or disabled workers under specific exemptions\",\n      \"This decline does not necessarily mean low-income workers are better off; it often reflects the fact that the federal minimum wage remained stagnant for long periods, causing inflation to push nominal wages above the frozen federal minimum while reducing their real purchasing power\",\n      \"The federal minimum wage is a highly debated policy tool in the United States, affecting labor costs, poverty rates, and income inequality\",\n      \"When the federal minimum wage is not adjusted for inflation, fewer workers are paid exactly at or below it, but the real value of what those workers earn decreases\",\n      \"Additionally, many US states have established state-level minimum wages that are higher than the federal rate, which naturally reduces the share of workers bound strictly by the federal minimum\",\n      \"Understanding this trend is crucial for policymakers, labor unions, and economists debating whether to raise the federal minimum wage, which has been set at $7.25 since 2009\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table is truncated, showing only the years 1978 to 1989, leaving the remaining years up to 2019 missing from the raw table."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The L2 caption notes a significant drop over time, and the early data shows a drop from 15.1% to 5.1%, but the exact values for the latter half of the chart are not provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject: the share of US wage and salary workers paid hourly rates at or below the federal minimum wage from 1979 to 2019."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned wages at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. This dataset spans four decades, capturing long-term shifts in the US labor market and wage structures [DERIVED: The chart covers 1979 to 2019, which is exactly 40 years or four decades]. The data likely originates from the US Bureau of Labor Statistics (BLS), which regularly tracks characteristics of minimum wage workers [SPECULATIVE: US Bureau of Labor Statistics].",
+      "domain_specific_explanations": "\"At or below\" the federal minimum wage includes workers who receive the exact statutory minimum, as well as those who may legally be paid less, such as tipped employees, student-learners, or disabled workers under specific exemptions [SPECULATIVE: US Labor Law / Fair Labor Standards Act]. The data shows a significant downward trend over the 40-year period [DERIVED: L2 caption states that the number of workers on or below minimum wage dropped significantly]. In the late 1970s and early 1980s, a much higher share of hourly workers earned at or below the minimum wage, peaking at 15.1% in 1979 and 1980 [DERIVED: Data table shows 0.151 for 1979 and 1980]. By 1989, this share had fallen to 5.1% [DERIVED: Data table shows 0.051 in 1989]. This decline does not necessarily mean low-income workers are better off; it often reflects the fact that the federal minimum wage remained stagnant for long periods, causing inflation to push nominal wages above the frozen federal minimum while reducing their real purchasing power [SPECULATIVE: Macroeconomics / Labor Economics].",
+      "real_world_significance": "The federal minimum wage is a highly debated policy tool in the United States, affecting labor costs, poverty rates, and income inequality [SPECULATIVE: Public Policy / Labor Economics]. When the federal minimum wage is not adjusted for inflation, fewer workers are paid exactly at or below it, but the real value of what those workers earn decreases [SPECULATIVE: Labor Economics]. Additionally, many US states have established state-level minimum wages that are higher than the federal rate, which naturally reduces the share of workers bound strictly by the federal minimum [SPECULATIVE: US Labor Policy]. Understanding this trend is crucial for policymakers, labor unions, and economists debating whether to raise the federal minimum wage, which has been set at $7.25 since 2009 [SPECULATIVE: US Labor Policy].",
+      "other": "The X-axis is labeled \"Response\" in the metadata, but the axis tick marks and data values clearly indicate that it represents years from 1979 to 2019 [DERIVED: X-axis labels in scene graph show '1980', '1990', '2000', '2010' and data table shows years]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart tracks the proportion of hourly-paid wage and salary workers in the United States who earned wages at or below the prevailing federal minimum wage from 1979 to 2019"
+      ],
+      "derived_claims": [
+        "This dataset spans four decades, capturing long-term shifts in the US labor market and wage structures",
+        "The data shows a significant downward trend over the 40-year period",
+        "In the late 1970s and early 1980s, a much higher share of hourly workers earned at or below the minimum wage, peaking at 15.1% in 1979 and 1980",
+        "By 1989, this share had fallen to 5.1%",
+        "The X-axis is labeled \"Response\" in the metadata, but the axis tick marks and data values clearly indicate that it represents years from 1979 to 2019"
+      ],
+      "speculative_claims": [
+        "The data likely originates from the US Bureau of Labor Statistics (BLS), which regularly tracks characteristics of minimum wage workers",
+        "\"At or below\" the federal minimum wage includes workers who receive the exact statutory minimum, as well as those who may legally be paid less, such as tipped employees, student-learners, or disabled workers under specific exemptions",
+        "This decline does not necessarily mean low-income workers are better off; it often reflects the fact that the federal minimum wage remained stagnant for long periods, causing inflation to push nominal wages above the frozen federal minimum while reducing their real purchasing power",
+        "The federal minimum wage is a highly debated policy tool in the United States, affecting labor costs, poverty rates, and income inequality",
+        "When the federal minimum wage is not adjusted for inflation, fewer workers are paid exactly at or below it, but the real value of what those workers earn decreases",
+        "Additionally, many US states have established state-level minimum wages that are higher than the federal rate, which naturally reduces the share of workers bound strictly by the federal minimum",
+        "Understanding this trend is crucial for policymakers, labor unions, and economists debating whether to raise the federal minimum wage, which has been set at $7.25 since 2009"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13684.858334017918,
+  "created_at": "2026-07-07T22:21:14.535201Z"
+}

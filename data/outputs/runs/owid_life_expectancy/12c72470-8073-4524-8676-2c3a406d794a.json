@@ -1,0 +1,74 @@
+{
+  "output_id": "12c72470-8073-4524-8676-2c3a406d794a",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values for each country are not provided in a table, but the general ranges can be read from the map's legend.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"Regional differences and global disparities can be derived from the map, but precise differences between countries are not available.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, and data sources clearly define the subject (global life expectancy in 2023) and the domain (demography and global health).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or stakeholder context was provided in the metadata.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a world map showing period life expectancy in the year 2023, published by Our World in Data [DIRECT]. It defines period life expectancy as the average number of years a newborn would live if mortality rates of 2023 remained constant throughout their life [DIRECT]. The data sources include historical reconstructions and official projections, specifically Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024) [DIRECT].\",\n    \"domain_specific_explanations\": \"Life expectancy is a key metric of global health and development [SPECULATIVE: Public Health]. The map shows a stark geographic divide: regions like Western Europe, Canada, Japan, and Australia have life expectancies exceeding 80 years [DERIVED: Read from map colors and legend]. Conversely, many countries in Sub-Saharan Africa have life expectancies below 60 years [DERIVED: Read from map colors and legend]. Most of South America, Northern Africa, and Asia fall into the middle ranges, typically between 65 and 75 years [DERIVED: Read from map colors and legend]. This gap reflects disparities in healthcare access, nutrition, sanitation, and economic development [SPECULATIVE: Global Health].\",\n    \"real_world_significance\": \"These disparities highlight ongoing global inequalities in living standards and healthcare infrastructure [SPECULATIVE: Sociology / Development Economics]. Policymakers and international organizations use this data to target aid, health interventions, and development goals [SPECULATIVE: Public Policy]. If these trends continue, populations in high-life-expectancy nations will face challenges related to aging societies, such as pension sustainability and elder care, while low-life-expectancy nations will continue to lose productive years of life to preventable causes [SPECULATIVE: Demography].\",\n    \"other\": \"The map also highlights areas with 'No data', which are primarily small island nations or territories where comprehensive demographic tracking may be limited [DERIVED: Read from map colors and legend].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a world map showing period life expectancy in the year 2023, published by Our World in Data\",\n      \"It defines period life expectancy as the average number of years a newborn would live if mortality rates of 2023 remained constant throughout their life\",\n      \"The data sources include historical reconstructions and official projections, specifically Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024)\"\n    ],\n    \"derived_claims\": [\n      \"The map shows a stark geographic divide: regions like Western Europe, Canada, Japan, and Australia have life expectancies exceeding 80 years [derived from map colors and legend]\",\n      \"Conversely, many countries in Sub-Saharan Africa have life expectancies below 60 years [derived from map colors and legend]\",\n      \"Most of South America, Northern Africa, and Asia fall into the middle ranges, typically between 65 and 75 years [derived from map colors and legend]\",\n      \"The map also highlights areas with 'No data', which are primarily small island nations or territories where comprehensive demographic tracking may be limited [derived from map colors and legend]\"\n    ],\n    \"speculative_claims\": [\n      \"Life expectancy is a key metric of global health and development [source: Public Health]\",\n      \"This gap reflects disparities in healthcare access, nutrition, sanitation, and economic development [source: Global Health]\",\n      \"These disparities highlight ongoing global inequalities in living standards and healthcare infrastructure [source: Sociology / Development Economics]\",\n      \"Policymakers and international organizations use this data to target aid, health interventions, and development goals [source: Public Policy]\",\n      \"If these trends continue, populations in high-life-expectancy nations will face challenges related to aging societies, such as pension sustainability and elder care, while low-life-expectancy nations will continue to lose productive years of life to preventable causes [source: Demography]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values for each country are not provided in a table, but the general ranges can be read from the map's legend."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Regional differences and global disparities can be derived from the map, but precise differences between countries are not available."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, and data sources clearly define the subject (global life expectancy in 2023) and the domain (demography and global health)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or stakeholder context was provided in the metadata."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a world map showing period life expectancy in the year 2023, published by Our World in Data [DIRECT]. It defines period life expectancy as the average number of years a newborn would live if mortality rates of 2023 remained constant throughout their life [DIRECT]. The data sources include historical reconstructions and official projections, specifically Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024) [DIRECT].",
+      "domain_specific_explanations": "Life expectancy is a key metric of global health and development [SPECULATIVE: Public Health]. The map shows a stark geographic divide: regions like Western Europe, Canada, Japan, and Australia have life expectancies exceeding 80 years [DERIVED: Read from map colors and legend]. Conversely, many countries in Sub-Saharan Africa have life expectancies below 60 years [DERIVED: Read from map colors and legend]. Most of South America, Northern Africa, and Asia fall into the middle ranges, typically between 65 and 75 years [DERIVED: Read from map colors and legend]. This gap reflects disparities in healthcare access, nutrition, sanitation, and economic development [SPECULATIVE: Global Health].",
+      "real_world_significance": "These disparities highlight ongoing global inequalities in living standards and healthcare infrastructure [SPECULATIVE: Sociology / Development Economics]. Policymakers and international organizations use this data to target aid, health interventions, and development goals [SPECULATIVE: Public Policy]. If these trends continue, populations in high-life-expectancy nations will face challenges related to aging societies, such as pension sustainability and elder care, while low-life-expectancy nations will continue to lose productive years of life to preventable causes [SPECULATIVE: Demography].",
+      "other": "The map also highlights areas with 'No data', which are primarily small island nations or territories where comprehensive demographic tracking may be limited [DERIVED: Read from map colors and legend]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a world map showing period life expectancy in the year 2023, published by Our World in Data",
+        "It defines period life expectancy as the average number of years a newborn would live if mortality rates of 2023 remained constant throughout their life",
+        "The data sources include historical reconstructions and official projections, specifically Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024)"
+      ],
+      "derived_claims": [
+        "The map shows a stark geographic divide: regions like Western Europe, Canada, Japan, and Australia have life expectancies exceeding 80 years [derived from map colors and legend]",
+        "Conversely, many countries in Sub-Saharan Africa have life expectancies below 60 years [derived from map colors and legend]",
+        "Most of South America, Northern Africa, and Asia fall into the middle ranges, typically between 65 and 75 years [derived from map colors and legend]",
+        "The map also highlights areas with 'No data', which are primarily small island nations or territories where comprehensive demographic tracking may be limited [derived from map colors and legend]"
+      ],
+      "speculative_claims": [
+        "Life expectancy is a key metric of global health and development [source: Public Health]",
+        "This gap reflects disparities in healthcare access, nutrition, sanitation, and economic development [source: Global Health]",
+        "These disparities highlight ongoing global inequalities in living standards and healthcare infrastructure [source: Sociology / Development Economics]",
+        "Policymakers and international organizations use this data to target aid, health interventions, and development goals [source: Public Policy]",
+        "If these trends continue, populations in high-life-expectancy nations will face challenges related to aging societies, such as pension sustainability and elder care, while low-life-expectancy nations will continue to lose productive years of life to preventable causes [source: Demography]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11774.226500012446,
+  "created_at": "2026-07-07T23:02:00.048604Z"
+}

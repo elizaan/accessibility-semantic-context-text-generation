@@ -1,0 +1,77 @@
+{
+  "output_id": "4612e5cb-7432-48cb-a043-ff6dd11638b8",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for many countries, but is truncated at the end.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The data is for a single year (2023), so temporal trends are absent, but spatial variation is clearly visible on the map.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject of global life expectancy is clearly defined by the title, subtitle, and map format.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The source is identified as Our World in Data, providing good context, though the expert story is brief.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a choropleth world map showing period life expectancy in the year 2023, published by Our World in Data [DIRECT]. Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates throughout their life as observed in that year [DIRECT]. The map visualizes global variations, with a legend ranging from under 50 years to over 80 years [DERIVED: read from the map's legend].\",\n    \"domain_specific_explanations\": \"In public health, life expectancy serves as a primary indicator of a population's overall health status and living standards [SPECULATIVE: Public Health]. The data shows significant geographic disparities: highly developed nations and regions like Australia (83.92 years), Andorra (84.04 years), and Austria (81.96 years) exhibit very high life expectancies [DIRECT]. In contrast, the average life expectancy for the African continent is much lower at 63.84 years [DIRECT], with countries like Benin at 60.77 years [DIRECT]. These gaps are typically driven by differences in infant mortality, access to clean water, healthcare infrastructure, and infectious disease burdens [SPECULATIVE: Epidemiology].\",\n    \"real_world_significance\": \"The stark contrast in life expectancy between regions underscores global health inequities [SPECULATIVE: Global Health]. International development agencies and governments use these metrics to allocate resources, design healthcare policies, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development]. If the underlying socioeconomic disparities are not addressed, populations in lower-income regions will continue to face preventable premature deaths, hindering global economic convergence [SPECULATIVE: Development Economics].\",\n    \"other\": \"The visualization compiles data from multiple authoritative sources, including Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024) [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a choropleth world map showing period life expectancy in the year 2023, published by Our World in Data\",\n      \"Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates throughout their life as observed in that year\",\n      \"highly developed nations and regions like Australia (83.92 years), Andorra (84.04 years), and Austria (81.96 years) exhibit very high life expectancies\",\n      \"the average life expectancy for the African continent is much lower at 63.84 years, with countries like Benin at 60.77 years\",\n      \"The visualization compiles data from multiple authoritative sources, including Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024)\"\n    ],\n    \"derived_claims\": [\n      \"The map visualizes global variations, with a legend ranging from under 50 years to over 80 years [DERIVED: read from the map's legend]\"\n    ],\n    \"speculative_claims\": [\n      \"In public health, life expectancy serves as a primary indicator of a population's overall health status and living standards [SPECULATIVE: Public Health]\",\n      \"These gaps are typically driven by differences in infant mortality, access to clean water, healthcare infrastructure, and infectious disease burdens [SPECULATIVE: Epidemiology]\",\n      \"The stark contrast in life expectancy between regions underscores global health inequities [SPECULATIVE: Global Health]\",\n      \"International development agencies and governments use these metrics to allocate resources, design healthcare policies, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development]\",\n      \"If the underlying socioeconomic disparities are not addressed, populations in lower-income regions will continue to face preventable premature deaths, hindering global economic convergence [SPECULATIVE: Development Economics]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 5,\n    \"derived_count\": 1,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for many countries, but is truncated at the end."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The data is for a single year (2023), so temporal trends are absent, but spatial variation is clearly visible on the map."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject of global life expectancy is clearly defined by the title, subtitle, and map format."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The source is identified as Our World in Data, providing good context, though the expert story is brief."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a choropleth world map showing period life expectancy in the year 2023, published by Our World in Data [DIRECT]. Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates throughout their life as observed in that year [DIRECT]. The map visualizes global variations, with a legend ranging from under 50 years to over 80 years [DERIVED: read from the map's legend].",
+      "domain_specific_explanations": "In public health, life expectancy serves as a primary indicator of a population's overall health status and living standards [SPECULATIVE: Public Health]. The data shows significant geographic disparities: highly developed nations and regions like Australia (83.92 years), Andorra (84.04 years), and Austria (81.96 years) exhibit very high life expectancies [DIRECT]. In contrast, the average life expectancy for the African continent is much lower at 63.84 years [DIRECT], with countries like Benin at 60.77 years [DIRECT]. These gaps are typically driven by differences in infant mortality, access to clean water, healthcare infrastructure, and infectious disease burdens [SPECULATIVE: Epidemiology].",
+      "real_world_significance": "The stark contrast in life expectancy between regions underscores global health inequities [SPECULATIVE: Global Health]. International development agencies and governments use these metrics to allocate resources, design healthcare policies, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development]. If the underlying socioeconomic disparities are not addressed, populations in lower-income regions will continue to face preventable premature deaths, hindering global economic convergence [SPECULATIVE: Development Economics].",
+      "other": "The visualization compiles data from multiple authoritative sources, including Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024) [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a choropleth world map showing period life expectancy in the year 2023, published by Our World in Data",
+        "Period life expectancy is defined as the average number of years a newborn would live if they experienced the same age-specific mortality rates throughout their life as observed in that year",
+        "highly developed nations and regions like Australia (83.92 years), Andorra (84.04 years), and Austria (81.96 years) exhibit very high life expectancies",
+        "the average life expectancy for the African continent is much lower at 63.84 years, with countries like Benin at 60.77 years",
+        "The visualization compiles data from multiple authoritative sources, including Riley (2005), Zijdeman et al. (2015), the Human Mortality Database (2025), and the UN World Population Prospects (2024)"
+      ],
+      "derived_claims": [
+        "The map visualizes global variations, with a legend ranging from under 50 years to over 80 years [DERIVED: read from the map's legend]"
+      ],
+      "speculative_claims": [
+        "In public health, life expectancy serves as a primary indicator of a population's overall health status and living standards [SPECULATIVE: Public Health]",
+        "These gaps are typically driven by differences in infant mortality, access to clean water, healthcare infrastructure, and infectious disease burdens [SPECULATIVE: Epidemiology]",
+        "The stark contrast in life expectancy between regions underscores global health inequities [SPECULATIVE: Global Health]",
+        "International development agencies and governments use these metrics to allocate resources, design healthcare policies, and monitor progress toward Sustainable Development Goals [SPECULATIVE: International Development]",
+        "If the underlying socioeconomic disparities are not addressed, populations in lower-income regions will continue to face preventable premature deaths, hindering global economic convergence [SPECULATIVE: Development Economics]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 5,
+      "derived_count": 1,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12970.365457993466,
+  "created_at": "2026-07-07T23:02:39.369577Z"
+}

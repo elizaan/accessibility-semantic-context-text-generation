@@ -1,0 +1,76 @@
+{
+  "output_id": "3ab1b46a-9d2e-4fab-8b27-6747b163e72a",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides detailed survival ages across various percentiles for multiple countries and years, but specific visual details about the chart image are not included.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart image shows trends in survival ages over time for France from 1816 to 2023, but the exact magnitude of changes is not quantified in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is related to demography and life expectancy, with a focus on survival ages across different percentiles of the population.\"},\n      \"domain_expert_context\": {\"score\": 4, \"justification\": \"The expert domain story explains that the chart represents the number of years a specific share of the population would survive if they experienced age-specific death rates of a given year.\"},\n      \"stakeholder_impact\": {\"score\": 1, \"justification\": \"The stakeholder context is not provided, but it can be inferred that policymakers, demographers, and researchers in public health might use this data.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart illustrates survival ages across different percentiles of the population in France from 1816 to 2023. It shows how life expectancy has changed over time for various segments of the population [DIRECT]. The data indicates that life expectancy has generally increased over the years, with significant fluctuations during certain periods [DERIVED: from the chart image].\",\n    \"domain_specific_explanations\": \"The chart measures survival ages based on age-specific death rates for a given year. For instance, the top 1% line represents the survival age for the top 1% of survivors born in a given year [DIRECT]. This data is crucial in understanding life expectancy trends and mortality rates over time [SPECULATIVE: demography and public health].\",\n    \"real_world_significance\": \"The data matters because it helps in understanding changes in life expectancy and mortality rates over time, which is essential for public health policy, insurance, and social security planning [SPECULATIVE: public health and policy]. If this trend continues, it could lead to an aging population and increased pressure on healthcare systems [SPECULATIVE: demography and public health].\",\n    \"other\": \"The chart uses data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025), indicating a reliable source for demographic studies [DIRECT]. The data shows significant improvements in life expectancy over the past two centuries, with some historical periods showing sharp declines due to events like wars and pandemics [DERIVED: from the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart illustrates survival ages across different percentiles of the population in France from 1816 to 2023.\",\n      \"The chart measures survival ages based on age-specific death rates for a given year.\",\n      \"The data shows that life expectancy has generally increased over the years.\",\n      \"The top 1% line represents the survival age for the top 1% of survivors born in a given year.\",\n      \"The chart uses data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025).\"\n    ],\n    \"derived_claims\": [\n      \"The data indicates that life expectancy has generally increased over the years, with significant fluctuations during certain periods.\",\n      \"Significant improvements in life expectancy over the past two centuries, with some historical periods showing sharp declines due to events like wars and pandemics.\"\n    ],\n    \"speculative_claims\": [\n      \"This data is crucial in understanding life expectancy trends and mortality rates over time.\",\n      \"If this trend continues, it could lead to an aging population and increased pressure on healthcare systems.\",\n      \"The data matters because it helps in understanding changes in life expectancy and mortality rates over time, which is essential for public health policy, insurance, and social security planning.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 5,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides detailed survival ages across various percentiles for multiple countries and years, but specific visual details about the chart image are not included."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart image shows trends in survival ages over time for France from 1816 to 2023, but the exact magnitude of changes is not quantified in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is related to demography and life expectancy, with a focus on survival ages across different percentiles of the population."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story explains that the chart represents the number of years a specific share of the population would survive if they experienced age-specific death rates of a given year."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "The stakeholder context is not provided, but it can be inferred that policymakers, demographers, and researchers in public health might use this data."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart illustrates survival ages across different percentiles of the population in France from 1816 to 2023. It shows how life expectancy has changed over time for various segments of the population [DIRECT]. The data indicates that life expectancy has generally increased over the years, with significant fluctuations during certain periods [DERIVED: from the chart image].",
+      "domain_specific_explanations": "The chart measures survival ages based on age-specific death rates for a given year. For instance, the top 1% line represents the survival age for the top 1% of survivors born in a given year [DIRECT]. This data is crucial in understanding life expectancy trends and mortality rates over time [SPECULATIVE: demography and public health].",
+      "real_world_significance": "The data matters because it helps in understanding changes in life expectancy and mortality rates over time, which is essential for public health policy, insurance, and social security planning [SPECULATIVE: public health and policy]. If this trend continues, it could lead to an aging population and increased pressure on healthcare systems [SPECULATIVE: demography and public health].",
+      "other": "The chart uses data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025), indicating a reliable source for demographic studies [DIRECT]. The data shows significant improvements in life expectancy over the past two centuries, with some historical periods showing sharp declines due to events like wars and pandemics [DERIVED: from the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart illustrates survival ages across different percentiles of the population in France from 1816 to 2023.",
+        "The chart measures survival ages based on age-specific death rates for a given year.",
+        "The data shows that life expectancy has generally increased over the years.",
+        "The top 1% line represents the survival age for the top 1% of survivors born in a given year.",
+        "The chart uses data from Alvarez & Vaupel (2023) and the Human Mortality Database (2025)."
+      ],
+      "derived_claims": [
+        "The data indicates that life expectancy has generally increased over the years, with significant fluctuations during certain periods.",
+        "Significant improvements in life expectancy over the past two centuries, with some historical periods showing sharp declines due to events like wars and pandemics."
+      ],
+      "speculative_claims": [
+        "This data is crucial in understanding life expectancy trends and mortality rates over time.",
+        "If this trend continues, it could lead to an aging population and increased pressure on healthcare systems.",
+        "The data matters because it helps in understanding changes in life expectancy and mortality rates over time, which is essential for public health policy, insurance, and social security planning."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 5,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 3529,
+    "output": 900
+  },
+  "latency_ms": 3032.8276670188643,
+  "created_at": "2026-07-08T00:15:14.676619Z"
+}

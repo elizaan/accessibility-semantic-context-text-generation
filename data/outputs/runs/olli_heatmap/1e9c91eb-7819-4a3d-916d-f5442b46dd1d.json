@@ -1,0 +1,65 @@
+{
+  "output_id": "1e9c91eb-7819-4a3d-916d-f5442b46dd1d",
+  "chart_id": "olli_heatmap",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact daily temperature values cannot be read precisely from the continuous color scale, though approximate values can be inferred.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The seasonal trend and temperature transitions across the year are highly visible and easy to interpret.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title clearly states the subject (Daily Max Temperatures in Celsius) and location (Seattle, WA), making the domain immediately obvious.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the daily maximum temperatures in Celsius for Seattle, Washington, mapped across every day of the year [DIRECT]. The data is structured as a grid with months on the vertical axis and days of the month on the horizontal axis [DIRECT]. The temperature scale ranges from 6°C to 36°C [DIRECT]. This visualization is likely utilized by climatologists, urban planners, or local government agencies to analyze annual temperature profiles and identify seasonal anomalies [SPECULATIVE: Climatology].\",\n    \"domain_specific_explanations\": \"In meteorology, a daily maximum temperature heatmap helps identify seasonal transitions and extreme weather events [SPECULATIVE: Meteorology]. The data shows a clear seasonal progression, with the lowest maximum temperatures (closer to 6°C) occurring in December, January, and February, and the highest maximum temperatures (approaching 36°C) concentrated in July and August [DERIVED: Read temperature patterns across months from the color scale]. The blank cells at the end of rows for February, April, June, September, and November represent non-existent calendar days, such as February 29–31 [DERIVED: Observed blank cells at the end of rows for months with fewer than 31 days].\",\n    \"real_world_significance\": \"Seattle historically possesses a mild marine climate, so maximum temperatures reaching near 36°C (96.8°F) represent extreme heat events that pose significant risks to public health, particularly because many residential buildings in the region historically lack air conditioning [SPECULATIVE: Public Health]. These peak summer temperatures in July and August drive critical decisions for energy grid operators managing surge demand for cooling [SPECULATIVE: Energy Infrastructure]. Additionally, understanding these temperature thresholds is vital for water resource managers predicting mountain snowpack runoff and managing municipal water supplies [SPECULATIVE: Water Resource Management].\",\n    \"other\": \"The rapid transition from cool spring temperatures in May to hot summer temperatures in June and July highlights the compressed nature of the Pacific Northwest's summer season [DERIVED: Observed rapid color shift from light green/blue in May to dark blue in June/July].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the daily maximum temperatures in Celsius for Seattle, Washington, mapped across every day of the year.\",\n      \"The data is structured as a grid with months on the vertical axis and days of the month on the horizontal axis.\",\n      \"The temperature scale ranges from 6°C to 36°C.\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a clear seasonal progression, with the lowest maximum temperatures (closer to 6°C) occurring in December, January, and February, and the highest maximum temperatures (approaching 36°C) concentrated in July and August.\",\n      \"The blank cells at the end of rows for February, April, June, September, and November represent non-existent calendar days, such as February 29–31.\",\n      \"The rapid transition from cool spring temperatures in May to hot summer temperatures in June and July highlights the compressed nature of the Pacific Northwest's summer season.\"\n    ],\n    \"speculative_claims\": [\n      \"This visualization is likely utilized by climatologists, urban planners, or local government agencies to analyze annual temperature profiles and identify seasonal anomalies.\",\n      \"In meteorology, a daily maximum temperature heatmap helps identify seasonal transitions and extreme weather events.\",\n      \"Seattle historically possesses a mild marine climate, so maximum temperatures reaching near 36°C (96.8°F) represent extreme heat events that pose significant risks to public health, particularly because many residential buildings in the region historically lack air conditioning.\",\n      \"These peak summer temperatures in July and August drive critical decisions for energy grid operators managing surge demand for cooling.\",\n      \"Additionally, understanding these temperature thresholds is vital for water resource managers predicting mountain snowpack runoff and managing municipal water supplies.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact daily temperature values cannot be read precisely from the continuous color scale, though approximate values can be inferred."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The seasonal trend and temperature transitions across the year are highly visible and easy to interpret."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title clearly states the subject (Daily Max Temperatures in Celsius) and location (Seattle, WA), making the domain immediately obvious."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the daily maximum temperatures in Celsius for Seattle, Washington, mapped across every day of the year [DIRECT]. The data is structured as a grid with months on the vertical axis and days of the month on the horizontal axis [DIRECT]. The temperature scale ranges from 6°C to 36°C [DIRECT]. This visualization is likely utilized by climatologists, urban planners, or local government agencies to analyze annual temperature profiles and identify seasonal anomalies [SPECULATIVE: Climatology].",
+      "domain_specific_explanations": "In meteorology, a daily maximum temperature heatmap helps identify seasonal transitions and extreme weather events [SPECULATIVE: Meteorology]. The data shows a clear seasonal progression, with the lowest maximum temperatures (closer to 6°C) occurring in December, January, and February, and the highest maximum temperatures (approaching 36°C) concentrated in July and August [DERIVED: Read temperature patterns across months from the color scale]. The blank cells at the end of rows for February, April, June, September, and November represent non-existent calendar days, such as February 29–31 [DERIVED: Observed blank cells at the end of rows for months with fewer than 31 days].",
+      "real_world_significance": "Seattle historically possesses a mild marine climate, so maximum temperatures reaching near 36°C (96.8°F) represent extreme heat events that pose significant risks to public health, particularly because many residential buildings in the region historically lack air conditioning [SPECULATIVE: Public Health]. These peak summer temperatures in July and August drive critical decisions for energy grid operators managing surge demand for cooling [SPECULATIVE: Energy Infrastructure]. Additionally, understanding these temperature thresholds is vital for water resource managers predicting mountain snowpack runoff and managing municipal water supplies [SPECULATIVE: Water Resource Management].",
+      "other": "The rapid transition from cool spring temperatures in May to hot summer temperatures in June and July highlights the compressed nature of the Pacific Northwest's summer season [DERIVED: Observed rapid color shift from light green/blue in May to dark blue in June/July]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the daily maximum temperatures in Celsius for Seattle, Washington, mapped across every day of the year.",
+        "The data is structured as a grid with months on the vertical axis and days of the month on the horizontal axis.",
+        "The temperature scale ranges from 6°C to 36°C."
+      ],
+      "derived_claims": [
+        "The data shows a clear seasonal progression, with the lowest maximum temperatures (closer to 6°C) occurring in December, January, and February, and the highest maximum temperatures (approaching 36°C) concentrated in July and August.",
+        "The blank cells at the end of rows for February, April, June, September, and November represent non-existent calendar days, such as February 29–31.",
+        "The rapid transition from cool spring temperatures in May to hot summer temperatures in June and July highlights the compressed nature of the Pacific Northwest's summer season."
+      ],
+      "speculative_claims": [
+        "This visualization is likely utilized by climatologists, urban planners, or local government agencies to analyze annual temperature profiles and identify seasonal anomalies.",
+        "In meteorology, a daily maximum temperature heatmap helps identify seasonal transitions and extreme weather events.",
+        "Seattle historically possesses a mild marine climate, so maximum temperatures reaching near 36°C (96.8°F) represent extreme heat events that pose significant risks to public health, particularly because many residential buildings in the region historically lack air conditioning.",
+        "These peak summer temperatures in July and August drive critical decisions for energy grid operators managing surge demand for cooling.",
+        "Additionally, understanding these temperature thresholds is vital for water resource managers predicting mountain snowpack runoff and managing municipal water supplies."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15612.841958994977,
+  "created_at": "2026-07-08T14:29:32.882275Z"
+}

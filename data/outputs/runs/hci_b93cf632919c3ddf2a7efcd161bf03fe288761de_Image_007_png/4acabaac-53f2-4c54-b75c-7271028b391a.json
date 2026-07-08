@@ -1,0 +1,80 @@
+{
+  "output_id": "4acabaac-53f2-4c54-b75c-7271028b391a",
+  "chart_id": "hci_b93cf632919c3ddf2a7efcd161bf03fe288761de_Image_007_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The raw data table is not provided, but the chart image contains clear data points, medians, and statistical significance markers that can be read directly.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The letter-value box plots show clear differences in medians and distributions across conditions, along with explicit significance levels (p-values).\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly identified as virtual reality (VR) user behavior research from a CHI 2020 paper.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides crucial context explaining the abbreviations (C, H, R, F) and the experimental setup.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"Stakeholder context is not explicitly provided, but can be reasonably inferred as VR developers and researchers.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a CHI 2020 research paper studying virtual reality (VR) embodiment and user behavior [DIRECT]. Specifically, it measures the time (in seconds) it takes for participants to first walk through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms) [DIRECT]. The study compares different avatar representations based on visibility (hand-only vs. full-body) and anthropomorphism (abstract vs. realistic) [DIRECT].\",\n    \"domain_specific_explanations\": \"The abbreviations C, H, R, and F represent Controller, Human Hand, Robot, and Full-body Human, respectively [DIRECT]. Abstract representations include Controller (C) and Robot (R), while realistic representations include Human Hand (H) and Full-body Human (F) [DERIVED: read from the legend and x-axis labels]. The y-axis represents time in seconds [DIRECT]. In VR research, a longer time before walking through a wall suggests a stronger illusion of presence or 'passability' barrier—meaning users treat the virtual wall more like a real physical wall when they have certain avatar representations [SPECULATIVE: Virtual Reality / Human-Computer Interaction research]. In Room 3, participants with a Full-body Human (F) avatar took significantly longer to walk through the wall compared to those with a Human Hand (H) avatar or Robot (R) avatar [DERIVED: read significance bars and medians from Room 3 plot]. In Room 4, participants with a Full-body Human (F) avatar took significantly longer than those with a Human Hand (H) avatar or Robot (R) avatar [DERIVED: read significance bars and medians from Room 4 plot]. Across rooms, the Full-body Human (F) avatar also shows a significantly longer time before walking through the wall compared to the Human Hand (H) avatar and Robot (R) avatar [DERIVED: read significance bars and medians from Cross-Rooms plot].\",\n    \"real_world_significance\": \"These findings are crucial for VR developers and researchers designing immersive environments [SPECULATIVE: Virtual Reality / Human-Computer Interaction]. The results indicate that realistic, full-body avatars (F) enhance the user's sense of presence and adherence to virtual physical boundaries (like walls) compared to hand-only or abstract representations [DERIVED: comparing the higher median times of F vs other conditions]. This suggests that to prevent users from breaking immersion by walking through virtual obstacles, designers should prioritize realistic full-body self-avatars [SPECULATIVE: Virtual Reality / Human-Computer Interaction].\",\n    \"other\": \"In the cross-room results, the data points are colored according to the rooms where the participants first walked through the wall, showing how behavior evolved across different stages of the experiment [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a CHI 2020 research paper studying virtual reality (VR) embodiment and user behavior\",\n      \"Specifically, it measures the time (in seconds) it takes for participants to first walk through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms)\",\n      \"The study compares different avatar representations based on visibility (hand-only vs. full-body) and anthropomorphism (abstract vs. realistic)\",\n      \"The abbreviations C, H, R, and F represent Controller, Human Hand, Robot, and Full-body Human, respectively\",\n      \"The y-axis represents time in seconds\",\n      \"In the cross-room results, the data points are colored according to the rooms where the participants first walked through the wall, showing how behavior evolved across different stages of the experiment\"\n    ],\n    \"derived_claims\": [\n      \"Abstract representations include Controller (C) and Robot (R), while realistic representations include Human Hand (H) and Full-body Human (F)\",\n      \"In Room 3, participants with a Full-body Human (F) avatar took significantly longer to walk through the wall compared to those with a Human Hand (H) avatar or Robot (R) avatar\",\n      \"In Room 4, participants with a Full-body Human (F) avatar took significantly longer than those with a Human Hand (H) avatar or Robot (R) avatar\",\n      \"Across rooms, the Full-body Human (F) avatar also shows a significantly longer time before walking through the wall compared to the Human Hand (H) avatar and Robot (R) avatar\",\n      \"The results indicate that realistic, full-body avatars (F) enhance the user's sense of presence and adherence to virtual physical boundaries (like walls) compared to hand-only or abstract representations\"\n    ],\n    \"speculative_claims\": [\n      \"In VR research, a longer time before walking through a wall suggests a stronger illusion of presence or 'passability' barrier—meaning users treat the virtual wall more like a real physical wall when they have certain avatar representations\",\n      \"These findings are crucial for VR developers and researchers designing immersive environments\",\n      \"This suggests that to prevent users from breaking immersion by walking through virtual obstacles, designers should prioritize realistic full-body self-avatars\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 6,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The raw data table is not provided, but the chart image contains clear data points, medians, and statistical significance markers that can be read directly."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The letter-value box plots show clear differences in medians and distributions across conditions, along with explicit significance levels (p-values)."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly identified as virtual reality (VR) user behavior research from a CHI 2020 paper."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides crucial context explaining the abbreviations (C, H, R, F) and the experimental setup."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "Stakeholder context is not explicitly provided, but can be reasonably inferred as VR developers and researchers."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a CHI 2020 research paper studying virtual reality (VR) embodiment and user behavior [DIRECT]. Specifically, it measures the time (in seconds) it takes for participants to first walk through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms) [DIRECT]. The study compares different avatar representations based on visibility (hand-only vs. full-body) and anthropomorphism (abstract vs. realistic) [DIRECT].",
+      "domain_specific_explanations": "The abbreviations C, H, R, and F represent Controller, Human Hand, Robot, and Full-body Human, respectively [DIRECT]. Abstract representations include Controller (C) and Robot (R), while realistic representations include Human Hand (H) and Full-body Human (F) [DERIVED: read from the legend and x-axis labels]. The y-axis represents time in seconds [DIRECT]. In VR research, a longer time before walking through a wall suggests a stronger illusion of presence or 'passability' barrier—meaning users treat the virtual wall more like a real physical wall when they have certain avatar representations [SPECULATIVE: Virtual Reality / Human-Computer Interaction research]. In Room 3, participants with a Full-body Human (F) avatar took significantly longer to walk through the wall compared to those with a Human Hand (H) avatar or Robot (R) avatar [DERIVED: read significance bars and medians from Room 3 plot]. In Room 4, participants with a Full-body Human (F) avatar took significantly longer than those with a Human Hand (H) avatar or Robot (R) avatar [DERIVED: read significance bars and medians from Room 4 plot]. Across rooms, the Full-body Human (F) avatar also shows a significantly longer time before walking through the wall compared to the Human Hand (H) avatar and Robot (R) avatar [DERIVED: read significance bars and medians from Cross-Rooms plot].",
+      "real_world_significance": "These findings are crucial for VR developers and researchers designing immersive environments [SPECULATIVE: Virtual Reality / Human-Computer Interaction]. The results indicate that realistic, full-body avatars (F) enhance the user's sense of presence and adherence to virtual physical boundaries (like walls) compared to hand-only or abstract representations [DERIVED: comparing the higher median times of F vs other conditions]. This suggests that to prevent users from breaking immersion by walking through virtual obstacles, designers should prioritize realistic full-body self-avatars [SPECULATIVE: Virtual Reality / Human-Computer Interaction].",
+      "other": "In the cross-room results, the data points are colored according to the rooms where the participants first walked through the wall, showing how behavior evolved across different stages of the experiment [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a CHI 2020 research paper studying virtual reality (VR) embodiment and user behavior",
+        "Specifically, it measures the time (in seconds) it takes for participants to first walk through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms)",
+        "The study compares different avatar representations based on visibility (hand-only vs. full-body) and anthropomorphism (abstract vs. realistic)",
+        "The abbreviations C, H, R, and F represent Controller, Human Hand, Robot, and Full-body Human, respectively",
+        "The y-axis represents time in seconds",
+        "In the cross-room results, the data points are colored according to the rooms where the participants first walked through the wall, showing how behavior evolved across different stages of the experiment"
+      ],
+      "derived_claims": [
+        "Abstract representations include Controller (C) and Robot (R), while realistic representations include Human Hand (H) and Full-body Human (F)",
+        "In Room 3, participants with a Full-body Human (F) avatar took significantly longer to walk through the wall compared to those with a Human Hand (H) avatar or Robot (R) avatar",
+        "In Room 4, participants with a Full-body Human (F) avatar took significantly longer than those with a Human Hand (H) avatar or Robot (R) avatar",
+        "Across rooms, the Full-body Human (F) avatar also shows a significantly longer time before walking through the wall compared to the Human Hand (H) avatar and Robot (R) avatar",
+        "The results indicate that realistic, full-body avatars (F) enhance the user's sense of presence and adherence to virtual physical boundaries (like walls) compared to hand-only or abstract representations"
+      ],
+      "speculative_claims": [
+        "In VR research, a longer time before walking through a wall suggests a stronger illusion of presence or 'passability' barrier—meaning users treat the virtual wall more like a real physical wall when they have certain avatar representations",
+        "These findings are crucial for VR developers and researchers designing immersive environments",
+        "This suggests that to prevent users from breaking immersion by walking through virtual obstacles, designers should prioritize realistic full-body self-avatars"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 6,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13260.17333305208,
+  "created_at": "2026-07-07T23:43:27.366488Z"
+}

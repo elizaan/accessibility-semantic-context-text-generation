@@ -1,0 +1,79 @@
+{
+  "output_id": "1a47d9b4-6147-45a9-899d-c2c4f5d6764a",
+  "chart_id": "vistext_887",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table is truncated, but the initial values and the overall range are provided in the metadata and L1 caption.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption notes an overall decline, and the chart image clearly shows the magnitude of the crash and subsequent partial recovery.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject (Brazil's IBOVESPA stock index) is clearly identified along with the currency (Brazilian reals) and timeframe.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart tracks the performance of the IBOVESPA, the benchmark stock market index of Brazil, which measures the performance of the most liquid stocks traded on the B3 (Brasil, Bolsa, Balcão) [SPECULATIVE: financial markets]. The timeframe of the chart spans from January 2 to October 15, 2020 [DIRECT]. This specific period is highly significant as it captures the financial market's reaction to the onset and initial waves of the global COVID-19 pandemic [SPECULATIVE: global history/economics].\",\n    \"domain_specific_explanations\": \"The index started the year strong, near 118,573 reals in early January 2020 [DIRECT]. However, a massive, sharp contraction is visible starting in late February and accelerating through March, where the index plummeted significantly, bottoming out well below 80,000 reals [DERIVED: read from chart image]. This drop represents a classic 'market crash' or 'bear market' entry triggered by global panic and economic lockdowns [SPECULATIVE: financial markets]. From April onwards, there is a steady but volatile recovery, peaking again near 100,000 reals around July and August before experiencing minor fluctuations through October [DERIVED: read from chart image].\",\n    \"real_world_significance\": \"The dramatic crash in March 2020 corresponds directly to the global outbreak of COVID-19 and the subsequent implementation of quarantine measures in Brazil and worldwide [SPECULATIVE: macroeconomic history]. The subsequent partial recovery reflects massive monetary stimulus, interest rate cuts by the Central Bank of Brazil (BCB), and global market optimism as liquidity flooded financial systems [SPECULATIVE: macroeconomic history]. For investors and citizens, this extreme volatility impacted pension funds, corporate valuations, and foreign direct investment in Latin America's largest economy [SPECULATIVE: financial markets].\",\n    \"other\": \"The overall trend from January 2 to October 15, 2020, represents a net decline, as the index did not fully recover to its pre-pandemic highs of nearly 120,000 reals by mid-October [DERIVED: compared start value of ~118k to end value visually below 100k].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The timeframe of the chart spans from January 2 to October 15, 2020\",\n      \"The index started the year strong, near 118,573 reals in early January 2020\"\n    ],\n    \"derived_claims\": [\n      \"However, a massive, sharp contraction is visible starting in late February and accelerating through March, where the index plummeted significantly, bottoming out well below 80,000 reals [DERIVED: read from chart image]\",\n      \"From April onwards, there is a steady but volatile recovery, peaking again near 100,000 reals around July and August before experiencing minor fluctuations through October [DERIVED: read from chart image]\",\n      \"The overall trend from January 2 to October 15, 2020, represents a net decline, as the index did not fully recover to its pre-pandemic highs of nearly 120,000 reals by mid-October [DERIVED: compared start value of ~118k to end value visually below 100k]\"\n    ],\n    \"speculative_claims\": [\n      \"The chart tracks the performance of the IBOVESPA, the benchmark stock market index of Brazil, which measures the performance of the most liquid stocks traded on the B3 (Brasil, Bolsa, Balcão) [SPECULATIVE: financial markets]\",\n      \"This specific period is highly significant as it captures the financial market's reaction to the onset and initial waves of the global COVID-19 pandemic [SPECULATIVE: global history/economics]\",\n      \"This drop represents a classic 'market crash' or 'bear market' entry triggered by global panic and economic lockdowns [SPECULATIVE: financial markets]\",\n      \"The dramatic crash in March 2020 corresponds directly to the global outbreak of COVID-19 and the subsequent implementation of quarantine measures in Brazil and worldwide [SPECULATIVE: macroeconomic history]\",\n      \"The subsequent partial recovery reflects massive monetary stimulus, interest rate cuts by the Central Bank of Brazil (BCB), and global market optimism as liquidity flooded financial systems [SPECULATIVE: macroeconomic history]\",\n      \"For investors and citizens, this extreme volatility impacted pension funds, corporate valuations, and foreign direct investment in Latin America's largest economy [SPECULATIVE: financial markets]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table is truncated, but the initial values and the overall range are provided in the metadata and L1 caption."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption notes an overall decline, and the chart image clearly shows the magnitude of the crash and subsequent partial recovery."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject (Brazil's IBOVESPA stock index) is clearly identified along with the currency (Brazilian reals) and timeframe."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart tracks the performance of the IBOVESPA, the benchmark stock market index of Brazil, which measures the performance of the most liquid stocks traded on the B3 (Brasil, Bolsa, Balcão) [SPECULATIVE: financial markets]. The timeframe of the chart spans from January 2 to October 15, 2020 [DIRECT]. This specific period is highly significant as it captures the financial market's reaction to the onset and initial waves of the global COVID-19 pandemic [SPECULATIVE: global history/economics].",
+      "domain_specific_explanations": "The index started the year strong, near 118,573 reals in early January 2020 [DIRECT]. However, a massive, sharp contraction is visible starting in late February and accelerating through March, where the index plummeted significantly, bottoming out well below 80,000 reals [DERIVED: read from chart image]. This drop represents a classic 'market crash' or 'bear market' entry triggered by global panic and economic lockdowns [SPECULATIVE: financial markets]. From April onwards, there is a steady but volatile recovery, peaking again near 100,000 reals around July and August before experiencing minor fluctuations through October [DERIVED: read from chart image].",
+      "real_world_significance": "The dramatic crash in March 2020 corresponds directly to the global outbreak of COVID-19 and the subsequent implementation of quarantine measures in Brazil and worldwide [SPECULATIVE: macroeconomic history]. The subsequent partial recovery reflects massive monetary stimulus, interest rate cuts by the Central Bank of Brazil (BCB), and global market optimism as liquidity flooded financial systems [SPECULATIVE: macroeconomic history]. For investors and citizens, this extreme volatility impacted pension funds, corporate valuations, and foreign direct investment in Latin America's largest economy [SPECULATIVE: financial markets].",
+      "other": "The overall trend from January 2 to October 15, 2020, represents a net decline, as the index did not fully recover to its pre-pandemic highs of nearly 120,000 reals by mid-October [DERIVED: compared start value of ~118k to end value visually below 100k]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The timeframe of the chart spans from January 2 to October 15, 2020",
+        "The index started the year strong, near 118,573 reals in early January 2020"
+      ],
+      "derived_claims": [
+        "However, a massive, sharp contraction is visible starting in late February and accelerating through March, where the index plummeted significantly, bottoming out well below 80,000 reals [DERIVED: read from chart image]",
+        "From April onwards, there is a steady but volatile recovery, peaking again near 100,000 reals around July and August before experiencing minor fluctuations through October [DERIVED: read from chart image]",
+        "The overall trend from January 2 to October 15, 2020, represents a net decline, as the index did not fully recover to its pre-pandemic highs of nearly 120,000 reals by mid-October [DERIVED: compared start value of ~118k to end value visually below 100k]"
+      ],
+      "speculative_claims": [
+        "The chart tracks the performance of the IBOVESPA, the benchmark stock market index of Brazil, which measures the performance of the most liquid stocks traded on the B3 (Brasil, Bolsa, Balcão) [SPECULATIVE: financial markets]",
+        "This specific period is highly significant as it captures the financial market's reaction to the onset and initial waves of the global COVID-19 pandemic [SPECULATIVE: global history/economics]",
+        "This drop represents a classic 'market crash' or 'bear market' entry triggered by global panic and economic lockdowns [SPECULATIVE: financial markets]",
+        "The dramatic crash in March 2020 corresponds directly to the global outbreak of COVID-19 and the subsequent implementation of quarantine measures in Brazil and worldwide [SPECULATIVE: macroeconomic history]",
+        "The subsequent partial recovery reflects massive monetary stimulus, interest rate cuts by the Central Bank of Brazil (BCB), and global market optimism as liquidity flooded financial systems [SPECULATIVE: macroeconomic history]",
+        "For investors and citizens, this extreme volatility impacted pension funds, corporate valuations, and foreign direct investment in Latin America's largest economy [SPECULATIVE: financial markets]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11194.955999962986,
+  "created_at": "2026-07-07T22:39:43.538826Z"
+}

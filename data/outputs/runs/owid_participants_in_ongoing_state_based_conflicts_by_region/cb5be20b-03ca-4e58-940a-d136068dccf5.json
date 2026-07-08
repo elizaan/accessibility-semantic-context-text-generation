@@ -1,0 +1,68 @@
+{
+  "output_id": "cb5be20b-03ca-4e58-940a-d136068dccf5",
+  "chart_id": "owid_participants_in_ongoing_state_based_conflicts_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 4, \"justification\": \"The data table provides exact values for the number of states involved in state-based conflicts for different regions in 2024, but does not include data for other years or detailed explanations.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart image shows a trend over time, but the exact magnitude of changes is not quantified in the provided metadata.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The domain is identified as state-based conflicts, with regions specified. The expert domain story provides additional context about the types of conflicts included.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the number of states involved in state-based conflicts over time, categorized by region. The data includes interstate, intrastate, and extrasystemic conflicts [DIRECT]. The chart is produced by Our World in Data, using data from the Uppsala Conflict Data Program and Peace Research Institute Oslo [DIRECT].\",\n    \"domain_specific_explanations\": \"State-based conflicts include interstate (between countries), intrastate (within a country), and extrasystemic (involving external actors) conflicts [SPECULATIVE: conflict studies]. The number of states involved in such conflicts can indicate the global level of conflict and instability [SPECULATIVE: political science].\",\n    \"real_world_significance\": \"The data matters for understanding global security and stability. High numbers of states involved in conflicts can indicate increased risk of escalation and humanitarian crises [SPECULATIVE: international relations]. Decisions on military intervention, diplomacy, and humanitarian aid depend on such data [SPECULATIVE: political decision-making].\",\n    \"other\": \"The chart provides a visual representation of how different regions contribute to global conflict trends [DERIVED: from chart image]. Africa had 17 states involved in state-based conflicts in 2024, the highest among all regions [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the number of states involved in state-based conflicts over time, categorized by region.\",\n      \"The data includes interstate, intrastate, and extrasystemic conflicts\",\n      \"The chart is produced by Our World in Data, using data from the Uppsala Conflict Data Program and Peace Research Institute Oslo\",\n      \"Africa had 17 states involved in state-based conflicts in 2024, the highest among all regions\"\n    ],\n    \"derived_claims\": [\n      \"The chart provides a visual representation of how different regions contribute to global conflict trends\"\n    ],\n    \"speculative_claims\": [\n      \"State-based conflicts include interstate (between countries), intrastate (within a country), and extrasystemic (involving external actors) conflicts\",\n      \"The number of states involved in such conflicts can indicate the global level of conflict and instability\",\n      \"The data matters for understanding global security and stability\",\n      \"High numbers of states involved in conflicts can indicate increased risk of escalation and humanitarian crises\",\n      \"Decisions on military intervention, diplomacy, and humanitarian aid depend on such data\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 4,\n    \"derived_count\": 1,\n    \"speculative_count\": 9\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides exact values for the number of states involved in state-based conflicts for different regions in 2024, but does not include data for other years or detailed explanations."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart image shows a trend over time, but the exact magnitude of changes is not quantified in the provided metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is identified as state-based conflicts, with regions specified. The expert domain story provides additional context about the types of conflicts included."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the number of states involved in state-based conflicts over time, categorized by region. The data includes interstate, intrastate, and extrasystemic conflicts [DIRECT]. The chart is produced by Our World in Data, using data from the Uppsala Conflict Data Program and Peace Research Institute Oslo [DIRECT].",
+      "domain_specific_explanations": "State-based conflicts include interstate (between countries), intrastate (within a country), and extrasystemic (involving external actors) conflicts [SPECULATIVE: conflict studies]. The number of states involved in such conflicts can indicate the global level of conflict and instability [SPECULATIVE: political science].",
+      "real_world_significance": "The data matters for understanding global security and stability. High numbers of states involved in conflicts can indicate increased risk of escalation and humanitarian crises [SPECULATIVE: international relations]. Decisions on military intervention, diplomacy, and humanitarian aid depend on such data [SPECULATIVE: political decision-making].",
+      "other": "The chart provides a visual representation of how different regions contribute to global conflict trends [DERIVED: from chart image]. Africa had 17 states involved in state-based conflicts in 2024, the highest among all regions [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the number of states involved in state-based conflicts over time, categorized by region.",
+        "The data includes interstate, intrastate, and extrasystemic conflicts",
+        "The chart is produced by Our World in Data, using data from the Uppsala Conflict Data Program and Peace Research Institute Oslo",
+        "Africa had 17 states involved in state-based conflicts in 2024, the highest among all regions"
+      ],
+      "derived_claims": [
+        "The chart provides a visual representation of how different regions contribute to global conflict trends"
+      ],
+      "speculative_claims": [
+        "State-based conflicts include interstate (between countries), intrastate (within a country), and extrasystemic (involving external actors) conflicts",
+        "The number of states involved in such conflicts can indicate the global level of conflict and instability",
+        "The data matters for understanding global security and stability",
+        "High numbers of states involved in conflicts can indicate increased risk of escalation and humanitarian crises",
+        "Decisions on military intervention, diplomacy, and humanitarian aid depend on such data"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 4,
+      "derived_count": 1,
+      "speculative_count": 9
+    }
+  },
+  "tokens_used": {
+    "input": 2249,
+    "output": 722
+  },
+  "latency_ms": 2892.9619580158032,
+  "created_at": "2026-07-08T13:07:25.867354Z"
+}

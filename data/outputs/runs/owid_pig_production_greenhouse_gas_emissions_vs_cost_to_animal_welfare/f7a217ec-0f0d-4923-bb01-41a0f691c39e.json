@@ -1,0 +1,63 @@
+{
+  "output_id": "f7a217ec-0f0d-4923-bb01-41a0f691c39e",
+  "chart_id": "owid_pig_production_greenhouse_gas_emissions_vs_cost_to_animal_welfare",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides a scatterplot with data points representing different pig production systems, but exact values are not provided.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart shows a general trend but does not provide specific trend magnitudes.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is clearly related to pig production, greenhouse gas emissions, and animal welfare, which are well-defined domains.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares greenhouse gas emissions with the cost to animal welfare across different pig production systems [DIRECT]. The data is based on 91 pig production systems across the United Kingdom and Brazil [DIRECT]. Each data point represents one system [DIRECT].\",\n    \"domain_specific_explanations\": \"The welfare cost is calculated based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments [DIRECT]. A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare [DIRECT]. The emissions are measured per kilogram deadweight [DIRECT].\",\n    \"real_world_significance\": \"The chart highlights the trade-offs between greenhouse gas emissions and animal welfare in pig production systems [DERIVED: from chart title and description]. Systems with lower welfare costs (negative values) tend to have varying levels of emissions [DERIVED: from chart]. This data can inform decisions on sustainable and humane pig production practices [SPECULATIVE: general knowledge of environmental and ethical considerations in agriculture].\",\n    \"other\": \"The chart uses different colors to represent various pig production systems, such as outdoor, slatted, slatted + straw yard, solid floor, straw yard, and straw yard + outdoor [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares greenhouse gas emissions with the cost to animal welfare across different pig production systems\",\n      \"The data is based on 91 pig production systems across the United Kingdom and Brazil\",\n      \"Each data point represents one system\",\n      \"The welfare cost is calculated based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments\",\n      \"A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare\",\n      \"The emissions are measured per kilogram deadweight\",\n      \"The chart uses different colors to represent various pig production systems, such as outdoor, slatted, slatted + straw yard, solid floor, straw yard, and straw yard + outdoor\"\n    ],\n    \"derived_claims\": [\n      \"Systems with lower welfare costs (negative values) tend to have varying levels of emissions\"\n    ],\n    \"speculative_claims\": [\n      \"This data can inform decisions on sustainable and humane pig production practices\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 7,\n    \"derived_count\": 1,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a scatterplot with data points representing different pig production systems, but exact values are not provided."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart shows a general trend but does not provide specific trend magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is clearly related to pig production, greenhouse gas emissions, and animal welfare, which are well-defined domains."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares greenhouse gas emissions with the cost to animal welfare across different pig production systems [DIRECT]. The data is based on 91 pig production systems across the United Kingdom and Brazil [DIRECT]. Each data point represents one system [DIRECT].",
+      "domain_specific_explanations": "The welfare cost is calculated based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments [DIRECT]. A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare [DIRECT]. The emissions are measured per kilogram deadweight [DIRECT].",
+      "real_world_significance": "The chart highlights the trade-offs between greenhouse gas emissions and animal welfare in pig production systems [DERIVED: from chart title and description]. Systems with lower welfare costs (negative values) tend to have varying levels of emissions [DERIVED: from chart]. This data can inform decisions on sustainable and humane pig production practices [SPECULATIVE: general knowledge of environmental and ethical considerations in agriculture].",
+      "other": "The chart uses different colors to represent various pig production systems, such as outdoor, slatted, slatted + straw yard, solid floor, straw yard, and straw yard + outdoor [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares greenhouse gas emissions with the cost to animal welfare across different pig production systems",
+        "The data is based on 91 pig production systems across the United Kingdom and Brazil",
+        "Each data point represents one system",
+        "The welfare cost is calculated based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments",
+        "A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare",
+        "The emissions are measured per kilogram deadweight",
+        "The chart uses different colors to represent various pig production systems, such as outdoor, slatted, slatted + straw yard, solid floor, straw yard, and straw yard + outdoor"
+      ],
+      "derived_claims": [
+        "Systems with lower welfare costs (negative values) tend to have varying levels of emissions"
+      ],
+      "speculative_claims": [
+        "This data can inform decisions on sustainable and humane pig production practices"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 7,
+      "derived_count": 1,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 2155,
+    "output": 670
+  },
+  "latency_ms": 2422.408999991603,
+  "created_at": "2026-07-08T13:23:48.392527Z"
+}

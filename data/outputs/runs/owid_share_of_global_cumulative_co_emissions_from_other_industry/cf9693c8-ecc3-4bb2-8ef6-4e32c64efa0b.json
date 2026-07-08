@@ -1,0 +1,81 @@
+{
+  "output_id": "cf9693c8-ecc3-4bb2-8ef6-4e32c64efa0b",
+  "chart_id": "owid_share_of_global_cumulative_co_emissions_from_other_industry",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for several key countries and regions (e.g., China, Asia, Europe, High-income countries), but the table is truncated, leaving out many individual countries shown on the map.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"As a spatial map, the 'trends' are geographic distributions. The data table allows comparison between major regions, but does not capture the full global distribution without the map image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and subtitle clearly define the subject: global cumulative CO2 emissions from 'other industry' up to 2024.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The expert domain story identifies the source as Our World in Data, but provides no deeper context on the definition of 'other industry' or the implications of the data.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a global choropleth map published by Our World in Data, visualizing each country and region's share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' sources up to the year 2024 [DIRECT]. The data is sourced from the Global Carbon Budget [DIRECT]. Cumulative emissions measure the total sum of emissions since the first year of available historical data, rather than just a single year's output [DIRECT]. 'Other industry' typically encompasses manufacturing, construction, and industrial processes not classified under major specific sectors like steel or cement production [SPECULATIVE: Environmental Economics].\",\n    \"domain_specific_explanations\": \"In climate science and policy, cumulative emissions are crucial because CO₂ resides in the atmosphere for centuries, meaning historical emissions drive current global warming [SPECULATIVE: Climate Science]. The data reveals a stark concentration of historical industrial emissions: High-income countries account for the majority share at 58.60% of global cumulative emissions from this sector [DIRECT]. Regionally, Asia represents 44.41% [DIRECT], heavily driven by China, which alone accounts for 37.11% of the global cumulative total [DIRECT]. In contrast, Europe accounts for 16.12% [DIRECT], with the European Union (27) responsible for 9.78% [DIRECT].\",\n    \"real_world_significance\": \"These cumulative figures are highly significant in international climate negotiations, such as United Nations COP summits, where developing nations argue that historically industrialized high-income nations bear the primary responsibility for funding climate mitigation and adaptation (often discussed under 'loss and damage' frameworks) [SPECULATIVE: International Climate Policy]. The massive 37.11% share from China [DIRECT] reflects its rapid industrial expansion over recent decades, positioning it as a critical player whose industrial decarbonization path will dictate whether global climate targets can be met [SPECULATIVE: Climate Policy]. Conversely, large swathes of the global South, particularly in Africa, show negligible cumulative shares [DERIVED: Visual observation of the map's light shading and hatched 'No data' regions], highlighting deep historical disparities in industrial development and associated carbon footprints [SPECULATIVE: Climate Justice].\",\n    \"other\": \"The map uses a color scale ranging from light yellow (0%) to dark brown (100%) to represent cumulative shares, with hatched lines indicating regions where data is unavailable [DERIVED: Visual observation of the map legend].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a global choropleth map published by Our World in Data, visualizing each country and region's share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' sources up to the year 2024\",\n      \"The data is sourced from the Global Carbon Budget\",\n      \"Cumulative emissions measure the total sum of emissions since the first year of available historical data, rather than just a single year's output\",\n      \"High-income countries account for the majority share at 58.60% of global cumulative emissions from this sector\",\n      \"Regionally, Asia represents 44.41%\",\n      \"China alone accounts for 37.11% of the global cumulative total\",\n      \"Europe accounts for 16.12%\",\n      \"the European Union (27) responsible for 9.78%\"\n    ],\n    \"derived_claims\": [\n      \"large swathes of the global South, particularly in Africa, show negligible cumulative shares\",\n      \"The map uses a color scale ranging from light yellow (0%) to dark brown (100%) to represent cumulative shares, with hatched lines indicating regions where data is unavailable\"\n    ],\n    \"speculative_claims\": [\n      \"Other industry' typically encompasses manufacturing, construction, and industrial processes not classified under major specific sectors like steel or cement production [Source: Environmental Economics]\",\n      \"In climate science and policy, cumulative emissions are crucial because CO₂ resides in the atmosphere for centuries, meaning historical emissions drive current global warming [Source: Climate Science]\",\n      \"These cumulative figures are highly significant in international climate negotiations, such as United Nations COP summits, where developing nations argue that historically industrialized high-income nations bear the primary responsibility for funding climate mitigation and adaptation [Source: International Climate Policy]\",\n      \"The massive 37.11% share from China reflects its rapid industrial expansion over recent decades, positioning it as a critical player whose industrial decarbonization path will dictate whether global climate targets can be met [Source: Climate Policy]\",\n      \"highlighting deep historical disparities in industrial development and associated carbon footprints [Source: Climate Justice]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 8,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for several key countries and regions (e.g., China, Asia, Europe, High-income countries), but the table is truncated, leaving out many individual countries shown on the map."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "As a spatial map, the 'trends' are geographic distributions. The data table allows comparison between major regions, but does not capture the full global distribution without the map image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and subtitle clearly define the subject: global cumulative CO2 emissions from 'other industry' up to 2024."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The expert domain story identifies the source as Our World in Data, but provides no deeper context on the definition of 'other industry' or the implications of the data."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a global choropleth map published by Our World in Data, visualizing each country and region's share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' sources up to the year 2024 [DIRECT]. The data is sourced from the Global Carbon Budget [DIRECT]. Cumulative emissions measure the total sum of emissions since the first year of available historical data, rather than just a single year's output [DIRECT]. 'Other industry' typically encompasses manufacturing, construction, and industrial processes not classified under major specific sectors like steel or cement production [SPECULATIVE: Environmental Economics].",
+      "domain_specific_explanations": "In climate science and policy, cumulative emissions are crucial because CO₂ resides in the atmosphere for centuries, meaning historical emissions drive current global warming [SPECULATIVE: Climate Science]. The data reveals a stark concentration of historical industrial emissions: High-income countries account for the majority share at 58.60% of global cumulative emissions from this sector [DIRECT]. Regionally, Asia represents 44.41% [DIRECT], heavily driven by China, which alone accounts for 37.11% of the global cumulative total [DIRECT]. In contrast, Europe accounts for 16.12% [DIRECT], with the European Union (27) responsible for 9.78% [DIRECT].",
+      "real_world_significance": "These cumulative figures are highly significant in international climate negotiations, such as United Nations COP summits, where developing nations argue that historically industrialized high-income nations bear the primary responsibility for funding climate mitigation and adaptation (often discussed under 'loss and damage' frameworks) [SPECULATIVE: International Climate Policy]. The massive 37.11% share from China [DIRECT] reflects its rapid industrial expansion over recent decades, positioning it as a critical player whose industrial decarbonization path will dictate whether global climate targets can be met [SPECULATIVE: Climate Policy]. Conversely, large swathes of the global South, particularly in Africa, show negligible cumulative shares [DERIVED: Visual observation of the map's light shading and hatched 'No data' regions], highlighting deep historical disparities in industrial development and associated carbon footprints [SPECULATIVE: Climate Justice].",
+      "other": "The map uses a color scale ranging from light yellow (0%) to dark brown (100%) to represent cumulative shares, with hatched lines indicating regions where data is unavailable [DERIVED: Visual observation of the map legend]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a global choropleth map published by Our World in Data, visualizing each country and region's share of global cumulative carbon dioxide (CO₂) emissions from 'other industry' sources up to the year 2024",
+        "The data is sourced from the Global Carbon Budget",
+        "Cumulative emissions measure the total sum of emissions since the first year of available historical data, rather than just a single year's output",
+        "High-income countries account for the majority share at 58.60% of global cumulative emissions from this sector",
+        "Regionally, Asia represents 44.41%",
+        "China alone accounts for 37.11% of the global cumulative total",
+        "Europe accounts for 16.12%",
+        "the European Union (27) responsible for 9.78%"
+      ],
+      "derived_claims": [
+        "large swathes of the global South, particularly in Africa, show negligible cumulative shares",
+        "The map uses a color scale ranging from light yellow (0%) to dark brown (100%) to represent cumulative shares, with hatched lines indicating regions where data is unavailable"
+      ],
+      "speculative_claims": [
+        "Other industry' typically encompasses manufacturing, construction, and industrial processes not classified under major specific sectors like steel or cement production [Source: Environmental Economics]",
+        "In climate science and policy, cumulative emissions are crucial because CO₂ resides in the atmosphere for centuries, meaning historical emissions drive current global warming [Source: Climate Science]",
+        "These cumulative figures are highly significant in international climate negotiations, such as United Nations COP summits, where developing nations argue that historically industrialized high-income nations bear the primary responsibility for funding climate mitigation and adaptation [Source: International Climate Policy]",
+        "The massive 37.11% share from China reflects its rapid industrial expansion over recent decades, positioning it as a critical player whose industrial decarbonization path will dictate whether global climate targets can be met [Source: Climate Policy]",
+        "highlighting deep historical disparities in industrial development and associated carbon footprints [Source: Climate Justice]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 8,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11107.811624999158,
+  "created_at": "2026-07-07T23:00:58.559662Z"
+}

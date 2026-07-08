@@ -1,0 +1,74 @@
+{
+  "output_id": "70b2b4e6-3383-4918-b0df-25a852e7cffd",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_015_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No metadata was provided; all data values must be read directly from the chart image labels.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend metadata or statistical summaries were provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 0,\n        \"justification\": \"The subject domain must be inferred entirely from the chart's title and legend labels.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context or background story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder information or real-world impact details were provided.\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day timeline relative to a central event on Day 0 [DIRECT]. The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical/sleep metrics (Total Minutes Asleep, Time in Bed, Range of Activities, Number of steps), and emotional states (Anxious, Depressed, Frustrated) [DIRECT]. This chart likely originates from a digital phenotyping or mobile health (mHealth) study designed to find correlations between daily smartphone-derived metrics and mental health states [SPECULATIVE: Mobile Health / Digital Phenotyping].\",\n    \"domain_specific_explanations\": \"In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship, with horizontal lines on this chart marking the standard significance thresholds of p < 0.05 and p < 0.01 [SPECULATIVE: Statistics]. On Day 0, nearly all features show statistically significant associations (p < 0.05), with 'Depressed' showing the highest significance (p ≈ 0.000) [DERIVED: Observed that Day 0 bars for Morning Screen Use, Calls, Time in Bed, Steps, Anxious, and Depressed are below the 0.05 line]. By Day 1, only 'Depressed' (p = 0.002) and 'Frustrated' (p = 0.026) remain statistically significant [DERIVED: Compared Day 1 bars to the 0.05 threshold line]. On Day 2, 'Morning Screen Use' becomes highly significant (p = 0.006), while other features lose significance [DERIVED: Compared Day 2 bars to the 0.01 and 0.05 threshold lines].\",\n    \"real_world_significance\": \"These findings are highly valuable for clinical psychologists and developers of digital health interventions [SPECULATIVE: Clinical Psychology]. The immediate significance of almost all behavioral and emotional features on Day 0 suggests a systemic disruption or acute event affecting the individual's entire daily routine and mood [SPECULATIVE: Behavioral Medicine]. The lingering significance of depression and frustration into Day 1, followed by a delayed spike in morning screen use significance on Day 2, suggests a temporal pattern where emotional distress precedes changes in digital coping behaviors [SPECULATIVE: Clinical Psychology]. Understanding these lag effects allows for the design of proactive, just-in-time adaptive interventions (JITAIs) that can deliver support before a relapse or severe depressive episode fully manifests [SPECULATIVE: mHealth / Psychiatry].\",\n    \"other\": \"The bars capped at 0.10 on Day -1 and 0.20 on Days 1 and 2 represent features that did not meet the threshold for statistical significance on those specific days [DERIVED: Inferred from the high p-values above the significance lines].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day timeline relative to a central event on Day 0\",\n      \"The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical/sleep metrics (Total Minutes Asleep, Time in Bed, Range of Activities, Number of steps), and emotional states (Anxious, Depressed, Frustrated)\"\n    ],\n    \"derived_claims\": [\n      \"On Day 0, nearly all features show statistically significant associations (p < 0.05), with 'Depressed' showing the highest significance (p ≈ 0.000)\",\n      \"By Day 1, only 'Depressed' (p = 0.002) and 'Frustrated' (p = 0.026) remain statistically significant\",\n      \"On Day 2, 'Morning Screen Use' becomes highly significant (p = 0.006), while other features lose significance\",\n      \"The bars capped at 0.10 on Day -1 and 0.20 on Days 1 and 2 represent features that did not meet the threshold for statistical significance on those specific days\"\n    ],\n    \"speculative_claims\": [\n      \"This chart likely originates from a digital phenotyping or mobile health (mHealth) study designed to find correlations between daily smartphone-derived metrics and mental health states\",\n      \"In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship, with horizontal lines on this chart marking the standard significance thresholds of p < 0.05 and p < 0.01\",\n      \"These findings are highly valuable for clinical psychologists and developers of digital health interventions\",\n      \"The immediate significance of almost all behavioral and emotional features on Day 0 suggests a systemic disruption or acute event affecting the individual's entire daily routine and mood\",\n      \"The lingering significance of depression and frustration into Day 1, followed by a delayed spike in morning screen use significance on Day 2, suggests a temporal pattern where emotional distress precedes changes in digital coping behaviors\",\n      \"Understanding these lag effects allows for the design of proactive, just-in-time adaptive interventions (JITAIs) that can deliver support before a relapse or severe depressive episode fully manifests\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No metadata was provided; all data values must be read directly from the chart image labels."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend metadata or statistical summaries were provided."
+        },
+        "chart_subject_domain": {
+          "score": 0,
+          "justification": "The subject domain must be inferred entirely from the chart's title and legend labels."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context or background story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder information or real-world impact details were provided."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day timeline relative to a central event on Day 0 [DIRECT]. The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical/sleep metrics (Total Minutes Asleep, Time in Bed, Range of Activities, Number of steps), and emotional states (Anxious, Depressed, Frustrated) [DIRECT]. This chart likely originates from a digital phenotyping or mobile health (mHealth) study designed to find correlations between daily smartphone-derived metrics and mental health states [SPECULATIVE: Mobile Health / Digital Phenotyping].",
+      "domain_specific_explanations": "In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship, with horizontal lines on this chart marking the standard significance thresholds of p < 0.05 and p < 0.01 [SPECULATIVE: Statistics]. On Day 0, nearly all features show statistically significant associations (p < 0.05), with 'Depressed' showing the highest significance (p ≈ 0.000) [DERIVED: Observed that Day 0 bars for Morning Screen Use, Calls, Time in Bed, Steps, Anxious, and Depressed are below the 0.05 line]. By Day 1, only 'Depressed' (p = 0.002) and 'Frustrated' (p = 0.026) remain statistically significant [DERIVED: Compared Day 1 bars to the 0.05 threshold line]. On Day 2, 'Morning Screen Use' becomes highly significant (p = 0.006), while other features lose significance [DERIVED: Compared Day 2 bars to the 0.01 and 0.05 threshold lines].",
+      "real_world_significance": "These findings are highly valuable for clinical psychologists and developers of digital health interventions [SPECULATIVE: Clinical Psychology]. The immediate significance of almost all behavioral and emotional features on Day 0 suggests a systemic disruption or acute event affecting the individual's entire daily routine and mood [SPECULATIVE: Behavioral Medicine]. The lingering significance of depression and frustration into Day 1, followed by a delayed spike in morning screen use significance on Day 2, suggests a temporal pattern where emotional distress precedes changes in digital coping behaviors [SPECULATIVE: Clinical Psychology]. Understanding these lag effects allows for the design of proactive, just-in-time adaptive interventions (JITAIs) that can deliver support before a relapse or severe depressive episode fully manifests [SPECULATIVE: mHealth / Psychiatry].",
+      "other": "The bars capped at 0.10 on Day -1 and 0.20 on Days 1 and 2 represent features that did not meet the threshold for statistical significance on those specific days [DERIVED: Inferred from the high p-values above the significance lines]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart, titled 'Feature Significance Over One Day Before to Two Days After', displays the statistical significance (p-values) of nine behavioral and psychological features across a four-day timeline relative to a central event on Day 0",
+        "The features tracked include digital behaviors (Morning Screen Use, Calls in the evening), physical/sleep metrics (Total Minutes Asleep, Time in Bed, Range of Activities, Number of steps), and emotional states (Anxious, Depressed, Frustrated)"
+      ],
+      "derived_claims": [
+        "On Day 0, nearly all features show statistically significant associations (p < 0.05), with 'Depressed' showing the highest significance (p ≈ 0.000)",
+        "By Day 1, only 'Depressed' (p = 0.002) and 'Frustrated' (p = 0.026) remain statistically significant",
+        "On Day 2, 'Morning Screen Use' becomes highly significant (p = 0.006), while other features lose significance",
+        "The bars capped at 0.10 on Day -1 and 0.20 on Days 1 and 2 represent features that did not meet the threshold for statistical significance on those specific days"
+      ],
+      "speculative_claims": [
+        "This chart likely originates from a digital phenotyping or mobile health (mHealth) study designed to find correlations between daily smartphone-derived metrics and mental health states",
+        "In statistical analysis, a lower p-value indicates a stronger, more statistically significant relationship, with horizontal lines on this chart marking the standard significance thresholds of p < 0.05 and p < 0.01",
+        "These findings are highly valuable for clinical psychologists and developers of digital health interventions",
+        "The immediate significance of almost all behavioral and emotional features on Day 0 suggests a systemic disruption or acute event affecting the individual's entire daily routine and mood",
+        "The lingering significance of depression and frustration into Day 1, followed by a delayed spike in morning screen use significance on Day 2, suggests a temporal pattern where emotional distress precedes changes in digital coping behaviors",
+        "Understanding these lag effects allows for the design of proactive, just-in-time adaptive interventions (JITAIs) that can deliver support before a relapse or severe depressive episode fully manifests"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 19445.85191598162,
+  "created_at": "2026-07-07T23:22:33.495040Z"
+}

@@ -1,0 +1,80 @@
+{
+  "output_id": "844922cb-6146-4b42-9387-1d251b3df3c7",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_013_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data points are not provided in a table, but the axes labels ('CES-D Depression Score' and '2way SSS Social Support') and the legend categories ('discriminated? YES/NO') are clearly visible in the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The negative correlation trends and the difference in slopes between the two groups can be visually estimated from the regression lines, but exact correlation coefficients or slope values are not provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (mental health, social support, and discrimination) is highly clear from the axes labels and the human-written alt text.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The source publication (Proc. ACM Hum. Comput. Interact. 2019) is provided, but there is no accompanying text explaining the specific study design or findings.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2.0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a scatter plot with correlation lines examining the relationship between social support ('2way SSS Social Support') and depression ('CES-D Depression Score') [DIRECT]. It categorizes participants based on whether they reported experiencing discrimination ('YES' or 'NO') [DIRECT]. The data originates from a research paper published in the *Proceedings of the ACM on Human-Computer Interaction* in 2019 [DIRECT], a venue that frequently explores how technology, online communities, and social systems impact human well-being [SPECULATIVE: Human-Computer Interaction / Social Computing].\",\n    \"domain_specific_explanations\": \"In clinical and social psychology, 'CES-D' refers to the Center for Epidemiologic Studies Depression Scale, where higher scores indicate more severe depressive symptoms [SPECULATIVE: Clinical Psychology]. 'SSS' typically denotes a Social Support Scale, where higher scores represent stronger perceived support networks [SPECULATIVE: Social Psychology]. The negative slope of both regression lines indicates that higher perceived social support is associated with lower depression scores [DERIVED: Observed the downward slope of both regression lines in the chart image]. Notably, the slope for individuals who experienced discrimination ('YES') is steeper than for those who did not ('NO') [DERIVED: Compared the slopes of the two regression lines in the chart image]. This suggests that social support may play an even more critical protective role—or its absence may be more severely felt—among individuals facing discrimination [SPECULATIVE: Social Psychology].\",\n    \"real_world_significance\": \"These findings are highly significant for mental health professionals, community organizers, and platform designers who build online support groups [SPECULATIVE: Mental Health & HCI]. For marginalized populations who frequently face discrimination, fostering robust social support systems is a vital buffer against depression [SPECULATIVE: Social Psychology]. If discrimination persists and social support systems are weak, individuals are at a substantially higher risk for severe depressive episodes [SPECULATIVE: Clinical Psychology]. Consequently, interventions should focus not only on reducing discrimination but also on actively strengthening peer support networks [SPECULATIVE: Public Health].\",\n    \"other\": \"The confidence intervals (shaded regions around the lines) widen significantly at higher depression scores, particularly above 40, indicating fewer data points and greater statistical uncertainty at extreme levels of depression [DERIVED: Observed the widening shaded confidence bands on the right side of the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a scatter plot with correlation lines examining the relationship between social support ('2way SSS Social Support') and depression ('CES-D Depression Score')\",\n      \"It categorizes participants based on whether they reported experiencing discrimination ('YES' or 'NO')\",\n      \"The data originates from a research paper published in the *Proceedings of the ACM on Human-Computer Interaction* in 2019\"\n    ],\n    \"derived_claims\": [\n      \"The negative slope of both regression lines indicates that higher perceived social support is associated with lower depression scores [derived from observing the downward slope of both regression lines in the chart image]\",\n      \"the slope for individuals who experienced discrimination ('YES') is steeper than for those who did not ('NO') [derived from comparing the slopes of the two regression lines in the chart image]\",\n      \"The confidence intervals (shaded regions around the lines) widen significantly at higher depression scores, particularly above 40, indicating fewer data points and greater statistical uncertainty at extreme levels of depression [derived from observing the widening shaded confidence bands on the right side of the chart image]\"\n    ],\n    \"speculative_claims\": [\n      \"a venue that frequently explores how technology, online communities, and social systems impact human well-being [source: Human-Computer Interaction / Social Computing]\",\n      \"In clinical and social psychology, 'CES-D' refers to the Center for Epidemiologic Studies Depression Scale, where higher scores indicate more severe depressive symptoms [source: Clinical Psychology]\",\n      \"'SSS' typically denotes a Social Support Scale, where higher scores represent stronger perceived support networks [source: Social Psychology]\",\n      \"This suggests that social support may play an even more critical protective role—or its absence may be more severely felt—among individuals facing discrimination [source: Social Psychology]\",\n      \"These findings are highly significant for mental health professionals, community organizers, and platform designers who build online support groups [source: Mental Health & HCI]\",\n      \"For marginalized populations who frequently face discrimination, fostering robust social support systems is a vital buffer against depression [source: Social Psychology]\",\n      \"If discrimination persists and social support systems are weak, individuals are at a substantially higher risk for severe depressive episodes [source: Clinical Psychology]\",\n      \"consequently, interventions should focus not only on reducing discrimination but also on actively strengthening peer support networks [source: Public Health]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 8\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data points are not provided in a table, but the axes labels ('CES-D Depression Score' and '2way SSS Social Support') and the legend categories ('discriminated? YES/NO') are clearly visible in the chart image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The negative correlation trends and the difference in slopes between the two groups can be visually estimated from the regression lines, but exact correlation coefficients or slope values are not provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (mental health, social support, and discrimination) is highly clear from the axes labels and the human-written alt text."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The source publication (Proc. ACM Hum. Comput. Interact. 2019) is provided, but there is no accompanying text explaining the specific study design or findings."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2.0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a scatter plot with correlation lines examining the relationship between social support ('2way SSS Social Support') and depression ('CES-D Depression Score') [DIRECT]. It categorizes participants based on whether they reported experiencing discrimination ('YES' or 'NO') [DIRECT]. The data originates from a research paper published in the *Proceedings of the ACM on Human-Computer Interaction* in 2019 [DIRECT], a venue that frequently explores how technology, online communities, and social systems impact human well-being [SPECULATIVE: Human-Computer Interaction / Social Computing].",
+      "domain_specific_explanations": "In clinical and social psychology, 'CES-D' refers to the Center for Epidemiologic Studies Depression Scale, where higher scores indicate more severe depressive symptoms [SPECULATIVE: Clinical Psychology]. 'SSS' typically denotes a Social Support Scale, where higher scores represent stronger perceived support networks [SPECULATIVE: Social Psychology]. The negative slope of both regression lines indicates that higher perceived social support is associated with lower depression scores [DERIVED: Observed the downward slope of both regression lines in the chart image]. Notably, the slope for individuals who experienced discrimination ('YES') is steeper than for those who did not ('NO') [DERIVED: Compared the slopes of the two regression lines in the chart image]. This suggests that social support may play an even more critical protective role—or its absence may be more severely felt—among individuals facing discrimination [SPECULATIVE: Social Psychology].",
+      "real_world_significance": "These findings are highly significant for mental health professionals, community organizers, and platform designers who build online support groups [SPECULATIVE: Mental Health & HCI]. For marginalized populations who frequently face discrimination, fostering robust social support systems is a vital buffer against depression [SPECULATIVE: Social Psychology]. If discrimination persists and social support systems are weak, individuals are at a substantially higher risk for severe depressive episodes [SPECULATIVE: Clinical Psychology]. Consequently, interventions should focus not only on reducing discrimination but also on actively strengthening peer support networks [SPECULATIVE: Public Health].",
+      "other": "The confidence intervals (shaded regions around the lines) widen significantly at higher depression scores, particularly above 40, indicating fewer data points and greater statistical uncertainty at extreme levels of depression [DERIVED: Observed the widening shaded confidence bands on the right side of the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a scatter plot with correlation lines examining the relationship between social support ('2way SSS Social Support') and depression ('CES-D Depression Score')",
+        "It categorizes participants based on whether they reported experiencing discrimination ('YES' or 'NO')",
+        "The data originates from a research paper published in the *Proceedings of the ACM on Human-Computer Interaction* in 2019"
+      ],
+      "derived_claims": [
+        "The negative slope of both regression lines indicates that higher perceived social support is associated with lower depression scores [derived from observing the downward slope of both regression lines in the chart image]",
+        "the slope for individuals who experienced discrimination ('YES') is steeper than for those who did not ('NO') [derived from comparing the slopes of the two regression lines in the chart image]",
+        "The confidence intervals (shaded regions around the lines) widen significantly at higher depression scores, particularly above 40, indicating fewer data points and greater statistical uncertainty at extreme levels of depression [derived from observing the widening shaded confidence bands on the right side of the chart image]"
+      ],
+      "speculative_claims": [
+        "a venue that frequently explores how technology, online communities, and social systems impact human well-being [source: Human-Computer Interaction / Social Computing]",
+        "In clinical and social psychology, 'CES-D' refers to the Center for Epidemiologic Studies Depression Scale, where higher scores indicate more severe depressive symptoms [source: Clinical Psychology]",
+        "'SSS' typically denotes a Social Support Scale, where higher scores represent stronger perceived support networks [source: Social Psychology]",
+        "This suggests that social support may play an even more critical protective role—or its absence may be more severely felt—among individuals facing discrimination [source: Social Psychology]",
+        "These findings are highly significant for mental health professionals, community organizers, and platform designers who build online support groups [source: Mental Health & HCI]",
+        "For marginalized populations who frequently face discrimination, fostering robust social support systems is a vital buffer against depression [source: Social Psychology]",
+        "If discrimination persists and social support systems are weak, individuals are at a substantially higher risk for severe depressive episodes [source: Clinical Psychology]",
+        "consequently, interventions should focus not only on reducing discrimination but also on actively strengthening peer support networks [source: Public Health]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 8
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11302.287874976173,
+  "created_at": "2026-07-07T23:35:30.596825Z"
+}

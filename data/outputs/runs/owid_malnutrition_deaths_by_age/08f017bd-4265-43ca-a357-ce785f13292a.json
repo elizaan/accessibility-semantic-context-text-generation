@@ -1,0 +1,75 @@
+{
+  "output_id": "08f017bd-4265-43ca-a357-ce785f13292a",
+  "chart_id": "owid_malnutrition_deaths_by_age",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table, axis labels, or numerical values were provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend data, visual descriptions, or captions were provided to indicate the direction or magnitude of the data.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject as deaths from protein-energy malnutrition by age.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 5,\n        \"justification\": \"The expert domain story is fully provided, explaining the definition of the condition and the limitations/uncertainties of the data.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the estimated annual number of deaths resulting from protein-energy malnutrition, broken down by age groups [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Protein-energy malnutrition is defined as a severe form of malnutrition arising from an insufficient intake of calories and protein [DIRECT].\",\n    \"domain_specific_explanations\": \"Protein-energy malnutrition (PEM) typically manifests clinically as marasmus or kwashiorkor, which serve as critical public health indicators of food insecurity and systemic poverty [SPECULATIVE: Public Health / Medicine]. The data estimates carry wide uncertainties, particularly in developing nations or regions with poor vital registration systems where deaths may go unrecorded or misclassified [DIRECT]. Analyzing this data by age group is crucial because vulnerability to malnutrition varies significantly across the lifespan, with infants, young children, and the elderly typically being at the highest risk [SPECULATIVE: Pediatrics and Geriatrics].\",\n    \"real_world_significance\": \"This data is vital for international aid organizations, policymakers, and healthcare providers to target nutritional interventions and food security programs to the most vulnerable age demographics [SPECULATIVE: Global Development Policy]. Reducing deaths from protein-energy malnutrition is a key component of global development goals, such as the United Nations Sustainable Development Goal 2, which aims to end hunger and all forms of malnutrition [SPECULATIVE: United Nations SDGs]. Inadequate vital registration systems in high-burden countries mean that the actual death toll could be higher or lower than estimated, highlighting a critical need for improving civil registration and vital statistics (CRVS) systems globally [DERIVED: Synthesized from the expert story's note on poor vital registration and wide uncertainties].\",\n    \"other\": \"Without the underlying data table or visual chart, the specific distribution of deaths across different age groups (e.g., under-5s versus the elderly) cannot be determined from the provided metadata [DERIVED: Confirmed from the absence of the data table and chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the estimated annual number of deaths resulting from protein-energy malnutrition, broken down by age groups\",\n      \"The data is sourced from Our World in Data\",\n      \"Protein-energy malnutrition is defined as a severe form of malnutrition arising from an insufficient intake of calories and protein\",\n      \"The data estimates carry wide uncertainties, particularly in developing nations or regions with poor vital registration systems where deaths may go unrecorded or misclassified\"\n    ],\n    \"derived_claims\": [\n      \"Inadequate vital registration systems in high-burden countries mean that the actual death toll could be higher or lower than estimated, highlighting a critical need for improving civil registration and vital statistics (CRVS) systems globally\",\n      \"Without the underlying data table or visual chart, the specific distribution of deaths across different age groups (e.g., under-5s versus the elderly) cannot be determined from the provided metadata\"\n    ],\n    \"speculative_claims\": [\n      \"Protein-energy malnutrition (PEM) typically manifests clinically as marasmus or kwashiorkor, which serve as critical public health indicators of food insecurity and systemic poverty\",\n      \"Analyzing this data by age group is crucial because vulnerability to malnutrition varies significantly across the lifespan, with infants, young children, and the elderly typically being at the highest risk\",\n      \"This data is vital for international aid organizations, policymakers, and healthcare providers to target nutritional interventions and food security programs to the most vulnerable age demographics\",\n      \"Reducing deaths from protein-energy malnutrition is a key component of global development goals, such as the United Nations Sustainable Development Goal 2, which aims to end hunger and all forms of malnutrition\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table, axis labels, or numerical values were provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend data, visual descriptions, or captions were provided to indicate the direction or magnitude of the data."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject as deaths from protein-energy malnutrition by age."
+        },
+        "domain_expert_context": {
+          "score": 5,
+          "justification": "The expert domain story is fully provided, explaining the definition of the condition and the limitations/uncertainties of the data."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the estimated annual number of deaths resulting from protein-energy malnutrition, broken down by age groups [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Protein-energy malnutrition is defined as a severe form of malnutrition arising from an insufficient intake of calories and protein [DIRECT].",
+      "domain_specific_explanations": "Protein-energy malnutrition (PEM) typically manifests clinically as marasmus or kwashiorkor, which serve as critical public health indicators of food insecurity and systemic poverty [SPECULATIVE: Public Health / Medicine]. The data estimates carry wide uncertainties, particularly in developing nations or regions with poor vital registration systems where deaths may go unrecorded or misclassified [DIRECT]. Analyzing this data by age group is crucial because vulnerability to malnutrition varies significantly across the lifespan, with infants, young children, and the elderly typically being at the highest risk [SPECULATIVE: Pediatrics and Geriatrics].",
+      "real_world_significance": "This data is vital for international aid organizations, policymakers, and healthcare providers to target nutritional interventions and food security programs to the most vulnerable age demographics [SPECULATIVE: Global Development Policy]. Reducing deaths from protein-energy malnutrition is a key component of global development goals, such as the United Nations Sustainable Development Goal 2, which aims to end hunger and all forms of malnutrition [SPECULATIVE: United Nations SDGs]. Inadequate vital registration systems in high-burden countries mean that the actual death toll could be higher or lower than estimated, highlighting a critical need for improving civil registration and vital statistics (CRVS) systems globally [DERIVED: Synthesized from the expert story's note on poor vital registration and wide uncertainties].",
+      "other": "Without the underlying data table or visual chart, the specific distribution of deaths across different age groups (e.g., under-5s versus the elderly) cannot be determined from the provided metadata [DERIVED: Confirmed from the absence of the data table and chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the estimated annual number of deaths resulting from protein-energy malnutrition, broken down by age groups",
+        "The data is sourced from Our World in Data",
+        "Protein-energy malnutrition is defined as a severe form of malnutrition arising from an insufficient intake of calories and protein",
+        "The data estimates carry wide uncertainties, particularly in developing nations or regions with poor vital registration systems where deaths may go unrecorded or misclassified"
+      ],
+      "derived_claims": [
+        "Inadequate vital registration systems in high-burden countries mean that the actual death toll could be higher or lower than estimated, highlighting a critical need for improving civil registration and vital statistics (CRVS) systems globally",
+        "Without the underlying data table or visual chart, the specific distribution of deaths across different age groups (e.g., under-5s versus the elderly) cannot be determined from the provided metadata"
+      ],
+      "speculative_claims": [
+        "Protein-energy malnutrition (PEM) typically manifests clinically as marasmus or kwashiorkor, which serve as critical public health indicators of food insecurity and systemic poverty",
+        "Analyzing this data by age group is crucial because vulnerability to malnutrition varies significantly across the lifespan, with infants, young children, and the elderly typically being at the highest risk",
+        "This data is vital for international aid organizations, policymakers, and healthcare providers to target nutritional interventions and food security programs to the most vulnerable age demographics",
+        "Reducing deaths from protein-energy malnutrition is a key component of global development goals, such as the United Nations Sustainable Development Goal 2, which aims to end hunger and all forms of malnutrition"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11061.446415958926,
+  "created_at": "2026-07-07T22:10:41.204680Z"
+}

@@ -1,0 +1,83 @@
+{
+  "output_id": "df3a79c6-8a0f-45f0-90dd-04cea9701e05",
+  "chart_id": "vistext_3003",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table is truncated and contains formatting anomalies like repeating 'Dec, 31.0' rows, but some key years and values are readable, and the L2 caption provides additional specific data points.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption provides a clear summary of the trend magnitudes, including the pre-1950 volatility and post-1950 stabilization ranges.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axes clearly define the subject domain as US macroeconomic history (Real GDP growth from 1930 to 2020).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No domain expert story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020 [DIRECT]. The data is presented as a line graph showing fluctuations over time [DIRECT]. This timeline covers nearly a century of American economic history, starting from the Great Depression era up to the COVID-19 pandemic in 2020 [SPECULATIVE: US Economic History].\",\n    \"domain_specific_explanations\": \"Real GDP growth measures the inflation-adjusted change in the value of all goods and services produced by an economy over a year [SPECULATIVE: Macroeconomics]. The chart shows a massive spike in GDP growth around 1942 [DIRECT], which historically corresponds to the wartime production boom of World War II [SPECULATIVE: US Economic History]. Conversely, there are notable dips in GDP growth around 1935 (-13%) and 1948 (-12%) [DIRECT]. Since around 1950, the fluctuations in US GDP growth have stabilized significantly, remaining mostly between -2% and 10% [DERIVED: Read from the L2 caption stating fluctuations are between 0.10 and -0.02]. This post-1950 stabilization is often associated with modern macroeconomic policy and the 'Great Moderation' [SPECULATIVE: Macroeconomics]. The dip around 2010 down to -0.04 [DIRECT] represents the impact of the Great Recession [SPECULATIVE: US Economic History].\",\n    \"real_world_significance\": \"GDP growth is a primary indicator of economic health; negative growth typically signifies recessions, which lead to real-world consequences like job losses and reduced consumer spending [SPECULATIVE: Macroeconomics]. The extreme volatility in the 1930s and 1940s reflects a period of intense economic crises followed by massive state-led mobilization [SPECULATIVE: US Economic History]. The relative stability of GDP growth after 1950 suggests that modern fiscal and monetary policies have been relatively successful in smoothing out the business cycle compared to the pre-WWII era [SPECULATIVE: Macroeconomics].\",\n    \"other\": \"The data table contains some formatting anomalies, such as repeating 'Dec, 31.0' rows, but the core annual growth rates for key years are readable [DERIVED: Analysis of the provided data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020\",\n      \"The data is presented as a line graph showing fluctuations over time\",\n      \"The chart shows a massive spike in GDP growth around 1942\",\n      \"There are notable dips in GDP growth around 1935 (-13%) and 1948 (-12%)\",\n      \"The dip around 2010 down to -0.04\"\n    ],\n    \"derived_claims\": [\n      \"Since around 1950, the fluctuations in US GDP growth have stabilized significantly, remaining mostly between -2% and 10% [DERIVED: Read from the L2 caption stating fluctuations are between 0.10 and -0.02]\",\n      \"The data table contains some formatting anomalies, such as repeating 'Dec, 31.0' rows, but the core annual growth rates for key years are readable [DERIVED: Analysis of the provided data table]\"\n    ],\n    \"speculative_claims\": [\n      \"This timeline covers nearly a century of American economic history, starting from the Great Depression era up to the COVID-19 pandemic in 2020 [SPECULATIVE: US Economic History]\",\n      \"Real GDP growth measures the inflation-adjusted change in the value of all goods and services produced by an economy over a year [SPECULATIVE: Macroeconomics]\",\n      \"Historically, this massive spike in the early 1940s corresponds to the wartime production boom of World War II [SPECULATIVE: US Economic History]\",\n      \"This post-1950 stabilization is often associated with modern macroeconomic policy and the 'Great Moderation' [SPECULATIVE: Macroeconomics]\",\n      \"represents the impact of the Great Recession [SPECULATIVE: US Economic History]\",\n      \"GDP growth is a primary indicator of economic health; negative growth typically signifies recessions, which lead to real-world consequences like job losses and reduced consumer spending [SPECULATIVE: Macroeconomics]\",\n      \"The extreme volatility in the 1930s and 1940s reflects a period of intense economic crises followed by massive state-led mobilization [SPECULATIVE: US Economic History]\",\n      \"The relative stability of GDP growth after 1950 suggests that modern fiscal and monetary policies have been relatively successful in smoothing out the business cycle compared to the pre-WWII era [SPECULATIVE: Macroeconomics]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 5,\n    \"derived_count\": 2,\n    \"speculative_count\": 8\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table is truncated and contains formatting anomalies like repeating 'Dec, 31.0' rows, but some key years and values are readable, and the L2 caption provides additional specific data points."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption provides a clear summary of the trend magnitudes, including the pre-1950 volatility and post-1950 stabilization ranges."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axes clearly define the subject domain as US macroeconomic history (Real GDP growth from 1930 to 2020)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No domain expert story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020 [DIRECT]. The data is presented as a line graph showing fluctuations over time [DIRECT]. This timeline covers nearly a century of American economic history, starting from the Great Depression era up to the COVID-19 pandemic in 2020 [SPECULATIVE: US Economic History].",
+      "domain_specific_explanations": "Real GDP growth measures the inflation-adjusted change in the value of all goods and services produced by an economy over a year [SPECULATIVE: Macroeconomics]. The chart shows a massive spike in GDP growth around 1942 [DIRECT], which historically corresponds to the wartime production boom of World War II [SPECULATIVE: US Economic History]. Conversely, there are notable dips in GDP growth around 1935 (-13%) and 1948 (-12%) [DIRECT]. Since around 1950, the fluctuations in US GDP growth have stabilized significantly, remaining mostly between -2% and 10% [DERIVED: Read from the L2 caption stating fluctuations are between 0.10 and -0.02]. This post-1950 stabilization is often associated with modern macroeconomic policy and the 'Great Moderation' [SPECULATIVE: Macroeconomics]. The dip around 2010 down to -0.04 [DIRECT] represents the impact of the Great Recession [SPECULATIVE: US Economic History].",
+      "real_world_significance": "GDP growth is a primary indicator of economic health; negative growth typically signifies recessions, which lead to real-world consequences like job losses and reduced consumer spending [SPECULATIVE: Macroeconomics]. The extreme volatility in the 1930s and 1940s reflects a period of intense economic crises followed by massive state-led mobilization [SPECULATIVE: US Economic History]. The relative stability of GDP growth after 1950 suggests that modern fiscal and monetary policies have been relatively successful in smoothing out the business cycle compared to the pre-WWII era [SPECULATIVE: Macroeconomics].",
+      "other": "The data table contains some formatting anomalies, such as repeating 'Dec, 31.0' rows, but the core annual growth rates for key years are readable [DERIVED: Analysis of the provided data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020",
+        "The data is presented as a line graph showing fluctuations over time",
+        "The chart shows a massive spike in GDP growth around 1942",
+        "There are notable dips in GDP growth around 1935 (-13%) and 1948 (-12%)",
+        "The dip around 2010 down to -0.04"
+      ],
+      "derived_claims": [
+        "Since around 1950, the fluctuations in US GDP growth have stabilized significantly, remaining mostly between -2% and 10% [DERIVED: Read from the L2 caption stating fluctuations are between 0.10 and -0.02]",
+        "The data table contains some formatting anomalies, such as repeating 'Dec, 31.0' rows, but the core annual growth rates for key years are readable [DERIVED: Analysis of the provided data table]"
+      ],
+      "speculative_claims": [
+        "This timeline covers nearly a century of American economic history, starting from the Great Depression era up to the COVID-19 pandemic in 2020 [SPECULATIVE: US Economic History]",
+        "Real GDP growth measures the inflation-adjusted change in the value of all goods and services produced by an economy over a year [SPECULATIVE: Macroeconomics]",
+        "Historically, this massive spike in the early 1940s corresponds to the wartime production boom of World War II [SPECULATIVE: US Economic History]",
+        "This post-1950 stabilization is often associated with modern macroeconomic policy and the 'Great Moderation' [SPECULATIVE: Macroeconomics]",
+        "represents the impact of the Great Recession [SPECULATIVE: US Economic History]",
+        "GDP growth is a primary indicator of economic health; negative growth typically signifies recessions, which lead to real-world consequences like job losses and reduced consumer spending [SPECULATIVE: Macroeconomics]",
+        "The extreme volatility in the 1930s and 1940s reflects a period of intense economic crises followed by massive state-led mobilization [SPECULATIVE: US Economic History]",
+        "The relative stability of GDP growth after 1950 suggests that modern fiscal and monetary policies have been relatively successful in smoothing out the business cycle compared to the pre-WWII era [SPECULATIVE: Macroeconomics]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 5,
+      "derived_count": 2,
+      "speculative_count": 8
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14487.044875044376,
+  "created_at": "2026-07-07T22:25:34.695795Z"
+}

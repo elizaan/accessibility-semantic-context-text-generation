@@ -1,0 +1,79 @@
+{
+  "output_id": "ce452410-28d5-48a9-aaa0-a9578b0e4060",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "vega_lite_spec",
+    "data_table",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is present but contains formatting anomalies like 'Dec,31.0' interspersed between years, and the data ends in 2017 instead of 2018 as the title suggests.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The trend is clearly readable from the data table and the L2 caption, showing a steady increase from ~63 to ~67 years.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject of life expectancy in Madagascar is clearly defined by the title and axis labels.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data shows a steady, linear increase over this decade [DERIVED: Comparing the values from 2008 to 2017 shows a consistent year-over-year growth of approximately 0.4 years per year]. This type of demographic data is typically compiled by international organizations like the World Bank or the United Nations to monitor global health and development goals [SPECULATIVE: Demography/Global Health].\",\n    \"domain_specific_explanations\": \"In demography, 'life expectancy at birth' represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life [SPECULATIVE: Demography]. A steady increase in life expectancy is generally indicative of improvements in basic living standards, such as better access to clean water, sanitation, primary healthcare, and reductions in infant mortality [SPECULATIVE: Public Health]. In Madagascar, the life expectancy rose from 62.94 years in 2008 to 66.68 years in 2017 [DIRECT].\",\n    \"real_world_significance\": \"Madagascar is a developing nation in East Africa that has faced economic challenges and political instability [SPECULATIVE: African History/Politics]. Despite these challenges, the consistent upward trend in life expectancy suggests that public health interventions, vaccination campaigns, or international aid efforts have had a positive cumulative impact on population health [SPECULATIVE: Public Health/Development Economics]. However, a life expectancy of around 66-67 years remains below the global average, which was over 72 years during the same period, highlighting ongoing development needs [SPECULATIVE: Global Health]. Policymakers and NGOs use this data to evaluate the effectiveness of healthcare investments and plan future social security and healthcare infrastructure [SPECULATIVE: Public Policy].\",\n    \"other\": \"The data table contains some formatting anomalies, such as 'Dec,31.0' entries, but the annual progression remains clear [DERIVED: Observed the repeating 'Dec,31.0' rows in the provided data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018\",\n      \"In Madagascar, the life expectancy rose from 62.94 years in 2008 to 66.68 years in 2017\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a steady, linear increase over this decade\",\n      \"The data table contains some formatting anomalies, such as 'Dec,31.0' entries, but the annual progression remains clear\"\n    ],\n    \"speculative_claims\": [\n      \"This type of demographic data is typically compiled by international organizations like the World Bank or the United Nations to monitor global health and development goals\",\n      \"In demography, 'life expectancy at birth' represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life\",\n      \"A steady increase in life expectancy is generally indicative of improvements in basic living standards, such as better access to clean water, sanitation, primary healthcare, and reductions in infant mortality\",\n      \"Madagascar is a developing nation in East Africa that has faced economic challenges and political instability\",\n      \"Despite these challenges, the consistent upward trend in life expectancy suggests that public health interventions, vaccination campaigns, or international aid efforts have had a positive cumulative impact on population health\",\n      \"However, a life expectancy of around 66-67 years remains below the global average, which was over 72 years during the same period, highlighting ongoing development needs\",\n      \"Policymakers and NGOs use this data to evaluate the effectiveness of healthcare investments and plan future social security and healthcare infrastructure\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is present but contains formatting anomalies like 'Dec,31.0' interspersed between years, and the data ends in 2017 instead of 2018 as the title suggests."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The trend is clearly readable from the data table and the L2 caption, showing a steady increase from ~63 to ~67 years."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject of life expectancy in Madagascar is clearly defined by the title and axis labels."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data shows a steady, linear increase over this decade [DERIVED: Comparing the values from 2008 to 2017 shows a consistent year-over-year growth of approximately 0.4 years per year]. This type of demographic data is typically compiled by international organizations like the World Bank or the United Nations to monitor global health and development goals [SPECULATIVE: Demography/Global Health].",
+      "domain_specific_explanations": "In demography, 'life expectancy at birth' represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life [SPECULATIVE: Demography]. A steady increase in life expectancy is generally indicative of improvements in basic living standards, such as better access to clean water, sanitation, primary healthcare, and reductions in infant mortality [SPECULATIVE: Public Health]. In Madagascar, the life expectancy rose from 62.94 years in 2008 to 66.68 years in 2017 [DIRECT].",
+      "real_world_significance": "Madagascar is a developing nation in East Africa that has faced economic challenges and political instability [SPECULATIVE: African History/Politics]. Despite these challenges, the consistent upward trend in life expectancy suggests that public health interventions, vaccination campaigns, or international aid efforts have had a positive cumulative impact on population health [SPECULATIVE: Public Health/Development Economics]. However, a life expectancy of around 66-67 years remains below the global average, which was over 72 years during the same period, highlighting ongoing development needs [SPECULATIVE: Global Health]. Policymakers and NGOs use this data to evaluate the effectiveness of healthcare investments and plan future social security and healthcare infrastructure [SPECULATIVE: Public Policy].",
+      "other": "The data table contains some formatting anomalies, such as 'Dec,31.0' entries, but the annual progression remains clear [DERIVED: Observed the repeating 'Dec,31.0' rows in the provided data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018",
+        "In Madagascar, the life expectancy rose from 62.94 years in 2008 to 66.68 years in 2017"
+      ],
+      "derived_claims": [
+        "The data shows a steady, linear increase over this decade",
+        "The data table contains some formatting anomalies, such as 'Dec,31.0' entries, but the annual progression remains clear"
+      ],
+      "speculative_claims": [
+        "This type of demographic data is typically compiled by international organizations like the World Bank or the United Nations to monitor global health and development goals",
+        "In demography, 'life expectancy at birth' represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life",
+        "A steady increase in life expectancy is generally indicative of improvements in basic living standards, such as better access to clean water, sanitation, primary healthcare, and reductions in infant mortality",
+        "Madagascar is a developing nation in East Africa that has faced economic challenges and political instability",
+        "Despite these challenges, the consistent upward trend in life expectancy suggests that public health interventions, vaccination campaigns, or international aid efforts have had a positive cumulative impact on population health",
+        "However, a life expectancy of around 66-67 years remains below the global average, which was over 72 years during the same period, highlighting ongoing development needs",
+        "Policymakers and NGOs use this data to evaluate the effectiveness of healthcare investments and plan future social security and healthcare infrastructure"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15541.71508300351,
+  "created_at": "2026-07-07T22:42:14.096417Z"
+}

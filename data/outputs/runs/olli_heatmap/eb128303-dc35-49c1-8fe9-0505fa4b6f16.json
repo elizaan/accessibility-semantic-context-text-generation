@@ -1,0 +1,69 @@
+{
+  "output_id": "eb128303-dc35-49c1-8fe9-0505fa4b6f16",
+  "chart_id": "olli_heatmap",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table not provided but some data insights are available\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"Some aggregated data provided but detailed trend analysis is not\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"Chart subject domain is clear (daily max temperatures in Seattle)\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays daily maximum temperatures in Seattle, WA, over a year [DIRECT]. It is a heatmap with days of the month on the X-axis and months of the year on the Y-axis [DIRECT]. The data likely spans multiple years to provide average maximum temperatures for each day across the year [DERIVED: from the OLLI SCREEN READER TREE] The chart helps in understanding temperature patterns and variations throughout the year in Seattle [SPECULATIVE: general knowledge of weather charts].\",\n    \"domain_specific_explanations\": \"The chart provides average maximum temperatures for each day of the year in Seattle [DIRECT]. For instance, the average maximum temperature on the 1st of any month is around 11.8°C in January and 20.0°C in April [DERIVED: from OLLI SCREEN READER TREE]. The temperatures are likely in Celsius, as indicated by '(C)' in the title [DIRECT]. The data could be used to plan activities or understand climate patterns [SPECULATIVE: general knowledge of weather data usage].\",\n    \"real_world_significance\": \"This data matters for residents and visitors in Seattle to plan daily activities according to expected temperatures [SPECULATIVE: general knowledge of weather impact on daily life]. It can also be significant for agriculture, urban planning, and tourism [SPECULATIVE: general knowledge of weather impact on various sectors]. For example, July and August have the highest average maximum temperatures, indicating peak summer [DERIVED: from OLLI SCREEN READER TREE].\",\n    \"other\": \"The chart does not provide information on other weather conditions like precipitation, which could also be important for a comprehensive understanding of Seattle's climate [SPECULATIVE: general knowledge of weather data]. The data seems to be averaged over multiple years, which could mask extreme temperatures in any given year [SPECULATIVE: general knowledge of climate data].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays daily maximum temperatures in Seattle, WA, over a year\",\n      \"It is a heatmap with days of the month on the X-axis and months of the year on the Y-axis\",\n      \"The title of the chart is 'Daily Max Temperatures (C) in Seattle, WA'\",\n      \"The temperatures are likely in Celsius, as indicated by '(C)' in the title\"\n    ],\n    \"derived_claims\": [\n      \"The data likely spans multiple years to provide average maximum temperatures for each day across the year\",\n      \"For instance, the average maximum temperature on the 1st of any month is around 11.8°C in January and 20.0°C in April\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for residents and visitors in Seattle to plan daily activities according to expected temperatures\",\n      \"It can also be significant for agriculture, urban planning, and tourism\",\n      \"The data seems to be averaged over multiple years, which could mask extreme temperatures in any given year\",\n      \"The chart does not provide information on other weather conditions like precipitation, which could also be important for a comprehensive understanding of Seattle's climate\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table not provided but some data insights are available"
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Some aggregated data provided but detailed trend analysis is not"
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "Chart subject domain is clear (daily max temperatures in Seattle)"
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays daily maximum temperatures in Seattle, WA, over a year [DIRECT]. It is a heatmap with days of the month on the X-axis and months of the year on the Y-axis [DIRECT]. The data likely spans multiple years to provide average maximum temperatures for each day across the year [DERIVED: from the OLLI SCREEN READER TREE] The chart helps in understanding temperature patterns and variations throughout the year in Seattle [SPECULATIVE: general knowledge of weather charts].",
+      "domain_specific_explanations": "The chart provides average maximum temperatures for each day of the year in Seattle [DIRECT]. For instance, the average maximum temperature on the 1st of any month is around 11.8°C in January and 20.0°C in April [DERIVED: from OLLI SCREEN READER TREE]. The temperatures are likely in Celsius, as indicated by '(C)' in the title [DIRECT]. The data could be used to plan activities or understand climate patterns [SPECULATIVE: general knowledge of weather data usage].",
+      "real_world_significance": "This data matters for residents and visitors in Seattle to plan daily activities according to expected temperatures [SPECULATIVE: general knowledge of weather impact on daily life]. It can also be significant for agriculture, urban planning, and tourism [SPECULATIVE: general knowledge of weather impact on various sectors]. For example, July and August have the highest average maximum temperatures, indicating peak summer [DERIVED: from OLLI SCREEN READER TREE].",
+      "other": "The chart does not provide information on other weather conditions like precipitation, which could also be important for a comprehensive understanding of Seattle's climate [SPECULATIVE: general knowledge of weather data]. The data seems to be averaged over multiple years, which could mask extreme temperatures in any given year [SPECULATIVE: general knowledge of climate data]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays daily maximum temperatures in Seattle, WA, over a year",
+        "It is a heatmap with days of the month on the X-axis and months of the year on the Y-axis",
+        "The title of the chart is 'Daily Max Temperatures (C) in Seattle, WA'",
+        "The temperatures are likely in Celsius, as indicated by '(C)' in the title"
+      ],
+      "derived_claims": [
+        "The data likely spans multiple years to provide average maximum temperatures for each day across the year",
+        "For instance, the average maximum temperature on the 1st of any month is around 11.8°C in January and 20.0°C in April"
+      ],
+      "speculative_claims": [
+        "This data matters for residents and visitors in Seattle to plan daily activities according to expected temperatures",
+        "It can also be significant for agriculture, urban planning, and tourism",
+        "The data seems to be averaged over multiple years, which could mask extreme temperatures in any given year",
+        "The chart does not provide information on other weather conditions like precipitation, which could also be important for a comprehensive understanding of Seattle's climate"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 3198,
+    "output": 821
+  },
+  "latency_ms": 3255.2870420040563,
+  "created_at": "2026-07-08T14:23:48.710505Z"
+}

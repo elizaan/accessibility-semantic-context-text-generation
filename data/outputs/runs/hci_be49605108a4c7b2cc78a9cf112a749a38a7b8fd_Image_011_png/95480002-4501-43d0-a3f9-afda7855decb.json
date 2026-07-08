@@ -1,0 +1,77 @@
+{
+  "output_id": "95480002-4501-43d0-a3f9-afda7855decb",
+  "chart_id": "hci_be49605108a4c7b2cc78a9cf112a749a38a7b8fd_Image_011_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No raw data values or data table were provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The alt text describes the shape of the data ('comet-like' patterns) but provides no quantitative trend magnitudes or coordinates.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly identify this as a study on VR/AR input devices (HMD and controller angular movements) from CHI 2020.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story provides the publication venue (CHI 2020), the full figure caption, and a link to the source paper.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.6\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a research paper published at the CHI 2020 conference [DIRECT]. It visualizes the angular movements of a Head-Mounted Display (HMD) and a handheld controller relative to the angular distance to a target [DIRECT]. The research originates from the field of Human-Computer Interaction (HCI), specifically focusing on virtual reality (VR) or augmented reality (AR) input mechanics [SPECULATIVE: Human-Computer Interaction].\",\n    \"domain_specific_explanations\": \"In VR/AR systems, the HMD tracks head orientation (often correlated with gaze), while the controller tracks hand pointing [SPECULATIVE: Virtual Reality technology]. The chart uses a scatter plot where each trial is represented as a point, forming 'comet-like' shapes for each tracked cardinal direction [DERIVED: read from the human-written alt text]. The 'nucleus' of each comet represents the controller's pointing direction at the moment of selection, while the 'tail' represents the HMD's orientation at that same moment [DERIVED: read from the human-written alt text]. Error bars are included to represent the standard error of these angular movements [DIRECT].\",\n    \"real_world_significance\": \"This data is significant for VR and AR system developers who design spatial interaction techniques [SPECULATIVE: VR/AR Interaction Design]. By analyzing the spatial offset between where a user looks (HMD) and where they point (controller) across different cardinal directions, designers can build more forgiving target-acquisition algorithms [SPECULATIVE: VR/AR Interaction Design]. For example, understanding these coordination patterns helps prevent user fatigue and improves accessibility for users with limited mobility [SPECULATIVE: Assistive Technology / VR Accessibility].\",\n    \"other\": \"The visualization tracks these movements across different cardinal directions, suggesting that target acquisition behavior might vary depending on whether the target is to the left, right, up, or down relative to the user [DERIVED: inferred from the alt text mentioning 'each cardinal direction tracked'].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a research paper published at the CHI 2020 conference\",\n      \"It visualizes the angular movements of a Head-Mounted Display (HMD) and a handheld controller relative to the angular distance to a target\",\n      \"Error bars are included to represent the standard error of these angular movements\"\n    ],\n    \"derived_claims\": [\n      \"The chart uses a scatter plot where each trial is represented as a point, forming 'comet-like' shapes for each tracked cardinal direction\",\n      \"The 'nucleus' of each comet represents the controller's pointing direction at the moment of selection, while the 'tail' represents the HMD's orientation at that same moment\",\n      \"The visualization tracks these movements across different cardinal directions, suggesting that target acquisition behavior might vary depending on whether the target is to the left, right, up, or down relative to the user\"\n    ],\n    \"speculative_claims\": [\n      \"The research originates from the field of Human-Computer Interaction (HCI), specifically focusing on virtual reality (VR) or augmented reality (AR) input mechanics\",\n      \"In VR/AR systems, the HMD tracks head orientation (often correlated with gaze), while the controller tracks hand pointing\",\n      \"This data is significant for VR and AR system developers who design spatial interaction techniques\",\n      \"By analyzing the spatial offset between where a user looks (HMD) and where they point (controller) across different cardinal directions, designers can build more forgiving target-acquisition algorithms\",\n      \"For example, understanding these coordination patterns helps prevent user fatigue and improves accessibility for users with limited mobility\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No raw data values or data table were provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The alt text describes the shape of the data ('comet-like' patterns) but provides no quantitative trend magnitudes or coordinates."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly identify this as a study on VR/AR input devices (HMD and controller angular movements) from CHI 2020."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story provides the publication venue (CHI 2020), the full figure caption, and a link to the source paper."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.6
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a research paper published at the CHI 2020 conference [DIRECT]. It visualizes the angular movements of a Head-Mounted Display (HMD) and a handheld controller relative to the angular distance to a target [DIRECT]. The research originates from the field of Human-Computer Interaction (HCI), specifically focusing on virtual reality (VR) or augmented reality (AR) input mechanics [SPECULATIVE: Human-Computer Interaction].",
+      "domain_specific_explanations": "In VR/AR systems, the HMD tracks head orientation (often correlated with gaze), while the controller tracks hand pointing [SPECULATIVE: Virtual Reality technology]. The chart uses a scatter plot where each trial is represented as a point, forming 'comet-like' shapes for each tracked cardinal direction [DERIVED: read from the human-written alt text]. The 'nucleus' of each comet represents the controller's pointing direction at the moment of selection, while the 'tail' represents the HMD's orientation at that same moment [DERIVED: read from the human-written alt text]. Error bars are included to represent the standard error of these angular movements [DIRECT].",
+      "real_world_significance": "This data is significant for VR and AR system developers who design spatial interaction techniques [SPECULATIVE: VR/AR Interaction Design]. By analyzing the spatial offset between where a user looks (HMD) and where they point (controller) across different cardinal directions, designers can build more forgiving target-acquisition algorithms [SPECULATIVE: VR/AR Interaction Design]. For example, understanding these coordination patterns helps prevent user fatigue and improves accessibility for users with limited mobility [SPECULATIVE: Assistive Technology / VR Accessibility].",
+      "other": "The visualization tracks these movements across different cardinal directions, suggesting that target acquisition behavior might vary depending on whether the target is to the left, right, up, or down relative to the user [DERIVED: inferred from the alt text mentioning 'each cardinal direction tracked']."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a research paper published at the CHI 2020 conference",
+        "It visualizes the angular movements of a Head-Mounted Display (HMD) and a handheld controller relative to the angular distance to a target",
+        "Error bars are included to represent the standard error of these angular movements"
+      ],
+      "derived_claims": [
+        "The chart uses a scatter plot where each trial is represented as a point, forming 'comet-like' shapes for each tracked cardinal direction",
+        "The 'nucleus' of each comet represents the controller's pointing direction at the moment of selection, while the 'tail' represents the HMD's orientation at that same moment",
+        "The visualization tracks these movements across different cardinal directions, suggesting that target acquisition behavior might vary depending on whether the target is to the left, right, up, or down relative to the user"
+      ],
+      "speculative_claims": [
+        "The research originates from the field of Human-Computer Interaction (HCI), specifically focusing on virtual reality (VR) or augmented reality (AR) input mechanics",
+        "In VR/AR systems, the HMD tracks head orientation (often correlated with gaze), while the controller tracks hand pointing",
+        "This data is significant for VR and AR system developers who design spatial interaction techniques",
+        "By analyzing the spatial offset between where a user looks (HMD) and where they point (controller) across different cardinal directions, designers can build more forgiving target-acquisition algorithms",
+        "For example, understanding these coordination patterns helps prevent user fatigue and improves accessibility for users with limited mobility"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13557.7044999809,
+  "created_at": "2026-07-07T21:34:27.735788Z"
+}

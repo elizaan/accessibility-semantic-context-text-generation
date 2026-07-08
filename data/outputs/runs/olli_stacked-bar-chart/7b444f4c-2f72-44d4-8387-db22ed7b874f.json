@@ -1,0 +1,66 @@
+{
+  "output_id": "7b444f4c-2f72-44d4-8387-db22ed7b874f",
+  "chart_id": "olli_stacked-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact numerical values for each segment are not provided, but the cumulative totals can be reasonably estimated from the x-axis scale.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relative differences in cumulative yields between varieties and the contributions of different sites are visually clear.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The specific names of varieties (e.g., Glabron, Manchuria, Trebi) and sites (e.g., Crookston, Waseca) strongly identify this as the classic Minnesota barley yield dataset.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the sum of crop yields (likely barley, based on the classic dataset names) for ten different plant varieties across six experimental sites [SPECULATIVE: agricultural history / R datasets]. The varieties listed are Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38 [DIRECT]. The six experimental sites where these trials occurred are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DIRECT]. The total cumulative yield for each variety is represented as a stacked bar, ranging from approximately 360 to 475 units [DERIVED: read minimum and maximum bar lengths from the x-axis].\",\n    \"domain_specific_explanations\": \"In agricultural trials, stacking yields across multiple sites helps researchers evaluate the overall performance and adaptability of different crop varieties under varying environmental conditions [SPECULATIVE: agronomy]. Trebi and Wisconsin No. 38 show the highest cumulative yields, both approaching 475 units [DERIVED: compared cumulative bar lengths for Trebi and Wisconsin No. 38]. Conversely, Svansota has the lowest cumulative yield, totaling around 360 units [DERIVED: read bar length for Svansota]. The relatively consistent segment sizes across varieties suggest that site-specific environmental factors (such as soil quality or local climate) had a fairly uniform relative impact across all tested varieties [DERIVED: observed segment proportions across bars].\",\n    \"real_world_significance\": \"This dataset (historically from the 1930s Minnesota barley trials) is crucial for agronomists and farmers deciding which crop varieties to plant to maximize food security and yield stability [SPECULATIVE: agricultural history]. Selecting high-performing varieties like Trebi or Wisconsin No. 38 over lower-performing ones like Svansota could result in an approximate 30% increase in total harvest yield [DERIVED: calculated percentage difference (475 - 360) / 360]. Such decisions directly impact agricultural economics, regional food supply chains, and farm profitability [SPECULATIVE: agricultural economics].\",\n    \"other\": \"The visual representation uses a stacked bar format which makes it easy to see total yield but harder to compare individual site yields across varieties without careful alignment [DERIVED: analyzed the chart's visual structure and usability limitations].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The varieties listed are Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38\",\n      \"The six experimental sites where these trials occurred are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca\"\n    ],\n    \"derived_claims\": [\n      \"The total cumulative yield for each variety is represented as a stacked bar, ranging from approximately 360 to 475 units\",\n      \"Trebi and Wisconsin No. 38 show the highest cumulative yields, both approaching 475 units\",\n      \"Conversely, Svansota has the lowest cumulative yield, totaling around 360 units\",\n      \"The relatively consistent segment sizes across varieties suggest that site-specific environmental factors (such as soil quality or local climate) had a fairly uniform relative impact across all tested varieties\",\n      \"Selecting high-performing varieties like Trebi or Wisconsin No. 38 over lower-performing ones like Svansota could result in an approximate 30% increase in total harvest yield\",\n      \"The visual representation uses a stacked bar format which makes it easy to see total yield but harder to compare individual site yields across varieties without careful alignment\"\n    ],\n    \"speculative_claims\": [\n      \"The chart displays the sum of crop yields (likely barley, based on the classic dataset names) for ten different plant varieties across six experimental sites\",\n      \"In agricultural trials, stacking yields across multiple sites helps researchers evaluate the overall performance and adaptability of different crop varieties under varying environmental conditions\",\n      \"This dataset (historically from the 1930s Minnesota barley trials) is crucial for agronomists and farmers deciding which crop varieties to plant to maximize food security and yield stability\",\n      \"Such decisions directly impact agricultural economics, regional food supply chains, and farm profitability\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 6,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact numerical values for each segment are not provided, but the cumulative totals can be reasonably estimated from the x-axis scale."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relative differences in cumulative yields between varieties and the contributions of different sites are visually clear."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The specific names of varieties (e.g., Glabron, Manchuria, Trebi) and sites (e.g., Crookston, Waseca) strongly identify this as the classic Minnesota barley yield dataset."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the sum of crop yields (likely barley, based on the classic dataset names) for ten different plant varieties across six experimental sites [SPECULATIVE: agricultural history / R datasets]. The varieties listed are Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38 [DIRECT]. The six experimental sites where these trials occurred are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca [DIRECT]. The total cumulative yield for each variety is represented as a stacked bar, ranging from approximately 360 to 475 units [DERIVED: read minimum and maximum bar lengths from the x-axis].",
+      "domain_specific_explanations": "In agricultural trials, stacking yields across multiple sites helps researchers evaluate the overall performance and adaptability of different crop varieties under varying environmental conditions [SPECULATIVE: agronomy]. Trebi and Wisconsin No. 38 show the highest cumulative yields, both approaching 475 units [DERIVED: compared cumulative bar lengths for Trebi and Wisconsin No. 38]. Conversely, Svansota has the lowest cumulative yield, totaling around 360 units [DERIVED: read bar length for Svansota]. The relatively consistent segment sizes across varieties suggest that site-specific environmental factors (such as soil quality or local climate) had a fairly uniform relative impact across all tested varieties [DERIVED: observed segment proportions across bars].",
+      "real_world_significance": "This dataset (historically from the 1930s Minnesota barley trials) is crucial for agronomists and farmers deciding which crop varieties to plant to maximize food security and yield stability [SPECULATIVE: agricultural history]. Selecting high-performing varieties like Trebi or Wisconsin No. 38 over lower-performing ones like Svansota could result in an approximate 30% increase in total harvest yield [DERIVED: calculated percentage difference (475 - 360) / 360]. Such decisions directly impact agricultural economics, regional food supply chains, and farm profitability [SPECULATIVE: agricultural economics].",
+      "other": "The visual representation uses a stacked bar format which makes it easy to see total yield but harder to compare individual site yields across varieties without careful alignment [DERIVED: analyzed the chart's visual structure and usability limitations]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The varieties listed are Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, and Wisconsin No. 38",
+        "The six experimental sites where these trials occurred are Crookston, Duluth, Grand Rapids, Morris, University Farm, and Waseca"
+      ],
+      "derived_claims": [
+        "The total cumulative yield for each variety is represented as a stacked bar, ranging from approximately 360 to 475 units",
+        "Trebi and Wisconsin No. 38 show the highest cumulative yields, both approaching 475 units",
+        "Conversely, Svansota has the lowest cumulative yield, totaling around 360 units",
+        "The relatively consistent segment sizes across varieties suggest that site-specific environmental factors (such as soil quality or local climate) had a fairly uniform relative impact across all tested varieties",
+        "Selecting high-performing varieties like Trebi or Wisconsin No. 38 over lower-performing ones like Svansota could result in an approximate 30% increase in total harvest yield",
+        "The visual representation uses a stacked bar format which makes it easy to see total yield but harder to compare individual site yields across varieties without careful alignment"
+      ],
+      "speculative_claims": [
+        "The chart displays the sum of crop yields (likely barley, based on the classic dataset names) for ten different plant varieties across six experimental sites",
+        "In agricultural trials, stacking yields across multiple sites helps researchers evaluate the overall performance and adaptability of different crop varieties under varying environmental conditions",
+        "This dataset (historically from the 1930s Minnesota barley trials) is crucial for agronomists and farmers deciding which crop varieties to plant to maximize food security and yield stability",
+        "Such decisions directly impact agricultural economics, regional food supply chains, and farm profitability"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 6,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12556.553083995823,
+  "created_at": "2026-07-08T14:26:44.022233Z"
+}

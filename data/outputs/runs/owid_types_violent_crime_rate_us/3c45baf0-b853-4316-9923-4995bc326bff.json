@@ -1,0 +1,76 @@
+{
+  "output_id": "3c45baf0-b853-4316-9923-4995bc326bff",
+  "chart_id": "owid_types_violent_crime_rate_us",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No data table was provided, but approximate values can be read directly from the axes of the four sub-charts in the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The visual trends and relative magnitudes of the four crime categories are clearly visible, though exact numerical changes are not provided in text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, source, and explanatory notes provide excellent context regarding the domain, definitions of violent crime, and data adjustments.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided in the metadata.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart, published by Our World in Data using FBI (2025) data [DIRECT], tracks violent crime rates in the United States per 100,000 people from 1979 to 2024 [DIRECT]. The overall violent crime rate is defined as including four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault [DIRECT]. However, rape is excluded from the individual sub-charts due to a lack of comparable long-term data [DIRECT]. To ensure long-term consistency, the FBI adjusts reported crime data to account for gaps and underreporting, meaning these figures may differ from raw reported crime statistics [DIRECT].\",\n    \"domain_specific_explanations\": \"The data shows that the overall violent crime rate in the US peaked in the early 1990s (around 1991–1992) at over 700 per 100,000 people and has since declined significantly to under 400 per 100,000 by 2024 [DERIVED: read from the 'Violent crime' chart]. Aggravated assault makes up the largest share of the overall violent crime rate, peaking at over 400 per 100,000 in the early 1990s and remaining above 250 per 100,000 in 2024 [DERIVED: compared 'Aggravated assault' values to other sub-charts]. Robbery has seen the most dramatic and consistent long-term decline, falling from a peak of over 250 per 100,000 in 1991 to around 60 per 100,000 in 2024 [DERIVED: read from 'Robbery' chart]. Homicide rates, while much lower in absolute terms (measured on a scale of 0 to 10 per 100,000), show a distinct spike around 2020–2021 (reaching nearly 7 per 100,000) before declining again towards 2024 [DERIVED: read from 'Homicide' chart].\",\n    \"real_world_significance\": \"The dramatic decline in violent crime since the 1990s peak is a well-documented phenomenon in criminology, often attributed to factors like the phase-out of leaded gasoline, economic improvements, changes in policing, or demographic shifts [SPECULATIVE: Criminology]. The spike in homicides around 2020–2021 aligns with the COVID-19 pandemic, social unrest, and changes in policing/community relations during that period [SPECULATIVE: Sociology / Public Policy]. Understanding these long-term trends is crucial for policymakers, law enforcement, and community organizations to allocate resources and evaluate the effectiveness of crime prevention strategies [SPECULATIVE: Public Policy]. Furthermore, public perception of crime often diverges from actual data; despite long-term declines shown here, public polls frequently show that citizens believe crime is rising [SPECULATIVE: Public Opinion / Media Studies].\",\n    \"other\": \"The note about FBI data adjustment is critical because raw reported crime figures can be misleading due to changes in reporting participation by local police departments over the decades [SPECULATIVE: Criminology / Data Science].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart, published by Our World in Data using FBI (2025) data.\",\n      \"It tracks violent crime rates in the United States per 100,000 people from 1979 to 2024.\",\n      \"The overall violent crime rate is defined as including four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault.\",\n      \"However, rape is excluded from the individual sub-charts due to a lack of comparable long-term data.\",\n      \"To ensure long-term consistency, the FBI adjusts reported crime data to account for gaps and underreporting, meaning these figures may differ from raw reported crime statistics.\"\n    ],\n    \"derived_claims\": [\n      \"The overall violent crime rate in the US peaked in the early 1990s (around 1991–1992) at over 700 per 100,000 people and has since declined significantly to under 400 per 100,000 by 2024.\",\n      \"Aggravated assault makes up the largest share of the overall violent crime rate, peaking at over 400 per 100,000 in the early 1990s and remaining above 250 per 100,000 in 2024.\",\n      \"Robbery has seen the most dramatic and consistent long-term decline, falling from a peak of over 250 per 100,000 in 1991 to around 60 per 100,000 in 2024.\",\n      \"Homicide rates, while much lower in absolute terms (measured on a scale of 0 to 10 per 100,000), show a distinct spike around 2020–2021 (reaching nearly 7 per 100,000) before declining again towards 2024.\"\n    ],\n    \"speculative_claims\": [\n      \"The dramatic decline in violent crime since the 1990s peak is a well-documented phenomenon in criminology, often attributed to factors like the phase-out of leaded gasoline, economic improvements, changes in policing, or demographic shifts.\",\n      \"The spike in homicides around 2020–2021 aligns with the COVID-19 pandemic, social unrest, and changes in policing/community relations during that period.\",\n      \"Understanding these long-term trends is crucial for policymakers, law enforcement, and community organizations to allocate resources and evaluate the effectiveness of crime prevention strategies.\",\n      \"Public perception of crime often diverges from actual data; despite long-term declines shown here, public polls frequently show that citizens believe crime is rising.\",\n      \"The note about FBI data adjustment is critical because raw reported crime figures can be misleading due to changes in reporting participation by local police departments over the decades.\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No data table was provided, but approximate values can be read directly from the axes of the four sub-charts in the image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The visual trends and relative magnitudes of the four crime categories are clearly visible, though exact numerical changes are not provided in text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, source, and explanatory notes provide excellent context regarding the domain, definitions of violent crime, and data adjustments."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided in the metadata."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart, published by Our World in Data using FBI (2025) data [DIRECT], tracks violent crime rates in the United States per 100,000 people from 1979 to 2024 [DIRECT]. The overall violent crime rate is defined as including four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault [DIRECT]. However, rape is excluded from the individual sub-charts due to a lack of comparable long-term data [DIRECT]. To ensure long-term consistency, the FBI adjusts reported crime data to account for gaps and underreporting, meaning these figures may differ from raw reported crime statistics [DIRECT].",
+      "domain_specific_explanations": "The data shows that the overall violent crime rate in the US peaked in the early 1990s (around 1991–1992) at over 700 per 100,000 people and has since declined significantly to under 400 per 100,000 by 2024 [DERIVED: read from the 'Violent crime' chart]. Aggravated assault makes up the largest share of the overall violent crime rate, peaking at over 400 per 100,000 in the early 1990s and remaining above 250 per 100,000 in 2024 [DERIVED: compared 'Aggravated assault' values to other sub-charts]. Robbery has seen the most dramatic and consistent long-term decline, falling from a peak of over 250 per 100,000 in 1991 to around 60 per 100,000 in 2024 [DERIVED: read from 'Robbery' chart]. Homicide rates, while much lower in absolute terms (measured on a scale of 0 to 10 per 100,000), show a distinct spike around 2020–2021 (reaching nearly 7 per 100,000) before declining again towards 2024 [DERIVED: read from 'Homicide' chart].",
+      "real_world_significance": "The dramatic decline in violent crime since the 1990s peak is a well-documented phenomenon in criminology, often attributed to factors like the phase-out of leaded gasoline, economic improvements, changes in policing, or demographic shifts [SPECULATIVE: Criminology]. The spike in homicides around 2020–2021 aligns with the COVID-19 pandemic, social unrest, and changes in policing/community relations during that period [SPECULATIVE: Sociology / Public Policy]. Understanding these long-term trends is crucial for policymakers, law enforcement, and community organizations to allocate resources and evaluate the effectiveness of crime prevention strategies [SPECULATIVE: Public Policy]. Furthermore, public perception of crime often diverges from actual data; despite long-term declines shown here, public polls frequently show that citizens believe crime is rising [SPECULATIVE: Public Opinion / Media Studies].",
+      "other": "The note about FBI data adjustment is critical because raw reported crime figures can be misleading due to changes in reporting participation by local police departments over the decades [SPECULATIVE: Criminology / Data Science]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart, published by Our World in Data using FBI (2025) data.",
+        "It tracks violent crime rates in the United States per 100,000 people from 1979 to 2024.",
+        "The overall violent crime rate is defined as including four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault.",
+        "However, rape is excluded from the individual sub-charts due to a lack of comparable long-term data.",
+        "To ensure long-term consistency, the FBI adjusts reported crime data to account for gaps and underreporting, meaning these figures may differ from raw reported crime statistics."
+      ],
+      "derived_claims": [
+        "The overall violent crime rate in the US peaked in the early 1990s (around 1991–1992) at over 700 per 100,000 people and has since declined significantly to under 400 per 100,000 by 2024.",
+        "Aggravated assault makes up the largest share of the overall violent crime rate, peaking at over 400 per 100,000 in the early 1990s and remaining above 250 per 100,000 in 2024.",
+        "Robbery has seen the most dramatic and consistent long-term decline, falling from a peak of over 250 per 100,000 in 1991 to around 60 per 100,000 in 2024.",
+        "Homicide rates, while much lower in absolute terms (measured on a scale of 0 to 10 per 100,000), show a distinct spike around 2020–2021 (reaching nearly 7 per 100,000) before declining again towards 2024."
+      ],
+      "speculative_claims": [
+        "The dramatic decline in violent crime since the 1990s peak is a well-documented phenomenon in criminology, often attributed to factors like the phase-out of leaded gasoline, economic improvements, changes in policing, or demographic shifts.",
+        "The spike in homicides around 2020–2021 aligns with the COVID-19 pandemic, social unrest, and changes in policing/community relations during that period.",
+        "Understanding these long-term trends is crucial for policymakers, law enforcement, and community organizations to allocate resources and evaluate the effectiveness of crime prevention strategies.",
+        "Public perception of crime often diverges from actual data; despite long-term declines shown here, public polls frequently show that citizens believe crime is rising.",
+        "The note about FBI data adjustment is critical because raw reported crime figures can be misleading due to changes in reporting participation by local police departments over the decades."
+      ],
+      "total_flag_count": 14,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14928.983208024874,
+  "created_at": "2026-07-07T22:05:46.149030Z"
+}

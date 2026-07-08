@@ -1,0 +1,78 @@
+{
+  "output_id": "aea1b6a4-f307-4de2-82a2-20947e547d34",
+  "chart_id": "owid_countries_with_restrictions_on_international_travels",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values are not provided in a table, but the categories and approximate trends can be read directly from the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall trends, peaks, and transitions between different restriction types are clearly visible over the 2020-2022 timeline.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and source clearly establish the domain as global COVID-19 travel restrictions.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story and source URL are provided, giving context on what the restrictions represent.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is titled 'COVID-19: Countries with restrictions on international travels' [DIRECT] and is produced by Our World in Data using data from the Blavatnik School of Government, University of Oxford (2023) [DIRECT]. It tracks the number of recorded countries with a given type of restriction on international travel arrivals from early 2020 through late 2022 [DIRECT]. The categories of restrictions tracked include 'Complete ban', 'Partial ban', 'Quarantine on some arrivals', 'Screening arrivals', and 'No restrictions' [DERIVED: read from the chart legend].\",\n    \"domain_specific_explanations\": \"In countries where restrictions differ between regions or cities, the coding system refers to the most stringent policy in the country at a given time [DIRECT]. In early 2020, there was a rapid, massive spike in 'Complete ban' and 'Partial ban' policies as the pandemic began [DERIVED: observed the sharp rise in the dark red and pink areas starting around March 2020]. Over time, complete bans decreased, transitioning into partial bans, quarantine requirements, and screening measures [DERIVED: observed the shrinking of the dark red area and the expansion of the tan and blue areas through 2021]. This reflects the global shift from elimination/containment strategies to living with the virus and relying on vaccination and testing [SPECULATIVE: public health history].\",\n    \"real_world_significance\": \"These travel restrictions had profound impacts on global tourism, international trade, and family reunifications [SPECULATIVE: global economics and sociology]. The rapid implementation of bans in early 2020 shows the unprecedented global response to a novel pathogen [SPECULATIVE: public health policy]. The gradual easing of restrictions in 2022, where the vast majority of countries transitioned to 'No restrictions' or 'Screening arrivals' [DERIVED: observed the green area dominating the top and the blue area below it, with the red/pink areas nearly disappearing by Dec 31, 2022], aligns with the widespread rollout of COVID-19 vaccines and a shift toward endemic management [SPECULATIVE: epidemiology].\",\n    \"other\": \"The total number of countries tracked appears to be around 180, as the stacked area reaches a maximum height of approximately 180 on the Y-axis [DERIVED: read the maximum height of the stacked area on the Y-axis].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is titled 'COVID-19: Countries with restrictions on international travels'\",\n      \"is produced by Our World in Data using data from the Blavatnik School of Government, University of Oxford (2023)\",\n      \"It tracks the number of recorded countries with a given type of restriction on international travel arrivals from early 2020 through late 2022\",\n      \"In countries where restrictions differ between regions or cities, the coding system refers to the most stringent policy in the country at a given time\"\n    ],\n    \"derived_claims\": [\n      \"The categories of restrictions tracked include 'Complete ban', 'Partial ban', 'Quarantine on some arrivals', 'Screening arrivals', and 'No restrictions' [derived from reading the chart legend]\",\n      \"In early 2020, there was a rapid, massive spike in 'Complete ban' and 'Partial ban' policies as the pandemic began [derived from observing the sharp rise in the dark red and pink areas starting around March 2020]\",\n      \"Over time, complete bans decreased, transitioning into partial bans, quarantine requirements, and screening measures [derived from observing the shrinking of the dark red area and the expansion of the tan and blue areas through 2021]\",\n      \"the vast majority of countries transitioned to 'No restrictions' or 'Screening arrivals' [derived from observing the green area dominating the top and the blue area below it, with the red/pink areas nearly disappearing by Dec 31, 2022]\",\n      \"The total number of countries tracked appears to be around 180, as the stacked area reaches a maximum height of approximately 180 on the Y-axis [derived from reading the maximum height of the stacked area on the Y-axis]\"\n    ],\n    \"speculative_claims\": [\n      \"This reflects the global shift from elimination/containment strategies to living with the virus and relying on vaccination and testing [source: public health history]\",\n      \"These travel restrictions had profound impacts on global tourism, international trade, and family reunifications [source: global economics and sociology]\",\n      \"The rapid implementation of bans in early 2020 shows the unprecedented global response to a novel pathogen [source: public health policy]\",\n      \"aligns with the widespread rollout of COVID-19 vaccines and a shift toward endemic management [source: epidemiology]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 4,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values are not provided in a table, but the categories and approximate trends can be read directly from the chart image."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall trends, peaks, and transitions between different restriction types are clearly visible over the 2020-2022 timeline."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and source clearly establish the domain as global COVID-19 travel restrictions."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story and source URL are provided, giving context on what the restrictions represent."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is titled 'COVID-19: Countries with restrictions on international travels' [DIRECT] and is produced by Our World in Data using data from the Blavatnik School of Government, University of Oxford (2023) [DIRECT]. It tracks the number of recorded countries with a given type of restriction on international travel arrivals from early 2020 through late 2022 [DIRECT]. The categories of restrictions tracked include 'Complete ban', 'Partial ban', 'Quarantine on some arrivals', 'Screening arrivals', and 'No restrictions' [DERIVED: read from the chart legend].",
+      "domain_specific_explanations": "In countries where restrictions differ between regions or cities, the coding system refers to the most stringent policy in the country at a given time [DIRECT]. In early 2020, there was a rapid, massive spike in 'Complete ban' and 'Partial ban' policies as the pandemic began [DERIVED: observed the sharp rise in the dark red and pink areas starting around March 2020]. Over time, complete bans decreased, transitioning into partial bans, quarantine requirements, and screening measures [DERIVED: observed the shrinking of the dark red area and the expansion of the tan and blue areas through 2021]. This reflects the global shift from elimination/containment strategies to living with the virus and relying on vaccination and testing [SPECULATIVE: public health history].",
+      "real_world_significance": "These travel restrictions had profound impacts on global tourism, international trade, and family reunifications [SPECULATIVE: global economics and sociology]. The rapid implementation of bans in early 2020 shows the unprecedented global response to a novel pathogen [SPECULATIVE: public health policy]. The gradual easing of restrictions in 2022, where the vast majority of countries transitioned to 'No restrictions' or 'Screening arrivals' [DERIVED: observed the green area dominating the top and the blue area below it, with the red/pink areas nearly disappearing by Dec 31, 2022], aligns with the widespread rollout of COVID-19 vaccines and a shift toward endemic management [SPECULATIVE: epidemiology].",
+      "other": "The total number of countries tracked appears to be around 180, as the stacked area reaches a maximum height of approximately 180 on the Y-axis [DERIVED: read the maximum height of the stacked area on the Y-axis]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is titled 'COVID-19: Countries with restrictions on international travels'",
+        "is produced by Our World in Data using data from the Blavatnik School of Government, University of Oxford (2023)",
+        "It tracks the number of recorded countries with a given type of restriction on international travel arrivals from early 2020 through late 2022",
+        "In countries where restrictions differ between regions or cities, the coding system refers to the most stringent policy in the country at a given time"
+      ],
+      "derived_claims": [
+        "The categories of restrictions tracked include 'Complete ban', 'Partial ban', 'Quarantine on some arrivals', 'Screening arrivals', and 'No restrictions' [derived from reading the chart legend]",
+        "In early 2020, there was a rapid, massive spike in 'Complete ban' and 'Partial ban' policies as the pandemic began [derived from observing the sharp rise in the dark red and pink areas starting around March 2020]",
+        "Over time, complete bans decreased, transitioning into partial bans, quarantine requirements, and screening measures [derived from observing the shrinking of the dark red area and the expansion of the tan and blue areas through 2021]",
+        "the vast majority of countries transitioned to 'No restrictions' or 'Screening arrivals' [derived from observing the green area dominating the top and the blue area below it, with the red/pink areas nearly disappearing by Dec 31, 2022]",
+        "The total number of countries tracked appears to be around 180, as the stacked area reaches a maximum height of approximately 180 on the Y-axis [derived from reading the maximum height of the stacked area on the Y-axis]"
+      ],
+      "speculative_claims": [
+        "This reflects the global shift from elimination/containment strategies to living with the virus and relying on vaccination and testing [source: public health history]",
+        "These travel restrictions had profound impacts on global tourism, international trade, and family reunifications [source: global economics and sociology]",
+        "The rapid implementation of bans in early 2020 shows the unprecedented global response to a novel pathogen [source: public health policy]",
+        "aligns with the widespread rollout of COVID-19 vaccines and a shift toward endemic management [source: epidemiology]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 4,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12626.473666983657,
+  "created_at": "2026-07-07T22:13:38.445956Z"
+}

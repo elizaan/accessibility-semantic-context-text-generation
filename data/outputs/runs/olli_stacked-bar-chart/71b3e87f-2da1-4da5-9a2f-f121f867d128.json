@@ -1,0 +1,72 @@
+{
+  "output_id": "71b3e87f-2da1-4da5-9a2f-f121f867d128",
+  "chart_id": "olli_stacked-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"The exact data values underlying the chart are not provided.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No information on trend magnitude is available.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The domain appears to be agricultural, specifically barley yield by variety and site.\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays a stacked bar chart showing the sum of yield for different barley varieties across multiple sites. [DIRECT] The chart is titled 'Stacked bar chart' and has 'yield' on the X-axis and 'variety' on the Y-axis. [DIRECT] The data is related to barley yield, indicating it's in the agricultural domain. [DERIVED: from chart title and axis labels] The chart seems to be produced for comparing yield across different varieties and sites. [SPECULATIVE: agricultural research or analysis]\",\n    \"domain_specific_explanations\": \"The chart shows the sum of yield for 10 different barley varieties (Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, Wisconsin No. 38) across 6 sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, Waseca). [DIRECT] Each variety has 6 values representing the yield at each site. [DIRECT] The average sum yield for each variety and site is provided in the OLLI SCREEN READER TREE. [DIRECT] This data is crucial in agricultural research for understanding which barley varieties perform best across different locations. [SPECULATIVE: agricultural research]\",\n    \"real_world_significance\": \"The data matters for agricultural decisions, such as which barley varieties to plant in specific locations to maximize yield. [DERIVED: from domain knowledge] Farmers and agricultural researchers can use this data to make informed decisions about crop selection and site allocation. [SPECULATIVE: agricultural planning] If this trend continues, it could lead to more efficient agricultural practices and better resource allocation. [SPECULATIVE: future agricultural productivity] For instance, if certain varieties consistently show higher yields across multiple sites, they might be prioritized for planting. [DERIVED: from chart data]\",\n    \"other\": \"The chart does not provide information on the specific years or conditions under which the yields were measured. [DERIVED: from absence of information] Additional context, such as weather conditions or soil types, might be necessary to fully understand the data. [SPECULATIVE: environmental factors]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays a stacked bar chart showing the sum of yield for different barley varieties across multiple sites.\",\n      \"The chart is titled 'Stacked bar chart' and has 'yield' on the X-axis and 'variety' on the Y-axis.\",\n      \"The chart shows the sum of yield for 10 different barley varieties (Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, Wisconsin No. 38) across 6 sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, Waseca).\",\n      \"Each variety has 6 values representing the yield at each site.\",\n      \"The average sum yield for each variety and site is provided in the OLLI SCREEN READER TREE.\"\n    ],\n    \"derived_claims\": [\n      \"The data is related to barley yield, indicating it's in the agricultural domain.\",\n      \"The chart seems to be produced for comparing yield across different varieties and sites.\",\n      \"If certain varieties consistently show higher yields across multiple sites, they might be prioritized for planting.\"\n    ],\n    \"speculative_claims\": [\n      \"The chart is likely produced for agricultural research or analysis.\",\n      \"This data is crucial in agricultural research for understanding which barley varieties perform best across different locations.\",\n      \"Farmers and agricultural researchers can use this data to make informed decisions about crop selection and site allocation.\",\n      \"If this trend continues, it could lead to more efficient agricultural practices and better resource allocation.\",\n      \"Additional context, such as weather conditions or soil types, might be necessary to fully understand the data.\"\n    ],\n    \"total_flag_count\": 19,\n    \"direct_count\": 5,\n    \"derived_count\": 3,\n    \"speculative_count\": 11\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The exact data values underlying the chart are not provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No information on trend magnitude is available."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The domain appears to be agricultural, specifically barley yield by variety and site."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays a stacked bar chart showing the sum of yield for different barley varieties across multiple sites. [DIRECT] The chart is titled 'Stacked bar chart' and has 'yield' on the X-axis and 'variety' on the Y-axis. [DIRECT] The data is related to barley yield, indicating it's in the agricultural domain. [DERIVED: from chart title and axis labels] The chart seems to be produced for comparing yield across different varieties and sites. [SPECULATIVE: agricultural research or analysis]",
+      "domain_specific_explanations": "The chart shows the sum of yield for 10 different barley varieties (Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, Wisconsin No. 38) across 6 sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, Waseca). [DIRECT] Each variety has 6 values representing the yield at each site. [DIRECT] The average sum yield for each variety and site is provided in the OLLI SCREEN READER TREE. [DIRECT] This data is crucial in agricultural research for understanding which barley varieties perform best across different locations. [SPECULATIVE: agricultural research]",
+      "real_world_significance": "The data matters for agricultural decisions, such as which barley varieties to plant in specific locations to maximize yield. [DERIVED: from domain knowledge] Farmers and agricultural researchers can use this data to make informed decisions about crop selection and site allocation. [SPECULATIVE: agricultural planning] If this trend continues, it could lead to more efficient agricultural practices and better resource allocation. [SPECULATIVE: future agricultural productivity] For instance, if certain varieties consistently show higher yields across multiple sites, they might be prioritized for planting. [DERIVED: from chart data]",
+      "other": "The chart does not provide information on the specific years or conditions under which the yields were measured. [DERIVED: from absence of information] Additional context, such as weather conditions or soil types, might be necessary to fully understand the data. [SPECULATIVE: environmental factors]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays a stacked bar chart showing the sum of yield for different barley varieties across multiple sites.",
+        "The chart is titled 'Stacked bar chart' and has 'yield' on the X-axis and 'variety' on the Y-axis.",
+        "The chart shows the sum of yield for 10 different barley varieties (Glabron, Manchuria, No. 457, No. 462, No. 475, Peatland, Svansota, Trebi, Velvet, Wisconsin No. 38) across 6 sites (Crookston, Duluth, Grand Rapids, Morris, University Farm, Waseca).",
+        "Each variety has 6 values representing the yield at each site.",
+        "The average sum yield for each variety and site is provided in the OLLI SCREEN READER TREE."
+      ],
+      "derived_claims": [
+        "The data is related to barley yield, indicating it's in the agricultural domain.",
+        "The chart seems to be produced for comparing yield across different varieties and sites.",
+        "If certain varieties consistently show higher yields across multiple sites, they might be prioritized for planting."
+      ],
+      "speculative_claims": [
+        "The chart is likely produced for agricultural research or analysis.",
+        "This data is crucial in agricultural research for understanding which barley varieties perform best across different locations.",
+        "Farmers and agricultural researchers can use this data to make informed decisions about crop selection and site allocation.",
+        "If this trend continues, it could lead to more efficient agricultural practices and better resource allocation.",
+        "Additional context, such as weather conditions or soil types, might be necessary to fully understand the data."
+      ],
+      "total_flag_count": 19,
+      "direct_count": 5,
+      "derived_count": 3,
+      "speculative_count": 11
+    }
+  },
+  "tokens_used": {
+    "input": 2818,
+    "output": 985
+  },
+  "latency_ms": 4200.384416966699,
+  "created_at": "2026-07-08T14:25:17.919240Z"
+}

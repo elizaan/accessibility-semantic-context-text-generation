@@ -1,0 +1,76 @@
+{
+  "output_id": "32d06bee-1003-413b-924b-b0160d5d0d05",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_015_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or exact values were provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The alt text mentions a temporal range (day before to two days after) but provides no information about the direction or magnitude of the trend.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The alt text and expert domain story identify the subject as discrimination events and the publication venue as ACM HCI/CSCW, but specific details are missing.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The publication venue (Proc. ACM Hum. Comput. Interact. 2019) and a Semantic Scholar link are provided, but the paper's specific findings are not detailed.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a bar chart depicting the level of significance of some metric from the day before to two days after discrimination events [DIRECT]. It originates from a research paper published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019 [DIRECT]. Based on the publication venue and the focus on discrimination events, this research likely investigates social computing, online harassment, or the computational analysis of social media responses to discriminatory incidents [SPECULATIVE: ACM CSCW / Computational Social Science].\",\n    \"domain_specific_explanations\": \"In computational social science and human-computer interaction, measuring the 'level of significance' across a tight temporal window (from one day before to two days after an event) is a common event-study methodology [SPECULATIVE: Computational Social Science]. This approach helps quantify whether a spike in online activity, sentiment shift, or harassment is statistically significant compared to baseline days [SPECULATIVE: Computational Social Science]. The 'discrimination events' could refer to offline societal events (like policy changes or public hate crimes) or online targeted harassment campaigns [SPECULATIVE: Human-Computer Interaction].\",\n    \"real_world_significance\": \"Understanding how discrimination events impact online communities over time is crucial for designing safer digital spaces [SPECULATIVE: Human-Computer Interaction]. If the level of significance remains high two days after an event, it suggests that the psychological or social impact of discrimination has a lingering effect, requiring sustained moderation or community support [SPECULATIVE: Social Media Moderation]. Conversely, a rapid drop-off might indicate a highly transient spike in attention [SPECULATIVE: Social Media Moderation].\",\n    \"other\": \"Because the underlying data table and visual chart are missing, it is impossible to determine the exact direction of the trend or which specific days (e.g., the day of the event versus the days after) show the highest statistical significance [DERIVED: Analysis of the missing data table and captions].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a bar chart depicting the level of significance of some metric from the day before to two days after discrimination events\",\n      \"It originates from a research paper published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019\"\n    ],\n    \"derived_claims\": [\n      \"Because the underlying data table and visual chart are missing, it is impossible to determine the exact direction of the trend or which specific days (e.g., the day of the event versus the days after) show the highest statistical significance\"\n    ],\n    \"speculative_claims\": [\n      \"Based on the publication venue and the focus on discrimination events, this research likely investigates social computing, online harassment, or the computational analysis of social media responses to discriminatory incidents\",\n      \"In computational social science and human-computer interaction, measuring the 'level of significance' across a tight temporal window (from one day before to two days after an event) is a common event-study methodology\",\n      \"This approach helps quantify whether a spike in online activity, sentiment shift, or harassment is statistically significant compared to baseline days\",\n      \"The 'discrimination events' could refer to offline societal events (like policy changes or public hate crimes) or online targeted harassment campaigns\",\n      \"Understanding how discrimination events impact online communities over time is crucial for designing safer digital spaces\",\n      \"If the level of significance remains high two days after an event, it suggests that the psychological or social impact of discrimination has a lingering effect, requiring sustained moderation or community support\",\n      \"Conversely, a rapid drop-off might indicate a highly transient spike in attention\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 1,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or exact values were provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The alt text mentions a temporal range (day before to two days after) but provides no information about the direction or magnitude of the trend."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The alt text and expert domain story identify the subject as discrimination events and the publication venue as ACM HCI/CSCW, but specific details are missing."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The publication venue (Proc. ACM Hum. Comput. Interact. 2019) and a Semantic Scholar link are provided, but the paper's specific findings are not detailed."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a bar chart depicting the level of significance of some metric from the day before to two days after discrimination events [DIRECT]. It originates from a research paper published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019 [DIRECT]. Based on the publication venue and the focus on discrimination events, this research likely investigates social computing, online harassment, or the computational analysis of social media responses to discriminatory incidents [SPECULATIVE: ACM CSCW / Computational Social Science].",
+      "domain_specific_explanations": "In computational social science and human-computer interaction, measuring the 'level of significance' across a tight temporal window (from one day before to two days after an event) is a common event-study methodology [SPECULATIVE: Computational Social Science]. This approach helps quantify whether a spike in online activity, sentiment shift, or harassment is statistically significant compared to baseline days [SPECULATIVE: Computational Social Science]. The 'discrimination events' could refer to offline societal events (like policy changes or public hate crimes) or online targeted harassment campaigns [SPECULATIVE: Human-Computer Interaction].",
+      "real_world_significance": "Understanding how discrimination events impact online communities over time is crucial for designing safer digital spaces [SPECULATIVE: Human-Computer Interaction]. If the level of significance remains high two days after an event, it suggests that the psychological or social impact of discrimination has a lingering effect, requiring sustained moderation or community support [SPECULATIVE: Social Media Moderation]. Conversely, a rapid drop-off might indicate a highly transient spike in attention [SPECULATIVE: Social Media Moderation].",
+      "other": "Because the underlying data table and visual chart are missing, it is impossible to determine the exact direction of the trend or which specific days (e.g., the day of the event versus the days after) show the highest statistical significance [DERIVED: Analysis of the missing data table and captions]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a bar chart depicting the level of significance of some metric from the day before to two days after discrimination events",
+        "It originates from a research paper published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019"
+      ],
+      "derived_claims": [
+        "Because the underlying data table and visual chart are missing, it is impossible to determine the exact direction of the trend or which specific days (e.g., the day of the event versus the days after) show the highest statistical significance"
+      ],
+      "speculative_claims": [
+        "Based on the publication venue and the focus on discrimination events, this research likely investigates social computing, online harassment, or the computational analysis of social media responses to discriminatory incidents",
+        "In computational social science and human-computer interaction, measuring the 'level of significance' across a tight temporal window (from one day before to two days after an event) is a common event-study methodology",
+        "This approach helps quantify whether a spike in online activity, sentiment shift, or harassment is statistically significant compared to baseline days",
+        "The 'discrimination events' could refer to offline societal events (like policy changes or public hate crimes) or online targeted harassment campaigns",
+        "Understanding how discrimination events impact online communities over time is crucial for designing safer digital spaces",
+        "If the level of significance remains high two days after an event, it suggests that the psychological or social impact of discrimination has a lingering effect, requiring sustained moderation or community support",
+        "Conversely, a rapid drop-off might indicate a highly transient spike in attention"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 1,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11593.254250008613,
+  "created_at": "2026-07-07T23:23:12.771494Z"
+}

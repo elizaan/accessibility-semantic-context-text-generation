@@ -1,0 +1,78 @@
+{
+  "output_id": "4006e425-64b4-43a4-89ad-e6430de38ed0",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "vega_lite_spec",
+    "data_table",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact data table is provided with year-by-year values, though it contains some repetitive noise ('Dec, 31.0') that needs to be filtered out.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L2 caption and the data table clearly show a steady, linear upward trend in life expectancy over the decade.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly identify the subject as life expectancy at birth in Madagascar.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 (though the data table covers 2007 to 2017) [DIRECT]. This is a demographic dataset tracking public health outcomes over a decade [SPECULATIVE: Demography]. The data shows a steady, linear increase in life expectancy year-over-year [DERIVED: Calculated the difference between consecutive years in the data table, showing a consistent increase of approximately 0.37 to 0.45 years annually].\",\n    \"domain_specific_explanations\": \"Life expectancy at birth represents the average number of years a newborn is expected to live if mortality patterns at the time of its birth remain constant in the future [SPECULATIVE: Public Health / Demography]. An increase from 62.51 years in 2007 to 66.68 years in 2017 represents an overall gain of 4.17 years of life expectancy over a ten-year period [DERIVED: Subtracted the 2007 value of 62.51 from the 2017 value of 66.68]. In developing nations like Madagascar, steady improvements in life expectancy are typically driven by reductions in infant mortality, better access to clean water, and basic healthcare interventions [SPECULATIVE: Global Development / WHO].\",\n    \"real_world_significance\": \"Madagascar is one of the poorest countries in the world, and these gains suggest that despite economic challenges, basic health indicators have improved [SPECULATIVE: World Bank / Development Economics]. This data is crucial for international aid organizations, the Malagasy government, and public health policymakers to evaluate the long-term efficacy of healthcare investments and social programs [SPECULATIVE: Public Policy]. If this trend continues, Madagascar's population structure will shift, requiring more resources for aging populations and long-term healthcare infrastructure [SPECULATIVE: Demography].\",\n    \"other\": \"The data table contains anomalous 'Dec, 31.0' entries interspersed between the annual data points, which appears to be a formatting or parsing error in the underlying metadata [DERIVED: Observed the repeating 'Dec, 31.0' rows in the provided data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 (though the data table covers 2007 to 2017)\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a steady, linear increase in life expectancy year-over-year\",\n      \"An increase from 62.51 years in 2007 to 66.68 years in 2017 represents an overall gain of 4.17 years of life expectancy over a ten-year period\",\n      \"The data table contains anomalous 'Dec, 31.0' entries interspersed between the annual data points, which appears to be a formatting or parsing error in the underlying metadata\"\n    ],\n    \"speculative_claims\": [\n      \"This is a demographic dataset tracking public health outcomes over a decade\",\n      \"Life expectancy at birth represents the average number of years a newborn is expected to live if mortality patterns at the time of its birth remain constant in the future\",\n      \"In developing nations like Madagascar, steady improvements in life expectancy are typically driven by reductions in infant mortality, better access to clean water, and basic healthcare interventions\",\n      \"Madagascar is one of the poorest countries in the world, and these gains suggest that despite economic challenges, basic health indicators have improved\",\n      \"This data is crucial for international aid organizations, the Malagasy government, and public health policymakers to evaluate the long-term efficacy of healthcare investments and social programs\",\n      \"If this trend continues, Madagascar's population structure will shift, requiring more resources for aging populations and long-term healthcare infrastructure\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact data table is provided with year-by-year values, though it contains some repetitive noise ('Dec, 31.0') that needs to be filtered out."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L2 caption and the data table clearly show a steady, linear upward trend in life expectancy over the decade."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly identify the subject as life expectancy at birth in Madagascar."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 (though the data table covers 2007 to 2017) [DIRECT]. This is a demographic dataset tracking public health outcomes over a decade [SPECULATIVE: Demography]. The data shows a steady, linear increase in life expectancy year-over-year [DERIVED: Calculated the difference between consecutive years in the data table, showing a consistent increase of approximately 0.37 to 0.45 years annually].",
+      "domain_specific_explanations": "Life expectancy at birth represents the average number of years a newborn is expected to live if mortality patterns at the time of its birth remain constant in the future [SPECULATIVE: Public Health / Demography]. An increase from 62.51 years in 2007 to 66.68 years in 2017 represents an overall gain of 4.17 years of life expectancy over a ten-year period [DERIVED: Subtracted the 2007 value of 62.51 from the 2017 value of 66.68]. In developing nations like Madagascar, steady improvements in life expectancy are typically driven by reductions in infant mortality, better access to clean water, and basic healthcare interventions [SPECULATIVE: Global Development / WHO].",
+      "real_world_significance": "Madagascar is one of the poorest countries in the world, and these gains suggest that despite economic challenges, basic health indicators have improved [SPECULATIVE: World Bank / Development Economics]. This data is crucial for international aid organizations, the Malagasy government, and public health policymakers to evaluate the long-term efficacy of healthcare investments and social programs [SPECULATIVE: Public Policy]. If this trend continues, Madagascar's population structure will shift, requiring more resources for aging populations and long-term healthcare infrastructure [SPECULATIVE: Demography].",
+      "other": "The data table contains anomalous 'Dec, 31.0' entries interspersed between the annual data points, which appears to be a formatting or parsing error in the underlying metadata [DERIVED: Observed the repeating 'Dec, 31.0' rows in the provided data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the life expectancy at birth in Madagascar from 2008 to 2018 (though the data table covers 2007 to 2017)"
+      ],
+      "derived_claims": [
+        "The data shows a steady, linear increase in life expectancy year-over-year",
+        "An increase from 62.51 years in 2007 to 66.68 years in 2017 represents an overall gain of 4.17 years of life expectancy over a ten-year period",
+        "The data table contains anomalous 'Dec, 31.0' entries interspersed between the annual data points, which appears to be a formatting or parsing error in the underlying metadata"
+      ],
+      "speculative_claims": [
+        "This is a demographic dataset tracking public health outcomes over a decade",
+        "Life expectancy at birth represents the average number of years a newborn is expected to live if mortality patterns at the time of its birth remain constant in the future",
+        "In developing nations like Madagascar, steady improvements in life expectancy are typically driven by reductions in infant mortality, better access to clean water, and basic healthcare interventions",
+        "Madagascar is one of the poorest countries in the world, and these gains suggest that despite economic challenges, basic health indicators have improved",
+        "This data is crucial for international aid organizations, the Malagasy government, and public health policymakers to evaluate the long-term efficacy of healthcare investments and social programs",
+        "If this trend continues, Madagascar's population structure will shift, requiring more resources for aging populations and long-term healthcare infrastructure"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11175.319999980275,
+  "created_at": "2026-07-07T22:42:30.418981Z"
+}

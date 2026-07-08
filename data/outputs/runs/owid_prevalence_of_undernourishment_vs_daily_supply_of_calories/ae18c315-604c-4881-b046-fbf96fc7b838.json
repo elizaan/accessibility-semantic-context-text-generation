@@ -1,0 +1,67 @@
+{
+  "output_id": "ae18c315-604c-4881-b046-fbf96fc7b838",
+  "chart_id": "owid_prevalence_of_undernourishment_vs_daily_supply_of_calories",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table provides some values but is truncated and lacks axis labels.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"No explicit trend magnitude information provided.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"Domain is nutrition and food supply, but some context is missing.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares the share of undernourished people in various regions to their daily caloric supply [DIRECT]. It is produced by the Food and Agriculture Organization of the United Nations (FAO) [DERIVED: from data source note]. The purpose is to show the relationship between caloric intake and undernourishment [SPECULATIVE: general knowledge of nutrition studies].\",\n    \"domain_specific_explanations\": \"The share of people who are undernourished is measured as a percentage of the total population with caloric intakes below minimum energy requirements [DIRECT]. The average daily supply of calories is measured in kilocalories per day per person [DIRECT]. Regions with higher caloric supply generally have lower rates of undernourishment [DERIVED: from chart observation].\",\n    \"real_world_significance\": \"This data matters for understanding food security and nutrition levels globally [SPECULATIVE: general knowledge of nutrition and food security]. Countries with low caloric supply and high undernourishment rates may need targeted interventions [SPECULATIVE: general knowledge of nutrition policy]. Decision-makers use this data to assess and address hunger and malnutrition [SPECULATIVE: general knowledge of nutrition policy].\",\n    \"other\": \"The chart suggests that regions with higher daily caloric supply tend to have lower rates of undernourishment [DERIVED: from chart observation].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares the share of undernourished people in various regions to their daily caloric supply\",\n      \"The share of people who are undernourished is measured as a percentage of the total population with caloric intakes below minimum energy requirements\",\n      \"The average daily supply of calories is measured in kilocalories per day per person\"\n    ],\n    \"derived_claims\": [\n      \"It is produced by the Food and Agriculture Organization of the United Nations (FAO)\",\n      \"Regions with higher caloric supply generally have lower rates of undernourishment\"\n    ],\n    \"speculative_claims\": [\n      \"The purpose is to show the relationship between caloric intake and undernourishment\",\n      \"This data matters for understanding food security and nutrition levels globally\",\n      \"Countries with low caloric supply and high undernourishment rates may need targeted interventions\",\n      \"Decision-makers use this data to assess and address hunger and malnutrition\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table provides some values but is truncated and lacks axis labels."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No explicit trend magnitude information provided."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "Domain is nutrition and food supply, but some context is missing."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares the share of undernourished people in various regions to their daily caloric supply [DIRECT]. It is produced by the Food and Agriculture Organization of the United Nations (FAO) [DERIVED: from data source note]. The purpose is to show the relationship between caloric intake and undernourishment [SPECULATIVE: general knowledge of nutrition studies].",
+      "domain_specific_explanations": "The share of people who are undernourished is measured as a percentage of the total population with caloric intakes below minimum energy requirements [DIRECT]. The average daily supply of calories is measured in kilocalories per day per person [DIRECT]. Regions with higher caloric supply generally have lower rates of undernourishment [DERIVED: from chart observation].",
+      "real_world_significance": "This data matters for understanding food security and nutrition levels globally [SPECULATIVE: general knowledge of nutrition and food security]. Countries with low caloric supply and high undernourishment rates may need targeted interventions [SPECULATIVE: general knowledge of nutrition policy]. Decision-makers use this data to assess and address hunger and malnutrition [SPECULATIVE: general knowledge of nutrition policy].",
+      "other": "The chart suggests that regions with higher daily caloric supply tend to have lower rates of undernourishment [DERIVED: from chart observation]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares the share of undernourished people in various regions to their daily caloric supply",
+        "The share of people who are undernourished is measured as a percentage of the total population with caloric intakes below minimum energy requirements",
+        "The average daily supply of calories is measured in kilocalories per day per person"
+      ],
+      "derived_claims": [
+        "It is produced by the Food and Agriculture Organization of the United Nations (FAO)",
+        "Regions with higher caloric supply generally have lower rates of undernourishment"
+      ],
+      "speculative_claims": [
+        "The purpose is to show the relationship between caloric intake and undernourishment",
+        "This data matters for understanding food security and nutrition levels globally",
+        "Countries with low caloric supply and high undernourishment rates may need targeted interventions",
+        "Decision-makers use this data to assess and address hunger and malnutrition"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 2586,
+    "output": 667
+  },
+  "latency_ms": 3097.6799160125665,
+  "created_at": "2026-07-08T13:19:21.762812Z"
+}

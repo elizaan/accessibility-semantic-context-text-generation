@@ -4,8 +4,31 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight, Trash2, Pencil, Check, X, FolderInput } from "lucide-react";
-import { getCollection, getCollectionCharts, removeChartsFromCollection, addChartsToCollection, getCollections, updateCollection, getChartImageUrl } from "@/lib/api";
+import { getCollection, getCollectionCharts, removeChartsFromCollection, addChartsToCollection, getCollections, updateCollection, getChartImageUrl, getOutputsForChart } from "@/lib/api";
 import type { Collection, Chart } from "@/lib/types";
+
+// Strips provider-prefix paths (e.g. "meta-llama/llama-4-scout-...") down to
+// a compact label for a small card badge — no hardcoded model name lookup,
+// since those go stale the moment a vendor renames/deprecates a model.
+function shortModelLabel(modelId: string): string {
+  const last = modelId.split("/").pop() ?? modelId;
+  return last.length > 18 ? `${last.slice(0, 16)}…` : last;
+}
+
+// Shows which models already have generated output for this chart, or
+// nothing at all if none do yet — keeps ungenerated cards uncluttered.
+function GenerationBadges({ modelIds }: { modelIds: string[] | undefined }) {
+  if (!modelIds || modelIds.length === 0) return null;
+  return (
+    <div className="flex gap-1 mt-1 flex-wrap" title={modelIds.join(", ")}>
+      {modelIds.map((id) => (
+        <span key={id} className="text-xs bg-green-50 text-green-700 rounded px-1 py-0.5">
+          ✓ {shortModelLabel(id)}
+        </span>
+      ))}
+    </div>
+  );
+}
 
 export default function CollectionDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -16,6 +39,8 @@ export default function CollectionDetailPage() {
   const [nameInput, setNameInput] = useState("");
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [selectMode, setSelectMode] = useState(false);
+  // chart_id -> distinct model_ids that have generated output for it
+  const [modelsByChart, setModelsByChart] = useState<Record<string, string[]>>({});
 
   // Move-to-collection dialog
   const [showMoveDialog, setShowMoveDialog] = useState(false);
@@ -28,6 +53,24 @@ export default function CollectionDetailPage() {
         setCollection(col);
         setNameInput(col.name);
         setCharts(ch);
+
+        // Fire off per-chart output lookups in parallel — collections are
+        // small enough that this is cheaper than teaching the backend a
+        // bulk chart_id filter. Failures are non-fatal; a chart just shows
+        // no generation badges rather than blocking the whole page.
+        Promise.all(
+          ch.map((c) =>
+            getOutputsForChart(c.chart_id)
+              .then((outputs) => [c.chart_id, outputs] as const)
+              .catch(() => [c.chart_id, []] as const)
+          )
+        ).then((entries) => {
+          const byChart: Record<string, string[]> = {};
+          for (const [chartId, outputs] of entries) {
+            byChart[chartId] = Array.from(new Set(outputs.map((o) => o.model_id)));
+          }
+          setModelsByChart(byChart);
+        });
       })
       .catch(console.error)
       .finally(() => setLoading(false));
@@ -194,6 +237,7 @@ export default function CollectionDetailPage() {
                   <span className="text-xs bg-muted rounded px-1 py-0.5">{chart.source.replace(/_/g, " ")}</span>
                   <span className="text-xs bg-blue-50 text-blue-700 rounded px-1 py-0.5">{chart.chart_type}</span>
                 </div>
+                <GenerationBadges modelIds={modelsByChart[chart.chart_id]} />
               </div>
             </div>
           );
@@ -223,6 +267,7 @@ export default function CollectionDetailPage() {
                   <span className="text-xs bg-muted rounded px-1 py-0.5">{chart.source.replace(/_/g, " ")}</span>
                   <span className="text-xs bg-blue-50 text-blue-700 rounded px-1 py-0.5">{chart.chart_type}</span>
                 </div>
+                <GenerationBadges modelIds={modelsByChart[chart.chart_id]} />
               </div>
             </Link>
           );

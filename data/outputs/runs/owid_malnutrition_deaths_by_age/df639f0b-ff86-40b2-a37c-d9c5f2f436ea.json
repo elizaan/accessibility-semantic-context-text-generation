@@ -1,0 +1,68 @@
+{
+  "output_id": "df639f0b-ff86-40b2-a37c-d9c5f2f436ea",
+  "chart_id": "owid_malnutrition_deaths_by_age",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image is provided, but the data table with exact values is not.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart shows a clear trend, but the magnitude of changes is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and expert domain story provide sufficient information about the subject domain.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the estimated annual number of deaths from protein-energy malnutrition, by age, worldwide. [DIRECT] The data is produced by IHME, Global Burden of Disease (2025). [DIRECT] The chart aims to illustrate the trend of deaths from protein-energy malnutrition over time and across different age groups. [DERIVED: from chart title and axis labels]\",\n    \"domain_specific_explanations\": \"Protein-energy malnutrition results from insufficient caloric and protein intake. [DIRECT] The estimates come with wide uncertainties, especially for countries with poor vital registration. [DIRECT] The data is relevant to understanding the impact of malnutrition on mortality rates globally. [SPECULATIVE: nutrition and public health domain] The age groups considered are Under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old. [DIRECT]\",\n    \"real_world_significance\": \"The chart matters because it highlights the global burden of protein-energy malnutrition on mortality rates. [SPECULATIVE: public health policy] The data can inform nutritional interventions and policies aimed at reducing malnutrition-related deaths. [SPECULATIVE: public health policy] The trend shows a significant decline in deaths from protein-energy malnutrition over the years, but with variations across age groups. [DERIVED: from chart image] If this trend continues, it could indicate improvements in global nutrition and healthcare. [SPECULATIVE: nutrition and public health domain]\",\n    \"other\": \"The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification. [DIRECT] This suggests that while the data provides valuable insights, it should be interpreted with caution. [DERIVED: from chart note]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the estimated annual number of deaths from protein-energy malnutrition, by age, worldwide.\",\n      \"The data is produced by IHME, Global Burden of Disease (2025).\",\n      \"Protein-energy malnutrition results from insufficient caloric and protein intake.\",\n      \"The estimates come with wide uncertainties, especially for countries with poor vital registration.\",\n      \"The age groups considered are Under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old.\",\n      \"The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification.\"\n    ],\n    \"derived_claims\": [\n      \"The chart aims to illustrate the trend of deaths from protein-energy malnutrition over time and across different age groups.\",\n      \"The trend shows a significant decline in deaths from protein-energy malnutrition over the years, but with variations across age groups.\",\n      \"This suggests that while the data provides valuable insights, it should be interpreted with caution.\"\n    ],\n    \"speculative_claims\": [\n      \"The data can inform nutritional interventions and policies aimed at reducing malnutrition-related deaths.\",\n      \"If this trend continues, it could indicate improvements in global nutrition and healthcare.\"\n    ],\n    \"total_flag_count\": 16,\n    \"direct_count\": 6,\n    \"derived_count\": 3,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image is provided, but the data table with exact values is not."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart shows a clear trend, but the magnitude of changes is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and expert domain story provide sufficient information about the subject domain."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the estimated annual number of deaths from protein-energy malnutrition, by age, worldwide. [DIRECT] The data is produced by IHME, Global Burden of Disease (2025). [DIRECT] The chart aims to illustrate the trend of deaths from protein-energy malnutrition over time and across different age groups. [DERIVED: from chart title and axis labels]",
+      "domain_specific_explanations": "Protein-energy malnutrition results from insufficient caloric and protein intake. [DIRECT] The estimates come with wide uncertainties, especially for countries with poor vital registration. [DIRECT] The data is relevant to understanding the impact of malnutrition on mortality rates globally. [SPECULATIVE: nutrition and public health domain] The age groups considered are Under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old. [DIRECT]",
+      "real_world_significance": "The chart matters because it highlights the global burden of protein-energy malnutrition on mortality rates. [SPECULATIVE: public health policy] The data can inform nutritional interventions and policies aimed at reducing malnutrition-related deaths. [SPECULATIVE: public health policy] The trend shows a significant decline in deaths from protein-energy malnutrition over the years, but with variations across age groups. [DERIVED: from chart image] If this trend continues, it could indicate improvements in global nutrition and healthcare. [SPECULATIVE: nutrition and public health domain]",
+      "other": "The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification. [DIRECT] This suggests that while the data provides valuable insights, it should be interpreted with caution. [DERIVED: from chart note]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the estimated annual number of deaths from protein-energy malnutrition, by age, worldwide.",
+        "The data is produced by IHME, Global Burden of Disease (2025).",
+        "Protein-energy malnutrition results from insufficient caloric and protein intake.",
+        "The estimates come with wide uncertainties, especially for countries with poor vital registration.",
+        "The age groups considered are Under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old.",
+        "The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification."
+      ],
+      "derived_claims": [
+        "The chart aims to illustrate the trend of deaths from protein-energy malnutrition over time and across different age groups.",
+        "The trend shows a significant decline in deaths from protein-energy malnutrition over the years, but with variations across age groups.",
+        "This suggests that while the data provides valuable insights, it should be interpreted with caution."
+      ],
+      "speculative_claims": [
+        "The data can inform nutritional interventions and policies aimed at reducing malnutrition-related deaths.",
+        "If this trend continues, it could indicate improvements in global nutrition and healthcare."
+      ],
+      "total_flag_count": 16,
+      "direct_count": 6,
+      "derived_count": 3,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2196,
+    "output": 815
+  },
+  "latency_ms": 2936.9847079506144,
+  "created_at": "2026-07-08T13:15:39.238376Z"
+}

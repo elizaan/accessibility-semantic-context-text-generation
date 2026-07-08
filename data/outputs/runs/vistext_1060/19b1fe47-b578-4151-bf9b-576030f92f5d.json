@@ -1,0 +1,79 @@
+{
+  "output_id": "19b1fe47-b578-4151-bf9b-576030f92f5d",
+  "chart_id": "vistext_1060",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for eight regions, but the L1 and L2 captions indicate that other regions (like Abruzzo, Calabria, and Molise) are present in the chart but truncated from the provided text table.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"We can identify the highest and lowest regions and the positive values for the top eight, but the exact negative values for the lowest regions are missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axes clearly define the domain as Italian internal demography and migration in 2019.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays net internal migration rates per 1,000 inhabitants across Italian regions in 2019 [DIRECT]. Emilia-Romagna had the highest net internal migration rate during this period, while Calabria and Molise had the lowest [DIRECT]. Among the regions with positive net migration detailed in the data, Emilia-Romagna leads with 4.2 per 1,000, followed by Lombardy at 3.1 and Liguria at 2.9 [DERIVED: compared values in the provided data table]. All eight regions explicitly listed in the data table are located in northern or central Italy and exhibit positive net migration rates [DERIVED: analyzed the geographic locations of the regions in the data table].\",\n    \"domain_specific_explanations\": \"In demography, 'net internal migration' measures the difference between the number of people moving into a region from other parts of the same country and those leaving that region for other domestic destinations, normalized per 1,000 residents [SPECULATIVE: Demography]. This metric excludes international immigration and natural population changes (births and deaths), focusing purely on domestic population redistribution [SPECULATIVE: Demography]. A positive value indicates a net influx of domestic residents, whereas a negative value indicates a net population loss to other regions [SPECULATIVE: Demography].\",\n    \"real_world_significance\": \"These migration patterns reflect Italy's long-standing socio-economic divide between the wealthier, highly industrialized North and the economically disadvantaged South (Mezzogiorno) [SPECULATIVE: Italian Economics/Sociology]. Northern regions like Emilia-Romagna and Lombardy attract domestic migrants due to stronger job markets, better public infrastructure, and prominent universities [SPECULATIVE: Italian Economics/Sociology]. Conversely, net population losses in southern regions like Calabria and Molise exacerbate the challenges of 'brain drain' and demographic aging, making it increasingly difficult for these areas to sustain local economies and public services [SPECULATIVE: Italian Economics/Sociology].\",\n    \"other\": \"The 2019 dataset serves as an important baseline representing demographic trends immediately prior to the COVID-19 pandemic, which subsequently disrupted traditional migration patterns and accelerated remote work trends across Italy [SPECULATIVE: Italian Demography].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays net internal migration rates per 1,000 inhabitants across Italian regions in 2019.\",\n      \"Emilia-Romagna had the highest net internal migration in 2019, while Calabria and Molise had the lowest.\"\n    ],\n    \"derived_claims\": [\n      \"Among the regions with positive net migration detailed in the data, Emilia-Romagna leads with 4.2 per 1,000, followed by Lombardy at 3.1 and Liguria at 2.9.\",\n      \"All eight regions explicitly listed in the data table are located in northern or central Italy and exhibit positive net migration rates.\"\n    ],\n    \"speculative_claims\": [\n      \"In demography, 'net internal migration' measures the difference between the number of people moving into a region from other parts of the same country and those leaving that region for other domestic destinations, normalized per 1,000 residents.\",\n      \"This metric excludes international immigration and natural population changes (births and deaths), focusing purely on domestic population redistribution.\",\n      \"A positive value indicates a net influx of domestic residents, whereas a negative value indicates a net population loss to other regions.\",\n      \"These migration patterns reflect Italy's long-standing socio-economic divide between the wealthier, highly industrialized North and the economically disadvantaged South (Mezzogiorno).\",\n      \"Northern regions like Emilia-Romagna and Lombardy attract domestic migrants due to stronger job markets, better public infrastructure, and prominent universities.\",\n      \"Conversely, net population losses in southern regions like Calabria and Molise exacerbate the challenges of 'brain drain' and demographic aging, making it increasingly difficult for these areas to sustain local economies and public services.\",\n      \"The 2019 dataset serves as an important baseline representing demographic trends immediately prior to the COVID-19 pandemic, which subsequently disrupted traditional migration patterns and accelerated remote work trends across Italy.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for eight regions, but the L1 and L2 captions indicate that other regions (like Abruzzo, Calabria, and Molise) are present in the chart but truncated from the provided text table."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "We can identify the highest and lowest regions and the positive values for the top eight, but the exact negative values for the lowest regions are missing."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axes clearly define the domain as Italian internal demography and migration in 2019."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays net internal migration rates per 1,000 inhabitants across Italian regions in 2019 [DIRECT]. Emilia-Romagna had the highest net internal migration rate during this period, while Calabria and Molise had the lowest [DIRECT]. Among the regions with positive net migration detailed in the data, Emilia-Romagna leads with 4.2 per 1,000, followed by Lombardy at 3.1 and Liguria at 2.9 [DERIVED: compared values in the provided data table]. All eight regions explicitly listed in the data table are located in northern or central Italy and exhibit positive net migration rates [DERIVED: analyzed the geographic locations of the regions in the data table].",
+      "domain_specific_explanations": "In demography, 'net internal migration' measures the difference between the number of people moving into a region from other parts of the same country and those leaving that region for other domestic destinations, normalized per 1,000 residents [SPECULATIVE: Demography]. This metric excludes international immigration and natural population changes (births and deaths), focusing purely on domestic population redistribution [SPECULATIVE: Demography]. A positive value indicates a net influx of domestic residents, whereas a negative value indicates a net population loss to other regions [SPECULATIVE: Demography].",
+      "real_world_significance": "These migration patterns reflect Italy's long-standing socio-economic divide between the wealthier, highly industrialized North and the economically disadvantaged South (Mezzogiorno) [SPECULATIVE: Italian Economics/Sociology]. Northern regions like Emilia-Romagna and Lombardy attract domestic migrants due to stronger job markets, better public infrastructure, and prominent universities [SPECULATIVE: Italian Economics/Sociology]. Conversely, net population losses in southern regions like Calabria and Molise exacerbate the challenges of 'brain drain' and demographic aging, making it increasingly difficult for these areas to sustain local economies and public services [SPECULATIVE: Italian Economics/Sociology].",
+      "other": "The 2019 dataset serves as an important baseline representing demographic trends immediately prior to the COVID-19 pandemic, which subsequently disrupted traditional migration patterns and accelerated remote work trends across Italy [SPECULATIVE: Italian Demography]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays net internal migration rates per 1,000 inhabitants across Italian regions in 2019.",
+        "Emilia-Romagna had the highest net internal migration in 2019, while Calabria and Molise had the lowest."
+      ],
+      "derived_claims": [
+        "Among the regions with positive net migration detailed in the data, Emilia-Romagna leads with 4.2 per 1,000, followed by Lombardy at 3.1 and Liguria at 2.9.",
+        "All eight regions explicitly listed in the data table are located in northern or central Italy and exhibit positive net migration rates."
+      ],
+      "speculative_claims": [
+        "In demography, 'net internal migration' measures the difference between the number of people moving into a region from other parts of the same country and those leaving that region for other domestic destinations, normalized per 1,000 residents.",
+        "This metric excludes international immigration and natural population changes (births and deaths), focusing purely on domestic population redistribution.",
+        "A positive value indicates a net influx of domestic residents, whereas a negative value indicates a net population loss to other regions.",
+        "These migration patterns reflect Italy's long-standing socio-economic divide between the wealthier, highly industrialized North and the economically disadvantaged South (Mezzogiorno).",
+        "Northern regions like Emilia-Romagna and Lombardy attract domestic migrants due to stronger job markets, better public infrastructure, and prominent universities.",
+        "Conversely, net population losses in southern regions like Calabria and Molise exacerbate the challenges of 'brain drain' and demographic aging, making it increasingly difficult for these areas to sustain local economies and public services.",
+        "The 2019 dataset serves as an important baseline representing demographic trends immediately prior to the COVID-19 pandemic, which subsequently disrupted traditional migration patterns and accelerated remote work trends across Italy."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10583.743416995276,
+  "created_at": "2026-07-07T22:02:24.331042Z"
+}

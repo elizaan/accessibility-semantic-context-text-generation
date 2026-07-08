@@ -1,0 +1,81 @@
+{
+  "output_id": "60964811-b09c-41b8-bba3-e07eb57ab075",
+  "chart_id": "owid_so_emissions_by_world_region_in_million_tonnes",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The dataset provides exact values for 2022, but it is truncated and lacks historical data points to establish temporal trends.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only a single year (2022) is represented in the provided data, making temporal trend analysis impossible, though regional comparisons can be made.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and source clearly define the subject as global sulphur dioxide emissions by region.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert story provides the crucial unit of measurement (tonnes per year) and the source URL.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The dataset presents global sulphur dioxide (SO₂) emissions by world region and country for the year 2022 [DIRECT]. The data is sourced from Our World in Data and is measured in tonnes per year [DIRECT]. Based on the provided data, Asia is the largest regional emitter by a massive margin, releasing approximately 49.04 million tonnes of SO₂ in 2022 [DERIVED: read Asia's value of 49,039,864 tonnes]. In comparison, the entire African continent emitted approximately 5.08 million tonnes [DIRECT]. Individual country emissions vary widely, with Australia emitting over 1.04 million tonnes [DIRECT], while European nations like Austria emitted a much lower 11,553 tonnes [DIRECT].\",\n    \"domain_specific_explanations\": \"Sulphur dioxide (SO₂) is a gaseous air pollutant primarily produced from the combustion of sulfur-containing fossil fuels, such as coal and oil, during electricity generation and industrial processes [SPECULATIVE: Environmental Science]. In the atmosphere, SO₂ undergoes chemical reactions to form acidic compounds, leading to acid rain which degrades soil quality, damages forests, and acidifies aquatic ecosystems [SPECULATIVE: Environmental Science]. The massive emissions volume in Asia—nearly ten times that of Africa [DERIVED: calculated 49,039,864 / 5,081,934.5 ≈ 9.65]—reflects the region's heavy reliance on coal-fired power plants and concentrated industrial manufacturing [SPECULATIVE: Energy Policy].\",\n    \"real_world_significance\": \"SO₂ emissions are a critical public health concern because exposure to the gas causes severe respiratory issues, exacerbates asthma, and contributes to the formation of particulate matter (PM2.5) which can cause cardiovascular disease [SPECULATIVE: Public Health]. The stark contrast between regions highlights global disparities in environmental regulations and energy transition stages [SPECULATIVE: Environmental Policy]. While many Western nations have successfully reduced SO₂ emissions over recent decades through the implementation of flue-gas desulfurization (scrubbers) and low-sulfur fuel mandates [SPECULATIVE: Environmental Policy], rapidly industrializing regions continue to face high pollution levels as they balance economic growth with environmental health [SPECULATIVE: Global Development].\",\n    \"other\": \"The dataset contains a mix of continental aggregates (such as Asia and Africa) and individual sovereign nations (such as Albania, Argentina, and Belgium), which requires careful filtering to avoid double-counting when analyzing global totals [DERIVED: observed both regional and national entities in the 'Entity' column].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset presents global sulphur dioxide (SO₂) emissions by world region and country for the year 2022\",\n      \"The data is sourced from Our World in Data and is measured in tonnes per year\",\n      \"the entire African continent emitted approximately 5.08 million tonnes\",\n      \"Australia emitting over 1.04 million tonnes\",\n      \"Austria emitted a much lower 11,553 tonnes\"\n    ],\n    \"derived_claims\": [\n      \"Asia is the largest regional emitter by a massive margin, releasing approximately 49.04 million tonnes of SO₂ in 2022\",\n      \"The massive emissions volume in Asia—nearly ten times that of Africa\",\n      \"The dataset contains a mix of continental aggregates (such as Asia and Africa) and individual sovereign nations (such as Albania, Argentina, and Belgium), which requires careful filtering to avoid double-counting when analyzing global totals\"\n    ],\n    \"speculative_claims\": [\n      \"Sulphur dioxide (SO₂) is a gaseous air pollutant primarily produced from the combustion of sulfur-containing fossil fuels, such as coal and oil, during electricity generation and industrial processes\",\n      \"In the atmosphere, SO₂ undergoes chemical reactions to form acidic compounds, leading to acid rain which degrades soil quality, damages forests, and acidifies aquatic ecosystems\",\n      \"The massive emissions volume in Asia... reflects the region's heavy reliance on coal-fired power plants and concentrated industrial manufacturing\",\n      \"SO₂ emissions are a critical public health concern because exposure to the gas causes severe respiratory issues, exacerbates asthma, and contributes to the formation of particulate matter (PM2.5) which can cause cardiovascular disease\",\n      \"The stark contrast between regions highlights global disparities in environmental regulations and energy transition stages\",\n      \"While many Western nations have successfully reduced SO₂ emissions over recent decades through the implementation of flue-gas desulfurization (scrubbers) and low-sulfur fuel mandates\",\n      \"rapidly industrializing regions continue to face high pollution levels as they balance economic growth with environmental health\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 5,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The dataset provides exact values for 2022, but it is truncated and lacks historical data points to establish temporal trends."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2022) is represented in the provided data, making temporal trend analysis impossible, though regional comparisons can be made."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and source clearly define the subject as global sulphur dioxide emissions by region."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert story provides the crucial unit of measurement (tonnes per year) and the source URL."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The dataset presents global sulphur dioxide (SO₂) emissions by world region and country for the year 2022 [DIRECT]. The data is sourced from Our World in Data and is measured in tonnes per year [DIRECT]. Based on the provided data, Asia is the largest regional emitter by a massive margin, releasing approximately 49.04 million tonnes of SO₂ in 2022 [DERIVED: read Asia's value of 49,039,864 tonnes]. In comparison, the entire African continent emitted approximately 5.08 million tonnes [DIRECT]. Individual country emissions vary widely, with Australia emitting over 1.04 million tonnes [DIRECT], while European nations like Austria emitted a much lower 11,553 tonnes [DIRECT].",
+      "domain_specific_explanations": "Sulphur dioxide (SO₂) is a gaseous air pollutant primarily produced from the combustion of sulfur-containing fossil fuels, such as coal and oil, during electricity generation and industrial processes [SPECULATIVE: Environmental Science]. In the atmosphere, SO₂ undergoes chemical reactions to form acidic compounds, leading to acid rain which degrades soil quality, damages forests, and acidifies aquatic ecosystems [SPECULATIVE: Environmental Science]. The massive emissions volume in Asia—nearly ten times that of Africa [DERIVED: calculated 49,039,864 / 5,081,934.5 ≈ 9.65]—reflects the region's heavy reliance on coal-fired power plants and concentrated industrial manufacturing [SPECULATIVE: Energy Policy].",
+      "real_world_significance": "SO₂ emissions are a critical public health concern because exposure to the gas causes severe respiratory issues, exacerbates asthma, and contributes to the formation of particulate matter (PM2.5) which can cause cardiovascular disease [SPECULATIVE: Public Health]. The stark contrast between regions highlights global disparities in environmental regulations and energy transition stages [SPECULATIVE: Environmental Policy]. While many Western nations have successfully reduced SO₂ emissions over recent decades through the implementation of flue-gas desulfurization (scrubbers) and low-sulfur fuel mandates [SPECULATIVE: Environmental Policy], rapidly industrializing regions continue to face high pollution levels as they balance economic growth with environmental health [SPECULATIVE: Global Development].",
+      "other": "The dataset contains a mix of continental aggregates (such as Asia and Africa) and individual sovereign nations (such as Albania, Argentina, and Belgium), which requires careful filtering to avoid double-counting when analyzing global totals [DERIVED: observed both regional and national entities in the 'Entity' column]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset presents global sulphur dioxide (SO₂) emissions by world region and country for the year 2022",
+        "The data is sourced from Our World in Data and is measured in tonnes per year",
+        "the entire African continent emitted approximately 5.08 million tonnes",
+        "Australia emitting over 1.04 million tonnes",
+        "Austria emitted a much lower 11,553 tonnes"
+      ],
+      "derived_claims": [
+        "Asia is the largest regional emitter by a massive margin, releasing approximately 49.04 million tonnes of SO₂ in 2022",
+        "The massive emissions volume in Asia—nearly ten times that of Africa",
+        "The dataset contains a mix of continental aggregates (such as Asia and Africa) and individual sovereign nations (such as Albania, Argentina, and Belgium), which requires careful filtering to avoid double-counting when analyzing global totals"
+      ],
+      "speculative_claims": [
+        "Sulphur dioxide (SO₂) is a gaseous air pollutant primarily produced from the combustion of sulfur-containing fossil fuels, such as coal and oil, during electricity generation and industrial processes",
+        "In the atmosphere, SO₂ undergoes chemical reactions to form acidic compounds, leading to acid rain which degrades soil quality, damages forests, and acidifies aquatic ecosystems",
+        "The massive emissions volume in Asia... reflects the region's heavy reliance on coal-fired power plants and concentrated industrial manufacturing",
+        "SO₂ emissions are a critical public health concern because exposure to the gas causes severe respiratory issues, exacerbates asthma, and contributes to the formation of particulate matter (PM2.5) which can cause cardiovascular disease",
+        "The stark contrast between regions highlights global disparities in environmental regulations and energy transition stages",
+        "While many Western nations have successfully reduced SO₂ emissions over recent decades through the implementation of flue-gas desulfurization (scrubbers) and low-sulfur fuel mandates",
+        "rapidly industrializing regions continue to face high pollution levels as they balance economic growth with environmental health"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 5,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11922.902749967761,
+  "created_at": "2026-07-07T22:07:41.053687Z"
+}

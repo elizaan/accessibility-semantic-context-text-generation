@@ -1,0 +1,71 @@
+{
+  "output_id": "e7df78be-59e0-4c80-9bb7-608555f7aa18",
+  "chart_id": "olli_streamgraph",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The raw data table is missing, but the Olli screen reader tree provides highly detailed summary statistics, including average counts for each industry and time interval.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The Olli tree breaks down the time series into distinct intervals with average sum counts, allowing for clear identification of the massive trend shift starting in late 2008.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly identifies the chart as a streamgraph of unemployment across industries, though specific stakeholder context is not provided.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a streamgraph depicting unemployment counts across 14 different industries from January 2000 to February 2010 [DIRECT]. The data spans a decade that includes two major economic downturns in the United States: the early 2000s recession (dot-com bust) and the Great Recession of 2007-2009 [SPECULATIVE: US Economic History]. The streamgraph format is designed to show changes in multiple categories over time, emphasizing the overall volume (total unemployment) and the relative share of each industry [SPECULATIVE: Data Visualization].\",\n    \"domain_specific_explanations\": \"In this streamgraph, the vertical thickness of the 'stream' at any point represents the total sum count of unemployed individuals, while the colored bands represent individual industries [DERIVED: Read from Olli tree and expert story]. The average sum count of unemployed individuals was lowest between Jan 2000 and Dec 2001 at 414, and peaked dramatically between Dec 2008 and Feb 2010 at an average of 964 [DIRECT]. Among the 14 industries, Wholesale and Retail Trade had the highest average unemployment count at 1,178, followed closely by Manufacturing at 1,021 and Leisure and Hospitality at 994 [DIRECT]. Conversely, Mining and Extraction had the lowest average unemployment count at 32 [DIRECT].\",\n    \"real_world_significance\": \"The total unemployment volume remained relatively stable between 2000 and 2007, fluctuating between average counts of 414 and 581, before nearly doubling in the 2008-2010 period [DERIVED: Compared average sum counts across time intervals in the Olli tree]. The massive expansion of the stream's width starting in late 2008 directly corresponds to the onset of the Great Recession, which was triggered by the subprime mortgage crisis [SPECULATIVE: Macroeconomics]. During this period, industries like Construction and Business Services experienced massive layoffs as housing markets collapsed and corporate spending was slashed [SPECULATIVE: Macroeconomics]. The persistent thickness of the stream into 2010 highlights the lagging nature of employment recovery, where job losses continued to mount even after the official end of the recession in mid-2009 [SPECULATIVE: Labor Economics].\",\n    \"other\": \"The streamgraph's organic shape makes it easier to see the overall wave-like expansion of unemployment, but makes it harder to read exact values for individual industries compared to a standard stacked bar chart [SPECULATIVE: Data Visualization].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a streamgraph depicting unemployment counts across 14 different industries from January 2000 to February 2010\",\n      \"The average sum count of unemployed individuals was lowest between Jan 2000 and Dec 2001 at 414, and peaked dramatically between Dec 2008 and Feb 2010 at an average of 964\",\n      \"Among the 14 industries, Wholesale and Retail Trade had the highest average unemployment count at 1,178, followed closely by Manufacturing at 1,021 and Leisure and Hospitality at 994\",\n      \"Conversely, Mining and Extraction had the lowest average unemployment count at 32\"\n    ],\n    \"derived_claims\": [\n      \"In this streamgraph, the vertical thickness of the 'stream' at any point represents the total sum count of unemployed individuals, while the colored bands represent individual industries [DERIVED: Read from Olli tree and expert story]\",\n      \"The total unemployment volume remained relatively stable between 2000 and 2007, fluctuating between average counts of 414 and 581, before nearly doubling in the 2008-2010 period [DERIVED: Compared average sum counts across time intervals in the Olli tree]\"\n    ],\n    \"speculative_claims\": [\n      \"The data spans a decade that includes two major economic downturns in the United States: the early 2000s recession (dot-com bust) and the Great Recession of 2007-2009 [SPECULATIVE: US Economic History]\",\n      \"The streamgraph format is designed to show changes in multiple categories over time, emphasizing the overall volume (total unemployment) and the relative share of each industry [SPECULATIVE: Data Visualization]\",\n      \"The massive expansion of the stream's width starting in late 2008 directly corresponds to the onset of the Great Recession, which was triggered by the subprime mortgage crisis [SPECULATIVE: Macroeconomics]\",\n      \"During this period, industries like Construction and Business Services experienced massive layoffs as housing markets collapsed and corporate spending was slashed [SPECULATIVE: Macroeconomics]\",\n      \"The persistent thickness of the stream into 2010 highlights the lagging nature of employment recovery, where job losses continued to mount even after the official end of the recession in mid-2009 [SPECULATIVE: Labor Economics]\",\n      \"The streamgraph's organic shape makes it easier to see the overall wave-like expansion of unemployment, but makes it harder to read exact values for individual industries compared to a standard stacked bar chart [SPECULATIVE: Data Visualization]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The raw data table is missing, but the Olli screen reader tree provides highly detailed summary statistics, including average counts for each industry and time interval."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The Olli tree breaks down the time series into distinct intervals with average sum counts, allowing for clear identification of the massive trend shift starting in late 2008."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story clearly identifies the chart as a streamgraph of unemployment across industries, though specific stakeholder context is not provided."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a streamgraph depicting unemployment counts across 14 different industries from January 2000 to February 2010 [DIRECT]. The data spans a decade that includes two major economic downturns in the United States: the early 2000s recession (dot-com bust) and the Great Recession of 2007-2009 [SPECULATIVE: US Economic History]. The streamgraph format is designed to show changes in multiple categories over time, emphasizing the overall volume (total unemployment) and the relative share of each industry [SPECULATIVE: Data Visualization].",
+      "domain_specific_explanations": "In this streamgraph, the vertical thickness of the 'stream' at any point represents the total sum count of unemployed individuals, while the colored bands represent individual industries [DERIVED: Read from Olli tree and expert story]. The average sum count of unemployed individuals was lowest between Jan 2000 and Dec 2001 at 414, and peaked dramatically between Dec 2008 and Feb 2010 at an average of 964 [DIRECT]. Among the 14 industries, Wholesale and Retail Trade had the highest average unemployment count at 1,178, followed closely by Manufacturing at 1,021 and Leisure and Hospitality at 994 [DIRECT]. Conversely, Mining and Extraction had the lowest average unemployment count at 32 [DIRECT].",
+      "real_world_significance": "The total unemployment volume remained relatively stable between 2000 and 2007, fluctuating between average counts of 414 and 581, before nearly doubling in the 2008-2010 period [DERIVED: Compared average sum counts across time intervals in the Olli tree]. The massive expansion of the stream's width starting in late 2008 directly corresponds to the onset of the Great Recession, which was triggered by the subprime mortgage crisis [SPECULATIVE: Macroeconomics]. During this period, industries like Construction and Business Services experienced massive layoffs as housing markets collapsed and corporate spending was slashed [SPECULATIVE: Macroeconomics]. The persistent thickness of the stream into 2010 highlights the lagging nature of employment recovery, where job losses continued to mount even after the official end of the recession in mid-2009 [SPECULATIVE: Labor Economics].",
+      "other": "The streamgraph's organic shape makes it easier to see the overall wave-like expansion of unemployment, but makes it harder to read exact values for individual industries compared to a standard stacked bar chart [SPECULATIVE: Data Visualization]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a streamgraph depicting unemployment counts across 14 different industries from January 2000 to February 2010",
+        "The average sum count of unemployed individuals was lowest between Jan 2000 and Dec 2001 at 414, and peaked dramatically between Dec 2008 and Feb 2010 at an average of 964",
+        "Among the 14 industries, Wholesale and Retail Trade had the highest average unemployment count at 1,178, followed closely by Manufacturing at 1,021 and Leisure and Hospitality at 994",
+        "Conversely, Mining and Extraction had the lowest average unemployment count at 32"
+      ],
+      "derived_claims": [
+        "In this streamgraph, the vertical thickness of the 'stream' at any point represents the total sum count of unemployed individuals, while the colored bands represent individual industries [DERIVED: Read from Olli tree and expert story]",
+        "The total unemployment volume remained relatively stable between 2000 and 2007, fluctuating between average counts of 414 and 581, before nearly doubling in the 2008-2010 period [DERIVED: Compared average sum counts across time intervals in the Olli tree]"
+      ],
+      "speculative_claims": [
+        "The data spans a decade that includes two major economic downturns in the United States: the early 2000s recession (dot-com bust) and the Great Recession of 2007-2009 [SPECULATIVE: US Economic History]",
+        "The streamgraph format is designed to show changes in multiple categories over time, emphasizing the overall volume (total unemployment) and the relative share of each industry [SPECULATIVE: Data Visualization]",
+        "The massive expansion of the stream's width starting in late 2008 directly corresponds to the onset of the Great Recession, which was triggered by the subprime mortgage crisis [SPECULATIVE: Macroeconomics]",
+        "During this period, industries like Construction and Business Services experienced massive layoffs as housing markets collapsed and corporate spending was slashed [SPECULATIVE: Macroeconomics]",
+        "The persistent thickness of the stream into 2010 highlights the lagging nature of employment recovery, where job losses continued to mount even after the official end of the recession in mid-2009 [SPECULATIVE: Labor Economics]",
+        "The streamgraph's organic shape makes it easier to see the overall wave-like expansion of unemployment, but makes it harder to read exact values for individual industries compared to a standard stacked bar chart [SPECULATIVE: Data Visualization]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16944.630833051633,
+  "created_at": "2026-07-08T14:30:45.907391Z"
+}

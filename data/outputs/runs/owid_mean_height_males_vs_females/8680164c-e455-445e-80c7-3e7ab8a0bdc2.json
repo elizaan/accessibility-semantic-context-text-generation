@@ -1,0 +1,71 @@
+{
+  "output_id": "8680164c-e455-445e-80c7-3e7ab8a0bdc2",
+  "chart_id": "owid_mean_height_males_vs_females",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact mean heights for males and females born in 1996 across many countries, though some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Since only the 1996 birth cohort is visible in the provided data slice, historical trends over time cannot be calculated directly from the table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly define the subject as global human height comparisons by birth cohort.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the mean adult height of males versus females born in 1996 across various countries and world regions [DIRECT]. According to the expert domain story, this 1996 birth cohort represents individuals who reached adulthood (18 years old) in the year 2014 [DIRECT]. The data is sourced from Our World in Data (OWID) [DIRECT]. In all listed countries in the provided dataset, the mean height for males is consistently higher than the mean height for females [DERIVED: compared male and female columns for all visible rows]. European nations like Belgium (181.70 cm for males, 165.49 cm for females) and Bosnia and Herzegovina (180.87 cm for males, 165.85 cm for females) show some of the tallest averages in this dataset [DERIVED: compared heights across regions in the provided table], while South Asian nations like Bangladesh (163.81 cm for males, 150.79 cm for females) show lower average heights in this cohort [DERIVED: compared heights across regions in the provided table].\",\n    \"domain_specific_explanations\": \"Human height is a standard metric in anthropometry used as a proxy for net nutrition, health, and living standards during childhood and adolescence [SPECULATIVE: Anthropometry and Public Health]. The biological difference in height between sexes (sexual dimorphism) is a well-documented global phenomenon, which is reflected in the consistent gap between male and female heights across all countries in the dataset [SPECULATIVE: Evolutionary Biology]. Differences in average height between regions (e.g., Europe vs. South Asia) often reflect a combination of genetic factors and environmental influences, such as childhood disease burden, dietary quality, and socioeconomic development [SPECULATIVE: Global Health and Epidemiology].\",\n    \"real_world_significance\": \"Understanding height trends helps policymakers and global health organizations assess historical improvements in nutrition and healthcare infrastructure [SPECULATIVE: Public Policy]. Because adult height is largely determined by environmental factors in the first few years of life, these 1996 birth cohort figures serve as an indicator of the socioeconomic and nutritional conditions prevailing in the late 1990s and early 2000s [SPECULATIVE: Developmental Economics]. Stagnating or low average heights in certain regions can signal persistent systemic inequalities, malnutrition, or poor healthcare access during critical developmental windows [SPECULATIVE: Human Development].\",\n    \"other\": \"The dataset categorizes countries by world regions (e.g., Asia, Europe, Africa, Oceania, North America, South America), allowing for macro-regional comparisons of physical development [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the mean adult height of males versus females born in 1996 across various countries and world regions\",\n      \"According to the expert domain story, this 1996 birth cohort represents individuals who reached adulthood (18 years old) in the year 2014\",\n      \"The data is sourced from Our World in Data (OWID)\",\n      \"The dataset categorizes countries by world regions (e.g., Asia, Europe, Africa, Oceania, North America, South America), allowing for macro-regional comparisons of physical development\"\n    ],\n    \"derived_claims\": [\n      \"In all listed countries in the provided dataset, the mean height for males is consistently higher than the mean height for females [derived from comparing male and female columns for all visible rows]\",\n      \"European nations like Belgium (181.70 cm for males, 165.49 cm for females) and Bosnia and Herzegovina (180.87 cm for males, 165.85 cm for females) show some of the tallest averages in this dataset [derived from comparing heights across regions in the provided table]\",\n      \"South Asian nations like Bangladesh (163.81 cm for males, 150.79 cm for females) show lower average heights in this cohort [derived from comparing heights across regions in the provided table]\"\n    ],\n    \"speculative_claims\": [\n      \"Human height is a standard metric in anthropometry used as a proxy for net nutrition, health, and living standards during childhood and adolescence [source: Anthropometry and Public Health]\",\n      \"The biological difference in height between sexes (sexual dimorphism) is a well-documented global phenomenon, which is reflected in the consistent gap between male and female heights across all countries in the dataset [source: Evolutionary Biology]\",\n      \"Differences in average height between regions (e.g., Europe vs. South Asia) often reflect a combination of genetic factors and environmental influences, such as childhood disease burden, dietary quality, and socioeconomic development [source: Global Health and Epidemiology]\",\n      \"Understanding height trends helps policymakers and global health organizations assess historical improvements in nutrition and healthcare infrastructure [source: Public Policy]\",\n      \"Because adult height is largely determined by environmental factors in the first few years of life, these 1996 birth cohort figures serve as an indicator of the socioeconomic and nutritional conditions prevailing in the late 1990s and early 2000s [source: Developmental Economics]\",\n      \"Stagnating or low average heights in certain regions can signal persistent systemic inequalities, malnutrition, or poor healthcare access during critical developmental windows [source: Human Development]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 4,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact mean heights for males and females born in 1996 across many countries, though some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Since only the 1996 birth cohort is visible in the provided data slice, historical trends over time cannot be calculated directly from the table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly define the subject as global human height comparisons by birth cohort."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the mean adult height of males versus females born in 1996 across various countries and world regions [DIRECT]. According to the expert domain story, this 1996 birth cohort represents individuals who reached adulthood (18 years old) in the year 2014 [DIRECT]. The data is sourced from Our World in Data (OWID) [DIRECT]. In all listed countries in the provided dataset, the mean height for males is consistently higher than the mean height for females [DERIVED: compared male and female columns for all visible rows]. European nations like Belgium (181.70 cm for males, 165.49 cm for females) and Bosnia and Herzegovina (180.87 cm for males, 165.85 cm for females) show some of the tallest averages in this dataset [DERIVED: compared heights across regions in the provided table], while South Asian nations like Bangladesh (163.81 cm for males, 150.79 cm for females) show lower average heights in this cohort [DERIVED: compared heights across regions in the provided table].",
+      "domain_specific_explanations": "Human height is a standard metric in anthropometry used as a proxy for net nutrition, health, and living standards during childhood and adolescence [SPECULATIVE: Anthropometry and Public Health]. The biological difference in height between sexes (sexual dimorphism) is a well-documented global phenomenon, which is reflected in the consistent gap between male and female heights across all countries in the dataset [SPECULATIVE: Evolutionary Biology]. Differences in average height between regions (e.g., Europe vs. South Asia) often reflect a combination of genetic factors and environmental influences, such as childhood disease burden, dietary quality, and socioeconomic development [SPECULATIVE: Global Health and Epidemiology].",
+      "real_world_significance": "Understanding height trends helps policymakers and global health organizations assess historical improvements in nutrition and healthcare infrastructure [SPECULATIVE: Public Policy]. Because adult height is largely determined by environmental factors in the first few years of life, these 1996 birth cohort figures serve as an indicator of the socioeconomic and nutritional conditions prevailing in the late 1990s and early 2000s [SPECULATIVE: Developmental Economics]. Stagnating or low average heights in certain regions can signal persistent systemic inequalities, malnutrition, or poor healthcare access during critical developmental windows [SPECULATIVE: Human Development].",
+      "other": "The dataset categorizes countries by world regions (e.g., Asia, Europe, Africa, Oceania, North America, South America), allowing for macro-regional comparisons of physical development [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the mean adult height of males versus females born in 1996 across various countries and world regions",
+        "According to the expert domain story, this 1996 birth cohort represents individuals who reached adulthood (18 years old) in the year 2014",
+        "The data is sourced from Our World in Data (OWID)",
+        "The dataset categorizes countries by world regions (e.g., Asia, Europe, Africa, Oceania, North America, South America), allowing for macro-regional comparisons of physical development"
+      ],
+      "derived_claims": [
+        "In all listed countries in the provided dataset, the mean height for males is consistently higher than the mean height for females [derived from comparing male and female columns for all visible rows]",
+        "European nations like Belgium (181.70 cm for males, 165.49 cm for females) and Bosnia and Herzegovina (180.87 cm for males, 165.85 cm for females) show some of the tallest averages in this dataset [derived from comparing heights across regions in the provided table]",
+        "South Asian nations like Bangladesh (163.81 cm for males, 150.79 cm for females) show lower average heights in this cohort [derived from comparing heights across regions in the provided table]"
+      ],
+      "speculative_claims": [
+        "Human height is a standard metric in anthropometry used as a proxy for net nutrition, health, and living standards during childhood and adolescence [source: Anthropometry and Public Health]",
+        "The biological difference in height between sexes (sexual dimorphism) is a well-documented global phenomenon, which is reflected in the consistent gap between male and female heights across all countries in the dataset [source: Evolutionary Biology]",
+        "Differences in average height between regions (e.g., Europe vs. South Asia) often reflect a combination of genetic factors and environmental influences, such as childhood disease burden, dietary quality, and socioeconomic development [source: Global Health and Epidemiology]",
+        "Understanding height trends helps policymakers and global health organizations assess historical improvements in nutrition and healthcare infrastructure [source: Public Policy]",
+        "Because adult height is largely determined by environmental factors in the first few years of life, these 1996 birth cohort figures serve as an indicator of the socioeconomic and nutritional conditions prevailing in the late 1990s and early 2000s [source: Developmental Economics]",
+        "Stagnating or low average heights in certain regions can signal persistent systemic inequalities, malnutrition, or poor healthcare access during critical developmental windows [source: Human Development]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 4,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14379.337000020314,
+  "created_at": "2026-07-08T13:21:27.419271Z"
+}

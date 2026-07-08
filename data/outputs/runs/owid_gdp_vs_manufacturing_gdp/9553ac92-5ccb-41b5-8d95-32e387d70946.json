@@ -1,0 +1,76 @@
+{
+  "output_id": "9553ac92-5ccb-41b5-8d95-32e387d70946",
+  "chart_id": "owid_gdp_vs_manufacturing_gdp",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides a partial list of countries with GDP per capita, population, and region for 2022, but the 'Share of manufacturing in GDP' column is empty in the provided rows, and some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Because the manufacturing share column is empty in the sample and the chart image is missing, the overall trend magnitude cannot be directly calculated.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and columns clearly establish the domain as development economics, specifically comparing industrial output share to national wealth.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly explains what both axes represent, including adjustments for inflation and living costs.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart compares the industrial sector's share of GDP against GDP per capita across various countries for the year 2022 [DERIVED: Read from the 'Year' column in the data table]. It is produced by Our World in Data (OWID) [DERIVED: Inferred from the 'World region according to OWID' column and the expert story URL]. The dataset includes countries from multiple world regions such as Asia, Europe, Africa, South America, North America, and Oceania [DIRECT].\",\n    \"domain_specific_explanations\": \"The vertical axis represents the share of industry (or manufacturing) in a country's total GDP, while the horizontal axis represents GDP per capita adjusted for inflation and purchasing power parity (PPP) to account for differences in living costs [DIRECT]. In development economics, the relationship between industrial share of GDP and GDP per capita often reflects structural transformation, where economies transition from agriculture to industry, and eventually to services as they grow wealthier [SPECULATIVE: Development Economics]. GDP per capita values in the dataset range widely, from low-income nations like Burundi at approximately $717.23 to high-income nations like Australia at over $52,049 [DERIVED: Compared GDP per capita values for Burundi and Australia in the data table].\",\n    \"real_world_significance\": \"Understanding the balance between industrialization and economic wealth helps policymakers design targeted economic development strategies [SPECULATIVE: Public Policy]. For developing nations (e.g., in Africa or Asia), increasing the share of manufacturing is often seen as a pathway to boost GDP per capita and lift populations out of poverty [SPECULATIVE: Development Economics]. Conversely, for highly developed nations, a lower share of manufacturing in GDP alongside high GDP per capita typically indicates a highly developed service-oriented economy [SPECULATIVE: Macroeconomics].\",\n    \"other\": \"The dataset includes population figures, which can be used to scale the data points (e.g., bubble size) to represent the relative human impact of these economic structures, with countries like Brazil having over 210 million people and Barbados having around 282,000 [DERIVED: Compared population values for Brazil and Barbados in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset includes countries from multiple world regions such as Asia, Europe, Africa, South America, North America, and Oceania.\",\n      \"The vertical axis represents the share of industry (or manufacturing) in a country's total GDP, while the horizontal axis represents GDP per capita adjusted for inflation and purchasing power parity (PPP) to account for differences in living costs.\"\n    ],\n    \"derived_claims\": [\n      \"The chart compares the industrial sector's share of GDP against GDP per capita across various countries for the year 2022.\",\n      \"It is produced by Our World in Data (OWID).\",\n      \"GDP per capita values in the dataset range widely, from low-income nations like Burundi at approximately $717.23 to high-income nations like Australia at over $52,049.\",\n      \"The dataset includes population figures, which can be used to scale the data points (e.g., bubble size) to represent the relative human impact of these economic structures, with countries like Brazil having over 210 million people and Barbados having around 282,000.\"\n    ],\n    \"speculative_claims\": [\n      \"In development economics, the relationship between industrial share of GDP and GDP per capita often reflects structural transformation, where economies transition from agriculture to industry, and eventually to services as they grow wealthier.\",\n      \"Understanding the balance between industrialization and economic wealth helps policymakers design targeted economic development strategies.\",\n      \"For developing nations (e.g., in Africa or Asia), increasing the share of manufacturing is often seen as a pathway to boost GDP per capita and lift populations out of poverty.\",\n      \"For highly developed nations, a lower share of manufacturing in GDP alongside high GDP per capita typically indicates a highly developed service-oriented economy.\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides a partial list of countries with GDP per capita, population, and region for 2022, but the 'Share of manufacturing in GDP' column is empty in the provided rows, and some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Because the manufacturing share column is empty in the sample and the chart image is missing, the overall trend magnitude cannot be directly calculated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and columns clearly establish the domain as development economics, specifically comparing industrial output share to national wealth."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story clearly explains what both axes represent, including adjustments for inflation and living costs."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart compares the industrial sector's share of GDP against GDP per capita across various countries for the year 2022 [DERIVED: Read from the 'Year' column in the data table]. It is produced by Our World in Data (OWID) [DERIVED: Inferred from the 'World region according to OWID' column and the expert story URL]. The dataset includes countries from multiple world regions such as Asia, Europe, Africa, South America, North America, and Oceania [DIRECT].",
+      "domain_specific_explanations": "The vertical axis represents the share of industry (or manufacturing) in a country's total GDP, while the horizontal axis represents GDP per capita adjusted for inflation and purchasing power parity (PPP) to account for differences in living costs [DIRECT]. In development economics, the relationship between industrial share of GDP and GDP per capita often reflects structural transformation, where economies transition from agriculture to industry, and eventually to services as they grow wealthier [SPECULATIVE: Development Economics]. GDP per capita values in the dataset range widely, from low-income nations like Burundi at approximately $717.23 to high-income nations like Australia at over $52,049 [DERIVED: Compared GDP per capita values for Burundi and Australia in the data table].",
+      "real_world_significance": "Understanding the balance between industrialization and economic wealth helps policymakers design targeted economic development strategies [SPECULATIVE: Public Policy]. For developing nations (e.g., in Africa or Asia), increasing the share of manufacturing is often seen as a pathway to boost GDP per capita and lift populations out of poverty [SPECULATIVE: Development Economics]. Conversely, for highly developed nations, a lower share of manufacturing in GDP alongside high GDP per capita typically indicates a highly developed service-oriented economy [SPECULATIVE: Macroeconomics].",
+      "other": "The dataset includes population figures, which can be used to scale the data points (e.g., bubble size) to represent the relative human impact of these economic structures, with countries like Brazil having over 210 million people and Barbados having around 282,000 [DERIVED: Compared population values for Brazil and Barbados in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset includes countries from multiple world regions such as Asia, Europe, Africa, South America, North America, and Oceania.",
+        "The vertical axis represents the share of industry (or manufacturing) in a country's total GDP, while the horizontal axis represents GDP per capita adjusted for inflation and purchasing power parity (PPP) to account for differences in living costs."
+      ],
+      "derived_claims": [
+        "The chart compares the industrial sector's share of GDP against GDP per capita across various countries for the year 2022.",
+        "It is produced by Our World in Data (OWID).",
+        "GDP per capita values in the dataset range widely, from low-income nations like Burundi at approximately $717.23 to high-income nations like Australia at over $52,049.",
+        "The dataset includes population figures, which can be used to scale the data points (e.g., bubble size) to represent the relative human impact of these economic structures, with countries like Brazil having over 210 million people and Barbados having around 282,000."
+      ],
+      "speculative_claims": [
+        "In development economics, the relationship between industrial share of GDP and GDP per capita often reflects structural transformation, where economies transition from agriculture to industry, and eventually to services as they grow wealthier.",
+        "Understanding the balance between industrialization and economic wealth helps policymakers design targeted economic development strategies.",
+        "For developing nations (e.g., in Africa or Asia), increasing the share of manufacturing is often seen as a pathway to boost GDP per capita and lift populations out of poverty.",
+        "For highly developed nations, a lower share of manufacturing in GDP alongside high GDP per capita typically indicates a highly developed service-oriented economy."
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10742.080957978033,
+  "created_at": "2026-07-07T23:15:29.757633Z"
+}

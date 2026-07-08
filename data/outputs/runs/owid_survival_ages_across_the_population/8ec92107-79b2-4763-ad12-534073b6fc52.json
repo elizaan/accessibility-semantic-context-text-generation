@@ -1,0 +1,72 @@
+{
+  "output_id": "8ec92107-79b2-4763-ad12-534073b6fc52",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides some data values, but they are not comprehensive or directly provided in a table format.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart shows clear trends in survival ages over time, but the exact magnitudes are not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain appears to be demography or population studies, specifically focusing on survival ages in France.\"},\n      \"domain_expert_context\": {\"score\": 2, \"justification\": \"The chart assumes some background knowledge in demography or population studies, but does not provide extensive context.\"},\n      \"stakeholder_impact\": {\"score\": 3, \"justification\": \"The chart likely has implications for policymakers, demographers, and researchers, but the exact impact is not explicitly stated.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the survival ages across the population in France from 1816 to 2023. It illustrates how the number of years a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year. [DIRECT] The chart is produced by 'Our World in Data' and sourced from Alvarez & Vaupel (2023) and the Human Mortality Database (2025). [DIRECT]\",\n    \"domain_specific_explanations\": \"The chart provides a cohort perspective on survival ages, showing how different percentiles of the population (1%, 10%, 20%, ..., 99%) survive over time. [DERIVED: from chart description] The lines on the chart represent the number of years that a specific share of the population would survive. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival. [DIRECT] This type of chart is commonly used in demography to study changes in mortality rates and life expectancy over time. [SPECULATIVE: demography domain]\",\n    \"real_world_significance\": \"This data matters because it shows significant improvements in life expectancy in France over the past two centuries, with most of the population living longer. [DERIVED: from chart trends] The chart indicates that the top 1% of the population has consistently had a high life expectancy, while the lower percentiles have shown more variability, especially during times of crisis such as wars and epidemics. [DERIVED: from chart trends] Policymakers and researchers can use this data to understand trends in mortality and life expectancy, informing decisions related to healthcare, social security, and retirement planning. [SPECULATIVE: policy and demographic research]\",\n    \"other\": \"The chart does not provide explicit information on the causes of changes in survival ages, such as improvements in healthcare, sanitation, or economic conditions. [SPECULATIVE: general knowledge of demographic trends] However, it suggests that there have been significant improvements in survival rates over time, especially for the lower percentiles of the population. [DERIVED: from chart trends]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the survival ages across the population in France from 1816 to 2023.\",\n      \"The chart is produced by 'Our World in Data' and sourced from Alvarez & Vaupel (2023) and the Human Mortality Database (2025).\",\n      \"The lines on the chart represent the number of years that a specific share of the population would survive.\"\n    ],\n    \"derived_claims\": [\n      \"This chart provides a cohort perspective on survival ages, showing how different percentiles of the population (1%, 10%, 20%, ..., 99%) survive over time.\",\n      \"The chart indicates that the top 1% of the population has consistently had a high life expectancy, while the lower percentiles have shown more variability, especially during times of crisis such as wars and epidemics.\",\n      \"This data matters because it shows significant improvements in life expectancy in France over the past two centuries, with most of the population living longer.\"\n    ],\n    \"speculative_claims\": [\n      \"This type of chart is commonly used in demography to study changes in mortality rates and life expectancy over time.\",\n      \"Policymakers and researchers can use this data to understand trends in mortality and life expectancy, informing decisions related to healthcare, social security, and retirement planning.\",\n      \"The chart does not provide explicit information on the causes of changes in survival ages, such as improvements in healthcare, sanitation, or economic conditions.\",\n      \"However, it suggests that there have been significant improvements in survival rates over time, especially for the lower percentiles of the population.\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides some data values, but they are not comprehensive or directly provided in a table format."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart shows clear trends in survival ages over time, but the exact magnitudes are not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain appears to be demography or population studies, specifically focusing on survival ages in France."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The chart assumes some background knowledge in demography or population studies, but does not provide extensive context."
+        },
+        "stakeholder_impact": {
+          "score": 3,
+          "justification": "The chart likely has implications for policymakers, demographers, and researchers, but the exact impact is not explicitly stated."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the survival ages across the population in France from 1816 to 2023. It illustrates how the number of years a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year. [DIRECT] The chart is produced by 'Our World in Data' and sourced from Alvarez & Vaupel (2023) and the Human Mortality Database (2025). [DIRECT]",
+      "domain_specific_explanations": "The chart provides a cohort perspective on survival ages, showing how different percentiles of the population (1%, 10%, 20%, ..., 99%) survive over time. [DERIVED: from chart description] The lines on the chart represent the number of years that a specific share of the population would survive. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival. [DIRECT] This type of chart is commonly used in demography to study changes in mortality rates and life expectancy over time. [SPECULATIVE: demography domain]",
+      "real_world_significance": "This data matters because it shows significant improvements in life expectancy in France over the past two centuries, with most of the population living longer. [DERIVED: from chart trends] The chart indicates that the top 1% of the population has consistently had a high life expectancy, while the lower percentiles have shown more variability, especially during times of crisis such as wars and epidemics. [DERIVED: from chart trends] Policymakers and researchers can use this data to understand trends in mortality and life expectancy, informing decisions related to healthcare, social security, and retirement planning. [SPECULATIVE: policy and demographic research]",
+      "other": "The chart does not provide explicit information on the causes of changes in survival ages, such as improvements in healthcare, sanitation, or economic conditions. [SPECULATIVE: general knowledge of demographic trends] However, it suggests that there have been significant improvements in survival rates over time, especially for the lower percentiles of the population. [DERIVED: from chart trends]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the survival ages across the population in France from 1816 to 2023.",
+        "The chart is produced by 'Our World in Data' and sourced from Alvarez & Vaupel (2023) and the Human Mortality Database (2025).",
+        "The lines on the chart represent the number of years that a specific share of the population would survive."
+      ],
+      "derived_claims": [
+        "This chart provides a cohort perspective on survival ages, showing how different percentiles of the population (1%, 10%, 20%, ..., 99%) survive over time.",
+        "The chart indicates that the top 1% of the population has consistently had a high life expectancy, while the lower percentiles have shown more variability, especially during times of crisis such as wars and epidemics.",
+        "This data matters because it shows significant improvements in life expectancy in France over the past two centuries, with most of the population living longer."
+      ],
+      "speculative_claims": [
+        "This type of chart is commonly used in demography to study changes in mortality rates and life expectancy over time.",
+        "Policymakers and researchers can use this data to understand trends in mortality and life expectancy, informing decisions related to healthcare, social security, and retirement planning.",
+        "The chart does not provide explicit information on the causes of changes in survival ages, such as improvements in healthcare, sanitation, or economic conditions.",
+        "However, it suggests that there have been significant improvements in survival rates over time, especially for the lower percentiles of the population."
+      ],
+      "total_flag_count": 17,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 1965,
+    "output": 1058
+  },
+  "latency_ms": 3247.8669580304995,
+  "created_at": "2026-07-08T00:15:05.746433Z"
+}

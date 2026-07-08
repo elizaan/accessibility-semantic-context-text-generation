@@ -1,0 +1,61 @@
+{
+  "output_id": "e29a5eb0-0bbc-4412-8a98-e0b2e0ee9d55",
+  "chart_id": "olli_faceted-chart",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data values are present but some are incomplete as exact values are not provided.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"Trend magnitude is present but inadequate as specific numbers are not given.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart subject domain appears to be agricultural, specifically crop yields across different sites and years.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares crop yields across different sites and years. The sites include Grand Rapids, Duluth, University Farm, Morris, Crookston, and Waseca. The years compared are 1931 and 1932. [DERIVED: from chart image]\",\n    \"domain_specific_explanations\": \"The chart shows the yield of various crop varieties across different sites and years. Each site has a scatter plot showing the yield of different varieties in 1931 and 1932. The varieties include Peatland, Velvet, Manchuria, Wisconsin No. 38, Trebi, No. 462, No. 457, Svansota, No. 475, and Glabron. [DIRECT]\",\n    \"real_world_significance\": \"This data is significant for agricultural research and decision-making. It helps in understanding the performance of different crop varieties across different locations and years, which can inform planting decisions and agricultural practices. [SPECULATIVE: agricultural research]\",\n    \"other\": \"The chart suggests variability in crop yields across different sites and years, indicating that environmental conditions and possibly agricultural practices have a significant impact on crop performance. [DERIVED: from chart image]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The sites include Grand Rapids, Duluth, University Farm, Morris, Crookston, and Waseca.\",\n      \"The years compared are 1931 and 1932.\",\n      \"The varieties include Peatland, Velvet, Manchuria, Wisconsin No. 38, Trebi, No. 462, No. 457, Svansota, No. 475, and Glabron.\"\n    ],\n    \"derived_claims\": [\n      \"This chart compares crop yields across different sites and years.\",\n      \"The chart suggests variability in crop yields across different sites and years.\"\n    ],\n    \"speculative_claims\": [\n      \"This data is significant for agricultural research and decision-making.\",\n      \"It helps in understanding the performance of different crop varieties across different locations and years, which can inform planting decisions and agricultural practices.\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data values are present but some are incomplete as exact values are not provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Trend magnitude is present but inadequate as specific numbers are not given."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart subject domain appears to be agricultural, specifically crop yields across different sites and years."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares crop yields across different sites and years. The sites include Grand Rapids, Duluth, University Farm, Morris, Crookston, and Waseca. The years compared are 1931 and 1932. [DERIVED: from chart image]",
+      "domain_specific_explanations": "The chart shows the yield of various crop varieties across different sites and years. Each site has a scatter plot showing the yield of different varieties in 1931 and 1932. The varieties include Peatland, Velvet, Manchuria, Wisconsin No. 38, Trebi, No. 462, No. 457, Svansota, No. 475, and Glabron. [DIRECT]",
+      "real_world_significance": "This data is significant for agricultural research and decision-making. It helps in understanding the performance of different crop varieties across different locations and years, which can inform planting decisions and agricultural practices. [SPECULATIVE: agricultural research]",
+      "other": "The chart suggests variability in crop yields across different sites and years, indicating that environmental conditions and possibly agricultural practices have a significant impact on crop performance. [DERIVED: from chart image]"
+    },
+    "flags": {
+      "direct_claims": [
+        "The sites include Grand Rapids, Duluth, University Farm, Morris, Crookston, and Waseca.",
+        "The years compared are 1931 and 1932.",
+        "The varieties include Peatland, Velvet, Manchuria, Wisconsin No. 38, Trebi, No. 462, No. 457, Svansota, No. 475, and Glabron."
+      ],
+      "derived_claims": [
+        "This chart compares crop yields across different sites and years.",
+        "The chart suggests variability in crop yields across different sites and years."
+      ],
+      "speculative_claims": [
+        "This data is significant for agricultural research and decision-making.",
+        "It helps in understanding the performance of different crop varieties across different locations and years, which can inform planting decisions and agricultural practices."
+      ],
+      "total_flag_count": 8,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 3232,
+    "output": 620
+  },
+  "latency_ms": 3099.4449999998324,
+  "created_at": "2026-07-08T14:26:25.143304Z"
+}

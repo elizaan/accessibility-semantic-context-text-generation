@@ -1,0 +1,77 @@
+{
+  "output_id": "c9e65d6b-1201-4ba5-8c09-f1534a2ccff0",
+  "chart_id": "owid_child_mortality_rate_marimekko",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides a solid sample of 2023 child mortality rates, populations, and regions, though it is truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only a single year (2023) is provided in the sample, making temporal trend analysis impossible without external knowledge.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and columns clearly define the subject as global child mortality rates in 2023.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides a clear definition of child mortality and links to the specific Our World in Data Marimekko chart.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the child mortality rate across various countries and world regions for the year 2023 [DIRECT]. The data is sourced from Our World in Data (OWID) [DIRECT]. The dataset includes population figures alongside mortality rates, suggesting a Marimekko or weighted visualization where both rate and population size are represented [DERIVED: analyzed the columns and the expert story URL].\",\n    \"domain_specific_explanations\": \"Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five [DIRECT]. The values in the dataset are expressed as percentages, with Angola at approximately 6.40% and Afghanistan at 5.55% [DERIVED: read and converted the raw decimal values to percentages]. In public health, child mortality is a key indicator of a country's overall socioeconomic development, healthcare quality, and access to basic needs like clean water and nutrition [SPECULATIVE: Public Health Domain]. There is a stark contrast between regions; for instance, European nations like Belarus (0.24%) and Andorra (0.26%) have rates many times lower than African nations like Angola (6.40%) or Asian nations like Afghanistan (5.55%) [DERIVED: compared values between Belarus/Andorra and Angola/Afghanistan].\",\n    \"real_world_significance\": \"High child mortality rates in regions like Africa (5.91% overall) and specific countries like Angola (6.40%) highlight severe gaps in pediatric healthcare [DERIVED: compared regional and national rates]. These statistics are critical for international organizations like UNICEF and the WHO to allocate resources, target aid, and monitor progress toward Sustainable Development Goal (SDG) Target 3.2, which aims to end preventable deaths of newborns and children under 5 [SPECULATIVE: United Nations SDGs]. If these high rates persist in populous nations, millions of preventable child deaths will continue to occur annually, disproportionately affecting low-income regions [SPECULATIVE: Global Health Policy].\",\n    \"other\": \"The inclusion of population data alongside mortality rates allows analysts to understand the absolute volume of child deaths in highly populated countries versus smaller nations [DERIVED: analyzed the utility of combining population and mortality rate columns].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the child mortality rate across various countries and world regions for the year 2023\",\n      \"The data is sourced from Our World in Data (OWID)\",\n      \"Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five\"\n    ],\n    \"derived_claims\": [\n      \"The dataset includes population figures alongside mortality rates, suggesting a Marimekko or weighted visualization where both rate and population size are represented [derived from: analyzed the columns and the expert story URL]\",\n      \"The values in the dataset are expressed as percentages, with Angola at approximately 6.40% and Afghanistan at 5.55% [derived from: read and converted the raw decimal values to percentages]\",\n      \"There is a stark contrast between regions; for instance, European nations like Belarus (0.24%) and Andorra (0.26%) have rates many times lower than African nations like Angola (6.40%) or Asian nations like Afghanistan (5.55%) [derived from: compared values between Belarus/Andorra and Angola/Afghanistan]\",\n      \"High child mortality rates in regions like Africa (5.91% overall) and specific countries like Angola (6.40%) highlight severe gaps in pediatric healthcare [derived from: compared regional and national rates]\",\n      \"The inclusion of population data alongside mortality rates allows analysts to understand the absolute volume of child deaths in highly populated countries versus smaller nations [derived from: analyzed the utility of combining population and mortality rate columns]\"\n    ],\n    \"speculative_claims\": [\n      \"In public health, child mortality is a key indicator of a country's overall socioeconomic development, healthcare quality, and access to basic needs like clean water and nutrition [speculative source: Public Health Domain]\",\n      \"These statistics are critical for international organizations like UNICEF and the WHO to allocate resources, target aid, and monitor progress toward Sustainable Development Goal (SDG) Target 3.2, which aims to end preventable deaths of newborns and children under 5 [speculative source: United Nations SDGs]\",\n      \"If these high rates persist in populous nations, millions of preventable child deaths will continue to occur annually, disproportionately affecting low-income regions [speculative source: Global Health Policy]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides a solid sample of 2023 child mortality rates, populations, and regions, though it is truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2023) is provided in the sample, making temporal trend analysis impossible without external knowledge."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and columns clearly define the subject as global child mortality rates in 2023."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides a clear definition of child mortality and links to the specific Our World in Data Marimekko chart."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the child mortality rate across various countries and world regions for the year 2023 [DIRECT]. The data is sourced from Our World in Data (OWID) [DIRECT]. The dataset includes population figures alongside mortality rates, suggesting a Marimekko or weighted visualization where both rate and population size are represented [DERIVED: analyzed the columns and the expert story URL].",
+      "domain_specific_explanations": "Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five [DIRECT]. The values in the dataset are expressed as percentages, with Angola at approximately 6.40% and Afghanistan at 5.55% [DERIVED: read and converted the raw decimal values to percentages]. In public health, child mortality is a key indicator of a country's overall socioeconomic development, healthcare quality, and access to basic needs like clean water and nutrition [SPECULATIVE: Public Health Domain]. There is a stark contrast between regions; for instance, European nations like Belarus (0.24%) and Andorra (0.26%) have rates many times lower than African nations like Angola (6.40%) or Asian nations like Afghanistan (5.55%) [DERIVED: compared values between Belarus/Andorra and Angola/Afghanistan].",
+      "real_world_significance": "High child mortality rates in regions like Africa (5.91% overall) and specific countries like Angola (6.40%) highlight severe gaps in pediatric healthcare [DERIVED: compared regional and national rates]. These statistics are critical for international organizations like UNICEF and the WHO to allocate resources, target aid, and monitor progress toward Sustainable Development Goal (SDG) Target 3.2, which aims to end preventable deaths of newborns and children under 5 [SPECULATIVE: United Nations SDGs]. If these high rates persist in populous nations, millions of preventable child deaths will continue to occur annually, disproportionately affecting low-income regions [SPECULATIVE: Global Health Policy].",
+      "other": "The inclusion of population data alongside mortality rates allows analysts to understand the absolute volume of child deaths in highly populated countries versus smaller nations [DERIVED: analyzed the utility of combining population and mortality rate columns]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the child mortality rate across various countries and world regions for the year 2023",
+        "The data is sourced from Our World in Data (OWID)",
+        "Child mortality rate is defined as the estimated share of newborns who die before reaching the age of five"
+      ],
+      "derived_claims": [
+        "The dataset includes population figures alongside mortality rates, suggesting a Marimekko or weighted visualization where both rate and population size are represented [derived from: analyzed the columns and the expert story URL]",
+        "The values in the dataset are expressed as percentages, with Angola at approximately 6.40% and Afghanistan at 5.55% [derived from: read and converted the raw decimal values to percentages]",
+        "There is a stark contrast between regions; for instance, European nations like Belarus (0.24%) and Andorra (0.26%) have rates many times lower than African nations like Angola (6.40%) or Asian nations like Afghanistan (5.55%) [derived from: compared values between Belarus/Andorra and Angola/Afghanistan]",
+        "High child mortality rates in regions like Africa (5.91% overall) and specific countries like Angola (6.40%) highlight severe gaps in pediatric healthcare [derived from: compared regional and national rates]",
+        "The inclusion of population data alongside mortality rates allows analysts to understand the absolute volume of child deaths in highly populated countries versus smaller nations [derived from: analyzed the utility of combining population and mortality rate columns]"
+      ],
+      "speculative_claims": [
+        "In public health, child mortality is a key indicator of a country's overall socioeconomic development, healthcare quality, and access to basic needs like clean water and nutrition [speculative source: Public Health Domain]",
+        "These statistics are critical for international organizations like UNICEF and the WHO to allocate resources, target aid, and monitor progress toward Sustainable Development Goal (SDG) Target 3.2, which aims to end preventable deaths of newborns and children under 5 [speculative source: United Nations SDGs]",
+        "If these high rates persist in populous nations, millions of preventable child deaths will continue to occur annually, disproportionately affecting low-income regions [speculative source: Global Health Policy]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11124.48041595053,
+  "created_at": "2026-07-07T23:11:30.431495Z"
+}

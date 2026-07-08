@@ -1,0 +1,72 @@
+{
+  "output_id": "426495da-65b8-479e-b8aa-edf71a24c2de",
+  "chart_id": "olli_heatmap",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The Olli screen reader tree provides monthly and daily averages, as well as the overall range, but the exact daily values for all 365 cells are not fully listed in text form.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The seasonal temperature trends (warm summers, cool winters) are clearly identifiable from the monthly averages provided in the Olli tree.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, expert domain story, and axis labels clearly define the subject as daily maximum temperatures in Seattle, WA.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a heatmap displaying daily maximum temperatures in Celsius for Seattle, Washington, organized by day of the month (1 to 31) and month of the year (January to December) [DIRECT]. The temperature values range from a minimum of 6.10°C to a maximum of 35.60°C, with an overall average maximum temperature of 20.3°C [DIRECT]. This visualization style is commonly used in climatology to show dense, continuous environmental data over a full calendar year [SPECULATIVE: Meteorology].\",\n    \"domain_specific_explanations\": \"The heatmap format allows for quick visual identification of seasonal temperature transitions [SPECULATIVE: Meteorology]. Looking at the monthly averages, July is the warmest month with an average maximum temperature of 30.7°C, closely followed by August at 29.7°C [DIRECT]. Conversely, December is the coldest month with an average maximum temperature of 11.5°C, closely followed by January at 11.8°C [DIRECT]. This pattern represents a typical temperate marine climate where summers are dry and warm, and winters are mild but cool [SPECULATIVE: Climatology]. The transition months of April (20.0°C average) and October (19.0°C average) show intermediate temperatures [DIRECT].\",\n    \"real_world_significance\": \"Understanding Seattle's temperature profile is crucial for urban planning, energy grid management, and public health, especially as summer temperatures peak near 35.6°C [SPECULATIVE: Public Policy]. Historically, Seattle has had low residential air conditioning penetration, meaning peak summer temperatures around 30-35°C can pose significant heat risks to vulnerable populations [SPECULATIVE: Public Health]. Conversely, the mild winter temperatures (averaging above 11°C for daily maxes in Dec/Jan) indicate relatively low heating demands compared to continental climates at similar latitudes [SPECULATIVE: Energy Management].\",\n    \"other\": \"The dataset includes 29 values for February, indicating that the data was collected during a leap year [DERIVED: Deduced from the 29 values listed for February in the Olli screen reader tree]. The day-of-month averages show relatively stable temperatures throughout the month, with the highest average daily max occurring on day 5 and day 30 at 22.0°C [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a heatmap displaying daily maximum temperatures in Celsius for Seattle, Washington, organized by day of the month (1 to 31) and month of the year (January to December)\",\n      \"The temperature values range from a minimum of 6.10°C to a maximum of 35.60°C, with an overall average maximum temperature of 20.3°C\",\n      \"Looking at the monthly averages, July is the warmest month with an average maximum temperature of 30.7°C, closely followed by August at 29.7°C\",\n      \"Conversely, December is the coldest month with an average maximum temperature of 11.5°C, closely followed by January at 11.8°C\",\n      \"The transition months of April (20.0°C average) and October (19.0°C average) show intermediate temperatures\",\n      \"The day-of-month averages show relatively stable temperatures throughout the month, with the highest average daily max occurring on day 5 and day 30 at 22.0°C\"\n    ],\n    \"derived_claims\": [\n      \"The dataset includes 29 values for February, indicating that the data was collected during a leap year [DERIVED: Deduced from the 29 values listed for February in the Olli screen reader tree]\"\n    ],\n    \"speculative_claims\": [\n      \"This visualization style is commonly used in climatology to show dense, continuous environmental data over a full calendar year [SPECULATIVE: Meteorology]\",\n      \"The heatmap format allows for quick visual identification of seasonal temperature transitions [SPECULATIVE: Meteorology]\",\n      \"This pattern represents a typical temperate marine climate where summers are dry and warm, and winters are mild but cool [SPECULATIVE: Climatology]\",\n      \"Understanding Seattle's temperature profile is crucial for urban planning, energy grid management, and public health, especially as summer temperatures peak near 35.6°C [SPECULATIVE: Public Policy]\",\n      \"Historically, Seattle has had low residential air conditioning penetration, meaning peak summer temperatures around 30-35°C can pose significant heat risks to vulnerable populations [SPECULATIVE: Public Health]\",\n      \"Conversely, the mild winter temperatures (averaging above 11°C for daily maxes in Dec/Jan) indicate relatively low heating demands compared to continental climates at similar latitudes [SPECULATIVE: Energy Management]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The Olli screen reader tree provides monthly and daily averages, as well as the overall range, but the exact daily values for all 365 cells are not fully listed in text form."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The seasonal temperature trends (warm summers, cool winters) are clearly identifiable from the monthly averages provided in the Olli tree."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, expert domain story, and axis labels clearly define the subject as daily maximum temperatures in Seattle, WA."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a heatmap displaying daily maximum temperatures in Celsius for Seattle, Washington, organized by day of the month (1 to 31) and month of the year (January to December) [DIRECT]. The temperature values range from a minimum of 6.10°C to a maximum of 35.60°C, with an overall average maximum temperature of 20.3°C [DIRECT]. This visualization style is commonly used in climatology to show dense, continuous environmental data over a full calendar year [SPECULATIVE: Meteorology].",
+      "domain_specific_explanations": "The heatmap format allows for quick visual identification of seasonal temperature transitions [SPECULATIVE: Meteorology]. Looking at the monthly averages, July is the warmest month with an average maximum temperature of 30.7°C, closely followed by August at 29.7°C [DIRECT]. Conversely, December is the coldest month with an average maximum temperature of 11.5°C, closely followed by January at 11.8°C [DIRECT]. This pattern represents a typical temperate marine climate where summers are dry and warm, and winters are mild but cool [SPECULATIVE: Climatology]. The transition months of April (20.0°C average) and October (19.0°C average) show intermediate temperatures [DIRECT].",
+      "real_world_significance": "Understanding Seattle's temperature profile is crucial for urban planning, energy grid management, and public health, especially as summer temperatures peak near 35.6°C [SPECULATIVE: Public Policy]. Historically, Seattle has had low residential air conditioning penetration, meaning peak summer temperatures around 30-35°C can pose significant heat risks to vulnerable populations [SPECULATIVE: Public Health]. Conversely, the mild winter temperatures (averaging above 11°C for daily maxes in Dec/Jan) indicate relatively low heating demands compared to continental climates at similar latitudes [SPECULATIVE: Energy Management].",
+      "other": "The dataset includes 29 values for February, indicating that the data was collected during a leap year [DERIVED: Deduced from the 29 values listed for February in the Olli screen reader tree]. The day-of-month averages show relatively stable temperatures throughout the month, with the highest average daily max occurring on day 5 and day 30 at 22.0°C [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a heatmap displaying daily maximum temperatures in Celsius for Seattle, Washington, organized by day of the month (1 to 31) and month of the year (January to December)",
+        "The temperature values range from a minimum of 6.10°C to a maximum of 35.60°C, with an overall average maximum temperature of 20.3°C",
+        "Looking at the monthly averages, July is the warmest month with an average maximum temperature of 30.7°C, closely followed by August at 29.7°C",
+        "Conversely, December is the coldest month with an average maximum temperature of 11.5°C, closely followed by January at 11.8°C",
+        "The transition months of April (20.0°C average) and October (19.0°C average) show intermediate temperatures",
+        "The day-of-month averages show relatively stable temperatures throughout the month, with the highest average daily max occurring on day 5 and day 30 at 22.0°C"
+      ],
+      "derived_claims": [
+        "The dataset includes 29 values for February, indicating that the data was collected during a leap year [DERIVED: Deduced from the 29 values listed for February in the Olli screen reader tree]"
+      ],
+      "speculative_claims": [
+        "This visualization style is commonly used in climatology to show dense, continuous environmental data over a full calendar year [SPECULATIVE: Meteorology]",
+        "The heatmap format allows for quick visual identification of seasonal temperature transitions [SPECULATIVE: Meteorology]",
+        "This pattern represents a typical temperate marine climate where summers are dry and warm, and winters are mild but cool [SPECULATIVE: Climatology]",
+        "Understanding Seattle's temperature profile is crucial for urban planning, energy grid management, and public health, especially as summer temperatures peak near 35.6°C [SPECULATIVE: Public Policy]",
+        "Historically, Seattle has had low residential air conditioning penetration, meaning peak summer temperatures around 30-35°C can pose significant heat risks to vulnerable populations [SPECULATIVE: Public Health]",
+        "Conversely, the mild winter temperatures (averaging above 11°C for daily maxes in Dec/Jan) indicate relatively low heating demands compared to continental climates at similar latitudes [SPECULATIVE: Energy Management]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15611.728416988626,
+  "created_at": "2026-07-08T14:29:53.052261Z"
+}

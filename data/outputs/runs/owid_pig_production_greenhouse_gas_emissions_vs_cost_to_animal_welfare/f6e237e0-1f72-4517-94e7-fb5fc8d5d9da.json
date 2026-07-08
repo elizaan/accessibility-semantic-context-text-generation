@@ -1,0 +1,64 @@
+{
+  "output_id": "f6e237e0-1f72-4517-94e7-fb5fc8d5d9da",
+  "chart_id": "owid_pig_production_greenhouse_gas_emissions_vs_cost_to_animal_welfare",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 4, \"justification\": \"The data table provides detailed information about various farms, including their emissions and welfare costs, but some rows are truncated.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart image shows a scatterplot with various data points, but the axis labels are not provided in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 5, \"justification\": \"The chart title, axis labels, and expert domain story provide clear context about the subject domain, which is pig production and its environmental and welfare impacts.\"},\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares greenhouse gas emissions per kilogram deadweight with the welfare cost to animals in pig production systems. The data includes various farms with different finishing systems such as Slatted, Solid floor, Straw yard, and Outdoor. [DIRECT]\",\n    \"domain_specific_explanations\": \"The welfare cost is based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments. A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare. [DIRECT] The chart shows trade-offs between environmental impact (emissions) and animal welfare across different pig production systems. [DERIVED: from chart title and expert domain story]\",\n    \"real_world_significance\": \"The data matters for stakeholders in the pig production industry, policymakers, and animal welfare organizations. It can inform decisions about improving animal welfare and reducing environmental impact. [SPECULATIVE: based on general knowledge of environmental and welfare issues in agriculture] Farms with lower emissions and better welfare costs (negative values) are preferable from both environmental and animal welfare perspectives. [DERIVED: from chart data and expert domain story]\",\n    \"other\": \"The chart likely suggests that there are various strategies for pig production that can balance environmental impact and animal welfare. [SPECULATIVE: based on general knowledge of sustainability and animal welfare trade-offs]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares greenhouse gas emissions per kilogram deadweight with the welfare cost to animals in pig production systems.\",\n      \"The welfare cost is based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments.\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows trade-offs between environmental impact (emissions) and animal welfare across different pig production systems.\"\n    ],\n    \"speculative_claims\": [\n      \"The data matters for stakeholders in the pig production industry, policymakers, and animal welfare organizations.\",\n      \"Farms with lower emissions and better welfare costs (negative values) are preferable from both environmental and animal welfare perspectives.\",\n      \"The chart likely suggests that there are various strategies for pig production that can balance environmental impact and animal welfare.\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 2,\n    \"derived_count\": 1,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides detailed information about various farms, including their emissions and welfare costs, but some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart image shows a scatterplot with various data points, but the axis labels are not provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart title, axis labels, and expert domain story provide clear context about the subject domain, which is pig production and its environmental and welfare impacts."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares greenhouse gas emissions per kilogram deadweight with the welfare cost to animals in pig production systems. The data includes various farms with different finishing systems such as Slatted, Solid floor, Straw yard, and Outdoor. [DIRECT]",
+      "domain_specific_explanations": "The welfare cost is based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments. A positive 'welfare cost' indicates a cost to animal welfare, while a negative value indicates benefits to welfare. [DIRECT] The chart shows trade-offs between environmental impact (emissions) and animal welfare across different pig production systems. [DERIVED: from chart title and expert domain story]",
+      "real_world_significance": "The data matters for stakeholders in the pig production industry, policymakers, and animal welfare organizations. It can inform decisions about improving animal welfare and reducing environmental impact. [SPECULATIVE: based on general knowledge of environmental and welfare issues in agriculture] Farms with lower emissions and better welfare costs (negative values) are preferable from both environmental and animal welfare perspectives. [DERIVED: from chart data and expert domain story]",
+      "other": "The chart likely suggests that there are various strategies for pig production that can balance environmental impact and animal welfare. [SPECULATIVE: based on general knowledge of sustainability and animal welfare trade-offs]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares greenhouse gas emissions per kilogram deadweight with the welfare cost to animals in pig production systems.",
+        "The welfare cost is based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments."
+      ],
+      "derived_claims": [
+        "The chart shows trade-offs between environmental impact (emissions) and animal welfare across different pig production systems."
+      ],
+      "speculative_claims": [
+        "The data matters for stakeholders in the pig production industry, policymakers, and animal welfare organizations.",
+        "Farms with lower emissions and better welfare costs (negative values) are preferable from both environmental and animal welfare perspectives.",
+        "The chart likely suggests that there are various strategies for pig production that can balance environmental impact and animal welfare."
+      ],
+      "total_flag_count": 7,
+      "direct_count": 2,
+      "derived_count": 1,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 2761,
+    "output": 660
+  },
+  "latency_ms": 3336.407750030048,
+  "created_at": "2026-07-08T13:24:20.059483Z"
+}

@@ -1,0 +1,62 @@
+{
+  "output_id": "2092d641-c702-47d9-a312-a278610c319c",
+  "chart_id": "owid_prevalence_of_undernourishment_vs_daily_supply_of_calories",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"The data table with exact values underlying the chart is not provided.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"The data table with exact values underlying the chart is not provided.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart title and axis labels provide some context about the subject domain.\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares the share of people who are undernourished versus the daily supply of calories across various countries in 2023 [DIRECT]. The chart is produced by 'Our World in Data' and sourced from the Food and Agriculture Organization of the United Nations [DIRECT]. The data represents the share of the total population with caloric intakes that fall below minimum energy requirements [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart shows a relationship between the average daily supply of calories (in kilocalories per day per person) and the share of people who are undernourished [DIRECT]. Countries with lower daily caloric supply tend to have a higher share of undernourished people [DERIVED: from chart observation]. The data indicates that countries with higher caloric supply generally have fewer people who are undernourished [DERIVED: from chart observation].\",\n    \"real_world_significance\": \"This data matters because it highlights the relationship between caloric supply and undernourishment across different countries [SPECULATIVE: general knowledge of nutrition and economics]. Countries with low daily caloric supply and high rates of undernourishment may require interventions to improve food security [SPECULATIVE: general knowledge of nutrition and economics]. Decision-makers can use this data to identify areas where nutritional support is needed [SPECULATIVE: general knowledge of nutrition and economics].\",\n    \"other\": \"The chart does not provide information on the specific interventions or policies that have been implemented in countries with high caloric supply and low undernourishment rates [SPECULATIVE: general knowledge of policy and nutrition].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares the share of people who are undernourished versus the daily supply of calories across various countries in 2023\",\n      \"The chart is produced by 'Our World in Data' and sourced from the Food and Agriculture Organization of the United Nations\",\n      \"The data represents the share of the total population with caloric intakes that fall below minimum energy requirements\"\n    ],\n    \"derived_claims\": [\n      \"Countries with lower daily caloric supply tend to have a higher share of undernourished people\",\n      \"Countries with higher caloric supply generally have fewer people who are undernourished\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it highlights the relationship between caloric supply and undernourishment across different countries\",\n      \"Countries with low daily caloric supply and high rates of undernourishment may require interventions to improve food security\",\n      \"Decision-makers can use this data to identify areas where nutritional support is needed\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The data table with exact values underlying the chart is not provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "The data table with exact values underlying the chart is not provided."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart title and axis labels provide some context about the subject domain."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares the share of people who are undernourished versus the daily supply of calories across various countries in 2023 [DIRECT]. The chart is produced by 'Our World in Data' and sourced from the Food and Agriculture Organization of the United Nations [DIRECT]. The data represents the share of the total population with caloric intakes that fall below minimum energy requirements [DIRECT].",
+      "domain_specific_explanations": "The chart shows a relationship between the average daily supply of calories (in kilocalories per day per person) and the share of people who are undernourished [DIRECT]. Countries with lower daily caloric supply tend to have a higher share of undernourished people [DERIVED: from chart observation]. The data indicates that countries with higher caloric supply generally have fewer people who are undernourished [DERIVED: from chart observation].",
+      "real_world_significance": "This data matters because it highlights the relationship between caloric supply and undernourishment across different countries [SPECULATIVE: general knowledge of nutrition and economics]. Countries with low daily caloric supply and high rates of undernourishment may require interventions to improve food security [SPECULATIVE: general knowledge of nutrition and economics]. Decision-makers can use this data to identify areas where nutritional support is needed [SPECULATIVE: general knowledge of nutrition and economics].",
+      "other": "The chart does not provide information on the specific interventions or policies that have been implemented in countries with high caloric supply and low undernourishment rates [SPECULATIVE: general knowledge of policy and nutrition]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares the share of people who are undernourished versus the daily supply of calories across various countries in 2023",
+        "The chart is produced by 'Our World in Data' and sourced from the Food and Agriculture Organization of the United Nations",
+        "The data represents the share of the total population with caloric intakes that fall below minimum energy requirements"
+      ],
+      "derived_claims": [
+        "Countries with lower daily caloric supply tend to have a higher share of undernourished people",
+        "Countries with higher caloric supply generally have fewer people who are undernourished"
+      ],
+      "speculative_claims": [
+        "This data matters because it highlights the relationship between caloric supply and undernourishment across different countries",
+        "Countries with low daily caloric supply and high rates of undernourishment may require interventions to improve food security",
+        "Decision-makers can use this data to identify areas where nutritional support is needed"
+      ],
+      "total_flag_count": 8,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2158,
+    "output": 730
+  },
+  "latency_ms": 2362.4057919951156,
+  "created_at": "2026-07-08T13:18:52.089439Z"
+}

@@ -1,0 +1,73 @@
+{
+  "output_id": "49256a8b-7fb8-4407-bc3e-e5e939c5d6a2",
+  "chart_id": "hci_b93cf632919c3ddf2a7efcd161bf03fe288761de_Image_007_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The chart provides clear median lines, distribution shapes, and statistical significance markers, but exact numerical values for individual data points or precise medians are not provided in text form.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relative differences in completion times between conditions (e.g., hand-only vs. full-body) are visually clear, and statistical significance levels are indicated, but exact effect sizes are missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The domain can be inferred as Virtual Reality or Human-Computer Interaction based on terms like 'hand-only', 'full-body', 'abstract', and 'realistic', but the exact experimental context is withheld.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 1,\n        \"justification\": \"No external domain-expert context or background literature is provided with the image.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"The real-world impact or specific stakeholder decisions depending on this data are not provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays experimental results measuring completion times (in seconds) across different virtual rooms and conditions [DERIVED: read from axis labels and titles]. The study compares 'hand-only' versus 'full-body' visibility, and 'abstract' versus 'realistic' representations [DIRECT]. This study likely belongs to the domain of Virtual Reality (VR) or Human-Computer Interaction (HCI) investigating avatar representation and its impact on user performance [SPECULATIVE: HCI/VR research].\",\n    \"domain_specific_explanations\": \"The y-axis represents task completion time in seconds, where lower times generally indicate better performance or usability [SPECULATIVE: HCI research standards]. The letter-value plots show the distribution of times for four conditions: C (abstract, hand-only), H (realistic, hand-only), R (abstract, full-body), and F (realistic, full-body) [DERIVED: mapped from x-axis labels and legend]. In Room 3, Room 4, and Cross-Rooms, the realistic full-body condition (F) consistently shows higher median completion times compared to the realistic hand-only condition (H) [DERIVED: compared median lines in H and F across all three plots]. Statistical significance markers indicate that the differences between certain conditions (e.g., H vs F, and R vs F) are statistically significant, with p-values ranging from < .10 to < .01 [DIRECT].\",\n    \"real_world_significance\": \"These findings suggest that providing a realistic full-body avatar representation might actually increase the time users take to complete tasks compared to a simpler hand-only realistic representation [DERIVED: based on the higher completion times for F compared to H]. In VR design, developers must balance the visual realism and completeness of self-avatars against task efficiency [SPECULATIVE: VR design principles]. If this trend holds, developers of productivity or time-sensitive VR applications might favor hand-only or abstract representations to optimize user performance [SPECULATIVE: VR application development].\",\n    \"other\": \"The 'Cross-Rooms' plot aggregates data across multiple rooms, with individual data points color-coded by the specific room (Room 1 to Room 4) to show the distribution of trials [DERIVED: read from Cross-Rooms legend and plot points].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The study compares 'hand-only' versus 'full-body' visibility, and 'abstract' versus 'realistic' representations.\",\n      \"Statistical significance markers indicate that the differences between certain conditions (e.g., H vs F, and R vs F) are statistically significant, with p-values ranging from < .10 to < .01.\"\n    ],\n    \"derived_claims\": [\n      \"The chart displays experimental results measuring completion times (in seconds) across different virtual rooms and conditions.\",\n      \"The letter-value plots show the distribution of times for four conditions: C (abstract, hand-only), H (realistic, hand-only), R (abstract, full-body), and F (realistic, full-body).\",\n      \"In Room 3, Room 4, and Cross-Rooms, the realistic full-body condition (F) consistently shows higher median completion times compared to the realistic hand-only condition (H).\",\n      \"These findings suggest that providing a realistic full-body avatar representation might actually increase the time users take to complete tasks compared to a simpler hand-only realistic representation.\",\n      \"The 'Cross-Rooms' plot aggregates data across multiple rooms, with individual data points color-coded by the specific room (Room 1 to Room 4) to show the distribution of trials.\"\n    ],\n    \"speculative_claims\": [\n      \"This study likely belongs to the domain of Virtual Reality (VR) or Human-Computer Interaction (HCI) investigating avatar representation and its impact on user performance.\",\n      \"The y-axis represents task completion time in seconds, where lower times generally indicate better performance or usability.\",\n      \"In VR design, developers must balance the visual realism and completeness of self-avatars against task efficiency.\",\n      \"If this trend holds, developers of productivity or time-sensitive VR applications might favor hand-only or abstract representations to optimize user performance.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The chart provides clear median lines, distribution shapes, and statistical significance markers, but exact numerical values for individual data points or precise medians are not provided in text form."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relative differences in completion times between conditions (e.g., hand-only vs. full-body) are visually clear, and statistical significance levels are indicated, but exact effect sizes are missing."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The domain can be inferred as Virtual Reality or Human-Computer Interaction based on terms like 'hand-only', 'full-body', 'abstract', and 'realistic', but the exact experimental context is withheld."
+        },
+        "domain_expert_context": {
+          "score": 1,
+          "justification": "No external domain-expert context or background literature is provided with the image."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "The real-world impact or specific stakeholder decisions depending on this data are not provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays experimental results measuring completion times (in seconds) across different virtual rooms and conditions [DERIVED: read from axis labels and titles]. The study compares 'hand-only' versus 'full-body' visibility, and 'abstract' versus 'realistic' representations [DIRECT]. This study likely belongs to the domain of Virtual Reality (VR) or Human-Computer Interaction (HCI) investigating avatar representation and its impact on user performance [SPECULATIVE: HCI/VR research].",
+      "domain_specific_explanations": "The y-axis represents task completion time in seconds, where lower times generally indicate better performance or usability [SPECULATIVE: HCI research standards]. The letter-value plots show the distribution of times for four conditions: C (abstract, hand-only), H (realistic, hand-only), R (abstract, full-body), and F (realistic, full-body) [DERIVED: mapped from x-axis labels and legend]. In Room 3, Room 4, and Cross-Rooms, the realistic full-body condition (F) consistently shows higher median completion times compared to the realistic hand-only condition (H) [DERIVED: compared median lines in H and F across all three plots]. Statistical significance markers indicate that the differences between certain conditions (e.g., H vs F, and R vs F) are statistically significant, with p-values ranging from < .10 to < .01 [DIRECT].",
+      "real_world_significance": "These findings suggest that providing a realistic full-body avatar representation might actually increase the time users take to complete tasks compared to a simpler hand-only realistic representation [DERIVED: based on the higher completion times for F compared to H]. In VR design, developers must balance the visual realism and completeness of self-avatars against task efficiency [SPECULATIVE: VR design principles]. If this trend holds, developers of productivity or time-sensitive VR applications might favor hand-only or abstract representations to optimize user performance [SPECULATIVE: VR application development].",
+      "other": "The 'Cross-Rooms' plot aggregates data across multiple rooms, with individual data points color-coded by the specific room (Room 1 to Room 4) to show the distribution of trials [DERIVED: read from Cross-Rooms legend and plot points]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The study compares 'hand-only' versus 'full-body' visibility, and 'abstract' versus 'realistic' representations.",
+        "Statistical significance markers indicate that the differences between certain conditions (e.g., H vs F, and R vs F) are statistically significant, with p-values ranging from < .10 to < .01."
+      ],
+      "derived_claims": [
+        "The chart displays experimental results measuring completion times (in seconds) across different virtual rooms and conditions.",
+        "The letter-value plots show the distribution of times for four conditions: C (abstract, hand-only), H (realistic, hand-only), R (abstract, full-body), and F (realistic, full-body).",
+        "In Room 3, Room 4, and Cross-Rooms, the realistic full-body condition (F) consistently shows higher median completion times compared to the realistic hand-only condition (H).",
+        "These findings suggest that providing a realistic full-body avatar representation might actually increase the time users take to complete tasks compared to a simpler hand-only realistic representation.",
+        "The 'Cross-Rooms' plot aggregates data across multiple rooms, with individual data points color-coded by the specific room (Room 1 to Room 4) to show the distribution of trials."
+      ],
+      "speculative_claims": [
+        "This study likely belongs to the domain of Virtual Reality (VR) or Human-Computer Interaction (HCI) investigating avatar representation and its impact on user performance.",
+        "The y-axis represents task completion time in seconds, where lower times generally indicate better performance or usability.",
+        "In VR design, developers must balance the visual realism and completeness of self-avatars against task efficiency.",
+        "If this trend holds, developers of productivity or time-sensitive VR applications might favor hand-only or abstract representations to optimize user performance."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12596.404457988683,
+  "created_at": "2026-07-07T23:42:43.120539Z"
+}

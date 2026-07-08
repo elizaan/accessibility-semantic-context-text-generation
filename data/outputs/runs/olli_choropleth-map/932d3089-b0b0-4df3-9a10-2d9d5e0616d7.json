@@ -1,0 +1,65 @@
+{
+  "output_id": "932d3089-b0b0-4df3-9a10-2d9d5e0616d7",
+  "chart_id": "olli_choropleth-map",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data table is provided, but a visual legend with values 0.1, 0.2, and 0.3 is present on the chart.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"Relative geographic trends and regional clusters can be identified visually, but precise values for individual counties are not accessible.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 1,\n        \"justification\": \"The title 'Choropleth map' and legend label 'rate' are highly generic, though the geographic boundaries of the United States are immediately recognizable.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a county-level choropleth map of the United States showing a variable labeled 'rate' [DIRECT]. The legend scale ranges from below 0.1 to 0.3 [DIRECT]. Based on the geographic distribution and the specific range of the rate (0% to 30%), this visualization highly resembles the classic US county unemployment rate dataset, often representing the peak of the Great Recession around 2009, which is widely used as a standard benchmark in data visualization libraries [SPECULATIVE: Vega-Lite Example Datasets].\",\n    \"domain_specific_explanations\": \"In a choropleth map, geographic regions are shaded in proportion to an underlying statistic, allowing for the rapid identification of spatial patterns and regional disparities [SPECULATIVE: Cartography & GIS]. A rate of 0.3 (or 30%) represents an extremely high concentration of the measured phenomenon—such as unemployment or poverty—indicative of severe localized economic distress, whereas rates below 0.1 (10%) represent more stable conditions [SPECULATIVE: Labor Economics]. Visually, the highest rates (approaching 0.3) are concentrated in specific pockets, notably in southern California (Imperial County), southwestern Arizona, parts of the rural South, and eastern Kentucky [DERIVED: identified county clusters visually from the map and compared them to the legend scale]. Conversely, the lowest rates (well below 0.1) are widely distributed across the Great Plains region, including states like North Dakota, South Dakota, Nebraska, and Kansas [DERIVED: identified states visually from the map and compared them to the legend scale].\",\n    \"real_world_significance\": \"If this map represents unemployment, the stark regional contrasts highlight deep structural economic differences across the United States [SPECULATIVE: Regional Economics]. For instance, the exceptionally high rates in Imperial County, CA, and Yuma County, AZ, are historically tied to highly seasonal agricultural labor markets [SPECULATIVE: Agricultural Economics]. Policymakers and federal agencies rely on county-level data of this nature to allocate economic development grants, target social safety net funding, and design localized job-training programs to address persistent regional inequality [SPECULATIVE: Public Policy].\",\n    \"other\": \"The map includes inset visualizations for Alaska and Hawaii, showing localized variation in those states as well, such as a pocket of higher rates in western Alaska [DERIVED: observed Alaska inset visually].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a county-level choropleth map of the United States showing a variable labeled 'rate'.\",\n      \"The legend scale ranges from below 0.1 to 0.3.\"\n    ],\n    \"derived_claims\": [\n      \"The highest rates (approaching 0.3) are concentrated in specific pockets, notably in southern California (Imperial County), southwestern Arizona, parts of the rural South, and eastern Kentucky.\",\n      \"The lowest rates (well below 0.1) are widely distributed across the Great Plains region, including states like North Dakota, South Dakota, Nebraska, and Kansas.\",\n      \"The map includes inset visualizations for Alaska and Hawaii, showing localized variation in those states as well, such as a pocket of higher rates in western Alaska.\"\n    ],\n    \"speculative_claims\": [\n      \"Based on the geographic distribution and the specific range of the rate (0% to 30%), this visualization highly resembles the classic US county unemployment rate dataset, often representing the peak of the Great Recession around 2009, which is widely used as a standard benchmark in data visualization libraries.\",\n      \"In a choropleth map, geographic regions are shaded in proportion to an underlying statistic, allowing for the rapid identification of spatial patterns and regional disparities.\",\n      \"A rate of 0.3 (or 30%) represents an extremely high concentration of the measured phenomenon—such as unemployment or poverty—indicative of severe localized economic distress, whereas rates below 0.1 (10%) represent more stable conditions.\",\n      \"If this map represents unemployment, the stark regional contrasts highlight deep structural economic differences across the United States.\",\n      \"The exceptionally high rates in Imperial County, CA, and Yuma County, AZ, are historically tied to highly seasonal agricultural labor markets.\",\n      \"Policymakers and federal agencies rely on county-level data of this nature to allocate economic development grants, target social safety net funding, and design localized job-training programs to address persistent regional inequality.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data table is provided, but a visual legend with values 0.1, 0.2, and 0.3 is present on the chart."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Relative geographic trends and regional clusters can be identified visually, but precise values for individual counties are not accessible."
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "The title 'Choropleth map' and legend label 'rate' are highly generic, though the geographic boundaries of the United States are immediately recognizable."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a county-level choropleth map of the United States showing a variable labeled 'rate' [DIRECT]. The legend scale ranges from below 0.1 to 0.3 [DIRECT]. Based on the geographic distribution and the specific range of the rate (0% to 30%), this visualization highly resembles the classic US county unemployment rate dataset, often representing the peak of the Great Recession around 2009, which is widely used as a standard benchmark in data visualization libraries [SPECULATIVE: Vega-Lite Example Datasets].",
+      "domain_specific_explanations": "In a choropleth map, geographic regions are shaded in proportion to an underlying statistic, allowing for the rapid identification of spatial patterns and regional disparities [SPECULATIVE: Cartography & GIS]. A rate of 0.3 (or 30%) represents an extremely high concentration of the measured phenomenon—such as unemployment or poverty—indicative of severe localized economic distress, whereas rates below 0.1 (10%) represent more stable conditions [SPECULATIVE: Labor Economics]. Visually, the highest rates (approaching 0.3) are concentrated in specific pockets, notably in southern California (Imperial County), southwestern Arizona, parts of the rural South, and eastern Kentucky [DERIVED: identified county clusters visually from the map and compared them to the legend scale]. Conversely, the lowest rates (well below 0.1) are widely distributed across the Great Plains region, including states like North Dakota, South Dakota, Nebraska, and Kansas [DERIVED: identified states visually from the map and compared them to the legend scale].",
+      "real_world_significance": "If this map represents unemployment, the stark regional contrasts highlight deep structural economic differences across the United States [SPECULATIVE: Regional Economics]. For instance, the exceptionally high rates in Imperial County, CA, and Yuma County, AZ, are historically tied to highly seasonal agricultural labor markets [SPECULATIVE: Agricultural Economics]. Policymakers and federal agencies rely on county-level data of this nature to allocate economic development grants, target social safety net funding, and design localized job-training programs to address persistent regional inequality [SPECULATIVE: Public Policy].",
+      "other": "The map includes inset visualizations for Alaska and Hawaii, showing localized variation in those states as well, such as a pocket of higher rates in western Alaska [DERIVED: observed Alaska inset visually]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a county-level choropleth map of the United States showing a variable labeled 'rate'.",
+        "The legend scale ranges from below 0.1 to 0.3."
+      ],
+      "derived_claims": [
+        "The highest rates (approaching 0.3) are concentrated in specific pockets, notably in southern California (Imperial County), southwestern Arizona, parts of the rural South, and eastern Kentucky.",
+        "The lowest rates (well below 0.1) are widely distributed across the Great Plains region, including states like North Dakota, South Dakota, Nebraska, and Kansas.",
+        "The map includes inset visualizations for Alaska and Hawaii, showing localized variation in those states as well, such as a pocket of higher rates in western Alaska."
+      ],
+      "speculative_claims": [
+        "Based on the geographic distribution and the specific range of the rate (0% to 30%), this visualization highly resembles the classic US county unemployment rate dataset, often representing the peak of the Great Recession around 2009, which is widely used as a standard benchmark in data visualization libraries.",
+        "In a choropleth map, geographic regions are shaded in proportion to an underlying statistic, allowing for the rapid identification of spatial patterns and regional disparities.",
+        "A rate of 0.3 (or 30%) represents an extremely high concentration of the measured phenomenon—such as unemployment or poverty—indicative of severe localized economic distress, whereas rates below 0.1 (10%) represent more stable conditions.",
+        "If this map represents unemployment, the stark regional contrasts highlight deep structural economic differences across the United States.",
+        "The exceptionally high rates in Imperial County, CA, and Yuma County, AZ, are historically tied to highly seasonal agricultural labor markets.",
+        "Policymakers and federal agencies rely on county-level data of this nature to allocate economic development grants, target social safety net funding, and design localized job-training programs to address persistent regional inequality."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15928.889000031631,
+  "created_at": "2026-07-08T14:30:39.448712Z"
+}

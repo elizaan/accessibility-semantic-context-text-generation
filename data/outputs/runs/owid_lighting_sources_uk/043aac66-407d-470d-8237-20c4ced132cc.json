@@ -1,0 +1,79 @@
+{
+  "output_id": "043aac66-407d-470d-8237-20c4ced132cc",
+  "chart_id": "owid_lighting_sources_uk",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "data_table"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The provided data table only contains a single row for the year 2025, leaving out the entire historical timeline from 1700 onwards shown in the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"No historical data points or trend magnitudes are provided in the metadata, though they are clearly visible in the chart image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly identify the subject as lighting energy sources in the United Kingdom.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story is present and provides a clear, concise description of what the chart represents.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context or target audience information is provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart, titled 'Lighting sources in the United Kingdom' [DIRECT], is published by Our World in Data [DERIVED: read from the logo in the chart image]. It tracks the historical market share of various lighting technologies in the UK from 1700 to 2025 [DERIVED: read from the chart image title and x-axis]. According to the underlying data, by the year 2025, electricity has achieved a 100% share of lighting, while candles, whale oil, kerosene, and gas have all declined to 0% [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart visualizes successive waves of technological substitution in energy systems [SPECULATIVE: Energy Economics]. In the 18th century, candles and whale oil were the primary sources of light [DERIVED: read from the chart image]. Gas lighting was introduced in the early 1800s—specifically, the chart shows gas starting around 1810 and becoming a major source by the mid-19th century [DERIVED: read from the chart image]. Kerosene also captured a significant share of the market in the late 19th century before being phased out [DERIVED: read from the chart image]. Electricity began its commercial ascent around 1900 and completely dominated the market by the mid-20th century [DERIVED: read from the chart image].\",\n    \"real_world_significance\": \"The transition from organic fuels (candles, whale oil) to fossil fuels (gas, kerosene) and finally to electricity represents a massive leap in energy efficiency and safety [SPECULATIVE: History of Technology]. Historically, the decline of whale oil in the mid-19th century coincided with the rise of kerosene and gas, which helped reduce the economic pressure on whale hunting [SPECULATIVE: Environmental History]. The widespread adoption of electric lighting in the 20th century fundamentally transformed society by extending the productive hours of the day, improving factory safety, and reducing indoor air pollution from burning oils and gases [SPECULATIVE: Sociology].\",\n    \"other\": \"The historical data is compiled from academic research by Fouquet (2026) and Fouquet and Pearson (2006) [DERIVED: read from the chart image footer].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart, titled 'Lighting sources in the United Kingdom' [DIRECT]\",\n      \"According to the underlying data, by the year 2025, electricity has achieved a 100% share of lighting, while candles, whale oil, kerosene, and gas have all declined to 0% [DIRECT]\"\n    ],\n    \"derived_claims\": [\n      \"is published by Our World in Data [DERIVED: read from the logo in the chart image]\",\n      \"It tracks the historical market share of various lighting technologies in the UK from 1700 to 2025 [DERIVED: read from the chart image title and x-axis]\",\n      \"In the 18th century, candles and whale oil were the primary sources of light [DERIVED: read from the chart image]\",\n      \"the chart shows gas starting around 1810 and becoming a major source by the mid-19th century [DERIVED: read from the chart image]\",\n      \"Kerosene also captured a significant share of the market in the late 19th century before being phased out [DERIVED: read from the chart image]\",\n      \"Electricity began its commercial ascent around 1900 and completely dominated the market by the mid-20th century [DERIVED: read from the chart image]\",\n      \"The historical data is compiled from academic research by Fouquet (2026) and Fouquet and Pearson (2006) [DERIVED: read from the chart image footer]\"\n    ],\n    \"speculative_claims\": [\n      \"The chart visualizes successive waves of technological substitution in energy systems [SPECULATIVE: Energy Economics]\",\n      \"The transition from organic fuels (candles, whale oil) to fossil fuels (gas, kerosene) and finally to electricity represents a massive leap in energy efficiency and safety [SPECULATIVE: History of Technology]\",\n      \"Historically, the decline of whale oil in the mid-19th century coincided with the rise of kerosene and gas, which helped reduce the economic pressure on whale hunting [SPECULATIVE: Environmental History]\",\n      \"The widespread adoption of electric lighting in the 20th century fundamentally transformed society by extending the productive hours of the day, improving factory safety, and reducing indoor air pollution from burning oils and gases [SPECULATIVE: Sociology]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 2,\n    \"derived_count\": 7,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The provided data table only contains a single row for the year 2025, leaving out the entire historical timeline from 1700 onwards shown in the image."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No historical data points or trend magnitudes are provided in the metadata, though they are clearly visible in the chart image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly identify the subject as lighting energy sources in the United Kingdom."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story is present and provides a clear, concise description of what the chart represents."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context or target audience information is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart, titled 'Lighting sources in the United Kingdom' [DIRECT], is published by Our World in Data [DERIVED: read from the logo in the chart image]. It tracks the historical market share of various lighting technologies in the UK from 1700 to 2025 [DERIVED: read from the chart image title and x-axis]. According to the underlying data, by the year 2025, electricity has achieved a 100% share of lighting, while candles, whale oil, kerosene, and gas have all declined to 0% [DIRECT].",
+      "domain_specific_explanations": "The chart visualizes successive waves of technological substitution in energy systems [SPECULATIVE: Energy Economics]. In the 18th century, candles and whale oil were the primary sources of light [DERIVED: read from the chart image]. Gas lighting was introduced in the early 1800s—specifically, the chart shows gas starting around 1810 and becoming a major source by the mid-19th century [DERIVED: read from the chart image]. Kerosene also captured a significant share of the market in the late 19th century before being phased out [DERIVED: read from the chart image]. Electricity began its commercial ascent around 1900 and completely dominated the market by the mid-20th century [DERIVED: read from the chart image].",
+      "real_world_significance": "The transition from organic fuels (candles, whale oil) to fossil fuels (gas, kerosene) and finally to electricity represents a massive leap in energy efficiency and safety [SPECULATIVE: History of Technology]. Historically, the decline of whale oil in the mid-19th century coincided with the rise of kerosene and gas, which helped reduce the economic pressure on whale hunting [SPECULATIVE: Environmental History]. The widespread adoption of electric lighting in the 20th century fundamentally transformed society by extending the productive hours of the day, improving factory safety, and reducing indoor air pollution from burning oils and gases [SPECULATIVE: Sociology].",
+      "other": "The historical data is compiled from academic research by Fouquet (2026) and Fouquet and Pearson (2006) [DERIVED: read from the chart image footer]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart, titled 'Lighting sources in the United Kingdom' [DIRECT]",
+        "According to the underlying data, by the year 2025, electricity has achieved a 100% share of lighting, while candles, whale oil, kerosene, and gas have all declined to 0% [DIRECT]"
+      ],
+      "derived_claims": [
+        "is published by Our World in Data [DERIVED: read from the logo in the chart image]",
+        "It tracks the historical market share of various lighting technologies in the UK from 1700 to 2025 [DERIVED: read from the chart image title and x-axis]",
+        "In the 18th century, candles and whale oil were the primary sources of light [DERIVED: read from the chart image]",
+        "the chart shows gas starting around 1810 and becoming a major source by the mid-19th century [DERIVED: read from the chart image]",
+        "Kerosene also captured a significant share of the market in the late 19th century before being phased out [DERIVED: read from the chart image]",
+        "Electricity began its commercial ascent around 1900 and completely dominated the market by the mid-20th century [DERIVED: read from the chart image]",
+        "The historical data is compiled from academic research by Fouquet (2026) and Fouquet and Pearson (2006) [DERIVED: read from the chart image footer]"
+      ],
+      "speculative_claims": [
+        "The chart visualizes successive waves of technological substitution in energy systems [SPECULATIVE: Energy Economics]",
+        "The transition from organic fuels (candles, whale oil) to fossil fuels (gas, kerosene) and finally to electricity represents a massive leap in energy efficiency and safety [SPECULATIVE: History of Technology]",
+        "Historically, the decline of whale oil in the mid-19th century coincided with the rise of kerosene and gas, which helped reduce the economic pressure on whale hunting [SPECULATIVE: Environmental History]",
+        "The widespread adoption of electric lighting in the 20th century fundamentally transformed society by extending the productive hours of the day, improving factory safety, and reducing indoor air pollution from burning oils and gases [SPECULATIVE: Sociology]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 2,
+      "derived_count": 7,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12855.562667013146,
+  "created_at": "2026-07-07T22:15:52.411977Z"
+}

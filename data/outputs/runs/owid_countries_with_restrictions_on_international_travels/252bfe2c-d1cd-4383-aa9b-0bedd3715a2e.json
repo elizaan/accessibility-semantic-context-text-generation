@@ -1,0 +1,67 @@
+{
+  "output_id": "252bfe2c-d1cd-4383-aa9b-0bedd3715a2e",
+  "chart_id": "owid_countries_with_restrictions_on_international_travels",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"No data values provided\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No trend magnitude information provided\"},\n      \"chart_subject_domain\": {\"score\": 2, \"justification\": \"Some information about chart subject domain provided, but incomplete\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is about COVID-19 restrictions on international travel [DERIVED: from expert domain story]. It was produced by Our World in Data [DIRECT]. The chart shows the number of recorded countries with a given type of restriction on international travel arrivals [DIRECT].\",\n    \"domain_specific_explanations\": \"The data relates to COVID-19 travel restrictions [DIRECT]. The values represent the number of countries with specific types of restrictions [DIRECT]. To interpret this data, one needs to understand the context of COVID-19 pandemic and travel restrictions [SPECULATIVE: general knowledge of COVID-19].\",\n    \"real_world_significance\": \"This data matters because it informs travelers about restrictions in different countries [SPECULATIVE: general knowledge of travel]. It also helps policymakers understand the global response to the pandemic [SPECULATIVE: general knowledge of pandemic response]. The data can be used to track changes in travel restrictions over time [DERIVED: from expert domain story].\",\n    \"other\": \"The chart is likely to be used by travelers, policymakers, and researchers [SPECULATIVE: general knowledge of data usage].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is about COVID-19 restrictions on international travel\",\n      \"The chart shows the number of recorded countries with a given type of restriction on international travel arrivals\",\n      \"The data relates to COVID-19 travel restrictions\",\n      \"The values represent the number of countries with specific types of restrictions\"\n    ],\n    \"derived_claims\": [\n      \"This chart is about COVID-19 restrictions on international travel [from expert domain story]\",\n      \"The data can be used to track changes in travel restrictions over time [from expert domain story]\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it informs travelers about restrictions in different countries [general knowledge of travel]\",\n      \"It also helps policymakers understand the global response to the pandemic [general knowledge of pandemic response]\",\n      \"The chart is likely to be used by travelers, policymakers, and researchers [general knowledge of data usage]\",\n      \"To interpret this data, one needs to understand the context of COVID-19 pandemic and travel restrictions [general knowledge of COVID-19]\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data values provided"
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend magnitude information provided"
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "Some information about chart subject domain provided, but incomplete"
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is about COVID-19 restrictions on international travel [DERIVED: from expert domain story]. It was produced by Our World in Data [DIRECT]. The chart shows the number of recorded countries with a given type of restriction on international travel arrivals [DIRECT].",
+      "domain_specific_explanations": "The data relates to COVID-19 travel restrictions [DIRECT]. The values represent the number of countries with specific types of restrictions [DIRECT]. To interpret this data, one needs to understand the context of COVID-19 pandemic and travel restrictions [SPECULATIVE: general knowledge of COVID-19].",
+      "real_world_significance": "This data matters because it informs travelers about restrictions in different countries [SPECULATIVE: general knowledge of travel]. It also helps policymakers understand the global response to the pandemic [SPECULATIVE: general knowledge of pandemic response]. The data can be used to track changes in travel restrictions over time [DERIVED: from expert domain story].",
+      "other": "The chart is likely to be used by travelers, policymakers, and researchers [SPECULATIVE: general knowledge of data usage]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is about COVID-19 restrictions on international travel",
+        "The chart shows the number of recorded countries with a given type of restriction on international travel arrivals",
+        "The data relates to COVID-19 travel restrictions",
+        "The values represent the number of countries with specific types of restrictions"
+      ],
+      "derived_claims": [
+        "This chart is about COVID-19 restrictions on international travel [from expert domain story]",
+        "The data can be used to track changes in travel restrictions over time [from expert domain story]"
+      ],
+      "speculative_claims": [
+        "This data matters because it informs travelers about restrictions in different countries [general knowledge of travel]",
+        "It also helps policymakers understand the global response to the pandemic [general knowledge of pandemic response]",
+        "The chart is likely to be used by travelers, policymakers, and researchers [general knowledge of data usage]",
+        "To interpret this data, one needs to understand the context of COVID-19 pandemic and travel restrictions [general knowledge of COVID-19]"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 1170,
+    "output": 620
+  },
+  "latency_ms": 2645.866292004939,
+  "created_at": "2026-07-08T13:14:28.152850Z"
+}

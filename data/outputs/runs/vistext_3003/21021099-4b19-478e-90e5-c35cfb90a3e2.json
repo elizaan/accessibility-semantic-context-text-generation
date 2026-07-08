@@ -1,0 +1,77 @@
+{
+  "output_id": "21021099-4b19-478e-90e5-c35cfb90a3e2",
+  "chart_id": "vistext_3003",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides some values but seems incomplete.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart image shows the trend and magnitude of real GDP growth.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart is about the annual growth of real GDP in the United States.\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No expert domain story is provided.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context is provided.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the annual growth of real GDP in the United States from 1930 to 2020. [DIRECT] It is a line graph with year on the x-axis and real GDP growth on the y-axis. [DIRECT]\",\n    \"domain_specific_explanations\": \"The real GDP growth is a measure of the change in the value of goods and services produced within the United States, adjusted for inflation. [SPECULATIVE: economics] A positive value indicates growth, while a negative value indicates contraction. [SPECULATIVE: economics] The chart shows significant variability in GDP growth over the years, with some years experiencing high growth and others experiencing decline. [DERIVED: from chart image]\",\n    \"real_world_significance\": \"The real GDP growth rate is an important indicator of the overall health of the economy. [SPECULATIVE: economics] A high and stable growth rate can indicate a strong economy, while a low or negative growth rate can indicate a recession. [SPECULATIVE: economics] This data is likely used by policymakers, economists, and businesses to understand the current state of the economy and make informed decisions. [SPECULATIVE: economics]\",\n    \"other\": \"The chart image shows that the real GDP growth rate has fluctuated over the years, with some periods of high growth and others of low growth or decline. [DERIVED: from chart image] The data table provides specific values for certain years, but it appears to be incomplete. [DIRECT]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the annual growth of real GDP in the United States from 1930 to 2020.\",\n      \"It is a line graph with year on the x-axis and real GDP growth on the y-axis.\",\n      \"The data table provides specific values for certain years, but it appears to be incomplete.\"\n    ],\n    \"derived_claims\": [\n      \"The chart image shows that the real GDP growth rate has fluctuated over the years, with some periods of high growth and others of low growth or decline.\"\n    ],\n    \"speculative_claims\": [\n      \"The real GDP growth is a measure of the change in the value of goods and services produced within the United States, adjusted for inflation.\",\n      \"A positive value indicates growth, while a negative value indicates contraction.\",\n      \"The real GDP growth rate is an important indicator of the overall health of the economy.\",\n      \"A high and stable growth rate can indicate a strong economy, while a low or negative growth rate can indicate a recession.\",\n      \"This data is likely used by policymakers, economists, and businesses to understand the current state of the economy and make informed decisions.\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 3,\n    \"derived_count\": 1,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides some values but seems incomplete."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart image shows the trend and magnitude of real GDP growth."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart is about the annual growth of real GDP in the United States."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the annual growth of real GDP in the United States from 1930 to 2020. [DIRECT] It is a line graph with year on the x-axis and real GDP growth on the y-axis. [DIRECT]",
+      "domain_specific_explanations": "The real GDP growth is a measure of the change in the value of goods and services produced within the United States, adjusted for inflation. [SPECULATIVE: economics] A positive value indicates growth, while a negative value indicates contraction. [SPECULATIVE: economics] The chart shows significant variability in GDP growth over the years, with some years experiencing high growth and others experiencing decline. [DERIVED: from chart image]",
+      "real_world_significance": "The real GDP growth rate is an important indicator of the overall health of the economy. [SPECULATIVE: economics] A high and stable growth rate can indicate a strong economy, while a low or negative growth rate can indicate a recession. [SPECULATIVE: economics] This data is likely used by policymakers, economists, and businesses to understand the current state of the economy and make informed decisions. [SPECULATIVE: economics]",
+      "other": "The chart image shows that the real GDP growth rate has fluctuated over the years, with some periods of high growth and others of low growth or decline. [DERIVED: from chart image] The data table provides specific values for certain years, but it appears to be incomplete. [DIRECT]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the annual growth of real GDP in the United States from 1930 to 2020.",
+        "It is a line graph with year on the x-axis and real GDP growth on the y-axis.",
+        "The data table provides specific values for certain years, but it appears to be incomplete."
+      ],
+      "derived_claims": [
+        "The chart image shows that the real GDP growth rate has fluctuated over the years, with some periods of high growth and others of low growth or decline."
+      ],
+      "speculative_claims": [
+        "The real GDP growth is a measure of the change in the value of goods and services produced within the United States, adjusted for inflation.",
+        "A positive value indicates growth, while a negative value indicates contraction.",
+        "The real GDP growth rate is an important indicator of the overall health of the economy.",
+        "A high and stable growth rate can indicate a strong economy, while a low or negative growth rate can indicate a recession.",
+        "This data is likely used by policymakers, economists, and businesses to understand the current state of the economy and make informed decisions."
+      ],
+      "total_flag_count": 13,
+      "direct_count": 3,
+      "derived_count": 1,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 3472,
+    "output": 781
+  },
+  "latency_ms": 2406.3876250293106,
+  "created_at": "2026-07-08T00:09:05.355032Z"
+}

@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { getChart, getOutputsForChart, deleteOutput, generateDescription } from "@/lib/api";
-import type { Chart, GenerationOutput, DatasetSource, MetadataKey } from "@/lib/types";
+import type { Chart, GenerationOutput, DatasetSource, SelectableMetadataKey } from "@/lib/types";
 import { MetadataFeaturePanel } from "@/components/chart/MetadataFeaturePanel";
 import { GeneratePanel } from "@/components/generate/GeneratePanel";
 import { OutputList } from "@/components/output/OutputList";
@@ -22,7 +22,7 @@ export default function ChartDetailPage() {
   const [outputs, setOutputs] = useState<GenerationOutput[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<"generate" | "outputs">("generate");
-  const [enabledFeatures, setEnabledFeatures] = useState<MetadataKey[]>([]);
+  const [enabledFeatures, setEnabledFeatures] = useState<SelectableMetadataKey[]>([]);
 
   useEffect(() => {
     Promise.all([getChart(chartId), getOutputsForChart(chartId)])
@@ -51,7 +51,9 @@ export default function ChartDetailPage() {
       chart_id: output.chart_id,
       model_id: output.model_id,
       variant: output.variant,
-      enabled_features: output.enabled_features,
+      enabled_features: output.enabled_features.filter(
+        (f): f is SelectableMetadataKey => f !== "l4_caption"
+      ),
       include_image: output.include_image,
     });
     handleNewOutput(newOutput);

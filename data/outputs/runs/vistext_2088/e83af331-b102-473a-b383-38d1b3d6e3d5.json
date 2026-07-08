@@ -1,0 +1,71 @@
+{
+  "output_id": "e83af331-b102-473a-b383-38d1b3d6e3d5",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "gpt-5.4",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No underlying data table or exact numeric values are provided in the metadata, so precise year-by-year values cannot be verified.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The image and title allow a partial reading that life expectancy increases over time, but the exact magnitude is not provided in metadata and can only be roughly estimated from the chart.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly identifies the subject as life expectancy at birth in Madagascar over 2008 to 2018, which is sufficient to identify the public health and demographic domain, though source and stakeholder context are absent.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is about life expectancy at birth in Madagascar over the period 2008 to 2018. [DIRECT] The subject belongs to the demographic and public health domain. [SPECULATIVE: demography and public health] The chart appears to show a gradual increase across the period rather than a decline or sharp fluctuation. [DERIVED: trend read from the chart image] No producer, source institution, or intended audience is provided in the metadata. [DIRECT]\",\n    \"domain_specific_explanations\": \"Life expectancy at birth is a summary measure of how long a newborn would be expected to live if current mortality conditions remained constant. [SPECULATIVE: demography] In this field, rising life expectancy is commonly interpreted as a sign of improving survival conditions, often linked to changes in healthcare access, nutrition, sanitation, vaccination, and child survival. [SPECULATIVE: public health and demography] The values shown are in years. [DIRECT] From the chart image, the level appears to move from the low 60s at the beginning of the period to the mid 60s by the end. [DERIVED: approximate values read from the y-axis and plotted area] Because no exact data table is provided, small year-to-year differences should be treated as approximate rather than exact. [DIRECT]\",\n    \"real_world_significance\": \"Life expectancy matters because it is a widely used indicator of population health and overall social development. [SPECULATIVE: public health and development economics] A gradual increase over a decade would generally suggest that people in Madagascar were, on average, experiencing better survival outcomes than at the start of the period. [DERIVED: upward trend interpreted in demographic context] Governments, health ministries, international development agencies, and researchers often use this kind of indicator to monitor health progress and compare countries over time. [SPECULATIVE: global health policy] If improvement continues, it can indicate ongoing gains in survival, especially if supported by reductions in infant, child, and adult mortality. [SPECULATIVE: demography and epidemiology] However, this measure alone does not show inequalities within the country, causes of death, or differences by sex, region, or income group. [SPECULATIVE: demography and health statistics]\",\n    \"other\": \"The chart title specifies Madagascar and the years 2008 through 2018. [DIRECT] The y-axis label visible in the image indicates the measure is life expectancy at birth in years, even though the metadata field for axis labels is marked not provided. [DERIVED: text read from the chart image] The image supports a broad conclusion of steady improvement, but not a precise numeric estimate for each year. [DERIVED: overall pattern read from the chart image]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is about life expectancy at birth in Madagascar over the period 2008 to 2018.\",\n      \"No producer, source institution, or intended audience is provided in the metadata.\",\n      \"The values shown are in years.\",\n      \"Because no exact data table is provided, small year-to-year differences should be treated as approximate rather than exact.\",\n      \"The chart title specifies Madagascar and the years 2008 through 2018.\"\n    ],\n    \"derived_claims\": [\n      \"The chart appears to show a gradual increase across the period rather than a decline or sharp fluctuation. — derived from the trend visible in the chart image.\",\n      \"From the chart image, the level appears to move from the low 60s at the beginning of the period to the mid 60s by the end. — derived by approximating plotted values against the y-axis scale.\",\n      \"A gradual increase over a decade would generally suggest that people in Madagascar were, on average, experiencing better survival outcomes than at the start of the period. — derived from the upward trend in the chart combined with the meaning of life expectancy.\",\n      \"The y-axis label visible in the image indicates the measure is life expectancy at birth in years, even though the metadata field for axis labels is marked not provided. — derived by reading text directly from the chart image.\",\n      \"The image supports a broad conclusion of steady improvement, but not a precise numeric estimate for each year. — derived from the visible overall pattern and absence of exact data.\"\n    ],\n    \"speculative_claims\": [\n      \"The subject belongs to the demographic and public health domain. — source: demography and public health.\",\n      \"Life expectancy at birth is a summary measure of how long a newborn would be expected to live if current mortality conditions remained constant. — source: demography.\",\n      \"In this field, rising life expectancy is commonly interpreted as a sign of improving survival conditions, often linked to changes in healthcare access, nutrition, sanitation, vaccination, and child survival. — source: public health and demography.\",\n      \"Life expectancy matters because it is a widely used indicator of population health and overall social development. — source: public health and development economics.\",\n      \"Governments, health ministries, international development agencies, and researchers often use this kind of indicator to monitor health progress and compare countries over time. — source: global health policy.\",\n      \"If improvement continues, it can indicate ongoing gains in survival, especially if supported by reductions in infant, child, and adult mortality. — source: demography and epidemiology.\",\n      \"However, this measure alone does not show inequalities within the country, causes of death, or differences by sex, region, or income group. — source: demography and health statistics.\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 5,\n    \"derived_count\": 5,\n    \"speculative_count\": 7\n  }\n}",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No underlying data table or exact numeric values are provided in the metadata, so precise year-by-year values cannot be verified."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The image and title allow a partial reading that life expectancy increases over time, but the exact magnitude is not provided in metadata and can only be roughly estimated from the chart."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly identifies the subject as life expectancy at birth in Madagascar over 2008 to 2018, which is sufficient to identify the public health and demographic domain, though source and stakeholder context are absent."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is about life expectancy at birth in Madagascar over the period 2008 to 2018. [DIRECT] The subject belongs to the demographic and public health domain. [SPECULATIVE: demography and public health] The chart appears to show a gradual increase across the period rather than a decline or sharp fluctuation. [DERIVED: trend read from the chart image] No producer, source institution, or intended audience is provided in the metadata. [DIRECT]",
+      "domain_specific_explanations": "Life expectancy at birth is a summary measure of how long a newborn would be expected to live if current mortality conditions remained constant. [SPECULATIVE: demography] In this field, rising life expectancy is commonly interpreted as a sign of improving survival conditions, often linked to changes in healthcare access, nutrition, sanitation, vaccination, and child survival. [SPECULATIVE: public health and demography] The values shown are in years. [DIRECT] From the chart image, the level appears to move from the low 60s at the beginning of the period to the mid 60s by the end. [DERIVED: approximate values read from the y-axis and plotted area] Because no exact data table is provided, small year-to-year differences should be treated as approximate rather than exact. [DIRECT]",
+      "real_world_significance": "Life expectancy matters because it is a widely used indicator of population health and overall social development. [SPECULATIVE: public health and development economics] A gradual increase over a decade would generally suggest that people in Madagascar were, on average, experiencing better survival outcomes than at the start of the period. [DERIVED: upward trend interpreted in demographic context] Governments, health ministries, international development agencies, and researchers often use this kind of indicator to monitor health progress and compare countries over time. [SPECULATIVE: global health policy] If improvement continues, it can indicate ongoing gains in survival, especially if supported by reductions in infant, child, and adult mortality. [SPECULATIVE: demography and epidemiology] However, this measure alone does not show inequalities within the country, causes of death, or differences by sex, region, or income group. [SPECULATIVE: demography and health statistics]",
+      "other": "The chart title specifies Madagascar and the years 2008 through 2018. [DIRECT] The y-axis label visible in the image indicates the measure is life expectancy at birth in years, even though the metadata field for axis labels is marked not provided. [DERIVED: text read from the chart image] The image supports a broad conclusion of steady improvement, but not a precise numeric estimate for each year. [DERIVED: overall pattern read from the chart image]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is about life expectancy at birth in Madagascar over the period 2008 to 2018.",
+        "No producer, source institution, or intended audience is provided in the metadata.",
+        "The values shown are in years.",
+        "Because no exact data table is provided, small year-to-year differences should be treated as approximate rather than exact.",
+        "The chart title specifies Madagascar and the years 2008 through 2018."
+      ],
+      "derived_claims": [
+        "The chart appears to show a gradual increase across the period rather than a decline or sharp fluctuation. — derived from the trend visible in the chart image.",
+        "From the chart image, the level appears to move from the low 60s at the beginning of the period to the mid 60s by the end. — derived by approximating plotted values against the y-axis scale.",
+        "A gradual increase over a decade would generally suggest that people in Madagascar were, on average, experiencing better survival outcomes than at the start of the period. — derived from the upward trend in the chart combined with the meaning of life expectancy.",
+        "The y-axis label visible in the image indicates the measure is life expectancy at birth in years, even though the metadata field for axis labels is marked not provided. — derived by reading text directly from the chart image.",
+        "The image supports a broad conclusion of steady improvement, but not a precise numeric estimate for each year. — derived from the visible overall pattern and absence of exact data."
+      ],
+      "speculative_claims": [
+        "The subject belongs to the demographic and public health domain. — source: demography and public health.",
+        "Life expectancy at birth is a summary measure of how long a newborn would be expected to live if current mortality conditions remained constant. — source: demography.",
+        "In this field, rising life expectancy is commonly interpreted as a sign of improving survival conditions, often linked to changes in healthcare access, nutrition, sanitation, vaccination, and child survival. — source: public health and demography.",
+        "Life expectancy matters because it is a widely used indicator of population health and overall social development. — source: public health and development economics.",
+        "Governments, health ministries, international development agencies, and researchers often use this kind of indicator to monitor health progress and compare countries over time. — source: global health policy.",
+        "If improvement continues, it can indicate ongoing gains in survival, especially if supported by reductions in infant, child, and adult mortality. — source: demography and epidemiology.",
+        "However, this measure alone does not show inequalities within the country, causes of death, or differences by sex, region, or income group. — source: demography and health statistics."
+      ],
+      "total_flag_count": 17,
+      "direct_count": 5,
+      "derived_count": 5,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 2171,
+    "output": 1389
+  },
+  "latency_ms": 10807.082916959189,
+  "created_at": "2026-07-08T00:51:21.773153Z"
+}

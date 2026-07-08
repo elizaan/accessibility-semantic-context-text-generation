@@ -1,0 +1,76 @@
+{
+  "output_id": "fed846f3-6a21-48b2-a398-b2a036488597",
+  "chart_id": "owid_share_british_adults_smoke_vape",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The metadata table only provides a single data point for the year 2023, whereas the chart image contains a full time series from 1974 to 2023.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The long-term trends must be visually estimated from the chart image because the historical data points are missing from the metadata table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, source, and age-range notes are clearly visible on the chart image, providing strong domain context.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story identifies the source as Our World in Data, but does not provide deeper analytical context.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No stakeholder context is provided in the metadata, though the public health implications are highly inferable.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the historical trend of cigarette smoking and vaping among British adults from 1974 to 2023 [DERIVED: Read the start year 1974 and end year 2023 from the chart image's x-axis]. It is published by Our World in Data [DIRECT]. The data sources are the Office for National Statistics (ONS) and Action on Smoking and Health (ASH) [DERIVED: Read from the chart image's footer].\",\n    \"domain_specific_explanations\": \"Cigarette smoking has seen a massive, long-term decline, dropping from approximately 45% in 1974 to 10.5% in 2023 [DERIVED: Read the 1974 starting point of ~45% from the blue line on the chart image and the 2023 value of 10.5% from the metadata table]. Conversely, vaping/e-cigarette use has risen since its introduction to the dataset around 2012, growing from about 2% to 9.1% in 2023 [DERIVED: Read the 2012 starting point of ~2% from the orange line on the chart image and the 2023 value of 9.1% from the metadata table]. The definition of 'smoker' applies to adults aged 16 and older, while 'vaper' applies to adults aged 18 and older, with both including occasional use [DERIVED: Read from the note at the bottom of the chart image].\",\n    \"real_world_significance\": \"The dramatic decline in cigarette smoking reflects decades of public health campaigns, smoking bans in public places, and tax increases on tobacco products in the UK [SPECULATIVE: Public Health History]. The rise of vaping represents a significant shift in nicotine consumption patterns, where e-cigarettes are often marketed or used as harm-reduction tools to help smokers quit, though they also raise concerns about youth uptake and long-term health effects [SPECULATIVE: Public Health Policy]. As of 2023, the gap between cigarette smoking (10.5%) and vaping (9.1%) has narrowed to just 1.4 percentage points, suggesting vaping may soon overtake traditional smoking in popularity among British adults [DERIVED: Subtracted 9.1% from 10.5% to get 1.4%].\",\n    \"other\": \"The data shows a relatively steady downward trajectory for smoking over nearly 50 years, with a slight acceleration in the decline during the 2010s, coinciding with the rise of vaping [DERIVED: Observed the slope of the blue line on the chart image pre- and post-2010].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"It is published by Our World in Data\"\n    ],\n    \"derived_claims\": [\n      \"This chart shows the historical trend of cigarette smoking and vaping among British adults from 1974 to 2023\",\n      \"The data sources are the Office for National Statistics (ONS) and Action on Smoking and Health (ASH)\",\n      \"Cigarette smoking has seen a massive, long-term decline, dropping from approximately 45% in 1974 to 10.5% in 2023\",\n      \"Conversely, vaping/e-cigarette use has risen since its introduction to the dataset around 2012, growing from about 2% to 9.1% in 2023\",\n      \"The definition of 'smoker' applies to adults aged 16 and older, while 'vaper' applies to adults aged 18 and older, with both including occasional use\",\n      \"As of 2023, the gap between cigarette smoking (10.5%) and vaping (9.1%) has narrowed to just 1.4 percentage points, suggesting vaping may soon overtake traditional smoking in popularity among British adults\",\n      \"The data shows a relatively steady downward trajectory for smoking over nearly 50 years, with a slight acceleration in the decline during the 2010s, coinciding with the rise of vaping\"\n    ],\n    \"speculative_claims\": [\n      \"The dramatic decline in cigarette smoking reflects decades of public health campaigns, smoking bans in public places, and tax increases on tobacco products in the UK\",\n      \"The rise of vaping represents a significant shift in nicotine consumption patterns, where e-cigarettes are often marketed or used as harm-reduction tools to help smokers quit, though they also raise concerns about youth uptake and long-term health effects\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 7,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The metadata table only provides a single data point for the year 2023, whereas the chart image contains a full time series from 1974 to 2023."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The long-term trends must be visually estimated from the chart image because the historical data points are missing from the metadata table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, source, and age-range notes are clearly visible on the chart image, providing strong domain context."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story identifies the source as Our World in Data, but does not provide deeper analytical context."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No stakeholder context is provided in the metadata, though the public health implications are highly inferable."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the historical trend of cigarette smoking and vaping among British adults from 1974 to 2023 [DERIVED: Read the start year 1974 and end year 2023 from the chart image's x-axis]. It is published by Our World in Data [DIRECT]. The data sources are the Office for National Statistics (ONS) and Action on Smoking and Health (ASH) [DERIVED: Read from the chart image's footer].",
+      "domain_specific_explanations": "Cigarette smoking has seen a massive, long-term decline, dropping from approximately 45% in 1974 to 10.5% in 2023 [DERIVED: Read the 1974 starting point of ~45% from the blue line on the chart image and the 2023 value of 10.5% from the metadata table]. Conversely, vaping/e-cigarette use has risen since its introduction to the dataset around 2012, growing from about 2% to 9.1% in 2023 [DERIVED: Read the 2012 starting point of ~2% from the orange line on the chart image and the 2023 value of 9.1% from the metadata table]. The definition of 'smoker' applies to adults aged 16 and older, while 'vaper' applies to adults aged 18 and older, with both including occasional use [DERIVED: Read from the note at the bottom of the chart image].",
+      "real_world_significance": "The dramatic decline in cigarette smoking reflects decades of public health campaigns, smoking bans in public places, and tax increases on tobacco products in the UK [SPECULATIVE: Public Health History]. The rise of vaping represents a significant shift in nicotine consumption patterns, where e-cigarettes are often marketed or used as harm-reduction tools to help smokers quit, though they also raise concerns about youth uptake and long-term health effects [SPECULATIVE: Public Health Policy]. As of 2023, the gap between cigarette smoking (10.5%) and vaping (9.1%) has narrowed to just 1.4 percentage points, suggesting vaping may soon overtake traditional smoking in popularity among British adults [DERIVED: Subtracted 9.1% from 10.5% to get 1.4%].",
+      "other": "The data shows a relatively steady downward trajectory for smoking over nearly 50 years, with a slight acceleration in the decline during the 2010s, coinciding with the rise of vaping [DERIVED: Observed the slope of the blue line on the chart image pre- and post-2010]."
+    },
+    "flags": {
+      "direct_claims": [
+        "It is published by Our World in Data"
+      ],
+      "derived_claims": [
+        "This chart shows the historical trend of cigarette smoking and vaping among British adults from 1974 to 2023",
+        "The data sources are the Office for National Statistics (ONS) and Action on Smoking and Health (ASH)",
+        "Cigarette smoking has seen a massive, long-term decline, dropping from approximately 45% in 1974 to 10.5% in 2023",
+        "Conversely, vaping/e-cigarette use has risen since its introduction to the dataset around 2012, growing from about 2% to 9.1% in 2023",
+        "The definition of 'smoker' applies to adults aged 16 and older, while 'vaper' applies to adults aged 18 and older, with both including occasional use",
+        "As of 2023, the gap between cigarette smoking (10.5%) and vaping (9.1%) has narrowed to just 1.4 percentage points, suggesting vaping may soon overtake traditional smoking in popularity among British adults",
+        "The data shows a relatively steady downward trajectory for smoking over nearly 50 years, with a slight acceleration in the decline during the 2010s, coinciding with the rise of vaping"
+      ],
+      "speculative_claims": [
+        "The dramatic decline in cigarette smoking reflects decades of public health campaigns, smoking bans in public places, and tax increases on tobacco products in the UK",
+        "The rise of vaping represents a significant shift in nicotine consumption patterns, where e-cigarettes are often marketed or used as harm-reduction tools to help smokers quit, though they also raise concerns about youth uptake and long-term health effects"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 7,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12129.225333046634,
+  "created_at": "2026-07-07T22:48:25.460187Z"
+}

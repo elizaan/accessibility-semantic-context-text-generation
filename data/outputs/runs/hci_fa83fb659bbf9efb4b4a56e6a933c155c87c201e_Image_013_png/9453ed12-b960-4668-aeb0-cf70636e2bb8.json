@@ -1,0 +1,76 @@
+{
+  "output_id": "9453ed12-b960-4668-aeb0-cf70636e2bb8",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_013_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or exact numerical values are provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The alt text mentions a correlation line, but the direction, strength, and slope of the correlation are completely missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The alt text clearly identifies the subject domain (social support, depression, and discrimination) and the chart type (scatter plot with correlation lines).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"A specific publication venue and year are provided (Proc. ACM Hum. Comput. Interact., 2019), but no detailed expert story or findings are included.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context is provided.\"\n      },\n      \"overall\": 1.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot with correlation lines examining the relationship between social support and depression [DIRECT]. It compares two distinct groups: individuals who have reported experiencing discrimination and those who have not [DIRECT]. This research was published in the Proceedings of the ACM on Human-Computer Interaction in 2019 [DIRECT]. The study likely explores how online or offline social support systems mitigate mental health challenges like depression, particularly in the context of marginalized groups facing discrimination [SPECULATIVE: Human-Computer Interaction / Mental Health].\",\n    \"domain_specific_explanations\": \"In psychological and sociological research, 'social support' is typically hypothesized to have a buffering effect against mental health issues like depression [SPECULATIVE: Psychology]. A negative correlation (downward sloping line) is generally expected between social support and depression, meaning higher support correlates with lower depression [SPECULATIVE: Psychology]. By splitting the data into those who reported discrimination and those who did not, researchers can analyze if discrimination moderates the relationship between social support and depression [DERIVED: analyzed the comparison of the two groups from the alt text].\",\n    \"real_world_significance\": \"Understanding how social support interacts with discrimination and depression can help design better digital intervention tools, online support communities, or mental health platforms [SPECULATIVE: Human-Computer Interaction]. If social support is less effective at buffering depression for those facing discrimination, it suggests a need for specialized, identity-affirming support systems rather than generic ones [SPECULATIVE: Mental Health Advocacy].\",\n    \"other\": \"Without the visual chart or data table, the exact strength, direction, and statistical significance of these correlations cannot be verified [DERIVED: noted the absence of data values and visual trends].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a scatter plot with correlation lines examining the relationship between social support and depression\",\n      \"It compares two distinct groups: individuals who have reported experiencing discrimination and those who have not\",\n      \"This research was published in the Proceedings of the ACM on Human-Computer Interaction in 2019\"\n    ],\n    \"derived_claims\": [\n      \"By splitting the data into those who reported discrimination and those who did not, researchers can analyze if discrimination moderates the relationship between social support and depression\",\n      \"Without the visual chart or data table, the exact strength, direction, and statistical significance of these correlations cannot be verified\"\n    ],\n    \"speculative_claims\": [\n      \"The study likely explores how online or offline social support systems mitigate mental health challenges like depression, particularly in the context of marginalized groups facing discrimination\",\n      \"In psychological and sociological research, 'social support' is typically hypothesized to have a buffering effect against mental health issues like depression\",\n      \"A negative correlation (downward sloping line) is generally expected between social support and depression, meaning higher support correlates with lower depression\",\n      \"Understanding how social support interacts with discrimination and depression can help design better digital intervention tools, online support communities, or mental health platforms\",\n      \"If social support is less effective at buffering depression for those facing discrimination, it suggests a need for specialized, identity-affirming support systems rather than generic ones\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or exact numerical values are provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The alt text mentions a correlation line, but the direction, strength, and slope of the correlation are completely missing."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The alt text clearly identifies the subject domain (social support, depression, and discrimination) and the chart type (scatter plot with correlation lines)."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "A specific publication venue and year are provided (Proc. ACM Hum. Comput. Interact., 2019), but no detailed expert story or findings are included."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 1.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot with correlation lines examining the relationship between social support and depression [DIRECT]. It compares two distinct groups: individuals who have reported experiencing discrimination and those who have not [DIRECT]. This research was published in the Proceedings of the ACM on Human-Computer Interaction in 2019 [DIRECT]. The study likely explores how online or offline social support systems mitigate mental health challenges like depression, particularly in the context of marginalized groups facing discrimination [SPECULATIVE: Human-Computer Interaction / Mental Health].",
+      "domain_specific_explanations": "In psychological and sociological research, 'social support' is typically hypothesized to have a buffering effect against mental health issues like depression [SPECULATIVE: Psychology]. A negative correlation (downward sloping line) is generally expected between social support and depression, meaning higher support correlates with lower depression [SPECULATIVE: Psychology]. By splitting the data into those who reported discrimination and those who did not, researchers can analyze if discrimination moderates the relationship between social support and depression [DERIVED: analyzed the comparison of the two groups from the alt text].",
+      "real_world_significance": "Understanding how social support interacts with discrimination and depression can help design better digital intervention tools, online support communities, or mental health platforms [SPECULATIVE: Human-Computer Interaction]. If social support is less effective at buffering depression for those facing discrimination, it suggests a need for specialized, identity-affirming support systems rather than generic ones [SPECULATIVE: Mental Health Advocacy].",
+      "other": "Without the visual chart or data table, the exact strength, direction, and statistical significance of these correlations cannot be verified [DERIVED: noted the absence of data values and visual trends]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a scatter plot with correlation lines examining the relationship between social support and depression",
+        "It compares two distinct groups: individuals who have reported experiencing discrimination and those who have not",
+        "This research was published in the Proceedings of the ACM on Human-Computer Interaction in 2019"
+      ],
+      "derived_claims": [
+        "By splitting the data into those who reported discrimination and those who did not, researchers can analyze if discrimination moderates the relationship between social support and depression",
+        "Without the visual chart or data table, the exact strength, direction, and statistical significance of these correlations cannot be verified"
+      ],
+      "speculative_claims": [
+        "The study likely explores how online or offline social support systems mitigate mental health challenges like depression, particularly in the context of marginalized groups facing discrimination",
+        "In psychological and sociological research, 'social support' is typically hypothesized to have a buffering effect against mental health issues like depression",
+        "A negative correlation (downward sloping line) is generally expected between social support and depression, meaning higher support correlates with lower depression",
+        "Understanding how social support interacts with discrimination and depression can help design better digital intervention tools, online support communities, or mental health platforms",
+        "If social support is less effective at buffering depression for those facing discrimination, it suggests a need for specialized, identity-affirming support systems rather than generic ones"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 8872.465041989926,
+  "created_at": "2026-07-07T23:35:47.685636Z"
+}

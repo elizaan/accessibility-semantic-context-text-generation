@@ -1,0 +1,78 @@
+{
+  "output_id": "68401ff4-8e20-418e-89bf-bfa99859f7a7",
+  "chart_id": "owid_types_violent_crime_rate_us",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The provided data table only contains a single row of data for the year 2024, whereas the chart image displays a full time series from 1979 to 2024.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The historical trends and peaks are visible in the image but cannot be calculated or verified from the single-row data table provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert story clearly define the subject as United States violent crime rates and its subcategories.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides crucial context about the rate unit (per 100,000), the definition of violent crime, and why rape is excluded.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays violent crime rates in the United States from 1979 to 2024 [DERIVED: Read from the image title]. It is produced by Our World in Data using FBI data from their 2025 release [DERIVED: Read from the image's source note and logo]. The visualization breaks down violent crime into three of its major components: homicide, aggravated assault, and robbery [DERIVED: Read from the four subplots in the image].\",\n    \"domain_specific_explanations\": \"The rates are estimated per 100,000 people [DIRECT]. Violent crime officially includes four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault, but rape is not shown due to the lack of comparable data over time [DIRECT]. The FBI adjusts reported crime data to account for gaps and underreporting, meaning these estimates may differ from raw reported crime figures [DERIVED: Read from the note at the bottom of the image]. Aggravated assault makes up the largest share of the overall violent crime rate, with a 2024 rate of approximately 256 per 100,000 [DERIVED: Comparing 256.07 for aggravated assault to 359.10 for total violent crime in 2024 from the data table].\",\n    \"real_world_significance\": \"Historically, violent crime in the US peaked in the early 1990s (around 1991-1992) and has since undergone a massive long-term decline [DERIVED: Observed the peak and subsequent downward trend across all four subplots in the image]. For instance, robbery rates fell from a peak of over 250 per 100,000 in the early 1990s to 60.55 per 100,000 in 2024 [DERIVED: Observed peak on the robbery subplot and compared to the 2024 value in the data table]. Homicide rates saw a notable spike around 2020 (reaching nearly 7 per 100,000) before declining back to approximately 4.98 per 100,000 by 2024 [DERIVED: Observed the 2020 spike on the homicide subplot and comparing to the 2024 value in the data table]. These trends are highly relevant to criminologists, policymakers, and the public, as they challenge common public perceptions that crime is constantly rising [SPECULATIVE: Criminology / Public Policy].\",\n    \"other\": \"The overall violent crime rate in 2024 stands at 359.10 per 100,000 people [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The rates are estimated per 100,000 people.\",\n      \"Violent crime officially includes four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault, but rape is not shown due to the lack of comparable data over time.\",\n      \"The overall violent crime rate in 2024 stands at 359.10 per 100,000 people.\"\n    ],\n    \"derived_claims\": [\n      \"This chart displays violent crime rates in the United States from 1979 to 2024\",\n      \"It is produced by Our World in Data using FBI data from their 2025 release\",\n      \"The chart breaks down violent crime into three of its major components: homicide, aggravated assault, and robbery\",\n      \"The FBI adjusts reported crime data to account for gaps and underreporting, meaning these estimates may differ from raw reported crime figures\",\n      \"Aggravated assault makes up the largest share of the overall violent crime rate, with a 2024 rate of approximately 256 per 100,000\",\n      \"Historically, violent crime in the US peaked in the early 1990s (around 1991-1992) and has since undergone a massive long-term decline\",\n      \"For instance, robbery rates fell from a peak of over 250 per 100,000 in the early 1990s to 60.55 per 100,000 in 2024\",\n      \"Homicide rates saw a notable spike around 2020 (reaching nearly 7 per 100,000) before declining back to approximately 4.98 per 100,000 by 2024\"\n    ],\n    \"speculative_claims\": [\n      \"These trends are highly relevant to criminologists, policymakers, and the public, as they challenge common public perceptions that crime is constantly rising\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 8,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The provided data table only contains a single row of data for the year 2024, whereas the chart image displays a full time series from 1979 to 2024."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The historical trends and peaks are visible in the image but cannot be calculated or verified from the single-row data table provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert story clearly define the subject as United States violent crime rates and its subcategories."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides crucial context about the rate unit (per 100,000), the definition of violent crime, and why rape is excluded."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays violent crime rates in the United States from 1979 to 2024 [DERIVED: Read from the image title]. It is produced by Our World in Data using FBI data from their 2025 release [DERIVED: Read from the image's source note and logo]. The visualization breaks down violent crime into three of its major components: homicide, aggravated assault, and robbery [DERIVED: Read from the four subplots in the image].",
+      "domain_specific_explanations": "The rates are estimated per 100,000 people [DIRECT]. Violent crime officially includes four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault, but rape is not shown due to the lack of comparable data over time [DIRECT]. The FBI adjusts reported crime data to account for gaps and underreporting, meaning these estimates may differ from raw reported crime figures [DERIVED: Read from the note at the bottom of the image]. Aggravated assault makes up the largest share of the overall violent crime rate, with a 2024 rate of approximately 256 per 100,000 [DERIVED: Comparing 256.07 for aggravated assault to 359.10 for total violent crime in 2024 from the data table].",
+      "real_world_significance": "Historically, violent crime in the US peaked in the early 1990s (around 1991-1992) and has since undergone a massive long-term decline [DERIVED: Observed the peak and subsequent downward trend across all four subplots in the image]. For instance, robbery rates fell from a peak of over 250 per 100,000 in the early 1990s to 60.55 per 100,000 in 2024 [DERIVED: Observed peak on the robbery subplot and compared to the 2024 value in the data table]. Homicide rates saw a notable spike around 2020 (reaching nearly 7 per 100,000) before declining back to approximately 4.98 per 100,000 by 2024 [DERIVED: Observed the 2020 spike on the homicide subplot and comparing to the 2024 value in the data table]. These trends are highly relevant to criminologists, policymakers, and the public, as they challenge common public perceptions that crime is constantly rising [SPECULATIVE: Criminology / Public Policy].",
+      "other": "The overall violent crime rate in 2024 stands at 359.10 per 100,000 people [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The rates are estimated per 100,000 people.",
+        "Violent crime officially includes four offenses: murder and non-negligent manslaughter, rape, robbery, and aggravated assault, but rape is not shown due to the lack of comparable data over time.",
+        "The overall violent crime rate in 2024 stands at 359.10 per 100,000 people."
+      ],
+      "derived_claims": [
+        "This chart displays violent crime rates in the United States from 1979 to 2024",
+        "It is produced by Our World in Data using FBI data from their 2025 release",
+        "The chart breaks down violent crime into three of its major components: homicide, aggravated assault, and robbery",
+        "The FBI adjusts reported crime data to account for gaps and underreporting, meaning these estimates may differ from raw reported crime figures",
+        "Aggravated assault makes up the largest share of the overall violent crime rate, with a 2024 rate of approximately 256 per 100,000",
+        "Historically, violent crime in the US peaked in the early 1990s (around 1991-1992) and has since undergone a massive long-term decline",
+        "For instance, robbery rates fell from a peak of over 250 per 100,000 in the early 1990s to 60.55 per 100,000 in 2024",
+        "Homicide rates saw a notable spike around 2020 (reaching nearly 7 per 100,000) before declining back to approximately 4.98 per 100,000 by 2024"
+      ],
+      "speculative_claims": [
+        "These trends are highly relevant to criminologists, policymakers, and the public, as they challenge common public perceptions that crime is constantly rising"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 8,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16287.703624984715,
+  "created_at": "2026-07-07T22:04:59.323979Z"
+}

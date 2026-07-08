@@ -1,0 +1,63 @@
+{
+  "output_id": "a63f2597-afc3-44c0-8d14-f8b90054f0fc",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_015_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"The data table with exact values underlying the chart is not provided.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"The data table with exact values underlying the chart is not provided.\"},\n      \"chart_subject_domain\": {\"score\": 2, \"justification\": \"The chart title and axis labels are not provided, but the expert domain story gives some context about the chart.\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart appears to show the significance of various features over time, specifically one day before to two days after discrimination events. [DERIVED: from the chart title and alt text]. The chart is related to human-computer interaction, as indicated by the expert domain story. [SPECULATIVE: Proc. ACM Hum. Comput. Interact. (2019)]\",\n    \"domain_specific_explanations\": \"The chart seems to be analyzing the impact of discrimination events on various aspects of human behavior or experience, such as morning screen use, calls in the evening, total minutes asleep, and emotional states like anxious, depressed, and frustrated. [DERIVED: from the legend and axis labels]. The features are likely being measured for their statistical significance over time, with values above a certain threshold (possibly 0.05) indicating significance. [DERIVED: from the y-axis and general knowledge of statistical significance]\",\n    \"real_world_significance\": \"The data likely has implications for understanding how discrimination events affect people's daily lives, sleep patterns, social interactions, and emotional well-being. [SPECULATIVE: general knowledge of social sciences]. Stakeholders might include researchers, policymakers, or organizations interested in mitigating the effects of discrimination. [SPECULATIVE: general knowledge of social sciences]\",\n    \"other\": \"The chart seems to be part of a larger study on the impact of discrimination events, and the data might be used to inform interventions or support systems for those affected. [SPECULATIVE: general knowledge of social sciences].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\"This chart shows the significance of various features over time, specifically one day before to two days after discrimination events.\", \"The features are likely being measured for their statistical significance over time, with values above a certain threshold (possibly 0.05) indicating significance.\"],\n    \"speculative_claims\": [\"The chart is related to human-computer interaction.\", \"The data likely has implications for understanding how discrimination events affect people's daily lives, sleep patterns, social interactions, and emotional well-being.\", \"Stakeholders might include researchers, policymakers, or organizations interested in mitigating the effects of discrimination.\", \"The chart seems to be part of a larger study on the impact of discrimination events, and the data might be used to inform interventions or support systems for those affected.\"],\n    \"total_flag_count\": 6,\n    \"direct_count\": 0,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The data table with exact values underlying the chart is not provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "The data table with exact values underlying the chart is not provided."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The chart title and axis labels are not provided, but the expert domain story gives some context about the chart."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart appears to show the significance of various features over time, specifically one day before to two days after discrimination events. [DERIVED: from the chart title and alt text]. The chart is related to human-computer interaction, as indicated by the expert domain story. [SPECULATIVE: Proc. ACM Hum. Comput. Interact. (2019)]",
+      "domain_specific_explanations": "The chart seems to be analyzing the impact of discrimination events on various aspects of human behavior or experience, such as morning screen use, calls in the evening, total minutes asleep, and emotional states like anxious, depressed, and frustrated. [DERIVED: from the legend and axis labels]. The features are likely being measured for their statistical significance over time, with values above a certain threshold (possibly 0.05) indicating significance. [DERIVED: from the y-axis and general knowledge of statistical significance]",
+      "real_world_significance": "The data likely has implications for understanding how discrimination events affect people's daily lives, sleep patterns, social interactions, and emotional well-being. [SPECULATIVE: general knowledge of social sciences]. Stakeholders might include researchers, policymakers, or organizations interested in mitigating the effects of discrimination. [SPECULATIVE: general knowledge of social sciences]",
+      "other": "The chart seems to be part of a larger study on the impact of discrimination events, and the data might be used to inform interventions or support systems for those affected. [SPECULATIVE: general knowledge of social sciences]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "This chart shows the significance of various features over time, specifically one day before to two days after discrimination events.",
+        "The features are likely being measured for their statistical significance over time, with values above a certain threshold (possibly 0.05) indicating significance."
+      ],
+      "speculative_claims": [
+        "The chart is related to human-computer interaction.",
+        "The data likely has implications for understanding how discrimination events affect people's daily lives, sleep patterns, social interactions, and emotional well-being.",
+        "Stakeholders might include researchers, policymakers, or organizations interested in mitigating the effects of discrimination.",
+        "The chart seems to be part of a larger study on the impact of discrimination events, and the data might be used to inform interventions or support systems for those affected."
+      ],
+      "total_flag_count": 6,
+      "direct_count": 0,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1607,
+    "output": 671
+  },
+  "latency_ms": 2400.5057080066763,
+  "created_at": "2026-07-08T14:02:16.503631Z"
+}

@@ -1,0 +1,74 @@
+{
+  "output_id": "15547b1a-c404-43c4-b42a-5bde74fea59c",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response in the required JSON format:\n\n```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The data table provides exact values for various survival ages across different populations.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No information is provided about the trend magnitude.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The domain is related to survival ages and population statistics, but some context is missing.\"},\n      \"domain_expert_context\": {\"score\": 4, \"justification\": \"The expert domain story provides some context, but it is not comprehensive.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context is provided.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart represents survival ages across different populations [DERIVED: from the data table]. The data is presented for various countries and years [DIRECT]. The chart is likely used to compare survival ages across different populations [SPECULATIVE: based on general knowledge of population statistics].\",\n    \"domain_specific_explanations\": \"The data represents the number of years that a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year [DIRECT]. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival [DIRECT]. The values range from 10% to 99% survival rates [DERIVED: from the data table].\",\n    \"real_world_significance\": \"This data matters for understanding population health and mortality rates [SPECULATIVE: based on general knowledge of population health]. The data can be used to compare the health and mortality rates of different populations [SPECULATIVE: based on general knowledge of population health]. For instance, a higher survival age for a certain percentage of the population may indicate better healthcare or living conditions [SPECULATIVE: based on general knowledge of population health].\",\n    \"other\": \"The data table provides a comprehensive overview of survival ages across different populations, but some context is missing [DERIVED: from the metadata].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The data represents the number of years that a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year.\",\n      \"For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival.\",\n      \"The chart represents survival ages across different populations for various countries and years.\"\n    ],\n    \"derived_claims\": [\n      \"The values range from 10% to 99% survival rates.\",\n      \"This chart is likely used to compare survival ages across different populations.\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for understanding population health and mortality rates.\",\n      \"The data can be used to compare the health and mortality rates of different populations.\",\n      \"A higher survival age for a certain percentage of the population may indicate better healthcare or living conditions.\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The data table provides exact values for various survival ages across different populations."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No information is provided about the trend magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is related to survival ages and population statistics, but some context is missing."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides some context, but it is not comprehensive."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart represents survival ages across different populations [DERIVED: from the data table]. The data is presented for various countries and years [DIRECT]. The chart is likely used to compare survival ages across different populations [SPECULATIVE: based on general knowledge of population statistics].",
+      "domain_specific_explanations": "The data represents the number of years that a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year [DIRECT]. For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival [DIRECT]. The values range from 10% to 99% survival rates [DERIVED: from the data table].",
+      "real_world_significance": "This data matters for understanding population health and mortality rates [SPECULATIVE: based on general knowledge of population health]. The data can be used to compare the health and mortality rates of different populations [SPECULATIVE: based on general knowledge of population health]. For instance, a higher survival age for a certain percentage of the population may indicate better healthcare or living conditions [SPECULATIVE: based on general knowledge of population health].",
+      "other": "The data table provides a comprehensive overview of survival ages across different populations, but some context is missing [DERIVED: from the metadata]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The data represents the number of years that a specific share of the population would survive if they were born in a given year and experienced age-specific death rates of that year.",
+        "For example, the line indicating 1% corresponds to the top 1% of survivors born in a given year and the number of years of their survival.",
+        "The chart represents survival ages across different populations for various countries and years."
+      ],
+      "derived_claims": [
+        "The values range from 10% to 99% survival rates.",
+        "This chart is likely used to compare survival ages across different populations."
+      ],
+      "speculative_claims": [
+        "This data matters for understanding population health and mortality rates.",
+        "The data can be used to compare the health and mortality rates of different populations.",
+        "A higher survival age for a certain percentage of the population may indicate better healthcare or living conditions."
+      ],
+      "total_flag_count": 8,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2517,
+    "output": 738
+  },
+  "latency_ms": 2344.266540952958,
+  "created_at": "2026-07-08T00:15:20.728662Z"
+}

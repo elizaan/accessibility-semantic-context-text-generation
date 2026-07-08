@@ -1,0 +1,81 @@
+{
+  "output_id": "a7772715-520c-4780-b75a-8142a2cbc4af",
+  "chart_id": "owid_co2_mitigation_15c",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides the 2100 endpoints for each start year, but the full time-series curves are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The visual trend of steepening curves is highly apparent in the image, and the endpoint data shows the drop to zero for later start years.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The subject domain of climate change and CO2 mitigation is fully clear from the title and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides excellent context on how the mitigation curves are constructed.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is titled 'CO₂ reductions needed to keep global temperature rise below 1.5°C' [DIRECT]. It is published by Our World in Data, based on data compiled by Robbie Andrew (2019) [DERIVED: read from image text]. It illustrates different hypothetical pathways (mitigation curves) for global CO2 emissions depending on the year global mitigation efforts began or begin [DIRECT]. The historical emissions line shows a steady increase from approximately 23 billion tonnes in 1980 to over 40 billion tonnes by 2019 [DERIVED: read from chart image].\",\n    \"domain_specific_explanations\": \"The curves represent the rate of CO2 reduction required to stay within the carbon budget for a 1.5°C global warming limit [DIRECT]. According to the IPCC's SR15 Report, these budgets are calculated to give a greater than 66% chance of staying below the 1.5°C threshold [DERIVED: read from image note]. The data shows that if mitigation had started in 2000, the required reduction curve would have been gradual, leaving a budget of about 540 million tonnes (0.54 billion tonnes) of CO2 emissions still permissible in 2100 [DERIVED: read from data table]. However, because global emissions continued to rise, delaying action means the remaining carbon budget is consumed much faster [SPECULATIVE: climate science]. For mitigation starting in 2020 or later, the permissible emissions in 2100 drop to exactly 0 [DERIVED: read from data table], requiring an incredibly steep, near-vertical drop in emissions immediately after the start year to avoid exceeding the budget [DERIVED: read from chart image].\",\n    \"real_world_significance\": \"This chart highlights the severe cost of delay in climate action [SPECULATIVE: climate policy]. Every year of delayed peaking and reduction shifts the required pathway to a much steeper, more economically and socially disruptive trajectory [SPECULATIVE: climate policy]. Starting mitigation in 2024 requires reaching near-zero emissions almost instantly (within a decade), which is practically and technologically extremely challenging compared to the gradual transition that was possible if action had started in 2000 [DERIVED: comparing curves in chart image]. This underscores the urgency for policymakers to implement immediate, drastic emission cuts to keep the 1.5°C target alive [SPECULATIVE: climate policy].\",\n    \"other\": \"The intersection point of the curves around 2028-2030 shows a dramatic crossing where late-start scenarios must drop far below the gradual pathways of early-start scenarios to stay within the same cumulative carbon budget [DERIVED: visual analysis of the crossing curves in the image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is titled 'CO₂ reductions needed to keep global temperature rise below 1.5°C'\",\n      \"It illustrates different hypothetical pathways (mitigation curves) for global CO2 emissions depending on the year global mitigation efforts began or begin\",\n      \"The curves represent the rate of CO2 reduction required to stay within the carbon budget for a 1.5°C global warming limit\"\n    ],\n    \"derived_claims\": [\n      \"It is published by Our World in Data, based on data compiled by Robbie Andrew (2019) [derived from image text]\",\n      \"The historical emissions line shows a steady increase from approximately 23 billion tonnes in 1980 to over 40 billion tonnes by 2019 [derived from chart image]\",\n      \"According to the IPCC's SR15 Report, these budgets are calculated to give a greater than 66% chance of staying below the 1.5°C threshold [derived from image note]\",\n      \"The data shows that if mitigation had started in 2000, the required reduction curve would have been gradual, leaving a budget of about 540 million tonnes (0.54 billion tonnes) of CO2 emissions still permissible in 2100 [derived from data table]\",\n      \"For mitigation starting in 2020 or later, the permissible emissions in 2100 drop to exactly 0 [derived from data table]\",\n      \"This requires an incredibly steep, near-vertical drop in emissions immediately after the start year to avoid exceeding the budget [derived from chart image]\",\n      \"Starting mitigation in 2024 requires reaching near-zero emissions almost instantly (within a decade), which is practically and technologically extremely challenging compared to the gradual transition that was possible if action had started in 2000 [derived from comparing curves in chart image]\",\n      \"The intersection point of the curves around 2028-2030 shows a dramatic crossing where late-start scenarios must drop far below the gradual pathways of early-start scenarios to stay within the same cumulative carbon budget [derived from visual analysis of the crossing curves in the image]\"\n    ],\n    \"speculative_claims\": [\n      \"However, because global emissions continued to rise, delaying action means the remaining carbon budget is consumed much faster [speculative: climate science]\",\n      \"This chart highlights the severe cost of delay in climate action [speculative: climate policy]\",\n      \"Every year of delayed peaking and reduction shifts the required pathway to a much steeper, more economically and socially disruptive trajectory [speculative: climate policy]\",\n      \"This underscores the urgency for policymakers to implement immediate, drastic emission cuts to keep the 1.5°C target alive [speculative: climate policy]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 3,\n    \"derived_count\": 8,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides the 2100 endpoints for each start year, but the full time-series curves are truncated."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The visual trend of steepening curves is highly apparent in the image, and the endpoint data shows the drop to zero for later start years."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The subject domain of climate change and CO2 mitigation is fully clear from the title and expert story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides excellent context on how the mitigation curves are constructed."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is titled 'CO₂ reductions needed to keep global temperature rise below 1.5°C' [DIRECT]. It is published by Our World in Data, based on data compiled by Robbie Andrew (2019) [DERIVED: read from image text]. It illustrates different hypothetical pathways (mitigation curves) for global CO2 emissions depending on the year global mitigation efforts began or begin [DIRECT]. The historical emissions line shows a steady increase from approximately 23 billion tonnes in 1980 to over 40 billion tonnes by 2019 [DERIVED: read from chart image].",
+      "domain_specific_explanations": "The curves represent the rate of CO2 reduction required to stay within the carbon budget for a 1.5°C global warming limit [DIRECT]. According to the IPCC's SR15 Report, these budgets are calculated to give a greater than 66% chance of staying below the 1.5°C threshold [DERIVED: read from image note]. The data shows that if mitigation had started in 2000, the required reduction curve would have been gradual, leaving a budget of about 540 million tonnes (0.54 billion tonnes) of CO2 emissions still permissible in 2100 [DERIVED: read from data table]. However, because global emissions continued to rise, delaying action means the remaining carbon budget is consumed much faster [SPECULATIVE: climate science]. For mitigation starting in 2020 or later, the permissible emissions in 2100 drop to exactly 0 [DERIVED: read from data table], requiring an incredibly steep, near-vertical drop in emissions immediately after the start year to avoid exceeding the budget [DERIVED: read from chart image].",
+      "real_world_significance": "This chart highlights the severe cost of delay in climate action [SPECULATIVE: climate policy]. Every year of delayed peaking and reduction shifts the required pathway to a much steeper, more economically and socially disruptive trajectory [SPECULATIVE: climate policy]. Starting mitigation in 2024 requires reaching near-zero emissions almost instantly (within a decade), which is practically and technologically extremely challenging compared to the gradual transition that was possible if action had started in 2000 [DERIVED: comparing curves in chart image]. This underscores the urgency for policymakers to implement immediate, drastic emission cuts to keep the 1.5°C target alive [SPECULATIVE: climate policy].",
+      "other": "The intersection point of the curves around 2028-2030 shows a dramatic crossing where late-start scenarios must drop far below the gradual pathways of early-start scenarios to stay within the same cumulative carbon budget [DERIVED: visual analysis of the crossing curves in the image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is titled 'CO₂ reductions needed to keep global temperature rise below 1.5°C'",
+        "It illustrates different hypothetical pathways (mitigation curves) for global CO2 emissions depending on the year global mitigation efforts began or begin",
+        "The curves represent the rate of CO2 reduction required to stay within the carbon budget for a 1.5°C global warming limit"
+      ],
+      "derived_claims": [
+        "It is published by Our World in Data, based on data compiled by Robbie Andrew (2019) [derived from image text]",
+        "The historical emissions line shows a steady increase from approximately 23 billion tonnes in 1980 to over 40 billion tonnes by 2019 [derived from chart image]",
+        "According to the IPCC's SR15 Report, these budgets are calculated to give a greater than 66% chance of staying below the 1.5°C threshold [derived from image note]",
+        "The data shows that if mitigation had started in 2000, the required reduction curve would have been gradual, leaving a budget of about 540 million tonnes (0.54 billion tonnes) of CO2 emissions still permissible in 2100 [derived from data table]",
+        "For mitigation starting in 2020 or later, the permissible emissions in 2100 drop to exactly 0 [derived from data table]",
+        "This requires an incredibly steep, near-vertical drop in emissions immediately after the start year to avoid exceeding the budget [derived from chart image]",
+        "Starting mitigation in 2024 requires reaching near-zero emissions almost instantly (within a decade), which is practically and technologically extremely challenging compared to the gradual transition that was possible if action had started in 2000 [derived from comparing curves in chart image]",
+        "The intersection point of the curves around 2028-2030 shows a dramatic crossing where late-start scenarios must drop far below the gradual pathways of early-start scenarios to stay within the same cumulative carbon budget [derived from visual analysis of the crossing curves in the image]"
+      ],
+      "speculative_claims": [
+        "However, because global emissions continued to rise, delaying action means the remaining carbon budget is consumed much faster [speculative: climate science]",
+        "This chart highlights the severe cost of delay in climate action [speculative: climate policy]",
+        "Every year of delayed peaking and reduction shifts the required pathway to a much steeper, more economically and socially disruptive trajectory [speculative: climate policy]",
+        "This underscores the urgency for policymakers to implement immediate, drastic emission cuts to keep the 1.5°C target alive [speculative: climate policy]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 3,
+      "derived_count": 8,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15350.651249988005,
+  "created_at": "2026-07-07T22:47:12.633664Z"
+}

@@ -1,0 +1,78 @@
+{
+  "output_id": "96de01f5-1dbc-4573-98ee-6301bd4ef182",
+  "chart_id": "hci_b0abced402bd11a7b43f42e4fd443c9150b4a9b0_Image_003",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data table or axis ranges are provided, though some high-level statistics are mentioned in the alt text and expert story.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text describes the distribution of gender-identified users as equal across the top 2,000 users, but specific trend shapes or magnitudes are missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (Wikipedia/collaborative editing, user contributions, and gender inference) is clear from the title, alt text, and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert story provides the CHI 2019 paper citation and figure caption, which gives solid academic context.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is an overlaid histogram showing the edit counts of the top 2,000 users alongside 1,105 gender-inferred users [DIRECT]. It was published in a CHI 2019 research paper [DIRECT]. The study likely investigates gender representation, participation, or behavior in online collaborative platforms like Wikipedia [SPECULATIVE: CHI 2019 / Wiki Research].\",\n    \"domain_specific_explanations\": \"In collaborative platforms, 'no-bots edits' refers to contributions made by human editors, excluding automated scripts or bots [SPECULATIVE: Wikipedia/Wiki research]. The top 2,000 users contribute a massive majority (95.36%) of these human edits [DIRECT]. This indicates a highly skewed distribution of labor, typical of power-law dynamics in peer production systems [SPECULATIVE: Peer Production / Power Law Dynamics]. The 1,105 gender-inferred users represent a subset of these top editors whose gender could be determined through profile data or external methods [SPECULATIVE: Gender Inference Methodology]. The equal distribution of gender-identified users across the top 2,000 users in terms of edit counts suggests that among the most active editors, those with inferred genders do not cluster heavily at just the very top or very bottom of this elite tier [DERIVED: Read from the alt text statement about equal distribution].\",\n    \"real_world_significance\": \"Understanding the demographics of highly active editors is crucial because a tiny fraction of users controls the vast majority of the content generation and curation [DERIVED: Calculated/inferred from the 95.36% statistic]. If there is a gender imbalance or bias in who these top editors are, it can heavily influence the systemic bias of the entire platform's content [SPECULATIVE: Gender Bias in Wikipedia]. Ensuring that gender-inferred users are distributed evenly across these top tiers helps researchers evaluate whether gender correlates with extreme high-activity editing behaviors within this elite group [SPECULATIVE: Gender Bias in Wikipedia].\",\n    \"other\": \"The 1,105 gender-inferred users make up approximately 55.25% of the top 2,000 users [DERIVED: Calculated 1,105 divided by 2,000].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is an overlaid histogram showing the edit counts of the top 2,000 users alongside 1,105 gender-inferred users\",\n      \"It was published in a CHI 2019 research paper\",\n      \"The top 2,000 users contribute a massive majority (95.36%) of these human edits\"\n    ],\n    \"derived_claims\": [\n      \"The equal distribution of gender-identified users across the top 2,000 users in terms of edit counts suggests that among the most active editors, those with inferred genders do not cluster heavily at just the very top or very bottom of this elite tier, derived from the alt text statement about equal distribution\",\n      \"Understanding the demographics of highly active editors is crucial because a tiny fraction of users controls the vast majority of the content generation and curation, derived from the 95.36% statistic\",\n      \"The 1,105 gender-inferred users make up approximately 55.25% of the top 2,000 users, derived from calculating 1,105 divided by 2,000\"\n    ],\n    \"speculative_claims\": [\n      \"The study likely investigates gender representation, participation, or behavior in online collaborative platforms like Wikipedia, source: CHI 2019 / Wiki Research\",\n      \"In collaborative platforms, 'no-bots edits' refers to contributions made by human editors, excluding automated scripts or bots, source: Wikipedia/Wiki research\",\n      \"This indicates a highly skewed distribution of labor, typical of power-law dynamics in peer production systems, source: Peer Production / Power Law Dynamics\",\n      \"The 1,105 gender-inferred users represent a subset of these top editors whose gender could be determined through profile data or external methods, source: Gender Inference Methodology\",\n      \"If there is a gender imbalance or bias in who these top editors are, it can heavily influence the systemic bias of the entire platform's content, source: Gender Bias in Wikipedia\",\n      \"Ensuring that gender-inferred users are distributed evenly across these top tiers helps researchers evaluate whether gender correlates with extreme high-activity editing behaviors within this elite group, source: Gender Bias in Wikipedia\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data table or axis ranges are provided, though some high-level statistics are mentioned in the alt text and expert story."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text describes the distribution of gender-identified users as equal across the top 2,000 users, but specific trend shapes or magnitudes are missing."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (Wikipedia/collaborative editing, user contributions, and gender inference) is clear from the title, alt text, and expert story."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert story provides the CHI 2019 paper citation and figure caption, which gives solid academic context."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is an overlaid histogram showing the edit counts of the top 2,000 users alongside 1,105 gender-inferred users [DIRECT]. It was published in a CHI 2019 research paper [DIRECT]. The study likely investigates gender representation, participation, or behavior in online collaborative platforms like Wikipedia [SPECULATIVE: CHI 2019 / Wiki Research].",
+      "domain_specific_explanations": "In collaborative platforms, 'no-bots edits' refers to contributions made by human editors, excluding automated scripts or bots [SPECULATIVE: Wikipedia/Wiki research]. The top 2,000 users contribute a massive majority (95.36%) of these human edits [DIRECT]. This indicates a highly skewed distribution of labor, typical of power-law dynamics in peer production systems [SPECULATIVE: Peer Production / Power Law Dynamics]. The 1,105 gender-inferred users represent a subset of these top editors whose gender could be determined through profile data or external methods [SPECULATIVE: Gender Inference Methodology]. The equal distribution of gender-identified users across the top 2,000 users in terms of edit counts suggests that among the most active editors, those with inferred genders do not cluster heavily at just the very top or very bottom of this elite tier [DERIVED: Read from the alt text statement about equal distribution].",
+      "real_world_significance": "Understanding the demographics of highly active editors is crucial because a tiny fraction of users controls the vast majority of the content generation and curation [DERIVED: Calculated/inferred from the 95.36% statistic]. If there is a gender imbalance or bias in who these top editors are, it can heavily influence the systemic bias of the entire platform's content [SPECULATIVE: Gender Bias in Wikipedia]. Ensuring that gender-inferred users are distributed evenly across these top tiers helps researchers evaluate whether gender correlates with extreme high-activity editing behaviors within this elite group [SPECULATIVE: Gender Bias in Wikipedia].",
+      "other": "The 1,105 gender-inferred users make up approximately 55.25% of the top 2,000 users [DERIVED: Calculated 1,105 divided by 2,000]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is an overlaid histogram showing the edit counts of the top 2,000 users alongside 1,105 gender-inferred users",
+        "It was published in a CHI 2019 research paper",
+        "The top 2,000 users contribute a massive majority (95.36%) of these human edits"
+      ],
+      "derived_claims": [
+        "The equal distribution of gender-identified users across the top 2,000 users in terms of edit counts suggests that among the most active editors, those with inferred genders do not cluster heavily at just the very top or very bottom of this elite tier, derived from the alt text statement about equal distribution",
+        "Understanding the demographics of highly active editors is crucial because a tiny fraction of users controls the vast majority of the content generation and curation, derived from the 95.36% statistic",
+        "The 1,105 gender-inferred users make up approximately 55.25% of the top 2,000 users, derived from calculating 1,105 divided by 2,000"
+      ],
+      "speculative_claims": [
+        "The study likely investigates gender representation, participation, or behavior in online collaborative platforms like Wikipedia, source: CHI 2019 / Wiki Research",
+        "In collaborative platforms, 'no-bots edits' refers to contributions made by human editors, excluding automated scripts or bots, source: Wikipedia/Wiki research",
+        "This indicates a highly skewed distribution of labor, typical of power-law dynamics in peer production systems, source: Peer Production / Power Law Dynamics",
+        "The 1,105 gender-inferred users represent a subset of these top editors whose gender could be determined through profile data or external methods, source: Gender Inference Methodology",
+        "If there is a gender imbalance or bias in who these top editors are, it can heavily influence the systemic bias of the entire platform's content, source: Gender Bias in Wikipedia",
+        "Ensuring that gender-inferred users are distributed evenly across these top tiers helps researchers evaluate whether gender correlates with extreme high-activity editing behaviors within this elite group, source: Gender Bias in Wikipedia"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14719.841291953344,
+  "created_at": "2026-07-07T23:31:55.140325Z"
+}

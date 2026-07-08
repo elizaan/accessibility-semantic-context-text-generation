@@ -1,0 +1,68 @@
+{
+  "output_id": "22cff18b-8a83-41f5-9d57-e7b0c466a230",
+  "chart_id": "olli_scatterplot",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact raw data table is missing, but the OLLI screen reader tree provides highly detailed summary statistics, including sample sizes, ranges, and averages for each species and axis.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The positive correlation and distinct clustering of the Gentoo species compared to Adelie and Chinstrap are clearly readable from the OLLI tree and the chart image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story and axis labels clearly identify this as penguin morphological data (flipper length vs. body mass by species).\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This scatterplot illustrates the relationship between flipper length (in millimeters) and body mass (in grams) for three penguin species: Adelie, Chinstrap, and Gentoo [DIRECT]. The dataset is highly characteristic of the well-known Palmer Penguins dataset, which is widely used in data science education and statistical visualization to demonstrate clustering and classification algorithms [SPECULATIVE: Palmer Penguins dataset].\",\n    \"domain_specific_explanations\": \"In avian biology and marine ecology, morphological measurements like flipper length and body mass are key indicators used to study growth patterns, sexual dimorphism, and ecological niche partitioning [SPECULATIVE: Avian Biology]. The data shows that Gentoo penguins are significantly larger on average, with a mean body mass of 5076g and a mean flipper length of 217mm [DIRECT]. In contrast, Adelie and Chinstrap penguins are much closer in size; Adelie penguins average 3701g in body mass and 190mm in flipper length, while Chinstrap penguins average 3733g in body mass and 196mm in flipper length [DIRECT]. Across all three species, there is a clear positive correlation where penguins with longer flippers also tend to have a higher body mass [DERIVED: Positive correlation observed across all species clusters].\",\n    \"real_world_significance\": \"Understanding these physical differences helps ecologists identify species in the field and monitor the health of penguin populations [SPECULATIVE: Wildlife Ecology]. Because penguins are indicator species for marine ecosystems, long-term changes in average body mass or flipper length within these populations could signal environmental stressors, such as climate change affecting the abundance of food sources like Antarctic krill [SPECULATIVE: Climate Change Ecology].\",\n    \"other\": \"The Adelie species has the highest sample size in this dataset with 151 observations, followed by Gentoo with 123, and Chinstrap with 68 [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This scatterplot illustrates the relationship between flipper length (in millimeters) and body mass (in grams) for three penguin species: Adelie, Chinstrap, and Gentoo\",\n      \"Gentoo penguins are significantly larger on average, with a mean body mass of 5076g and a mean flipper length of 217mm\",\n      \"Adelie and Chinstrap penguins are much closer in size; Adelie penguins average 3701g in body mass and 190mm in flipper length, while Chinstrap penguins average 3733g in body mass and 196mm in flipper length\",\n      \"The Adelie species has the highest sample size in this dataset with 151 observations, followed by Gentoo with 123, and Chinstrap with 68\"\n    ],\n    \"derived_claims\": [\n      \"Across all three species, there is a clear positive correlation where penguins with longer flippers also tend to have a higher body mass\"\n    ],\n    \"speculative_claims\": [\n      \"The dataset is highly characteristic of the well-known Palmer Penguins dataset, which is widely used in data science education and statistical visualization to demonstrate clustering and classification algorithms\",\n      \"In avian biology and marine ecology, morphological measurements like flipper length and body mass are key indicators used to study growth patterns, sexual dimorphism, and ecological niche partitioning\",\n      \"Understanding these physical differences helps ecologists identify species in the field and monitor the health of penguin populations\",\n      \"Because penguins are indicator species for marine ecosystems, long-term changes in average body mass or flipper length within these populations could signal environmental stressors, such as climate change affecting the abundance of food sources like Antarctic krill\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 4,\n    \"derived_count\": 1,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact raw data table is missing, but the OLLI screen reader tree provides highly detailed summary statistics, including sample sizes, ranges, and averages for each species and axis."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The positive correlation and distinct clustering of the Gentoo species compared to Adelie and Chinstrap are clearly readable from the OLLI tree and the chart image."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story and axis labels clearly identify this as penguin morphological data (flipper length vs. body mass by species)."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This scatterplot illustrates the relationship between flipper length (in millimeters) and body mass (in grams) for three penguin species: Adelie, Chinstrap, and Gentoo [DIRECT]. The dataset is highly characteristic of the well-known Palmer Penguins dataset, which is widely used in data science education and statistical visualization to demonstrate clustering and classification algorithms [SPECULATIVE: Palmer Penguins dataset].",
+      "domain_specific_explanations": "In avian biology and marine ecology, morphological measurements like flipper length and body mass are key indicators used to study growth patterns, sexual dimorphism, and ecological niche partitioning [SPECULATIVE: Avian Biology]. The data shows that Gentoo penguins are significantly larger on average, with a mean body mass of 5076g and a mean flipper length of 217mm [DIRECT]. In contrast, Adelie and Chinstrap penguins are much closer in size; Adelie penguins average 3701g in body mass and 190mm in flipper length, while Chinstrap penguins average 3733g in body mass and 196mm in flipper length [DIRECT]. Across all three species, there is a clear positive correlation where penguins with longer flippers also tend to have a higher body mass [DERIVED: Positive correlation observed across all species clusters].",
+      "real_world_significance": "Understanding these physical differences helps ecologists identify species in the field and monitor the health of penguin populations [SPECULATIVE: Wildlife Ecology]. Because penguins are indicator species for marine ecosystems, long-term changes in average body mass or flipper length within these populations could signal environmental stressors, such as climate change affecting the abundance of food sources like Antarctic krill [SPECULATIVE: Climate Change Ecology].",
+      "other": "The Adelie species has the highest sample size in this dataset with 151 observations, followed by Gentoo with 123, and Chinstrap with 68 [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This scatterplot illustrates the relationship between flipper length (in millimeters) and body mass (in grams) for three penguin species: Adelie, Chinstrap, and Gentoo",
+        "Gentoo penguins are significantly larger on average, with a mean body mass of 5076g and a mean flipper length of 217mm",
+        "Adelie and Chinstrap penguins are much closer in size; Adelie penguins average 3701g in body mass and 190mm in flipper length, while Chinstrap penguins average 3733g in body mass and 196mm in flipper length",
+        "The Adelie species has the highest sample size in this dataset with 151 observations, followed by Gentoo with 123, and Chinstrap with 68"
+      ],
+      "derived_claims": [
+        "Across all three species, there is a clear positive correlation where penguins with longer flippers also tend to have a higher body mass"
+      ],
+      "speculative_claims": [
+        "The dataset is highly characteristic of the well-known Palmer Penguins dataset, which is widely used in data science education and statistical visualization to demonstrate clustering and classification algorithms",
+        "In avian biology and marine ecology, morphological measurements like flipper length and body mass are key indicators used to study growth patterns, sexual dimorphism, and ecological niche partitioning",
+        "Understanding these physical differences helps ecologists identify species in the field and monitor the health of penguin populations",
+        "Because penguins are indicator species for marine ecosystems, long-term changes in average body mass or flipper length within these populations could signal environmental stressors, such as climate change affecting the abundance of food sources like Antarctic krill"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 4,
+      "derived_count": 1,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10503.182374988683,
+  "created_at": "2026-07-08T14:32:56.533209Z"
+}

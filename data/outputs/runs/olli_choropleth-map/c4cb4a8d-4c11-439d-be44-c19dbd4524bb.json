@@ -1,0 +1,76 @@
+{
+  "output_id": "c4cb4a8d-4c11-439d-be44-c19dbd4524bb",
+  "chart_id": "olli_choropleth-map",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The raw county-level data table is missing, but the Olli screen reader tree provides highly detailed aggregated statistics, including county counts, average rates by range, and average rates by state and region.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The distribution of unemployment rates across ranges and the regional/state-level averages allow for clear identification of geographic trends and disparities.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The subject domain (US county-level unemployment rates) is explicitly defined in the Olli tree and the expert domain story.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a choropleth map representing US county-level unemployment rates [DIRECT]. The data is structured hierarchically, allowing users to explore unemployment rates across major geographic regions (such as the Midwest, Northeast, and South) and individual states [DIRECT]. The overall average unemployment rate across all represented counties is 9% [DIRECT], with county-level rates spanning a wide range from 1% to 30% [DIRECT]. This type of visualization is typically produced by government agencies like the Bureau of Labor Statistics or academic researchers to analyze labor market health [SPECULATIVE: Labor Economics].\",\n    \"domain_specific_explanations\": \"In labor economics, the unemployment rate represents the percentage of the labor force that is jobless and actively seeking employment [SPECULATIVE: Labor Economics]. An overall average rate of 9% is historically high for the United States, suggesting this dataset may capture a period of economic recession or recovery [SPECULATIVE: Macroeconomics]. The data shows that the vast majority of counties (2,117 out of 3,218 total counted in the ranges) have relatively low to moderate unemployment rates between 1% and 10%, with an average of 7% [DERIVED: Summed the county counts across all rate ranges to get 3,218, and identified the largest bracket]. Conversely, extreme unemployment is rare: only 7 counties (approximately 0.2% of the total) experience rates between 25% and 30% [DERIVED: Calculated 7 out of 3,218 counties]. Significant regional variation exists; for example, in the Midwest, North Dakota has an exceptionally low average rate of 3%, while Michigan has a much higher average rate of 14% [DIRECT].\",\n    \"real_world_significance\": \"County-level unemployment data is critical for policymakers because federal and state funding for job training, social safety nets, and infrastructure is often allocated based on local economic distress [SPECULATIVE: Public Policy]. The stark disparities between states—such as Michigan and South Carolina averaging 14% unemployment while North Dakota averages 3% [DIRECT]—indicate that national economic policies may need to be highly localized rather than one-size-fits-all [SPECULATIVE: Public Policy]. In high-unemployment states, local economies likely face reduced consumer spending and increased strain on public services [SPECULATIVE: Macroeconomics]. Meanwhile, counties in low-unemployment states like North Dakota (3%) or Nebraska (4%) [DIRECT] may face labor shortages that limit business expansion but put upward pressure on wages [SPECULATIVE: Labor Economics].\",\n    \"other\": \"The dataset reflects the administrative geography of the US, containing a much larger number of counties in the South (1,423) and Midwest (1,055) compared to the Northeast (217) [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a choropleth map representing US county-level unemployment rates\",\n      \"The data is structured hierarchically, allowing users to explore unemployment rates across major geographic regions (such as the Midwest, Northeast, and South) and individual states\",\n      \"The overall average unemployment rate across all represented counties is 9%\",\n      \"with county-level rates spanning a wide range from 1% to 30%\",\n      \"Significant regional variation exists; for example, in the Midwest, North Dakota has an exceptionally low average rate of 3%, while Michigan has a much higher average rate of 14%\",\n      \"such as Michigan and South Carolina averaging 14% unemployment while North Dakota averages 3%\",\n      \"or Nebraska (4%)\",\n      \"The dataset reflects the administrative geography of the US, containing a much larger number of counties in the South (1,423) and Midwest (1,055) compared to the Northeast (217)\"\n    ],\n    \"derived_claims\": [\n      \"The data shows that the vast majority of counties (2,117 out of 3,218 total counted in the ranges) have relatively low to moderate unemployment rates between 1% and 10%, with an average of 7% [DERIVED: Summed the county counts across all rate ranges to get 3,218, and identified the largest bracket]\",\n      \"Conversely, extreme unemployment is rare: only 7 counties (approximately 0.2% of the total) experience rates between 25% and 30% [DERIVED: Calculated 7 out of 3,218 counties]\"\n    ],\n    \"speculative_claims\": [\n      \"This type of visualization is typically produced by government agencies like the Bureau of Labor Statistics or academic researchers to analyze labor market health [SPECULATIVE: Labor Economics]\",\n      \"In labor economics, the unemployment rate represents the percentage of the labor force that is jobless and actively seeking employment [SPECULATIVE: Labor Economics]\",\n      \"An overall average rate of 9% is historically high for the United States, suggesting this dataset may capture a period of economic recession or recovery [SPECULATIVE: Macroeconomics]\",\n      \"County-level unemployment data is critical for policymakers because federal and state funding for job training, social safety nets, and infrastructure is often allocated based on local economic distress [SPECULATIVE: Public Policy]\",\n      \"indicate that national economic policies may need to be highly localized rather than one-size-fits-all [SPECULATIVE: Public Policy]\",\n      \"In high-unemployment states, local economies likely face reduced consumer spending and increased strain on public services [SPECULATIVE: Macroeconomics]\",\n      \"may face labor shortages that limit business expansion but put upward pressure on wages [SPECULATIVE: Labor Economics]\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 8,\n    \"derived_count\": 2,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The raw county-level data table is missing, but the Olli screen reader tree provides highly detailed aggregated statistics, including county counts, average rates by range, and average rates by state and region."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The distribution of unemployment rates across ranges and the regional/state-level averages allow for clear identification of geographic trends and disparities."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The subject domain (US county-level unemployment rates) is explicitly defined in the Olli tree and the expert domain story."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a choropleth map representing US county-level unemployment rates [DIRECT]. The data is structured hierarchically, allowing users to explore unemployment rates across major geographic regions (such as the Midwest, Northeast, and South) and individual states [DIRECT]. The overall average unemployment rate across all represented counties is 9% [DIRECT], with county-level rates spanning a wide range from 1% to 30% [DIRECT]. This type of visualization is typically produced by government agencies like the Bureau of Labor Statistics or academic researchers to analyze labor market health [SPECULATIVE: Labor Economics].",
+      "domain_specific_explanations": "In labor economics, the unemployment rate represents the percentage of the labor force that is jobless and actively seeking employment [SPECULATIVE: Labor Economics]. An overall average rate of 9% is historically high for the United States, suggesting this dataset may capture a period of economic recession or recovery [SPECULATIVE: Macroeconomics]. The data shows that the vast majority of counties (2,117 out of 3,218 total counted in the ranges) have relatively low to moderate unemployment rates between 1% and 10%, with an average of 7% [DERIVED: Summed the county counts across all rate ranges to get 3,218, and identified the largest bracket]. Conversely, extreme unemployment is rare: only 7 counties (approximately 0.2% of the total) experience rates between 25% and 30% [DERIVED: Calculated 7 out of 3,218 counties]. Significant regional variation exists; for example, in the Midwest, North Dakota has an exceptionally low average rate of 3%, while Michigan has a much higher average rate of 14% [DIRECT].",
+      "real_world_significance": "County-level unemployment data is critical for policymakers because federal and state funding for job training, social safety nets, and infrastructure is often allocated based on local economic distress [SPECULATIVE: Public Policy]. The stark disparities between states—such as Michigan and South Carolina averaging 14% unemployment while North Dakota averages 3% [DIRECT]—indicate that national economic policies may need to be highly localized rather than one-size-fits-all [SPECULATIVE: Public Policy]. In high-unemployment states, local economies likely face reduced consumer spending and increased strain on public services [SPECULATIVE: Macroeconomics]. Meanwhile, counties in low-unemployment states like North Dakota (3%) or Nebraska (4%) [DIRECT] may face labor shortages that limit business expansion but put upward pressure on wages [SPECULATIVE: Labor Economics].",
+      "other": "The dataset reflects the administrative geography of the US, containing a much larger number of counties in the South (1,423) and Midwest (1,055) compared to the Northeast (217) [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a choropleth map representing US county-level unemployment rates",
+        "The data is structured hierarchically, allowing users to explore unemployment rates across major geographic regions (such as the Midwest, Northeast, and South) and individual states",
+        "The overall average unemployment rate across all represented counties is 9%",
+        "with county-level rates spanning a wide range from 1% to 30%",
+        "Significant regional variation exists; for example, in the Midwest, North Dakota has an exceptionally low average rate of 3%, while Michigan has a much higher average rate of 14%",
+        "such as Michigan and South Carolina averaging 14% unemployment while North Dakota averages 3%",
+        "or Nebraska (4%)",
+        "The dataset reflects the administrative geography of the US, containing a much larger number of counties in the South (1,423) and Midwest (1,055) compared to the Northeast (217)"
+      ],
+      "derived_claims": [
+        "The data shows that the vast majority of counties (2,117 out of 3,218 total counted in the ranges) have relatively low to moderate unemployment rates between 1% and 10%, with an average of 7% [DERIVED: Summed the county counts across all rate ranges to get 3,218, and identified the largest bracket]",
+        "Conversely, extreme unemployment is rare: only 7 counties (approximately 0.2% of the total) experience rates between 25% and 30% [DERIVED: Calculated 7 out of 3,218 counties]"
+      ],
+      "speculative_claims": [
+        "This type of visualization is typically produced by government agencies like the Bureau of Labor Statistics or academic researchers to analyze labor market health [SPECULATIVE: Labor Economics]",
+        "In labor economics, the unemployment rate represents the percentage of the labor force that is jobless and actively seeking employment [SPECULATIVE: Labor Economics]",
+        "An overall average rate of 9% is historically high for the United States, suggesting this dataset may capture a period of economic recession or recovery [SPECULATIVE: Macroeconomics]",
+        "County-level unemployment data is critical for policymakers because federal and state funding for job training, social safety nets, and infrastructure is often allocated based on local economic distress [SPECULATIVE: Public Policy]",
+        "indicate that national economic policies may need to be highly localized rather than one-size-fits-all [SPECULATIVE: Public Policy]",
+        "In high-unemployment states, local economies likely face reduced consumer spending and increased strain on public services [SPECULATIVE: Macroeconomics]",
+        "may face labor shortages that limit business expansion but put upward pressure on wages [SPECULATIVE: Labor Economics]"
+      ],
+      "total_flag_count": 17,
+      "direct_count": 8,
+      "derived_count": 2,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14437.442041991744,
+  "created_at": "2026-07-08T14:31:51.232127Z"
+}

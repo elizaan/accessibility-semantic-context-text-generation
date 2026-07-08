@@ -1,0 +1,77 @@
+{
+  "output_id": "88f4392f-9b5d-4afd-a97c-c85435fef3d9",
+  "chart_id": "owid_pig_production_greenhouse_gas_emissions_vs_cost_to_animal_welfare",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The data table provides precise values for emissions, welfare costs, and finishing systems for numerous farms, though a few rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"Trends can be derived by grouping and comparing the finishing systems, though no pre-calculated summary statistics are provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and variables clearly define the domain of agricultural sustainability and animal welfare.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly explains how to interpret the 'welfare cost' metric and provides the source URL.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3.0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart compares greenhouse gas emissions (per kilogram deadweight) against the cost to animal welfare across different pig farming finishing systems in 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. The finishing systems categorized in the dataset include Slatted, Solid floor, Straw yard, and Outdoor [DIRECT].\",\n    \"domain_specific_explanations\": \"Welfare cost is a metric based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments, where positive values represent a negative impact on welfare and negative values represent a benefit to welfare [DIRECT]. Emissions are measured in kilograms of greenhouse gases per kilogram of deadweight [DIRECT]. Looking at the data, intensive systems like 'Slatted' and 'Solid floor' generally show lower emissions (e.g., Farm 13 at 1.66 kg or Farm 16 at 1.44 kg) but higher welfare costs (mostly positive, e.g., 0.35 to 0.46) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]. Conversely, 'Straw yard' and 'Outdoor' systems often show lower welfare costs (frequently negative, such as Farm 30 at -0.56 or Farm 19 at -0.23) but tend to have higher emissions (e.g., Farm 31 at 4.95 kg or Farm 30 at 3.46 kg) [DERIVED: compared emissions and welfare costs across finishing systems in the data table].\",\n    \"real_world_significance\": \"This data highlights a critical trade-off in agricultural policy and sustainable food systems: the tension between environmental sustainability (reducing greenhouse gas emissions) and ethical treatment of animals (improving animal welfare) [SPECULATIVE: Agricultural Economics / Environmental Policy]. Policy makers and consumers face a dilemma where choosing systems that are better for the climate (like slatted floors, which may concentrate waste and reduce emissions) might result in worse lives for the animals, whereas high-welfare systems (like outdoor or straw yards) might have a larger carbon footprint due to slower growth rates or different waste management dynamics [SPECULATIVE: Sustainable Agriculture].\",\n    \"other\": \"Farm 30 (Outdoor) represents the best welfare outcome in the dataset with a welfare cost of -0.56148, but its emissions are relatively high at 3.456777 kg [DERIVED: identified the minimum welfare cost value and its corresponding emissions in the data table]. Farm 31 (Straw yard) has the highest emissions listed in the provided data at 4.954158 kg, with a near-neutral welfare cost of 0.009506 [DERIVED: identified the maximum emissions value and its corresponding welfare cost in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart compares greenhouse gas emissions (per kilogram deadweight) against the cost to animal welfare across different pig farming finishing systems in 2024\",\n      \"The data is sourced from Our World in Data\",\n      \"The finishing systems categorized in the dataset include Slatted, Solid floor, Straw yard, and Outdoor\",\n      \"Welfare cost is a metric based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments, where positive values represent a negative impact on welfare and negative values represent a benefit to welfare\",\n      \"Emissions are measured in kilograms of greenhouse gases per kilogram of deadweight\"\n    ],\n    \"derived_claims\": [\n      \"Looking at the data, intensive systems like 'Slatted' and 'Solid floor' generally show lower emissions (e.g., Farm 13 at 1.66 kg or Farm 16 at 1.44 kg) but higher welfare costs (mostly positive, e.g., 0.35 to 0.46) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]\",\n      \"Conversely, 'Straw yard' and 'Outdoor' systems often show lower welfare costs (frequently negative, such as Farm 30 at -0.56 or Farm 19 at -0.23) but tend to have higher emissions (e.g., Farm 31 at 4.95 kg or Farm 30 at 3.46 kg) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]\",\n      \"Farm 30 (Outdoor) represents the best welfare outcome in the dataset with a welfare cost of -0.56148, but its emissions are relatively high at 3.456777 kg [DERIVED: identified the minimum welfare cost value and its corresponding emissions in the data table]\",\n      \"Farm 31 (Straw yard) has the highest emissions listed in the provided data at 4.954158 kg, with a near-neutral welfare cost of 0.009506 [DERIVED: identified the maximum emissions value and its corresponding welfare cost in the data table]\"\n    ],\n    \"speculative_claims\": [\n      \"This data highlights a critical trade-off in agricultural policy and sustainable food systems: the tension between environmental sustainability (reducing greenhouse gas emissions) and ethical treatment of animals (improving animal welfare) [SPECULATIVE: Agricultural Economics / Environmental Policy]\",\n      \"Policy makers and consumers face a dilemma where choosing systems that are better for the climate (like slatted floors, which may concentrate waste and reduce emissions) might result in worse lives for the animals, whereas high-welfare systems (like outdoor or straw yards) might have a larger carbon footprint due to slower growth rates or different waste management dynamics [SPECULATIVE: Sustainable Agriculture]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides precise values for emissions, welfare costs, and finishing systems for numerous farms, though a few rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "Trends can be derived by grouping and comparing the finishing systems, though no pre-calculated summary statistics are provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and variables clearly define the domain of agricultural sustainability and animal welfare."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story clearly explains how to interpret the 'welfare cost' metric and provides the source URL."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3.0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart compares greenhouse gas emissions (per kilogram deadweight) against the cost to animal welfare across different pig farming finishing systems in 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. The finishing systems categorized in the dataset include Slatted, Solid floor, Straw yard, and Outdoor [DIRECT].",
+      "domain_specific_explanations": "Welfare cost is a metric based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments, where positive values represent a negative impact on welfare and negative values represent a benefit to welfare [DIRECT]. Emissions are measured in kilograms of greenhouse gases per kilogram of deadweight [DIRECT]. Looking at the data, intensive systems like 'Slatted' and 'Solid floor' generally show lower emissions (e.g., Farm 13 at 1.66 kg or Farm 16 at 1.44 kg) but higher welfare costs (mostly positive, e.g., 0.35 to 0.46) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]. Conversely, 'Straw yard' and 'Outdoor' systems often show lower welfare costs (frequently negative, such as Farm 30 at -0.56 or Farm 19 at -0.23) but tend to have higher emissions (e.g., Farm 31 at 4.95 kg or Farm 30 at 3.46 kg) [DERIVED: compared emissions and welfare costs across finishing systems in the data table].",
+      "real_world_significance": "This data highlights a critical trade-off in agricultural policy and sustainable food systems: the tension between environmental sustainability (reducing greenhouse gas emissions) and ethical treatment of animals (improving animal welfare) [SPECULATIVE: Agricultural Economics / Environmental Policy]. Policy makers and consumers face a dilemma where choosing systems that are better for the climate (like slatted floors, which may concentrate waste and reduce emissions) might result in worse lives for the animals, whereas high-welfare systems (like outdoor or straw yards) might have a larger carbon footprint due to slower growth rates or different waste management dynamics [SPECULATIVE: Sustainable Agriculture].",
+      "other": "Farm 30 (Outdoor) represents the best welfare outcome in the dataset with a welfare cost of -0.56148, but its emissions are relatively high at 3.456777 kg [DERIVED: identified the minimum welfare cost value and its corresponding emissions in the data table]. Farm 31 (Straw yard) has the highest emissions listed in the provided data at 4.954158 kg, with a near-neutral welfare cost of 0.009506 [DERIVED: identified the maximum emissions value and its corresponding welfare cost in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart compares greenhouse gas emissions (per kilogram deadweight) against the cost to animal welfare across different pig farming finishing systems in 2024",
+        "The data is sourced from Our World in Data",
+        "The finishing systems categorized in the dataset include Slatted, Solid floor, Straw yard, and Outdoor",
+        "Welfare cost is a metric based on the quantity of years lived weighted by quality-of-life scores from detailed welfare assessments, where positive values represent a negative impact on welfare and negative values represent a benefit to welfare",
+        "Emissions are measured in kilograms of greenhouse gases per kilogram of deadweight"
+      ],
+      "derived_claims": [
+        "Looking at the data, intensive systems like 'Slatted' and 'Solid floor' generally show lower emissions (e.g., Farm 13 at 1.66 kg or Farm 16 at 1.44 kg) but higher welfare costs (mostly positive, e.g., 0.35 to 0.46) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]",
+        "Conversely, 'Straw yard' and 'Outdoor' systems often show lower welfare costs (frequently negative, such as Farm 30 at -0.56 or Farm 19 at -0.23) but tend to have higher emissions (e.g., Farm 31 at 4.95 kg or Farm 30 at 3.46 kg) [DERIVED: compared emissions and welfare costs across finishing systems in the data table]",
+        "Farm 30 (Outdoor) represents the best welfare outcome in the dataset with a welfare cost of -0.56148, but its emissions are relatively high at 3.456777 kg [DERIVED: identified the minimum welfare cost value and its corresponding emissions in the data table]",
+        "Farm 31 (Straw yard) has the highest emissions listed in the provided data at 4.954158 kg, with a near-neutral welfare cost of 0.009506 [DERIVED: identified the maximum emissions value and its corresponding welfare cost in the data table]"
+      ],
+      "speculative_claims": [
+        "This data highlights a critical trade-off in agricultural policy and sustainable food systems: the tension between environmental sustainability (reducing greenhouse gas emissions) and ethical treatment of animals (improving animal welfare) [SPECULATIVE: Agricultural Economics / Environmental Policy]",
+        "Policy makers and consumers face a dilemma where choosing systems that are better for the climate (like slatted floors, which may concentrate waste and reduce emissions) might result in worse lives for the animals, whereas high-welfare systems (like outdoor or straw yards) might have a larger carbon footprint due to slower growth rates or different waste management dynamics [SPECULATIVE: Sustainable Agriculture]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12883.42383300187,
+  "created_at": "2026-07-07T23:17:12.129551Z"
+}

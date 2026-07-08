@@ -1,0 +1,76 @@
+{
+  "output_id": "49e2d22d-1c59-4b34-a013-ce4c1888b5df",
+  "chart_id": "hci_b0abced402bd11a7b43f42e4fd443c9150b4a9b0_Image_003",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values for the histogram bins are not provided in a table, though some summary statistics (95.36% of edits, 1,105 gender-inferred users) are present in the alt text.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text describes the general trend that gender-identified users are equally distributed across the top 2,000 users, but specific bin-by-bin comparisons are missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain (human-computer interaction, online collaborative platforms, gender representation) is clear from the CHI 2019 paper source and the edit count context.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story provides the publication venue (CHI 2019) and the original figure caption, which helps ground the analysis.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"The stakeholder impact is not explicitly provided, but can be reasonably inferred as researchers and community managers studying gender bias in online communities.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is an overlaid histogram from a CHI 2019 research paper studying user contributions and gender representation in an online collaborative platform [SPECULATIVE: CHI 2019 / Wikipedia research]. It compares the distribution of edit counts between the top 2,000 most active users and a subset of 1,105 users whose gender could be inferred [DIRECT]. The top 2,000 users are highly dominant, contributing 95.36% of all non-bot edits on the platform [DIRECT].\",\n    \"domain_specific_explanations\": \"The X-axis represents 'Edit counts (log-transformed)' ranging from approximately 3.4 to 7.1, which is a standard statistical technique used to visualize highly skewed data where a small number of users have an extraordinarily high volume of edits [DERIVED: read from image axes]. The Y-axis represents 'User frequency', showing how many users fall into each edit count bin [DERIVED: read from image axes]. The 'gender-inferred' users follow a highly similar distribution shape to the top 2,000 users, indicating they are representative of the overall top contributor distribution rather than being skewed toward only the very highest or lowest tiers of this elite group [DERIVED: interpreted from alt text and histogram shape].\",\n    \"real_world_significance\": \"In collaborative platforms like Wikipedia, a tiny fraction of users perform the vast majority of the work [SPECULATIVE: Wikipedia gender gap literature]. Understanding the gender distribution of these top contributors is crucial for addressing systemic gender bias in content generation and community governance [SPECULATIVE: Wikipedia gender gap literature]. Because the gender-inferred users are representative of the top 2,000, researchers can use this subset to make broader inferences about gender dynamics among elite editors without introducing significant sampling bias based on activity levels [DERIVED: logical deduction from the equal distribution claim].\",\n    \"other\": \"The steep decline in user frequency as log-transformed edit counts increase is characteristic of a power-law distribution common in online collaborative communities, where a small elite class of editors drives the platform [SPECULATIVE: network science / power law distributions].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart compares the distribution of edit counts between the top 2,000 users and a subset of 1,105 gender-inferred users.\",\n      \"The top 2,000 users are highly dominant, contributing 95.36% of all non-bot edits on the platform.\"\n    ],\n    \"derived_claims\": [\n      \"The X-axis represents 'Edit counts (log-transformed)' ranging from approximately 3.4 to 7.1, which is a standard statistical technique used to visualize highly skewed data where a small number of users have an extraordinarily high volume of edits [derived from reading the X-axis label and range on the image].\",\n      \"The Y-axis represents 'User frequency', showing how many users fall into each edit count bin [derived from reading the Y-axis label on the image].\",\n      \"The 'gender-inferred' users follow a highly similar distribution shape to the top 2,000 users, indicating they are representative of the overall top contributor distribution rather than being skewed toward only the very highest or lowest tiers of this elite group [derived from comparing the black and hatched bars in the image and the alt text statement].\",\n      \"Because the gender-inferred users are representative of the top 2,000, researchers can use this subset to make broader inferences about gender dynamics among elite editors without introducing significant sampling bias based on activity levels [derived from logical deduction of the equal distribution claim in the alt text].\"\n    ],\n    \"speculative_claims\": [\n      \"This chart is an overlaid histogram from a CHI 2019 research paper studying user contributions and gender representation in an online collaborative platform [source: CHI 2019 / Wikipedia research].\",\n      \"In collaborative platforms like Wikipedia, a tiny fraction of users perform the vast majority of the work [source: Wikipedia gender gap literature].\",\n      \"Understanding the gender distribution of these top contributors is crucial for addressing systemic gender bias in content generation and community governance [source: Wikipedia gender gap literature].\",\n      \"The steep decline in user frequency as log-transformed edit counts increase is characteristic of a power-law distribution common in online collaborative communities, where a small elite class of editors drives the platform [source: network science / power law distributions].\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values for the histogram bins are not provided in a table, though some summary statistics (95.36% of edits, 1,105 gender-inferred users) are present in the alt text."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text describes the general trend that gender-identified users are equally distributed across the top 2,000 users, but specific bin-by-bin comparisons are missing."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (human-computer interaction, online collaborative platforms, gender representation) is clear from the CHI 2019 paper source and the edit count context."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story provides the publication venue (CHI 2019) and the original figure caption, which helps ground the analysis."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "The stakeholder impact is not explicitly provided, but can be reasonably inferred as researchers and community managers studying gender bias in online communities."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is an overlaid histogram from a CHI 2019 research paper studying user contributions and gender representation in an online collaborative platform [SPECULATIVE: CHI 2019 / Wikipedia research]. It compares the distribution of edit counts between the top 2,000 most active users and a subset of 1,105 users whose gender could be inferred [DIRECT]. The top 2,000 users are highly dominant, contributing 95.36% of all non-bot edits on the platform [DIRECT].",
+      "domain_specific_explanations": "The X-axis represents 'Edit counts (log-transformed)' ranging from approximately 3.4 to 7.1, which is a standard statistical technique used to visualize highly skewed data where a small number of users have an extraordinarily high volume of edits [DERIVED: read from image axes]. The Y-axis represents 'User frequency', showing how many users fall into each edit count bin [DERIVED: read from image axes]. The 'gender-inferred' users follow a highly similar distribution shape to the top 2,000 users, indicating they are representative of the overall top contributor distribution rather than being skewed toward only the very highest or lowest tiers of this elite group [DERIVED: interpreted from alt text and histogram shape].",
+      "real_world_significance": "In collaborative platforms like Wikipedia, a tiny fraction of users perform the vast majority of the work [SPECULATIVE: Wikipedia gender gap literature]. Understanding the gender distribution of these top contributors is crucial for addressing systemic gender bias in content generation and community governance [SPECULATIVE: Wikipedia gender gap literature]. Because the gender-inferred users are representative of the top 2,000, researchers can use this subset to make broader inferences about gender dynamics among elite editors without introducing significant sampling bias based on activity levels [DERIVED: logical deduction from the equal distribution claim].",
+      "other": "The steep decline in user frequency as log-transformed edit counts increase is characteristic of a power-law distribution common in online collaborative communities, where a small elite class of editors drives the platform [SPECULATIVE: network science / power law distributions]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart compares the distribution of edit counts between the top 2,000 users and a subset of 1,105 gender-inferred users.",
+        "The top 2,000 users are highly dominant, contributing 95.36% of all non-bot edits on the platform."
+      ],
+      "derived_claims": [
+        "The X-axis represents 'Edit counts (log-transformed)' ranging from approximately 3.4 to 7.1, which is a standard statistical technique used to visualize highly skewed data where a small number of users have an extraordinarily high volume of edits [derived from reading the X-axis label and range on the image].",
+        "The Y-axis represents 'User frequency', showing how many users fall into each edit count bin [derived from reading the Y-axis label on the image].",
+        "The 'gender-inferred' users follow a highly similar distribution shape to the top 2,000 users, indicating they are representative of the overall top contributor distribution rather than being skewed toward only the very highest or lowest tiers of this elite group [derived from comparing the black and hatched bars in the image and the alt text statement].",
+        "Because the gender-inferred users are representative of the top 2,000, researchers can use this subset to make broader inferences about gender dynamics among elite editors without introducing significant sampling bias based on activity levels [derived from logical deduction of the equal distribution claim in the alt text]."
+      ],
+      "speculative_claims": [
+        "This chart is an overlaid histogram from a CHI 2019 research paper studying user contributions and gender representation in an online collaborative platform [source: CHI 2019 / Wikipedia research].",
+        "In collaborative platforms like Wikipedia, a tiny fraction of users perform the vast majority of the work [source: Wikipedia gender gap literature].",
+        "Understanding the gender distribution of these top contributors is crucial for addressing systemic gender bias in content generation and community governance [source: Wikipedia gender gap literature].",
+        "The steep decline in user frequency as log-transformed edit counts increase is characteristic of a power-law distribution common in online collaborative communities, where a small elite class of editors drives the platform [source: network science / power law distributions]."
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11981.459207949229,
+  "created_at": "2026-07-07T23:31:35.885749Z"
+}

@@ -1,0 +1,78 @@
+{
+  "output_id": "8ca85a45-bfb6-4a0a-b09d-50895ed739e7",
+  "chart_id": "hci_b93cf632919c3ddf2a7efcd161bf03fe288761de_Image_007_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values are provided for the box plot.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend data, statistical summaries, or median values are provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (Virtual Reality, avatar anthropomorphism, and user behavior) is clearly identifiable from the title and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides the publication source (CHI 2020), the meaning of the abbreviations (C, H, R, F), and the experimental setup.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a letter-value box plot from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020) [DIRECT]. It measures the time elapsed before participants first walked through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms) [DIRECT]. The study investigates how different types of avatar representations (anthropomorphism and visibility) affect user behavior in virtual environments [DIRECT]. The avatar representations compared are Controller (C), Human Hand (H), Robot (R), and Full-body Human (F) [DIRECT].\",\n    \"domain_specific_explanations\": \"In Virtual Reality (VR) research, 'walking through a wall' is a common measure of spatial presence, illusion of solidity, or adherence to virtual physics [SPECULATIVE: Virtual Reality Research]. A letter-value box plot is an extension of a standard box plot designed to better visualize the distribution of data in the tails, especially for large datasets [SPECULATIVE: Statistics]. The abbreviations C, H, R, and F represent varying levels of avatar anthropomorphism, ranging from a simple tool/controller representation to a highly realistic full-body human representation [DERIVED: mapped C, H, R, F to their full names and ordered them by anthropomorphism level based on the expert story]. The time until a participant first walks through a wall indicates how long they respect the physical boundaries of the virtual environment before breaking the illusion or testing the limits of the system [SPECULATIVE: Virtual Reality Research].\",\n    \"real_world_significance\": \"Understanding how avatar representation affects user behavior can help VR developers design more immersive and intuitive virtual environments [SPECULATIVE: VR Design]. If users with more realistic avatars take longer to walk through walls, it suggests that higher anthropomorphism enhances the sense of presence and the feeling that virtual obstacles are solid [SPECULATIVE: VR Design]. This research has implications for safety, training simulations (such as medical or industrial training where respecting physical boundaries is critical), and entertainment in VR [SPECULATIVE: VR Applications].\",\n    \"other\": \"In the cross-room results, data points are color-coded based on the specific room where the participant first crossed a wall, allowing researchers to see if environmental layout influenced the timing [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a letter-value box plot from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020)\",\n      \"It measures the time elapsed before participants first walked through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms)\",\n      \"The study investigates how different types of avatar representations (anthropomorphism and visibility) affect user behavior in virtual environments\",\n      \"The avatar representations compared are Controller (C), Human Hand (H), Robot (R), and Full-body Human (F)\",\n      \"In the cross-room results, data points are color-coded based on the specific room where the participant first crossed a wall\"\n    ],\n    \"derived_claims\": [\n      \"The abbreviations C, H, R, and F represent varying levels of avatar anthropomorphism, ranging from a simple tool/controller representation to a highly realistic full-body human representation\"\n    ],\n    \"speculative_claims\": [\n      \"In Virtual Reality (VR) research, 'walking through a wall' is a common measure of spatial presence, illusion of solidity, or adherence to virtual physics\",\n      \"A letter-value box plot is an extension of a standard box plot designed to better visualize the distribution of data in the tails, especially for large datasets\",\n      \"The time until a participant first walks through a wall indicates how long they respect the physical boundaries of the virtual environment before breaking the illusion or testing the limits of the system\",\n      \"Understanding how avatar representation affects user behavior can help VR developers design more immersive and intuitive virtual environments\",\n      \"If users with more realistic avatars take longer to walk through walls, it suggests that higher anthropomorphism enhances the sense of presence and the feeling that virtual obstacles are solid\",\n      \"This research has implications for safety, training simulations (such as medical or industrial training where respecting physical boundaries is critical), and entertainment in VR\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 5,\n    \"derived_count\": 1,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values are provided for the box plot."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend data, statistical summaries, or median values are provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (Virtual Reality, avatar anthropomorphism, and user behavior) is clearly identifiable from the title and expert story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides the publication source (CHI 2020), the meaning of the abbreviations (C, H, R, F), and the experimental setup."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a letter-value box plot from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020) [DIRECT]. It measures the time elapsed before participants first walked through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms) [DIRECT]. The study investigates how different types of avatar representations (anthropomorphism and visibility) affect user behavior in virtual environments [DIRECT]. The avatar representations compared are Controller (C), Human Hand (H), Robot (R), and Full-body Human (F) [DIRECT].",
+      "domain_specific_explanations": "In Virtual Reality (VR) research, 'walking through a wall' is a common measure of spatial presence, illusion of solidity, or adherence to virtual physics [SPECULATIVE: Virtual Reality Research]. A letter-value box plot is an extension of a standard box plot designed to better visualize the distribution of data in the tails, especially for large datasets [SPECULATIVE: Statistics]. The abbreviations C, H, R, and F represent varying levels of avatar anthropomorphism, ranging from a simple tool/controller representation to a highly realistic full-body human representation [DERIVED: mapped C, H, R, F to their full names and ordered them by anthropomorphism level based on the expert story]. The time until a participant first walks through a wall indicates how long they respect the physical boundaries of the virtual environment before breaking the illusion or testing the limits of the system [SPECULATIVE: Virtual Reality Research].",
+      "real_world_significance": "Understanding how avatar representation affects user behavior can help VR developers design more immersive and intuitive virtual environments [SPECULATIVE: VR Design]. If users with more realistic avatars take longer to walk through walls, it suggests that higher anthropomorphism enhances the sense of presence and the feeling that virtual obstacles are solid [SPECULATIVE: VR Design]. This research has implications for safety, training simulations (such as medical or industrial training where respecting physical boundaries is critical), and entertainment in VR [SPECULATIVE: VR Applications].",
+      "other": "In the cross-room results, data points are color-coded based on the specific room where the participant first crossed a wall, allowing researchers to see if environmental layout influenced the timing [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a letter-value box plot from a research paper published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020)",
+        "It measures the time elapsed before participants first walked through a virtual wall in different experimental rooms (Room 3, Room 4, and across rooms)",
+        "The study investigates how different types of avatar representations (anthropomorphism and visibility) affect user behavior in virtual environments",
+        "The avatar representations compared are Controller (C), Human Hand (H), Robot (R), and Full-body Human (F)",
+        "In the cross-room results, data points are color-coded based on the specific room where the participant first crossed a wall"
+      ],
+      "derived_claims": [
+        "The abbreviations C, H, R, and F represent varying levels of avatar anthropomorphism, ranging from a simple tool/controller representation to a highly realistic full-body human representation"
+      ],
+      "speculative_claims": [
+        "In Virtual Reality (VR) research, 'walking through a wall' is a common measure of spatial presence, illusion of solidity, or adherence to virtual physics",
+        "A letter-value box plot is an extension of a standard box plot designed to better visualize the distribution of data in the tails, especially for large datasets",
+        "The time until a participant first walks through a wall indicates how long they respect the physical boundaries of the virtual environment before breaking the illusion or testing the limits of the system",
+        "Understanding how avatar representation affects user behavior can help VR developers design more immersive and intuitive virtual environments",
+        "If users with more realistic avatars take longer to walk through walls, it suggests that higher anthropomorphism enhances the sense of presence and the feeling that virtual obstacles are solid",
+        "This research has implications for safety, training simulations (such as medical or industrial training where respecting physical boundaries is critical), and entertainment in VR"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 5,
+      "derived_count": 1,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10911.453875014558,
+  "created_at": "2026-07-07T23:43:50.042411Z"
+}

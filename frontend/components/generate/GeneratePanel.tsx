@@ -3,24 +3,33 @@
 import { useState } from "react";
 import { Zap, ChevronDown, ChevronUp, Eye, EyeOff } from "lucide-react";
 import { generateDescription } from "@/lib/api";
-import type { Chart, GenerationOutput, LLMModel, MetadataKey } from "@/lib/types";
-import { LLM_MODELS } from "@/lib/types";
+import type { Chart, GenerationOutput, LLMModel, SelectableMetadataKey } from "@/lib/types";
+import { LLM_MODELS, VARIANTS, classifyVariant } from "@/lib/types";
 
 interface Props {
   chart: Chart;
-  enabledFeatures: MetadataKey[];
+  enabledFeatures: SelectableMetadataKey[];
   onOutput: (output: GenerationOutput) => void;
 }
 
 export function GeneratePanel({ chart, enabledFeatures, onOutput }: Props) {
   const [selectedModel, setSelectedModel] = useState<LLMModel>(LLM_MODELS[0]);
   const [includeImage, setIncludeImage] = useState(true);
+  const [metacognitionMode, setMetacognitionMode] = useState(false);
   const [customPrompt, setCustomPrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showPromptEditor, setShowPromptEditor] = useState(false);
 
-  const canGenerate = enabledFeatures.length > 0 || includeImage;
+  const imageWillAttach = includeImage && selectedModel.supports_vision;
+
+  // Live preview of which canonical condition this selection resolves to —
+  // mirrors backend prompt_service.classify_variant exactly, so what's shown
+  // here before generating matches what actually gets tagged on the output.
+  const computedVariant = metacognitionMode ? 4 : classifyVariant(chart, enabledFeatures, imageWillAttach);
+  const variantInfo = VARIANTS.find((v) => v.id === computedVariant)!;
+
+  const canGenerate = metacognitionMode ? imageWillAttach : enabledFeatures.length > 0 || imageWillAttach;
 
   const handleGenerate = async () => {
     if (!canGenerate) return;
@@ -31,7 +40,8 @@ export function GeneratePanel({ chart, enabledFeatures, onOutput }: Props) {
         chart_id: chart.chart_id,
         model_id: selectedModel.model_id,
         enabled_features: enabledFeatures,
-        include_image: includeImage && selectedModel.supports_vision,
+        include_image: includeImage,
+        variant: metacognitionMode ? 4 : undefined,
         custom_prompt_suffix: customPrompt || undefined,
       });
       onOutput(output);
@@ -50,6 +60,79 @@ export function GeneratePanel({ chart, enabledFeatures, onOutput }: Props) {
 
   return (
     <div className="space-y-4">
+      {/* Condition — computed live from feature checkboxes + image toggle */}
+      <div className="border rounded-xl overflow-hidden">
+        <div className="bg-muted/50 px-4 py-3 border-b flex items-center justify-between">
+          <h2 className="font-semibold text-sm">Condition</h2>
+          <span className="text-xs font-semibold px-2 py-0.5 rounded bg-purple-100 text-purple-700">
+            V{variantInfo.id}: {variantInfo.name}
+          </span>
+        </div>
+        <div className="p-4 space-y-3">
+          <p className="text-xs text-muted-foreground">{variantInfo.description}</p>
+
+          {!metacognitionMode && (
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-sm font-medium">Include Chart Image</div>
+                <div className="text-xs text-muted-foreground">
+                  {selectedModel.supports_vision
+                    ? "Vision-capable model selected"
+                    : "Model does not support vision"}
+                </div>
+              </div>
+              <button
+                onClick={() => setIncludeImage((v) => !v)}
+                disabled={!selectedModel.supports_vision}
+                className={`flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border transition-colors ${
+                  imageWillAttach
+                    ? "bg-blue-50 border-blue-200 text-blue-700"
+                    : "text-muted-foreground"
+                } disabled:opacity-40 disabled:cursor-not-allowed`}
+              >
+                {imageWillAttach ? (
+                  <>
+                    <Eye className="h-3.5 w-3.5" /> On
+                  </>
+                ) : (
+                  <>
+                    <EyeOff className="h-3.5 w-3.5" /> Off
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+          <label className="flex items-start gap-2.5 pt-2 border-t cursor-pointer">
+            <input
+              type="checkbox"
+              checked={metacognitionMode}
+              onChange={(e) => setMetacognitionMode(e.target.checked)}
+              className="mt-0.5 accent-blue-600"
+            />
+            <div>
+              <div className="text-sm font-medium">Metacognition Test (V4)</div>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Chart image only — the model is told rich metadata exists for this chart but
+                was deliberately withheld. Feature checkboxes are ignored in this mode.
+              </p>
+            </div>
+          </label>
+        </div>
+        {metacognitionMode && !selectedModel.supports_vision && (
+          <p className="text-xs text-amber-600 bg-amber-50 px-4 py-2 border-t">
+            {selectedModel.display_name} does not support vision — the metacognition test
+            needs an image, so switch to a vision-capable model.
+          </p>
+        )}
+        {computedVariant === 0 && !metacognitionMode && (
+          <p className="text-xs text-muted-foreground px-4 py-2 border-t">
+            This is a valid run, just not one of the three canonical conditions — check every
+            available feature (or none) to hit V1/V2/V3.
+          </p>
+        )}
+      </div>
+
       {/* Model selector */}
       <div className="border rounded-xl overflow-hidden">
         <div className="bg-muted/50 px-4 py-3 border-b">
@@ -95,37 +178,6 @@ export function GeneratePanel({ chart, enabledFeatures, onOutput }: Props) {
         </div>
       </div>
 
-      {/* Image toggle */}
-      <div className="border rounded-xl p-4 flex items-center justify-between">
-        <div>
-          <div className="text-sm font-medium">Include Chart Image</div>
-          <div className="text-xs text-muted-foreground">
-            {selectedModel.supports_vision
-              ? "Vision-capable model selected"
-              : "Model does not support vision"}
-          </div>
-        </div>
-        <button
-          onClick={() => setIncludeImage((v) => !v)}
-          disabled={!selectedModel.supports_vision}
-          className={`flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border transition-colors ${
-            includeImage && selectedModel.supports_vision
-              ? "bg-blue-50 border-blue-200 text-blue-700"
-              : "text-muted-foreground"
-          } disabled:opacity-40 disabled:cursor-not-allowed`}
-        >
-          {includeImage && selectedModel.supports_vision ? (
-            <>
-              <Eye className="h-3.5 w-3.5" /> On
-            </>
-          ) : (
-            <>
-              <EyeOff className="h-3.5 w-3.5" /> Off
-            </>
-          )}
-        </button>
-      </div>
-
       {/* Custom prompt suffix (collapsible) */}
       <div className="border rounded-xl overflow-hidden">
         <button
@@ -166,7 +218,9 @@ export function GeneratePanel({ chart, enabledFeatures, onOutput }: Props) {
 
       {!canGenerate && (
         <p className="text-xs text-muted-foreground text-center">
-          Enable at least one accessibility feature or include the chart image to generate.
+          {metacognitionMode
+            ? "The metacognition test needs a vision-capable model — none is selected."
+            : "Enable at least one accessibility feature, or include the chart image with a vision-capable model."}
         </p>
       )}
     </div>

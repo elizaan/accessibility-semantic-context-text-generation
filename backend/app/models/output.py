@@ -30,7 +30,12 @@ class GenerationRequest(BaseModel):
 
     chart_id: str
     model_id: str
-    variant: int = 1             # 1 = rich, 2 = moderate, 3 = sparse, 4 = withheld
     enabled_features: list[str]
     include_image: bool = True
+    # 1/2/3 are informational only — the server recomputes the actual
+    # condition from enabled_features + include_image (see
+    # prompt_service.classify_variant), since datasets vary in what
+    # metadata they have. 4 (metadata withheld) is the one value that's
+    # honored as sent, since it can't be derived from a checkbox state.
+    variant: int = 1
     custom_prompt_suffix: str | None = None

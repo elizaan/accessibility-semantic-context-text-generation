@@ -1,0 +1,72 @@
+{
+  "output_id": "64a1ff39-3439-4ecc-8680-336f5800e6c2",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or underlying values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The trend can be visually read from the chart image, but no exact values or statistical summaries are provided in the text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject (share of US hourly workers paid at or below the federal minimum wage) and the timeframe (1979 to 2019).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart illustrates the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. This dataset spans a 40-year period [DERIVED: calculated 2019 minus 1979 from the title], tracking the long-term trajectory of the lowest-paid segment of the American hourly workforce. This type of labor market data is typically compiled and published by the US Bureau of Labor Statistics (BLS) [SPECULATIVE: US Bureau of Labor Statistics].\",\n    \"domain_specific_explanations\": \"In labor economics, the share of workers earning at or below the minimum wage is highly sensitive to legislative changes [SPECULATIVE: Labor Economics]. The spikes observed in the chart—such as those around 1990-1991, 1996-1997, and 2007-2010—correspond directly to periods when the federal government legislated increases to the minimum wage, which immediately expanded the pool of workers earning that rate [SPECULATIVE: US Department of Labor history]. Conversely, during long stretches without a federal rate hike, such as between 1981 and 1989, inflation and natural market wage growth pushed nominal wages upward, causing the share of workers at or below the stagnant federal minimum to decline significantly [SPECULATIVE: Labor Economics].\",\n    \"real_world_significance\": \"This trend is highly significant for public policy and economic welfare debates. The long-term decline from a peak of approximately 15% in 1980-1981 to under 2% in 2019 [DERIVED: read values from the chart image] does not necessarily indicate that low-income workers are thriving; rather, it suggests that the federal minimum wage has increasingly lost its relevance as state-level minimum wages and market-driven entry-level wages have surpassed the stagnant federal baseline [SPECULATIVE: Labor Economics]. Policymakers, labor unions, and advocacy groups use this data to argue either for raising the federal minimum wage to restore its purchasing power, or to argue that market forces are already successfully lifting wages above the federal floor [SPECULATIVE: Public Policy].\",\n    \"other\": \"The chart shows that the lowest point in the entire 40-year series occurred at the very end of the timeline in 2019, where the share of workers fell to approximately 1.9% [DERIVED: read values from the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart illustrates the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019\"\n    ],\n    \"derived_claims\": [\n      \"This dataset spans a 40-year period\",\n      \"The long-term decline from a peak of approximately 15% in 1980-1981 to under 2% in 2019\",\n      \"The chart shows that the lowest point in the entire 40-year series occurred at the very end of the timeline in 2019, where the share of workers fell to approximately 1.9%\"\n    ],\n    \"speculative_claims\": [\n      \"This type of labor market data is typically compiled and published by the US Bureau of Labor Statistics (BLS)\",\n      \"In labor economics, the share of workers earning at or below the minimum wage is highly sensitive to legislative changes\",\n      \"The spikes observed in the chart—such as those around 1990-1991, 1996-1997, and 2007-2010—correspond directly to periods when the federal government legislated increases to the minimum wage, which immediately expanded the pool of workers earning that rate\",\n      \"Conversely, during long stretches without a federal rate hike, such as between 1981 and 1989, inflation and natural market wage growth pushed nominal wages upward, causing the share of workers at or below the stagnant federal minimum to decline significantly\",\n      \"rather, it suggests that the federal minimum wage has increasingly lost its relevance as state-level minimum wages and market-driven entry-level wages have surpassed the stagnant federal baseline\",\n      \"Policymakers, labor unions, and advocacy groups use this data to argue either for raising the federal minimum wage to restore its purchasing power, or to argue that market forces are already successfully lifting wages above the federal floor\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or underlying values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The trend can be visually read from the chart image, but no exact values or statistical summaries are provided in the text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject (share of US hourly workers paid at or below the federal minimum wage) and the timeframe (1979 to 2019)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart illustrates the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. This dataset spans a 40-year period [DERIVED: calculated 2019 minus 1979 from the title], tracking the long-term trajectory of the lowest-paid segment of the American hourly workforce. This type of labor market data is typically compiled and published by the US Bureau of Labor Statistics (BLS) [SPECULATIVE: US Bureau of Labor Statistics].",
+      "domain_specific_explanations": "In labor economics, the share of workers earning at or below the minimum wage is highly sensitive to legislative changes [SPECULATIVE: Labor Economics]. The spikes observed in the chart—such as those around 1990-1991, 1996-1997, and 2007-2010—correspond directly to periods when the federal government legislated increases to the minimum wage, which immediately expanded the pool of workers earning that rate [SPECULATIVE: US Department of Labor history]. Conversely, during long stretches without a federal rate hike, such as between 1981 and 1989, inflation and natural market wage growth pushed nominal wages upward, causing the share of workers at or below the stagnant federal minimum to decline significantly [SPECULATIVE: Labor Economics].",
+      "real_world_significance": "This trend is highly significant for public policy and economic welfare debates. The long-term decline from a peak of approximately 15% in 1980-1981 to under 2% in 2019 [DERIVED: read values from the chart image] does not necessarily indicate that low-income workers are thriving; rather, it suggests that the federal minimum wage has increasingly lost its relevance as state-level minimum wages and market-driven entry-level wages have surpassed the stagnant federal baseline [SPECULATIVE: Labor Economics]. Policymakers, labor unions, and advocacy groups use this data to argue either for raising the federal minimum wage to restore its purchasing power, or to argue that market forces are already successfully lifting wages above the federal floor [SPECULATIVE: Public Policy].",
+      "other": "The chart shows that the lowest point in the entire 40-year series occurred at the very end of the timeline in 2019, where the share of workers fell to approximately 1.9% [DERIVED: read values from the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart illustrates the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019"
+      ],
+      "derived_claims": [
+        "This dataset spans a 40-year period",
+        "The long-term decline from a peak of approximately 15% in 1980-1981 to under 2% in 2019",
+        "The chart shows that the lowest point in the entire 40-year series occurred at the very end of the timeline in 2019, where the share of workers fell to approximately 1.9%"
+      ],
+      "speculative_claims": [
+        "This type of labor market data is typically compiled and published by the US Bureau of Labor Statistics (BLS)",
+        "In labor economics, the share of workers earning at or below the minimum wage is highly sensitive to legislative changes",
+        "The spikes observed in the chart—such as those around 1990-1991, 1996-1997, and 2007-2010—correspond directly to periods when the federal government legislated increases to the minimum wage, which immediately expanded the pool of workers earning that rate",
+        "Conversely, during long stretches without a federal rate hike, such as between 1981 and 1989, inflation and natural market wage growth pushed nominal wages upward, causing the share of workers at or below the stagnant federal minimum to decline significantly",
+        "rather, it suggests that the federal minimum wage has increasingly lost its relevance as state-level minimum wages and market-driven entry-level wages have surpassed the stagnant federal baseline",
+        "Policymakers, labor unions, and advocacy groups use this data to argue either for raising the federal minimum wage to restore its purchasing power, or to argue that market forces are already successfully lifting wages above the federal floor"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12914.827917004004,
+  "created_at": "2026-07-07T22:20:07.972297Z"
+}

@@ -1,0 +1,68 @@
+{
+  "output_id": "5783b516-8c58-4ef8-a68d-51019912063b",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data values are present but incomplete as specific life expectancy values for each country are not provided.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The trend magnitude is partially sufficient as the color gradient indicates life expectancy ranges.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain is mostly sufficient as it clearly relates to life expectancy.\"},\n      \"domain_expert_context\": {\"score\": 2, \"justification\": \"Domain expert context is present but incomplete as it lacks detailed explanations of life expectancy calculation and implications.\"},\n      \"stakeholder_impact\": {\"score\": 3, \"justification\": \"Stakeholder impact is partially sufficient as it implies importance for policy and health planning.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart represents global life expectancy in 2023. It is produced by Our World in Data. The data is sourced from Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024). [DERIVED: Inferred from the chart title and data source].\",\n    \"domain_specific_explanations\": \"Life expectancy is the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year. The chart uses a color gradient to indicate life expectancy ranges from below 50 years to above 80 years. [DIRECT].\",\n    \"real_world_significance\": \"This data matters for health policy planning, resource allocation, and understanding demographic trends. Countries with lower life expectancy may need to address healthcare and living conditions. [SPECULATIVE: General knowledge of public health and policy].\",\n    \"other\": \"The chart does not provide specific life expectancy values for each country, only ranges. [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"Life expectancy is the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year.\",\n      \"The chart uses a color gradient to indicate life expectancy ranges from below 50 years to above 80 years.\"\n    ],\n    \"derived_claims\": [\n      \"This chart represents global life expectancy in 2023.\",\n      \"The data is sourced from Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024).\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for health policy planning, resource allocation, and understanding demographic trends.\",\n      \"Countries with lower life expectancy may need to address healthcare and living conditions.\"\n    ],\n    \"total_flag_count\": 6,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data values are present but incomplete as specific life expectancy values for each country are not provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The trend magnitude is partially sufficient as the color gradient indicates life expectancy ranges."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain is mostly sufficient as it clearly relates to life expectancy."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "Domain expert context is present but incomplete as it lacks detailed explanations of life expectancy calculation and implications."
+        },
+        "stakeholder_impact": {
+          "score": 3,
+          "justification": "Stakeholder impact is partially sufficient as it implies importance for policy and health planning."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart represents global life expectancy in 2023. It is produced by Our World in Data. The data is sourced from Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024). [DERIVED: Inferred from the chart title and data source].",
+      "domain_specific_explanations": "Life expectancy is the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year. The chart uses a color gradient to indicate life expectancy ranges from below 50 years to above 80 years. [DIRECT].",
+      "real_world_significance": "This data matters for health policy planning, resource allocation, and understanding demographic trends. Countries with lower life expectancy may need to address healthcare and living conditions. [SPECULATIVE: General knowledge of public health and policy].",
+      "other": "The chart does not provide specific life expectancy values for each country, only ranges. [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "Life expectancy is the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year.",
+        "The chart uses a color gradient to indicate life expectancy ranges from below 50 years to above 80 years."
+      ],
+      "derived_claims": [
+        "This chart represents global life expectancy in 2023.",
+        "The data is sourced from Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)."
+      ],
+      "speculative_claims": [
+        "This data matters for health policy planning, resource allocation, and understanding demographic trends.",
+        "Countries with lower life expectancy may need to address healthcare and living conditions."
+      ],
+      "total_flag_count": 6,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 1965,
+    "output": 654
+  },
+  "latency_ms": 3051.3227920164354,
+  "created_at": "2026-07-08T00:16:15.546042Z"
+}

@@ -1,0 +1,72 @@
+{
+  "output_id": "4d3904e8-dce9-42d8-bee0-c780135e6df7",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values are not provided in the metadata, but they can be estimated from the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The overall upward trend is clearly visible in the image, though exact numerical changes must be estimated.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly define the subject (life expectancy in Madagascar) and the time period (2008 to 2018).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story or context was provided in the metadata.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data is presented as an area chart showing a steady, continuous upward trend over this 10-year period [DERIVED: read from the chart image]. This type of demographic data is typically compiled by international organizations like the World Bank, WHO, or the United Nations to track global health and development progress [SPECULATIVE: global health demographics].\",\n    \"domain_specific_explanations\": \"Life expectancy at birth represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life [SPECULATIVE: public health definition]. In 2008, the life expectancy in Madagascar was approximately 62.5 years, and by 2018, it had risen to approximately 67 years [DERIVED: estimated from the chart's Y-axis and trend line]. An increase of about 4.5 years over a decade indicates gradual improvements in public health, infant mortality reduction, or overall living standards [DERIVED: calculated difference between 2018 and 2008 estimates].\",\n    \"real_world_significance\": \"Madagascar is a developing nation in Sub-Saharan Africa that has faced economic challenges and political instability [SPECULATIVE: African history/geopolitics]. Despite these challenges, a steady rise in life expectancy suggests that basic healthcare access, immunization programs, or sanitation may have improved during this period [SPECULATIVE: public health development]. Policymakers and international aid organizations use this metric to evaluate the effectiveness of health interventions and to allocate resources for healthcare infrastructure [SPECULATIVE: development economics]. If this trend continues, Madagascar will need to plan for an aging population and the associated shift in healthcare needs from infectious diseases to chronic, age-related conditions [SPECULATIVE: demographic transition theory].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows the life expectancy at birth in Madagascar from 2008 to 2018\"\n    ],\n    \"derived_claims\": [\n      \"The data is presented as an area chart showing a steady, continuous upward trend over this 10-year period\",\n      \"In 2008, the life expectancy in Madagascar was approximately 62.5 years, and by 2018, it had risen to approximately 67 years\",\n      \"An increase of about 4.5 years over a decade indicates gradual improvements in public health, infant mortality reduction, or overall living standards\"\n    ],\n    \"speculative_claims\": [\n      \"This type of demographic data is typically compiled by international organizations like the World Bank, WHO, or the United Nations to track global health and development progress\",\n      \"Life expectancy at birth represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life\",\n      \"Madagascar is a developing nation in Sub-Saharan Africa that has faced economic challenges and political instability\",\n      \"Despite these challenges, a steady rise in life expectancy suggests that basic healthcare access, immunization programs, or sanitation may have improved during this period\",\n      \"Policymakers and international aid organizations use this metric to evaluate the effectiveness of health interventions and to allocate resources for healthcare infrastructure\",\n      \"If this trend continues, Madagascar will need to plan for an aging population and the associated shift in healthcare needs from infectious diseases to chronic, age-related conditions\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values are not provided in the metadata, but they can be estimated from the chart image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The overall upward trend is clearly visible in the image, though exact numerical changes must be estimated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly define the subject (life expectancy in Madagascar) and the time period (2008 to 2018)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or context was provided in the metadata."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data is presented as an area chart showing a steady, continuous upward trend over this 10-year period [DERIVED: read from the chart image]. This type of demographic data is typically compiled by international organizations like the World Bank, WHO, or the United Nations to track global health and development progress [SPECULATIVE: global health demographics].",
+      "domain_specific_explanations": "Life expectancy at birth represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life [SPECULATIVE: public health definition]. In 2008, the life expectancy in Madagascar was approximately 62.5 years, and by 2018, it had risen to approximately 67 years [DERIVED: estimated from the chart's Y-axis and trend line]. An increase of about 4.5 years over a decade indicates gradual improvements in public health, infant mortality reduction, or overall living standards [DERIVED: calculated difference between 2018 and 2008 estimates].",
+      "real_world_significance": "Madagascar is a developing nation in Sub-Saharan Africa that has faced economic challenges and political instability [SPECULATIVE: African history/geopolitics]. Despite these challenges, a steady rise in life expectancy suggests that basic healthcare access, immunization programs, or sanitation may have improved during this period [SPECULATIVE: public health development]. Policymakers and international aid organizations use this metric to evaluate the effectiveness of health interventions and to allocate resources for healthcare infrastructure [SPECULATIVE: development economics]. If this trend continues, Madagascar will need to plan for an aging population and the associated shift in healthcare needs from infectious diseases to chronic, age-related conditions [SPECULATIVE: demographic transition theory].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows the life expectancy at birth in Madagascar from 2008 to 2018"
+      ],
+      "derived_claims": [
+        "The data is presented as an area chart showing a steady, continuous upward trend over this 10-year period",
+        "In 2008, the life expectancy in Madagascar was approximately 62.5 years, and by 2018, it had risen to approximately 67 years",
+        "An increase of about 4.5 years over a decade indicates gradual improvements in public health, infant mortality reduction, or overall living standards"
+      ],
+      "speculative_claims": [
+        "This type of demographic data is typically compiled by international organizations like the World Bank, WHO, or the United Nations to track global health and development progress",
+        "Life expectancy at birth represents the average number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life",
+        "Madagascar is a developing nation in Sub-Saharan Africa that has faced economic challenges and political instability",
+        "Despite these challenges, a steady rise in life expectancy suggests that basic healthcare access, immunization programs, or sanitation may have improved during this period",
+        "Policymakers and international aid organizations use this metric to evaluate the effectiveness of health interventions and to allocate resources for healthcare infrastructure",
+        "If this trend continues, Madagascar will need to plan for an aging population and the associated shift in healthcare needs from infectious diseases to chronic, age-related conditions"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11115.938249975443,
+  "created_at": "2026-07-07T22:41:38.096301Z"
+}

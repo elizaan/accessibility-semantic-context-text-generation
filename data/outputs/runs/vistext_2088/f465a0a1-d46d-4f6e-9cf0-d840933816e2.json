@@ -1,0 +1,75 @@
+{
+  "output_id": "f465a0a1-d46d-4f6e-9cf0-d840933816e2",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 4, \"justification\": \"The data values are provided in the table, but some years are missing.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The trend is increasing, but the magnitude is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 5, \"justification\": \"The chart subject domain is clearly stated as 'Life expectancy at birth in Madagascar'\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No domain expert context is provided\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder impact is provided\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data is presented in a line graph format, with the x-axis representing the years and the y-axis representing the life expectancy in years [DIRECT].\",\n    \"domain_specific_explanations\": \"Life expectancy at birth is a measure of the average number of years a newborn is expected to live [SPECULATIVE: demography]. The chart shows an increasing trend in life expectancy over the years, indicating improvements in healthcare and living standards [DERIVED: from the data table].\",\n    \"real_world_significance\": \"The increasing life expectancy in Madagascar suggests improvements in healthcare and living standards, which can have significant implications for the country's development and economic growth [SPECULATIVE: economics]. The data can be used by policymakers and healthcare professionals to inform decisions about resource allocation and healthcare policy [SPECULATIVE: public health].\",\n    \"other\": \"The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy [DERIVED: from the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the life expectancy at birth in Madagascar from 2008 to 2018\",\n      \"The data is presented in a line graph format, with the x-axis representing the years and the y-axis representing the life expectancy in years\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows an increasing trend in life expectancy over the years, indicating improvements in healthcare and living standards\",\n      \"The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy\"\n    ],\n    \"speculative_claims\": [\n      \"Life expectancy at birth is a measure of the average number of years a newborn is expected to live\",\n      \"The increasing life expectancy in Madagascar suggests improvements in healthcare and living standards, which can have significant implications for the country's development and economic growth\",\n      \"The data can be used by policymakers and healthcare professionals to inform decisions about resource allocation and healthcare policy\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data values are provided in the table, but some years are missing."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The trend is increasing, but the magnitude is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart subject domain is clearly stated as 'Life expectancy at birth in Madagascar'"
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No domain expert context is provided"
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder impact is provided"
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the life expectancy at birth in Madagascar from 2008 to 2018 [DIRECT]. The data is presented in a line graph format, with the x-axis representing the years and the y-axis representing the life expectancy in years [DIRECT].",
+      "domain_specific_explanations": "Life expectancy at birth is a measure of the average number of years a newborn is expected to live [SPECULATIVE: demography]. The chart shows an increasing trend in life expectancy over the years, indicating improvements in healthcare and living standards [DERIVED: from the data table].",
+      "real_world_significance": "The increasing life expectancy in Madagascar suggests improvements in healthcare and living standards, which can have significant implications for the country's development and economic growth [SPECULATIVE: economics]. The data can be used by policymakers and healthcare professionals to inform decisions about resource allocation and healthcare policy [SPECULATIVE: public health].",
+      "other": "The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy [DERIVED: from the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the life expectancy at birth in Madagascar from 2008 to 2018",
+        "The data is presented in a line graph format, with the x-axis representing the years and the y-axis representing the life expectancy in years"
+      ],
+      "derived_claims": [
+        "The chart shows an increasing trend in life expectancy over the years, indicating improvements in healthcare and living standards",
+        "The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy"
+      ],
+      "speculative_claims": [
+        "Life expectancy at birth is a measure of the average number of years a newborn is expected to live",
+        "The increasing life expectancy in Madagascar suggests improvements in healthcare and living standards, which can have significant implications for the country's development and economic growth",
+        "The data can be used by policymakers and healthcare professionals to inform decisions about resource allocation and healthcare policy"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 4617,
+    "output": 664
+  },
+  "latency_ms": 2238.4261660045013,
+  "created_at": "2026-07-08T00:12:48.925760Z"
+}

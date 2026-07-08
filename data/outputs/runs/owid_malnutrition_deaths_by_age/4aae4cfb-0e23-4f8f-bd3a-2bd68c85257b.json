@@ -1,0 +1,78 @@
+{
+  "output_id": "4aae4cfb-0e23-4f8f-bd3a-2bd68c85257b",
+  "chart_id": "owid_malnutrition_deaths_by_age",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values are not provided in a table, but the chart image contains clear axis labels and trends that allow for close approximation.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall trend and major spikes are clearly visible on the chart, allowing for a reliable reading of the magnitudes over time.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, subtitle, and source clearly define the subject domain of global malnutrition deaths.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides essential context regarding the definition of protein-energy malnutrition and the uncertainty of the estimates.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was explicitly provided in the metadata.\"\n      },\n      \"overall\": 2.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, categorized by age groups [DIRECT]. The data is compiled by the Institute for Health Metrics and Evaluation (IHME) for the Global Burden of Disease (2025) and published by Our World in Data [DIRECT]. Protein-energy malnutrition is defined as resulting from insufficient caloric and protein intake [DIRECT]. The authors note that these estimates carry wide uncertainties, particularly in countries with poor vital registration systems [DIRECT].\",\n    \"domain_specific_explanations\": \"Protein-energy malnutrition (PEM) is a severe form of systemic malnutrition that is particularly lethal to young children whose bodies are still developing [SPECULATIVE: World Health Organization]. The data shows that the 'Under-5s' age group has historically suffered the highest number of deaths from PEM compared to all other age groups combined [DERIVED: Reading the stacked area chart where the Under-5s segment is the largest]. The massive spike in deaths in the mid-1980s (peaking around 1983-1984 at nearly 780,000 deaths) likely corresponds to major historical humanitarian crises, such as the 1983–1985 famine in Ethiopia [SPECULATIVE: Historical Famine Records]. Similarly, the smaller spike around 2010-2011 likely reflects the severe food crisis and famine in East Africa, particularly in Somalia [SPECULATIVE: Historical Famine Records]. Over time, the proportion of deaths in older age groups (especially 70+ years old) has grown relative to younger groups, which may reflect global demographic shifts toward an aging population or improvements in child survival rates [SPECULATIVE: Global Demographics].\",\n    \"real_world_significance\": \"The overall downward trend from over 500,000 deaths in 1980 to around 250,000 in 2023 indicates significant global progress in food security, humanitarian aid, and pediatric healthcare [DERIVED: Comparing 1980 and 2023 values on the chart]. However, the persistence of hundreds of thousands of preventable deaths annually, primarily among children under five, highlights ongoing challenges in global food distribution, poverty, and healthcare access [SPECULATIVE: Global Development Studies]. Policymakers and international aid organizations use this data to target nutritional interventions, especially in regions prone to food insecurity and political instability [SPECULATIVE: Humanitarian Aid Policy].\",\n    \"other\": \"The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, categorized by age groups\",\n      \"The data is compiled by the Institute for Health Metrics and Evaluation (IHME) for the Global Burden of Disease (2025) and published by Our World in Data\",\n      \"Protein-energy malnutrition is defined as resulting from insufficient caloric and protein intake\",\n      \"The authors note that these estimates carry wide uncertainties, particularly in countries with poor vital registration systems\",\n      \"The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification\"\n    ],\n    \"derived_claims\": [\n      \"The data shows that the 'Under-5s' age group has historically suffered the highest number of deaths from PEM compared to all other age groups combined [DERIVED: Reading the stacked area chart where the Under-5s segment is the largest]\",\n      \"The overall downward trend from over 500,000 deaths in 1980 to around 250,000 in 2023 indicates significant global progress in food security, humanitarian aid, and pediatric healthcare [DERIVED: Comparing 1980 and 2023 values on the chart]\"\n    ],\n    \"speculative_claims\": [\n      \"Protein-energy malnutrition (PEM) is a severe form of systemic malnutrition that is particularly lethal to young children whose bodies are still developing [SPECULATIVE: World Health Organization]\",\n      \"The massive spike in deaths in the mid-1980s (peaking around 1983-1984 at nearly 780,000 deaths) likely corresponds to major historical humanitarian crises, such as the 1983–1985 famine in Ethiopia [SPECULATIVE: Historical Famine Records]\",\n      \"Similarly, the smaller spike around 2010-2011 likely reflects the severe food crisis and famine in East Africa, particularly in Somalia [SPECULATIVE: Historical Famine Records]\",\n      \"Over time, the proportion of deaths in older age groups (especially 70+ years old) has grown relative to younger groups, which may reflect global demographic shifts toward an aging population or improvements in child survival rates [SPECULATIVE: Global Demographics]\",\n      \"However, the persistence of hundreds of thousands of preventable deaths annually, primarily among children under five, highlights ongoing challenges in global food distribution, poverty, and healthcare access [SPECULATIVE: Global Development Studies]\",\n      \"Policymakers and international aid organizations use this data to target nutritional interventions, especially in regions prone to food insecurity and political instability [SPECULATIVE: Humanitarian Aid Policy]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 5,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values are not provided in a table, but the chart image contains clear axis labels and trends that allow for close approximation."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall trend and major spikes are clearly visible on the chart, allowing for a reliable reading of the magnitudes over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, subtitle, and source clearly define the subject domain of global malnutrition deaths."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides essential context regarding the definition of protein-energy malnutrition and the uncertainty of the estimates."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was explicitly provided in the metadata."
+        },
+        "overall": 2.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, categorized by age groups [DIRECT]. The data is compiled by the Institute for Health Metrics and Evaluation (IHME) for the Global Burden of Disease (2025) and published by Our World in Data [DIRECT]. Protein-energy malnutrition is defined as resulting from insufficient caloric and protein intake [DIRECT]. The authors note that these estimates carry wide uncertainties, particularly in countries with poor vital registration systems [DIRECT].",
+      "domain_specific_explanations": "Protein-energy malnutrition (PEM) is a severe form of systemic malnutrition that is particularly lethal to young children whose bodies are still developing [SPECULATIVE: World Health Organization]. The data shows that the 'Under-5s' age group has historically suffered the highest number of deaths from PEM compared to all other age groups combined [DERIVED: Reading the stacked area chart where the Under-5s segment is the largest]. The massive spike in deaths in the mid-1980s (peaking around 1983-1984 at nearly 780,000 deaths) likely corresponds to major historical humanitarian crises, such as the 1983–1985 famine in Ethiopia [SPECULATIVE: Historical Famine Records]. Similarly, the smaller spike around 2010-2011 likely reflects the severe food crisis and famine in East Africa, particularly in Somalia [SPECULATIVE: Historical Famine Records]. Over time, the proportion of deaths in older age groups (especially 70+ years old) has grown relative to younger groups, which may reflect global demographic shifts toward an aging population or improvements in child survival rates [SPECULATIVE: Global Demographics].",
+      "real_world_significance": "The overall downward trend from over 500,000 deaths in 1980 to around 250,000 in 2023 indicates significant global progress in food security, humanitarian aid, and pediatric healthcare [DERIVED: Comparing 1980 and 2023 values on the chart]. However, the persistence of hundreds of thousands of preventable deaths annually, primarily among children under five, highlights ongoing challenges in global food distribution, poverty, and healthcare access [SPECULATIVE: Global Development Studies]. Policymakers and international aid organizations use this data to target nutritional interventions, especially in regions prone to food insecurity and political instability [SPECULATIVE: Humanitarian Aid Policy].",
+      "other": "The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the estimated annual number of deaths from protein-energy malnutrition globally from 1980 to 2023, categorized by age groups",
+        "The data is compiled by the Institute for Health Metrics and Evaluation (IHME) for the Global Burden of Disease (2025) and published by Our World in Data",
+        "Protein-energy malnutrition is defined as resulting from insufficient caloric and protein intake",
+        "The authors note that these estimates carry wide uncertainties, particularly in countries with poor vital registration systems",
+        "The note on the chart cautions that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification"
+      ],
+      "derived_claims": [
+        "The data shows that the 'Under-5s' age group has historically suffered the highest number of deaths from PEM compared to all other age groups combined [DERIVED: Reading the stacked area chart where the Under-5s segment is the largest]",
+        "The overall downward trend from over 500,000 deaths in 1980 to around 250,000 in 2023 indicates significant global progress in food security, humanitarian aid, and pediatric healthcare [DERIVED: Comparing 1980 and 2023 values on the chart]"
+      ],
+      "speculative_claims": [
+        "Protein-energy malnutrition (PEM) is a severe form of systemic malnutrition that is particularly lethal to young children whose bodies are still developing [SPECULATIVE: World Health Organization]",
+        "The massive spike in deaths in the mid-1980s (peaking around 1983-1984 at nearly 780,000 deaths) likely corresponds to major historical humanitarian crises, such as the 1983–1985 famine in Ethiopia [SPECULATIVE: Historical Famine Records]",
+        "Similarly, the smaller spike around 2010-2011 likely reflects the severe food crisis and famine in East Africa, particularly in Somalia [SPECULATIVE: Historical Famine Records]",
+        "Over time, the proportion of deaths in older age groups (especially 70+ years old) has grown relative to younger groups, which may reflect global demographic shifts toward an aging population or improvements in child survival rates [SPECULATIVE: Global Demographics]",
+        "However, the persistence of hundreds of thousands of preventable deaths annually, primarily among children under five, highlights ongoing challenges in global food distribution, poverty, and healthcare access [SPECULATIVE: Global Development Studies]",
+        "Policymakers and international aid organizations use this data to target nutritional interventions, especially in regions prone to food insecurity and political instability [SPECULATIVE: Humanitarian Aid Policy]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 5,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11923.038500011899,
+  "created_at": "2026-07-07T22:10:12.666229Z"
+}

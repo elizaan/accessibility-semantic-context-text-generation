@@ -1,0 +1,78 @@
+{
+  "output_id": "2a7cd1b3-5fbd-407b-981d-d402fc9d9021",
+  "chart_id": "hci_8bba1845a85370618cd5c400ec8be42208554549_Image_004",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data table is provided, but the scatter plot points are visible in the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The positive correlation is explicitly stated and a trend line is visible, but exact statistical values (like R-squared or Pearson's r) are not provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (crowdsourced transcription quality) is clearly defined in the expert domain story and alt text.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 5,\n        \"justification\": \"The expert domain story provides the exact paper context (ASSETS 2018), figure caption, and the core takeaway.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 2,\n        \"justification\": \"While not explicitly provided in a dedicated field, the impact on system designers and quality control is easily inferred from the expert story.\"\n      },\n      \"overall\": 2.8\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a research paper published at the ASSETS 2018 conference [DIRECT]. It investigates the relationship between the quality of a single randomly sampled transcription from a crowd worker and the quality of their remaining transcriptions [DIRECT]. The chart is a scatter plot showing a positive correlation between these two metrics [DIRECT]. The X-axis represents 'Sample Accuracy' and the Y-axis represents 'Outer accuracy' [DERIVED: read from the chart image axes].\",\n    \"domain_specific_explanations\": \"In crowdsourced transcription tasks, evaluating every single submission is costly and time-consuming [SPECULATIVE: Crowdsourcing / Human-Computer Interaction]. The positive correlation shown here indicates that a worker's performance on a single randomly selected audio clip (the 'sample') is a reliable predictor of their overall performance on other clips (the 'outer' set) [DERIVED: interpreted from the positive trend line and expert story]. The axes show normalized accuracy scores, where a positive correlation line indicates that higher accuracy on the sample clip corresponds to higher average accuracy on the remaining clips [DERIVED: read from the trend line on the scatter plot].\",\n    \"real_world_significance\": \"This finding has practical implications for quality control in crowdsourcing platforms [DIRECT]. Specifically, system designers can filter or screen crowd workers based on their performance on just one clip, rather than auditing their entire output [DIRECT]. This approach can significantly reduce the cost and time required to ensure high-quality transcriptions, making crowdsourced transcription more viable and efficient for accessibility applications, such as generating captions for deaf or hard-of-hearing users [SPECULATIVE: Accessibility / ASSETS conference domain].\",\n    \"other\": \"The scatter plot contains approximately 100 data points, representing individual crowd workers [DERIVED: visual estimation of the number of points in the scatter plot]. The trend line has a positive slope, visually confirming the positive correlation described in the text [DERIVED: visual observation of the trend line].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a research paper published at the ASSETS 2018 conference\",\n      \"It investigates the relationship between the quality of a single randomly sampled transcription from a crowd worker and the quality of their remaining transcriptions\",\n      \"The chart is a scatter plot showing a positive correlation between these two metrics\",\n      \"This finding has practical implications for quality control in crowdsourcing platforms\",\n      \"Specifically, system designers can filter or screen crowd workers based on their performance on just one clip, rather than auditing their entire output\"\n    ],\n    \"derived_claims\": [\n      \"The X-axis represents 'Sample Accuracy' and the Y-axis represents 'Outer accuracy' [derived from reading the chart image axes]\",\n      \"The positive correlation shown here indicates that a worker's performance on a single randomly selected audio clip (the 'sample') is a reliable predictor of their overall performance on other clips (the 'outer' set) [derived from interpreting the positive trend line and expert story]\",\n      \"The axes show normalized accuracy scores, where a positive correlation line indicates that higher accuracy on the sample clip corresponds to higher average accuracy on the remaining clips [derived from reading the trend line on the scatter plot]\",\n      \"The scatter plot contains approximately 100 data points, representing individual crowd workers [derived from visual estimation of the number of points in the scatter plot]\",\n      \"The trend line has a positive slope, visually confirming the positive correlation described in the text [derived from visual observation of the trend line]\"\n    ],\n    \"speculative_claims\": [\n      \"In crowdsourced transcription tasks, evaluating every single submission is costly and time-consuming [source: Crowdsourcing / Human-Computer Interaction]\",\n      \"This approach can significantly reduce the cost and time required to ensure high-quality transcriptions, making crowdsourced transcription more viable and efficient for accessibility applications, such as generating captions for deaf or hard-of-hearing users [source: Accessibility / ASSETS conference domain]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 5,\n    \"derived_count\": 5,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data table is provided, but the scatter plot points are visible in the image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The positive correlation is explicitly stated and a trend line is visible, but exact statistical values (like R-squared or Pearson's r) are not provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (crowdsourced transcription quality) is clearly defined in the expert domain story and alt text."
+        },
+        "domain_expert_context": {
+          "score": 5,
+          "justification": "The expert domain story provides the exact paper context (ASSETS 2018), figure caption, and the core takeaway."
+        },
+        "stakeholder_impact": {
+          "score": 2,
+          "justification": "While not explicitly provided in a dedicated field, the impact on system designers and quality control is easily inferred from the expert story."
+        },
+        "overall": 2.8
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a research paper published at the ASSETS 2018 conference [DIRECT]. It investigates the relationship between the quality of a single randomly sampled transcription from a crowd worker and the quality of their remaining transcriptions [DIRECT]. The chart is a scatter plot showing a positive correlation between these two metrics [DIRECT]. The X-axis represents 'Sample Accuracy' and the Y-axis represents 'Outer accuracy' [DERIVED: read from the chart image axes].",
+      "domain_specific_explanations": "In crowdsourced transcription tasks, evaluating every single submission is costly and time-consuming [SPECULATIVE: Crowdsourcing / Human-Computer Interaction]. The positive correlation shown here indicates that a worker's performance on a single randomly selected audio clip (the 'sample') is a reliable predictor of their overall performance on other clips (the 'outer' set) [DERIVED: interpreted from the positive trend line and expert story]. The axes show normalized accuracy scores, where a positive correlation line indicates that higher accuracy on the sample clip corresponds to higher average accuracy on the remaining clips [DERIVED: read from the trend line on the scatter plot].",
+      "real_world_significance": "This finding has practical implications for quality control in crowdsourcing platforms [DIRECT]. Specifically, system designers can filter or screen crowd workers based on their performance on just one clip, rather than auditing their entire output [DIRECT]. This approach can significantly reduce the cost and time required to ensure high-quality transcriptions, making crowdsourced transcription more viable and efficient for accessibility applications, such as generating captions for deaf or hard-of-hearing users [SPECULATIVE: Accessibility / ASSETS conference domain].",
+      "other": "The scatter plot contains approximately 100 data points, representing individual crowd workers [DERIVED: visual estimation of the number of points in the scatter plot]. The trend line has a positive slope, visually confirming the positive correlation described in the text [DERIVED: visual observation of the trend line]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a research paper published at the ASSETS 2018 conference",
+        "It investigates the relationship between the quality of a single randomly sampled transcription from a crowd worker and the quality of their remaining transcriptions",
+        "The chart is a scatter plot showing a positive correlation between these two metrics",
+        "This finding has practical implications for quality control in crowdsourcing platforms",
+        "Specifically, system designers can filter or screen crowd workers based on their performance on just one clip, rather than auditing their entire output"
+      ],
+      "derived_claims": [
+        "The X-axis represents 'Sample Accuracy' and the Y-axis represents 'Outer accuracy' [derived from reading the chart image axes]",
+        "The positive correlation shown here indicates that a worker's performance on a single randomly selected audio clip (the 'sample') is a reliable predictor of their overall performance on other clips (the 'outer' set) [derived from interpreting the positive trend line and expert story]",
+        "The axes show normalized accuracy scores, where a positive correlation line indicates that higher accuracy on the sample clip corresponds to higher average accuracy on the remaining clips [derived from reading the trend line on the scatter plot]",
+        "The scatter plot contains approximately 100 data points, representing individual crowd workers [derived from visual estimation of the number of points in the scatter plot]",
+        "The trend line has a positive slope, visually confirming the positive correlation described in the text [derived from visual observation of the trend line]"
+      ],
+      "speculative_claims": [
+        "In crowdsourced transcription tasks, evaluating every single submission is costly and time-consuming [source: Crowdsourcing / Human-Computer Interaction]",
+        "This approach can significantly reduce the cost and time required to ensure high-quality transcriptions, making crowdsourced transcription more viable and efficient for accessibility applications, such as generating captions for deaf or hard-of-hearing users [source: Accessibility / ASSETS conference domain]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 5,
+      "derived_count": 5,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11280.112415959593,
+  "created_at": "2026-07-07T23:33:26.263638Z"
+}

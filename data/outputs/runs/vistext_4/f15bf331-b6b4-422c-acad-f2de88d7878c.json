@@ -1,0 +1,91 @@
+{
+  "output_id": "f15bf331-b6b4-422c-acad-f2de88d7878c",
+  "chart_id": "vistext_4",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "vega_lite_spec",
+    "data_table",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The DATA TABLE provides exact numerical values for all responses, which is fully sufficient.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The L3 CAPTION is not provided. The L2 CAPTION offers some interpretation of the main issue and a surprising high value, but a dedicated L3 for trends and patterns is missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The CHART TITLE clearly defines the subject as 'social and economic issues' and the L2 CAPTION further contextualizes it with 'Maslow's hierarchy of needs', fully establishing the domain.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"The EXPERT DOMAIN STORY is explicitly marked as '[NOT PROVIDED]'.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"The STAKEHOLDER CONTEXT is explicitly marked as '[NOT PROVIDED]'.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart presents the results of a survey asking respondents about their most pressing social and economic concerns [DIRECT]. The data shows the proportion of respondents who identified each issue as their primary concern [DIRECT]. The survey covers a range of topics from employment and environment to taxation and public services [DERIVED: read x-axis labels]. The chart title indicates the purpose is to understand public sentiment regarding social and economic challenges [DIRECT].\",\n    \"domain_specific_explanations\": \"\\\"Share of respondents\\\" refers to the percentage of people surveyed who selected a particular issue; for example, 0.63 means 63% of respondents [DERIVED: definition of share/proportion]. The issues listed, such as \\\"Finding a job,\\\" \\\"Environment,\\\" \\\"Taxes,\\\" and \\\"Pensions,\\\" are common categories in socio-economic surveys designed to gauge public opinion on governmental priorities and societal well-being [SPECULATIVE: survey design knowledge]. The L2 caption mentions \\\"Maslow's hierarchy of needs,\\\" suggesting that \\\"Finding a job\\\" is a fundamental concern related to basic physiological and safety needs [DIRECT]. The L2 caption also notes that \\\"once you have a job and have income you worry about other things like the taxation you pay,\\\" indicating a progression of concerns [DIRECT].\",\n    \"real_world_significance\": \"The highest concern is \\\"Finding a job,\\\" selected by 63% of respondents [DIRECT]. This suggests a significant focus on employment stability and economic opportunity among the population surveyed [DERIVED: interpreting the highest value]. This could indicate economic uncertainty or a competitive job market [SPECULATIVE: economic interpretation]. The second highest concern is \\\"Environment,\\\" selected by 37% of respondents [DIRECT]. This indicates that environmental issues are a significant public priority, even alongside immediate economic concerns [DERIVED: comparing \\\"Environment\\\" value to others]. This could influence policy-making towards sustainability and climate action [SPECULATIVE: policy implications]. Other significant concerns include \\\"Sanitary system\\\" (25%), \\\"School system\\\" (24%), \\\"Security\\\" (24%), \\\"Taxes\\\" (23%), and \\\"Recession and financial crisis\\\" (23%) [DERIVED: grouping similar high values]. These highlight public interest in the quality and reliability of essential public services, safety, and economic stability [DERIVED: interpreting grouped values]. These areas are often key performance indicators for government effectiveness [SPECULATIVE: public administration knowledge]. Issues like \\\"Social housing\\\" (1%) and \\\"None of these\\\" (1%) are among the least frequently cited as the most concerning [DIRECT]. This suggests these are either not widely perceived as the *most* pressing issues or are less relevant to the majority of respondents compared to other options [DERIVED: interpreting low values]. Policymakers and government officials could use this data to prioritize legislative agendas, allocate resources, and address public grievances [SPECULATIVE: government function]. For instance, a government might focus on job creation programs or environmental protection initiatives based on these findings [SPECULATIVE: policy response].\",\n    \"other\": \"The raw data table contains some ambiguous labels like \\\"system,\\\" \\\"crisis,\\\" \\\"debt,\\\" and \\\"housing\\\" which are clarified by the more descriptive labels in the chart image and scene graph [DERIVED: comparing data table to scene graph/image]. The L2 caption expresses surprise that \\\"the environment is very high up,\\\" suggesting a potential deviation from expected public priorities by the caption author [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart presents the results of a survey asking respondents about their most pressing social and economic concerns\",\n      \"The data shows the proportion of respondents who identified each issue as their primary concern\",\n      \"The chart title indicates the purpose is to understand public sentiment regarding social and economic challenges\",\n      \"The L2 caption mentions \\\"Maslow's hierarchy of needs,\\\" suggesting that \\\"Finding a job\\\" is a fundamental concern related to basic physiological and safety needs\",\n      \"The L2 caption also notes that \\\"once you have a job and have income you worry about other things like the taxation you pay,\\\" indicating a progression of concerns\",\n      \"The highest concern is \\\"Finding a job,\\\" selected by 63% of respondents\",\n      \"The second highest concern is \\\"Environment,\\\" selected by 37% of respondents\",\n      \"Issues like \\\"Social housing\\\" (1%) and \\\"None of these\\\" (1%) are among the least frequently cited as the most concerning\",\n      \"The L2 caption expresses surprise that \\\"the environment is very high up,\\\" suggesting a potential deviation from expected public priorities by the caption author\"\n    ],\n    \"derived_claims\": [\n      \"The survey covers a range of topics from employment and environment to taxation and public services [read x-axis labels]\",\n      \"\\\"Share of respondents\\\" refers to the percentage of people surveyed who selected a particular issue; for example, 0.63 means 63% of respondents [definition of share/proportion]\",\n      \"This suggests a significant focus on employment stability and economic opportunity among the population surveyed [interpreting the highest value]\",\n      \"This indicates that environmental issues are a significant public priority, even alongside immediate economic concerns [comparing \\\"Environment\\\" value to others]\",\n      \"Other significant concerns include \\\"Sanitary system\\\" (25%), \\\"School system\\\" (24%), \\\"Security\\\" (24%), \\\"Taxes\\\" (23%), and \\\"Recession and financial crisis\\\" (23%) [grouping similar high values]\",\n      \"These highlight public interest in the quality and reliability of essential public services, safety, and economic stability [interpreting grouped values]\",\n      \"This suggests these are either not widely perceived as the *most* pressing issues or are less relevant to the majority of respondents compared to other options [interpreting low values]\",\n      \"The raw data table contains some ambiguous labels like \\\"system,\\\" \\\"crisis,\\\" \\\"debt,\\\" and \\\"housing\\\" which are clarified by the more descriptive labels in the chart image and scene graph [comparing data table to scene graph/image]\"\n    ],\n    \"speculative_claims\": [\n      \"The issues listed, such as \\\"Finding a job,\\\" \\\"Environment,\\\" \\\"Taxes,\\\" and \\\"Pensions,\\\" are common categories in socio-economic surveys designed to gauge public opinion on governmental priorities and societal well-being [survey design knowledge]\",\n      \"This could indicate economic uncertainty or a competitive job market [economic interpretation]\",\n      \"This could influence policy-making towards sustainability and climate action [policy implications]\",\n      \"These areas are often key performance indicators for government effectiveness [public administration knowledge]\",\n      \"Policymakers and government officials could use this data to prioritize legislative agendas, allocate resources, and address public grievances [government function]\",\n      \"For instance, a government might focus on job creation programs or environmental protection initiatives based on these findings [policy response]\"\n    ],\n    \"total_flag_count\": 23,\n    \"direct_count\": 9,\n    \"derived_count\": 8,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The DATA TABLE provides exact numerical values for all responses, which is fully sufficient."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The L3 CAPTION is not provided. The L2 CAPTION offers some interpretation of the main issue and a surprising high value, but a dedicated L3 for trends and patterns is missing."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The CHART TITLE clearly defines the subject as 'social and economic issues' and the L2 CAPTION further contextualizes it with 'Maslow's hierarchy of needs', fully establishing the domain."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "The EXPERT DOMAIN STORY is explicitly marked as '[NOT PROVIDED]'."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "The STAKEHOLDER CONTEXT is explicitly marked as '[NOT PROVIDED]'."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart presents the results of a survey asking respondents about their most pressing social and economic concerns [DIRECT]. The data shows the proportion of respondents who identified each issue as their primary concern [DIRECT]. The survey covers a range of topics from employment and environment to taxation and public services [DERIVED: read x-axis labels]. The chart title indicates the purpose is to understand public sentiment regarding social and economic challenges [DIRECT].",
+      "domain_specific_explanations": "\"Share of respondents\" refers to the percentage of people surveyed who selected a particular issue; for example, 0.63 means 63% of respondents [DERIVED: definition of share/proportion]. The issues listed, such as \"Finding a job,\" \"Environment,\" \"Taxes,\" and \"Pensions,\" are common categories in socio-economic surveys designed to gauge public opinion on governmental priorities and societal well-being [SPECULATIVE: survey design knowledge]. The L2 caption mentions \"Maslow's hierarchy of needs,\" suggesting that \"Finding a job\" is a fundamental concern related to basic physiological and safety needs [DIRECT]. The L2 caption also notes that \"once you have a job and have income you worry about other things like the taxation you pay,\" indicating a progression of concerns [DIRECT].",
+      "real_world_significance": "The highest concern is \"Finding a job,\" selected by 63% of respondents [DIRECT]. This suggests a significant focus on employment stability and economic opportunity among the population surveyed [DERIVED: interpreting the highest value]. This could indicate economic uncertainty or a competitive job market [SPECULATIVE: economic interpretation]. The second highest concern is \"Environment,\" selected by 37% of respondents [DIRECT]. This indicates that environmental issues are a significant public priority, even alongside immediate economic concerns [DERIVED: comparing \"Environment\" value to others]. This could influence policy-making towards sustainability and climate action [SPECULATIVE: policy implications]. Other significant concerns include \"Sanitary system\" (25%), \"School system\" (24%), \"Security\" (24%), \"Taxes\" (23%), and \"Recession and financial crisis\" (23%) [DERIVED: grouping similar high values]. These highlight public interest in the quality and reliability of essential public services, safety, and economic stability [DERIVED: interpreting grouped values]. These areas are often key performance indicators for government effectiveness [SPECULATIVE: public administration knowledge]. Issues like \"Social housing\" (1%) and \"None of these\" (1%) are among the least frequently cited as the most concerning [DIRECT]. This suggests these are either not widely perceived as the *most* pressing issues or are less relevant to the majority of respondents compared to other options [DERIVED: interpreting low values]. Policymakers and government officials could use this data to prioritize legislative agendas, allocate resources, and address public grievances [SPECULATIVE: government function]. For instance, a government might focus on job creation programs or environmental protection initiatives based on these findings [SPECULATIVE: policy response].",
+      "other": "The raw data table contains some ambiguous labels like \"system,\" \"crisis,\" \"debt,\" and \"housing\" which are clarified by the more descriptive labels in the chart image and scene graph [DERIVED: comparing data table to scene graph/image]. The L2 caption expresses surprise that \"the environment is very high up,\" suggesting a potential deviation from expected public priorities by the caption author [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart presents the results of a survey asking respondents about their most pressing social and economic concerns",
+        "The data shows the proportion of respondents who identified each issue as their primary concern",
+        "The chart title indicates the purpose is to understand public sentiment regarding social and economic challenges",
+        "The L2 caption mentions \"Maslow's hierarchy of needs,\" suggesting that \"Finding a job\" is a fundamental concern related to basic physiological and safety needs",
+        "The L2 caption also notes that \"once you have a job and have income you worry about other things like the taxation you pay,\" indicating a progression of concerns",
+        "The highest concern is \"Finding a job,\" selected by 63% of respondents",
+        "The second highest concern is \"Environment,\" selected by 37% of respondents",
+        "Issues like \"Social housing\" (1%) and \"None of these\" (1%) are among the least frequently cited as the most concerning",
+        "The L2 caption expresses surprise that \"the environment is very high up,\" suggesting a potential deviation from expected public priorities by the caption author"
+      ],
+      "derived_claims": [
+        "The survey covers a range of topics from employment and environment to taxation and public services [read x-axis labels]",
+        "\"Share of respondents\" refers to the percentage of people surveyed who selected a particular issue; for example, 0.63 means 63% of respondents [definition of share/proportion]",
+        "This suggests a significant focus on employment stability and economic opportunity among the population surveyed [interpreting the highest value]",
+        "This indicates that environmental issues are a significant public priority, even alongside immediate economic concerns [comparing \"Environment\" value to others]",
+        "Other significant concerns include \"Sanitary system\" (25%), \"School system\" (24%), \"Security\" (24%), \"Taxes\" (23%), and \"Recession and financial crisis\" (23%) [grouping similar high values]",
+        "These highlight public interest in the quality and reliability of essential public services, safety, and economic stability [interpreting grouped values]",
+        "This suggests these are either not widely perceived as the *most* pressing issues or are less relevant to the majority of respondents compared to other options [interpreting low values]",
+        "The raw data table contains some ambiguous labels like \"system,\" \"crisis,\" \"debt,\" and \"housing\" which are clarified by the more descriptive labels in the chart image and scene graph [comparing data table to scene graph/image]"
+      ],
+      "speculative_claims": [
+        "The issues listed, such as \"Finding a job,\" \"Environment,\" \"Taxes,\" and \"Pensions,\" are common categories in socio-economic surveys designed to gauge public opinion on governmental priorities and societal well-being [survey design knowledge]",
+        "This could indicate economic uncertainty or a competitive job market [economic interpretation]",
+        "This could influence policy-making towards sustainability and climate action [policy implications]",
+        "These areas are often key performance indicators for government effectiveness [public administration knowledge]",
+        "Policymakers and government officials could use this data to prioritize legislative agendas, allocate resources, and address public grievances [government function]",
+        "For instance, a government might focus on job creation programs or environmental protection initiatives based on these findings [policy response]"
+      ],
+      "total_flag_count": 23,
+      "direct_count": 9,
+      "derived_count": 8,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 51920.39158398984,
+  "created_at": "2026-07-07T19:17:45.331983Z"
+}

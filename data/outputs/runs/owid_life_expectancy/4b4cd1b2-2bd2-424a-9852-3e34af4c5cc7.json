@@ -1,0 +1,76 @@
+{
+  "output_id": "4b4cd1b2-2bd2-424a-9852-3e34af4c5cc7",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact life expectancy values for 2023 for 25 entities, though 5 rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only a single year (2023) is provided in the data table, making temporal trend analysis impossible without external knowledge.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and entity list clearly define the subject as global life expectancy.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The source is identified as Our World in Data, but no detailed expert commentary or context is provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset represents life expectancy across various countries and world regions for the year 2023 [DIRECT]. The data is sourced from Our World in Data's interactive visualization platform [DIRECT]. The entities listed include both individual countries (such as Albania and Angola) and macro-regions (such as Africa, Asia, and the Americas) [DERIVED: Read and categorized the 'Entity' column in the data table].\",\n    \"domain_specific_explanations\": \"Life expectancy at birth is a key metric of population health, representing the average number of years a newborn would live if current mortality patterns remained constant throughout their life [SPECULATIVE: Public Health / Demography]. In this dataset, we observe significant geographic disparities: for instance, Andorra has a high life expectancy of approximately 84.04 years, whereas Benin's is much lower at around 60.77 years [DERIVED: Compared Andorra (84.0406) and Benin (60.7738) from the data table]. Regional aggregates also show these disparities, with the Americas at approximately 77.29 years compared to Africa at approximately 63.84 years [DERIVED: Compared 'Americas' (77.2922) and 'Africa' (63.8428) from the data table].\",\n    \"real_world_significance\": \"These disparities often reflect underlying inequalities in healthcare access, economic development, nutrition, and sanitation [SPECULATIVE: Global Health Policy]. Policymakers and international organizations (like the WHO) use life expectancy data to allocate resources, evaluate the success of health interventions, and target aid to regions with lower life expectancies [SPECULATIVE: International Development]. If these gaps persist, it highlights a continuing failure to achieve global health equity as outlined in the UN Sustainable Development Goals [SPECULATIVE: United Nations SDGs].\",\n    \"other\": \"The dataset contains 2023 data, providing a post-COVID-19 pandemic snapshot of global mortality and recovery [SPECULATIVE: Epidemiology].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset represents life expectancy across various countries and world regions for the year 2023\",\n      \"The data is sourced from Our World in Data's interactive visualization platform\"\n    ],\n    \"derived_claims\": [\n      \"The entities listed include both individual countries (such as Albania and Angola) [and macro-regions (such as Africa, Asia, and the Americas)\",\n      \"Andorra has a high life expectancy of approximately 84.04 years, whereas Benin's is much lower at around 60.77 years\",\n      \"Regional aggregates also show these disparities, with the Americas at approximately 77.29 years compared to Africa at approximately 63.84 years\"\n    ],\n    \"speculative_claims\": [\n      \"Life expectancy at birth is a key metric of population health, representing the average number of years a newborn would live if current mortality patterns remained constant throughout their life\",\n      \"These disparities often reflect underlying inequalities in healthcare access, economic development, nutrition, and sanitation\",\n      \"Policymakers and international organizations (like the WHO) use life expectancy data to allocate resources, evaluate the success of health interventions, and target aid to regions with lower life expectancies\",\n      \"If these gaps persist, it highlights a continuing failure to achieve global health equity as outlined in the UN Sustainable Development Goals\",\n      \"The dataset contains 2023 data, providing a post-COVID-19 pandemic snapshot of global mortality and recovery\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact life expectancy values for 2023 for 25 entities, though 5 rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2023) is provided in the data table, making temporal trend analysis impossible without external knowledge."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and entity list clearly define the subject as global life expectancy."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The source is identified as Our World in Data, but no detailed expert commentary or context is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset represents life expectancy across various countries and world regions for the year 2023 [DIRECT]. The data is sourced from Our World in Data's interactive visualization platform [DIRECT]. The entities listed include both individual countries (such as Albania and Angola) and macro-regions (such as Africa, Asia, and the Americas) [DERIVED: Read and categorized the 'Entity' column in the data table].",
+      "domain_specific_explanations": "Life expectancy at birth is a key metric of population health, representing the average number of years a newborn would live if current mortality patterns remained constant throughout their life [SPECULATIVE: Public Health / Demography]. In this dataset, we observe significant geographic disparities: for instance, Andorra has a high life expectancy of approximately 84.04 years, whereas Benin's is much lower at around 60.77 years [DERIVED: Compared Andorra (84.0406) and Benin (60.7738) from the data table]. Regional aggregates also show these disparities, with the Americas at approximately 77.29 years compared to Africa at approximately 63.84 years [DERIVED: Compared 'Americas' (77.2922) and 'Africa' (63.8428) from the data table].",
+      "real_world_significance": "These disparities often reflect underlying inequalities in healthcare access, economic development, nutrition, and sanitation [SPECULATIVE: Global Health Policy]. Policymakers and international organizations (like the WHO) use life expectancy data to allocate resources, evaluate the success of health interventions, and target aid to regions with lower life expectancies [SPECULATIVE: International Development]. If these gaps persist, it highlights a continuing failure to achieve global health equity as outlined in the UN Sustainable Development Goals [SPECULATIVE: United Nations SDGs].",
+      "other": "The dataset contains 2023 data, providing a post-COVID-19 pandemic snapshot of global mortality and recovery [SPECULATIVE: Epidemiology]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset represents life expectancy across various countries and world regions for the year 2023",
+        "The data is sourced from Our World in Data's interactive visualization platform"
+      ],
+      "derived_claims": [
+        "The entities listed include both individual countries (such as Albania and Angola) [and macro-regions (such as Africa, Asia, and the Americas)",
+        "Andorra has a high life expectancy of approximately 84.04 years, whereas Benin's is much lower at around 60.77 years",
+        "Regional aggregates also show these disparities, with the Americas at approximately 77.29 years compared to Africa at approximately 63.84 years"
+      ],
+      "speculative_claims": [
+        "Life expectancy at birth is a key metric of population health, representing the average number of years a newborn would live if current mortality patterns remained constant throughout their life",
+        "These disparities often reflect underlying inequalities in healthcare access, economic development, nutrition, and sanitation",
+        "Policymakers and international organizations (like the WHO) use life expectancy data to allocate resources, evaluate the success of health interventions, and target aid to regions with lower life expectancies",
+        "If these gaps persist, it highlights a continuing failure to achieve global health equity as outlined in the UN Sustainable Development Goals",
+        "The dataset contains 2023 data, providing a post-COVID-19 pandemic snapshot of global mortality and recovery"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 9966.363416984677,
+  "created_at": "2026-07-07T23:02:56.264540Z"
+}

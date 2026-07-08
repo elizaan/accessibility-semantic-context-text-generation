@@ -1,0 +1,77 @@
+{
+  "output_id": "a6732dd5-adb9-4d0f-93af-802b4a75a288",
+  "chart_id": "owid_annual_death_rates_in_different_age_groups_females",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The provided data table only contains a snapshot of 2023 values for various countries, whereas the chart image displays a historical time series from 1933 to 2023 for specific entities (World, India, United States, Japan).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The historical trends and magnitudes must be visually estimated from the chart image as they are not provided in the truncated 2023 data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The subject domain of demography, public health, and female mortality rates is clearly defined.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert story clearly explains that the metric is the annual death rate per 1,000 people of a given age for females.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 2.6\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart illustrates the historical trajectory of annual female death rates from 1933 to 2023 across six distinct age cohorts: 0, 10, 25, 45, 65, and 80 years old [DERIVED: read from chart image subplots and title]. It compares global averages ('World') with three specific nations: India, the United States, and Japan [DERIVED: read from chart image legend]. The data is compiled from the Human Mortality Database (2025) and the United Nations World Population Prospects (2024) [DERIVED: read from chart image footer].\",\n    \"domain_specific_explanations\": \"The 'annual death rate' represents the number of deaths per 1,000 females within a specific age group in a given year [DIRECT]. Across all six age groups, there is a profound, long-term decline in mortality rates over the 90-year period [DERIVED: compared line trends from 1933 to 2023 across all subplots]. The absolute mortality rates vary drastically by age; infant mortality (0 years old) and elderly mortality (80 years old) exhibit much higher baselines—peaking well above 100 deaths per 1,000—compared to youth and middle-aged cohorts (10, 25, and 45 years old), where death rates rarely exceeded 12 per 1,000 even in the mid-20th century [DERIVED: compared Y-axis scales across the six subplots]. Notably, there is a sharp, sudden spike in mortality rates around 2020–2023 visible in the older cohorts (65 and 80 years old) [DERIVED: observed sharp upward tick at the end of the lines for 65 and 80 years old].\",\n    \"real_world_significance\": \"The dramatic decline in female infant mortality (0 years old) and childhood mortality (10 years old), particularly in developing regions like India, reflects monumental global achievements in sanitation, clean water access, pediatric medicine, and widespread vaccination campaigns over the last century [SPECULATIVE: global public health history]. The convergence of mortality lines across different nations by 2023 suggests a narrowing gap in basic healthcare standards globally, though historical disparities remain visible [DERIVED: observed lines narrowing closer together by 2023 compared to earlier decades]. The prominent spike in mortality among the 65 and 80-year-old cohorts around 2020 is a stark visual signature of the COVID-19 pandemic, which disproportionately impacted older populations worldwide [SPECULATIVE: epidemiological history of COVID-19].\",\n    \"other\": \"In the early mid-20th century, India's female infant mortality rate was exceptionally high, starting near 180 deaths per 1,000 in the late 1940s, but has since declined to match the global average of around 25 to 40 deaths per 1,000 by 2023 [DERIVED: read values for India and World in the '0 years old' subplot].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The 'annual death rate' represents the number of deaths per 1,000 females within a specific age group in a given year\"\n    ],\n    \"derived_claims\": [\n      \"The chart illustrates the historical trajectory of annual female death rates from 1933 to 2023 across six distinct age cohorts: 0, 10, 25, 45, 65, and 80 years old\",\n      \"It compares global averages ('World') with three specific nations: India, the United States, and Japan\",\n      \"The data is compiled from the Human Mortality Database (2025) and the United Nations World Population Prospects (2024)\",\n      \"Across all six age groups, there is a profound, long-term decline in mortality rates over the 90-year period\",\n      \"The absolute mortality rates vary drastically by age; infant mortality (0 years old) and elderly mortality (80 years old) exhibit much higher baselines—peaking well above 100 deaths per 1,000—compared to youth and middle-aged cohorts (10, 25, and 45 years old), where death rates rarely exceeded 12 per 1,000 even in the mid-20th century\",\n      \"Notably, there is a sharp, sudden spike in mortality rates around 2020–2023 visible in the older cohorts (65 and 80 years old)\",\n      \"The convergence of mortality lines across different nations by 2023 suggests a narrowing gap in basic healthcare standards globally, though historical disparities remain visible\",\n      \"In the early mid-20th century, India's female infant mortality rate was exceptionally high, starting near 180 deaths per 1,000 in the late 1940s, but has since declined to match the global average of around 25 to 40 deaths per 1,000 by 2023\"\n    ],\n    \"speculative_claims\": [\n      \"The dramatic decline in female infant mortality (0 years old) and childhood mortality (10 years old), particularly in developing regions like India, reflects monumental global achievements in sanitation, clean water access, pediatric medicine, and widespread vaccination campaigns over the last century\",\n      \"The prominent spike in mortality among the 65 and 80-year-old cohorts around 2020 is a stark visual signature of the COVID-19 pandemic, which disproportionately impacted older populations worldwide\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 8,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The provided data table only contains a snapshot of 2023 values for various countries, whereas the chart image displays a historical time series from 1933 to 2023 for specific entities (World, India, United States, Japan)."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The historical trends and magnitudes must be visually estimated from the chart image as they are not provided in the truncated 2023 data table."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The subject domain of demography, public health, and female mortality rates is clearly defined."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert story clearly explains that the metric is the annual death rate per 1,000 people of a given age for females."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 2.6
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart illustrates the historical trajectory of annual female death rates from 1933 to 2023 across six distinct age cohorts: 0, 10, 25, 45, 65, and 80 years old [DERIVED: read from chart image subplots and title]. It compares global averages ('World') with three specific nations: India, the United States, and Japan [DERIVED: read from chart image legend]. The data is compiled from the Human Mortality Database (2025) and the United Nations World Population Prospects (2024) [DERIVED: read from chart image footer].",
+      "domain_specific_explanations": "The 'annual death rate' represents the number of deaths per 1,000 females within a specific age group in a given year [DIRECT]. Across all six age groups, there is a profound, long-term decline in mortality rates over the 90-year period [DERIVED: compared line trends from 1933 to 2023 across all subplots]. The absolute mortality rates vary drastically by age; infant mortality (0 years old) and elderly mortality (80 years old) exhibit much higher baselines—peaking well above 100 deaths per 1,000—compared to youth and middle-aged cohorts (10, 25, and 45 years old), where death rates rarely exceeded 12 per 1,000 even in the mid-20th century [DERIVED: compared Y-axis scales across the six subplots]. Notably, there is a sharp, sudden spike in mortality rates around 2020–2023 visible in the older cohorts (65 and 80 years old) [DERIVED: observed sharp upward tick at the end of the lines for 65 and 80 years old].",
+      "real_world_significance": "The dramatic decline in female infant mortality (0 years old) and childhood mortality (10 years old), particularly in developing regions like India, reflects monumental global achievements in sanitation, clean water access, pediatric medicine, and widespread vaccination campaigns over the last century [SPECULATIVE: global public health history]. The convergence of mortality lines across different nations by 2023 suggests a narrowing gap in basic healthcare standards globally, though historical disparities remain visible [DERIVED: observed lines narrowing closer together by 2023 compared to earlier decades]. The prominent spike in mortality among the 65 and 80-year-old cohorts around 2020 is a stark visual signature of the COVID-19 pandemic, which disproportionately impacted older populations worldwide [SPECULATIVE: epidemiological history of COVID-19].",
+      "other": "In the early mid-20th century, India's female infant mortality rate was exceptionally high, starting near 180 deaths per 1,000 in the late 1940s, but has since declined to match the global average of around 25 to 40 deaths per 1,000 by 2023 [DERIVED: read values for India and World in the '0 years old' subplot]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The 'annual death rate' represents the number of deaths per 1,000 females within a specific age group in a given year"
+      ],
+      "derived_claims": [
+        "The chart illustrates the historical trajectory of annual female death rates from 1933 to 2023 across six distinct age cohorts: 0, 10, 25, 45, 65, and 80 years old",
+        "It compares global averages ('World') with three specific nations: India, the United States, and Japan",
+        "The data is compiled from the Human Mortality Database (2025) and the United Nations World Population Prospects (2024)",
+        "Across all six age groups, there is a profound, long-term decline in mortality rates over the 90-year period",
+        "The absolute mortality rates vary drastically by age; infant mortality (0 years old) and elderly mortality (80 years old) exhibit much higher baselines—peaking well above 100 deaths per 1,000—compared to youth and middle-aged cohorts (10, 25, and 45 years old), where death rates rarely exceeded 12 per 1,000 even in the mid-20th century",
+        "Notably, there is a sharp, sudden spike in mortality rates around 2020–2023 visible in the older cohorts (65 and 80 years old)",
+        "The convergence of mortality lines across different nations by 2023 suggests a narrowing gap in basic healthcare standards globally, though historical disparities remain visible",
+        "In the early mid-20th century, India's female infant mortality rate was exceptionally high, starting near 180 deaths per 1,000 in the late 1940s, but has since declined to match the global average of around 25 to 40 deaths per 1,000 by 2023"
+      ],
+      "speculative_claims": [
+        "The dramatic decline in female infant mortality (0 years old) and childhood mortality (10 years old), particularly in developing regions like India, reflects monumental global achievements in sanitation, clean water access, pediatric medicine, and widespread vaccination campaigns over the last century",
+        "The prominent spike in mortality among the 65 and 80-year-old cohorts around 2020 is a stark visual signature of the COVID-19 pandemic, which disproportionately impacted older populations worldwide"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 8,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11313.941917032935,
+  "created_at": "2026-07-07T22:50:26.626252Z"
+}

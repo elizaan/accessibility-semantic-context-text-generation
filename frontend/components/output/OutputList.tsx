@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Clock, Cpu, ChevronDown, ChevronUp, Copy, Check, Trash2, RefreshCw } from "lucide-react";
 import type { Chart, GenerationOutput } from "@/lib/types";
+import { ParsedOutputView } from "./ParsedOutputView";
 
 interface Props {
   outputs: GenerationOutput[];
@@ -90,9 +91,15 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
                 {f}
               </span>
             ))}
-            {output.include_image && (
-              <span className="text-xs bg-green-100 text-green-700 rounded px-1.5 py-0.5">+image</span>
-            )}
+            <span
+              className={`text-xs rounded px-1.5 py-0.5 ${
+                output.include_image
+                  ? "bg-green-100 text-green-700"
+                  : "bg-gray-100 text-gray-500"
+              }`}
+            >
+              {output.include_image ? "+image" : "no image"}
+            </span>
           </div>
         </div>
 
@@ -126,16 +133,16 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
         <div className="p-4 space-y-3">
           {/* Generated description */}
           <div className="relative">
-            <p className="text-sm leading-relaxed whitespace-pre-wrap pr-6">
-              {output.generated_description}
-            </p>
             <button
               onClick={copy}
               className="absolute top-0 right-0 text-muted-foreground hover:text-foreground"
-              title="Copy to clipboard"
+              title="Copy raw response to clipboard"
             >
               {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
             </button>
+            <div className="pr-6">
+              <ParsedOutputView parsed={output.parsed_output} rawText={output.generated_description} />
+            </div>
           </div>
 
           {/* Stats row */}

@@ -1,0 +1,78 @@
+{
+  "output_id": "fbeae352-4172-4036-ae25-59ca51e7963c",
+  "chart_id": "vistext_1260",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 4, \"justification\": \"The data table provides exact values for the share of workers paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019, but some rows are truncated.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The L2 caption mentions that the number of workers on or below minimum wage have dropped significantly, but no specific metrics or quantification are provided.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart title and axis labels provide some context about the subject domain (labor economics and wage rates), but more information about the specific domain and expert context is needed.\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No expert domain story or stakeholder context is provided.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context or information about who uses this data and why is provided.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The chart is a line graph with the x-axis measuring Response ( likely years) and the y-axis showing Share of workers [DIRECT].\",\n    \"domain_specific_explanations\": \"The data relates to labor economics and wage rates, specifically the share of workers paid hourly rates at or below the federal minimum wage [DERIVED: from chart title and axis labels]. The values represent a proportion of workers, likely expressed as a percentage [DERIVED: from axis label]. Background knowledge of labor economics and wage rate policies is needed to interpret the data correctly [SPECULATIVE: labor economics domain].\",\n    \"real_world_significance\": \"This data matters because it shows the trend of workers' wages in relation to the federal minimum wage over time [DERIVED: from L2 caption]. A decrease in the share of workers paid at or below minimum wage may indicate an improvement in wage rates or a shift in the labor market [SPECULATIVE: labor economics domain]. Stakeholders, such as policymakers, economists, and workers' rights advocates, may use this data to inform decisions about wage policies and labor market interventions [SPECULATIVE: stakeholder context].\",\n    \"other\": \"The chart's trend suggests a decline in the share of workers paid at or below minimum wage over the past four decades [DERIVED: from data table]. This trend may have implications for income inequality, poverty rates, and overall economic well-being [SPECULATIVE: labor economics domain].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019\",\n      \"The chart is a line graph with the x-axis measuring Response and the y-axis showing Share of workers\"\n    ],\n    \"derived_claims\": [\n      \"The data relates to labor economics and wage rates, specifically the share of workers paid hourly rates at or below the federal minimum wage\",\n      \"The values represent a proportion of workers, likely expressed as a percentage\",\n      \"This data matters because it shows the trend of workers' wages in relation to the federal minimum wage over time\",\n      \"The chart's trend suggests a decline in the share of workers paid at or below minimum wage over the past four decades\"\n    ],\n    \"speculative_claims\": [\n      \"Background knowledge of labor economics and wage rate policies is needed to interpret the data correctly\",\n      \"A decrease in the share of workers paid at or below minimum wage may indicate an improvement in wage rates or a shift in the labor market\",\n      \"Stakeholders, such as policymakers, economists, and workers' rights advocates, may use this data to inform decisions about wage policies and labor market interventions\",\n      \"This trend may have implications for income inequality, poverty rates, and overall economic well-being\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides exact values for the share of workers paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019, but some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The L2 caption mentions that the number of workers on or below minimum wage have dropped significantly, but no specific metrics or quantification are provided."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart title and axis labels provide some context about the subject domain (labor economics and wage rates), but more information about the specific domain and expert context is needed."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story or stakeholder context is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context or information about who uses this data and why is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019 [DIRECT]. The chart is a line graph with the x-axis measuring Response ( likely years) and the y-axis showing Share of workers [DIRECT].",
+      "domain_specific_explanations": "The data relates to labor economics and wage rates, specifically the share of workers paid hourly rates at or below the federal minimum wage [DERIVED: from chart title and axis labels]. The values represent a proportion of workers, likely expressed as a percentage [DERIVED: from axis label]. Background knowledge of labor economics and wage rate policies is needed to interpret the data correctly [SPECULATIVE: labor economics domain].",
+      "real_world_significance": "This data matters because it shows the trend of workers' wages in relation to the federal minimum wage over time [DERIVED: from L2 caption]. A decrease in the share of workers paid at or below minimum wage may indicate an improvement in wage rates or a shift in the labor market [SPECULATIVE: labor economics domain]. Stakeholders, such as policymakers, economists, and workers' rights advocates, may use this data to inform decisions about wage policies and labor market interventions [SPECULATIVE: stakeholder context].",
+      "other": "The chart's trend suggests a decline in the share of workers paid at or below minimum wage over the past four decades [DERIVED: from data table]. This trend may have implications for income inequality, poverty rates, and overall economic well-being [SPECULATIVE: labor economics domain]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of wage and salary workers in the United States paid hourly rates at or below the prevailing federal minimum wage from 1979 to 2019",
+        "The chart is a line graph with the x-axis measuring Response and the y-axis showing Share of workers"
+      ],
+      "derived_claims": [
+        "The data relates to labor economics and wage rates, specifically the share of workers paid hourly rates at or below the federal minimum wage",
+        "The values represent a proportion of workers, likely expressed as a percentage",
+        "This data matters because it shows the trend of workers' wages in relation to the federal minimum wage over time",
+        "The chart's trend suggests a decline in the share of workers paid at or below minimum wage over the past four decades"
+      ],
+      "speculative_claims": [
+        "Background knowledge of labor economics and wage rate policies is needed to interpret the data correctly",
+        "A decrease in the share of workers paid at or below minimum wage may indicate an improvement in wage rates or a shift in the labor market",
+        "Stakeholders, such as policymakers, economists, and workers' rights advocates, may use this data to inform decisions about wage policies and labor market interventions",
+        "This trend may have implications for income inequality, poverty rates, and overall economic well-being"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 2675,
+    "output": 926
+  },
+  "latency_ms": 2551.9403340294957,
+  "created_at": "2026-07-08T00:07:25.737957Z"
+}

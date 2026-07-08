@@ -1,0 +1,66 @@
+{
+  "output_id": "60a602a3-38ed-4a3c-8fa7-ee69c0a2bbfe",
+  "chart_id": "owid_perceived_trust_between_people",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "Here is the response in the required JSON format:\n\n```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image provides data values, but the exact values are not provided in the metadata.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"The magnitude of the trend is not explicitly stated in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart subject domain is partially identified as 'Perceived trust between people' and 'Global Flourishing Study (2026)'. The domain is social sciences, specifically trust and social cohesion.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart represents the perceived trust between people in various countries, based on the Global Flourishing Study (2026) [DIRECT]. The data is presented as a share of answers to the question 'How many people in this country trust one another?' [DIRECT]. The chart is produced by Our World in Data [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart categorizes responses into 'All people', 'Most people', 'Some people', 'Not very many people', 'No one', and 'Did not answer'/'I don't know' [DIRECT]. The data values represent the percentage of respondents who chose each category [DIRECT]. The chart provides insights into social cohesion and trust levels across different countries [SPECULATIVE: social sciences].\",\n    \"real_world_significance\": \"This data matters because it provides insights into social trust, which is essential for understanding social cohesion, community relationships, and potentially, economic and political stability [SPECULATIVE: social sciences]. The data can be used by policymakers, researchers, and stakeholders to understand and address issues related to trust and social capital [SPECULATIVE: policy-making].\",\n    \"other\": \"The chart image shows a horizontal bar chart with countries listed on the y-axis and the percentage of responses on the x-axis [DERIVED: chart image]. The chart uses different colors to represent the various response categories [DERIVED: chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart represents the perceived trust between people in various countries, based on the Global Flourishing Study (2026).\",\n      \"The data is presented as a share of answers to the question 'How many people in this country trust one another?'.\",\n      \"The chart is produced by Our World in Data.\",\n      \"The chart categorizes responses into 'All people', 'Most people', 'Some people', 'Not very many people', 'No one', and 'Did not answer'/'I don't know'.\",\n      \"The data values represent the percentage of respondents who chose each category.\"\n    ],\n    \"derived_claims\": [\n      \"The chart image shows a horizontal bar chart with countries listed on the y-axis and the percentage of responses on the x-axis.\",\n      \"The chart uses different colors to represent the various response categories.\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it provides insights into social trust, which is essential for understanding social cohesion, community relationships, and potentially, economic and political stability.\",\n      \"The data can be used by policymakers, researchers, and stakeholders to understand and address issues related to trust and social capital.\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 5,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}\n```\n\nPlease let me know if you'd like me to make any adjustments.",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image provides data values, but the exact values are not provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "The magnitude of the trend is not explicitly stated in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart subject domain is partially identified as 'Perceived trust between people' and 'Global Flourishing Study (2026)'. The domain is social sciences, specifically trust and social cohesion."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart represents the perceived trust between people in various countries, based on the Global Flourishing Study (2026) [DIRECT]. The data is presented as a share of answers to the question 'How many people in this country trust one another?' [DIRECT]. The chart is produced by Our World in Data [DIRECT].",
+      "domain_specific_explanations": "The chart categorizes responses into 'All people', 'Most people', 'Some people', 'Not very many people', 'No one', and 'Did not answer'/'I don't know' [DIRECT]. The data values represent the percentage of respondents who chose each category [DIRECT]. The chart provides insights into social cohesion and trust levels across different countries [SPECULATIVE: social sciences].",
+      "real_world_significance": "This data matters because it provides insights into social trust, which is essential for understanding social cohesion, community relationships, and potentially, economic and political stability [SPECULATIVE: social sciences]. The data can be used by policymakers, researchers, and stakeholders to understand and address issues related to trust and social capital [SPECULATIVE: policy-making].",
+      "other": "The chart image shows a horizontal bar chart with countries listed on the y-axis and the percentage of responses on the x-axis [DERIVED: chart image]. The chart uses different colors to represent the various response categories [DERIVED: chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart represents the perceived trust between people in various countries, based on the Global Flourishing Study (2026).",
+        "The data is presented as a share of answers to the question 'How many people in this country trust one another?'.",
+        "The chart is produced by Our World in Data.",
+        "The chart categorizes responses into 'All people', 'Most people', 'Some people', 'Not very many people', 'No one', and 'Did not answer'/'I don't know'.",
+        "The data values represent the percentage of respondents who chose each category."
+      ],
+      "derived_claims": [
+        "The chart image shows a horizontal bar chart with countries listed on the y-axis and the percentage of responses on the x-axis.",
+        "The chart uses different colors to represent the various response categories."
+      ],
+      "speculative_claims": [
+        "This data matters because it provides insights into social trust, which is essential for understanding social cohesion, community relationships, and potentially, economic and political stability.",
+        "The data can be used by policymakers, researchers, and stakeholders to understand and address issues related to trust and social capital."
+      ],
+      "total_flag_count": 10,
+      "direct_count": 5,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2179,
+    "output": 777
+  },
+  "latency_ms": 2419.721667014528,
+  "created_at": "2026-07-08T13:10:20.215471Z"
+}

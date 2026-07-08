@@ -1,0 +1,80 @@
+{
+  "output_id": "1e6f23fd-4da9-44b1-861b-fdbc086f3d8f",
+  "chart_id": "hci_a38749fbb390ae3939225efb60a72157cfe7c396_Image_010",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data table is missing, but the alt text provides summary statistics, including the sample sizes (32 fastest, 32 slowest), age ranges, and counts of participants with/without motor impairments.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text describes the general distribution and dispersion of ages for both groups, but lacks precise statistical correlation values or exact trial times.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (accessibility, human-computer interaction, age, and motor impairment) is highly clear from the alt text and the ASSETS 2020 publication source.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story provides the specific conference and year (ASSETS 2020) along with a Semantic Scholar link, which helps ground the research context.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was explicitly provided in the metadata.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart presents two scatterplots analyzing the relationship between age and mean trial time for the 32 fastest and 32 slowest participants in a study [DIRECT]. The data originates from a research paper published at the ACM SIGACCESS Conference on Computers and Accessibility (ASSETS) in 2020 [DIRECT]. The study likely evaluates how user characteristics, such as age and motor abilities, impact interaction speed with a digital interface [SPECULATIVE: Human-Computer Interaction].\",\n    \"domain_specific_explanations\": \"In human-computer interaction research, trial time is a standard usability metric where lower times indicate higher efficiency [SPECULATIVE: Human-Computer Interaction]. The fastest participants are predominantly younger, clustered in the 18-40 age range, with only 3 older exceptions [DIRECT]. Notably, 7 of these fastest participants reported motor impairments [DIRECT], demonstrating that individuals with motor disabilities can achieve high-efficiency interaction speeds [DERIVED: Comparing motor impairment status with high-speed performance]. Meanwhile, the slowest participants span a wide age range from just over 25 to almost 70 [DIRECT], and include 5 individuals without motor impairments [DIRECT]. This indicates that lack of impairment and younger age do not automatically guarantee fast performance [DERIVED: Analyzing the slowest group's demographics to challenge common assumptions about speed and ability].\",\n    \"real_world_significance\": \"These findings are highly significant for inclusive design and assistive technology development, which is the core focus of the ASSETS conference [SPECULATIVE: Accessibility Research]. By showing that some motor-impaired users are among the fastest and some non-impaired users are among the slowest, the data challenges the medical model of disability that assumes impairment inherently limits performance [DERIVED: Synthesizing the performance overlap across impairment categories]. This underscores the importance of designing flexible, customizable interfaces that accommodate diverse user strategies rather than relying on age or disability stereotypes [SPECULATIVE: Inclusive Design Principles].\",\n    \"other\": \"The chart focuses specifically on the extremes of the participant pool, analyzing a total of 64 participants split equally between the fastest and slowest cohorts [DERIVED: Summing the 32 fastest and 32 slowest participants described in the alt text].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart presents two scatterplots analyzing the relationship between age and mean trial time for the 32 fastest and 32 slowest participants in a study\",\n      \"The data originates from a research paper published at the ACM SIGACCESS Conference on Computers and Accessibility (ASSETS) in 2020\",\n      \"The fastest participants are predominantly younger, clustered in the 18-40 age range, with only 3 older exceptions\",\n      \"Notably, 7 of these fastest participants reported motor impairments\",\n      \"Meanwhile, the slowest participants span a wide age range from just over 25 to almost 70\",\n      \"and include 5 individuals without motor impairments\"\n    ],\n    \"derived_claims\": [\n      \"demonstrating that individuals with motor disabilities can achieve high-efficiency interaction speeds [derived from comparing motor impairment status with high-speed performance]\",\n      \"This indicates that lack of impairment and younger age do not automatically guarantee fast performance [derived from analyzing the slowest group's demographics to challenge common assumptions about speed and ability]\",\n      \"the data challenges the medical model of disability that assumes impairment inherently limits performance [derived from synthesizing the performance overlap across impairment categories]\",\n      \"The chart focuses specifically on the extremes of the participant pool, analyzing a total of 64 participants split equally between the fastest and slowest cohorts [derived from summing the 32 fastest and 32 slowest participants described in the alt text]\"\n    ],\n    \"speculative_claims\": [\n      \"The study likely evaluates how user characteristics, such as age and motor abilities, impact interaction speed with a digital interface [source: Human-Computer Interaction]\",\n      \"In human-computer interaction research, trial time is a standard usability metric where lower times indicate higher efficiency [source: Human-Computer Interaction]\",\n      \"These findings are highly significant for inclusive design and assistive technology development, which is the core focus of the ASSETS conference [source: Accessibility Research]\",\n      \"This underscores the importance of designing flexible, customizable interfaces that accommodate diverse user strategies rather than relying on age or disability stereotypes [source: Inclusive Design Principles]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 6,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data table is missing, but the alt text provides summary statistics, including the sample sizes (32 fastest, 32 slowest), age ranges, and counts of participants with/without motor impairments."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text describes the general distribution and dispersion of ages for both groups, but lacks precise statistical correlation values or exact trial times."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (accessibility, human-computer interaction, age, and motor impairment) is highly clear from the alt text and the ASSETS 2020 publication source."
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "The expert domain story provides the specific conference and year (ASSETS 2020) along with a Semantic Scholar link, which helps ground the research context."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was explicitly provided in the metadata."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart presents two scatterplots analyzing the relationship between age and mean trial time for the 32 fastest and 32 slowest participants in a study [DIRECT]. The data originates from a research paper published at the ACM SIGACCESS Conference on Computers and Accessibility (ASSETS) in 2020 [DIRECT]. The study likely evaluates how user characteristics, such as age and motor abilities, impact interaction speed with a digital interface [SPECULATIVE: Human-Computer Interaction].",
+      "domain_specific_explanations": "In human-computer interaction research, trial time is a standard usability metric where lower times indicate higher efficiency [SPECULATIVE: Human-Computer Interaction]. The fastest participants are predominantly younger, clustered in the 18-40 age range, with only 3 older exceptions [DIRECT]. Notably, 7 of these fastest participants reported motor impairments [DIRECT], demonstrating that individuals with motor disabilities can achieve high-efficiency interaction speeds [DERIVED: Comparing motor impairment status with high-speed performance]. Meanwhile, the slowest participants span a wide age range from just over 25 to almost 70 [DIRECT], and include 5 individuals without motor impairments [DIRECT]. This indicates that lack of impairment and younger age do not automatically guarantee fast performance [DERIVED: Analyzing the slowest group's demographics to challenge common assumptions about speed and ability].",
+      "real_world_significance": "These findings are highly significant for inclusive design and assistive technology development, which is the core focus of the ASSETS conference [SPECULATIVE: Accessibility Research]. By showing that some motor-impaired users are among the fastest and some non-impaired users are among the slowest, the data challenges the medical model of disability that assumes impairment inherently limits performance [DERIVED: Synthesizing the performance overlap across impairment categories]. This underscores the importance of designing flexible, customizable interfaces that accommodate diverse user strategies rather than relying on age or disability stereotypes [SPECULATIVE: Inclusive Design Principles].",
+      "other": "The chart focuses specifically on the extremes of the participant pool, analyzing a total of 64 participants split equally between the fastest and slowest cohorts [DERIVED: Summing the 32 fastest and 32 slowest participants described in the alt text]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart presents two scatterplots analyzing the relationship between age and mean trial time for the 32 fastest and 32 slowest participants in a study",
+        "The data originates from a research paper published at the ACM SIGACCESS Conference on Computers and Accessibility (ASSETS) in 2020",
+        "The fastest participants are predominantly younger, clustered in the 18-40 age range, with only 3 older exceptions",
+        "Notably, 7 of these fastest participants reported motor impairments",
+        "Meanwhile, the slowest participants span a wide age range from just over 25 to almost 70",
+        "and include 5 individuals without motor impairments"
+      ],
+      "derived_claims": [
+        "demonstrating that individuals with motor disabilities can achieve high-efficiency interaction speeds [derived from comparing motor impairment status with high-speed performance]",
+        "This indicates that lack of impairment and younger age do not automatically guarantee fast performance [derived from analyzing the slowest group's demographics to challenge common assumptions about speed and ability]",
+        "the data challenges the medical model of disability that assumes impairment inherently limits performance [derived from synthesizing the performance overlap across impairment categories]",
+        "The chart focuses specifically on the extremes of the participant pool, analyzing a total of 64 participants split equally between the fastest and slowest cohorts [derived from summing the 32 fastest and 32 slowest participants described in the alt text]"
+      ],
+      "speculative_claims": [
+        "The study likely evaluates how user characteristics, such as age and motor abilities, impact interaction speed with a digital interface [source: Human-Computer Interaction]",
+        "In human-computer interaction research, trial time is a standard usability metric where lower times indicate higher efficiency [source: Human-Computer Interaction]",
+        "These findings are highly significant for inclusive design and assistive technology development, which is the core focus of the ASSETS conference [source: Accessibility Research]",
+        "This underscores the importance of designing flexible, customizable interfaces that accommodate diverse user strategies rather than relying on age or disability stereotypes [source: Inclusive Design Principles]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 6,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14213.106125011109,
+  "created_at": "2026-07-07T23:37:09.720173Z"
+}

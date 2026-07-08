@@ -1,0 +1,68 @@
+{
+  "output_id": "47ede562-2893-412e-843b-b0d27b45c021",
+  "chart_id": "olli_choropleth-map",
+  "dataset_source": "olli",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table and exact values are not provided, but some aggregated statistics are available.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The magnitude of trends can be inferred from the legend and OLLI screen reader tree, but not in detail.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The domain (US county-level unemployment rates) is clearly identified in the expert domain story and OLLI screen reader tree.\"},\n      \"overall\": 2.5\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays US county-level unemployment rates on a choropleth map [DIRECT]. The map uses a color gradient to represent different unemployment rates, ranging from 0.01 to 0.30 [DIRECT]. The data is aggregated by region and state, providing a detailed view of unemployment rates across the United States [DERIVED: from OLLI screen reader tree].\",\n    \"domain_specific_explanations\": \"The unemployment rates are categorized into ranges (0.01-0.10, 0.10-0.15, etc.), with an average rate of 0.09 across all counties [DIRECT]. The Midwest and Northeast regions have lower average unemployment rates (0.08), while the South has a slightly higher average rate (0.10) [DERIVED: from OLLI screen reader tree].\",\n    \"real_world_significance\": \"This data matters for policymakers and economists to understand regional economic conditions and make informed decisions about resource allocation and economic development [SPECULATIVE: general knowledge of economic data]. High unemployment rates in certain areas may indicate a need for targeted interventions, such as job training programs or infrastructure investments [SPECULATIVE: general knowledge of economic policy].\",\n    \"other\": \"The chart provides a visual representation of the data, allowing users to quickly identify areas with high or low unemployment rates [DERIVED: from chart description]. The use of a choropleth map effectively communicates the geographic distribution of unemployment rates across the United States [DERIVED: from chart description].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays US county-level unemployment rates on a choropleth map\",\n      \"The map uses a color gradient to represent different unemployment rates, ranging from 0.01 to 0.30\",\n      \"The unemployment rates are categorized into ranges (0.01-0.10, 0.10-0.15, etc.), with an average rate of 0.09 across all counties\"\n    ],\n    \"derived_claims\": [\n      \"The data is aggregated by region and state, providing a detailed view of unemployment rates across the United States\",\n      \"The Midwest and Northeast regions have lower average unemployment rates (0.08), while the South has a slightly higher average rate (0.10)\",\n      \"The chart provides a visual representation of the data, allowing users to quickly identify areas with high or low unemployment rates\",\n      \"The use of a choropleth map effectively communicates the geographic distribution of unemployment rates across the United States\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters for policymakers and economists to understand regional economic conditions and make informed decisions about resource allocation and economic development\",\n      \"High unemployment rates in certain areas may indicate a need for targeted interventions, such as job training programs or infrastructure investments\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table and exact values are not provided, but some aggregated statistics are available."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The magnitude of trends can be inferred from the legend and OLLI screen reader tree, but not in detail."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (US county-level unemployment rates) is clearly identified in the expert domain story and OLLI screen reader tree."
+        },
+        "overall": 2.5
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays US county-level unemployment rates on a choropleth map [DIRECT]. The map uses a color gradient to represent different unemployment rates, ranging from 0.01 to 0.30 [DIRECT]. The data is aggregated by region and state, providing a detailed view of unemployment rates across the United States [DERIVED: from OLLI screen reader tree].",
+      "domain_specific_explanations": "The unemployment rates are categorized into ranges (0.01-0.10, 0.10-0.15, etc.), with an average rate of 0.09 across all counties [DIRECT]. The Midwest and Northeast regions have lower average unemployment rates (0.08), while the South has a slightly higher average rate (0.10) [DERIVED: from OLLI screen reader tree].",
+      "real_world_significance": "This data matters for policymakers and economists to understand regional economic conditions and make informed decisions about resource allocation and economic development [SPECULATIVE: general knowledge of economic data]. High unemployment rates in certain areas may indicate a need for targeted interventions, such as job training programs or infrastructure investments [SPECULATIVE: general knowledge of economic policy].",
+      "other": "The chart provides a visual representation of the data, allowing users to quickly identify areas with high or low unemployment rates [DERIVED: from chart description]. The use of a choropleth map effectively communicates the geographic distribution of unemployment rates across the United States [DERIVED: from chart description]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays US county-level unemployment rates on a choropleth map",
+        "The map uses a color gradient to represent different unemployment rates, ranging from 0.01 to 0.30",
+        "The unemployment rates are categorized into ranges (0.01-0.10, 0.10-0.15, etc.), with an average rate of 0.09 across all counties"
+      ],
+      "derived_claims": [
+        "The data is aggregated by region and state, providing a detailed view of unemployment rates across the United States",
+        "The Midwest and Northeast regions have lower average unemployment rates (0.08), while the South has a slightly higher average rate (0.10)",
+        "The chart provides a visual representation of the data, allowing users to quickly identify areas with high or low unemployment rates",
+        "The use of a choropleth map effectively communicates the geographic distribution of unemployment rates across the United States"
+      ],
+      "speculative_claims": [
+        "This data matters for policymakers and economists to understand regional economic conditions and make informed decisions about resource allocation and economic development",
+        "High unemployment rates in certain areas may indicate a need for targeted interventions, such as job training programs or infrastructure investments"
+      ],
+      "total_flag_count": 8,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 3373,
+    "output": 788
+  },
+  "latency_ms": 3666.8922920362093,
+  "created_at": "2026-07-08T14:22:41.692696Z"
+}

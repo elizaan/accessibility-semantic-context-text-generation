@@ -1,0 +1,80 @@
+{
+  "output_id": "29c73f60-dd6f-4de9-b8d4-2c1bd70ab215",
+  "chart_id": "owid_co2_mitigation_15c",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The data table provides a clear set of values showing the mitigation start years and the corresponding emissions values in 2100, though some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The rapid decline from over 539 million to 0 over a 20-year span is easily calculated and interpreted from the provided data.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title and expert domain story clearly define the subject as CO2 mitigation pathways for a 1.5°C global warming target.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides excellent context on how the mitigation curves are constructed based on different start years.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No explicit stakeholder context was provided, though the real-world implications for policymakers and society are highly inferable.\"\n      },\n      \"overall\": 3.6\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart illustrates the CO₂ emission pathways required to limit global average temperature rise to below 1.5°C, depending on the year global mitigation efforts began [DIRECT]. The data is sourced from Our World in Data's climate mitigation datasets [DIRECT]. It presents a series of hypothetical scenarios starting from different years between 2000 and 2024, showing the required emissions level remaining by the year 2100 [DIRECT].\",\n    \"domain_specific_explanations\": \"In climate science, the 1.5°C target is a critical threshold established under the Paris Agreement to prevent the most catastrophic impacts of climate change [SPECULATIVE: IPCC / Paris Agreement]. The data shows that if global emissions had peaked and begun to reduce in the year 2000, the allowable CO₂ emissions in 2100 would be 539,600,000 units [DIRECT]. However, because mitigation was delayed, the allowable emissions in 2100 decrease rapidly for later start years [DERIVED: Comparing the value of 539.6 million for a year 2000 start to 13.16 million for a year 2010 start]. For any mitigation start year from 2020 onward, the allowable emissions in 2100 must be exactly 0 [DIRECT]. This reflects the concept of a 'carbon budget'—as we continue to emit CO₂ without mitigation, we consume the remaining budget, requiring much steeper and more immediate decarbonization in later years to avoid exceeding the temperature threshold [SPECULATIVE: Climate Science].\",\n    \"real_world_significance\": \"This data highlights the severe 'cost of delay' in global climate policy [SPECULATIVE: Climate Economics]. Because humanity failed to initiate coordinated global mitigation in the early 2000s, the transition pathways have become incredibly steep [SPECULATIVE: Climate Policy]. Since the allowable emissions in 2100 hit zero for any start year of 2020 or later [DERIVED: Observing that start years 2020 through 2024 all have a value of 0], we are now in an era where gradual transitions are no longer an option; immediate, aggressive decarbonization and potentially net-negative emissions technologies are required to keep warming below 1.5°C [SPECULATIVE: Environmental Policy]. This reality directly impacts global energy policies, infrastructure investments, and international climate negotiations [SPECULATIVE: Global Governance].\",\n    \"other\": \"The allowable emissions in 2100 decreased by approximately 97.5% if mitigation started in 2010 compared to if it had started in 2000 [DERIVED: Calculating (539,600,000 - 13,162,000) / 539,600,000].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart illustrates the CO₂ emission pathways required to limit global average temperature rise to below 1.5°C, depending on the year global mitigation efforts began\",\n      \"The data is sourced from Our World in Data's climate mitigation datasets\",\n      \"It presents a series of hypothetical scenarios starting from different years between 2000 and 2024, showing the required emissions level remaining by the year 2100\",\n      \"If global emissions had peaked and begun to reduce in the year 2000, the allowable CO₂ emissions in 2100 would be 539,600,000 units\",\n      \"For any mitigation start year from 2020 onward, the allowable emissions in 2100 must be exactly 0\"\n    ],\n    \"derived_claims\": [\n      \"However, because mitigation was delayed, the allowable emissions in 2100 decrease rapidly for later start years [DERIVED: Comparing the value of 539.6 million for a year 2000 start to 13.16 million for a year 2010 start]\",\n      \"Since the allowable emissions in 2100 hit zero for any start year of 2020 or later [DERIVED: Observing that start years 2020 through 2024 all have a value of 0]\",\n      \"The allowable emissions in 2100 decreased by approximately 97.5% if mitigation started in 2010 compared to if it had started in 2000 [DERIVED: Calculating (539,600,000 - 13,162,000) / 539,600,000]\"\n    ],\n    \"speculative_claims\": [\n      \"In climate science, the 1.5°C target is a critical threshold established under the Paris Agreement to prevent the most catastrophic impacts of climate change [SPECULATIVE: IPCC / Paris Agreement]\",\n      \"This reflects the concept of a 'carbon budget'—as we continue to emit CO₂ without mitigation, we consume the remaining budget, requiring much steeper and more immediate decarbonization in later years to avoid exceeding the temperature threshold [SPECULATIVE: Climate Science]\",\n      \"This data highlights the severe 'cost of delay' in global climate policy [SPECULATIVE: Climate Economics]\",\n      \"Because humanity failed to initiate coordinated global mitigation in the early 2000s, the transition pathways have become incredibly steep [SPECULATIVE: Climate Policy]\",\n      \"immediate, aggressive decarbonization and potentially net-negative emissions technologies are required to keep warming below 1.5°C [SPECULATIVE: Environmental Policy]\",\n      \"This reality directly impacts global energy policies, infrastructure investments, and international climate negotiations [SPECULATIVE: Global Governance]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 5,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides a clear set of values showing the mitigation start years and the corresponding emissions values in 2100, though some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The rapid decline from over 539 million to 0 over a 20-year span is easily calculated and interpreted from the provided data."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title and expert domain story clearly define the subject as CO2 mitigation pathways for a 1.5°C global warming target."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides excellent context on how the mitigation curves are constructed based on different start years."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No explicit stakeholder context was provided, though the real-world implications for policymakers and society are highly inferable."
+        },
+        "overall": 3.6
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart illustrates the CO₂ emission pathways required to limit global average temperature rise to below 1.5°C, depending on the year global mitigation efforts began [DIRECT]. The data is sourced from Our World in Data's climate mitigation datasets [DIRECT]. It presents a series of hypothetical scenarios starting from different years between 2000 and 2024, showing the required emissions level remaining by the year 2100 [DIRECT].",
+      "domain_specific_explanations": "In climate science, the 1.5°C target is a critical threshold established under the Paris Agreement to prevent the most catastrophic impacts of climate change [SPECULATIVE: IPCC / Paris Agreement]. The data shows that if global emissions had peaked and begun to reduce in the year 2000, the allowable CO₂ emissions in 2100 would be 539,600,000 units [DIRECT]. However, because mitigation was delayed, the allowable emissions in 2100 decrease rapidly for later start years [DERIVED: Comparing the value of 539.6 million for a year 2000 start to 13.16 million for a year 2010 start]. For any mitigation start year from 2020 onward, the allowable emissions in 2100 must be exactly 0 [DIRECT]. This reflects the concept of a 'carbon budget'—as we continue to emit CO₂ without mitigation, we consume the remaining budget, requiring much steeper and more immediate decarbonization in later years to avoid exceeding the temperature threshold [SPECULATIVE: Climate Science].",
+      "real_world_significance": "This data highlights the severe 'cost of delay' in global climate policy [SPECULATIVE: Climate Economics]. Because humanity failed to initiate coordinated global mitigation in the early 2000s, the transition pathways have become incredibly steep [SPECULATIVE: Climate Policy]. Since the allowable emissions in 2100 hit zero for any start year of 2020 or later [DERIVED: Observing that start years 2020 through 2024 all have a value of 0], we are now in an era where gradual transitions are no longer an option; immediate, aggressive decarbonization and potentially net-negative emissions technologies are required to keep warming below 1.5°C [SPECULATIVE: Environmental Policy]. This reality directly impacts global energy policies, infrastructure investments, and international climate negotiations [SPECULATIVE: Global Governance].",
+      "other": "The allowable emissions in 2100 decreased by approximately 97.5% if mitigation started in 2010 compared to if it had started in 2000 [DERIVED: Calculating (539,600,000 - 13,162,000) / 539,600,000]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart illustrates the CO₂ emission pathways required to limit global average temperature rise to below 1.5°C, depending on the year global mitigation efforts began",
+        "The data is sourced from Our World in Data's climate mitigation datasets",
+        "It presents a series of hypothetical scenarios starting from different years between 2000 and 2024, showing the required emissions level remaining by the year 2100",
+        "If global emissions had peaked and begun to reduce in the year 2000, the allowable CO₂ emissions in 2100 would be 539,600,000 units",
+        "For any mitigation start year from 2020 onward, the allowable emissions in 2100 must be exactly 0"
+      ],
+      "derived_claims": [
+        "However, because mitigation was delayed, the allowable emissions in 2100 decrease rapidly for later start years [DERIVED: Comparing the value of 539.6 million for a year 2000 start to 13.16 million for a year 2010 start]",
+        "Since the allowable emissions in 2100 hit zero for any start year of 2020 or later [DERIVED: Observing that start years 2020 through 2024 all have a value of 0]",
+        "The allowable emissions in 2100 decreased by approximately 97.5% if mitigation started in 2010 compared to if it had started in 2000 [DERIVED: Calculating (539,600,000 - 13,162,000) / 539,600,000]"
+      ],
+      "speculative_claims": [
+        "In climate science, the 1.5°C target is a critical threshold established under the Paris Agreement to prevent the most catastrophic impacts of climate change [SPECULATIVE: IPCC / Paris Agreement]",
+        "This reflects the concept of a 'carbon budget'—as we continue to emit CO₂ without mitigation, we consume the remaining budget, requiring much steeper and more immediate decarbonization in later years to avoid exceeding the temperature threshold [SPECULATIVE: Climate Science]",
+        "This data highlights the severe 'cost of delay' in global climate policy [SPECULATIVE: Climate Economics]",
+        "Because humanity failed to initiate coordinated global mitigation in the early 2000s, the transition pathways have become incredibly steep [SPECULATIVE: Climate Policy]",
+        "immediate, aggressive decarbonization and potentially net-negative emissions technologies are required to keep warming below 1.5°C [SPECULATIVE: Environmental Policy]",
+        "This reality directly impacts global energy policies, infrastructure investments, and international climate negotiations [SPECULATIVE: Global Governance]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 5,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15598.537583020516,
+  "created_at": "2026-07-07T22:47:30.762263Z"
+}

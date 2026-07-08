@@ -1,0 +1,67 @@
+{
+  "output_id": "dc535eed-e54a-4e0c-93d8-282a6e13d34b",
+  "chart_id": "owid_malnutrition_deaths_by_age",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image shows a line graph with multiple lines representing different age groups, but the exact values are not provided.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart shows a clear trend of decreasing deaths from protein-energy malnutrition over time, with some fluctuations.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is related to health and nutrition, specifically focusing on deaths caused by protein-energy malnutrition.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the estimated annual number of deaths from protein-energy malnutrition, which results from insufficient caloric and protein intake, by age group, worldwide. [DIRECT] The data spans from 1980 to 2023. [DIRECT] The chart is produced by Our World in Data. [DIRECT]\",\n    \"domain_specific_explanations\": \"Protein-energy malnutrition is a condition that occurs when the body does not receive enough protein and calories to maintain good health. [SPECULATIVE: nutrition domain] It can affect people of all ages but is particularly dangerous for children under 5 and the elderly. [SPECULATIVE: nutrition domain] The chart shows that deaths from protein-energy malnutrition have decreased over time, with some fluctuations. [DERIVED: observed trend] The age groups represented are under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old. [DIRECT]\",\n    \"real_world_significance\": \"This data matters because it highlights the impact of protein-energy malnutrition on global health. [SPECULATIVE: public health domain] The decrease in deaths over time suggests improvements in nutrition, healthcare, or economic conditions. [SPECULATIVE: public health domain] However, the estimates come with wide uncertainties, especially for countries with poor vital registration. [DIRECT] This data can inform policies and interventions aimed at reducing malnutrition and improving health outcomes. [SPECULATIVE: public health domain]\",\n    \"other\": \"The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification. [DIRECT] This suggests that while the data shows a clear trend, there may be limitations to its accuracy. [DERIVED: interpretation of note]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the estimated annual number of deaths from protein-energy malnutrition, which results from insufficient caloric and protein intake, by age group, worldwide.\",\n      \"The data spans from 1980 to 2023.\",\n      \"The chart is produced by Our World in Data.\",\n      \"The age groups represented are under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old.\",\n      \"Estimates come with wide uncertainties, especially for countries with poor vital registration.\",\n      \"Comparisons between countries and over time may be affected by differences in diagnostic practices and death certification.\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows that deaths from protein-energy malnutrition have decreased over time, with some fluctuations.\",\n      \"This suggests that while the data shows a clear trend, there may be limitations to its accuracy.\"\n    ],\n    \"speculative_claims\": [\n      \"Protein-energy malnutrition is a condition that occurs when the body does not receive enough protein and calories to maintain good health.\",\n      \"It can affect people of all ages but is particularly dangerous for children under 5 and the elderly.\",\n      \"This data matters because it highlights the impact of protein-energy malnutrition on global health.\",\n      \"The decrease in deaths over time suggests improvements in nutrition, healthcare, or economic conditions.\",\n      \"This data can inform policies and interventions aimed at reducing malnutrition and improving health outcomes.\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 6,\n    \"derived_count\": 2,\n    \"speculative_count\": 9\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image shows a line graph with multiple lines representing different age groups, but the exact values are not provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart shows a clear trend of decreasing deaths from protein-energy malnutrition over time, with some fluctuations."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is related to health and nutrition, specifically focusing on deaths caused by protein-energy malnutrition."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the estimated annual number of deaths from protein-energy malnutrition, which results from insufficient caloric and protein intake, by age group, worldwide. [DIRECT] The data spans from 1980 to 2023. [DIRECT] The chart is produced by Our World in Data. [DIRECT]",
+      "domain_specific_explanations": "Protein-energy malnutrition is a condition that occurs when the body does not receive enough protein and calories to maintain good health. [SPECULATIVE: nutrition domain] It can affect people of all ages but is particularly dangerous for children under 5 and the elderly. [SPECULATIVE: nutrition domain] The chart shows that deaths from protein-energy malnutrition have decreased over time, with some fluctuations. [DERIVED: observed trend] The age groups represented are under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old. [DIRECT]",
+      "real_world_significance": "This data matters because it highlights the impact of protein-energy malnutrition on global health. [SPECULATIVE: public health domain] The decrease in deaths over time suggests improvements in nutrition, healthcare, or economic conditions. [SPECULATIVE: public health domain] However, the estimates come with wide uncertainties, especially for countries with poor vital registration. [DIRECT] This data can inform policies and interventions aimed at reducing malnutrition and improving health outcomes. [SPECULATIVE: public health domain]",
+      "other": "The chart notes that comparisons between countries and over time may be affected by differences in diagnostic practices and death certification. [DIRECT] This suggests that while the data shows a clear trend, there may be limitations to its accuracy. [DERIVED: interpretation of note]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the estimated annual number of deaths from protein-energy malnutrition, which results from insufficient caloric and protein intake, by age group, worldwide.",
+        "The data spans from 1980 to 2023.",
+        "The chart is produced by Our World in Data.",
+        "The age groups represented are under-5s, 5-14 years old, 15-49 years old, 50-69 years old, and 70+ years old.",
+        "Estimates come with wide uncertainties, especially for countries with poor vital registration.",
+        "Comparisons between countries and over time may be affected by differences in diagnostic practices and death certification."
+      ],
+      "derived_claims": [
+        "The chart shows that deaths from protein-energy malnutrition have decreased over time, with some fluctuations.",
+        "This suggests that while the data shows a clear trend, there may be limitations to its accuracy."
+      ],
+      "speculative_claims": [
+        "Protein-energy malnutrition is a condition that occurs when the body does not receive enough protein and calories to maintain good health.",
+        "It can affect people of all ages but is particularly dangerous for children under 5 and the elderly.",
+        "This data matters because it highlights the impact of protein-energy malnutrition on global health.",
+        "The decrease in deaths over time suggests improvements in nutrition, healthcare, or economic conditions.",
+        "This data can inform policies and interventions aimed at reducing malnutrition and improving health outcomes."
+      ],
+      "total_flag_count": 17,
+      "direct_count": 6,
+      "derived_count": 2,
+      "speculative_count": 9
+    }
+  },
+  "tokens_used": {
+    "input": 2152,
+    "output": 874
+  },
+  "latency_ms": 3324.16329102125,
+  "created_at": "2026-07-08T13:14:56.792332Z"
+}

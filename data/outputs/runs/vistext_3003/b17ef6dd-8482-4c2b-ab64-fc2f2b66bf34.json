@@ -1,0 +1,74 @@
+{
+  "output_id": "b17ef6dd-8482-4c2b-ab64-fc2f2b66bf34",
+  "chart_id": "vistext_3003",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values are not provided in a table, but the visual line chart allows for estimation of key historical data points.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The overall trend and historical volatility can be derived directly from the visual line plot.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title clearly defines the subject as US Real GDP growth from 1930 to 2020, which is a standard macroeconomic indicator.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context or domain story was provided in the metadata.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 1.4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020 [DIRECT]. This period spans ninety years of American economic history, capturing major macroeconomic cycles and structural shifts [DERIVED: calculated 2020 - 1930 = 90 years]. The data is typically compiled by government statistical agencies like the Bureau of Economic Analysis (BEA) to track national economic health [SPECULATIVE: Bureau of Economic Analysis].\",\n    \"domain_specific_explanations\": \"Real GDP growth measures the inflation-adjusted percent change in the value of all goods and services produced by the economy over a year [SPECULATIVE: Macroeconomics]. Positive values indicate economic expansion, while negative values represent economic contraction or recession [SPECULATIVE: Macroeconomics]. The chart shows extreme volatility in the first half of the timeline (1930–1950), with growth rates swinging from below -10% to nearly +20% [DERIVED: observed the y-axis values of the line peaks and troughs between 1930 and 1950]. After 1950, the fluctuations become much smaller, a phenomenon economists often refer to as the 'Great Moderation,' where monetary and fiscal policies helped stabilize economic cycles [SPECULATIVE: Macroeconomics].\",\n    \"real_world_significance\": \"The deepest contraction shown occurs in the early 1930s, corresponding to the Great Depression, where annual real GDP growth fell below -10% [DERIVED: observed the line dropping below -0.10 in the early 1930s]. The highest peak occurs in the early 1940s, representing the massive wartime production boom during World War II, where growth approached 19% [DERIVED: observed the line peaking near 0.19 in the early 1940s]. A sharp post-war contraction is visible around 1946 as the economy transitioned back to peacetime production [SPECULATIVE: US Economic History]. More recent notable contractions include the Great Recession around 2009 (dropping to approximately -2.5%) and the COVID-19 pandemic downturn in 2020 [DERIVED: observed the negative dips near 2009 and 2020]. These economic fluctuations directly impact employment rates, business investments, and government policy decisions [SPECULATIVE: Macroeconomics].\",\n    \"other\": \"\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020\"\n    ],\n    \"derived_claims\": [\n      \"This period spans ninety years of American economic history, capturing major macroeconomic cycles and structural shifts\",\n      \"The chart shows extreme volatility in the first half of the timeline (1930–1950), with growth rates swinging from below -10% to nearly +20%\",\n      \"The deepest contraction shown occurs in the early 1930s, corresponding to the Great Depression, where annual real GDP growth fell below -10%\",\n      \"The highest peak occurs in the early 1940s, representing the massive wartime production boom during World War II, where growth approached 19%\",\n      \"More recent notable contractions include the Great Recession around 2009 (dropping to approximately -2.5%) and the COVID-19 pandemic downturn in 2020\"\n    ],\n    \"speculative_claims\": [\n      \"The data is typically compiled by government statistical agencies like the Bureau of Economic Analysis (BEA) to track national economic health\",\n      \"Real GDP growth measures the inflation-adjusted percent change in the value of all goods and services produced by the economy over a year\",\n      \"Positive values indicate economic expansion, while negative values represent economic contraction or recession\",\n      \"After 1950, the fluctuations become much smaller, a phenomenon economists often refer to as the 'Great Moderation,' where monetary and fiscal policies helped stabilize economic cycles\",\n      \"A sharp post-war contraction is visible around 1946 as the economy transitioned back to peacetime production\",\n      \"These economic fluctuations directly impact employment rates, business investments, and government policy decisions\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values are not provided in a table, but the visual line chart allows for estimation of key historical data points."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The overall trend and historical volatility can be derived directly from the visual line plot."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title clearly defines the subject as US Real GDP growth from 1930 to 2020, which is a standard macroeconomic indicator."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context or domain story was provided in the metadata."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 1.4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020 [DIRECT]. This period spans ninety years of American economic history, capturing major macroeconomic cycles and structural shifts [DERIVED: calculated 2020 - 1930 = 90 years]. The data is typically compiled by government statistical agencies like the Bureau of Economic Analysis (BEA) to track national economic health [SPECULATIVE: Bureau of Economic Analysis].",
+      "domain_specific_explanations": "Real GDP growth measures the inflation-adjusted percent change in the value of all goods and services produced by the economy over a year [SPECULATIVE: Macroeconomics]. Positive values indicate economic expansion, while negative values represent economic contraction or recession [SPECULATIVE: Macroeconomics]. The chart shows extreme volatility in the first half of the timeline (1930–1950), with growth rates swinging from below -10% to nearly +20% [DERIVED: observed the y-axis values of the line peaks and troughs between 1930 and 1950]. After 1950, the fluctuations become much smaller, a phenomenon economists often refer to as the 'Great Moderation,' where monetary and fiscal policies helped stabilize economic cycles [SPECULATIVE: Macroeconomics].",
+      "real_world_significance": "The deepest contraction shown occurs in the early 1930s, corresponding to the Great Depression, where annual real GDP growth fell below -10% [DERIVED: observed the line dropping below -0.10 in the early 1930s]. The highest peak occurs in the early 1940s, representing the massive wartime production boom during World War II, where growth approached 19% [DERIVED: observed the line peaking near 0.19 in the early 1940s]. A sharp post-war contraction is visible around 1946 as the economy transitioned back to peacetime production [SPECULATIVE: US Economic History]. More recent notable contractions include the Great Recession around 2009 (dropping to approximately -2.5%) and the COVID-19 pandemic downturn in 2020 [DERIVED: observed the negative dips near 2009 and 2020]. These economic fluctuations directly impact employment rates, business investments, and government policy decisions [SPECULATIVE: Macroeconomics].",
+      "other": ""
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the annual growth rate of real Gross Domestic Product (GDP) in the United States from 1930 to 2020"
+      ],
+      "derived_claims": [
+        "This period spans ninety years of American economic history, capturing major macroeconomic cycles and structural shifts",
+        "The chart shows extreme volatility in the first half of the timeline (1930–1950), with growth rates swinging from below -10% to nearly +20%",
+        "The deepest contraction shown occurs in the early 1930s, corresponding to the Great Depression, where annual real GDP growth fell below -10%",
+        "The highest peak occurs in the early 1940s, representing the massive wartime production boom during World War II, where growth approached 19%",
+        "More recent notable contractions include the Great Recession around 2009 (dropping to approximately -2.5%) and the COVID-19 pandemic downturn in 2020"
+      ],
+      "speculative_claims": [
+        "The data is typically compiled by government statistical agencies like the Bureau of Economic Analysis (BEA) to track national economic health",
+        "Real GDP growth measures the inflation-adjusted percent change in the value of all goods and services produced by the economy over a year",
+        "Positive values indicate economic expansion, while negative values represent economic contraction or recession",
+        "After 1950, the fluctuations become much smaller, a phenomenon economists often refer to as the 'Great Moderation,' where monetary and fiscal policies helped stabilize economic cycles",
+        "A sharp post-war contraction is visible around 1946 as the economy transitioned back to peacetime production",
+        "These economic fluctuations directly impact employment rates, business investments, and government policy decisions"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12271.661499980837,
+  "created_at": "2026-07-07T22:24:12.304746Z"
+}

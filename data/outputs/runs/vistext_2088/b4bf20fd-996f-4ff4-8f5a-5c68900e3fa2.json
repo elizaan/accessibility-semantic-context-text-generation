@@ -1,0 +1,92 @@
+{
+  "output_id": "b4bf20fd-996f-4ff4-8f5a-5c68900e3fa2",
+  "chart_id": "vistext_2088",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The data table provides exact values for life expectancy at birth in Madagascar from 2008 to 2017.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The data shows a consistent increase in life expectancy, but the magnitude of the trend is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is related to health and demographics, but more context about the specific domain is not provided.\"},\n      \"domain_expert_context\": {\"score\": 0, \"justification\": \"No expert domain story is provided.\"},\n      \"stakeholder_impact\": {\"score\": 0, \"justification\": \"No stakeholder context is provided.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": [\n      \"This chart shows life expectancy at birth in Madagascar from 2008 to 2018. [DIRECT]\",\n      \"The data is presented as a time series, with each year on the x-axis and life expectancy on the y-axis. [DERIVED: from axis labels]\",\n      \"The chart is likely produced by a government agency, research institution, or international organization, but the specific producer is not known. [SPECULATIVE: general knowledge of data sources]\"\n    ],\n    \"domain_specific_explanations\": [\n      \"Life expectancy at birth is a measure of the average number of years a newborn is expected to live. [DIRECT]\",\n      \"The data shows a consistent increase in life expectancy over the years, indicating improvements in healthcare and living standards. [DERIVED: from data table]\",\n      \"The life expectancy values range from 62.51 years in 2007 to 66.68 years in 2017, indicating a steady increase. [DERIVED: from data table]\"\n    ],\n    \"real_world_significance\": [\n      \"The increasing life expectancy in Madagascar has significant implications for the country's healthcare system, economic development, and social welfare. [SPECULATIVE: general knowledge of demographics and healthcare]\",\n      \"The trend suggests that efforts to improve healthcare and living standards are having a positive impact. [SPECULATIVE: general knowledge of healthcare and economics]\",\n      \"However, the exact decisions that depend on this trend are not specified, as no stakeholder context is provided. [SPECULATIVE: general knowledge of data use]\"\n    ],\n    \"other\": [\n      \"The data only goes up to 2017, so it does not reflect more recent trends. [DERIVED: from data table]\",\n      \"The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy. [DERIVED: from data table]\"\n    ]\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows life expectancy at birth in Madagascar from 2008 to 2018.\",\n      \"Life expectancy at birth is a measure of the average number of years a newborn is expected to live.\"\n    ],\n    \"derived_claims\": [\n      \"The data shows a consistent increase in life expectancy over the years, indicating improvements in healthcare and living standards.\",\n      \"The life expectancy values range from 62.51 years in 2007 to 66.68 years in 2017, indicating a steady increase.\",\n      \"The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy.\"\n    ],\n    \"speculative_claims\": [\n      \"The chart is likely produced by a government agency, research institution, or international organization, but the specific producer is not known.\",\n      \"The increasing life expectancy in Madagascar has significant implications for the country's healthcare system, economic development, and social welfare.\",\n      \"The trend suggests that efforts to improve healthcare and living standards are having a positive impact.\",\n      \"However, the exact decisions that depend on this trend are not specified, as no stakeholder context is provided.\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The data table provides exact values for life expectancy at birth in Madagascar from 2008 to 2017."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The data shows a consistent increase in life expectancy, but the magnitude of the trend is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is related to health and demographics, but more context about the specific domain is not provided."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story is provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": [
+        "This chart shows life expectancy at birth in Madagascar from 2008 to 2018. [DIRECT]",
+        "The data is presented as a time series, with each year on the x-axis and life expectancy on the y-axis. [DERIVED: from axis labels]",
+        "The chart is likely produced by a government agency, research institution, or international organization, but the specific producer is not known. [SPECULATIVE: general knowledge of data sources]"
+      ],
+      "domain_specific_explanations": [
+        "Life expectancy at birth is a measure of the average number of years a newborn is expected to live. [DIRECT]",
+        "The data shows a consistent increase in life expectancy over the years, indicating improvements in healthcare and living standards. [DERIVED: from data table]",
+        "The life expectancy values range from 62.51 years in 2007 to 66.68 years in 2017, indicating a steady increase. [DERIVED: from data table]"
+      ],
+      "real_world_significance": [
+        "The increasing life expectancy in Madagascar has significant implications for the country's healthcare system, economic development, and social welfare. [SPECULATIVE: general knowledge of demographics and healthcare]",
+        "The trend suggests that efforts to improve healthcare and living standards are having a positive impact. [SPECULATIVE: general knowledge of healthcare and economics]",
+        "However, the exact decisions that depend on this trend are not specified, as no stakeholder context is provided. [SPECULATIVE: general knowledge of data use]"
+      ],
+      "other": [
+        "The data only goes up to 2017, so it does not reflect more recent trends. [DERIVED: from data table]",
+        "The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy. [DERIVED: from data table]"
+      ]
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows life expectancy at birth in Madagascar from 2008 to 2018.",
+        "Life expectancy at birth is a measure of the average number of years a newborn is expected to live."
+      ],
+      "derived_claims": [
+        "The data shows a consistent increase in life expectancy over the years, indicating improvements in healthcare and living standards.",
+        "The life expectancy values range from 62.51 years in 2007 to 66.68 years in 2017, indicating a steady increase.",
+        "The chart does not provide information on the causes of death or the factors contributing to the increase in life expectancy."
+      ],
+      "speculative_claims": [
+        "The chart is likely produced by a government agency, research institution, or international organization, but the specific producer is not known.",
+        "The increasing life expectancy in Madagascar has significant implications for the country's healthcare system, economic development, and social welfare.",
+        "The trend suggests that efforts to improve healthcare and living standards are having a positive impact.",
+        "However, the exact decisions that depend on this trend are not specified, as no stakeholder context is provided."
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 2735,
+    "output": 893
+  },
+  "latency_ms": 2682.6799170230515,
+  "created_at": "2026-07-08T00:12:55.696324Z"
+}

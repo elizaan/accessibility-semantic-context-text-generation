@@ -1,0 +1,89 @@
+{
+  "output_id": "8ba9346b-6d4d-4b2f-a3ca-bcb0a0f7b043",
+  "chart_id": "vistext_6",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The DATA TABLE provides exact numerical values for fan club members for each season listed.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L2 CAPTION provides a high-level trend magnitude ('grown by about a third'), and specific magnitudes can be derived from the provided data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The CHART TITLE clearly identifies the subject as 'FC Bayern Munich' and the domain as 'fan club members' (sports/football).\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"EXPERT DOMAIN STORY is explicitly marked as '[NOT PROVIDED]'.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"STAKEHOLDER CONTEXT is explicitly marked as '[NOT PROVIDED]'.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart tracks the number of fan club members of FC Bayern Munich [DIRECT]. The data spans from the 2006/07 season up to the 2017/18 season, with an additional data point for November 2018 [DERIVED: from data table and chart title]. Membership numbers are presented in thousands [DIRECT]. The chart's primary purpose is to illustrate the growth and popularity of the football club's fan base over time [SPECULATIVE: general knowledge of sports data]. Such data is typically produced by the club itself or by sports statistics organizations to monitor engagement and growth [SPECULATIVE: general knowledge of data sources].\",\n    \"domain_specific_explanations\": \"FC Bayern Munich is a prominent professional football club based in Munich, Germany, widely recognized as one of the most successful clubs in European football history [SPECULATIVE: sports knowledge]. 'Fan club members' refers to individuals who have officially joined and often pay a fee to be part of an organized fan club affiliated with the team, indicating a higher level of commitment than general supporters [SPECULATIVE: sports knowledge]. These numbers are a key indicator of a club's popularity, brand strength, and potential for revenue generation beyond matchday income [SPECULATIVE: sports business]. The data shows a consistent upward trend in fan club membership over the period [DERIVED: visual inspection of data table values]. In the 2006/07 season, there were 156.67 thousand fan club members [DIRECT]. By the 2017/18 season, this number had grown to 330.56 thousand members [DIRECT]. This represents an increase of approximately 173.89 thousand members [DERIVED: 330.56 - 156.67]. This is a growth of about 111% from 2006/07 to 2017/18 [DERIVED: (173.89 / 156.67) * 100]. The L2 caption states that 'The number of fans has grown by about a third' [DIRECT].\",\n    \"real_world_significance\": \"The continuous growth in fan club membership suggests increasing global appeal and brand loyalty for FC Bayern Munich [SPECULATIVE: sports marketing]. A larger, engaged fan base translates into increased revenue streams for the club, including membership fees, merchandise sales, and potentially higher sponsorship deals due to greater market reach [SPECULATIVE: sports business]. This growth can also enhance the club's influence in football governance and media negotiations, giving it a stronger voice in the sport [SPECULATIVE: sports business]. Sustained growth indicates successful marketing strategies and consistent on-field performance, reinforcing the club's status as a major European football power [SPECULATIVE: sports marketing/performance]. If this trend continues, FC Bayern Munich could further solidify its financial position and global reach, potentially attracting more top talent and expanding its international fan base even further [SPECULATIVE: sports business/future trends].\",\n    \"other\": \"The data table contains an entry 'Nov,2018.0' which appears to be an error or placeholder, as it lists 0 members for November 2018, which is inconsistent with the preceding strong growth trend [DERIVED: comparison with trend]. The L2 caption's claim of 'about a third' growth is significantly lower than the actual calculated growth of over 100% between the earliest (2006/07) and latest complete seasons (2017/18) provided in the data table [DERIVED: comparison of L2 claim with data table calculation].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart tracks the number of fan club members of FC Bayern Munich\",\n      \"Membership numbers are presented in thousands.\",\n      \"In the 2006/07 season, there were 156.67 thousand fan club members.\",\n      \"By the 2017/18 season, this number had grown to 330.56 thousand members.\",\n      \"The L2 caption states that 'The number of fans has grown by about a third.'\"\n    ],\n    \"derived_claims\": [\n      \"The data spans from the 2006/07 season up to the 2017/18 season, with an additional data point for November 2018.\",\n      \"The data shows a consistent upward trend in fan club membership over the period.\",\n      \"This represents an increase of approximately 173.89 thousand members\",\n      \"This is a growth of about 111% from 2006/07 to 2017/18.\",\n      \"The data table contains an entry 'Nov,2018.0' which appears to be an error or placeholder, as it lists 0 members for November 2018, which is inconsistent with the preceding growth trend.\",\n      \"The L2 caption's claim of 'about a third' growth is significantly lower than the actual calculated growth of over 100% between the earliest (2006/07) and latest complete seasons (2017/18) provided in the data table.\"\n    ],\n    \"speculative_claims\": [\n      \"The chart's primary purpose is to illustrate the growth and popularity of the football club's fan base over time\",\n      \"Such data is typically produced by the club itself or by sports statistics organizations to monitor engagement and growth\",\n      \"FC Bayern Munich is a prominent professional football club based in Munich, Germany, widely recognized as one of the most successful clubs in European football history\",\n      \"'Fan club members' refers to individuals who have officially joined and often pay a fee to be part of an organized fan club affiliated with the team, indicating a higher level of commitment than general supporters\",\n      \"These numbers are a key indicator of a club's popularity, brand strength, and potential for revenue generation beyond matchday income\",\n      \"The continuous growth in fan club membership suggests increasing global appeal and brand loyalty for FC Bayern Munich\",\n      \"A larger, engaged fan base translates into increased revenue streams for the club, including membership fees, merchandise sales, and potentially higher sponsorship deals due to greater market reach\",\n      \"This growth can also enhance the club's influence in football governance and media negotiations, giving it a stronger voice in the sport\",\n      \"Sustained growth indicates successful marketing strategies and consistent on-field performance, reinforcing the club's status as a major European football power\",\n      \"If this trend continues, FC Bayern Munich could further solidify its financial position and global reach, potentially attracting more top talent and expanding its international fan base even further\"\n    ],\n    \"total_flag_count\": 22,\n    \"direct_count\": 5,\n    \"derived_count\": 6,\n    \"speculative_count\": 11\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The DATA TABLE provides exact numerical values for fan club members for each season listed."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L2 CAPTION provides a high-level trend magnitude ('grown by about a third'), and specific magnitudes can be derived from the provided data table."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The CHART TITLE clearly identifies the subject as 'FC Bayern Munich' and the domain as 'fan club members' (sports/football)."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "EXPERT DOMAIN STORY is explicitly marked as '[NOT PROVIDED]'."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "STAKEHOLDER CONTEXT is explicitly marked as '[NOT PROVIDED]'."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart tracks the number of fan club members of FC Bayern Munich [DIRECT]. The data spans from the 2006/07 season up to the 2017/18 season, with an additional data point for November 2018 [DERIVED: from data table and chart title]. Membership numbers are presented in thousands [DIRECT]. The chart's primary purpose is to illustrate the growth and popularity of the football club's fan base over time [SPECULATIVE: general knowledge of sports data]. Such data is typically produced by the club itself or by sports statistics organizations to monitor engagement and growth [SPECULATIVE: general knowledge of data sources].",
+      "domain_specific_explanations": "FC Bayern Munich is a prominent professional football club based in Munich, Germany, widely recognized as one of the most successful clubs in European football history [SPECULATIVE: sports knowledge]. 'Fan club members' refers to individuals who have officially joined and often pay a fee to be part of an organized fan club affiliated with the team, indicating a higher level of commitment than general supporters [SPECULATIVE: sports knowledge]. These numbers are a key indicator of a club's popularity, brand strength, and potential for revenue generation beyond matchday income [SPECULATIVE: sports business]. The data shows a consistent upward trend in fan club membership over the period [DERIVED: visual inspection of data table values]. In the 2006/07 season, there were 156.67 thousand fan club members [DIRECT]. By the 2017/18 season, this number had grown to 330.56 thousand members [DIRECT]. This represents an increase of approximately 173.89 thousand members [DERIVED: 330.56 - 156.67]. This is a growth of about 111% from 2006/07 to 2017/18 [DERIVED: (173.89 / 156.67) * 100]. The L2 caption states that 'The number of fans has grown by about a third' [DIRECT].",
+      "real_world_significance": "The continuous growth in fan club membership suggests increasing global appeal and brand loyalty for FC Bayern Munich [SPECULATIVE: sports marketing]. A larger, engaged fan base translates into increased revenue streams for the club, including membership fees, merchandise sales, and potentially higher sponsorship deals due to greater market reach [SPECULATIVE: sports business]. This growth can also enhance the club's influence in football governance and media negotiations, giving it a stronger voice in the sport [SPECULATIVE: sports business]. Sustained growth indicates successful marketing strategies and consistent on-field performance, reinforcing the club's status as a major European football power [SPECULATIVE: sports marketing/performance]. If this trend continues, FC Bayern Munich could further solidify its financial position and global reach, potentially attracting more top talent and expanding its international fan base even further [SPECULATIVE: sports business/future trends].",
+      "other": "The data table contains an entry 'Nov,2018.0' which appears to be an error or placeholder, as it lists 0 members for November 2018, which is inconsistent with the preceding strong growth trend [DERIVED: comparison with trend]. The L2 caption's claim of 'about a third' growth is significantly lower than the actual calculated growth of over 100% between the earliest (2006/07) and latest complete seasons (2017/18) provided in the data table [DERIVED: comparison of L2 claim with data table calculation]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart tracks the number of fan club members of FC Bayern Munich",
+        "Membership numbers are presented in thousands.",
+        "In the 2006/07 season, there were 156.67 thousand fan club members.",
+        "By the 2017/18 season, this number had grown to 330.56 thousand members.",
+        "The L2 caption states that 'The number of fans has grown by about a third.'"
+      ],
+      "derived_claims": [
+        "The data spans from the 2006/07 season up to the 2017/18 season, with an additional data point for November 2018.",
+        "The data shows a consistent upward trend in fan club membership over the period.",
+        "This represents an increase of approximately 173.89 thousand members",
+        "This is a growth of about 111% from 2006/07 to 2017/18.",
+        "The data table contains an entry 'Nov,2018.0' which appears to be an error or placeholder, as it lists 0 members for November 2018, which is inconsistent with the preceding growth trend.",
+        "The L2 caption's claim of 'about a third' growth is significantly lower than the actual calculated growth of over 100% between the earliest (2006/07) and latest complete seasons (2017/18) provided in the data table."
+      ],
+      "speculative_claims": [
+        "The chart's primary purpose is to illustrate the growth and popularity of the football club's fan base over time",
+        "Such data is typically produced by the club itself or by sports statistics organizations to monitor engagement and growth",
+        "FC Bayern Munich is a prominent professional football club based in Munich, Germany, widely recognized as one of the most successful clubs in European football history",
+        "'Fan club members' refers to individuals who have officially joined and often pay a fee to be part of an organized fan club affiliated with the team, indicating a higher level of commitment than general supporters",
+        "These numbers are a key indicator of a club's popularity, brand strength, and potential for revenue generation beyond matchday income",
+        "The continuous growth in fan club membership suggests increasing global appeal and brand loyalty for FC Bayern Munich",
+        "A larger, engaged fan base translates into increased revenue streams for the club, including membership fees, merchandise sales, and potentially higher sponsorship deals due to greater market reach",
+        "This growth can also enhance the club's influence in football governance and media negotiations, giving it a stronger voice in the sport",
+        "Sustained growth indicates successful marketing strategies and consistent on-field performance, reinforcing the club's status as a major European football power",
+        "If this trend continues, FC Bayern Munich could further solidify its financial position and global reach, potentially attracting more top talent and expanding its international fan base even further"
+      ],
+      "total_flag_count": 22,
+      "direct_count": 5,
+      "derived_count": 6,
+      "speculative_count": 11
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 21393.32525001373,
+  "created_at": "2026-07-07T19:35:00.344895Z"
+}

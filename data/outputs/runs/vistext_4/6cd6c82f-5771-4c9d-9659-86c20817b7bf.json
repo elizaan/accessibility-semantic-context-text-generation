@@ -1,0 +1,81 @@
+{
+  "output_id": "6cd6c82f-5771-4c9d-9659-86c20817b7bf",
+  "chart_id": "vistext_4",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"Data table with exact values is explicitly marked as [NOT PROVIDED].\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No L3 caption, expert domain story, or linked description is provided to describe trends or magnitudes.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The chart title 'Which of the following social and economic issues concern you the most ?' clearly indicates the subject domain, but no further context is given.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"Domain expert story is explicitly marked as [NOT PROVIDED].\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"Stakeholder context is explicitly marked as [NOT PROVIDED].\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays the results of a survey that asked respondents to identify the social and economic issues that concern them the most [DIRECT]. The vertical axis represents the \\\"Share of respondents\\\" [DIRECT], while the horizontal axis lists various \\\"Response\\\" categories, which are specific social and economic issues [DIRECT]. The survey likely allowed respondents to select multiple issues, as the sum of the shares for individual concerns significantly exceeds 100% [DERIVED: sum of percentages exceeds 100%]. This type of chart is commonly used in public opinion polling to gauge societal priorities [SPECULATIVE: public opinion polling].\",\n    \"domain_specific_explanations\": \"\\\"Finding a job\\\" is identified as the most pressing concern, with approximately 62% of respondents selecting it [DERIVED: read from bar height]. \\\"Environment\\\" is the second most frequently cited concern, with about 37% of respondents [DERIVED: read from bar height]. Other significant concerns, each selected by roughly 20-25% of respondents, include \\\"Immigration,\\\" \\\"Recession and financial crisis,\\\" \\\"Sanitary system,\\\" \\\"School system,\\\" \\\"Security,\\\" and \\\"Taxes\\\" [DERIVED: read from bar heights and grouped]. Issues such as \\\"None of these,\\\" \\\"Nuclear,\\\" \\\"Social housing,\\\" and \\\"Tax havens\\\" are among the least frequently cited concerns, each selected by less than 10% of respondents [DERIVED: read from bar heights and grouped]. The high percentage for \\\"Finding a job\\\" indicates a strong public focus on employment and economic stability [DERIVED: highest concern, SPECULATIVE: economic indicators].\",\n    \"real_world_significance\": \"The findings can guide policymakers in prioritizing government initiatives and resource allocation to address the most pressing public concerns [SPECULATIVE: public policy]. For instance, the dominant concern about \\\"Finding a job\\\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful [DERIVED: highest concern, SPECULATIVE: public policy]. The substantial concern for the \\\"Environment\\\" highlights public demand for environmental protection and sustainability measures [DERIVED: second highest concern, SPECULATIVE: environmental policy]. The cluster of concerns around public services like the \\\"Sanitary system\\\" and \\\"School system\\\" suggests areas where public investment or reform might be expected by citizens [DERIVED: multiple concerns around 20-25%, SPECULATIVE: public services management].\",\n    \"other\": \"The absence of information regarding the survey's geographical location, date, or methodology limits the ability to draw specific conclusions about the context or representativeness of these concerns [SPECULATIVE: survey context and methodology].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays the results of a survey that asked respondents to identify the social and economic issues that concern them the most\",\n      \"The vertical axis represents the \\\"Share of respondents\\\"\",\n      \"The horizontal axis lists various \\\"Response\\\" categories, which are specific social and economic issues\"\n    ],\n    \"derived_claims\": [\n      \"The survey likely allowed respondents to select multiple issues, as the sum of the shares for individual concerns significantly exceeds 100%\",\n      \"\\\"Finding a job\\\" is identified as the most pressing concern, with approximately 62% of respondents selecting it\",\n      \"\\\"Environment\\\" is the second most frequently cited concern, with about 37% of respondents\",\n      \"Other significant concerns, each selected by roughly 20-25% of respondents, include \\\"Immigration,\\\" \\\"Recession and financial crisis,\\\" \\\"Sanitary system,\\\" \\\"School system,\\\" \\\"Security,\\\" and \\\"Taxes\\\"\",\n      \"Issues such as \\\"None of these,\\\" \\\"Nuclear,\\\" \\\"Social housing,\\\" and \\\"Tax havens\\\" are among the least frequently cited concerns, each selected by less than 10% of respondents\",\n      \"The high percentage for \\\"Finding a job\\\" indicates a strong public focus on employment and economic stability\",\n      \"For instance, the dominant concern about \\\"Finding a job\\\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful\",\n      \"The substantial concern for the \\\"Environment\\\" highlights public demand for environmental protection and sustainability measures\",\n      \"The cluster of concerns around public services like the \\\"Sanitary system\\\" and \\\"School system\\\" suggests areas where public investment or reform might be expected by citizens\"\n    ],\n    \"speculative_claims\": [\n      \"This type of chart is commonly used in public opinion polling to gauge societal priorities [public opinion polling]\",\n      \"The high percentage for \\\"Finding a job\\\" indicates a strong public focus on employment and economic stability [economic indicators]\",\n      \"The findings can guide policymakers in prioritizing government initiatives and resource allocation to address the most pressing public concerns [public policy]\",\n      \"For instance, the dominant concern about \\\"Finding a job\\\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful [public policy]\",\n      \"The substantial concern for the \\\"Environment\\\" highlights public demand for environmental protection and sustainability measures [environmental policy]\",\n      \"The cluster of concerns around public services like the \\\"Sanitary system\\\" and \\\"School system\\\" suggests areas where public investment or reform might be expected by citizens [public services management]\",\n      \"The absence of information regarding the survey's geographical location, date, or methodology limits the ability to draw specific conclusions about the context or representativeness of these concerns [survey context and methodology]\"\n    ],\n    \"total_flag_count\": 19,\n    \"direct_count\": 3,\n    \"derived_count\": 9,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "Data table with exact values is explicitly marked as [NOT PROVIDED]."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No L3 caption, expert domain story, or linked description is provided to describe trends or magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart title 'Which of the following social and economic issues concern you the most ?' clearly indicates the subject domain, but no further context is given."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "Domain expert story is explicitly marked as [NOT PROVIDED]."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "Stakeholder context is explicitly marked as [NOT PROVIDED]."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays the results of a survey that asked respondents to identify the social and economic issues that concern them the most [DIRECT]. The vertical axis represents the \"Share of respondents\" [DIRECT], while the horizontal axis lists various \"Response\" categories, which are specific social and economic issues [DIRECT]. The survey likely allowed respondents to select multiple issues, as the sum of the shares for individual concerns significantly exceeds 100% [DERIVED: sum of percentages exceeds 100%]. This type of chart is commonly used in public opinion polling to gauge societal priorities [SPECULATIVE: public opinion polling].",
+      "domain_specific_explanations": "\"Finding a job\" is identified as the most pressing concern, with approximately 62% of respondents selecting it [DERIVED: read from bar height]. \"Environment\" is the second most frequently cited concern, with about 37% of respondents [DERIVED: read from bar height]. Other significant concerns, each selected by roughly 20-25% of respondents, include \"Immigration,\" \"Recession and financial crisis,\" \"Sanitary system,\" \"School system,\" \"Security,\" and \"Taxes\" [DERIVED: read from bar heights and grouped]. Issues such as \"None of these,\" \"Nuclear,\" \"Social housing,\" and \"Tax havens\" are among the least frequently cited concerns, each selected by less than 10% of respondents [DERIVED: read from bar heights and grouped]. The high percentage for \"Finding a job\" indicates a strong public focus on employment and economic stability [DERIVED: highest concern, SPECULATIVE: economic indicators].",
+      "real_world_significance": "The findings can guide policymakers in prioritizing government initiatives and resource allocation to address the most pressing public concerns [SPECULATIVE: public policy]. For instance, the dominant concern about \"Finding a job\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful [DERIVED: highest concern, SPECULATIVE: public policy]. The substantial concern for the \"Environment\" highlights public demand for environmental protection and sustainability measures [DERIVED: second highest concern, SPECULATIVE: environmental policy]. The cluster of concerns around public services like the \"Sanitary system\" and \"School system\" suggests areas where public investment or reform might be expected by citizens [DERIVED: multiple concerns around 20-25%, SPECULATIVE: public services management].",
+      "other": "The absence of information regarding the survey's geographical location, date, or methodology limits the ability to draw specific conclusions about the context or representativeness of these concerns [SPECULATIVE: survey context and methodology]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays the results of a survey that asked respondents to identify the social and economic issues that concern them the most",
+        "The vertical axis represents the \"Share of respondents\"",
+        "The horizontal axis lists various \"Response\" categories, which are specific social and economic issues"
+      ],
+      "derived_claims": [
+        "The survey likely allowed respondents to select multiple issues, as the sum of the shares for individual concerns significantly exceeds 100%",
+        "\"Finding a job\" is identified as the most pressing concern, with approximately 62% of respondents selecting it",
+        "\"Environment\" is the second most frequently cited concern, with about 37% of respondents",
+        "Other significant concerns, each selected by roughly 20-25% of respondents, include \"Immigration,\" \"Recession and financial crisis,\" \"Sanitary system,\" \"School system,\" \"Security,\" and \"Taxes\"",
+        "Issues such as \"None of these,\" \"Nuclear,\" \"Social housing,\" and \"Tax havens\" are among the least frequently cited concerns, each selected by less than 10% of respondents",
+        "The high percentage for \"Finding a job\" indicates a strong public focus on employment and economic stability",
+        "For instance, the dominant concern about \"Finding a job\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful",
+        "The substantial concern for the \"Environment\" highlights public demand for environmental protection and sustainability measures",
+        "The cluster of concerns around public services like the \"Sanitary system\" and \"School system\" suggests areas where public investment or reform might be expected by citizens"
+      ],
+      "speculative_claims": [
+        "This type of chart is commonly used in public opinion polling to gauge societal priorities [public opinion polling]",
+        "The high percentage for \"Finding a job\" indicates a strong public focus on employment and economic stability [economic indicators]",
+        "The findings can guide policymakers in prioritizing government initiatives and resource allocation to address the most pressing public concerns [public policy]",
+        "For instance, the dominant concern about \"Finding a job\" suggests that policies aimed at job creation and economic development would likely be well-received and impactful [public policy]",
+        "The substantial concern for the \"Environment\" highlights public demand for environmental protection and sustainability measures [environmental policy]",
+        "The cluster of concerns around public services like the \"Sanitary system\" and \"School system\" suggests areas where public investment or reform might be expected by citizens [public services management]",
+        "The absence of information regarding the survey's geographical location, date, or methodology limits the ability to draw specific conclusions about the context or representativeness of these concerns [survey context and methodology]"
+      ],
+      "total_flag_count": 19,
+      "direct_count": 3,
+      "derived_count": 9,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 21211.524041951634,
+  "created_at": "2026-07-07T19:15:45.774880Z"
+}

@@ -1,0 +1,78 @@
+{
+  "output_id": "5bb026d2-90c1-4a8a-9306-c1be639e2df4",
+  "chart_id": "owid_participants_in_ongoing_state_based_conflicts_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The exact data table for all regions and the world total for the year 2024 is fully provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only a single year (2024) of data is provided, making temporal trend analysis impossible, though regional comparisons can be made.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and source clearly define the subject domain as state-based conflicts.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly defines what constitutes an 'involved state' (primary participants in interstate, intrastate, or extrasystemic conflicts).\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context or intended audience information was provided.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart presents data on the number of states involved in state-based conflicts across different regions of the world for the year 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Globally, a total of 34 states were primary participants in state-based conflicts in 2024 [DIRECT]. Africa had the highest number of involved states with 17, which represents exactly 50% of the global total [DERIVED: calculated 17 / 34]. In contrast, the Americas and Europe had the lowest involvement, with only 2 states each [DIRECT].\",\n    \"domain_specific_explanations\": \"In this dataset, 'involved states' are defined as those acting as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during the year [DIRECT]. In conflict studies, interstate conflicts involve disputes between sovereign states, intrastate conflicts refer to internal civil wars, and extrasystemic conflicts involve a state fighting a non-state actor outside its own territory [SPECULATIVE: International Relations / Conflict Studies]. The high count of 17 states in Africa indicates a high concentration of active, state-led or state-involved warfare or civil conflicts on the continent in 2024 compared to other regions [DERIVED: compared regional counts].\",\n    \"real_world_significance\": \"With 34 states globally involved in conflicts, a significant portion of the world's population and governance structures are directly impacted by state-based violence [DERIVED: inferred from 34 states being involved]. The heavy concentration of conflict-involved states in Africa (17) and Asia and Oceania (7) highlights regions where humanitarian aid, peacekeeping operations, and diplomatic interventions are likely most urgently needed [SPECULATIVE: Geopolitics and Humanitarian Aid]. Conversely, while Europe and the Americas show low direct state-level involvement (2 states each), this metric does not capture indirect involvement, such as financial aid, proxy support, or arms supply [SPECULATIVE: International Relations].\",\n    \"other\": \"The sum of the regional counts (17 in Africa, 2 in Americas, 7 in Asia and Oceania, 2 in Europe, and 6 in Middle East) equals exactly 34, which matches the 'World' total, indicating that the regional classifications are mutually exclusive and there is no double-counting of states across regions [DERIVED: summed regional values and compared to World total].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart presents data on the number of states involved in state-based conflicts across different regions of the world for the year 2024\",\n      \"The data is sourced from Our World in Data\",\n      \"Globally, a total of 34 states were primary participants in state-based conflicts in 2024\",\n      \"Americas and Europe had the lowest involvement, with only 2 states each\",\n      \"Involved states are defined as those acting as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during the year\"\n    ],\n    \"derived_claims\": [\n      \"Africa had the highest number of involved states with 17, which represents exactly 50% of the global total [DERIVED: calculated 17 / 34]\",\n      \"The high count of 17 states in Africa indicates a high concentration of active, state-led or state-involved warfare or civil conflicts on the continent in 2024 compared to other regions [DERIVED: compared regional counts]\",\n      \"With 34 states globally involved in conflicts, a significant portion of the world's population and governance structures are directly impacted by state-based violence [DERIVED: inferred from 34 states being involved]\",\n      \"The sum of the regional counts (17 in Africa, 2 in Americas, 7 in Asia and Oceania, 2 in Europe, and 6 in Middle East) equals exactly 34, which matches the 'World' total, indicating that the regional classifications are mutually exclusive and there is no double-counting of states across regions [DERIVED: summed regional values and compared to World total]\"\n    ],\n    \"speculative_claims\": [\n      \"In conflict studies, interstate conflicts involve disputes between sovereign states, intrastate conflicts refer to internal civil wars, and extrasystemic conflicts involve a state fighting a non-state actor outside its own territory [SPECULATIVE: International Relations / Conflict Studies]\",\n      \"The heavy concentration of conflict-involved states in Africa (17) and Asia and Oceania (7) highlights regions where humanitarian aid, peacekeeping operations, and diplomatic interventions are likely most urgently needed [SPECULATIVE: Geopolitics and Humanitarian Aid]\",\n      \"Conversely, while Europe and the Americas show low direct state-level involvement (2 states each), this metric does not capture indirect involvement, such as financial aid, proxy support, or arms supply [SPECULATIVE: International Relations]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The exact data table for all regions and the world total for the year 2024 is fully provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2024) of data is provided, making temporal trend analysis impossible, though regional comparisons can be made."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and source clearly define the subject domain as state-based conflicts."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story clearly defines what constitutes an 'involved state' (primary participants in interstate, intrastate, or extrasystemic conflicts)."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context or intended audience information was provided."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart presents data on the number of states involved in state-based conflicts across different regions of the world for the year 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Globally, a total of 34 states were primary participants in state-based conflicts in 2024 [DIRECT]. Africa had the highest number of involved states with 17, which represents exactly 50% of the global total [DERIVED: calculated 17 / 34]. In contrast, the Americas and Europe had the lowest involvement, with only 2 states each [DIRECT].",
+      "domain_specific_explanations": "In this dataset, 'involved states' are defined as those acting as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during the year [DIRECT]. In conflict studies, interstate conflicts involve disputes between sovereign states, intrastate conflicts refer to internal civil wars, and extrasystemic conflicts involve a state fighting a non-state actor outside its own territory [SPECULATIVE: International Relations / Conflict Studies]. The high count of 17 states in Africa indicates a high concentration of active, state-led or state-involved warfare or civil conflicts on the continent in 2024 compared to other regions [DERIVED: compared regional counts].",
+      "real_world_significance": "With 34 states globally involved in conflicts, a significant portion of the world's population and governance structures are directly impacted by state-based violence [DERIVED: inferred from 34 states being involved]. The heavy concentration of conflict-involved states in Africa (17) and Asia and Oceania (7) highlights regions where humanitarian aid, peacekeeping operations, and diplomatic interventions are likely most urgently needed [SPECULATIVE: Geopolitics and Humanitarian Aid]. Conversely, while Europe and the Americas show low direct state-level involvement (2 states each), this metric does not capture indirect involvement, such as financial aid, proxy support, or arms supply [SPECULATIVE: International Relations].",
+      "other": "The sum of the regional counts (17 in Africa, 2 in Americas, 7 in Asia and Oceania, 2 in Europe, and 6 in Middle East) equals exactly 34, which matches the 'World' total, indicating that the regional classifications are mutually exclusive and there is no double-counting of states across regions [DERIVED: summed regional values and compared to World total]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart presents data on the number of states involved in state-based conflicts across different regions of the world for the year 2024",
+        "The data is sourced from Our World in Data",
+        "Globally, a total of 34 states were primary participants in state-based conflicts in 2024",
+        "Americas and Europe had the lowest involvement, with only 2 states each",
+        "Involved states are defined as those acting as primary participants in at least one ongoing interstate, intrastate, or extrasystemic conflict during the year"
+      ],
+      "derived_claims": [
+        "Africa had the highest number of involved states with 17, which represents exactly 50% of the global total [DERIVED: calculated 17 / 34]",
+        "The high count of 17 states in Africa indicates a high concentration of active, state-led or state-involved warfare or civil conflicts on the continent in 2024 compared to other regions [DERIVED: compared regional counts]",
+        "With 34 states globally involved in conflicts, a significant portion of the world's population and governance structures are directly impacted by state-based violence [DERIVED: inferred from 34 states being involved]",
+        "The sum of the regional counts (17 in Africa, 2 in Americas, 7 in Asia and Oceania, 2 in Europe, and 6 in Middle East) equals exactly 34, which matches the 'World' total, indicating that the regional classifications are mutually exclusive and there is no double-counting of states across regions [DERIVED: summed regional values and compared to World total]"
+      ],
+      "speculative_claims": [
+        "In conflict studies, interstate conflicts involve disputes between sovereign states, intrastate conflicts refer to internal civil wars, and extrasystemic conflicts involve a state fighting a non-state actor outside its own territory [SPECULATIVE: International Relations / Conflict Studies]",
+        "The heavy concentration of conflict-involved states in Africa (17) and Asia and Oceania (7) highlights regions where humanitarian aid, peacekeeping operations, and diplomatic interventions are likely most urgently needed [SPECULATIVE: Geopolitics and Humanitarian Aid]",
+        "Conversely, while Europe and the Americas show low direct state-level involvement (2 states each), this metric does not capture indirect involvement, such as financial aid, proxy support, or arms supply [SPECULATIVE: International Relations]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11456.39075001236,
+  "created_at": "2026-07-07T23:07:41.160582Z"
+}

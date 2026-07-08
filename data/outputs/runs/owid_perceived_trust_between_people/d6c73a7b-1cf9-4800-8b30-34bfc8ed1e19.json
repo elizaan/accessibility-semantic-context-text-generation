@@ -1,0 +1,61 @@
+{
+  "output_id": "d6c73a7b-1cf9-4800-8b30-34bfc8ed1e19",
+  "chart_id": "owid_perceived_trust_between_people",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"No data values provided\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No trend magnitude information provided\"},\n      \"chart_subject_domain\": {\"score\": 1, \"justification\": \"Some information about chart subject domain provided through expert domain story\"},\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart appears to be related to social trust, specifically the perceived trust between people in a country [SPECULATIVE: based on expert domain story]. The chart is likely from a reputable source, such as Our World in Data [DIRECT: from expert domain story source].\",\n    \"domain_specific_explanations\": \"The chart is based on answers to the question 'How many people in this country trust one another?' [DIRECT: from expert domain story]. The data likely represents a share or percentage of people who responded in a certain way [DERIVED: from expert domain story].\",\n    \"real_world_significance\": \"This data matters because it can inform policymakers and researchers about social cohesion and trust in different countries [SPECULATIVE: general knowledge of social sciences]. The data can also be used to track changes in trust over time [DERIVED: from expert domain story].\",\n    \"other\": \"No additional observations can be made due to lack of provided metadata [DIRECT: from provided metadata].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\"This chart is related to social trust\", \"The chart is from Our World in Data\"],\n    \"derived_claims\": [\"The data represents a share or percentage of people who responded in a certain way\"],\n    \"speculative_claims\": [\"This chart can inform policymakers and researchers about social cohesion and trust in different countries\"],\n    \"total_flag_count\": 4,\n    \"direct_count\": 2,\n    \"derived_count\": 1,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data values provided"
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend magnitude information provided"
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "Some information about chart subject domain provided through expert domain story"
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart appears to be related to social trust, specifically the perceived trust between people in a country [SPECULATIVE: based on expert domain story]. The chart is likely from a reputable source, such as Our World in Data [DIRECT: from expert domain story source].",
+      "domain_specific_explanations": "The chart is based on answers to the question 'How many people in this country trust one another?' [DIRECT: from expert domain story]. The data likely represents a share or percentage of people who responded in a certain way [DERIVED: from expert domain story].",
+      "real_world_significance": "This data matters because it can inform policymakers and researchers about social cohesion and trust in different countries [SPECULATIVE: general knowledge of social sciences]. The data can also be used to track changes in trust over time [DERIVED: from expert domain story].",
+      "other": "No additional observations can be made due to lack of provided metadata [DIRECT: from provided metadata]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is related to social trust",
+        "The chart is from Our World in Data"
+      ],
+      "derived_claims": [
+        "The data represents a share or percentage of people who responded in a certain way"
+      ],
+      "speculative_claims": [
+        "This chart can inform policymakers and researchers about social cohesion and trust in different countries"
+      ],
+      "total_flag_count": 4,
+      "direct_count": 2,
+      "derived_count": 1,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 1167,
+    "output": 447
+  },
+  "latency_ms": 1884.5684999832883,
+  "created_at": "2026-07-08T13:10:27.751817Z"
+}

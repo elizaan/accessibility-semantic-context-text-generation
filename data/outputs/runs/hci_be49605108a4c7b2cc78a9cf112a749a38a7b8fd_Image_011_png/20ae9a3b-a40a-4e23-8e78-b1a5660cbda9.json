@@ -1,0 +1,73 @@
+{
+  "output_id": "20ae9a3b-a40a-4e23-8e78-b1a5660cbda9",
+  "chart_id": "hci_be49605108a4c7b2cc78a9cf112a749a38a7b8fd_Image_011_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No raw data values or data table were provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The general directional trends can be observed visually from the subplots, but no quantitative magnitudes or statistical summaries are provided in the text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The truncated title mentions HMD (Head-Mounted Display) and controller angular movements, pointing clearly to the Virtual Reality (VR) or Human-Computer Interaction (HCI) domain.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert context or domain story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Figure 9. The HMD and Controller angular movements, with respect to the Angular Distance to the target', illustrates spatial tracking data across eight distinct target positions [DIRECT]. These positions are spaced at 45-degree increments around a circle: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [DERIVED: read from subplot titles]. This setup is characteristic of empirical studies in virtual reality (VR) or augmented reality (AR) evaluating how accurately users can point to or look at targets using head-mounted displays and handheld controllers [SPECULATIVE: Virtual Reality / HCI research].\",\n    \"domain_specific_explanations\": \"In spatial computing, tracking the coordination between head movements (HMD) and hand movements (controllers) is essential for assessing system latency, calibration, and human motor control [SPECULATIVE: VR tracking and human motor control]. Across all eight subplots, the recorded movement data points exhibit a systematic directional bias: they consistently trail away from the target center in the exact opposite direction of the target's angular position [DERIVED: observed from the 8 subplots]. For instance, at the 0° position (east), the data points spread westward; at the 90° position (north), they spread southward [DERIVED: observed from subplots 0° and 90°]. This pattern indicates a consistent undershoot where users' physical movements do not fully reach the target angle, or it represents the incoming trajectory of the controller moving from a neutral central position toward the target [SPECULATIVE: VR tracking and human motor control].\",\n    \"real_world_significance\": \"Understanding these systematic angular errors is critical for VR/AR system designers and developers [SPECULATIVE: VR system design]. If users consistently undershoot targets at specific angles, developers can implement software-level compensations, such as dynamic target snapping, foveated interaction zones, or directional gain adjustments, to make virtual environments feel more responsive and accessible [SPECULATIVE: VR system design]. This data is also vital for hardware calibration, ensuring that controller tracking algorithms accurately align with natural human biomechanics [SPECULATIVE: VR system design].\",\n    \"other\": \"The truncation of the title's end ('Error bars repre...') suggests that statistical error bounds or confidence intervals were originally intended to be discussed alongside these spatial distributions [DERIVED: analyzed from truncated title].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart, titled 'Figure 9. The HMD and Controller angular movements, with respect to the Angular Distance to the target', illustrates spatial tracking data across eight distinct target positions.\"\n    ],\n    \"derived_claims\": [\n      \"These positions are spaced at 45-degree increments around a circle: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315°.\",\n      \"Across all eight subplots, the recorded movement data points exhibit a systematic directional bias: they consistently trail away from the target center in the exact opposite direction of the target's angular position.\",\n      \"For instance, at the 0° position (east), the data points spread westward; at the 90° position (north), they spread southward.\",\n      \"The truncation of the title's end ('Error bars repre...') suggests that statistical error bounds or confidence intervals were originally intended to be discussed alongside these spatial distributions.\"\n    ],\n    \"speculative_claims\": [\n      \"This setup is characteristic of empirical studies in virtual reality (VR) or augmented reality (AR) evaluating how accurately users can point to or look at targets using head-mounted displays and handheld controllers.\",\n      \"In spatial computing, tracking the coordination between head movements (HMD) and hand movements (controllers) is essential for assessing system latency, calibration, and human motor control.\",\n      \"This pattern indicates a consistent undershoot where users' physical movements do not fully reach the target angle, or it represents the incoming trajectory of the controller moving from a neutral central position toward the target.\",\n      \"Understanding these systematic angular errors is critical for VR/AR system designers and developers.\",\n      \"If users consistently undershoot targets at specific angles, developers can implement software-level compensations, such as dynamic target snapping, foveated interaction zones, or directional gain adjustments, to make virtual environments feel more responsive and accessible.\",\n      \"This data is also vital for hardware calibration, ensuring that controller tracking algorithms accurately align with natural human biomechanics.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No raw data values or data table were provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The general directional trends can be observed visually from the subplots, but no quantitative magnitudes or statistical summaries are provided in the text."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The truncated title mentions HMD (Head-Mounted Display) and controller angular movements, pointing clearly to the Virtual Reality (VR) or Human-Computer Interaction (HCI) domain."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert context or domain story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Figure 9. The HMD and Controller angular movements, with respect to the Angular Distance to the target', illustrates spatial tracking data across eight distinct target positions [DIRECT]. These positions are spaced at 45-degree increments around a circle: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315° [DERIVED: read from subplot titles]. This setup is characteristic of empirical studies in virtual reality (VR) or augmented reality (AR) evaluating how accurately users can point to or look at targets using head-mounted displays and handheld controllers [SPECULATIVE: Virtual Reality / HCI research].",
+      "domain_specific_explanations": "In spatial computing, tracking the coordination between head movements (HMD) and hand movements (controllers) is essential for assessing system latency, calibration, and human motor control [SPECULATIVE: VR tracking and human motor control]. Across all eight subplots, the recorded movement data points exhibit a systematic directional bias: they consistently trail away from the target center in the exact opposite direction of the target's angular position [DERIVED: observed from the 8 subplots]. For instance, at the 0° position (east), the data points spread westward; at the 90° position (north), they spread southward [DERIVED: observed from subplots 0° and 90°]. This pattern indicates a consistent undershoot where users' physical movements do not fully reach the target angle, or it represents the incoming trajectory of the controller moving from a neutral central position toward the target [SPECULATIVE: VR tracking and human motor control].",
+      "real_world_significance": "Understanding these systematic angular errors is critical for VR/AR system designers and developers [SPECULATIVE: VR system design]. If users consistently undershoot targets at specific angles, developers can implement software-level compensations, such as dynamic target snapping, foveated interaction zones, or directional gain adjustments, to make virtual environments feel more responsive and accessible [SPECULATIVE: VR system design]. This data is also vital for hardware calibration, ensuring that controller tracking algorithms accurately align with natural human biomechanics [SPECULATIVE: VR system design].",
+      "other": "The truncation of the title's end ('Error bars repre...') suggests that statistical error bounds or confidence intervals were originally intended to be discussed alongside these spatial distributions [DERIVED: analyzed from truncated title]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart, titled 'Figure 9. The HMD and Controller angular movements, with respect to the Angular Distance to the target', illustrates spatial tracking data across eight distinct target positions."
+      ],
+      "derived_claims": [
+        "These positions are spaced at 45-degree increments around a circle: 0°, 45°, 90°, 135°, 180°, 225°, 270°, and 315°.",
+        "Across all eight subplots, the recorded movement data points exhibit a systematic directional bias: they consistently trail away from the target center in the exact opposite direction of the target's angular position.",
+        "For instance, at the 0° position (east), the data points spread westward; at the 90° position (north), they spread southward.",
+        "The truncation of the title's end ('Error bars repre...') suggests that statistical error bounds or confidence intervals were originally intended to be discussed alongside these spatial distributions."
+      ],
+      "speculative_claims": [
+        "This setup is characteristic of empirical studies in virtual reality (VR) or augmented reality (AR) evaluating how accurately users can point to or look at targets using head-mounted displays and handheld controllers.",
+        "In spatial computing, tracking the coordination between head movements (HMD) and hand movements (controllers) is essential for assessing system latency, calibration, and human motor control.",
+        "This pattern indicates a consistent undershoot where users' physical movements do not fully reach the target angle, or it represents the incoming trajectory of the controller moving from a neutral central position toward the target.",
+        "Understanding these systematic angular errors is critical for VR/AR system designers and developers.",
+        "If users consistently undershoot targets at specific angles, developers can implement software-level compensations, such as dynamic target snapping, foveated interaction zones, or directional gain adjustments, to make virtual environments feel more responsive and accessible.",
+        "This data is also vital for hardware calibration, ensuring that controller tracking algorithms accurately align with natural human biomechanics."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14848.36687502684,
+  "created_at": "2026-07-07T21:35:08.914169Z"
+}

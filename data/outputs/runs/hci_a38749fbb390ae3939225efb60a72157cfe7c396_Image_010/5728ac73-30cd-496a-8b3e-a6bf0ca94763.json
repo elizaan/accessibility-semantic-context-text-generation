@@ -1,0 +1,80 @@
+{
+  "output_id": "5728ac73-30cd-496a-8b3e-a6bf0ca94763",
+  "chart_id": "hci_a38749fbb390ae3939225efb60a72157cfe7c396_Image_010",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"No raw data table is provided, but the alt text provides key counts and age ranges for both groups.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The alt text and visual scatterplots clearly show the distribution, age dispersion, and motor impairment status of both deciles.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The ASSETS 2020 citation and the 'MI' (Motor Impairment) labels clearly position this in the domain of computer accessibility and human-computer interaction.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"A specific paper citation is provided, but there is no detailed expert commentary explaining the study's methodology.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 1,\n        \"justification\": \"No explicit stakeholder context is provided, though the target audience (accessibility researchers) can be inferred.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart consists of two scatterplots comparing age and mean trial time (in seconds) for the fastest and slowest deciles of participants, with 32 participants in each group [DIRECT]. The data originates from a research paper published at the ASSETS 2020 conference [DIRECT], which is a premier venue for computer accessibility research [SPECULATIVE: ACM SIGACCESS]. The study evaluates user performance times on a specific task, categorizing participants by age and whether they have a motor impairment (MI) [DERIVED: read from chart labels and legend].\",\n    \"domain_specific_explanations\": \"In this context, 'MI' refers to Motor Impairment [SPECULATIVE: Human-Computer Interaction]. The left plot (fastest decile) shows trial times tightly clustered between approximately 0.45 and 0.65 seconds [DERIVED: read from left y-axis]. Most of these fast participants are aged 18 to 40, but the group includes 3 older individuals and 7 participants who reported motor impairments [DIRECT]. Conversely, the right plot (slowest decile) shows trial times ranging from about 1.3 to over 3.0 seconds [DERIVED: read from right y-axis]. This slower group is much more age-dispersed (from roughly 25 to 70 years old) and includes 5 participants without motor impairments [DIRECT]. This indicates that motor impairment status and age are not absolute predictors of interaction speed [DERIVED: comparison of the two plots].\",\n    \"real_world_significance\": \"These findings are highly significant for inclusive design and assistive technology development [SPECULATIVE: Inclusive Design]. They challenge the simplistic assumption that users with motor impairments are always slower, or that young users without impairments are always fast [SPECULATIVE: Accessibility Research]. By showing overlap in performance—where some users with motor impairments are in the fastest decile and some without are in the slowest—the research highlights the need for personalized, adaptable user interfaces rather than rigid, ability-based profiling [SPECULATIVE: Human-Computer Interaction].\",\n    \"other\": \"The y-axis scale for the slowest decile (0.0 to 4.0 seconds) is four times larger than that of the fastest decile (0.0 to 1.0 seconds) to accommodate the wider variance in slower trial times [DERIVED: read from y-axes of both plots].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart consists of two scatterplots comparing age and mean trial time (in seconds) for the fastest and slowest deciles of participants, with 32 participants in each group\",\n      \"The data originates from a research paper published at the ASSETS 2020 conference\",\n      \"Most of these fast participants are aged 18 to 40, but the group includes 3 older individuals and 7 participants who reported motor impairments\",\n      \"This slower group is much more age-dispersed (from roughly 25 to 70 years old) and includes 5 participants without motor impairments\"\n    ],\n    \"derived_claims\": [\n      \"The study evaluates user performance times on a specific task, categorizing participants by age and whether they have a motor impairment (MI) [derived from chart labels and legend]\",\n      \"The left plot (fastest decile) shows trial times tightly clustered between approximately 0.45 and 0.65 seconds [derived from reading left y-axis]\",\n      \"Conversely, the right plot (slowest decile) shows trial times ranging from about 1.3 to over 3.0 seconds [derived from reading right y-axis]\",\n      \"This indicates that motor impairment status and age are not absolute predictors of interaction speed [derived from comparing the two plots]\",\n      \"The y-axis scale for the slowest decile (0.0 to 4.0 seconds) is four times larger than that of the fastest decile (0.0 to 1.0 seconds) to accommodate the wider variance in slower trial times [derived from reading y-axes of both plots]\"\n    ],\n    \"speculative_claims\": [\n      \"which is a premier venue for computer accessibility research [source: ACM SIGACCESS]\",\n      \"In this context, 'MI' refers to Motor Impairment [source: Human-Computer Interaction]\",\n      \"These findings are highly significant for inclusive design and assistive technology development [source: Inclusive Design]\",\n      \"They challenge the simplistic assumption that users with motor impairments are always slower, or that young users without impairments are always fast [source: Accessibility Research]\",\n      \"By showing overlap in performance—where some users with motor impairments are in the fastest decile and some without are in the slowest—the research highlights the need for personalized, adaptable user interfaces rather than rigid, ability-based profiling [source: Human-Computer Interaction]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 4,\n    \"derived_count\": 5,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "No raw data table is provided, but the alt text provides key counts and age ranges for both groups."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The alt text and visual scatterplots clearly show the distribution, age dispersion, and motor impairment status of both deciles."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The ASSETS 2020 citation and the 'MI' (Motor Impairment) labels clearly position this in the domain of computer accessibility and human-computer interaction."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "A specific paper citation is provided, but there is no detailed expert commentary explaining the study's methodology."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "No explicit stakeholder context is provided, though the target audience (accessibility researchers) can be inferred."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart consists of two scatterplots comparing age and mean trial time (in seconds) for the fastest and slowest deciles of participants, with 32 participants in each group [DIRECT]. The data originates from a research paper published at the ASSETS 2020 conference [DIRECT], which is a premier venue for computer accessibility research [SPECULATIVE: ACM SIGACCESS]. The study evaluates user performance times on a specific task, categorizing participants by age and whether they have a motor impairment (MI) [DERIVED: read from chart labels and legend].",
+      "domain_specific_explanations": "In this context, 'MI' refers to Motor Impairment [SPECULATIVE: Human-Computer Interaction]. The left plot (fastest decile) shows trial times tightly clustered between approximately 0.45 and 0.65 seconds [DERIVED: read from left y-axis]. Most of these fast participants are aged 18 to 40, but the group includes 3 older individuals and 7 participants who reported motor impairments [DIRECT]. Conversely, the right plot (slowest decile) shows trial times ranging from about 1.3 to over 3.0 seconds [DERIVED: read from right y-axis]. This slower group is much more age-dispersed (from roughly 25 to 70 years old) and includes 5 participants without motor impairments [DIRECT]. This indicates that motor impairment status and age are not absolute predictors of interaction speed [DERIVED: comparison of the two plots].",
+      "real_world_significance": "These findings are highly significant for inclusive design and assistive technology development [SPECULATIVE: Inclusive Design]. They challenge the simplistic assumption that users with motor impairments are always slower, or that young users without impairments are always fast [SPECULATIVE: Accessibility Research]. By showing overlap in performance—where some users with motor impairments are in the fastest decile and some without are in the slowest—the research highlights the need for personalized, adaptable user interfaces rather than rigid, ability-based profiling [SPECULATIVE: Human-Computer Interaction].",
+      "other": "The y-axis scale for the slowest decile (0.0 to 4.0 seconds) is four times larger than that of the fastest decile (0.0 to 1.0 seconds) to accommodate the wider variance in slower trial times [DERIVED: read from y-axes of both plots]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart consists of two scatterplots comparing age and mean trial time (in seconds) for the fastest and slowest deciles of participants, with 32 participants in each group",
+        "The data originates from a research paper published at the ASSETS 2020 conference",
+        "Most of these fast participants are aged 18 to 40, but the group includes 3 older individuals and 7 participants who reported motor impairments",
+        "This slower group is much more age-dispersed (from roughly 25 to 70 years old) and includes 5 participants without motor impairments"
+      ],
+      "derived_claims": [
+        "The study evaluates user performance times on a specific task, categorizing participants by age and whether they have a motor impairment (MI) [derived from chart labels and legend]",
+        "The left plot (fastest decile) shows trial times tightly clustered between approximately 0.45 and 0.65 seconds [derived from reading left y-axis]",
+        "Conversely, the right plot (slowest decile) shows trial times ranging from about 1.3 to over 3.0 seconds [derived from reading right y-axis]",
+        "This indicates that motor impairment status and age are not absolute predictors of interaction speed [derived from comparing the two plots]",
+        "The y-axis scale for the slowest decile (0.0 to 4.0 seconds) is four times larger than that of the fastest decile (0.0 to 1.0 seconds) to accommodate the wider variance in slower trial times [derived from reading y-axes of both plots]"
+      ],
+      "speculative_claims": [
+        "which is a premier venue for computer accessibility research [source: ACM SIGACCESS]",
+        "In this context, 'MI' refers to Motor Impairment [source: Human-Computer Interaction]",
+        "These findings are highly significant for inclusive design and assistive technology development [source: Inclusive Design]",
+        "They challenge the simplistic assumption that users with motor impairments are always slower, or that young users without impairments are always fast [source: Accessibility Research]",
+        "By showing overlap in performance—where some users with motor impairments are in the fastest decile and some without are in the slowest—the research highlights the need for personalized, adaptable user interfaces rather than rigid, ability-based profiling [source: Human-Computer Interaction]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 4,
+      "derived_count": 5,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13736.31375003606,
+  "created_at": "2026-07-07T23:36:45.756679Z"
+}

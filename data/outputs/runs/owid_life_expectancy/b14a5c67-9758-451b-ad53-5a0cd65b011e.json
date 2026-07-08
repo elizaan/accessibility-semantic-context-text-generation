@@ -1,0 +1,73 @@
+{
+  "output_id": "b14a5c67-9758-451b-ad53-5a0cd65b011e",
+  "chart_id": "owid_life_expectancy",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table provided with life expectancy values for various entities in 2023, but not comprehensive for all entities shown in the chart image.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"Some information on life expectancy trends can be inferred, but specific magnitudes or detailed trends are not provided in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain is clearly identified as life expectancy, with a specific focus on the year 2023.\"},\n      \"domain_expert_context\": {\"score\": 4, \"justification\": \"The expert domain story mentions that the visualization is from Our World in Data, indicating a reliable source for such data.\"},\n      \"stakeholder_impact\": {\"score\": 1, \"justification\": \"Limited information is provided on who uses this data and why, beyond the general context.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays life expectancy data for various countries and regions in 2023. It is part of a visualization from Our World in Data [DIRECT]. The data table provided includes life expectancy values for entities such as Afghanistan (66.0346 years), Africa (63.8428 years), and Albania (79.6019 years) [DIRECT].\",\n    \"domain_specific_explanations\": \"Life expectancy is defined as the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year [DIRECT]. This metric is crucial in demography and public health as it reflects the overall health and well-being of populations. Higher life expectancy values indicate better healthcare, living conditions, and other socio-economic factors [SPECULATIVE: Demography and Public Health].\",\n    \"real_world_significance\": \"Life expectancy data matters because it influences policy decisions in healthcare, social security, and education. Countries with higher life expectancy values often have better healthcare systems, lower infant mortality rates, and higher standards of living [SPECULATIVE: Socio-economic Policy]. For instance, countries like Andorra (84.0406 years) and Australia (83.9228 years) have high life expectancy, reflecting their strong healthcare systems [DERIVED: From provided data]. Conversely, countries like Benin (60.7738 years) have lower life expectancy, indicating potential challenges in healthcare and living conditions [DERIVED: From provided data].\",\n    \"other\": \"The data sources for this chart include Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024), indicating a comprehensive approach to data collection [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays life expectancy data for various countries and regions in 2023.\",\n      \"Life expectancy is defined as the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year.\",\n      \"The data sources for this chart include Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024).\"\n    ],\n    \"derived_claims\": [\n      \"Countries like Andorra (84.0406 years) and Australia (83.9228 years) have high life expectancy, reflecting their strong healthcare systems.\",\n      \"Countries like Benin (60.7738 years) have lower life expectancy, indicating potential challenges in healthcare and living conditions.\"\n    ],\n    \"speculative_claims\": [\n      \"Higher life expectancy values indicate better healthcare, living conditions, and other socio-economic factors.\",\n      \"Life expectancy data matters because it influences policy decisions in healthcare, social security, and education.\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table provided with life expectancy values for various entities in 2023, but not comprehensive for all entities shown in the chart image."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Some information on life expectancy trends can be inferred, but specific magnitudes or detailed trends are not provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain is clearly identified as life expectancy, with a specific focus on the year 2023."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story mentions that the visualization is from Our World in Data, indicating a reliable source for such data."
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "Limited information is provided on who uses this data and why, beyond the general context."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays life expectancy data for various countries and regions in 2023. It is part of a visualization from Our World in Data [DIRECT]. The data table provided includes life expectancy values for entities such as Afghanistan (66.0346 years), Africa (63.8428 years), and Albania (79.6019 years) [DIRECT].",
+      "domain_specific_explanations": "Life expectancy is defined as the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year [DIRECT]. This metric is crucial in demography and public health as it reflects the overall health and well-being of populations. Higher life expectancy values indicate better healthcare, living conditions, and other socio-economic factors [SPECULATIVE: Demography and Public Health].",
+      "real_world_significance": "Life expectancy data matters because it influences policy decisions in healthcare, social security, and education. Countries with higher life expectancy values often have better healthcare systems, lower infant mortality rates, and higher standards of living [SPECULATIVE: Socio-economic Policy]. For instance, countries like Andorra (84.0406 years) and Australia (83.9228 years) have high life expectancy, reflecting their strong healthcare systems [DERIVED: From provided data]. Conversely, countries like Benin (60.7738 years) have lower life expectancy, indicating potential challenges in healthcare and living conditions [DERIVED: From provided data].",
+      "other": "The data sources for this chart include Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024), indicating a comprehensive approach to data collection [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays life expectancy data for various countries and regions in 2023.",
+        "Life expectancy is defined as the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year.",
+        "The data sources for this chart include Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)."
+      ],
+      "derived_claims": [
+        "Countries like Andorra (84.0406 years) and Australia (83.9228 years) have high life expectancy, reflecting their strong healthcare systems.",
+        "Countries like Benin (60.7738 years) have lower life expectancy, indicating potential challenges in healthcare and living conditions."
+      ],
+      "speculative_claims": [
+        "Higher life expectancy values indicate better healthcare, living conditions, and other socio-economic factors.",
+        "Life expectancy data matters because it influences policy decisions in healthcare, social security, and education."
+      ],
+      "total_flag_count": 8,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2486,
+    "output": 871
+  },
+  "latency_ms": 2797.5477500003763,
+  "created_at": "2026-07-08T00:16:22.669128Z"
+}

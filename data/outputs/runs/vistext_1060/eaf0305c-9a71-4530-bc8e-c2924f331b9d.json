@@ -1,0 +1,79 @@
+{
+  "output_id": "eaf0305c-9a71-4530-bc8e-c2924f331b9d",
+  "chart_id": "vistext_1060",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No metadata was provided; all numerical values must be estimated visually from the chart image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No metadata was provided; trends and regional comparisons must be derived visually.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 0,\n        \"justification\": \"No metadata was provided, though the chart title and axes are clearly visible in the image.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No background context or domain-specific metadata was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder or impact metadata was provided.\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the net internal migration rate per 1,000 inhabitants for 20 Italian regions in the year 2019 [DIRECT]. This dataset captures domestic population movement within Italy, specifically looking at how many residents moved between regions rather than international migration [DERIVED: reading the term 'internal migration' from the chart title]. This type of demographic data is typically compiled and published by ISTAT, the Italian National Institute of Statistics, to monitor regional population dynamics and internal mobility trends [SPECULATIVE: Italian Demographics/ISTAT].\",\n    \"domain_specific_explanations\": \"In demography, 'net internal migration' represents the difference between the number of people moving into a region from other parts of the country and the number of people leaving that region for other parts of the country, normalized per 1,000 residents [DERIVED: interpreting the standard demographic definition of the chart's metric]. A positive value indicates a net population gain from internal migration, while a negative value indicates a net loss [DERIVED: reading the positive and negative directions relative to the zero line]. The data reveals a stark contrast: regions like Calabria (approximately -7.1 per 1,000) [DERIVED: visually estimating the bar value for Calabria] and Molise (approximately -5.7 per 1,000) [DERIVED: visually estimating the bar value for Molise] show significant net population loss, whereas Emilia-Romagna (approximately +5.2 per 1,000) [DERIVED: visually estimating the bar value for Emilia-Romagna] and Lombardy (approximately +4.2 per 1,000) [DERIVED: visually estimating the bar value for Lombardy] show substantial net gains.\",\n    \"real_world_significance\": \"This demographic pattern reflects the long-standing economic divide in Italy between the industrialized, affluent North and the economically disadvantaged South, often referred to as the 'Mezzogiorno' [SPECULATIVE: Italian Economic History]. Southern regions like Calabria, Sicily, Campania, and Basilicata consistently lose residents to northern economic hubs like Lombardy and Emilia-Romagna, where job opportunities, higher wages, and public services are more robust [SPECULATIVE: Italian Economics/Sociology]. If these trends continue, southern regions face severe 'brain drain' and accelerated population aging, which weakens their local tax bases and threatens the sustainability of healthcare and public infrastructure [SPECULATIVE: Demographics/Public Policy]. Conversely, northern regions must plan for increased demand on housing, public transit, and urban infrastructure to accommodate the steady influx of domestic migrants [SPECULATIVE: Urban Planning].\",\n    \"other\": \"Lazio and Marche exhibit net internal migration rates that are nearly neutral, sitting very close to zero [DERIVED: observing that the bars for Lazio and Marche are barely visible near the 0 line].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the net internal migration rate per 1,000 inhabitants for 20 Italian regions in the year 2019\"\n    ],\n    \"derived_claims\": [\n      \"This dataset captures domestic population movement within Italy, specifically looking at how many residents moved between regions rather than international migration\",\n      \"In demography, 'net internal migration' represents the difference between the number of people moving into a region from other parts of the country and the number of people leaving that region for other parts of the country, normalized per 1,000 residents\",\n      \"A positive value indicates a net population gain from internal migration, while a negative value indicates a net loss\",\n      \"regions like Calabria (approximately -7.1 per 1,000) and Molise (approximately -5.7 per 1,000) show significant net population loss, whereas Emilia-Romagna (approximately +5.2 per 1,000) and Lombardy (approximately +4.2 per 1,000) show substantial net gains\",\n      \"Lazio and Marche exhibit net internal migration rates that are nearly neutral, sitting very close to zero\"\n    ],\n    \"speculative_claims\": [\n      \"This type of demographic data is typically compiled and published by ISTAT, the Italian National Institute of Statistics, to monitor regional population dynamics and internal mobility trends\",\n      \"This demographic pattern reflects the long-standing economic divide in Italy between the industrialized, affluent North and the economically disadvantaged South, often referred to as the 'Mezzogiorno'\",\n      \"Southern regions like Calabria, Sicily, Campania, and Basilicata consistently lose residents to northern economic hubs like Lombardy and Emilia-Romagna, where job opportunities, higher wages, and public services are more robust\",\n      \"If these trends continue, southern regions face severe 'brain drain' and accelerated population aging, which weakens their local tax bases and threatens the sustainability of healthcare and public infrastructure\",\n      \"Conversely, northern regions must plan for increased demand on housing, public transit, and urban infrastructure to accommodate the steady influx of domestic migrants\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 5,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No metadata was provided; all numerical values must be estimated visually from the chart image."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No metadata was provided; trends and regional comparisons must be derived visually."
+        },
+        "chart_subject_domain": {
+          "score": 0,
+          "justification": "No metadata was provided, though the chart title and axes are clearly visible in the image."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No background context or domain-specific metadata was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder or impact metadata was provided."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the net internal migration rate per 1,000 inhabitants for 20 Italian regions in the year 2019 [DIRECT]. This dataset captures domestic population movement within Italy, specifically looking at how many residents moved between regions rather than international migration [DERIVED: reading the term 'internal migration' from the chart title]. This type of demographic data is typically compiled and published by ISTAT, the Italian National Institute of Statistics, to monitor regional population dynamics and internal mobility trends [SPECULATIVE: Italian Demographics/ISTAT].",
+      "domain_specific_explanations": "In demography, 'net internal migration' represents the difference between the number of people moving into a region from other parts of the country and the number of people leaving that region for other parts of the country, normalized per 1,000 residents [DERIVED: interpreting the standard demographic definition of the chart's metric]. A positive value indicates a net population gain from internal migration, while a negative value indicates a net loss [DERIVED: reading the positive and negative directions relative to the zero line]. The data reveals a stark contrast: regions like Calabria (approximately -7.1 per 1,000) [DERIVED: visually estimating the bar value for Calabria] and Molise (approximately -5.7 per 1,000) [DERIVED: visually estimating the bar value for Molise] show significant net population loss, whereas Emilia-Romagna (approximately +5.2 per 1,000) [DERIVED: visually estimating the bar value for Emilia-Romagna] and Lombardy (approximately +4.2 per 1,000) [DERIVED: visually estimating the bar value for Lombardy] show substantial net gains.",
+      "real_world_significance": "This demographic pattern reflects the long-standing economic divide in Italy between the industrialized, affluent North and the economically disadvantaged South, often referred to as the 'Mezzogiorno' [SPECULATIVE: Italian Economic History]. Southern regions like Calabria, Sicily, Campania, and Basilicata consistently lose residents to northern economic hubs like Lombardy and Emilia-Romagna, where job opportunities, higher wages, and public services are more robust [SPECULATIVE: Italian Economics/Sociology]. If these trends continue, southern regions face severe 'brain drain' and accelerated population aging, which weakens their local tax bases and threatens the sustainability of healthcare and public infrastructure [SPECULATIVE: Demographics/Public Policy]. Conversely, northern regions must plan for increased demand on housing, public transit, and urban infrastructure to accommodate the steady influx of domestic migrants [SPECULATIVE: Urban Planning].",
+      "other": "Lazio and Marche exhibit net internal migration rates that are nearly neutral, sitting very close to zero [DERIVED: observing that the bars for Lazio and Marche are barely visible near the 0 line]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the net internal migration rate per 1,000 inhabitants for 20 Italian regions in the year 2019"
+      ],
+      "derived_claims": [
+        "This dataset captures domestic population movement within Italy, specifically looking at how many residents moved between regions rather than international migration",
+        "In demography, 'net internal migration' represents the difference between the number of people moving into a region from other parts of the country and the number of people leaving that region for other parts of the country, normalized per 1,000 residents",
+        "A positive value indicates a net population gain from internal migration, while a negative value indicates a net loss",
+        "regions like Calabria (approximately -7.1 per 1,000) and Molise (approximately -5.7 per 1,000) show significant net population loss, whereas Emilia-Romagna (approximately +5.2 per 1,000) and Lombardy (approximately +4.2 per 1,000) show substantial net gains",
+        "Lazio and Marche exhibit net internal migration rates that are nearly neutral, sitting very close to zero"
+      ],
+      "speculative_claims": [
+        "This type of demographic data is typically compiled and published by ISTAT, the Italian National Institute of Statistics, to monitor regional population dynamics and internal mobility trends",
+        "This demographic pattern reflects the long-standing economic divide in Italy between the industrialized, affluent North and the economically disadvantaged South, often referred to as the 'Mezzogiorno'",
+        "Southern regions like Calabria, Sicily, Campania, and Basilicata consistently lose residents to northern economic hubs like Lombardy and Emilia-Romagna, where job opportunities, higher wages, and public services are more robust",
+        "If these trends continue, southern regions face severe 'brain drain' and accelerated population aging, which weakens their local tax bases and threatens the sustainability of healthcare and public infrastructure",
+        "Conversely, northern regions must plan for increased demand on housing, public transit, and urban infrastructure to accommodate the steady influx of domestic migrants"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 5,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13636.29287504591,
+  "created_at": "2026-07-07T22:02:42.746540Z"
+}

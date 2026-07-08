@@ -45,9 +45,14 @@ export interface ChartMetadata {
 
 export type MetadataKey = keyof ChartMetadata;
 
+// Every metadata key except l4_caption — the ground-truth target this
+// benchmark scores against. It's never sent to the model, so it isn't a
+// selectable "feature" at all (unlike the rest, checking it would do nothing).
+export type SelectableMetadataKey = Exclude<MetadataKey, "l4_caption">;
+
 // Human-readable labels and descriptions for each feature checkbox
 export const METADATA_FEATURE_CONFIG: Record<
-  MetadataKey,
+  SelectableMetadataKey,
   { label: string; description: string; group: string }
 > = {
   alt_text: {
@@ -100,11 +105,6 @@ export const METADATA_FEATURE_CONFIG: Record<
     description: "Perceptual trends and patterns",
     group: "Captions (Lundgard & Satyanarayan Levels)",
   },
-  l4_caption: {
-    label: "L4 Caption (Domain Significance)",
-    description: "Real-world domain significance — ground truth target",
-    group: "Captions (Lundgard & Satyanarayan Levels)",
-  },
   domain_context: {
     label: "Domain Context",
     description: "Paragraph about real-world stakes",
@@ -141,7 +141,7 @@ export interface Chart {
 
 // ─── LLM models ───────────────────────────────────────────────────────────────
 
-export type LLMProvider = "anthropic" | "openai" | "google" | "meta" | "google_groq";
+export type LLMProvider = "anthropic" | "openai" | "google" | "meta";
 
 export interface LLMModel {
   provider: LLMProvider;
@@ -158,100 +158,41 @@ export const LLM_MODELS: LLMModel[] = [
   // ── Free: Google AI Studio ────────────────────────────────────────────────
   {
     provider: "google",
-    model_id: "gemini-2.5-flash",
-    display_name: "Gemini 2.5 Flash",
+    model_id: "gemini-3.5-flash",
+    display_name: "Gemini 3.5 Flash",
     supports_vision: true,
-    free: true,
-    backend: "google_ai_studio",
-  },
-  {
-    provider: "google",
-    model_id: "gemini-2.5-flash-lite",
-    display_name: "Gemini 2.5 Flash-Lite",
-    supports_vision: true,
-    free: true,
-    backend: "google_ai_studio",
-  },
-  {
-    provider: "google",
-    model_id: "gemini-2.5-pro",
-    display_name: "Gemini 2.5 Pro",
-    supports_vision: true,
-    free: true,   // 2 RPM / 50 req/day limit
+    free: true, // verify current quota in AI Studio — free-tier limits weren't confirmed at time of writing
     backend: "google_ai_studio",
   },
   // ── Free: Groq ────────────────────────────────────────────────────────────
+  // Groq deprecates models frequently (console.groq.com/docs/deprecations) —
+  // llama-3.2-*-vision-preview was decommissioned; this is its current
+  // vision-capable replacement (console.groq.com/docs/vision).
   {
     provider: "meta",
-    model_id: "llama-3.2-11b-vision-preview",
-    display_name: "Llama 3.2 Vision 11B",
+    model_id: "meta-llama/llama-4-scout-17b-16e-instruct",
+    display_name: "Llama 4 Scout 17B (Vision)",
     supports_vision: true,
     free: true,
     backend: "groq",
-  },
-  {
-    provider: "meta",
-    model_id: "llama-3.2-90b-vision-preview",
-    display_name: "Llama 3.2 Vision 90B",
-    supports_vision: true,
-    free: true,
-    backend: "groq",
-  },
-  {
-    provider: "meta",
-    model_id: "llama-3.3-70b-versatile",
-    display_name: "Llama 3.3 70B (text-only)",
-    supports_vision: false,
-    free: true,
-    backend: "groq",
-  },
-  // ── Free: Groq — Gemma (text-only, image always skipped) ─────────────────
-  {
-    provider: "google",
-    model_id: "gemma-2-9b-it",
-    display_name: "Gemma 2 9B (Google AI Studio, text-only)",
-    supports_vision: false,
-    free: true,
-    backend: "google_ai_studio",
-  },
-  {
-    provider: "google_groq",
-    model_id: "gemma2-9b-it",
-    display_name: "Gemma 2 9B (Groq, text-only)",
-    supports_vision: false,
-    free: true,
-    backend: "groq",
-  },
-  // ── Paid: Anthropic ───────────────────────────────────────────────────────
-  {
-    provider: "anthropic",
-    model_id: "claude-opus-4-8",
-    display_name: "Claude Opus 4.8",
-    supports_vision: true,
-    free: false,
-    backend: "anthropic",
   },
   {
     provider: "anthropic",
-    model_id: "claude-sonnet-4-6",
-    display_name: "Claude Sonnet 4.6",
+    model_id: "claude-sonnet-5",
+    display_name: "Claude Sonnet 5",
     supports_vision: true,
     free: false,
     backend: "anthropic",
   },
   // ── Paid: OpenAI ─────────────────────────────────────────────────────────
+  // Single model by design (workshop-paper scope) — gpt-5.4 is the current
+  // base-tier GPT-5-family model with vision, the direct successor to
+  // gpt-4o's tier. gpt-4o and bare gpt-5 are both deprecated in OpenAI's
+  // API as of this writing.
   {
     provider: "openai",
-    model_id: "gpt-4o",
-    display_name: "GPT-4o",
-    supports_vision: true,
-    free: false,
-    backend: "openai",
-  },
-  {
-    provider: "openai",
-    model_id: "gpt-4o-mini",
-    display_name: "GPT-4o Mini",
+    model_id: "gpt-5.4",
+    display_name: "GPT-5.4",
     supports_vision: true,
     free: false,
     backend: "openai",
@@ -263,10 +204,78 @@ export const LLM_MODELS: LLMModel[] = [
 export interface GenerationRequest {
   chart_id: string;
   model_id: string;
-  variant?: number;
-  enabled_features: MetadataKey[];
+  enabled_features: SelectableMetadataKey[];
   include_image: boolean;
+  // 1/2/3 are informational only — the backend recomputes the actual
+  // condition from enabled_features + include_image, since datasets vary
+  // in what metadata they have (see prompt_service.classify_variant).
+  // 4 is the one value that's honored as sent — it requests the
+  // metacognition test, which can't be inferred from a checkbox state.
+  variant?: number;
   custom_prompt_suffix?: string;
+}
+
+// ─── Prompt variants ──────────────────────────────────────────────────────────
+// Display-only: mirrors backend/app/services/prompt_service.py's
+// classify_variant/condition_label. 0-3 are *computed* from whatever's
+// checked, not chosen directly; only 4 is an explicit user choice.
+
+export interface VariantConfig {
+  id: number;
+  name: string;
+  description: string;
+}
+
+export const VARIANTS: VariantConfig[] = [
+  {
+    id: 0,
+    name: "Custom / Partial Selection",
+    description: "A valid run, just not one of the three canonical metadata conditions.",
+  },
+  {
+    id: 1,
+    name: "Full Metadata + Image",
+    description: "Every accessibility field available for this chart, plus the chart image.",
+  },
+  {
+    id: 2,
+    name: "Full Metadata, No Image",
+    description: "Same metadata as V1, chart image withheld — isolates what the image adds.",
+  },
+  {
+    id: 3,
+    name: "Sparse (Image Only)",
+    description: "Chart image only — no metadata selected.",
+  },
+  {
+    id: 4,
+    name: "Withheld Metadata",
+    description: "Chart image only — rich metadata exists elsewhere but is deliberately withheld (metacognition test).",
+  },
+];
+
+/**
+ * Mirrors backend prompt_service.classify_variant — lets the frontend show
+ * a live preview of which condition a selection will resolve to, before
+ * the request is sent.
+ */
+export function classifyVariant(
+  chart: Chart,
+  enabledFeatures: SelectableMetadataKey[],
+  includeImage: boolean
+): number {
+  const availableKeys = (Object.keys(METADATA_FEATURE_CONFIG) as SelectableMetadataKey[]).filter(
+    (k) => chart.metadata[k] !== null
+  );
+  const available = new Set(availableKeys);
+  const selected = new Set(enabledFeatures.filter((f) => available.has(f)));
+  const allSelected = available.size > 0 && selected.size === available.size;
+  const noneSelected = selected.size === 0;
+
+  if (allSelected && includeImage) return 1;
+  if (allSelected && !includeImage) return 2;
+  if (noneSelected && includeImage) return 3;
+  return 0;
 }
 
 export interface GenerationOutput {

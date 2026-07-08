@@ -1,0 +1,79 @@
+{
+  "output_id": "a04d9d48-f874-4392-9cca-c23d1ffec754",
+  "chart_id": "hci_6c91ce2625e85d690e8ad2131cc9e759d18ed51b_Image_006",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No raw data table is provided, though the alt text mentions percentages and total counts are overlaid.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The title and alt text describe the general trend of high awareness for Discord and low awareness/high uncertainty for MyFitnessPal.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (Online Status Indicators in popular apps) is clearly defined in the title, alt text, and expert story.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides the exact paper citation (CHI 2020) and design hypotheses.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context is provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is from a CHI 2020 research paper studying user awareness of Online Status Indicators (OSIs) across popular applications [DIRECT]. It specifically compares user awareness of OSIs in apps like Discord and MyFitnessPal [DIRECT]. The study surveyed participants about the top 15 most popular apps (used by at least 10% of participants) to see if they knew whether these apps featured OSIs [DIRECT]. OSI stands for Online Status Indicator, which shows whether a user is currently active or online [SPECULATIVE: Human-Computer Interaction / UX Design].\",\n    \"domain_specific_explanations\": \"An Online Status Indicator (OSI) is a design pattern used in social and collaborative software to show real-time availability [SPECULATIVE: UX Design]. The chart shows that awareness of OSIs varies significantly by app; for example, Discord users are highly aware of its OSIs, whereas MyFitnessPal users are largely unaware that the app has them [DIRECT]. This discrepancy is likely driven by the design and visibility of the OSIs themselves [DIRECT]. For instance, in Instagram, OSIs are only visible within the direct messaging feature, meaning users who do not use messaging may not realize the app tracks and displays their online status [DIRECT]. In contrast, Discord's interface prominently displays user status (online, idle, dnd, offline) directly next to usernames in server lists, making it highly visible [SPECULATIVE: Discord Interface Design].\",\n    \"real_world_significance\": \"This research highlights a critical privacy issue: users may be broadcasting their online status without realizing it, especially in apps like MyFitnessPal where OSIs are less obvious [DERIVED: Synthesized from the contrast between Discord and MyFitnessPal awareness]. If users are unaware of OSIs, they cannot make informed decisions about their privacy settings or manage their digital availability [SPECULATIVE: Privacy & HCI]. Designers must balance social connectivity features with clear, transparent indicators so users retain agency over their digital presence [SPECULATIVE: UX Design Ethics].\",\n    \"other\": \"The chart is structured as a stacked bar chart where each bar represents 100% of the responses for a given app, allowing direct comparison of the proportion of correct, incorrect, and uncertain answers across the 15 apps [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is from a CHI 2020 research paper studying user awareness of Online Status Indicators (OSIs) across popular applications.\",\n      \"It specifically compares user awareness of OSIs in apps like Discord and MyFitnessPal.\",\n      \"The study surveyed participants about the top 15 most popular apps (used by at least 10% of participants) to see if they knew whether these apps featured OSIs.\",\n      \"The chart shows that awareness of OSIs varies significantly by app; for example, Discord users are highly aware of its OSIs, whereas MyFitnessPal users are largely unaware that the app has them.\",\n      \"This discrepancy is likely driven by the design and visibility of the OSIs themselves.\",\n      \"For instance, in Instagram, OSIs are only visible within the direct messaging feature, meaning users who do not use messaging may not realize the app tracks and displays their online status.\",\n      \"The chart is structured as a stacked bar chart where each bar represents 100% of the responses for a given app, allowing direct comparison of the proportion of correct, incorrect, and uncertain answers across the 15 apps.\"\n    ],\n    \"derived_claims\": [\n      \"This research highlights a critical privacy issue: users may be broadcasting their online status without realizing it, especially in apps like MyFitnessPal where OSIs are less obvious.\"\n    ],\n    \"speculative_claims\": [\n      \"OSI stands for Online Status Indicator, which shows whether a user is currently active or online.\",\n      \"An Online Status Indicator (OSI) is a design pattern used in social and collaborative software to show real-time availability.\",\n      \"In contrast, Discord's interface prominently displays user status (online, idle, dnd, offline) directly next to usernames in server lists, making it highly visible.\",\n      \"If users are unaware of OSIs, they cannot make informed decisions about their privacy settings or manage their digital availability.\",\n      \"Designers must balance social connectivity features with clear, transparent indicators so users retain agency over their digital presence.\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 7,\n    \"derived_count\": 1,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No raw data table is provided, though the alt text mentions percentages and total counts are overlaid."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The title and alt text describe the general trend of high awareness for Discord and low awareness/high uncertainty for MyFitnessPal."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (Online Status Indicators in popular apps) is clearly defined in the title, alt text, and expert story."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides the exact paper citation (CHI 2020) and design hypotheses."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context is provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is from a CHI 2020 research paper studying user awareness of Online Status Indicators (OSIs) across popular applications [DIRECT]. It specifically compares user awareness of OSIs in apps like Discord and MyFitnessPal [DIRECT]. The study surveyed participants about the top 15 most popular apps (used by at least 10% of participants) to see if they knew whether these apps featured OSIs [DIRECT]. OSI stands for Online Status Indicator, which shows whether a user is currently active or online [SPECULATIVE: Human-Computer Interaction / UX Design].",
+      "domain_specific_explanations": "An Online Status Indicator (OSI) is a design pattern used in social and collaborative software to show real-time availability [SPECULATIVE: UX Design]. The chart shows that awareness of OSIs varies significantly by app; for example, Discord users are highly aware of its OSIs, whereas MyFitnessPal users are largely unaware that the app has them [DIRECT]. This discrepancy is likely driven by the design and visibility of the OSIs themselves [DIRECT]. For instance, in Instagram, OSIs are only visible within the direct messaging feature, meaning users who do not use messaging may not realize the app tracks and displays their online status [DIRECT]. In contrast, Discord's interface prominently displays user status (online, idle, dnd, offline) directly next to usernames in server lists, making it highly visible [SPECULATIVE: Discord Interface Design].",
+      "real_world_significance": "This research highlights a critical privacy issue: users may be broadcasting their online status without realizing it, especially in apps like MyFitnessPal where OSIs are less obvious [DERIVED: Synthesized from the contrast between Discord and MyFitnessPal awareness]. If users are unaware of OSIs, they cannot make informed decisions about their privacy settings or manage their digital availability [SPECULATIVE: Privacy & HCI]. Designers must balance social connectivity features with clear, transparent indicators so users retain agency over their digital presence [SPECULATIVE: UX Design Ethics].",
+      "other": "The chart is structured as a stacked bar chart where each bar represents 100% of the responses for a given app, allowing direct comparison of the proportion of correct, incorrect, and uncertain answers across the 15 apps [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is from a CHI 2020 research paper studying user awareness of Online Status Indicators (OSIs) across popular applications.",
+        "It specifically compares user awareness of OSIs in apps like Discord and MyFitnessPal.",
+        "The study surveyed participants about the top 15 most popular apps (used by at least 10% of participants) to see if they knew whether these apps featured OSIs.",
+        "The chart shows that awareness of OSIs varies significantly by app; for example, Discord users are highly aware of its OSIs, whereas MyFitnessPal users are largely unaware that the app has them.",
+        "This discrepancy is likely driven by the design and visibility of the OSIs themselves.",
+        "For instance, in Instagram, OSIs are only visible within the direct messaging feature, meaning users who do not use messaging may not realize the app tracks and displays their online status.",
+        "The chart is structured as a stacked bar chart where each bar represents 100% of the responses for a given app, allowing direct comparison of the proportion of correct, incorrect, and uncertain answers across the 15 apps."
+      ],
+      "derived_claims": [
+        "This research highlights a critical privacy issue: users may be broadcasting their online status without realizing it, especially in apps like MyFitnessPal where OSIs are less obvious."
+      ],
+      "speculative_claims": [
+        "OSI stands for Online Status Indicator, which shows whether a user is currently active or online.",
+        "An Online Status Indicator (OSI) is a design pattern used in social and collaborative software to show real-time availability.",
+        "In contrast, Discord's interface prominently displays user status (online, idle, dnd, offline) directly next to usernames in server lists, making it highly visible.",
+        "If users are unaware of OSIs, they cannot make informed decisions about their privacy settings or manage their digital availability.",
+        "Designers must balance social connectivity features with clear, transparent indicators so users retain agency over their digital presence."
+      ],
+      "total_flag_count": 13,
+      "direct_count": 7,
+      "derived_count": 1,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14582.723667030223,
+  "created_at": "2026-07-07T23:30:22.173588Z"
+}

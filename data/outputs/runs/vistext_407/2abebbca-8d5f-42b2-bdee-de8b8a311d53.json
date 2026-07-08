@@ -1,0 +1,80 @@
+{
+  "output_id": "2abebbca-8d5f-42b2-bdee-de8b8a311d53",
+  "chart_id": "vistext_407",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table contains exact values for some years (2015-2019, 2025) but is missing values for the years 2020-2024.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The general trend of a major drop in 2020 and a slow recovery is described in the L2 caption, but exact magnitudes for the deficit years are missing from the data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly define the subject as Switzerland's budget balance relative to GDP.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 0,\n        \"justification\": \"No expert domain story was provided.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays Switzerland's budget balance as a percentage of its Gross Domestic Product (GDP) from 2015 to 2025 [DIRECT]. The data covers historical figures and likely projections, indicated by asterisks on years like 2019* and 2025* [DERIVED: observed asterisks in data table and axis labels]. This dataset belongs to the domain of public finance and macroeconomics, tracking national fiscal health over a decade [SPECULATIVE: Macroeconomics].\",\n    \"domain_specific_explanations\": \"In public finance, a positive value represents a budget surplus, while a negative value represents a budget deficit [SPECULATIVE: Public Finance]. Between 2015 and 2019, Switzerland maintained a consistent budget surplus, peaking in 2019 at approximately 1.47% of GDP [DERIVED: compared values in the data table]. The L2 caption indicates a severe budget disruption occurred in 2020 [DIRECT], which historically aligns with the global COVID-19 pandemic that forced massive public spending and caused economic contractions worldwide [SPECULATIVE: Economic History]. By 2025, the budget balance is projected to return to a very slim surplus of 0.05% of GDP [DERIVED: converted 0.0005 to percentage].\",\n    \"real_world_significance\": \"Switzerland is known for its 'debt brake' (Schuldenbremse) rule, which constitutionally requires the federal budget to be balanced over an economic cycle [SPECULATIVE: Swiss Fiscal Policy]. The massive deficit in 2020, with the axis extending down to -4% of GDP, reflects the extraordinary fiscal measures taken to support businesses and citizens during the pandemic [SPECULATIVE: Swiss Fiscal Policy]. The slow recovery toward a near-zero balance by 2025 shows the long-term fiscal drag of emergency pandemic spending and the challenges of returning to structural surpluses under strict fiscal rules [SPECULATIVE: Macroeconomics].\",\n    \"other\": \"The data table provided is missing explicit entries for the years 2020 through 2024, but the overall trend of a sharp drop in 2020 and subsequent slow recovery is confirmed by the captions and axis limits [DERIVED: compared data table entries with L1 and L2 captions].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays Switzerland's budget balance as a percentage of its Gross Domestic Product (GDP) from 2015 to 2025\",\n      \"The L2 caption indicates a severe budget disruption occurred in 2020\"\n    ],\n    \"derived_claims\": [\n      \"The data covers historical figures and likely projections, indicated by asterisks on years like 2019* and 2025* [derived from observing asterisks in data table and axis labels]\",\n      \"Between 2015 and 2019, Switzerland maintained a consistent budget surplus, peaking in 2019 at approximately 1.47% of GDP [derived from comparing values in the data table]\",\n      \"By 2025, the budget balance is projected to return to a very slim surplus of 0.05% of GDP [derived from converting 0.0005 to percentage]\",\n      \"The data table provided is missing explicit entries for the years 2020 through 2024, but the overall trend of a sharp drop in 2020 and subsequent slow recovery is confirmed by the captions and axis limits [derived from comparing data table entries with L1 and L2 captions]\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset belongs to the domain of public finance and macroeconomics, tracking national fiscal health over a decade [source: Macroeconomics]\",\n      \"In public finance, a positive value represents a budget surplus, while a negative value represents a budget deficit [source: Public Finance]\",\n      \"which historically aligns with the global COVID-19 pandemic that forced massive public spending and caused economic contractions worldwide [source: Economic History]\",\n      \"Switzerland is known for its 'debt brake' (Schuldenbremse) rule, which constitutionally requires the federal budget to be balanced over an economic cycle [source: Swiss Fiscal Policy]\",\n      \"The massive deficit in 2020, with the axis extending down to -4% of GDP, reflects the extraordinary fiscal measures taken to support businesses and citizens during the pandemic [source: Swiss Fiscal Policy]\",\n      \"The slow recovery toward a near-zero balance by 2025 shows the long-term fiscal drag of emergency pandemic spending and the challenges of returning to structural surpluses under strict fiscal rules [source: Macroeconomics]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table contains exact values for some years (2015-2019, 2025) but is missing values for the years 2020-2024."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The general trend of a major drop in 2020 and a slow recovery is described in the L2 caption, but exact magnitudes for the deficit years are missing from the data table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly define the subject as Switzerland's budget balance relative to GDP."
+        },
+        "domain_expert_context": {
+          "score": 0,
+          "justification": "No expert domain story was provided."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays Switzerland's budget balance as a percentage of its Gross Domestic Product (GDP) from 2015 to 2025 [DIRECT]. The data covers historical figures and likely projections, indicated by asterisks on years like 2019* and 2025* [DERIVED: observed asterisks in data table and axis labels]. This dataset belongs to the domain of public finance and macroeconomics, tracking national fiscal health over a decade [SPECULATIVE: Macroeconomics].",
+      "domain_specific_explanations": "In public finance, a positive value represents a budget surplus, while a negative value represents a budget deficit [SPECULATIVE: Public Finance]. Between 2015 and 2019, Switzerland maintained a consistent budget surplus, peaking in 2019 at approximately 1.47% of GDP [DERIVED: compared values in the data table]. The L2 caption indicates a severe budget disruption occurred in 2020 [DIRECT], which historically aligns with the global COVID-19 pandemic that forced massive public spending and caused economic contractions worldwide [SPECULATIVE: Economic History]. By 2025, the budget balance is projected to return to a very slim surplus of 0.05% of GDP [DERIVED: converted 0.0005 to percentage].",
+      "real_world_significance": "Switzerland is known for its 'debt brake' (Schuldenbremse) rule, which constitutionally requires the federal budget to be balanced over an economic cycle [SPECULATIVE: Swiss Fiscal Policy]. The massive deficit in 2020, with the axis extending down to -4% of GDP, reflects the extraordinary fiscal measures taken to support businesses and citizens during the pandemic [SPECULATIVE: Swiss Fiscal Policy]. The slow recovery toward a near-zero balance by 2025 shows the long-term fiscal drag of emergency pandemic spending and the challenges of returning to structural surpluses under strict fiscal rules [SPECULATIVE: Macroeconomics].",
+      "other": "The data table provided is missing explicit entries for the years 2020 through 2024, but the overall trend of a sharp drop in 2020 and subsequent slow recovery is confirmed by the captions and axis limits [DERIVED: compared data table entries with L1 and L2 captions]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays Switzerland's budget balance as a percentage of its Gross Domestic Product (GDP) from 2015 to 2025",
+        "The L2 caption indicates a severe budget disruption occurred in 2020"
+      ],
+      "derived_claims": [
+        "The data covers historical figures and likely projections, indicated by asterisks on years like 2019* and 2025* [derived from observing asterisks in data table and axis labels]",
+        "Between 2015 and 2019, Switzerland maintained a consistent budget surplus, peaking in 2019 at approximately 1.47% of GDP [derived from comparing values in the data table]",
+        "By 2025, the budget balance is projected to return to a very slim surplus of 0.05% of GDP [derived from converting 0.0005 to percentage]",
+        "The data table provided is missing explicit entries for the years 2020 through 2024, but the overall trend of a sharp drop in 2020 and subsequent slow recovery is confirmed by the captions and axis limits [derived from comparing data table entries with L1 and L2 captions]"
+      ],
+      "speculative_claims": [
+        "This dataset belongs to the domain of public finance and macroeconomics, tracking national fiscal health over a decade [source: Macroeconomics]",
+        "In public finance, a positive value represents a budget surplus, while a negative value represents a budget deficit [source: Public Finance]",
+        "which historically aligns with the global COVID-19 pandemic that forced massive public spending and caused economic contractions worldwide [source: Economic History]",
+        "Switzerland is known for its 'debt brake' (Schuldenbremse) rule, which constitutionally requires the federal budget to be balanced over an economic cycle [source: Swiss Fiscal Policy]",
+        "The massive deficit in 2020, with the axis extending down to -4% of GDP, reflects the extraordinary fiscal measures taken to support businesses and citizens during the pandemic [source: Swiss Fiscal Policy]",
+        "The slow recovery toward a near-zero balance by 2025 shows the long-term fiscal drag of emergency pandemic spending and the challenges of returning to structural surpluses under strict fiscal rules [source: Macroeconomics]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11995.712667005137,
+  "created_at": "2026-07-07T22:00:49.401059Z"
+}

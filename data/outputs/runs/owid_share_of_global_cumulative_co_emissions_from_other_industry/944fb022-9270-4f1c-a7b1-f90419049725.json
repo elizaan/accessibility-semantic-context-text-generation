@@ -1,0 +1,75 @@
+{
+  "output_id": "944fb022-9270-4f1c-a7b1-f90419049725",
+  "chart_id": "owid_share_of_global_cumulative_co_emissions_from_other_industry",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data table provided but seems incomplete\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"No trend data provided\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"Domain is clear (CO2 emissions), but some context missing\"},\n      \"domain_expert_context\": {\"score\": 3, \"justification\": \"Expert domain story provided, but limited context\"},\n      \"stakeholder_impact\": {\"score\": 1, \"justification\": \"Limited stakeholder context provided\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of global cumulative CO2 emissions from other industries in 2024. [DIRECT] It is an interactive visualization from Our World in Data. [SPECULATIVE: https://ourworldindata.org/grapher/share-of-global-cumulative-co-emissions-from-other-industry] The data is sourced from the Global Carbon Budget (2025). [DIRECT]\",\n    \"domain_specific_explanations\": \"The chart measures cumulative emissions of carbon dioxide (CO2) from other industry sources since the first year of available data, expressed as a percentage of global cumulative emissions of CO2 from other industry sources. [DIRECT] The data is presented for various entities including countries and regions. [DIRECT] For example, Asia accounts for 44.41218% of global cumulative CO2 emissions from other industries, while China alone accounts for 37.10507%. [DIRECT]\",\n    \"real_world_significance\": \"This data matters because it highlights the contribution of different regions and countries to global CO2 emissions from industries other than those typically categorized under energy or transportation. [SPECULATIVE: Environmental Policy] It can inform decisions on climate change mitigation strategies, as countries with higher emissions may need to implement more stringent regulations or emission reduction targets. [SPECULATIVE: Climate Change Mitigation] For instance, the high emissions from Asia, particularly China, suggest that efforts to reduce industrial emissions in these regions could significantly impact global CO2 levels. [DERIVED: Comparison of Asia and China's emissions to total]\",\n    \"other\": \"The chart uses a color-coded map to represent the share of global cumulative CO2 emissions. [DIRECT] The legend shows that darker shades indicate higher percentages of emissions. [DIRECT]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the share of global cumulative CO2 emissions from other industries in 2024.\",\n      \"The data is sourced from the Global Carbon Budget (2025).\",\n      \"Asia accounts for 44.41218% of global cumulative CO2 emissions from other industries\",\n      \"China alone accounts for 37.10507% of global cumulative CO2 emissions from other industries\"\n    ],\n    \"derived_claims\": [\n      \"Comparison of Asia and China's emissions to total\"\n    ],\n    \"speculative_claims\": [\n      \"It is an interactive visualization from Our World in Data.\",\n      \"This data matters because it highlights the contribution of different regions and countries to global CO2 emissions from industries other than those typically categorized under energy or transportation.\",\n      \"It can inform decisions on climate change mitigation strategies, as countries with higher emissions may need to implement more stringent regulations or emission reduction targets.\",\n      \"For instance, the high emissions from Asia, particularly China, suggest that efforts to reduce industrial emissions in these regions could significantly impact global CO2 levels.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 1,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data table provided but seems incomplete"
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend data provided"
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "Domain is clear (CO2 emissions), but some context missing"
+        },
+        "domain_expert_context": {
+          "score": 3,
+          "justification": "Expert domain story provided, but limited context"
+        },
+        "stakeholder_impact": {
+          "score": 1,
+          "justification": "Limited stakeholder context provided"
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of global cumulative CO2 emissions from other industries in 2024. [DIRECT] It is an interactive visualization from Our World in Data. [SPECULATIVE: https://ourworldindata.org/grapher/share-of-global-cumulative-co-emissions-from-other-industry] The data is sourced from the Global Carbon Budget (2025). [DIRECT]",
+      "domain_specific_explanations": "The chart measures cumulative emissions of carbon dioxide (CO2) from other industry sources since the first year of available data, expressed as a percentage of global cumulative emissions of CO2 from other industry sources. [DIRECT] The data is presented for various entities including countries and regions. [DIRECT] For example, Asia accounts for 44.41218% of global cumulative CO2 emissions from other industries, while China alone accounts for 37.10507%. [DIRECT]",
+      "real_world_significance": "This data matters because it highlights the contribution of different regions and countries to global CO2 emissions from industries other than those typically categorized under energy or transportation. [SPECULATIVE: Environmental Policy] It can inform decisions on climate change mitigation strategies, as countries with higher emissions may need to implement more stringent regulations or emission reduction targets. [SPECULATIVE: Climate Change Mitigation] For instance, the high emissions from Asia, particularly China, suggest that efforts to reduce industrial emissions in these regions could significantly impact global CO2 levels. [DERIVED: Comparison of Asia and China's emissions to total]",
+      "other": "The chart uses a color-coded map to represent the share of global cumulative CO2 emissions. [DIRECT] The legend shows that darker shades indicate higher percentages of emissions. [DIRECT]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of global cumulative CO2 emissions from other industries in 2024.",
+        "The data is sourced from the Global Carbon Budget (2025).",
+        "Asia accounts for 44.41218% of global cumulative CO2 emissions from other industries",
+        "China alone accounts for 37.10507% of global cumulative CO2 emissions from other industries"
+      ],
+      "derived_claims": [
+        "Comparison of Asia and China's emissions to total"
+      ],
+      "speculative_claims": [
+        "It is an interactive visualization from Our World in Data.",
+        "This data matters because it highlights the contribution of different regions and countries to global CO2 emissions from industries other than those typically categorized under energy or transportation.",
+        "It can inform decisions on climate change mitigation strategies, as countries with higher emissions may need to implement more stringent regulations or emission reduction targets.",
+        "For instance, the high emissions from Asia, particularly China, suggest that efforts to reduce industrial emissions in these regions could significantly impact global CO2 levels."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 1,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 2538,
+    "output": 792
+  },
+  "latency_ms": 2559.4782910193317,
+  "created_at": "2026-07-08T00:18:05.381972Z"
+}

@@ -1,0 +1,77 @@
+{
+  "output_id": "f194b2e3-068f-46a2-86a2-1ea323a7d8a2",
+  "chart_id": "hci_88b5f0341afb94f658ade33d8cef8a30bde358b4_Image_007",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url",
+    "alt_text"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact data values for all 11 tasks are fully provided in the human-written alt text, though a separate structured data table is missing.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relative success rates across different task types can be easily compared and analyzed from the provided text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly identified as a CHI 2021 paper on usability testing of slide interpretation tasks.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story provides the exact paper citation, publication venue (CHI 2021), and the figure caption explaining what the percentages represent.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was explicitly provided in the metadata.\"\n      },\n      \"overall\": 3.0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart presents data from a CHI 2021 research paper evaluating a task-based usability test [DIRECT]. It measures the percentage of participants who were able to partially or fully succeed in completing 11 different interpretive tasks related to slide elements [DIRECT]. The tasks involve identifying and spatializing objects—such as rectangles, ovals, arrows, and text boxes—on a slide [DIRECT].\",\n    \"domain_specific_explanations\": \"The tasks with the highest success rates are identifying objects on a pre-made slide (91.7%) and identifying text in a text box (90.9%) [DERIVED: compared task percentages]. Conversely, the lowest success rate is determining the direction an arrow is pointing, which had a 0.0% success rate [DERIVED: compared task percentages]. Identifying color (25.0%) and determining relative positions (36.4% for tasks 5 and 11) also showed low success rates [DERIVED: compared task percentages]. In human-computer interaction (HCI) and accessibility research, these results typically point to severe gaps in how screen readers or assistive technologies convey spatial and visual properties (like direction, color, and relative layout) compared to semantic content (like text or basic object presence) [SPECULATIVE: Human-Computer Interaction / Accessibility Research].\",\n    \"real_world_significance\": \"This data highlights critical accessibility barriers in slide presentation software for blind or low-vision users [SPECULATIVE: Assistive Technology / Accessibility]. While users can easily identify that text exists (90.9% success) or that objects are present (91.7% success), they are almost completely locked out of understanding spatial relationships and visual indicators like arrow directions (0.0% success) or color (25.0% success) [DERIVED: compared semantic vs. spatial/visual task success rates]. These findings suggest that developers of presentation software and assistive technologies need to design better spatial audio, non-visual representations, or semantic descriptions to convey layout and visual relationships [SPECULATIVE: Software Engineering / Inclusive Design].\",\n    \"other\": \"There is a stark contrast between basic identification tasks (Tasks 1 and 10, both >90%) and relational/spatial tasks (Tasks 2, 5, 8, 11, all <= 36.4%) [DERIVED: grouped and compared task categories].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart presents data from a CHI 2021 research paper evaluating a task-based usability test\",\n      \"It measures the percentage of participants who were able to partially or fully succeed in completing 11 different interpretive tasks related to slide elements\",\n      \"The tasks involve identifying and spatializing objects—such as rectangles, ovals, arrows, and text boxes—on a slide\"\n    ],\n    \"derived_claims\": [\n      \"The tasks with the highest success rates are identifying objects on a pre-made slide (91.7%) and identifying text in a text box (90.9%) [derived from comparing task percentages]\",\n      \"The lowest success rate is determining the direction an arrow is pointing, which had a 0.0% success rate [derived from comparing task percentages]\",\n      \"Identifying color (25.0%) and determining relative positions (36.4% for tasks 5 and 11) also showed low success rates [derived from comparing task percentages]\",\n      \"While users can easily identify that text exists (90.9% success) or that objects are present (91.7% success), they are almost completely locked out of understanding spatial relationships and visual indicators like arrow directions (0.0% success) or color (25.0% success) [derived from comparing semantic vs. spatial/visual task success rates]\",\n      \"There is a stark contrast between basic identification tasks (Tasks 1 and 10, both >90%) and relational/spatial tasks (Tasks 2, 5, 8, 11, all <= 36.4%) [derived from grouping and comparing task categories]\"\n    ],\n    \"speculative_claims\": [\n      \"In human-computer interaction (HCI) and accessibility research, these results typically point to severe gaps in how screen readers or assistive technologies convey spatial and visual properties (like direction, color, and relative layout) compared to semantic content (like text or basic object presence) [source: Human-Computer Interaction / Accessibility Research]\",\n      \"This data highlights critical accessibility barriers in slide presentation software for blind or low-vision users [source: Assistive Technology / Accessibility]\",\n      \"These findings suggest that developers of presentation software and assistive technologies need to design better spatial audio, non-visual representations, or semantic descriptions to convey layout and visual relationships [source: Software Engineering / Inclusive Design]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact data values for all 11 tasks are fully provided in the human-written alt text, though a separate structured data table is missing."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relative success rates across different task types can be easily compared and analyzed from the provided text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly identified as a CHI 2021 paper on usability testing of slide interpretation tasks."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story provides the exact paper citation, publication venue (CHI 2021), and the figure caption explaining what the percentages represent."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was explicitly provided in the metadata."
+        },
+        "overall": 3.0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart presents data from a CHI 2021 research paper evaluating a task-based usability test [DIRECT]. It measures the percentage of participants who were able to partially or fully succeed in completing 11 different interpretive tasks related to slide elements [DIRECT]. The tasks involve identifying and spatializing objects—such as rectangles, ovals, arrows, and text boxes—on a slide [DIRECT].",
+      "domain_specific_explanations": "The tasks with the highest success rates are identifying objects on a pre-made slide (91.7%) and identifying text in a text box (90.9%) [DERIVED: compared task percentages]. Conversely, the lowest success rate is determining the direction an arrow is pointing, which had a 0.0% success rate [DERIVED: compared task percentages]. Identifying color (25.0%) and determining relative positions (36.4% for tasks 5 and 11) also showed low success rates [DERIVED: compared task percentages]. In human-computer interaction (HCI) and accessibility research, these results typically point to severe gaps in how screen readers or assistive technologies convey spatial and visual properties (like direction, color, and relative layout) compared to semantic content (like text or basic object presence) [SPECULATIVE: Human-Computer Interaction / Accessibility Research].",
+      "real_world_significance": "This data highlights critical accessibility barriers in slide presentation software for blind or low-vision users [SPECULATIVE: Assistive Technology / Accessibility]. While users can easily identify that text exists (90.9% success) or that objects are present (91.7% success), they are almost completely locked out of understanding spatial relationships and visual indicators like arrow directions (0.0% success) or color (25.0% success) [DERIVED: compared semantic vs. spatial/visual task success rates]. These findings suggest that developers of presentation software and assistive technologies need to design better spatial audio, non-visual representations, or semantic descriptions to convey layout and visual relationships [SPECULATIVE: Software Engineering / Inclusive Design].",
+      "other": "There is a stark contrast between basic identification tasks (Tasks 1 and 10, both >90%) and relational/spatial tasks (Tasks 2, 5, 8, 11, all <= 36.4%) [DERIVED: grouped and compared task categories]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart presents data from a CHI 2021 research paper evaluating a task-based usability test",
+        "It measures the percentage of participants who were able to partially or fully succeed in completing 11 different interpretive tasks related to slide elements",
+        "The tasks involve identifying and spatializing objects—such as rectangles, ovals, arrows, and text boxes—on a slide"
+      ],
+      "derived_claims": [
+        "The tasks with the highest success rates are identifying objects on a pre-made slide (91.7%) and identifying text in a text box (90.9%) [derived from comparing task percentages]",
+        "The lowest success rate is determining the direction an arrow is pointing, which had a 0.0% success rate [derived from comparing task percentages]",
+        "Identifying color (25.0%) and determining relative positions (36.4% for tasks 5 and 11) also showed low success rates [derived from comparing task percentages]",
+        "While users can easily identify that text exists (90.9% success) or that objects are present (91.7% success), they are almost completely locked out of understanding spatial relationships and visual indicators like arrow directions (0.0% success) or color (25.0% success) [derived from comparing semantic vs. spatial/visual task success rates]",
+        "There is a stark contrast between basic identification tasks (Tasks 1 and 10, both >90%) and relational/spatial tasks (Tasks 2, 5, 8, 11, all <= 36.4%) [derived from grouping and comparing task categories]"
+      ],
+      "speculative_claims": [
+        "In human-computer interaction (HCI) and accessibility research, these results typically point to severe gaps in how screen readers or assistive technologies convey spatial and visual properties (like direction, color, and relative layout) compared to semantic content (like text or basic object presence) [source: Human-Computer Interaction / Accessibility Research]",
+        "This data highlights critical accessibility barriers in slide presentation software for blind or low-vision users [source: Assistive Technology / Accessibility]",
+        "These findings suggest that developers of presentation software and assistive technologies need to design better spatial audio, non-visual representations, or semantic descriptions to convey layout and visual relationships [source: Software Engineering / Inclusive Design]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12289.908874954563,
+  "created_at": "2026-07-07T23:25:16.907583Z"
+}

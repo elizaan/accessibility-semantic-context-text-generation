@@ -1,0 +1,77 @@
+{
+  "output_id": "9cc61744-b351-4dec-97df-d5a2bb8ee325",
+  "chart_id": "owid_countrys_top_source_of_imported_goods",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides a partial list of countries and their top import partners for 2024, with 5 rows truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The data is a categorical snapshot for 2024 rather than a time-series trend, but dominant partners can be identified.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and data clearly indicate the domain of international trade and import partnerships.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert story provides a clear definition of what 'top source of imported goods' means (largest share of merchandise goods by value).\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 3.0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The dataset represents the top source of imported goods by value for various countries in the year 2024 [DIRECT]. It is published by Our World in Data [DIRECT]. The data categorizes the primary import partner for each country, highlighting major global trade hubs like China, the United States, Germany, Russia, and India [DERIVED: read the 'Top import partner category' column in the provided data table].\",\n    \"domain_specific_explanations\": \"The expert story defines this metric as the trading partner from which a country imports the largest share of its merchandise goods, by value [DIRECT]. In international trade, having a specific country as a top import partner indicates deep economic integration, supply chain dependencies, and often geographic proximity or trade agreements [SPECULATIVE: International Economics]. For example, North American and Caribbean territories like Anguilla, Aruba, and the Bahamas rely heavily on the United States [DERIVED: read from the data table that Anguilla, Aruba, and Bahamas all have 'United States' as their top import partner in 2024]. Similarly, Eastern European/Central Asian nations like Armenia and Belarus have Russia as their top partner [DERIVED: read from the data table that Armenia and Belarus have 'Russia' as their top import partner in 2024].\",\n    \"real_world_significance\": \"This data is crucial for understanding global trade networks and geopolitical alliances [SPECULATIVE: Geopolitics]. A heavy reliance on a single import partner makes a country vulnerable to supply chain disruptions, tariff wars, or political leverage from that partner [SPECULATIVE: International Relations]. The dominance of China as a top import partner for diverse nations (such as Algeria, Angola, Australia, and Bangladesh) reflects its widespread trade reach [DERIVED: read from the data table that Algeria, Angola, Australia, and Bangladesh all have 'China' as their top import partner in 2024].\",\n    \"other\": \"The category 'Other' is used for countries whose top import partner does not fall into the major highlighted categories (like the US, China, Russia, Germany, India, or Italy) [DERIVED: inferred from the presence of 'Other' alongside specific major country names in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset represents the top source of imported goods by value for various countries in the year 2024\",\n      \"It is published by Our World in Data\",\n      \"The expert story defines this metric as the trading partner from which a country imports the largest share of its merchandise goods, by value\"\n    ],\n    \"derived_claims\": [\n      \"The data categorizes the primary import partner for each country, highlighting major global trade hubs like China, the United States, Germany, Russia, and India [DERIVED: read the 'Top import partner category' column in the provided data table]\",\n      \"For example, North American and Caribbean territories like Anguilla, Aruba, and the Bahamas rely heavily on the United States [DERIVED: read from the data table that Anguilla, Aruba, and Bahamas all have 'United States' as their top import partner in 2024]\",\n      \"Similarly, Eastern European/Central Asian nations like Armenia and Belarus have Russia as their top partner [DERIVED: read from the data table that Armenia and Belarus have 'Russia' as their top import partner in 2024]\",\n      \"The dominance of China as a top import partner for diverse nations (such as Algeria, Angola, Australia, and Bangladesh) reflects its widespread trade reach [DERIVED: read from the data table that Algeria, Angola, Australia, and Bangladesh all have 'China' as their top import partner in 2024]\",\n      \"The category 'Other' is used for countries whose top import partner does not fall into the major highlighted categories (like the US, China, Russia, Germany, India, or Italy) [DERIVED: inferred from the presence of 'Other' alongside specific major country names in the data table]\"\n    ],\n    \"speculative_claims\": [\n      \"In international trade, having a specific country as a top import partner indicates deep economic integration, supply chain dependencies, and often geographic proximity or trade agreements [SPECULATIVE: International Economics]\",\n      \"This data is crucial for understanding global trade networks and geopolitical alliances [SPECULATIVE: Geopolitics]\",\n      \"A heavy reliance on a single import partner makes a country vulnerable to supply chain disruptions, tariff wars, or political leverage from that partner [SPECULATIVE: International Relations]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides a partial list of countries and their top import partners for 2024, with 5 rows truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The data is a categorical snapshot for 2024 rather than a time-series trend, but dominant partners can be identified."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and data clearly indicate the domain of international trade and import partnerships."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert story provides a clear definition of what 'top source of imported goods' means (largest share of merchandise goods by value)."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 3.0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The dataset represents the top source of imported goods by value for various countries in the year 2024 [DIRECT]. It is published by Our World in Data [DIRECT]. The data categorizes the primary import partner for each country, highlighting major global trade hubs like China, the United States, Germany, Russia, and India [DERIVED: read the 'Top import partner category' column in the provided data table].",
+      "domain_specific_explanations": "The expert story defines this metric as the trading partner from which a country imports the largest share of its merchandise goods, by value [DIRECT]. In international trade, having a specific country as a top import partner indicates deep economic integration, supply chain dependencies, and often geographic proximity or trade agreements [SPECULATIVE: International Economics]. For example, North American and Caribbean territories like Anguilla, Aruba, and the Bahamas rely heavily on the United States [DERIVED: read from the data table that Anguilla, Aruba, and Bahamas all have 'United States' as their top import partner in 2024]. Similarly, Eastern European/Central Asian nations like Armenia and Belarus have Russia as their top partner [DERIVED: read from the data table that Armenia and Belarus have 'Russia' as their top import partner in 2024].",
+      "real_world_significance": "This data is crucial for understanding global trade networks and geopolitical alliances [SPECULATIVE: Geopolitics]. A heavy reliance on a single import partner makes a country vulnerable to supply chain disruptions, tariff wars, or political leverage from that partner [SPECULATIVE: International Relations]. The dominance of China as a top import partner for diverse nations (such as Algeria, Angola, Australia, and Bangladesh) reflects its widespread trade reach [DERIVED: read from the data table that Algeria, Angola, Australia, and Bangladesh all have 'China' as their top import partner in 2024].",
+      "other": "The category 'Other' is used for countries whose top import partner does not fall into the major highlighted categories (like the US, China, Russia, Germany, India, or Italy) [DERIVED: inferred from the presence of 'Other' alongside specific major country names in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset represents the top source of imported goods by value for various countries in the year 2024",
+        "It is published by Our World in Data",
+        "The expert story defines this metric as the trading partner from which a country imports the largest share of its merchandise goods, by value"
+      ],
+      "derived_claims": [
+        "The data categorizes the primary import partner for each country, highlighting major global trade hubs like China, the United States, Germany, Russia, and India [DERIVED: read the 'Top import partner category' column in the provided data table]",
+        "For example, North American and Caribbean territories like Anguilla, Aruba, and the Bahamas rely heavily on the United States [DERIVED: read from the data table that Anguilla, Aruba, and Bahamas all have 'United States' as their top import partner in 2024]",
+        "Similarly, Eastern European/Central Asian nations like Armenia and Belarus have Russia as their top partner [DERIVED: read from the data table that Armenia and Belarus have 'Russia' as their top import partner in 2024]",
+        "The dominance of China as a top import partner for diverse nations (such as Algeria, Angola, Australia, and Bangladesh) reflects its widespread trade reach [DERIVED: read from the data table that Algeria, Angola, Australia, and Bangladesh all have 'China' as their top import partner in 2024]",
+        "The category 'Other' is used for countries whose top import partner does not fall into the major highlighted categories (like the US, China, Russia, Germany, India, or Italy) [DERIVED: inferred from the presence of 'Other' alongside specific major country names in the data table]"
+      ],
+      "speculative_claims": [
+        "In international trade, having a specific country as a top import partner indicates deep economic integration, supply chain dependencies, and often geographic proximity or trade agreements [SPECULATIVE: International Economics]",
+        "This data is crucial for understanding global trade networks and geopolitical alliances [SPECULATIVE: Geopolitics]",
+        "A heavy reliance on a single import partner makes a country vulnerable to supply chain disruptions, tariff wars, or political leverage from that partner [SPECULATIVE: International Relations]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11996.781916997861,
+  "created_at": "2026-07-07T22:57:40.872290Z"
+}

@@ -1,0 +1,85 @@
+{
+  "output_id": "9b21610b-81f1-4e0a-abb4-1651a6278bfd",
+  "chart_id": "owid_survival_ages_across_the_population",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The data table provides highly detailed percentile survival ages for 25 countries, though 5 rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"We can compare survival distributions across countries for specific years (mostly 2023 and 2024), but historical trends over time for individual countries are not present.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and data columns clearly indicate demographic survival and mortality distribution analysis.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly explains how to interpret the percentiles as period life table survival cohorts.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided in the metadata.\"\n      },\n      \"overall\": 3.0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The dataset displays survival ages across different percentiles of the population for various countries, primarily focusing on the years 2022 to 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. It represents a snapshot of period life table survival metrics, showing the age to which a certain percentage of a cohort would survive under current age-specific mortality rates [SPECULATIVE: Demography].\",\n    \"domain_specific_explanations\": \"The percentiles (from 99% down to the Top 1%) represent the proportion of the population surviving to at least that age [DIRECT]. The '99%' column shows the age that 99% of the population survives past, which is highly sensitive to infant and child mortality, while 'Top 1%' represents the extreme longevity of the longest-lived 1% of the population [SPECULATIVE: Demography]. In 2023, Hong Kong had the highest survival age for the Top 1% at 105.3 years [DERIVED: compared Top 1% values across all entities in the table], while Latvia in 2024 had a Top 1% survival age of 99.9 years [DIRECT]. The median survival age (50% column) varies significantly: for instance, in 2023, Hong Kong's median survival age was 87.39 years [DIRECT], whereas the United States was 82.34 years [DIRECT], and Latvia (2024) was 79.44 years [DIRECT]. The '99%' survival age reflects early-life mortality; for example, in the United States (2023), 99% of the population survives to age 22.5 [DIRECT], which is notably lower than countries like Luxembourg (39.82 years in 2023) [DIRECT] or Spain (38.61 years in 2023) [DIRECT], indicating higher early-life mortality rates in the US compared to Western European nations [DERIVED: compared US 99% value of 22.5 to Luxembourg's 39.82 and Spain's 38.61].\",\n    \"real_world_significance\": \"These metrics are crucial for public health officials, policymakers, and pension planners to assess population health, life expectancy inequalities, and the sustainability of social security systems [SPECULATIVE: Public Policy]. A lower age for the 99% survival threshold highlights critical public health challenges in early life, such as infant mortality, youth violence, or accidental deaths [SPECULATIVE: Public Health]. The compression of mortality (how close the 90% and 10% survival ages are) indicates the equality of lifespan within a nation [SPECULATIVE: Demography].\",\n    \"other\": \"Eastern European nations in the dataset, such as Latvia and Lithuania, show lower survival ages across almost all percentiles compared to Nordic countries like Sweden and Norway [DERIVED: compared Baltic vs Nordic values across columns]. For example, Sweden's median survival age in 2024 was 86.11 years [DIRECT], compared to Latvia's 79.44 years [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset displays survival ages across different percentiles of the population for various countries, primarily focusing on the years 2022 to 2024\",\n      \"The data is sourced from Our World in Data\",\n      \"The percentiles (from 99% down to the Top 1%) represent the proportion of the population surviving to at least that age\",\n      \"Latvia in 2024 had a Top 1% survival age of 99.9 years\",\n      \"in 2023, Hong Kong's median survival age was 87.39 years\",\n      \"the United States was 82.34 years\",\n      \"Latvia (2024) was 79.44 years\",\n      \"in the United States (2023), 99% of the population survives to age 22.5\",\n      \"Luxembourg (39.82 years in 2023)\",\n      \"Spain (38.61 years in 2023)\",\n      \"Sweden's median survival age in 2024 was 86.11 years\"\n    ],\n    \"derived_claims\": [\n      \"In 2023, Hong Kong had the highest survival age for the Top 1% at 105.3 years [derived from comparing Top 1% values across all entities in the table]\",\n      \"indicating higher early-life mortality rates in the US compared to Western European nations [derived from comparing US 99% value of 22.5 to Luxembourg's 39.82 and Spain's 38.61]\",\n      \"Eastern European nations in the dataset, such as Latvia and Lithuania, show lower survival ages across almost all percentiles compared to Nordic countries like Sweden and Norway [derived from comparing Baltic vs Nordic values across columns]\"\n    ],\n    \"speculative_claims\": [\n      \"It represents a snapshot of period life table survival metrics, showing the age to which a certain percentage of a cohort would survive under current age-specific mortality rates [source: Demography]\",\n      \"The '99%' column shows the age that 99% of the population survives past, which is highly sensitive to infant and child mortality, while 'Top 1%' represents the extreme longevity of the longest-lived 1% of the population [source: Demography]\",\n      \"These metrics are crucial for public health officials, policymakers, and pension planners to assess population health, life expectancy inequalities, and the sustainability of social security systems [source: Public Policy]\",\n      \"A lower age for the 99% survival threshold highlights critical public health challenges in early life, such as infant mortality, youth violence, or accidental deaths [source: Public Health]\",\n      \"The compression of mortality (how close the 90% and 10% survival ages are) indicates the equality of lifespan within a nation [source: Demography]\"\n    ],\n    \"total_flag_count\": 19,\n    \"direct_count\": 11,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides highly detailed percentile survival ages for 25 countries, though 5 rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "We can compare survival distributions across countries for specific years (mostly 2023 and 2024), but historical trends over time for individual countries are not present."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and data columns clearly indicate demographic survival and mortality distribution analysis."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert domain story clearly explains how to interpret the percentiles as period life table survival cohorts."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided in the metadata."
+        },
+        "overall": 3.0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The dataset displays survival ages across different percentiles of the population for various countries, primarily focusing on the years 2022 to 2024 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. It represents a snapshot of period life table survival metrics, showing the age to which a certain percentage of a cohort would survive under current age-specific mortality rates [SPECULATIVE: Demography].",
+      "domain_specific_explanations": "The percentiles (from 99% down to the Top 1%) represent the proportion of the population surviving to at least that age [DIRECT]. The '99%' column shows the age that 99% of the population survives past, which is highly sensitive to infant and child mortality, while 'Top 1%' represents the extreme longevity of the longest-lived 1% of the population [SPECULATIVE: Demography]. In 2023, Hong Kong had the highest survival age for the Top 1% at 105.3 years [DERIVED: compared Top 1% values across all entities in the table], while Latvia in 2024 had a Top 1% survival age of 99.9 years [DIRECT]. The median survival age (50% column) varies significantly: for instance, in 2023, Hong Kong's median survival age was 87.39 years [DIRECT], whereas the United States was 82.34 years [DIRECT], and Latvia (2024) was 79.44 years [DIRECT]. The '99%' survival age reflects early-life mortality; for example, in the United States (2023), 99% of the population survives to age 22.5 [DIRECT], which is notably lower than countries like Luxembourg (39.82 years in 2023) [DIRECT] or Spain (38.61 years in 2023) [DIRECT], indicating higher early-life mortality rates in the US compared to Western European nations [DERIVED: compared US 99% value of 22.5 to Luxembourg's 39.82 and Spain's 38.61].",
+      "real_world_significance": "These metrics are crucial for public health officials, policymakers, and pension planners to assess population health, life expectancy inequalities, and the sustainability of social security systems [SPECULATIVE: Public Policy]. A lower age for the 99% survival threshold highlights critical public health challenges in early life, such as infant mortality, youth violence, or accidental deaths [SPECULATIVE: Public Health]. The compression of mortality (how close the 90% and 10% survival ages are) indicates the equality of lifespan within a nation [SPECULATIVE: Demography].",
+      "other": "Eastern European nations in the dataset, such as Latvia and Lithuania, show lower survival ages across almost all percentiles compared to Nordic countries like Sweden and Norway [DERIVED: compared Baltic vs Nordic values across columns]. For example, Sweden's median survival age in 2024 was 86.11 years [DIRECT], compared to Latvia's 79.44 years [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset displays survival ages across different percentiles of the population for various countries, primarily focusing on the years 2022 to 2024",
+        "The data is sourced from Our World in Data",
+        "The percentiles (from 99% down to the Top 1%) represent the proportion of the population surviving to at least that age",
+        "Latvia in 2024 had a Top 1% survival age of 99.9 years",
+        "in 2023, Hong Kong's median survival age was 87.39 years",
+        "the United States was 82.34 years",
+        "Latvia (2024) was 79.44 years",
+        "in the United States (2023), 99% of the population survives to age 22.5",
+        "Luxembourg (39.82 years in 2023)",
+        "Spain (38.61 years in 2023)",
+        "Sweden's median survival age in 2024 was 86.11 years"
+      ],
+      "derived_claims": [
+        "In 2023, Hong Kong had the highest survival age for the Top 1% at 105.3 years [derived from comparing Top 1% values across all entities in the table]",
+        "indicating higher early-life mortality rates in the US compared to Western European nations [derived from comparing US 99% value of 22.5 to Luxembourg's 39.82 and Spain's 38.61]",
+        "Eastern European nations in the dataset, such as Latvia and Lithuania, show lower survival ages across almost all percentiles compared to Nordic countries like Sweden and Norway [derived from comparing Baltic vs Nordic values across columns]"
+      ],
+      "speculative_claims": [
+        "It represents a snapshot of period life table survival metrics, showing the age to which a certain percentage of a cohort would survive under current age-specific mortality rates [source: Demography]",
+        "The '99%' column shows the age that 99% of the population survives past, which is highly sensitive to infant and child mortality, while 'Top 1%' represents the extreme longevity of the longest-lived 1% of the population [source: Demography]",
+        "These metrics are crucial for public health officials, policymakers, and pension planners to assess population health, life expectancy inequalities, and the sustainability of social security systems [source: Public Policy]",
+        "A lower age for the 99% survival threshold highlights critical public health challenges in early life, such as infant mortality, youth violence, or accidental deaths [source: Public Health]",
+        "The compression of mortality (how close the 90% and 10% survival ages are) indicates the equality of lifespan within a nation [source: Demography]"
+      ],
+      "total_flag_count": 19,
+      "direct_count": 11,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13727.552583965007,
+  "created_at": "2026-07-07T22:44:04.932115Z"
+}

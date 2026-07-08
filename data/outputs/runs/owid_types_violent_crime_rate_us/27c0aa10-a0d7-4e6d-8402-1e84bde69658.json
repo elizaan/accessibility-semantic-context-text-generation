@@ -1,0 +1,78 @@
+{
+  "output_id": "27c0aa10-a0d7-4e6d-8402-1e84bde69658",
+  "chart_id": "owid_types_violent_crime_rate_us",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact data values for the year 2024 are provided, but historical data points are missing despite the expert story implying a time-series context.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only a single year (2024) of data is provided, making it impossible to calculate or observe trends over time.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and metadata clearly define the subject as violent crime rates in the United States.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 4,\n        \"justification\": \"The expert story provides crucial context regarding the metric (per 100,000 people), the definition of violent crime, and why rape is excluded from the visualization.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The dataset presents violent crime rates in the United States for the year 2024 [DIRECT]. Sourced from Our World in Data, the dataset breaks down the overall violent crime rate into specific sub-categories: homicide, aggravated assault, and robbery [DIRECT]. This breakdown helps researchers analyze the composition of violent crime in the country [SPECULATIVE: Criminology].\",\n    \"domain_specific_explanations\": \"The crime rates are standardized and estimated per 100,000 people to allow for fair comparisons across different population sizes [DIRECT]. While the standard definition of violent crime includes four offenses (murder/non-negligent manslaughter, rape, robbery, and aggravated assault), rape is excluded from this specific visualization due to a lack of comparable historical data [DIRECT]. In 2024, aggravated assault was the most prevalent violent crime category by a wide margin, recorded at approximately 256.07 per 100,000 people, followed by robbery at 60.55, and homicide at 4.98 [DERIVED: compared the values of aggravated assault, robbery, and homicide from the 2024 data row]. Aggravated assault alone accounts for approximately 71.3% of the total reported violent crime rate of 359.10 [DERIVED: calculated (256.07257 / 359.1019) * 100].\",\n    \"real_world_significance\": \"Standardizing crime data per 100,000 residents is essential for policymakers and criminologists to evaluate public safety measures objectively without population growth skewing the absolute numbers [SPECULATIVE: Criminology / Public Policy]. The stark contrast between the homicide rate (approx. 5 per 100,000) and the aggravated assault rate (approx. 256 per 100,000) underscores that the vast majority of violent crimes are non-lethal, which is critical context for public safety debates and police resource allocation [DERIVED: compared homicide rate to aggravated assault rate]. These metrics directly influence local and federal funding for crime prevention programs and social services [SPECULATIVE: Criminal Justice Policy].\",\n    \"other\": \"The sum of the three listed sub-categories (homicide, aggravated assault, and robbery) equals 321.60 per 100,000 people, which is lower than the total violent crime rate of 359.10 [DERIVED: summed the three sub-categories and compared to the total violent crime rate]. This discrepancy of 37.50 per 100,000 likely represents the rate of rape or other offenses that contribute to the total but are not individually visualized [SPECULATIVE: FBI Uniform Crime Reporting definitions].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset presents violent crime rates in the United States for the year 2024\",\n      \"Sourced from Our World in Data, the dataset breaks down the overall violent crime rate into specific sub-categories: homicide, aggravated assault, and robbery\",\n      \"The crime rates are standardized and estimated per 100,000 people to allow for fair comparisons across different population sizes\",\n      \"While the standard definition of violent crime includes four offenses (murder/non-negligent manslaughter, rape, robbery, and aggravated assault), rape is excluded from this specific visualization due to a lack of comparable historical data\"\n    ],\n    \"derived_claims\": [\n      \"In 2024, aggravated assault was the most prevalent violent crime category by a wide margin, recorded at approximately 256.07 per 100,000 people, followed by robbery at 60.55, and homicide at 4.98 [DERIVED: compared the values of aggravated assault, robbery, and homicide from the 2024 data row]\",\n      \"Aggravated assault alone accounts for approximately 71.3% of the total reported violent crime rate of 359.10 [DERIVED: calculated (256.07257 / 359.1019) * 100]\",\n      \"The stark contrast between the homicide rate (approx. 5 per 100,000) and the aggravated assault rate (approx. 256 per 100,000) underscores that the vast majority of violent crimes are non-lethal, which is critical context for public safety debates and police resource allocation [DERIVED: compared homicide rate to aggravated assault rate]\",\n      \"The sum of the three listed sub-categories (homicide, aggravated assault, and robbery) equals 321.60 per 100,000 people, which is lower than the total violent crime rate of 359.10 [DERIVED: summed the three sub-categories and compared to the total violent crime rate]\"\n    ],\n    \"speculative_claims\": [\n      \"This breakdown helps researchers analyze the composition of violent crime in the country [SPECULATIVE: Criminology]\",\n      \"Standardizing crime data per 100,000 residents is essential for policymakers and criminologists to evaluate public safety measures objectively without population growth skewing the absolute numbers [SPECULATIVE: Criminology / Public Policy]\",\n      \"These metrics directly influence local and federal funding for crime prevention programs and social services [SPECULATIVE: Criminal Justice Policy]\",\n      \"This discrepancy of 37.50 per 100,000 likely represents the rate of rape or other offenses that contribute to the total but are not individually visualized [SPECULATIVE: FBI Uniform Crime Reporting definitions]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact data values for the year 2024 are provided, but historical data points are missing despite the expert story implying a time-series context."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2024) of data is provided, making it impossible to calculate or observe trends over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and metadata clearly define the subject as violent crime rates in the United States."
+        },
+        "domain_expert_context": {
+          "score": 4,
+          "justification": "The expert story provides crucial context regarding the metric (per 100,000 people), the definition of violent crime, and why rape is excluded from the visualization."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The dataset presents violent crime rates in the United States for the year 2024 [DIRECT]. Sourced from Our World in Data, the dataset breaks down the overall violent crime rate into specific sub-categories: homicide, aggravated assault, and robbery [DIRECT]. This breakdown helps researchers analyze the composition of violent crime in the country [SPECULATIVE: Criminology].",
+      "domain_specific_explanations": "The crime rates are standardized and estimated per 100,000 people to allow for fair comparisons across different population sizes [DIRECT]. While the standard definition of violent crime includes four offenses (murder/non-negligent manslaughter, rape, robbery, and aggravated assault), rape is excluded from this specific visualization due to a lack of comparable historical data [DIRECT]. In 2024, aggravated assault was the most prevalent violent crime category by a wide margin, recorded at approximately 256.07 per 100,000 people, followed by robbery at 60.55, and homicide at 4.98 [DERIVED: compared the values of aggravated assault, robbery, and homicide from the 2024 data row]. Aggravated assault alone accounts for approximately 71.3% of the total reported violent crime rate of 359.10 [DERIVED: calculated (256.07257 / 359.1019) * 100].",
+      "real_world_significance": "Standardizing crime data per 100,000 residents is essential for policymakers and criminologists to evaluate public safety measures objectively without population growth skewing the absolute numbers [SPECULATIVE: Criminology / Public Policy]. The stark contrast between the homicide rate (approx. 5 per 100,000) and the aggravated assault rate (approx. 256 per 100,000) underscores that the vast majority of violent crimes are non-lethal, which is critical context for public safety debates and police resource allocation [DERIVED: compared homicide rate to aggravated assault rate]. These metrics directly influence local and federal funding for crime prevention programs and social services [SPECULATIVE: Criminal Justice Policy].",
+      "other": "The sum of the three listed sub-categories (homicide, aggravated assault, and robbery) equals 321.60 per 100,000 people, which is lower than the total violent crime rate of 359.10 [DERIVED: summed the three sub-categories and compared to the total violent crime rate]. This discrepancy of 37.50 per 100,000 likely represents the rate of rape or other offenses that contribute to the total but are not individually visualized [SPECULATIVE: FBI Uniform Crime Reporting definitions]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset presents violent crime rates in the United States for the year 2024",
+        "Sourced from Our World in Data, the dataset breaks down the overall violent crime rate into specific sub-categories: homicide, aggravated assault, and robbery",
+        "The crime rates are standardized and estimated per 100,000 people to allow for fair comparisons across different population sizes",
+        "While the standard definition of violent crime includes four offenses (murder/non-negligent manslaughter, rape, robbery, and aggravated assault), rape is excluded from this specific visualization due to a lack of comparable historical data"
+      ],
+      "derived_claims": [
+        "In 2024, aggravated assault was the most prevalent violent crime category by a wide margin, recorded at approximately 256.07 per 100,000 people, followed by robbery at 60.55, and homicide at 4.98 [DERIVED: compared the values of aggravated assault, robbery, and homicide from the 2024 data row]",
+        "Aggravated assault alone accounts for approximately 71.3% of the total reported violent crime rate of 359.10 [DERIVED: calculated (256.07257 / 359.1019) * 100]",
+        "The stark contrast between the homicide rate (approx. 5 per 100,000) and the aggravated assault rate (approx. 256 per 100,000) underscores that the vast majority of violent crimes are non-lethal, which is critical context for public safety debates and police resource allocation [DERIVED: compared homicide rate to aggravated assault rate]",
+        "The sum of the three listed sub-categories (homicide, aggravated assault, and robbery) equals 321.60 per 100,000 people, which is lower than the total violent crime rate of 359.10 [DERIVED: summed the three sub-categories and compared to the total violent crime rate]"
+      ],
+      "speculative_claims": [
+        "This breakdown helps researchers analyze the composition of violent crime in the country [SPECULATIVE: Criminology]",
+        "Standardizing crime data per 100,000 residents is essential for policymakers and criminologists to evaluate public safety measures objectively without population growth skewing the absolute numbers [SPECULATIVE: Criminology / Public Policy]",
+        "These metrics directly influence local and federal funding for crime prevention programs and social services [SPECULATIVE: Criminal Justice Policy]",
+        "This discrepancy of 37.50 per 100,000 likely represents the rate of rape or other offenses that contribute to the total but are not individually visualized [SPECULATIVE: FBI Uniform Crime Reporting definitions]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12801.319791993592,
+  "created_at": "2026-07-07T22:05:21.989679Z"
+}

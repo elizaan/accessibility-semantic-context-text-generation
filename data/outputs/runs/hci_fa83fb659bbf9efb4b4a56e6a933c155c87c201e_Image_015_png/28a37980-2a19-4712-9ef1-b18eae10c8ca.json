@@ -1,0 +1,78 @@
+{
+  "output_id": "28a37980-2a19-4712-9ef1-b18eae10c8ca",
+  "chart_id": "hci_fa83fb659bbf9efb4b4a56e6a933c155c87c201e_Image_015_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No raw data values or data table were provided in the text metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend descriptions or statistical summaries were provided in the text metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The alt text mentions 'discrimination events' and the expert story provides a publication venue, giving a basic domain context.\"\n      },\n      \"domain_expert_context\": {\n        \"score\": 2,\n        \"justification\": \"The expert domain story provides the publication source (Proc. ACM Hum. Comput. Interact., 2019) but no further textual details.\"\n      },\n      \"stakeholder_impact\": {\n        \"score\": 0,\n        \"justification\": \"No stakeholder context was provided.\"\n      },\n      \"overall\": 1.2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart, titled 'Feature Significance Over One Day Before to Two Days After' in the image, illustrates the statistical significance of various behavioral and psychological features relative to a discrimination event [DERIVED: read from image title and alt text]. This research was published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019 [DIRECT]. It tracks how passive mobile sensing features (such as screen use, calls, sleep, and steps) and active psychological states (anxiety, depression, frustration) change in significance from one day before the event (Day -1) to two days after (Day 2) [DERIVED: read from image axes and legend].\",\n    \"domain_specific_explanations\": \"In this chart, the Y-axis represents p-values, which measure statistical significance; lower values indicate a stronger, more reliable relationship between the discrimination event and the tracked feature [DERIVED: read from Y-axis label and standard statistical interpretation]. Two horizontal threshold lines are plotted at p = 0.05 and p = 0.01 to denote standard scientific significance levels [DERIVED: read from image lines and labels]. On the day before the event (Day -1), no features show statistical significance, with all p-values remaining high [DERIVED: read from Day -1 bars]. On the day of the event (Day 0), a wide range of features become statistically significant (p < 0.05), including Morning Screen Use (p = .032), Calls (p = .048), Time in Bed (p = .048), Range of Activities (p = .050), Number of Steps (p = .045), and Frustrated (p = .026) [DERIVED: read from Day 0 bar values]. By Day 1 and Day 2, most features return to non-significance, though a few specific behavioral or emotional indicators remain highly significant, such as a feature at p = 0.002 on Day 1 and another at p = 0.006 on Day 2 [DERIVED: read from Day 1 and Day 2 bar values].\",\n    \"real_world_significance\": \"This data is crucial for researchers in mobile health (mHealth) and social psychology who study the immediate and lingering impacts of everyday discrimination on marginalized populations [SPECULATIVE: HCI and mHealth domain]. By demonstrating that discrimination events have an immediate, statistically detectable footprint on passive behavioral data (like sleep, physical activity, and phone usage) on Day 0, the study shows that subjective experiences of bias translate into objective behavioral changes [SPECULATIVE: HCI and mHealth domain]. Understanding that these effects peak on the day of the event and rapidly decay over the next two days can help clinical psychologists and system designers build 'just-in-time' adaptive interventions that deliver support on mobile devices precisely when the user is experiencing the highest behavioral disruption [SPECULATIVE: HCI and mHealth domain].\",\n    \"other\": \"The visual distinction between solid bars (statistically significant, p < 0.05) and striped bars (not statistically significant) allows researchers to quickly identify which behavioral markers are meaningful indicators of a user's response to discrimination [DERIVED: read from image bar styles and significance thresholds].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This research was published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019.\"\n    ],\n    \"derived_claims\": [\n      \"The chart, titled 'Feature Significance Over One Day Before to Two Days After' in the image, illustrates the statistical significance of various behavioral and psychological features relative to a discrimination event.\",\n      \"It tracks how passive mobile sensing features (such as screen use, calls, sleep, and steps) and active psychological states (anxiety, depression, frustration) change in significance from one day before the event (Day -1) to two days after (Day 2).\",\n      \"In this chart, the Y-axis represents p-values, which measure statistical significance; lower values indicate a stronger, more reliable relationship between the discrimination event and the tracked feature.\",\n      \"Two horizontal threshold lines are plotted at p = 0.05 and p = 0.01 to denote standard scientific significance levels.\",\n      \"On the day before the event (Day -1), no features show statistical significance, with all p-values remaining high.\",\n      \"On the day of the event (Day 0), a wide range of features become statistically significant (p < 0.05), including Morning Screen Use (p = .032), Calls (p = .048), Time in Bed (p = .048), Range of Activities (p = .050), Number of Steps (p = .045), and Frustrated (p = .026).\",\n      \"By Day 1 and Day 2, most features return to non-significance, though a few specific behavioral or emotional indicators remain highly significant, such as a feature at p = 0.002 on Day 1 and another at p = 0.006 on Day 2.\",\n      \"The visual distinction between solid bars (statistically significant, p < 0.05) and striped bars (not statistically significant) allows researchers to quickly identify which behavioral markers are meaningful indicators of a user's response to discrimination.\"\n    ],\n    \"speculative_claims\": [\n      \"This data is crucial for researchers in mobile health (mHealth) and social psychology who study the immediate and lingering impacts of everyday discrimination on marginalized populations.\",\n      \"By demonstrating that discrimination events have an immediate, statistically detectable footprint on passive behavioral data (like sleep, physical activity, and phone usage) on Day 0, the study shows that subjective experiences of bias translate into objective behavioral changes.\",\n      \"Understanding that these effects peak on the day of the event and rapidly decay over the next two days can help clinical psychologists and system designers build 'just-in-time' adaptive interventions that deliver support on mobile devices precisely when the user is experiencing the highest behavioral disruption.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 8,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No raw data values or data table were provided in the text metadata."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend descriptions or statistical summaries were provided in the text metadata."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The alt text mentions 'discrimination events' and the expert story provides a publication venue, giving a basic domain context."
+        },
+        "domain_expert_context": {
+          "score": 2,
+          "justification": "The expert domain story provides the publication source (Proc. ACM Hum. Comput. Interact., 2019) but no further textual details."
+        },
+        "stakeholder_impact": {
+          "score": 0,
+          "justification": "No stakeholder context was provided."
+        },
+        "overall": 1.2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart, titled 'Feature Significance Over One Day Before to Two Days After' in the image, illustrates the statistical significance of various behavioral and psychological features relative to a discrimination event [DERIVED: read from image title and alt text]. This research was published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019 [DIRECT]. It tracks how passive mobile sensing features (such as screen use, calls, sleep, and steps) and active psychological states (anxiety, depression, frustration) change in significance from one day before the event (Day -1) to two days after (Day 2) [DERIVED: read from image axes and legend].",
+      "domain_specific_explanations": "In this chart, the Y-axis represents p-values, which measure statistical significance; lower values indicate a stronger, more reliable relationship between the discrimination event and the tracked feature [DERIVED: read from Y-axis label and standard statistical interpretation]. Two horizontal threshold lines are plotted at p = 0.05 and p = 0.01 to denote standard scientific significance levels [DERIVED: read from image lines and labels]. On the day before the event (Day -1), no features show statistical significance, with all p-values remaining high [DERIVED: read from Day -1 bars]. On the day of the event (Day 0), a wide range of features become statistically significant (p < 0.05), including Morning Screen Use (p = .032), Calls (p = .048), Time in Bed (p = .048), Range of Activities (p = .050), Number of Steps (p = .045), and Frustrated (p = .026) [DERIVED: read from Day 0 bar values]. By Day 1 and Day 2, most features return to non-significance, though a few specific behavioral or emotional indicators remain highly significant, such as a feature at p = 0.002 on Day 1 and another at p = 0.006 on Day 2 [DERIVED: read from Day 1 and Day 2 bar values].",
+      "real_world_significance": "This data is crucial for researchers in mobile health (mHealth) and social psychology who study the immediate and lingering impacts of everyday discrimination on marginalized populations [SPECULATIVE: HCI and mHealth domain]. By demonstrating that discrimination events have an immediate, statistically detectable footprint on passive behavioral data (like sleep, physical activity, and phone usage) on Day 0, the study shows that subjective experiences of bias translate into objective behavioral changes [SPECULATIVE: HCI and mHealth domain]. Understanding that these effects peak on the day of the event and rapidly decay over the next two days can help clinical psychologists and system designers build 'just-in-time' adaptive interventions that deliver support on mobile devices precisely when the user is experiencing the highest behavioral disruption [SPECULATIVE: HCI and mHealth domain].",
+      "other": "The visual distinction between solid bars (statistically significant, p < 0.05) and striped bars (not statistically significant) allows researchers to quickly identify which behavioral markers are meaningful indicators of a user's response to discrimination [DERIVED: read from image bar styles and significance thresholds]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This research was published in the Proceedings of the ACM on Human-Computer Interaction (CSCW) in 2019."
+      ],
+      "derived_claims": [
+        "The chart, titled 'Feature Significance Over One Day Before to Two Days After' in the image, illustrates the statistical significance of various behavioral and psychological features relative to a discrimination event.",
+        "It tracks how passive mobile sensing features (such as screen use, calls, sleep, and steps) and active psychological states (anxiety, depression, frustration) change in significance from one day before the event (Day -1) to two days after (Day 2).",
+        "In this chart, the Y-axis represents p-values, which measure statistical significance; lower values indicate a stronger, more reliable relationship between the discrimination event and the tracked feature.",
+        "Two horizontal threshold lines are plotted at p = 0.05 and p = 0.01 to denote standard scientific significance levels.",
+        "On the day before the event (Day -1), no features show statistical significance, with all p-values remaining high.",
+        "On the day of the event (Day 0), a wide range of features become statistically significant (p < 0.05), including Morning Screen Use (p = .032), Calls (p = .048), Time in Bed (p = .048), Range of Activities (p = .050), Number of Steps (p = .045), and Frustrated (p = .026).",
+        "By Day 1 and Day 2, most features return to non-significance, though a few specific behavioral or emotional indicators remain highly significant, such as a feature at p = 0.002 on Day 1 and another at p = 0.006 on Day 2.",
+        "The visual distinction between solid bars (statistically significant, p < 0.05) and striped bars (not statistically significant) allows researchers to quickly identify which behavioral markers are meaningful indicators of a user's response to discrimination."
+      ],
+      "speculative_claims": [
+        "This data is crucial for researchers in mobile health (mHealth) and social psychology who study the immediate and lingering impacts of everyday discrimination on marginalized populations.",
+        "By demonstrating that discrimination events have an immediate, statistically detectable footprint on passive behavioral data (like sleep, physical activity, and phone usage) on Day 0, the study shows that subjective experiences of bias translate into objective behavioral changes.",
+        "Understanding that these effects peak on the day of the event and rapidly decay over the next two days can help clinical psychologists and system designers build 'just-in-time' adaptive interventions that deliver support on mobile devices precisely when the user is experiencing the highest behavioral disruption."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 8,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 17102.592209004797,
+  "created_at": "2026-07-07T23:22:56.390031Z"
+}
