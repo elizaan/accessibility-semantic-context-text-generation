@@ -182,7 +182,11 @@ def build_prompt(
         "condition_label": condition_label(variant),
         "image_clause": "with a chart image" if include_image else "without a chart image (text/metadata only)",
         "chart_image_block": "CHART IMAGE: [attached]" if include_image else "CHART IMAGE: [NOT PROVIDED]",
-        "chart_title": chart.title or "[NOT PROVIDED]",
+        # Withheld for V3 specifically — it's the "image only, nothing else"
+        # baseline; the title isn't a toggleable feature so it wasn't being
+        # gated like everything else, silently leaking real content into an
+        # otherwise-sparse condition.
+        "chart_title": "[NOT PROVIDED]" if variant == 3 else (chart.title or "[NOT PROVIDED]"),
         "x_axis_label": x_axis,
         "y_axis_label": y_axis,
         "data_table_formatted": (

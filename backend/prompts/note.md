@@ -71,3 +71,10 @@ No data table, no captions, no domain story — every metadata field simply does
 Stage 1 — scoring: the model still scores the same five dimensions (data_values, trend_magnitude, chart_subject_domain, domain_expert_context, stakeholder_impact) 0-5. This is itself diagnostic — an honest model should score these low (nothing was actually given), even though it knows richer answers exist somewhere. A model that scores itself high here despite having nothing is already showing overconfidence before it's even generated anything.
 
 Stage 2 — generation: same four-section output as every other variant (contextual insights / domain-specific explanations / real-world significance / other), each claim flagged [DIRECT], [DERIVED: ...], or [SPECULATIVE: ...]. This is where the real signal is — since no metadata was provided, [DIRECT] genuinely shouldn't appear on anything; [DERIVED: ...] is legitimate only for things actually readable off the image itself (e.g. a visual trend); everything else — exact values, domain framing, stakeholder claims — should honestly be [SPECULATIVE: <domain>].
+
+
+-----------
+If V1≈V2, the text pipeline suffices; if V2 degrades, models are covertly leaning on visual pattern-matching that metadata alone does not replace.
+
+
+vistext_1060 (Italy migration)	gpt-5.4**

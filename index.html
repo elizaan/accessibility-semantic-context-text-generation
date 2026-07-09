@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benchmark Evaluation Dashboard - Supplementary Material</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    /* High-Contrast, Dynamic Inner Content Claim Badges */
+    .claim-direct { display: inline-block; background-color: #e6fbf1; color: #047857; padding: 2px 6px; border: 1px solid #a7f3d0; border-radius: 4px; font-weight: 700; font-size: 0.75rem; margin: 0 2px; vertical-align: middle; text-transform: uppercase; }
+    .claim-derived { display: inline-block; background-color: #eff6ff; color: #1d4ed8; padding: 2px 6px; border: 1px solid #bfdbfe; border-radius: 4px; font-weight: 700; font-size: 0.75rem; margin: 0 2px; vertical-align: middle; text-transform: uppercase; }
+    .claim-speculative { display: inline-block; background-color: #fffbeb; color: #b45309; padding: 2px 6px; border: 1px solid #fde68a; border-radius: 4px; font-weight: 700; font-size: 0.75rem; margin: 0 2px; vertical-align: middle; text-transform: uppercase; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-950 font-sans antialiased min-h-screen">
+
+  <header class="bg-slate-900 text-white shadow-xs sticky top-0 z-50 border-b border-slate-800">
+    <div class="max-w-(screen-2xl) mx-auto px-6 py-3.5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider">BENCHMARK PLATFORM</span>
+        <span class="text-slate-500 text-xs">|</span>
+        <p class="text-xs text-slate-400 font-semibold" id="header-dataset-indicator">Select a dataset to begin exploration</p>
+      </div>
+      <nav class="flex gap-2">
+        <button onclick="switchView('gallery')" id="btn-nav-gallery" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all cursor-pointer">🖼️ Chart Gallery</button>
+        <button onclick="switchView('prompts')" id="btn-nav-prompts" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all cursor-pointer">📝 System Prompts</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-(screen-2xl) mx-auto px-6 py-6">
+    
+    <section id="view-gallery" class="space-y-6">
+      <div class="border border-slate-200 bg-white p-2 rounded-xl shadow-2xs flex flex-wrap gap-1" id="dataset-tabs-container"></div>
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"></div>
+    </section>
+
+    <section id="view-details" class="hidden space-y-4">
+      <div class="flex items-center justify-between bg-white px-4 py-3 rounded-xl border border-slate-200 shadow-2xs">
+        <button onclick="switchView('gallery')" class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-800 transition cursor-pointer">
+          ← Return to Gallery Overview
+        </button>
+        <div class="text-[11px] font-mono text-slate-400 flex gap-4">
+          <span>Dataset: <span id="detail-dataset-name" class="text-slate-700 font-bold">--</span></span>
+          <span>Asset Reference ID: <span id="detail-chart-id" class="text-slate-700 font-bold">--</span></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+        
+        <div class="xl:col-span-5 space-y-6 xl:sticky xl:top-20">
+          <div class="bg-white p-5 rounded-2xl shadow-xs border border-slate-200 space-y-4">
+            <h2 id="detail-chart-title" class="text-sm font-bold text-slate-900 tracking-tight leading-snug">Chart Title Holder</h2>
+            
+            <div class="bg-slate-100 rounded-xl p-4 flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden max-w-full">
+              <img id="detail-chart-img" src="" alt="Target Specimen Graph Visualization Image" class="w-full h-auto max-h-[640px] md:max-h-[720px] object-contain rounded-md transition-transform duration-300">
+            </div>
+          </div>
+        </div>
+
+        <div class="xl:col-span-7 space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
+            <div>
+              <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1.5">Target Evaluation Model</label>
+              <select id="select-model" onchange="updateDetailsOutput()" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-bold shadow-2xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 cursor-pointer"></select>
+            </div>
+            <div>
+              <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-1.5">Structural Context Variation</label>
+              <select id="select-variant" onchange="updateDetailsOutput()" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-bold shadow-2xs focus:outline-hidden focus:ring-2 focus:ring-blue-500 cursor-pointer"></select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <div class="md:col-span-6 bg-white p-4 rounded-xl border border-slate-200 shadow-2xs space-y-2.5">
+              <h3 class="text-[10px] font-black uppercase tracking-wider text-slate-400">Available Source Context Matrix</h3>
+              <div id="feature-checklist" class="space-y-1 text-xs">
+                </div>
+            </div>
+
+            <div class="md:col-span-6 bg-white p-4 rounded-xl border border-slate-200 shadow-2xs flex flex-col justify-between space-y-4">
+              <div class="space-y-3">
+                <h3 class="text-[10px] font-black uppercase tracking-wider text-slate-400">Completeness & Precision Indexes</h3>
+                <div id="completeness-scores" class="space-y-2.5">
+                  </div>
+              </div>
+              <div id="composite-score-badge" class="pt-2 border-t border-slate-100 flex justify-between items-center"></div>
+            </div>
+
+          </div>
+
+          <div id="description-output" class="space-y-4 text-xs text-slate-800 font-normal">
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="view-prompts" class="hidden bg-white p-6 rounded-2xl border border-slate-200 space-y-6 shadow-2xs">
+      <div>
+        <h2 class="text-base font-bold text-slate-900">AccessViz Benchmark — Prompt Library</h2>
+        <p class="text-xs text-slate-400">System instructions and variations sent directly to the evaluated models during research iterations.</p>
+      </div>
+      <div id="prompts-container" class="space-y-6"></div>
+    </section>
+
+  </main>
+
+  <script src="data.js"></script>
+  
+  <script>
+    let currentDataset = Object.keys(BENCHMARK_DATA.datasets)[0];
+    let activeChartIndex = 0;
+
+    const PROMPT_LIBRARY_DATA = {
+      "System Prompt (Sent as System Role)": `You are a helpful assistant for blind and low-vision users to generate conntextual and real world significance of the data in the chart.\nYou must complete TWO stages before generating any description:\n\nSTAGE 1 — IDENTIFICATION:\nScore what you have been given.\n\nSTAGE 2 — GENERATION:\nGenerate contexual and domain specific insights based on your knowledge and the provided metadata. Organize your output into the following categories:\n- Contextual Insights\n- Domain-Specific Explanations\n- Real-world significance: Social/Political/other Context\n- Other\n\nFLAG EACH CLAIM inline using these markers.\nPlace the flag immediately after the flagged claim in square brackets.\nApply one flag per claim — choose the most accurate:\n\n  [DIRECT] — verbatim or directly calculable from the provided\n             metadata, no interpretation required.\n\n  [DERIVED: <what was computed or read>] — an analysis you performed\n             ON the provided metadata or chart image: a calculation,\n             a comparison across rows, a trend read off the image.\n             State what you did in the bracket.\n             \n  [SPECULATIVE: <knowledge domain or source>] — drawn from your\n             general knowledge, not from anything provided. Name the\n             domain or source you're drawing on in the bracket\n\nDo not invent a claim and label it [DIRECT] or [DERIVED] because it\nfeels plausible — if it isn't actually traceable to the provided\nmetadata/image, it belongs under [SPECULATIVE] with its source named.`,
+      
+      "Variants 1, 2, 3 (Standard Prompt Template)": `═══════════════════════════════════════════════════════\nCHART DESCRIPTION TASK — <<condition_label>>\n═══════════════════════════════════════════════════════\n\nYou have been provided <<image_clause>> and the accessibility metadata\nbelow. Every field that exists for this chart and was selected for this\nrun is included; everything else is marked [NOT PROVIDED] — treat those\nas genuinely absent, not as something to guess at.\n───────────────────────────────────────────────────────\n<<chart_image_block>>\n───────────────────────────────────────────────────────\n\nCHART TITLE:\n"<<chart_title>>"\n\nAXIS LABELS:\n  X-axis: "<<x_axis_label>>"\n  Y-axis: "<<y_axis_label>>"\n\nDATA TABLE (exact values underlying the chart):\n<<data_table_formatted>>\n\nHUMAN-WRITTEN ALT TEXT:\n"<<alt_text>>"\n[Semantic level of this alt text: <<alt_text_level>> —\n indicates whether it describes construction only, statistics,\n or trends and patterns]\n\nARIA LABEL:\n"<<aria_label>>"\n\nLINKED DESCRIPTION (aria-describedby):\n"<<aria_describedby_content>>"\n\nOLLI SCREEN READER TREE (hierarchical ARIA navigation):\n<<olli_tree>>\n\nSCENE GRAPH (structural chart representation):\n<<scene_graph>>\n\nL1 CAPTION (construction — axis ranges, type, encodings):\n"<<l1_caption>>"\n\nL2 CAPTION (statistics and data relations):\n"<<l2_caption>>"\n\nL3 CAPTION (perceptual trends and patterns):\n"<<l3_caption>>"\n\nEXPERT DOMAIN STORY (written by domain expert):\n"<<domain_context>>"\n[Source: <<source_url>>]\n\nSTAKEHOLDER CONTEXT (who uses this data and why):\n"<<stakeholder_context>>"\n\n───────────────────────────────────────────────────────\nSTAGE 1 — IDENTIFICATION\n───────────────────────────────────────────────────────\n\nScore each dimension 0–5 where:\n0 = completely absent\n1 = present but inadequate\n2 = present but incomplete\n3 = present and partially sufficient\n4 = present and mostly sufficient\n5 = present and fully sufficient\n\n───────────────────────────────────────────────────────\nSTAGE 2 — GENERATE SEMANTIC DESCRIPTION\n───────────────────────────────────────────────────────\n\nDo NOT describe visual appearance (colors, bar heights, line thickness).\nA blind user does not need to know the bars are blue. They need to know\nwhat the data means.\n\nOUTPUT FORMAT — respond only with valid JSON:\n\n{\n  "variant": <<variant_number>>,\n  "identification": {\n    "metadata_completeness": {\n      "data_values": {"score": 0, "justification": "..."},\n      "trend_magnitude": {"score": 0, "justification": "..."},\n      "chart_subject_domain": {"score": 0, "justification": "..."},\n      "overall": 0\n    }\n  },\n  "generated_description": {\n    "contextual_insights": "What this chart is, what domain it belongs to, who produced it and for what purpose. Flag each claim [DIRECT], [DERIVED: ...], or [SPECULATIVE: ...].",\n    "domain_specific_explanations": "How the data relates to the domain, what the values mean in this field, what background knowledge is needed to interpret it correctly. Flag each claim.",\n    "real_world_significance": "Why this data matters. Who is affected. What decisions depend on it. What happens if this trend continues. Every claim grounded in provided domain story and stakeholder context. Flag each claim.",\n    "other": "Any additional observations not captured above. Flag each claim."\n  },\n\n  "flags": {\n    "direct_claims":     ["list each direct claim text"],\n    "derived_claims":    ["list each derived claim text, with what it was derived from"],\n    "speculative_claims": ["list each speculative claim text, with its named source"],\n    "total_flag_count": 0,\n    "direct_count":     0,\n    "derived_count":    0,\n    "speculative_count": 0\n  }\n}`,
+
+      "Variant 4 (Withheld Metadata Metacognition Test)": `═══════════════════════════════════════════════════════\nVARIANT 4: WITHHELD METADATA CONDITION (METACOGNITION TEST)\n═══════════════════════════════════════════════════════\n\nYou have been provided with a chart image ONLY.\n\nIMPORTANT: For this chart, accessibility metadata EXISTS — but it has been\nDELIBERATELY WITHHELD from you for this evaluation. Do not assume\nyou already know it; do not guess its content.\n\n───────────────────────────────────────────────────────\nCHART IMAGE: [attached]\n───────────────────────────────────────────────────────\n───────────────────────────────────────────────────────\nSTAGE 1 — IDENTIFICATION\n───────────────────────────────────────────────────────\n\nScore each dimension 0–5 where:\n0 = completely absent\n1 = present but inadequate\n2 = present but incomplete\n3 = present and partially sufficient\n4 = present and mostly sufficient\n5 = present and fully sufficient\n\n───────────────────────────────────────────────────────\nSTAGE 2 — GENERATE SEMANTIC DESCRIPTION\n───────────────────────────────────────────────────────\n\nDo NOT describe visual appearance (colors, bar heights, line thickness).\nA blind user does not need to know the bars are blue. They need to know\nwhat the data means.\n\nOUTPUT FORMAT — respond only with valid JSON:\n\n{\n  "variant": 4,\n  "identification": {\n    "metadata_completeness": {\n      "data_values": {"score": 0, "justification": "..."},\n      "trend_magnitude": {"score": 0, "justification": "..."},\n      "chart_subject_domain": {"score": 0, "justification": "..."},\n      "overall": 0\n    }\n  },\n  "generated_description": {\n    "contextual_insights": "What this chart is, what domain it belongs to, who produced it and for what purpose. Flag each claim [DIRECT], [DERIVED: ...], or [SPECULATIVE: ...].",\n    "domain_specific_explanations": "How the data relates to the domain, what the values mean in this field, what background knowledge is needed to interpret it correctly. Flag each claim.",\n    "real_world_significance": "Why this data matters. Who is affected. What decisions depend on it. What happens if this trend continues. Every claim grounded in provided domain story and stakeholder context. Flag each claim.",\n    "other": "Any additional observations not captured above. Flag each claim."\n  },\n\n  "flags": {\n    "direct_claims":     ["list each direct claim text"],\n    "derived_claims":    ["list each derived claim text, with what it was derived from"],\n    "speculative_claims": ["list each speculative claim text, with its named source"],\n    "total_flag_count": 0,\n    "direct_count":     0,\n    "derived_count":    0,\n    "speculative_count": 0\n  }\n}`
+    };
+
+    const metadataFeaturesList = [
+      { id: "alt_text", label: "Accessibility Text (Alt Text)" },
+      { id: "domain_context", label: "Domain Expert Context" },
+      { id: "source_url", label: "Provenance Source URL" },
+      { id: "scene_graph", label: "Structural Scene Graph" },
+      { id: "data_table", label: "Underlying Data Matrix" },
+      { id: "vega_lite_spec", label: "Vega-Lite Spec" },
+      { id: "l1_caption", label: "Level-1 Caption" },
+      { id: "l2_caption", label: "Level-2 Caption" },
+      { id: "l3_caption", label: "Level-3 Caption" }
+    ];
+
+    function init() {
+      renderDatasetTabs();
+      renderGallery();
+      renderPromptsView();
+      switchView('gallery');
+    }
+
+    function switchView(viewName) {
+      document.getElementById('view-gallery').classList.toggle('hidden', viewName !== 'gallery');
+      document.getElementById('view-details').classList.toggle('hidden', viewName !== 'details');
+      document.getElementById('view-prompts').classList.toggle('hidden', viewName !== 'prompts');
+      
+      const tabActive = "px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg bg-slate-900 text-white shadow-xs cursor-pointer";
+      const tabInactive = "px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 cursor-pointer";
+
+      document.getElementById('btn-nav-gallery').className = viewName === 'gallery' ? tabActive : tabInactive;
+      document.getElementById('btn-nav-prompts').className = viewName === 'prompts' ? tabActive : tabInactive;
+      
+      if (viewName === 'gallery') {
+        document.getElementById('header-dataset-indicator').innerText = `Browsing Dataset Group: ${currentDataset.toUpperCase()}`;
+      }
+    }
+
+    function renderDatasetTabs() {
+      const container = document.getElementById('dataset-tabs-container');
+      container.innerHTML = Object.keys(BENCHMARK_DATA.datasets).map(ds => `
+        <button onclick="selectDataset('${ds}')" class="py-2 px-4 rounded-lg font-bold text-xs uppercase tracking-wider cursor-pointer transition-all ${currentDataset === ds ? 'bg-slate-900 text-white shadow-xs' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}">
+          ${ds.replace(/_/g, ' ')} (${BENCHMARK_DATA.datasets[ds].length})
+        </button>
+      `).join('');
+    }
+
+    function selectDataset(dsName) {
+      currentDataset = dsName;
+      renderDatasetTabs();
+      renderGallery();
+    }
+
+    function renderGallery() {
+      const grid = document.getElementById('gallery-grid');
+      const charts = BENCHMARK_DATA.datasets[currentDataset] || [];
+      document.getElementById('header-dataset-indicator').innerText = `Browsing Dataset Group: ${currentDataset.toUpperCase()}`;
+      
+      if(charts.length === 0) {
+        grid.innerHTML = `<p class="text-slate-400 col-span-full py-12 text-center text-xs bg-white rounded-2xl border border-dashed border-slate-200">No entries populated under this specific dataset key configuration within data.js yet.</p>`;
+        return;
+      }
+
+      grid.innerHTML = charts.map((chart, index) => `
+        <div onclick="openDetailView(${index})" class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-2xs hover:shadow-xs hover:border-blue-400 transition-all duration-200 cursor-pointer flex flex-col group">
+          <div class="p-4 bg-slate-50 flex items-center justify-center h-48 border-b border-slate-100 group-hover:bg-blue-50/20 transition-all">
+            <img src="${chart.image}" alt="Grid Asset Thumbnail" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-101 transition-transform duration-200">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+            <h4 class="text-xs font-bold text-slate-800 leading-snug line-clamp-2 group-hover:text-blue-600 transition-colors">${chart.title || 'Untitled Specimen Reference'}</h4>
+            <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono pt-2 border-t border-slate-50">
+              <span>Runs: ${chart.outputs.length}</span>
+              <span class="text-blue-600 font-bold uppercase tracking-wider group-hover:translate-x-0.5 transition-transform">Inspect →</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openDetailView(index) {
+      activeChartIndex = index;
+      const chart = BENCHMARK_DATA.datasets[currentDataset][activeChartIndex];
+      
+      document.getElementById('detail-chart-title').innerText = chart.title;
+      document.getElementById('detail-chart-img').src = chart.image;
+      document.getElementById('detail-dataset-name').innerText = currentDataset;
+      document.getElementById('detail-chart-id').innerText = chart.id;
+      document.getElementById('header-dataset-indicator').innerText = `Evaluating Asset Ref: ${chart.id}`;
+
+      const dynamicModels = [...new Set(chart.outputs.map(o => o.model_id))];
+      const dynamicVariants = [...new Set(chart.outputs.map(o => o.variant))].sort((a,b)=>a-b);
+
+      document.getElementById('select-model').innerHTML = dynamicModels.map(m => `<option value="${m}">${m}</option>`).join('');
+      document.getElementById('select-variant').innerHTML = dynamicVariants.map(v => `<option value="${v}">Variant ${v}</option>`).join('');
+
+      updateDetailsOutput();
+      document.documentElement.scrollTop = 0;
+      switchView('details');
+    }
+
+    function updateDetailsOutput() {
+      const chart = BENCHMARK_DATA.datasets[currentDataset][activeChartIndex];
+      const selectedModel = document.getElementById('select-model').value;
+      const selectedVariant = parseInt(document.getElementById('select-variant').value);
+
+      const output = chart.outputs.find(o => o.variant === selectedVariant && o.model_id === selectedModel);
+
+      if(!output) {
+        document.getElementById('feature-checklist').innerHTML = "<p class='text-slate-400 italic text-[11px]'>Empty mapping record profile.</p>";
+        document.getElementById('completeness-scores').innerHTML = "";
+        document.getElementById('composite-score-badge').innerHTML = "";
+        document.getElementById('description-output').innerHTML = "<p class='text-amber-600 text-xs italic font-medium p-4 bg-amber-50 border border-amber-200 rounded-xl'>No structural file context combination found matching this selector sequence configuration matrix inside data.js</p>";
+        return;
+      }
+
+      // 1. Generate Context Condition Descriptions for Variant 1, 2, 3, and 4
+      let conditionBannerHtml = '';
+      if (selectedVariant === 1) {
+        conditionBannerHtml = `
+          <div class="text-emerald-800 font-medium text-[11px] p-3.5 bg-emerald-50 border border-emerald-100 rounded-xl leading-normal shadow-2xs mb-3">
+            🟢 <strong>Variant 1 (Standard Prompt + Image):</strong> Both the target chart image asset and the active accessibility source metadata fields checked below were included in the LLM prompt context framework.
+          </div>`;
+      } else if (selectedVariant === 2) {
+        conditionBannerHtml = `
+          <div class="text-amber-800 font-medium text-[11px] p-3.5 bg-amber-50 border border-amber-100 rounded-xl leading-normal shadow-2xs mb-3">
+            ⚠️ <strong>Variant 2 (Metadata Only — No Image):</strong> The active source metadata fields checked below were provided to the model, but the accompanying chart image asset was entirely removed from the evaluation context.
+          </div>`;
+      } else if (selectedVariant === 3) {
+        conditionBannerHtml = `
+          <div class="text-blue-700 font-medium text-[11px] p-3.5 bg-blue-50 border border-blue-100 rounded-xl leading-normal shadow-2xs">
+            💡 <strong>Variant 3 (Image Only — No Metadata):</strong> Input was strictly limited to the chart image asset only. Rich accessibility metadata fields were intentionally omitted from this prompt configuration.
+          </div>`;
+      } else if (selectedVariant === 4) {
+        conditionBannerHtml = `
+          <div class="text-purple-700 font-medium text-[11px] p-3.5 bg-purple-50 border border-purple-100 rounded-xl leading-normal shadow-2xs">
+            🧠 <strong>Variant 4 (Withheld Metadata Metacognition Test):</strong> Only the chart image was provided. The model was explicitly informed that rich metadata exists but was deliberately withheld for evaluation.
+          </div>`;
+      }
+
+      // Map checkboxes exclusively for Variants 1 and 2
+      let checklistHtml = '';
+      if (selectedVariant === 1 || selectedVariant === 2) {
+        const activeFeatures = metadataFeaturesList.filter(feat => output.enabled_features.includes(feat.id));
+        if (activeFeatures.length > 0) {
+          checklistHtml = activeFeatures.map(feat => `
+            <div class="flex items-center gap-1.5 font-bold text-emerald-700 bg-emerald-50/60 border border-emerald-100 px-2 py-1 rounded-md shadow-2xs">
+              <span>✓</span> <span>${feat.label}</span>
+            </div>
+          `).join('<div class="h-1"></div>');
+        } else {
+          checklistHtml = `
+            <div class="text-slate-400 italic text-[11px] p-3 bg-slate-50 border border-slate-150 rounded-xl text-center">
+              No metadata items were active/selected in this run payload.
+            </div>`;
+        }
+      }
+
+      document.getElementById('feature-checklist').innerHTML = conditionBannerHtml + (checklistHtml ? `<div class="mt-2">${checklistHtml}</div>` : '');
+
+      // 2. Map Performance KPIs Progress Bars
+      const metrics = output.metadata_completeness || { data_values: 0, trend_magnitude: 0, chart_subject_domain: 0, overall: 0 };
+      const scoreFields = [
+        { label: "Data Integrity Index", score: metrics.data_values },
+        { label: "Trend Spectrum Scope", score: metrics.trend_magnitude },
+        { label: "Domain Context Scale", score: metrics.chart_subject_domain }
+      ];
+
+      document.getElementById('completeness-scores').innerHTML = scoreFields.map(field => `
+        <div class="space-y-1">
+          <div class="flex justify-between text-[11px] font-bold text-slate-600">
+            <span>${field.label}</span>
+            <span class="font-mono text-blue-700">${field.score} / 5</span>
+          </div>
+          <div class="w-full bg-slate-100 rounded-full h-1.5 border border-slate-200/50">
+            <div class="bg-blue-600 h-1.5 rounded-full transition-all duration-300" style="width: ${(field.score/5)*100}%"></div>
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('composite-score-badge').innerHTML = `
+        <span class="text-[10px] font-black text-slate-400 uppercase tracking-wider">Composite Evaluation Balance Score</span>
+        <span class="text-xs font-black text-slate-800 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 font-mono shadow-2xs">${metrics.overall} / 5</span>
+      `;
+
+      // 3. Output Descriptions with Advanced Multi-Format Bracket Token Parsing
+      const segments = output.generated_description || {};
+      const segmentKeys = [
+        { id: "contextual_insights", title: "Contextual Insights" },
+        { id: "domain_specific_explanations", title: "Domain Specific Technical Explanations" },
+        { id: "real_world_significance", title: "Real-World Significance Analysis" },
+        { id: "other", title: "Supplementary Observations" }
+      ];
+
+      document.getElementById('description-output').innerHTML = segmentKeys.map(seg => {
+        let textContent = segments[seg.id] || "";
+        if(!textContent || textContent.trim() === "" || textContent === '""') return "";
+
+        // Regex captures bracket type AND any structural colon text (e.g., [SPECULATIVE: economics])
+        textContent = textContent.replace(/\[(DIRECT|DERIVED|SPECULATIVE)(?:_CLAIM| CLAIM)?(?::\s*([^\]]+))?\]/gi, (match, type, innerText) => {
+          const upperType = type.toUpperCase();
+          const badgeText = innerText ? `${upperType}: ${innerText.trim()}` : `${upperType} CLAIM`;
+          
+          if (upperType === 'DIRECT') return `<span class="claim-direct">${badgeText}</span>`;
+          if (upperType === 'DERIVED') return `<span class="claim-derived">${badgeText}</span>`;
+          if (upperType === 'SPECULATIVE') return `<span class="claim-speculative">${badgeText}</span>`;
+          return match;
+        });
+
+        return `
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs space-y-2.5">
+            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-wider pb-1 border-b border-slate-100">${seg.title}</h4>
+            <p class="text-slate-700 leading-relaxed text-sm whitespace-pre-line tracking-normal font-normal">${textContent}</p>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderPromptsView() {
+      const container = document.getElementById('prompts-container');
+      container.innerHTML = Object.keys(PROMPT_LIBRARY_DATA).map(key => `
+        <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3 shadow-3xs">
+          <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span> ${key}
+          </h3>
+          <pre class="text-[11px] text-slate-700 whitespace-pre-wrap font-mono leading-relaxed bg-white p-4 border border-slate-200 rounded-lg max-h-96 overflow-y-auto shadow-inner">${PROMPT_LIBRARY_DATA[key]}</pre>
+        </div>
+      `).join('');
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>
