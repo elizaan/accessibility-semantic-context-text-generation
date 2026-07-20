@@ -105,7 +105,7 @@ export default function HomePage() {
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">Quick Actions</h2>
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-          {QUICK_ACTIONS.map((action) => (
+          {QUICK_ACTIONS.filter((a) => !IS_STATIC_BUILD || a.href !== "/collections").map((action) => (
             <Link
               key={action.href + action.title}
               href={action.href}

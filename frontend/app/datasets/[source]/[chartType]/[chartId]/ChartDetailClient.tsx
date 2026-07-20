@@ -104,37 +104,47 @@ export default function ChartDetailClient() {
 
         {/* Right: generate + outputs */}
         <div className="col-span-12 lg:col-span-4 h-[calc(100vh-7rem)] overflow-y-auto pr-1 space-y-4">
-          {!IS_STATIC_BUILD && (
-            <div className="flex border rounded-lg overflow-hidden">
-              <button
-                onClick={() => setActiveTab("generate")}
-                className={`flex-1 py-2 text-sm font-medium transition-colors ${
-                  activeTab === "generate"
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-background hover:bg-accent"
-                }`}
-              >
-                Generate
-              </button>
-              <button
-                onClick={() => setActiveTab("outputs")}
-                className={`flex-1 py-2 text-sm font-medium transition-colors ${
-                  activeTab === "outputs"
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-background hover:bg-accent"
-                }`}
-              >
-                Outputs ({outputs.length})
-              </button>
-            </div>
-          )}
+          <div className="flex border rounded-lg overflow-hidden">
+            <button
+              onClick={() => setActiveTab("generate")}
+              className={`flex-1 py-2 text-sm font-medium transition-colors ${
+                activeTab === "generate"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-background hover:bg-accent"
+              }`}
+            >
+              Generate
+            </button>
+            <button
+              onClick={() => setActiveTab("outputs")}
+              className={`flex-1 py-2 text-sm font-medium transition-colors ${
+                activeTab === "outputs"
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-background hover:bg-accent"
+              }`}
+            >
+              Outputs ({outputs.length})
+            </button>
+          </div>
 
-          {!IS_STATIC_BUILD && activeTab === "generate" ? (
-            <GeneratePanel
-              chart={chart}
-              enabledFeatures={enabledFeatures}
-              onOutput={handleNewOutput}
-            />
+          {activeTab === "generate" ? (
+            IS_STATIC_BUILD ? (
+              <div className="border rounded-xl p-5 text-sm space-y-2 bg-muted/20">
+                <p className="font-medium">Generation is disabled in this static demo.</p>
+                <p className="text-muted-foreground">
+                  This deployed site only shows previously generated results. To generate your
+                  own descriptions, clone the repo, add your own API keys to{" "}
+                  <code className="text-xs bg-muted px-1 py-0.5 rounded">backend/.env</code>, and
+                  run the app locally.
+                </p>
+              </div>
+            ) : (
+              <GeneratePanel
+                chart={chart}
+                enabledFeatures={enabledFeatures}
+                onOutput={handleNewOutput}
+              />
+            )
           ) : IS_STATIC_BUILD ? (
             <OutputList outputs={outputs} chart={chart} />
           ) : (

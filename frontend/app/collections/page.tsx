@@ -96,6 +96,16 @@ export default function CollectionsPage() {
     }
   };
 
+  if (IS_STATIC_BUILD) {
+    return (
+      <div className="border rounded-xl p-10 text-center text-sm text-muted-foreground max-w-lg mx-auto mt-10">
+        Collections are an internal curation tool and aren&apos;t shown in this demo. Browse{" "}
+        <Link href="/datasets" className="text-primary hover:underline">Datasets</Link> to explore
+        the charts by source and type instead.
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-5">
       <div className="flex items-baseline justify-between gap-4 flex-wrap">

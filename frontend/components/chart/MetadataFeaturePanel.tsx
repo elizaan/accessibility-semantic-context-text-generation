@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { Chart, SelectableMetadataKey } from "@/lib/types";
 import { METADATA_FEATURE_CONFIG } from "@/lib/types";
+import { IS_STATIC_BUILD } from "@/lib/config";
 
 interface Props {
   chart: Chart;
@@ -11,9 +12,22 @@ interface Props {
   onChange: (enabled: SelectableMetadataKey[]) => void;
 }
 
+// Never present on any of the 102 curated charts in the static deploy
+// (verified via scripts/export_static_site_data.py's output) — hidden there
+// to avoid a wall of permanently-disabled checkboxes. Re-check this list if
+// the curated chart set changes. Live mode (full corpus) shows every field,
+// since other charts outside the curated set may still have these.
+const NEVER_AVAILABLE_IN_STATIC_SET: SelectableMetadataKey[] = [
+  "aria_label",
+  "aria_describedby",
+  "l3_caption",
+  "stakeholder_context",
+];
+
 function groupedFeatures() {
   const groups: Record<string, SelectableMetadataKey[]> = {};
   for (const [key, config] of Object.entries(METADATA_FEATURE_CONFIG) as [SelectableMetadataKey, typeof METADATA_FEATURE_CONFIG[SelectableMetadataKey]][]) {
+    if (IS_STATIC_BUILD && NEVER_AVAILABLE_IN_STATIC_SET.includes(key)) continue;
     (groups[config.group] ??= []).push(key);
   }
   return groups;

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BarChart2, Database, GitCompare, FileText, Home, Bookmark } from "lucide-react";
+import { IS_STATIC_BUILD } from "@/lib/config";
 
 const NAV = [
   { href: "/",            label: "Home",        icon: Home },
@@ -10,7 +11,7 @@ const NAV = [
   { href: "/collections", label: "Collections", icon: Bookmark },
   { href: "/outputs",     label: "Outputs",     icon: FileText },
   { href: "/compare",  label: "Compare",        icon: GitCompare },
-];
+].filter((item) => !IS_STATIC_BUILD || item.href !== "/collections");
 
 export function Sidebar() {
   const pathname = usePathname();
