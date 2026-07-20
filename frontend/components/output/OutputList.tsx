@@ -2,14 +2,15 @@
 
 import { useState } from "react";
 import { Clock, Cpu, ChevronDown, ChevronUp, Copy, Check, Trash2, RefreshCw } from "lucide-react";
+import { modelDisplayLabel } from "@/lib/types";
 import type { Chart, GenerationOutput } from "@/lib/types";
 import { ParsedOutputView } from "./ParsedOutputView";
 
 interface Props {
   outputs: GenerationOutput[];
   chart: Chart;
-  onDelete: (outputId: string) => Promise<void>;
-  onRegenerate: (output: GenerationOutput) => Promise<void>;
+  onDelete?: (outputId: string) => Promise<void>;
+  onRegenerate?: (output: GenerationOutput) => Promise<void>;
 }
 
 export function OutputList({ outputs, onDelete, onRegenerate }: Props) {
@@ -37,8 +38,8 @@ export function OutputList({ outputs, onDelete, onRegenerate }: Props) {
 
 interface CardProps {
   output: GenerationOutput;
-  onDelete: (outputId: string) => Promise<void>;
-  onRegenerate: (output: GenerationOutput) => Promise<void>;
+  onDelete?: (outputId: string) => Promise<void>;
+  onRegenerate?: (output: GenerationOutput) => Promise<void>;
 }
 
 function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
@@ -54,6 +55,7 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
   };
 
   const handleDelete = async () => {
+    if (!onDelete) return;
     setDeleting(true);
     try {
       await onDelete(output.output_id);
@@ -63,6 +65,7 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
   };
 
   const handleRegenerate = async () => {
+    if (!onRegenerate) return;
     setRegenerating(true);
     try {
       await onRegenerate(output);
@@ -79,7 +82,7 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
       {/* Header */}
       <div className="bg-muted/40 px-4 py-2.5 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 flex-wrap min-w-0">
-          <span className="text-xs font-mono font-semibold shrink-0">{output.model_id}</span>
+          <span className="text-xs font-mono font-semibold shrink-0">{modelDisplayLabel(output.model_id)}</span>
           {variantLabel && (
             <span className="text-xs bg-purple-100 text-purple-700 rounded px-1.5 py-0.5 shrink-0">
               {variantLabel}
@@ -104,22 +107,26 @@ function OutputCard({ output, onDelete, onRegenerate }: CardProps) {
         </div>
 
         <div className="flex items-center gap-1 shrink-0">
-          <button
-            onClick={handleRegenerate}
-            disabled={regenerating || deleting}
-            title="Regenerate with same parameters (stateless — no memory of this run)"
-            className="p-1.5 rounded-lg text-muted-foreground hover:text-blue-600 hover:bg-blue-50 transition-colors disabled:opacity-40"
-          >
-            <RefreshCw className={`h-3.5 w-3.5 ${regenerating ? "animate-spin" : ""}`} />
-          </button>
-          <button
-            onClick={handleDelete}
-            disabled={deleting || regenerating}
-            title="Delete this output"
-            className="p-1.5 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors disabled:opacity-40"
-          >
-            <Trash2 className={`h-3.5 w-3.5 ${deleting ? "animate-pulse" : ""}`} />
-          </button>
+          {onRegenerate && (
+            <button
+              onClick={handleRegenerate}
+              disabled={regenerating || deleting}
+              title="Regenerate with same parameters (stateless — no memory of this run)"
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-blue-600 hover:bg-blue-50 transition-colors disabled:opacity-40"
+            >
+              <RefreshCw className={`h-3.5 w-3.5 ${regenerating ? "animate-spin" : ""}`} />
+            </button>
+          )}
+          {onDelete && (
+            <button
+              onClick={handleDelete}
+              disabled={deleting || regenerating}
+              title="Delete this output"
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors disabled:opacity-40"
+            >
+              <Trash2 className={`h-3.5 w-3.5 ${deleting ? "animate-pulse" : ""}`} />
+            </button>
+          )}
           <button
             onClick={() => setExpanded((v) => !v)}
             className="p-1.5 rounded-lg hover:bg-accent transition-colors"

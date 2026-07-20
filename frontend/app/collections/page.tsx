@@ -4,6 +4,7 @@ import { useEffect, useState, type DragEvent } from "react";
 import Link from "next/link";
 import { Bookmark, ChevronRight, Plus, Trash2, Pencil, Check, X, GripVertical } from "lucide-react";
 import { createCollection, deleteCollection, getCollections, updateCollection, reorderCollections } from "@/lib/api";
+import { IS_STATIC_BUILD } from "@/lib/config";
 import type { Collection } from "@/lib/types";
 
 export default function CollectionsPage() {
@@ -111,41 +112,43 @@ export default function CollectionsPage() {
         )}
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
-        <div className="border rounded-xl p-4 space-y-3">
-          <div className="flex items-center gap-2 text-sm font-medium">
-            <Plus className="h-4 w-4" /> New collection
+      {!IS_STATIC_BUILD && (
+        <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
+          <div className="border rounded-xl p-4 space-y-3">
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <Plus className="h-4 w-4" /> New collection
+            </div>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Collection name"
+              className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+            />
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder="Description (optional)"
+              rows={4}
+              className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30"
+            />
+            <button
+              onClick={handleCreate}
+              disabled={saving || !name.trim()}
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              <Bookmark className="h-4 w-4" /> Create collection
+            </button>
           </div>
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Collection name"
-            className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30"
-          />
-          <textarea
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            placeholder="Description (optional)"
-            rows={4}
-            className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary/30"
-          />
-          <button
-            onClick={handleCreate}
-            disabled={saving || !name.trim()}
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            <Bookmark className="h-4 w-4" /> Create collection
-          </button>
-        </div>
 
-        <div className="border rounded-xl p-4 bg-muted/20">
-          <div className="text-sm font-medium mb-2">How this works</div>
-          <p className="text-sm text-muted-foreground">
-            Keep the dataset directory shared so both of you see the same images. If you want private experiment runs,
-            give each person a separate outputs directory or separate backend instance.
-          </p>
+          <div className="border rounded-xl p-4 bg-muted/20">
+            <div className="text-sm font-medium mb-2">How this works</div>
+            <p className="text-sm text-muted-foreground">
+              Keep the dataset directory shared so both of you see the same images. If you want private experiment runs,
+              give each person a separate outputs directory or separate backend instance.
+            </p>
+          </div>
         </div>
-      </div>
+      )}
 
       {loading ? (
         <div className="text-sm text-muted-foreground">Loading…</div>
@@ -168,12 +171,12 @@ export default function CollectionsPage() {
           {collections.map((col) => (
             <div
               key={col.collection_id}
-              draggable={editingId !== col.collection_id}
-              onDragStart={() => setDraggedId(col.collection_id)}
-              onDragOver={(e) => handleDragOver(e, col.collection_id)}
-              onDragLeave={() => setDragOverId((prev) => (prev === col.collection_id ? null : prev))}
-              onDrop={(e) => handleDrop(e, col.collection_id)}
-              onDragEnd={() => { setDraggedId(null); setDragOverId(null); }}
+              draggable={!IS_STATIC_BUILD && editingId !== col.collection_id}
+              onDragStart={IS_STATIC_BUILD ? undefined : () => setDraggedId(col.collection_id)}
+              onDragOver={IS_STATIC_BUILD ? undefined : (e) => handleDragOver(e, col.collection_id)}
+              onDragLeave={IS_STATIC_BUILD ? undefined : () => setDragOverId((prev) => (prev === col.collection_id ? null : prev))}
+              onDrop={IS_STATIC_BUILD ? undefined : (e) => handleDrop(e, col.collection_id)}
+              onDragEnd={IS_STATIC_BUILD ? undefined : () => { setDraggedId(null); setDragOverId(null); }}
               className={`border rounded-xl overflow-hidden hover:shadow-md transition-shadow ${
                 draggedId === col.collection_id ? "opacity-40" : ""
               } ${dragOverId === col.collection_id ? "ring-2 ring-primary" : ""}`}
@@ -183,7 +186,7 @@ export default function CollectionsPage() {
                   <GripVertical className="h-4 w-4 text-muted-foreground/50 shrink-0 mt-1 cursor-grab" />
                   <Bookmark className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div className="min-w-0 flex-1">
-                    {editingId === col.collection_id ? (
+                    {!IS_STATIC_BUILD && editingId === col.collection_id ? (
                       <div className="flex items-center gap-1.5" onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
                         <input
                           autoFocus
@@ -205,13 +208,15 @@ export default function CollectionsPage() {
                     ) : (
                       <div className="flex items-center gap-1.5 group/name">
                         <div className="font-semibold text-sm truncate">{col.name}</div>
-                        <button
-                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); startEdit(col); }}
-                          className="text-muted-foreground hover:text-foreground shrink-0 opacity-0 group-hover/name:opacity-100 transition-opacity"
-                          title="Rename collection"
-                        >
-                          <Pencil className="h-3.5 w-3.5" />
-                        </button>
+                        {!IS_STATIC_BUILD && (
+                          <button
+                            onClick={(e) => { e.preventDefault(); e.stopPropagation(); startEdit(col); }}
+                            className="text-muted-foreground hover:text-foreground shrink-0 opacity-0 group-hover/name:opacity-100 transition-opacity"
+                            title="Rename collection"
+                          >
+                            <Pencil className="h-3.5 w-3.5" />
+                          </button>
+                        )}
                       </div>
                     )}
                     {col.description && (
@@ -232,13 +237,15 @@ export default function CollectionsPage() {
                 >
                   Open <ChevronRight className="h-3 w-3" />
                 </Link>
-                <button
-                  onClick={() => handleDelete(col.collection_id, col.name)}
-                  className="p-1 text-muted-foreground hover:text-destructive transition-colors"
-                  title="Delete collection"
-                >
-                  <Trash2 className="h-3.5 w-3.5" />
-                </button>
+                {!IS_STATIC_BUILD && (
+                  <button
+                    onClick={() => handleDelete(col.collection_id, col.name)}
+                    className="p-1 text-muted-foreground hover:text-destructive transition-colors"
+                    title="Delete collection"
+                  >
+                    <Trash2 className="h-3.5 w-3.5" />
+                  </button>
+                )}
               </div>
             </div>
           ))}

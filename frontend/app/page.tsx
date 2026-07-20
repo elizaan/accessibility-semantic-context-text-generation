@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Database, Zap, GitCompare, FileText } from "lucide-react";
 import { getDatasetStats } from "@/lib/api";
+import { IS_STATIC_BUILD } from "@/lib/config";
 import type { DatasetSource, DatasetStats } from "@/lib/types";
 
 const DATASET_META: Record<DatasetSource, {
@@ -122,7 +123,9 @@ export default function HomePage() {
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">Datasets</h2>
         <div className="grid gap-3 grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
-          {(Object.keys(DATASET_META) as DatasetSource[]).map((id) => {
+          {(Object.keys(DATASET_META) as DatasetSource[])
+            .filter((id) => !IS_STATIC_BUILD || countFor(id) !== undefined)
+            .map((id) => {
             const ds = DATASET_META[id];
             const count = countFor(id);
             return (
