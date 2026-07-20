@@ -1,0 +1,70 @@
+{
+  "output_id": "2a2e3cbf-d623-4616-b37a-f1cbf894f852",
+  "chart_id": "olli_strip-plot",
+  "dataset_source": "olli",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"Exact row-level data is not provided, but detailed aggregated statistics (counts and averages per bin/category) are available in the OLLI screen reader tree, allowing for a robust statistical summary.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 5,\n        \"justification\": \"The OLLI tree provides specific averages and counts that clearly indicate the magnitude of the relationship between horsepower and cylinder count.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly 'automotive/motors' based on the axis labels 'Horsepower' and 'Cylinders', and the specific discrete values for cylinders (3, 4, 5, 6, 8). The source link confirms it is a gallery example, but the domain content is explicit.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a strip plot visualizing the distribution of engine horsepower relative to the number of engine cylinders [DIRECT]. It likely represents a dataset of automobiles, displaying the density of vehicles across different configurations [SPECULATIVE: automotive data standards]. The data exhibits strong clustering, particularly for 4-cylinder and 8-cylinder engines, suggesting these are the most common configurations in the dataset [DERIVED: visual density clusters observed in the image and supported by the OLLI tree counts of 202 for 4-cylinders and 108 for 8-cylinders].\",\n    \"domain_specific_explanations\": \"The chart demonstrates a positive correlation where higher cylinder counts generally correspond to higher horsepower ranges [DERIVED: comparison of average horsepower values: 78 for 4-cylinders vs 158 for 8-cylinders]. Specifically, 4-cylinder engines dominate the lower horsepower spectrum (averaging 78 hp), while 8-cylinder engines occupy the highest spectrum (averaging 158 hp) [DERIVED: reading averages from OLLI tree]. The data shows that 6-cylinder engines typically produce around 102 hp, bridging the gap between the 4 and 8-cylinder clusters [DERIVED: reading averages from OLLI tree]. The presence of 3-cylinder and 5-cylinder engines is rare, with only 4 and 3 instances respectively, indicating these are niche or specialized engine types in this dataset [DERIVED: reading counts from OLLI tree].\",\n    \"real_world_significance\": \"This data reflects standard automotive engineering trade-offs where engine size (cylinder count) is a primary driver of performance (horsepower) [SPECULATIVE: automotive engineering principles]. For a vehicle buyer or analyst, this chart highlights that the market (or dataset) is heavily skewed toward 4-cylinder efficiency and 8-cylinder performance, with fewer mid-range options [SPECULATIVE: market interpretation of data distribution]. The clear separation of horsepower bands helps users predict the performance capabilities of a vehicle based solely on its engine configuration [SPECULATIVE: application of data for decision making].\",\n    \"other\": \"The chart uses a strip plot format, which allows for the visualization of individual data points (ticks) to show data density and distribution overlap better than a simple line chart would [DIRECT: chart type identified as strip plot]. The X-axis ranges from approximately 0 to 240 horsepower, covering a broad spectrum from low-power commuter vehicles to high-performance cars [DERIVED: reading axis range from OLLI tree and visual confirmation].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a strip plot visualizing the distribution of engine horsepower relative to the number of engine cylinders\",\n      \"The chart uses a strip plot format\"\n    ],\n    \"derived_claims\": [\n      \"The data exhibits strong clustering, particularly for 4-cylinder and 8-cylinder engines\",\n      \"4-cylinder engines dominate the lower horsepower spectrum (averaging 78 hp), while 8-cylinder engines occupy the highest spectrum (averaging 158 hp)\",\n      \"6-cylinder engines typically produce around 102 hp\",\n      \"The presence of 3-cylinder and 5-cylinder engines is rare, with only 4 and 3 instances respectively\",\n      \"The X-axis ranges from approximately 0 to 240 horsepower\"\n    ],\n    \"speculative_claims\": [\n      \"It likely represents a dataset of automobiles\",\n      \"This data reflects standard automotive engineering trade-offs\",\n      \"The market (or dataset) is heavily skewed toward 4-cylinder efficiency and 8-cylinder performance\",\n      \"The clear separation of horsepower bands helps users predict the performance capabilities\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "Exact row-level data is not provided, but detailed aggregated statistics (counts and averages per bin/category) are available in the OLLI screen reader tree, allowing for a robust statistical summary."
+        },
+        "trend_magnitude": {
+          "score": 5,
+          "justification": "The OLLI tree provides specific averages and counts that clearly indicate the magnitude of the relationship between horsepower and cylinder count."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly 'automotive/motors' based on the axis labels 'Horsepower' and 'Cylinders', and the specific discrete values for cylinders (3, 4, 5, 6, 8). The source link confirms it is a gallery example, but the domain content is explicit."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a strip plot visualizing the distribution of engine horsepower relative to the number of engine cylinders [DIRECT]. It likely represents a dataset of automobiles, displaying the density of vehicles across different configurations [SPECULATIVE: automotive data standards]. The data exhibits strong clustering, particularly for 4-cylinder and 8-cylinder engines, suggesting these are the most common configurations in the dataset [DERIVED: visual density clusters observed in the image and supported by the OLLI tree counts of 202 for 4-cylinders and 108 for 8-cylinders].",
+      "domain_specific_explanations": "The chart demonstrates a positive correlation where higher cylinder counts generally correspond to higher horsepower ranges [DERIVED: comparison of average horsepower values: 78 for 4-cylinders vs 158 for 8-cylinders]. Specifically, 4-cylinder engines dominate the lower horsepower spectrum (averaging 78 hp), while 8-cylinder engines occupy the highest spectrum (averaging 158 hp) [DERIVED: reading averages from OLLI tree]. The data shows that 6-cylinder engines typically produce around 102 hp, bridging the gap between the 4 and 8-cylinder clusters [DERIVED: reading averages from OLLI tree]. The presence of 3-cylinder and 5-cylinder engines is rare, with only 4 and 3 instances respectively, indicating these are niche or specialized engine types in this dataset [DERIVED: reading counts from OLLI tree].",
+      "real_world_significance": "This data reflects standard automotive engineering trade-offs where engine size (cylinder count) is a primary driver of performance (horsepower) [SPECULATIVE: automotive engineering principles]. For a vehicle buyer or analyst, this chart highlights that the market (or dataset) is heavily skewed toward 4-cylinder efficiency and 8-cylinder performance, with fewer mid-range options [SPECULATIVE: market interpretation of data distribution]. The clear separation of horsepower bands helps users predict the performance capabilities of a vehicle based solely on its engine configuration [SPECULATIVE: application of data for decision making].",
+      "other": "The chart uses a strip plot format, which allows for the visualization of individual data points (ticks) to show data density and distribution overlap better than a simple line chart would [DIRECT: chart type identified as strip plot]. The X-axis ranges from approximately 0 to 240 horsepower, covering a broad spectrum from low-power commuter vehicles to high-performance cars [DERIVED: reading axis range from OLLI tree and visual confirmation]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a strip plot visualizing the distribution of engine horsepower relative to the number of engine cylinders",
+        "The chart uses a strip plot format"
+      ],
+      "derived_claims": [
+        "The data exhibits strong clustering, particularly for 4-cylinder and 8-cylinder engines",
+        "4-cylinder engines dominate the lower horsepower spectrum (averaging 78 hp), while 8-cylinder engines occupy the highest spectrum (averaging 158 hp)",
+        "6-cylinder engines typically produce around 102 hp",
+        "The presence of 3-cylinder and 5-cylinder engines is rare, with only 4 and 3 instances respectively",
+        "The X-axis ranges from approximately 0 to 240 horsepower"
+      ],
+      "speculative_claims": [
+        "It likely represents a dataset of automobiles",
+        "This data reflects standard automotive engineering trade-offs",
+        "The market (or dataset) is heavily skewed toward 4-cylinder efficiency and 8-cylinder performance",
+        "The clear separation of horsepower bands helps users predict the performance capabilities"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2300,
+    "output": 1117
+  },
+  "latency_ms": 4612.211624997144,
+  "created_at": "2026-07-20T14:23:30.208307Z"
+}

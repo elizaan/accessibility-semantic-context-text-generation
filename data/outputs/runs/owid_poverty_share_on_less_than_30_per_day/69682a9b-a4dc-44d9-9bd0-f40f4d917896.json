@@ -1,0 +1,71 @@
+{
+  "output_id": "69682a9b-a4dc-44d9-9bd0-f40f4d917896",
+  "chart_id": "owid_poverty_share_on_less_than_30_per_day",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides a substantial list of regional aggregates and individual countries for the years 2024–2026, though some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The data spans multiple years (2024–2026) but is cross-sectional across different entities rather than a continuous time-series for a single entity.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly define the subject as global poverty measured at a $30-a-day threshold adjusted for inflation and living costs.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset presents the share of the population living on less than $30 a day across various global regions and selected countries for the years 2024 to 2026 [DIRECT]. The data is sourced from Our World in Data and is based on World Bank metrics [DIRECT]. Measuring poverty at a $30-a-day threshold provides a perspective on global economic security that goes beyond extreme poverty lines, capturing how many people have achieved a modest, secure standard of living [SPECULATIVE: Development Economics].\",\n    \"domain_specific_explanations\": \"The values in this dataset are adjusted for inflation and differences in living costs between countries, allowing for meaningful cross-country comparisons [DIRECT]. In development economics, a $30-a-day threshold is frequently used to represent a level of income associated with economic security and entry into the global middle class [SPECULATIVE: World Bank]. The data reveals stark regional disparities: in 2026, North America has the lowest share of its population living on less than $30 a day at 11.96% [DERIVED: read North America 2026 value from table], whereas regions like South Asia (99.48%) and Sub-Saharan Africa (99.14%) have nearly their entire populations living below this threshold [DERIVED: read and compared South Asia and Sub-Saharan Africa 2026 values from table]. Globally, 80.04% of the population is projected to live on less than $30 a day in 2026 [DIRECT].\",\n    \"real_world_significance\": \"This data underscores that despite progress in reducing extreme poverty, true economic security remains out of reach for the vast majority of the global population, with four out of five people globally living on less than $30 a day in 2026 [DERIVED: calculated 80.04% as approximately four out of five]. The massive gap between North America (11.96%) and regions like Western and Central Africa (99.57%) highlights deep-seated global inequalities in productivity, wages, and social safety nets [DERIVED: compared North America and Western and Central Africa 2026 values]. For policymakers and international bodies, these figures suggest that global development strategies must focus not just on basic survival, but on fostering high-productivity jobs and robust economic growth to lift populations into stable middle-class status [SPECULATIVE: Public Policy].\",\n    \"other\": \"Excluding India from the global calculation reduces the share of the population living on less than $30 a day from 80.04% to 75.78% [DERIVED: compared 'World' and 'World (excluding India)' values for 2026], demonstrating the significant impact of India's large population and income distribution on global poverty statistics [SPECULATIVE: Demographics].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset presents the share of the population living on less than $30 a day across various global regions and selected countries for the years 2024 to 2026\",\n      \"The data is sourced from Our World in Data and is based on World Bank metrics\",\n      \"The values in this dataset are adjusted for inflation and differences in living costs between countries, allowing for meaningful cross-country comparisons\",\n      \"Globally, 80.04% of the population is projected to live on less than $30 a day in 2026\"\n    ],\n    \"derived_claims\": [\n      \"In 2026, North America has the lowest share of its population living on less than $30 a day at 11.96% [derived from reading North America 2026 value from table]\",\n      \"regions like South Asia (99.48%) and Sub-Saharan Africa (99.14%) have nearly their entire populations living below this threshold [derived from reading and comparing South Asia and Sub-Saharan Africa 2026 values from table]\",\n      \"four out of five people globally living on less than $30 a day in 2026 [derived from calculating 80.04% as approximately four out of five]\",\n      \"The massive gap between North America (11.96%) and regions like Western and Central Africa (99.57%) highlights deep-seated global inequalities in productivity, wages, and social safety nets [derived from comparing North America and Western and Central Africa 2026 values]\",\n      \"Excluding India from the global calculation reduces the share of the population living on less than $30 a day from 80.04% to 75.78% [derived from comparing 'World' and 'World (excluding India)' values for 2026]\"\n    ],\n    \"speculative_claims\": [\n      \"Measuring poverty at a $30-a-day threshold provides a perspective on global economic security that goes beyond extreme poverty lines, capturing how many people have achieved a modest, secure standard of living [source: Development Economics]\",\n      \"In development economics, a $30-a-day threshold is frequently used to represent a level of income associated with economic security and entry into the global middle class [source: World Bank]\",\n      \"For policymakers and international bodies, these figures suggest that global development strategies must focus not just on basic survival, but on fostering high-productivity jobs and robust economic growth to lift populations into stable middle-class status [source: Public Policy]\",\n      \"demonstrating the significant impact of India's large population and income distribution on global poverty statistics [source: Demographics]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 4,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides a substantial list of regional aggregates and individual countries for the years 2024–2026, though some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The data spans multiple years (2024–2026) but is cross-sectional across different entities rather than a continuous time-series for a single entity."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly define the subject as global poverty measured at a $30-a-day threshold adjusted for inflation and living costs."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset presents the share of the population living on less than $30 a day across various global regions and selected countries for the years 2024 to 2026 [DIRECT]. The data is sourced from Our World in Data and is based on World Bank metrics [DIRECT]. Measuring poverty at a $30-a-day threshold provides a perspective on global economic security that goes beyond extreme poverty lines, capturing how many people have achieved a modest, secure standard of living [SPECULATIVE: Development Economics].",
+      "domain_specific_explanations": "The values in this dataset are adjusted for inflation and differences in living costs between countries, allowing for meaningful cross-country comparisons [DIRECT]. In development economics, a $30-a-day threshold is frequently used to represent a level of income associated with economic security and entry into the global middle class [SPECULATIVE: World Bank]. The data reveals stark regional disparities: in 2026, North America has the lowest share of its population living on less than $30 a day at 11.96% [DERIVED: read North America 2026 value from table], whereas regions like South Asia (99.48%) and Sub-Saharan Africa (99.14%) have nearly their entire populations living below this threshold [DERIVED: read and compared South Asia and Sub-Saharan Africa 2026 values from table]. Globally, 80.04% of the population is projected to live on less than $30 a day in 2026 [DIRECT].",
+      "real_world_significance": "This data underscores that despite progress in reducing extreme poverty, true economic security remains out of reach for the vast majority of the global population, with four out of five people globally living on less than $30 a day in 2026 [DERIVED: calculated 80.04% as approximately four out of five]. The massive gap between North America (11.96%) and regions like Western and Central Africa (99.57%) highlights deep-seated global inequalities in productivity, wages, and social safety nets [DERIVED: compared North America and Western and Central Africa 2026 values]. For policymakers and international bodies, these figures suggest that global development strategies must focus not just on basic survival, but on fostering high-productivity jobs and robust economic growth to lift populations into stable middle-class status [SPECULATIVE: Public Policy].",
+      "other": "Excluding India from the global calculation reduces the share of the population living on less than $30 a day from 80.04% to 75.78% [DERIVED: compared 'World' and 'World (excluding India)' values for 2026], demonstrating the significant impact of India's large population and income distribution on global poverty statistics [SPECULATIVE: Demographics]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset presents the share of the population living on less than $30 a day across various global regions and selected countries for the years 2024 to 2026",
+        "The data is sourced from Our World in Data and is based on World Bank metrics",
+        "The values in this dataset are adjusted for inflation and differences in living costs between countries, allowing for meaningful cross-country comparisons",
+        "Globally, 80.04% of the population is projected to live on less than $30 a day in 2026"
+      ],
+      "derived_claims": [
+        "In 2026, North America has the lowest share of its population living on less than $30 a day at 11.96% [derived from reading North America 2026 value from table]",
+        "regions like South Asia (99.48%) and Sub-Saharan Africa (99.14%) have nearly their entire populations living below this threshold [derived from reading and comparing South Asia and Sub-Saharan Africa 2026 values from table]",
+        "four out of five people globally living on less than $30 a day in 2026 [derived from calculating 80.04% as approximately four out of five]",
+        "The massive gap between North America (11.96%) and regions like Western and Central Africa (99.57%) highlights deep-seated global inequalities in productivity, wages, and social safety nets [derived from comparing North America and Western and Central Africa 2026 values]",
+        "Excluding India from the global calculation reduces the share of the population living on less than $30 a day from 80.04% to 75.78% [derived from comparing 'World' and 'World (excluding India)' values for 2026]"
+      ],
+      "speculative_claims": [
+        "Measuring poverty at a $30-a-day threshold provides a perspective on global economic security that goes beyond extreme poverty lines, capturing how many people have achieved a modest, secure standard of living [source: Development Economics]",
+        "In development economics, a $30-a-day threshold is frequently used to represent a level of income associated with economic security and entry into the global middle class [source: World Bank]",
+        "For policymakers and international bodies, these figures suggest that global development strategies must focus not just on basic survival, but on fostering high-productivity jobs and robust economic growth to lift populations into stable middle-class status [source: Public Policy]",
+        "demonstrating the significant impact of India's large population and income distribution on global poverty statistics [source: Demographics]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 4,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 18630.953833002422,
+  "created_at": "2026-07-17T20:43:58.148855Z"
+}

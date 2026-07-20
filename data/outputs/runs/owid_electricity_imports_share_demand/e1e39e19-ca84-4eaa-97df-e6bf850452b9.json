@@ -1,0 +1,73 @@
+{
+  "output_id": "e1e39e19-ca84-4eaa-97df-e6bf850452b9",
+  "chart_id": "owid_electricity_imports_share_demand",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The provided data table is truncated and missing the primary countries visualized in the chart image (except Canada), but the chart image itself clearly displays the values for the selected countries.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The relative differences between net exporters (Sweden, France) and net importers (UK, Germany) are highly legible from the chart image.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The domain is clearly defined by the title, the expert domain story, and the reputable sources (Ember and Our World in Data).\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart, titled 'Net electricity imports as a share of electricity demand', presents data for the year 2025 [DIRECT]. Published by Our World in Data using data from Ember (2026), it illustrates the degree to which various nations rely on foreign electricity or supply electricity to other nations relative to their domestic demand [DIRECT]. The chart highlights a select group of major economies, showing a spectrum from significant net exporters to notable net importers [DERIVED: Comparing the countries displayed on the chart].\",\n    \"domain_specific_explanations\": \"In energy economics, net electricity imports are calculated as total imports minus exports, expressed as a percentage of domestic demand [DIRECT]. A positive percentage indicates a net importer that relies on external generation to meet its grid needs [DIRECT]. For instance, the United Kingdom is a net importer at 9.05% of its demand, and Germany is a net importer at 3.81% [DERIVED: Read values from chart image]. Conversely, a negative percentage indicates a net exporter [DIRECT]. Sweden (-24.51%) and France (-19.58%) are major net exporters, producing substantial surpluses that they sell to neighboring grids [DERIVED: Read values from chart image]. Countries like the United States (0.35%) and India (0.06%) operate very close to net-zero electricity trade relative to their massive domestic demand [DERIVED: Read values from chart image].\",\n    \"real_world_significance\": \"These figures reflect deep structural and geographical realities of national energy grids. Sweden's high export share (-24.51%) is historically enabled by its abundant hydropower and stable nuclear capacity [SPECULATIVE: Energy economics]. France's position as a major exporter (-19.58%) is driven by its extensive nuclear fleet, which serves as a backbone for the European power grid [SPECULATIVE: Energy economics]. On the import side, the UK's reliance on imports (9.05%) is facilitated by subsea interconnectors to continental Europe, which help balance its grid as it integrates more variable wind power [SPECULATIVE: Energy economics]. Germany's net import status (3.81%) reflects its ongoing energy transition challenges, including the phase-out of nuclear power and coal, which occasionally necessitates importing power from neighbors [SPECULATIVE: Energy economics]. Meanwhile, the near-zero import shares of the US (0.35%) and India (0.06%) highlight that these massive, continent-spanning grids must be almost entirely self-sufficient due to limited cross-border transmission capacity relative to their total consumption [SPECULATIVE: Energy economics].\",\n    \"other\": \"Canada is also shown as a modest net exporter of electricity, with net imports at -1.05% of its demand [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart, titled 'Net electricity imports as a share of electricity demand', presents data for the year 2025\",\n      \"Published by Our World in Data using data from Ember (2026), it illustrates the degree to which various nations rely on foreign electricity or supply electricity to other nations relative to their domestic demand\",\n      \"In energy economics, net electricity imports are calculated as total imports minus exports, expressed as a percentage of domestic demand\",\n      \"A positive percentage indicates a net importer that relies on external generation to meet its grid needs\",\n      \"Conversely, a negative percentage indicates a net exporter\",\n      \"Canada is also shown as a modest net exporter of electricity, with net imports at -1.05% of its demand\"\n    ],\n    \"derived_claims\": [\n      \"The chart highlights a select group of major economies, showing a spectrum from significant net exporters to notable net importers\",\n      \"For instance, the United Kingdom is a net importer at 9.05% of its demand, and Germany is a net importer at 3.81%\",\n      \"Sweden (-24.51%) and France (-19.58%) are major net exporters, producing substantial surpluses that they sell to neighboring grids\",\n      \"Countries like the United States (0.35%) and India (0.06%) operate very close to net-zero electricity trade relative to their massive domestic demand\"\n    ],\n    \"speculative_claims\": [\n      \"Sweden's high export share (-24.51%) is historically enabled by its abundant hydropower and stable nuclear capacity\",\n      \"France's position as a major exporter (-19.58%) is driven by its extensive nuclear fleet, which serves as a backbone for the European power grid\",\n      \"The UK's reliance on imports (9.05%) is facilitated by subsea interconnectors to continental Europe, which help balance its grid as it integrates more variable wind power\",\n      \"Germany's net import status (3.81%) reflects its ongoing energy transition challenges, including the phase-out of nuclear power and coal, which occasionally necessitates importing power from neighbors\",\n      \"The near-zero import shares of the US (0.35%) and India (0.06%) highlight that these massive, continent-spanning grids must be almost entirely self-sufficient due to limited cross-border transmission capacity relative to their total consumption\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 6,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The provided data table is truncated and missing the primary countries visualized in the chart image (except Canada), but the chart image itself clearly displays the values for the selected countries."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The relative differences between net exporters (Sweden, France) and net importers (UK, Germany) are highly legible from the chart image."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The domain is clearly defined by the title, the expert domain story, and the reputable sources (Ember and Our World in Data)."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart, titled 'Net electricity imports as a share of electricity demand', presents data for the year 2025 [DIRECT]. Published by Our World in Data using data from Ember (2026), it illustrates the degree to which various nations rely on foreign electricity or supply electricity to other nations relative to their domestic demand [DIRECT]. The chart highlights a select group of major economies, showing a spectrum from significant net exporters to notable net importers [DERIVED: Comparing the countries displayed on the chart].",
+      "domain_specific_explanations": "In energy economics, net electricity imports are calculated as total imports minus exports, expressed as a percentage of domestic demand [DIRECT]. A positive percentage indicates a net importer that relies on external generation to meet its grid needs [DIRECT]. For instance, the United Kingdom is a net importer at 9.05% of its demand, and Germany is a net importer at 3.81% [DERIVED: Read values from chart image]. Conversely, a negative percentage indicates a net exporter [DIRECT]. Sweden (-24.51%) and France (-19.58%) are major net exporters, producing substantial surpluses that they sell to neighboring grids [DERIVED: Read values from chart image]. Countries like the United States (0.35%) and India (0.06%) operate very close to net-zero electricity trade relative to their massive domestic demand [DERIVED: Read values from chart image].",
+      "real_world_significance": "These figures reflect deep structural and geographical realities of national energy grids. Sweden's high export share (-24.51%) is historically enabled by its abundant hydropower and stable nuclear capacity [SPECULATIVE: Energy economics]. France's position as a major exporter (-19.58%) is driven by its extensive nuclear fleet, which serves as a backbone for the European power grid [SPECULATIVE: Energy economics]. On the import side, the UK's reliance on imports (9.05%) is facilitated by subsea interconnectors to continental Europe, which help balance its grid as it integrates more variable wind power [SPECULATIVE: Energy economics]. Germany's net import status (3.81%) reflects its ongoing energy transition challenges, including the phase-out of nuclear power and coal, which occasionally necessitates importing power from neighbors [SPECULATIVE: Energy economics]. Meanwhile, the near-zero import shares of the US (0.35%) and India (0.06%) highlight that these massive, continent-spanning grids must be almost entirely self-sufficient due to limited cross-border transmission capacity relative to their total consumption [SPECULATIVE: Energy economics].",
+      "other": "Canada is also shown as a modest net exporter of electricity, with net imports at -1.05% of its demand [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart, titled 'Net electricity imports as a share of electricity demand', presents data for the year 2025",
+        "Published by Our World in Data using data from Ember (2026), it illustrates the degree to which various nations rely on foreign electricity or supply electricity to other nations relative to their domestic demand",
+        "In energy economics, net electricity imports are calculated as total imports minus exports, expressed as a percentage of domestic demand",
+        "A positive percentage indicates a net importer that relies on external generation to meet its grid needs",
+        "Conversely, a negative percentage indicates a net exporter",
+        "Canada is also shown as a modest net exporter of electricity, with net imports at -1.05% of its demand"
+      ],
+      "derived_claims": [
+        "The chart highlights a select group of major economies, showing a spectrum from significant net exporters to notable net importers",
+        "For instance, the United Kingdom is a net importer at 9.05% of its demand, and Germany is a net importer at 3.81%",
+        "Sweden (-24.51%) and France (-19.58%) are major net exporters, producing substantial surpluses that they sell to neighboring grids",
+        "Countries like the United States (0.35%) and India (0.06%) operate very close to net-zero electricity trade relative to their massive domestic demand"
+      ],
+      "speculative_claims": [
+        "Sweden's high export share (-24.51%) is historically enabled by its abundant hydropower and stable nuclear capacity",
+        "France's position as a major exporter (-19.58%) is driven by its extensive nuclear fleet, which serves as a backbone for the European power grid",
+        "The UK's reliance on imports (9.05%) is facilitated by subsea interconnectors to continental Europe, which help balance its grid as it integrates more variable wind power",
+        "Germany's net import status (3.81%) reflects its ongoing energy transition challenges, including the phase-out of nuclear power and coal, which occasionally necessitates importing power from neighbors",
+        "The near-zero import shares of the US (0.35%) and India (0.06%) highlight that these massive, continent-spanning grids must be almost entirely self-sufficient due to limited cross-border transmission capacity relative to their total consumption"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 6,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12201.193624998268,
+  "created_at": "2026-07-17T20:48:08.809453Z"
+}

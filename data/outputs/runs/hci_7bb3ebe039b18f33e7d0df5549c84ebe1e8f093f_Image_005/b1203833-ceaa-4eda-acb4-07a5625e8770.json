@@ -1,0 +1,73 @@
+{
+  "output_id": "b1203833-ceaa-4eda-acb4-07a5625e8770",
+  "chart_id": "hci_7bb3ebe039b18f33e7d0df5549c84ebe1e8f093f_Image_005",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gpt-5.4",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No underlying data table or numeric values are provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The alt text identifies a scatter plot with regressions and 95% prediction intervals, but gives no variables, directions, strengths, or magnitudes of relationships.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The expert domain story says the figure is from a CHI 2016 paper, which places it broadly in human-computer interaction, but the specific topic, variables, and application area are absent.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This figure is a scatter plot with regression results and 95% prediction intervals. [DIRECT] It comes from a paper published at CHI in 2016. [DIRECT] CHI is a major venue in human-computer interaction research. [SPECULATIVE: academic publishing/HCI knowledge] Because the chart is described as showing “our model,” it likely presents how a research model fits observed data points. [DERIVED: inferred from the phrase “scatter plot and regressions of our model”] Without axis labels, title, or data values, the chart’s substantive topic cannot be identified from the provided metadata alone. [DIRECT]\",\n    \"domain_specific_explanations\": \"In research contexts, a scatter plot with regression is commonly used to examine the relationship between measured variables and to assess how well a model explains observed outcomes. [SPECULATIVE: statistics/methodology] A 95% prediction interval usually indicates the range within which future or individual observations are expected to fall, given the model. [SPECULATIVE: statistics] Prediction intervals are different from confidence intervals because they are typically intended for individual predicted outcomes rather than just the estimated mean relationship. [SPECULATIVE: statistics] Since the actual variables are not given, the chart can only be interpreted at the methodological level, not at the level of what phenomena are increasing, decreasing, or differing. [DIRECT]\",\n    \"real_world_significance\": \"Because this figure is from a CHI paper, it likely supports a claim about human-computer interaction behavior, performance, perception, or system outcomes. [SPECULATIVE: HCI research domain] In that setting, model-fit figures are often used to justify design recommendations, validate experimental findings, or compare predictive approaches. [SPECULATIVE: HCI/statistical practice] However, no stakeholder context, application setting, or measured variables are provided here, so any claim about who is affected or what decisions depend on the result would go beyond the evidence supplied. [DIRECT]\",\n    \"other\": \"The metadata is sufficient to identify the chart as model-related statistical output, but not sufficient to recover the chart’s message. [DERIVED: based on presence of chart type and absence of title/axes/data] The mention of regressions suggests there may be one or more fitted relationships rather than raw observations alone. [DERIVED: read from plural term “regressions”] The absence of the image prevents verification of whether there are multiple groups, nonlinear fits, outliers, or interaction patterns. [DIRECT]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This figure is a scatter plot with regression results and 95% prediction intervals.\",\n      \"It comes from a paper published at CHI in 2016.\",\n      \"Without axis labels, title, or data values, the chart’s substantive topic cannot be identified from the provided metadata alone.\",\n      \"Since the actual variables are not given, the chart can only be interpreted at the methodological level, not at the level of what phenomena are increasing, decreasing, or differing.\",\n      \"However, no stakeholder context, application setting, or measured variables are provided here, so any claim about who is affected or what decisions depend on the result would go beyond the evidence supplied.\",\n      \"The absence of the image prevents verification of whether there are multiple groups, nonlinear fits, outliers, or interaction patterns.\"\n    ],\n    \"derived_claims\": [\n      \"Because the chart is described as showing “our model,” it likely presents how a research model fits observed data points. — derived from the phrase “scatter plot and regressions of our model”.\",\n      \"The metadata is sufficient to identify the chart as model-related statistical output, but not sufficient to recover the chart’s message. — derived from presence of chart type information and absence of title, axes, and data.\",\n      \"The mention of regressions suggests there may be one or more fitted relationships rather than raw observations alone. — derived from the plural term “regressions”.\"\n    ],\n    \"speculative_claims\": [\n      \"CHI is a major venue in human-computer interaction research. — source: academic publishing/HCI knowledge.\",\n      \"In research contexts, a scatter plot with regression is commonly used to examine the relationship between measured variables and to assess how well a model explains observed outcomes. — source: statistics/methodology.\",\n      \"A 95% prediction interval usually indicates the range within which future or individual observations are expected to fall, given the model. — source: statistics.\",\n      \"Prediction intervals are different from confidence intervals because they are typically intended for individual predicted outcomes rather than just the estimated mean relationship. — source: statistics.\",\n      \"Because this figure is from a CHI paper, it likely supports a claim about human-computer interaction behavior, performance, perception, or system outcomes. — source: HCI research domain.\",\n      \"In that setting, model-fit figures are often used to justify design recommendations, validate experimental findings, or compare predictive approaches. — source: HCI/statistical practice.\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 6,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No underlying data table or numeric values are provided."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The alt text identifies a scatter plot with regressions and 95% prediction intervals, but gives no variables, directions, strengths, or magnitudes of relationships."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The expert domain story says the figure is from a CHI 2016 paper, which places it broadly in human-computer interaction, but the specific topic, variables, and application area are absent."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This figure is a scatter plot with regression results and 95% prediction intervals. [DIRECT] It comes from a paper published at CHI in 2016. [DIRECT] CHI is a major venue in human-computer interaction research. [SPECULATIVE: academic publishing/HCI knowledge] Because the chart is described as showing “our model,” it likely presents how a research model fits observed data points. [DERIVED: inferred from the phrase “scatter plot and regressions of our model”] Without axis labels, title, or data values, the chart’s substantive topic cannot be identified from the provided metadata alone. [DIRECT]",
+      "domain_specific_explanations": "In research contexts, a scatter plot with regression is commonly used to examine the relationship between measured variables and to assess how well a model explains observed outcomes. [SPECULATIVE: statistics/methodology] A 95% prediction interval usually indicates the range within which future or individual observations are expected to fall, given the model. [SPECULATIVE: statistics] Prediction intervals are different from confidence intervals because they are typically intended for individual predicted outcomes rather than just the estimated mean relationship. [SPECULATIVE: statistics] Since the actual variables are not given, the chart can only be interpreted at the methodological level, not at the level of what phenomena are increasing, decreasing, or differing. [DIRECT]",
+      "real_world_significance": "Because this figure is from a CHI paper, it likely supports a claim about human-computer interaction behavior, performance, perception, or system outcomes. [SPECULATIVE: HCI research domain] In that setting, model-fit figures are often used to justify design recommendations, validate experimental findings, or compare predictive approaches. [SPECULATIVE: HCI/statistical practice] However, no stakeholder context, application setting, or measured variables are provided here, so any claim about who is affected or what decisions depend on the result would go beyond the evidence supplied. [DIRECT]",
+      "other": "The metadata is sufficient to identify the chart as model-related statistical output, but not sufficient to recover the chart’s message. [DERIVED: based on presence of chart type and absence of title/axes/data] The mention of regressions suggests there may be one or more fitted relationships rather than raw observations alone. [DERIVED: read from plural term “regressions”] The absence of the image prevents verification of whether there are multiple groups, nonlinear fits, outliers, or interaction patterns. [DIRECT]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This figure is a scatter plot with regression results and 95% prediction intervals.",
+        "It comes from a paper published at CHI in 2016.",
+        "Without axis labels, title, or data values, the chart’s substantive topic cannot be identified from the provided metadata alone.",
+        "Since the actual variables are not given, the chart can only be interpreted at the methodological level, not at the level of what phenomena are increasing, decreasing, or differing.",
+        "However, no stakeholder context, application setting, or measured variables are provided here, so any claim about who is affected or what decisions depend on the result would go beyond the evidence supplied.",
+        "The absence of the image prevents verification of whether there are multiple groups, nonlinear fits, outliers, or interaction patterns."
+      ],
+      "derived_claims": [
+        "Because the chart is described as showing “our model,” it likely presents how a research model fits observed data points. — derived from the phrase “scatter plot and regressions of our model”.",
+        "The metadata is sufficient to identify the chart as model-related statistical output, but not sufficient to recover the chart’s message. — derived from presence of chart type information and absence of title, axes, and data.",
+        "The mention of regressions suggests there may be one or more fitted relationships rather than raw observations alone. — derived from the plural term “regressions”."
+      ],
+      "speculative_claims": [
+        "CHI is a major venue in human-computer interaction research. — source: academic publishing/HCI knowledge.",
+        "In research contexts, a scatter plot with regression is commonly used to examine the relationship between measured variables and to assess how well a model explains observed outcomes. — source: statistics/methodology.",
+        "A 95% prediction interval usually indicates the range within which future or individual observations are expected to fall, given the model. — source: statistics.",
+        "Prediction intervals are different from confidence intervals because they are typically intended for individual predicted outcomes rather than just the estimated mean relationship. — source: statistics.",
+        "Because this figure is from a CHI paper, it likely supports a claim about human-computer interaction behavior, performance, perception, or system outcomes. — source: HCI research domain.",
+        "In that setting, model-fit figures are often used to justify design recommendations, validate experimental findings, or compare predictive approaches. — source: HCI/statistical practice."
+      ],
+      "total_flag_count": 15,
+      "direct_count": 6,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 1192,
+    "output": 1262
+  },
+  "latency_ms": 16311.496583002736,
+  "created_at": "2026-07-20T13:22:53.577429Z"
+}

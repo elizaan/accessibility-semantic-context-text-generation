@@ -1,0 +1,66 @@
+{
+  "output_id": "f5b2e751-df6b-46ee-af31-450a0bee27d7",
+  "chart_id": "owid_poverty_share_on_less_than_30_per_day",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The data table provides exact values for the share of population living on less than $30 a day for various entities and years.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"The metadata does not provide information on trend magnitude.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and data table indicate that the subject domain is poverty rates, specifically the share of population living on less than $30 a day.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of population living on less than $30 a day across various regions and countries [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. The World Bank (WB) is likely the source of this data, given the entity names and the expert domain story [SPECULATIVE: https://ourworldindata.org/grapher/poverty-share-on-less-than-30-per-day].\",\n    \"domain_specific_explanations\": \"The data represents the percentage of the population living on less than $30 a day, which is a common metric for measuring poverty [DIRECT]. The values range from 11.96% in North America to 99.57% in Western and Central Africa [DERIVED: from data table].\",\n    \"real_world_significance\": \"This data matters because it helps policymakers and researchers understand the scope of poverty across different regions and countries [SPECULATIVE: general knowledge of poverty research]. The data can inform decisions on resource allocation, policy interventions, and poverty reduction strategies [SPECULATIVE: general knowledge of poverty research].\",\n    \"other\": \"The data table includes a large number of entities, including regions, countries, and special cases like 'World (excluding China)' and 'World (excluding India)' [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the share of population living on less than $30 a day across various regions and countries\",\n      \"The data is adjusted for inflation and differences in living costs between countries\",\n      \"The data represents the percentage of the population living on less than $30 a day\",\n      \"The data table includes a large number of entities, including regions, countries, and special cases like 'World (excluding China)' and 'World (excluding India)'\"\n    ],\n    \"derived_claims\": [\n      \"The values range from 11.96% in North America to 99.57% in Western and Central Africa\"\n    ],\n    \"speculative_claims\": [\n      \"The World Bank (WB) is likely the source of this data, given the entity names and the expert domain story\",\n      \"This data matters because it helps policymakers and researchers understand the scope of poverty across different regions and countries\",\n      \"The data can inform decisions on resource allocation, policy interventions, and poverty reduction strategies\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 4,\n    \"derived_count\": 1,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The data table provides exact values for the share of population living on less than $30 a day for various entities and years."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "The metadata does not provide information on trend magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and data table indicate that the subject domain is poverty rates, specifically the share of population living on less than $30 a day."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of population living on less than $30 a day across various regions and countries [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. The World Bank (WB) is likely the source of this data, given the entity names and the expert domain story [SPECULATIVE: https://ourworldindata.org/grapher/poverty-share-on-less-than-30-per-day].",
+      "domain_specific_explanations": "The data represents the percentage of the population living on less than $30 a day, which is a common metric for measuring poverty [DIRECT]. The values range from 11.96% in North America to 99.57% in Western and Central Africa [DERIVED: from data table].",
+      "real_world_significance": "This data matters because it helps policymakers and researchers understand the scope of poverty across different regions and countries [SPECULATIVE: general knowledge of poverty research]. The data can inform decisions on resource allocation, policy interventions, and poverty reduction strategies [SPECULATIVE: general knowledge of poverty research].",
+      "other": "The data table includes a large number of entities, including regions, countries, and special cases like 'World (excluding China)' and 'World (excluding India)' [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of population living on less than $30 a day across various regions and countries",
+        "The data is adjusted for inflation and differences in living costs between countries",
+        "The data represents the percentage of the population living on less than $30 a day",
+        "The data table includes a large number of entities, including regions, countries, and special cases like 'World (excluding China)' and 'World (excluding India)'"
+      ],
+      "derived_claims": [
+        "The values range from 11.96% in North America to 99.57% in Western and Central Africa"
+      ],
+      "speculative_claims": [
+        "The World Bank (WB) is likely the source of this data, given the entity names and the expert domain story",
+        "This data matters because it helps policymakers and researchers understand the scope of poverty across different regions and countries",
+        "The data can inform decisions on resource allocation, policy interventions, and poverty reduction strategies"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 4,
+      "derived_count": 1,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1577,
+    "output": 695
+  },
+  "latency_ms": 2208.5194589999446,
+  "created_at": "2026-07-17T20:15:31.237446Z"
+}

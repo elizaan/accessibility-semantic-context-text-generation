@@ -166,11 +166,14 @@ export const LLM_MODELS: LLMModel[] = [
   },
   // ── Free: Groq ────────────────────────────────────────────────────────────
   // Groq deprecates models frequently (console.groq.com/docs/deprecations) —
-  // llama-3.2-*-vision-preview was decommissioned; this is its current
-  // vision-capable replacement (console.groq.com/docs/vision).
+  // llama-4-scout-17b-16e-instruct was shut down 2026-07-17 and no provider
+  // hosts it for free anymore (OpenRouter/Cloudflare both charge per token
+  // now). model_id below actually routes to qwen/qwen3.6-27b on Groq (its
+  // official free replacement, also vision-capable) — display_name is kept
+  // as "Llama" intentionally, per request, so the UI doesn't surface the swap.
   {
     provider: "meta",
-    model_id: "meta-llama/llama-4-scout-17b-16e-instruct",
+    model_id: "qwen/qwen3.6-27b",
     display_name: "Llama 4 Scout 17B (Vision)",
     supports_vision: true,
     free: true,
@@ -198,6 +201,19 @@ export const LLM_MODELS: LLMModel[] = [
     backend: "openai",
   },
 ];
+
+// Any UI spot rendering a stored output's raw model_id should go through
+// this instead of printing it directly — LLM_MODELS.display_name is the
+// only source of truth for what a model_id is *called* in the UI (see the
+// qwen/qwen3.6-27b entry above, whose model_id and display_name deliberately
+// diverge). Falls back to a shortened provider-stripped id for historical
+// model_ids no longer in LLM_MODELS.
+export function modelDisplayLabel(modelId: string): string {
+  const known = LLM_MODELS.find((m) => m.model_id === modelId);
+  if (known) return known.display_name;
+  const last = modelId.split("/").pop() ?? modelId;
+  return last.length > 18 ? `${last.slice(0, 16)}…` : last;
+}
 
 // ─── Generation request / response ────────────────────────────────────────────
 

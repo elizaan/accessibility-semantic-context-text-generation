@@ -1,0 +1,65 @@
+{
+  "output_id": "7457e231-d4fb-4d7e-b55b-b225d292489c",
+  "chart_id": "owid_electricity_imports_share_demand",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides a comprehensive list of countries and their net electricity imports as a share of demand, but some countries are missing.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart image shows a limited number of countries, but the data table provides more extensive information.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and expert domain story provide clear context about the subject domain.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the net electricity imports as a share of electricity demand for various countries in 2025 [DIRECT]. The data is produced by Ember, a reputable source for energy data [SPECULATIVE: https://ourworldindata.org/grapher/electricity-imports-share-demand].\",\n    \"domain_specific_explanations\": \"Net electricity imports are calculated as electricity imports minus exports, given as a share of a country's electricity demand [DIRECT]. Positive values indicate net importers of electricity, while negative values indicate net exporters [DIRECT].\",\n    \"real_world_significance\": \"Countries with high positive values, such as the United Kingdom (9.05%) and Germany (3.81%), rely heavily on importing electricity to meet their demand [DERIVED: from the provided data]. On the other hand, countries with high negative values, such as Sweden (-24.51%) and France (-19.58%), are significant exporters of electricity [DERIVED: from the provided data]. This data matters for energy policy and planning, as it highlights the trade balance in electricity for each country [SPECULATIVE: energy policy and planning].\",\n    \"other\": \"The data table provides information for multiple years and countries, but the chart image only shows a limited selection [DERIVED: from the provided data].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the net electricity imports as a share of electricity demand for various countries in 2025\",\n      \"Net electricity imports are calculated as electricity imports minus exports, given as a share of a country's electricity demand\",\n      \"Positive values indicate net importers of electricity, while negative values indicate net exporters\"\n    ],\n    \"derived_claims\": [\n      \"Countries with high positive values, such as the United Kingdom (9.05%) and Germany (3.81%), rely heavily on importing electricity to meet their demand\",\n      \"countries with high negative values, such as Sweden (-24.51%) and France (-19.58%), are significant exporters of electricity\"\n    ],\n    \"speculative_claims\": [\n      \"The data is produced by Ember, a reputable source for energy data\",\n      \"This data matters for energy policy and planning, as it highlights the trade balance in electricity for each country\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides a comprehensive list of countries and their net electricity imports as a share of demand, but some countries are missing."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart image shows a limited number of countries, but the data table provides more extensive information."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and expert domain story provide clear context about the subject domain."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the net electricity imports as a share of electricity demand for various countries in 2025 [DIRECT]. The data is produced by Ember, a reputable source for energy data [SPECULATIVE: https://ourworldindata.org/grapher/electricity-imports-share-demand].",
+      "domain_specific_explanations": "Net electricity imports are calculated as electricity imports minus exports, given as a share of a country's electricity demand [DIRECT]. Positive values indicate net importers of electricity, while negative values indicate net exporters [DIRECT].",
+      "real_world_significance": "Countries with high positive values, such as the United Kingdom (9.05%) and Germany (3.81%), rely heavily on importing electricity to meet their demand [DERIVED: from the provided data]. On the other hand, countries with high negative values, such as Sweden (-24.51%) and France (-19.58%), are significant exporters of electricity [DERIVED: from the provided data]. This data matters for energy policy and planning, as it highlights the trade balance in electricity for each country [SPECULATIVE: energy policy and planning].",
+      "other": "The data table provides information for multiple years and countries, but the chart image only shows a limited selection [DERIVED: from the provided data]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the net electricity imports as a share of electricity demand for various countries in 2025",
+        "Net electricity imports are calculated as electricity imports minus exports, given as a share of a country's electricity demand",
+        "Positive values indicate net importers of electricity, while negative values indicate net exporters"
+      ],
+      "derived_claims": [
+        "Countries with high positive values, such as the United Kingdom (9.05%) and Germany (3.81%), rely heavily on importing electricity to meet their demand",
+        "countries with high negative values, such as Sweden (-24.51%) and France (-19.58%), are significant exporters of electricity"
+      ],
+      "speculative_claims": [
+        "The data is produced by Ember, a reputable source for energy data",
+        "This data matters for energy policy and planning, as it highlights the trade balance in electricity for each country"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2492,
+    "output": 673
+  },
+  "latency_ms": 2023.0817499978002,
+  "created_at": "2026-07-17T20:39:33.623925Z"
+}

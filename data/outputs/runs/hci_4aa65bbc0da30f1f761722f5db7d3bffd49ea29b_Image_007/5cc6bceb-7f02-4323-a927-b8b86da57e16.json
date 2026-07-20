@@ -1,0 +1,73 @@
+{
+  "output_id": "5cc6bceb-7f02-4323-a927-b8b86da57e16",
+  "chart_id": "hci_4aa65bbc0da30f1f761722f5db7d3bffd49ea29b_Image_007",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The raw data values and exact coordinates are not provided, though the axes and scales are visible in the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The trend line is visible and described as an OLS regression, but the exact slope, R-squared, or correlation coefficient is not provided in the text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story and alt text clearly identify the domain as crowdsourcing (HIT rewards and hourly wages) from a CHI 2018 paper.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a CHI 2018 research paper studying crowdsourcing dynamics [DIRECT]. It illustrates the relationship between the reward offered for a Human Intelligence Task (HIT) and the actual hourly wage earned by the worker [DIRECT]. The chart plots 'Transformed Reward' on the x-axis against 'Hourly Wage' on the y-axis [DERIVED: read from image axes]. A black dashed line represents an ordinary least squares (OLS) linear regression model fit to this data [DIRECT].\",\n    \"domain_specific_explanations\": \"In crowdsourcing platforms like Amazon Mechanical Turk, a HIT reward is the flat rate paid per completed task, whereas the hourly wage is a calculated metric representing the worker's actual rate of pay per hour of active work [SPECULATIVE: Crowdsourcing / HCI]. The y-axis (Hourly Wage) uses a logarithmic scale spanning from 0.1 to 1000 [DERIVED: read from image y-axis]. Logarithmic scales are standard in wage analysis to handle highly skewed distributions where a small number of tasks pay exceptionally well compared to the majority [SPECULATIVE: Statistics / Economics]. The x-axis (Transformed Reward) ranges from approximately -3.5 to 2.5 [DERIVED: read from image x-axis]. Transforming the reward variable (such as applying a log transform) is a common statistical technique to linearize relationships and stabilize variance in highly skewed pricing data [SPECULATIVE: Statistics]. The positive slope of the regression line indicates a positive correlation: as the transformed reward increases, the predicted hourly wage also increases [DERIVED: read trend line from image].\",\n    \"real_world_significance\": \"This data is highly significant for researchers and policymakers studying the gig economy, as it provides empirical evidence on crowd worker compensation and the prevalence of low-wage labor in online platforms [SPECULATIVE: Labor Economics / Crowdsourcing]. The visual spread of the data points shows a massive vertical dispersion at almost every level of transformed reward, with hourly wages ranging from under $0.10 to over $100 for the same reward level [DERIVED: read vertical spread of points from image]. This extreme variance indicates that task reward alone is a poor predictor of actual hourly earnings, as worker speed, task complexity, and unpaid overhead time heavily influence the final wage [SPECULATIVE: Crowdsourcing].\",\n    \"other\": \"The data points are arranged in distinct vertical columns or bands [DERIVED: read pattern of points from image]. This banding pattern suggests that the underlying task rewards are highly discretized, representing tasks priced at specific common increments like $0.01, $0.05, or $0.10 [SPECULATIVE: Crowdsourcing].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a CHI 2018 research paper studying crowdsourcing dynamics\",\n      \"It illustrates the relationship between the reward offered for a Human Intelligence Task (HIT) and the actual hourly wage earned by the worker\",\n      \"A black dashed line represents an ordinary least squares (OLS) linear regression model fit to this data\"\n    ],\n    \"derived_claims\": [\n      \"The chart plots 'Transformed Reward' on the x-axis against 'Hourly Wage' on the y-axis [derived from reading the image axes]\",\n      \"The y-axis (Hourly Wage) uses a logarithmic scale spanning from 0.1 to 1000 [derived from reading the image y-axis]\",\n      \"The x-axis (Transformed Reward) ranges from approximately -3.5 to 2.5 [derived from reading the image x-axis]\",\n      \"The positive slope of the regression line indicates a positive correlation: as the transformed reward increases, the predicted hourly wage also increases [derived from reading the trend line in the image]\",\n      \"The visual spread of the data points shows a massive vertical dispersion at almost every level of transformed reward, with hourly wages ranging from under $0.10 to over $100 for the same reward level [derived from reading the spread of points in the image]\",\n      \"The data points are arranged in distinct vertical columns or bands [derived from reading the pattern of points in the image]\"\n    ],\n    \"speculative_claims\": [\n      \"In crowdsourcing platforms like Amazon Mechanical Turk, a HIT reward is the flat rate paid per completed task, whereas the hourly wage is a calculated metric representing the worker's actual rate of pay per hour of active work [source: Crowdsourcing / HCI]\",\n      \"Logarithmic scales are standard in wage analysis to handle highly skewed distributions where a small number of tasks pay exceptionally well compared to the majority [source: Statistics / Economics]\",\n      \"Transforming the reward variable (such as applying a log transform) is a common statistical technique to linearize relationships and stabilize variance in highly skewed pricing data [source: Statistics]\",\n      \"This data is highly significant for researchers and policymakers studying the gig economy, as it provides empirical evidence on crowd worker compensation and the prevalence of low-wage labor in online platforms [source: Labor Economics / Crowdsourcing]\",\n      \"This extreme variance indicates that task reward alone is a poor predictor of actual hourly earnings, as worker speed, task complexity, and unpaid overhead time heavily influence the final wage [source: Crowdsourcing]\",\n      \"This banding pattern suggests that the underlying task rewards are highly discretized, representing tasks priced at specific common increments like $0.01, $0.05, or $0.10 [source: Crowdsourcing]\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 3,\n    \"derived_count\": 6,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The raw data values and exact coordinates are not provided, though the axes and scales are visible in the image."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The trend line is visible and described as an OLS regression, but the exact slope, R-squared, or correlation coefficient is not provided in the text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story and alt text clearly identify the domain as crowdsourcing (HIT rewards and hourly wages) from a CHI 2018 paper."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a CHI 2018 research paper studying crowdsourcing dynamics [DIRECT]. It illustrates the relationship between the reward offered for a Human Intelligence Task (HIT) and the actual hourly wage earned by the worker [DIRECT]. The chart plots 'Transformed Reward' on the x-axis against 'Hourly Wage' on the y-axis [DERIVED: read from image axes]. A black dashed line represents an ordinary least squares (OLS) linear regression model fit to this data [DIRECT].",
+      "domain_specific_explanations": "In crowdsourcing platforms like Amazon Mechanical Turk, a HIT reward is the flat rate paid per completed task, whereas the hourly wage is a calculated metric representing the worker's actual rate of pay per hour of active work [SPECULATIVE: Crowdsourcing / HCI]. The y-axis (Hourly Wage) uses a logarithmic scale spanning from 0.1 to 1000 [DERIVED: read from image y-axis]. Logarithmic scales are standard in wage analysis to handle highly skewed distributions where a small number of tasks pay exceptionally well compared to the majority [SPECULATIVE: Statistics / Economics]. The x-axis (Transformed Reward) ranges from approximately -3.5 to 2.5 [DERIVED: read from image x-axis]. Transforming the reward variable (such as applying a log transform) is a common statistical technique to linearize relationships and stabilize variance in highly skewed pricing data [SPECULATIVE: Statistics]. The positive slope of the regression line indicates a positive correlation: as the transformed reward increases, the predicted hourly wage also increases [DERIVED: read trend line from image].",
+      "real_world_significance": "This data is highly significant for researchers and policymakers studying the gig economy, as it provides empirical evidence on crowd worker compensation and the prevalence of low-wage labor in online platforms [SPECULATIVE: Labor Economics / Crowdsourcing]. The visual spread of the data points shows a massive vertical dispersion at almost every level of transformed reward, with hourly wages ranging from under $0.10 to over $100 for the same reward level [DERIVED: read vertical spread of points from image]. This extreme variance indicates that task reward alone is a poor predictor of actual hourly earnings, as worker speed, task complexity, and unpaid overhead time heavily influence the final wage [SPECULATIVE: Crowdsourcing].",
+      "other": "The data points are arranged in distinct vertical columns or bands [DERIVED: read pattern of points from image]. This banding pattern suggests that the underlying task rewards are highly discretized, representing tasks priced at specific common increments like $0.01, $0.05, or $0.10 [SPECULATIVE: Crowdsourcing]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a CHI 2018 research paper studying crowdsourcing dynamics",
+        "It illustrates the relationship between the reward offered for a Human Intelligence Task (HIT) and the actual hourly wage earned by the worker",
+        "A black dashed line represents an ordinary least squares (OLS) linear regression model fit to this data"
+      ],
+      "derived_claims": [
+        "The chart plots 'Transformed Reward' on the x-axis against 'Hourly Wage' on the y-axis [derived from reading the image axes]",
+        "The y-axis (Hourly Wage) uses a logarithmic scale spanning from 0.1 to 1000 [derived from reading the image y-axis]",
+        "The x-axis (Transformed Reward) ranges from approximately -3.5 to 2.5 [derived from reading the image x-axis]",
+        "The positive slope of the regression line indicates a positive correlation: as the transformed reward increases, the predicted hourly wage also increases [derived from reading the trend line in the image]",
+        "The visual spread of the data points shows a massive vertical dispersion at almost every level of transformed reward, with hourly wages ranging from under $0.10 to over $100 for the same reward level [derived from reading the spread of points in the image]",
+        "The data points are arranged in distinct vertical columns or bands [derived from reading the pattern of points in the image]"
+      ],
+      "speculative_claims": [
+        "In crowdsourcing platforms like Amazon Mechanical Turk, a HIT reward is the flat rate paid per completed task, whereas the hourly wage is a calculated metric representing the worker's actual rate of pay per hour of active work [source: Crowdsourcing / HCI]",
+        "Logarithmic scales are standard in wage analysis to handle highly skewed distributions where a small number of tasks pay exceptionally well compared to the majority [source: Statistics / Economics]",
+        "Transforming the reward variable (such as applying a log transform) is a common statistical technique to linearize relationships and stabilize variance in highly skewed pricing data [source: Statistics]",
+        "This data is highly significant for researchers and policymakers studying the gig economy, as it provides empirical evidence on crowd worker compensation and the prevalence of low-wage labor in online platforms [source: Labor Economics / Crowdsourcing]",
+        "This extreme variance indicates that task reward alone is a poor predictor of actual hourly earnings, as worker speed, task complexity, and unpaid overhead time heavily influence the final wage [source: Crowdsourcing]",
+        "This banding pattern suggests that the underlying task rewards are highly discretized, representing tasks priced at specific common increments like $0.01, $0.05, or $0.10 [source: Crowdsourcing]"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 3,
+      "derived_count": 6,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15278.005249998387,
+  "created_at": "2026-07-17T22:07:21.696065Z"
+}

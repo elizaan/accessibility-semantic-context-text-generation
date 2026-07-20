@@ -1,0 +1,71 @@
+{
+  "output_id": "3a6f232d-e306-449b-b4e4-8ddd2db10560",
+  "chart_id": "vistext_93",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated, but the L1 and L2 captions provide the overall range and start/end values.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L2 caption explicitly states the overall trend magnitude, showing a reduction from 100 down to 60 per 100,000 residents.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly define the subject as Canadian robbery rates over a specific timeframe.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the reported robbery rate in Canada from 2000 to 2019 [DIRECT]. The rate is measured as the number of robberies per 100,000 residents [DIRECT]. This data is typically compiled by Statistics Canada through the Uniform Crime Reporting Survey to track national crime trends over time [SPECULATIVE: Statistics Canada].\",\n    \"domain_specific_explanations\": \"A 'reported robbery rate' only includes incidents that are reported to and recorded by police services, which may underrepresent the actual number of occurrences due to underreporting [SPECULATIVE: Criminology]. The rate peaked in the mid-2000s, specifically reaching 106.36 per 100,000 in 2005 [DERIVED: Identified the highest value in the provided data table], before experiencing a steady decline. By 2019, the rate fell to approximately 60 per 100,000 residents [DIRECT]. This represents a substantial decrease of about 40% from its peak levels in the mid-2000s [DERIVED: Calculated percentage decrease from 100-106 down to 60].\",\n    \"real_world_significance\": \"The downward trend in robberies aligns with a broader, multi-decade decline in property and violent crime rates observed across many Western nations during this period, often referred to by criminologists as the 'great crime decline' [SPECULATIVE: Criminology]. Factors contributing to this decline may include improved security technologies (such as CCTV, cashless transactions, and smartphone tracking), changing demographics, and shifts in policing strategies [SPECULATIVE: Criminology]. Lower robbery rates generally translate to increased public safety, reduced strain on the justice system, and lower insurance premiums for businesses and individuals [SPECULATIVE: Public Policy].\",\n    \"other\": \"The data table shows minor fluctuations in the early 2000s, with rates hovering around 95 to 106 per 100,000, before the downward trend became more pronounced after 2006 [DERIVED: Compared early 2000s data points to the post-2006 trend].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the reported robbery rate in Canada from 2000 to 2019\",\n      \"The rate is measured as the number of robberies per 100,000 residents\",\n      \"By 2019, the rate fell to approximately 60 per 100,000 residents\"\n    ],\n    \"derived_claims\": [\n      \"The rate peaked in the mid-2000s, specifically reaching 106.36 per 100,000 in 2005 [derived from identifying the highest value in the provided data table]\",\n      \"This represents a substantial decrease of about 40% from its peak levels in the mid-2000s [derived from calculating percentage decrease from 100-106 down to 60]\",\n      \"The data table shows minor fluctuations in the early 2000s, with rates hovering around 95 to 106 per 100,000, before the downward trend became more pronounced after 2006 [derived from comparing early 2000s data points to the post-2006 trend]\"\n    ],\n    \"speculative_claims\": [\n      \"This data is typically compiled by Statistics Canada through the Uniform Crime Reporting Survey to track national crime trends over time [source: Statistics Canada]\",\n      \"A 'reported robbery rate' only includes incidents that are reported to and recorded by police services, which may underrepresent the actual number of occurrences due to underreporting [source: Criminology]\",\n      \"The downward trend in robberies aligns with a broader, multi-decade decline in property and violent crime rates observed across many Western nations during this period, often referred to by criminologists as the 'great crime decline' [source: Criminology]\",\n      \"Factors contributing to this decline may include improved security technologies (such as CCTV, cashless transactions, and smartphone tracking), changing demographics, and shifts in policing strategies [source: Criminology]\",\n      \"Lower robbery rates generally translate to increased public safety, reduced strain on the justice system, and lower insurance premiums for businesses and individuals [source: Public Policy]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated, but the L1 and L2 captions provide the overall range and start/end values."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L2 caption explicitly states the overall trend magnitude, showing a reduction from 100 down to 60 per 100,000 residents."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly define the subject as Canadian robbery rates over a specific timeframe."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the reported robbery rate in Canada from 2000 to 2019 [DIRECT]. The rate is measured as the number of robberies per 100,000 residents [DIRECT]. This data is typically compiled by Statistics Canada through the Uniform Crime Reporting Survey to track national crime trends over time [SPECULATIVE: Statistics Canada].",
+      "domain_specific_explanations": "A 'reported robbery rate' only includes incidents that are reported to and recorded by police services, which may underrepresent the actual number of occurrences due to underreporting [SPECULATIVE: Criminology]. The rate peaked in the mid-2000s, specifically reaching 106.36 per 100,000 in 2005 [DERIVED: Identified the highest value in the provided data table], before experiencing a steady decline. By 2019, the rate fell to approximately 60 per 100,000 residents [DIRECT]. This represents a substantial decrease of about 40% from its peak levels in the mid-2000s [DERIVED: Calculated percentage decrease from 100-106 down to 60].",
+      "real_world_significance": "The downward trend in robberies aligns with a broader, multi-decade decline in property and violent crime rates observed across many Western nations during this period, often referred to by criminologists as the 'great crime decline' [SPECULATIVE: Criminology]. Factors contributing to this decline may include improved security technologies (such as CCTV, cashless transactions, and smartphone tracking), changing demographics, and shifts in policing strategies [SPECULATIVE: Criminology]. Lower robbery rates generally translate to increased public safety, reduced strain on the justice system, and lower insurance premiums for businesses and individuals [SPECULATIVE: Public Policy].",
+      "other": "The data table shows minor fluctuations in the early 2000s, with rates hovering around 95 to 106 per 100,000, before the downward trend became more pronounced after 2006 [DERIVED: Compared early 2000s data points to the post-2006 trend]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the reported robbery rate in Canada from 2000 to 2019",
+        "The rate is measured as the number of robberies per 100,000 residents",
+        "By 2019, the rate fell to approximately 60 per 100,000 residents"
+      ],
+      "derived_claims": [
+        "The rate peaked in the mid-2000s, specifically reaching 106.36 per 100,000 in 2005 [derived from identifying the highest value in the provided data table]",
+        "This represents a substantial decrease of about 40% from its peak levels in the mid-2000s [derived from calculating percentage decrease from 100-106 down to 60]",
+        "The data table shows minor fluctuations in the early 2000s, with rates hovering around 95 to 106 per 100,000, before the downward trend became more pronounced after 2006 [derived from comparing early 2000s data points to the post-2006 trend]"
+      ],
+      "speculative_claims": [
+        "This data is typically compiled by Statistics Canada through the Uniform Crime Reporting Survey to track national crime trends over time [source: Statistics Canada]",
+        "A 'reported robbery rate' only includes incidents that are reported to and recorded by police services, which may underrepresent the actual number of occurrences due to underreporting [source: Criminology]",
+        "The downward trend in robberies aligns with a broader, multi-decade decline in property and violent crime rates observed across many Western nations during this period, often referred to by criminologists as the 'great crime decline' [source: Criminology]",
+        "Factors contributing to this decline may include improved security technologies (such as CCTV, cashless transactions, and smartphone tracking), changing demographics, and shifts in policing strategies [source: Criminology]",
+        "Lower robbery rates generally translate to increased public safety, reduced strain on the justice system, and lower insurance premiums for businesses and individuals [source: Public Policy]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12570.208750003076,
+  "created_at": "2026-07-20T14:03:58.999392Z"
+}

@@ -1,0 +1,67 @@
+{
+  "output_id": "9f82d811-2b23-4a2e-a061-a97d1a5587a7",
+  "chart_id": "hci_574211ab6e038ddee2e964502fb0b8a07930805a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values are provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text describes the spatial distribution of points (denser at the top, sparse at the bottom), but no exact numerical trends or magnitudes are available.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The title and expert domain story identify the source paper (CHI 2020) and the literary subject (Raymond Queneau's Exercises in Style), but the context is highly truncated.\"\n      },\n      \"overall\": 1.3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatterplot overlaid on a color space, published in a CHI 2020 paper [DIRECT]. The visualization references 'Exercises in Style' by Raymond Queneau, a famous French literary work that retells the same mundane story in 99 different styles [SPECULATIVE: literary history]. The data points likely represent these stylistic variations, textual features, or emotional tones mapped onto a 2D color space to analyze their distribution [SPECULATIVE: digital humanities].\",\n    \"domain_specific_explanations\": \"The scatterplot maps points over a color space containing blue, purple, red, yellow, and green regions [DERIVED: synthesized from alt text]. The concentration of points in the top two-thirds and along the top border suggests that the analyzed retellings heavily favor attributes mapped to the upper color regions while leaving the bottom third sparse [DERIVED: analyzed from alt text distribution description]. In digital humanities and text visualization, mapping literary style to color spaces is a common technique to visually analyze narrative structure, tone, or stylistic shifts [SPECULATIVE: digital humanities].\",\n    \"real_world_significance\": \"This research, presented at CHI 2020, likely contributes to the fields of natural language processing, computational creativity, or interactive text visualization [SPECULATIVE: human-computer interaction]. Visualizing how a single story can be retold in vastly different styles can aid in style transfer models, educational tools for creative writing, or computational linguistics [SPECULATIVE: computational linguistics].\",\n    \"other\": \"The truncated title 'retells one scene in' likely concludes with '99 different ways' or a similar description of Queneau's famous work [SPECULATIVE: literary history].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a scatterplot overlaid on a color space, published in a CHI 2020 paper.\"\n    ],\n    \"derived_claims\": [\n      \"The scatterplot maps points over a color space containing blue, purple, red, yellow, and green regions.\",\n      \"The concentration of points in the top two-thirds and along the top border suggests that the analyzed retellings heavily favor attributes mapped to the upper color regions while leaving the bottom third sparse.\"\n    ],\n    \"speculative_claims\": [\n      \"The visualization references 'Exercises in Style' by Raymond Queneau, a famous French literary work that retells the same mundane story in 99 different styles.\",\n      \"The data points likely represent these stylistic variations, textual features, or emotional tones mapped onto a 2D color space to analyze their distribution.\",\n      \"In digital humanities and text visualization, mapping literary style to color spaces is a common technique to visually analyze narrative structure, tone, or stylistic shifts.\",\n      \"This research, presented at CHI 2020, likely contributes to the fields of natural language processing, computational creativity, or interactive text visualization.\",\n      \"Visualizing how a single story can be retold in vastly different styles can aid in style transfer models, educational tools for creative writing, or computational linguistics.\",\n      \"The truncated title 'retells one scene in' likely concludes with '99 different ways' or a similar description of Queneau's famous work.\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 1,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values are provided."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text describes the spatial distribution of points (denser at the top, sparse at the bottom), but no exact numerical trends or magnitudes are available."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The title and expert domain story identify the source paper (CHI 2020) and the literary subject (Raymond Queneau's Exercises in Style), but the context is highly truncated."
+        },
+        "overall": 1.3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatterplot overlaid on a color space, published in a CHI 2020 paper [DIRECT]. The visualization references 'Exercises in Style' by Raymond Queneau, a famous French literary work that retells the same mundane story in 99 different styles [SPECULATIVE: literary history]. The data points likely represent these stylistic variations, textual features, or emotional tones mapped onto a 2D color space to analyze their distribution [SPECULATIVE: digital humanities].",
+      "domain_specific_explanations": "The scatterplot maps points over a color space containing blue, purple, red, yellow, and green regions [DERIVED: synthesized from alt text]. The concentration of points in the top two-thirds and along the top border suggests that the analyzed retellings heavily favor attributes mapped to the upper color regions while leaving the bottom third sparse [DERIVED: analyzed from alt text distribution description]. In digital humanities and text visualization, mapping literary style to color spaces is a common technique to visually analyze narrative structure, tone, or stylistic shifts [SPECULATIVE: digital humanities].",
+      "real_world_significance": "This research, presented at CHI 2020, likely contributes to the fields of natural language processing, computational creativity, or interactive text visualization [SPECULATIVE: human-computer interaction]. Visualizing how a single story can be retold in vastly different styles can aid in style transfer models, educational tools for creative writing, or computational linguistics [SPECULATIVE: computational linguistics].",
+      "other": "The truncated title 'retells one scene in' likely concludes with '99 different ways' or a similar description of Queneau's famous work [SPECULATIVE: literary history]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a scatterplot overlaid on a color space, published in a CHI 2020 paper."
+      ],
+      "derived_claims": [
+        "The scatterplot maps points over a color space containing blue, purple, red, yellow, and green regions.",
+        "The concentration of points in the top two-thirds and along the top border suggests that the analyzed retellings heavily favor attributes mapped to the upper color regions while leaving the bottom third sparse."
+      ],
+      "speculative_claims": [
+        "The visualization references 'Exercises in Style' by Raymond Queneau, a famous French literary work that retells the same mundane story in 99 different styles.",
+        "The data points likely represent these stylistic variations, textual features, or emotional tones mapped onto a 2D color space to analyze their distribution.",
+        "In digital humanities and text visualization, mapping literary style to color spaces is a common technique to visually analyze narrative structure, tone, or stylistic shifts.",
+        "This research, presented at CHI 2020, likely contributes to the fields of natural language processing, computational creativity, or interactive text visualization.",
+        "Visualizing how a single story can be retold in vastly different styles can aid in style transfer models, educational tools for creative writing, or computational linguistics.",
+        "The truncated title 'retells one scene in' likely concludes with '99 different ways' or a similar description of Queneau's famous work."
+      ],
+      "total_flag_count": 9,
+      "direct_count": 1,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10737.946749999537,
+  "created_at": "2026-07-20T14:14:01.991883Z"
+}

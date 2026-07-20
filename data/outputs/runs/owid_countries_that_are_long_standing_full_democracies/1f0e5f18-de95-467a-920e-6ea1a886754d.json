@@ -1,0 +1,72 @@
+{
+  "output_id": "1f0e5f18-de95-467a-920e-6ea1a886754d",
+  "chart_id": "owid_countries_that_are_long_standing_full_democracies",
+  "dataset_source": "our_world_data",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The data table provides complete numerical values for all entities, years, and categories required to understand the distribution of democracy types.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"Only a single year (2025) is provided, making it impossible to calculate trends, growth, or decline over time. Magnitude comparisons between categories are possible, but temporal trends are absent.\"},\n      \"chart_subject_domain\": {\"score\": 5, \"justification\": \"The domain is clearly defined as political science/democracy studies, specifically referencing the 'Lexical Index of Electoral Democracy' and defining 'Full democracies'.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset categorizes countries worldwide into levels of democratic development as of 2025, based on the Lexical Index of Electoral Democracy [DIRECT]. The data distinguishes between 'Not full democracies' and 'Full democracies' further subdivided by the duration of their status: aged 1-18 years, 19-30 years, 31-60 years, and 61-90 years [DIRECT]. The source is Our World in Data, which aggregates global data for public understanding [SPECULATIVE: General knowledge of Our World in Data].\",\n    \"domain_specific_explanations\": \"In political science, a 'Full Democracy' is defined by the presence of multi-party elections for the chief executive and legislature, alongside freedoms of expression, assembly, and association [DIRECT]. The categorization by age (e.g., 'aged 61-90') indicates the stability and historical depth of democratic institutions in that region [DERIVED: Interpretation of 'aged' columns as duration of democratic status]. Europe has the highest concentration of long-standing democracies (aged 61-90), with 15 such countries, compared to 6 in North America, 2 in Oceania, and 1 in Asia [DERIVED: Comparison of values in the 'aged 61-90' column across rows]. Africa and South America have no countries in the oldest demographic (aged 61-90) [DERIVED: Reading '0' in the 'aged 61-90' column for these regions].\",\n    \"real_world_significance\": \"The data highlights a significant geopolitical disparity in the maturity of democratic systems. Europe accounts for the majority of the world's long-standing democracies (15 out of 24 global total in the oldest category) [DERIVED: Calculation of 15/24]. This suggests that established democratic norms and institutions are most entrenched in Europe, while other regions are either newer democracies or not classified as full democracies [SPECULATIVE: Political Science/International Relations context]. For policymakers and civil society organizations, this data underscores that democratization is not uniform globally; Africa and Asia have a higher proportion of countries classified as 'Not full democracies' (49 and 45 respectively) compared to Europe (14) [DERIVED: Comparison of 'Not full democracies' column]. This context is vital for understanding global political stability, as long-standing democracies (aged 61-90) are often perceived as having more resilient institutions against authoritarian backsliding [SPECULATIVE: Political Science theory on democratic durability].\",\n    \"other\": \"The term 'Lexical Index of Electoral Democracy' appears to be a specific metric, though standard terminology often refers to the 'Varieties of Democracy' (V-Dem) institute or similar bodies; the provided text uses this specific phrasing [DIRECT]. The data suggests that Oceania has the highest proportion of full democracies relative to its total country count, with only 1 country not being a full democracy out of 14 total implied entities (1+2+0+9+2) [DERIVED: Summation of Oceania row values].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset categorizes countries worldwide into levels of democratic development as of 2025, based on the Lexical Index of Electoral Democracy.\",\n      \"The data distinguishes between 'Not full democracies' and 'Full democracies' further subdivided by the duration of their status: aged 1-18 years, 19-30 years, 31-60 years, and 61-90 years.\",\n      \"In political science, a 'Full Democracy' is defined by the presence of multi-party elections for the chief executive and legislature, alongside freedoms of expression, assembly, and association.\",\n      \"The term 'Lexical Index of Electoral Democracy' appears to be a specific metric.\"\n    ],\n    \"derived_claims\": [\n      \"The categorization by age (e.g., 'aged 61-90') indicates the stability and historical depth of democratic institutions in that region.\",\n      \"Europe has the highest concentration of long-standing democracies (aged 61-90), with 15 such countries, compared to 6 in North America, 2 in Oceania, and 1 in Asia.\",\n      \"Africa and South America have no countries in the oldest demographic (aged 61-90).\",\n      \"Europe accounts for the majority of the world's long-standing democracies (15 out of 24 global total in the oldest category).\",\n      \"Africa and Asia have a higher proportion of countries classified as 'Not full democracies' (49 and 45 respectively) compared to Europe (14).\",\n      \"Oceania has the highest proportion of full democracies relative to its total country count, with only 1 country not being a full democracy out of 14 total implied entities.\"\n    ],\n    \"speculative_claims\": [\n      \"The source is Our World in Data, which aggregates global data for public understanding.\",\n      \"This suggests that established democratic norms and institutions are most entrenched in Europe, while other regions are either newer democracies or not classified as full democracies.\",\n      \"For policymakers and civil society organizations, this data underscores that democratization is not uniform globally.\",\n      \"Long-standing democracies (aged 61-90) are often perceived as having more resilient institutions against authoritarian backsliding.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 4,\n    \"derived_count\": 6,\n    \"speculative_count\": 3\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The data table provides complete numerical values for all entities, years, and categories required to understand the distribution of democracy types."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only a single year (2025) is provided, making it impossible to calculate trends, growth, or decline over time. Magnitude comparisons between categories are possible, but temporal trends are absent."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The domain is clearly defined as political science/democracy studies, specifically referencing the 'Lexical Index of Electoral Democracy' and defining 'Full democracies'."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset categorizes countries worldwide into levels of democratic development as of 2025, based on the Lexical Index of Electoral Democracy [DIRECT]. The data distinguishes between 'Not full democracies' and 'Full democracies' further subdivided by the duration of their status: aged 1-18 years, 19-30 years, 31-60 years, and 61-90 years [DIRECT]. The source is Our World in Data, which aggregates global data for public understanding [SPECULATIVE: General knowledge of Our World in Data].",
+      "domain_specific_explanations": "In political science, a 'Full Democracy' is defined by the presence of multi-party elections for the chief executive and legislature, alongside freedoms of expression, assembly, and association [DIRECT]. The categorization by age (e.g., 'aged 61-90') indicates the stability and historical depth of democratic institutions in that region [DERIVED: Interpretation of 'aged' columns as duration of democratic status]. Europe has the highest concentration of long-standing democracies (aged 61-90), with 15 such countries, compared to 6 in North America, 2 in Oceania, and 1 in Asia [DERIVED: Comparison of values in the 'aged 61-90' column across rows]. Africa and South America have no countries in the oldest demographic (aged 61-90) [DERIVED: Reading '0' in the 'aged 61-90' column for these regions].",
+      "real_world_significance": "The data highlights a significant geopolitical disparity in the maturity of democratic systems. Europe accounts for the majority of the world's long-standing democracies (15 out of 24 global total in the oldest category) [DERIVED: Calculation of 15/24]. This suggests that established democratic norms and institutions are most entrenched in Europe, while other regions are either newer democracies or not classified as full democracies [SPECULATIVE: Political Science/International Relations context]. For policymakers and civil society organizations, this data underscores that democratization is not uniform globally; Africa and Asia have a higher proportion of countries classified as 'Not full democracies' (49 and 45 respectively) compared to Europe (14) [DERIVED: Comparison of 'Not full democracies' column]. This context is vital for understanding global political stability, as long-standing democracies (aged 61-90) are often perceived as having more resilient institutions against authoritarian backsliding [SPECULATIVE: Political Science theory on democratic durability].",
+      "other": "The term 'Lexical Index of Electoral Democracy' appears to be a specific metric, though standard terminology often refers to the 'Varieties of Democracy' (V-Dem) institute or similar bodies; the provided text uses this specific phrasing [DIRECT]. The data suggests that Oceania has the highest proportion of full democracies relative to its total country count, with only 1 country not being a full democracy out of 14 total implied entities (1+2+0+9+2) [DERIVED: Summation of Oceania row values]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset categorizes countries worldwide into levels of democratic development as of 2025, based on the Lexical Index of Electoral Democracy.",
+        "The data distinguishes between 'Not full democracies' and 'Full democracies' further subdivided by the duration of their status: aged 1-18 years, 19-30 years, 31-60 years, and 61-90 years.",
+        "In political science, a 'Full Democracy' is defined by the presence of multi-party elections for the chief executive and legislature, alongside freedoms of expression, assembly, and association.",
+        "The term 'Lexical Index of Electoral Democracy' appears to be a specific metric."
+      ],
+      "derived_claims": [
+        "The categorization by age (e.g., 'aged 61-90') indicates the stability and historical depth of democratic institutions in that region.",
+        "Europe has the highest concentration of long-standing democracies (aged 61-90), with 15 such countries, compared to 6 in North America, 2 in Oceania, and 1 in Asia.",
+        "Africa and South America have no countries in the oldest demographic (aged 61-90).",
+        "Europe accounts for the majority of the world's long-standing democracies (15 out of 24 global total in the oldest category).",
+        "Africa and Asia have a higher proportion of countries classified as 'Not full democracies' (49 and 45 respectively) compared to Europe (14).",
+        "Oceania has the highest proportion of full democracies relative to its total country count, with only 1 country not being a full democracy out of 14 total implied entities."
+      ],
+      "speculative_claims": [
+        "The source is Our World in Data, which aggregates global data for public understanding.",
+        "This suggests that established democratic norms and institutions are most entrenched in Europe, while other regions are either newer democracies or not classified as full democracies.",
+        "For policymakers and civil society organizations, this data underscores that democratization is not uniform globally.",
+        "Long-standing democracies (aged 61-90) are often perceived as having more resilient institutions against authoritarian backsliding."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 4,
+      "derived_count": 6,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 1483,
+    "output": 1433
+  },
+  "latency_ms": 3600.283040999784,
+  "created_at": "2026-07-19T06:57:58.113510Z"
+}

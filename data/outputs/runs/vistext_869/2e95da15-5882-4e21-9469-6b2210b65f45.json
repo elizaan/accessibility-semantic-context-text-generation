@@ -1,0 +1,72 @@
+{
+  "output_id": "2e95da15-5882-4e21-9469-6b2210b65f45",
+  "chart_id": "vistext_869",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated after 2010, but the L1 and L2 captions provide the overall endpoints and general trend up to 2016.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L2 caption explicitly details the growth periods, including the rise from 0 to 4.2 million between 2003 and 2012, and the final growth of 2.1 million.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain of telecommunications development in Chad is clearly defined by the title and axis labels.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart tracks the expansion of mobile cellular subscriptions in Chad from 2000 to 2016 [DIRECT]. During this period, subscriptions grew from 0.02 million in 2000 to approximately 6 million by 2016 [DERIVED: compared the 2000 data value of 0.02 million with the 2016 endpoint of 6 million mentioned in the L2 caption]. This represents a massive transition from almost non-existent mobile connectivity to widespread adoption over a 16-year span [DERIVED: analyzed the growth trend from 0.02 million to 6 million].\",\n    \"domain_specific_explanations\": \"Mobile cellular subscriptions refer to registered SIM cards or active accounts on a cellular network, which can include both pre-paid and post-paid plans [SPECULATIVE: Telecommunications Industry]. In developing nations like Chad, mobile technology often 'leapfrogs' traditional landline infrastructure, which is costly and difficult to deploy across vast, sparsely populated geographic areas [SPECULATIVE: Development Economics]. The data shows rapid acceleration starting around 2005, with subscriptions rising from 0.47 million to 3.67 million by 2010 [DIRECT]. This growth likely reflects the entry of private telecom operators, increased network coverage, and the falling cost of mobile handsets [SPECULATIVE: Telecommunications Industry].\",\n    \"real_world_significance\": \"Chad is a landlocked country in Central Africa with significant economic and infrastructural challenges [SPECULATIVE: Geography/Economics]. The rise to 6 million subscriptions by 2016 represents a critical milestone for digital inclusion, enabling mobile banking, agricultural market information access, and basic communication for a large portion of the population [SPECULATIVE: Development Economics]. Because individuals often own multiple SIM cards for different networks to optimize coverage and costs, 6 million subscriptions does not necessarily mean 6 million unique users [SPECULATIVE: Telecommunications Industry]. This growth highlights how mobile technology serves as the primary gateway to the internet and digital services in Sub-Saharan Africa [SPECULATIVE: Development Economics].\",\n    \"other\": \"The data shows a steady, almost exponential-looking curve in the mid-2000s before continuing its upward trajectory into the 2010s [DERIVED: observed the progression from 0.02M in 2000 to 0.92M in 2006, then 3.67M in 2010].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart tracks the expansion of mobile cellular subscriptions in Chad from 2000 to 2016\",\n      \"The data shows rapid acceleration starting around 2005, with subscriptions rising from 0.47 million to 3.67 million by 2010\"\n    ],\n    \"derived_claims\": [\n      \"During this period, subscriptions grew from 0.02 million in 2000 to approximately 6 million by 2016\",\n      \"This represents a massive transition from almost non-existent mobile connectivity to widespread adoption over a 16-year span\",\n      \"The data shows a steady, almost exponential-looking curve in the mid-2000s before continuing its upward trajectory into the 2010s\"\n    ],\n    \"speculative_claims\": [\n      \"Mobile cellular subscriptions refer to registered SIM cards or active accounts on a cellular network, which can include both pre-paid and post-paid plans\",\n      \"In developing nations like Chad, mobile technology often 'leapfrogs' traditional landline infrastructure, which is costly and difficult to deploy across vast, sparsely populated geographic areas\",\n      \"This growth likely reflects the entry of private telecom operators, increased network coverage, and the falling cost of mobile handsets\",\n      \"Chad is a landlocked country in Central Africa with significant economic and infrastructural challenges\",\n      \"The rise to 6 million subscriptions by 2016 represents a critical milestone for digital inclusion, enabling mobile banking, agricultural market information access, and basic communication for a large portion of the population\",\n      \"Because individuals often own multiple SIM cards for different networks to optimize coverage and costs, 6 million subscriptions does not necessarily mean 6 million unique users\",\n      \"This growth highlights how mobile technology serves as the primary gateway to the internet and digital services in Sub-Saharan Africa\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated after 2010, but the L1 and L2 captions provide the overall endpoints and general trend up to 2016."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L2 caption explicitly details the growth periods, including the rise from 0 to 4.2 million between 2003 and 2012, and the final growth of 2.1 million."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain of telecommunications development in Chad is clearly defined by the title and axis labels."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart tracks the expansion of mobile cellular subscriptions in Chad from 2000 to 2016 [DIRECT]. During this period, subscriptions grew from 0.02 million in 2000 to approximately 6 million by 2016 [DERIVED: compared the 2000 data value of 0.02 million with the 2016 endpoint of 6 million mentioned in the L2 caption]. This represents a massive transition from almost non-existent mobile connectivity to widespread adoption over a 16-year span [DERIVED: analyzed the growth trend from 0.02 million to 6 million].",
+      "domain_specific_explanations": "Mobile cellular subscriptions refer to registered SIM cards or active accounts on a cellular network, which can include both pre-paid and post-paid plans [SPECULATIVE: Telecommunications Industry]. In developing nations like Chad, mobile technology often 'leapfrogs' traditional landline infrastructure, which is costly and difficult to deploy across vast, sparsely populated geographic areas [SPECULATIVE: Development Economics]. The data shows rapid acceleration starting around 2005, with subscriptions rising from 0.47 million to 3.67 million by 2010 [DIRECT]. This growth likely reflects the entry of private telecom operators, increased network coverage, and the falling cost of mobile handsets [SPECULATIVE: Telecommunications Industry].",
+      "real_world_significance": "Chad is a landlocked country in Central Africa with significant economic and infrastructural challenges [SPECULATIVE: Geography/Economics]. The rise to 6 million subscriptions by 2016 represents a critical milestone for digital inclusion, enabling mobile banking, agricultural market information access, and basic communication for a large portion of the population [SPECULATIVE: Development Economics]. Because individuals often own multiple SIM cards for different networks to optimize coverage and costs, 6 million subscriptions does not necessarily mean 6 million unique users [SPECULATIVE: Telecommunications Industry]. This growth highlights how mobile technology serves as the primary gateway to the internet and digital services in Sub-Saharan Africa [SPECULATIVE: Development Economics].",
+      "other": "The data shows a steady, almost exponential-looking curve in the mid-2000s before continuing its upward trajectory into the 2010s [DERIVED: observed the progression from 0.02M in 2000 to 0.92M in 2006, then 3.67M in 2010]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart tracks the expansion of mobile cellular subscriptions in Chad from 2000 to 2016",
+        "The data shows rapid acceleration starting around 2005, with subscriptions rising from 0.47 million to 3.67 million by 2010"
+      ],
+      "derived_claims": [
+        "During this period, subscriptions grew from 0.02 million in 2000 to approximately 6 million by 2016",
+        "This represents a massive transition from almost non-existent mobile connectivity to widespread adoption over a 16-year span",
+        "The data shows a steady, almost exponential-looking curve in the mid-2000s before continuing its upward trajectory into the 2010s"
+      ],
+      "speculative_claims": [
+        "Mobile cellular subscriptions refer to registered SIM cards or active accounts on a cellular network, which can include both pre-paid and post-paid plans",
+        "In developing nations like Chad, mobile technology often 'leapfrogs' traditional landline infrastructure, which is costly and difficult to deploy across vast, sparsely populated geographic areas",
+        "This growth likely reflects the entry of private telecom operators, increased network coverage, and the falling cost of mobile handsets",
+        "Chad is a landlocked country in Central Africa with significant economic and infrastructural challenges",
+        "The rise to 6 million subscriptions by 2016 represents a critical milestone for digital inclusion, enabling mobile banking, agricultural market information access, and basic communication for a large portion of the population",
+        "Because individuals often own multiple SIM cards for different networks to optimize coverage and costs, 6 million subscriptions does not necessarily mean 6 million unique users",
+        "This growth highlights how mobile technology serves as the primary gateway to the internet and digital services in Sub-Saharan Africa"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 17884.73058300042,
+  "created_at": "2026-07-17T20:27:37.997410Z"
+}

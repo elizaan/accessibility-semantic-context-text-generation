@@ -1,0 +1,78 @@
+{
+  "output_id": "88e957f2-d85a-4d89-9e0b-718a779a16c2",
+  "chart_id": "vistext_920",
+  "dataset_source": "vistext",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The data table is severely corrupted. It contains placeholder values ('Dec, 31.0') for missing years and only provides specific percentage values for 2006, 2007, 2010, 2012, 2014, 2015, and 2016. Years 2008, 2009, 2011, 2013, and 2017 are missing from the table, although the L2 caption mentions 2009. The L2 caption also claims a peak in 2007 at 0.10, but the table lists 0.051 for 2007, creating a direct contradiction.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The L2 caption provides a qualitative trend ('increasing but sometimes fluctuates') and identifies a peak (though with conflicting values). However, without the full data series, calculating an accurate trend magnitude or verifying the 'peak' claim is impossible. The provided values (0.051, 0.098, 0.075, etc.) show fluctuation, but the missing data points prevent a complete analysis of the 2007-2017 period.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title clearly defines the domain: 'food and beverage manufacturing in the Netherlands'. The axes labels ('Year', 'Year-on-year percentage change') are clear. The unit of measurement is explicit.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart visualizes economic performance metrics for the food and beverage manufacturing sector in the Netherlands [DIRECT]. It tracks the year-on-year percentage change in turnover from 2007 to 2017 [DIRECT]. The data source appears to be a statistical agency or industry report, given the formal presentation of economic indicators [SPECULATIVE: economic reporting standards]. The chart is designed to show growth or contraction in sector revenue over time [DERIVED: definition of 'turnover' and 'percentage change'].\",\n    \"domain_specific_explanations\": \"Turnover refers to the total value of goods sold by manufacturers [SPECULATIVE: economic definition]. A positive percentage change indicates revenue growth compared to the previous year, while a negative value would indicate a decline [SPECULATIVE: economic definition]. The provided data points show that in 2006, the change was 12.1% (0.121), and in 2007 it was 5.1% (0.051) [DERIVED: reading values from table]. In 2010, the change was 9.8% [DERIVED: reading values from table]. The L2 caption claims a peak in 2007 at 0.10 (10%), which contradicts the table value of 0.051 (5.1%) for that year, suggesting potential data entry errors in the metadata [DERIVED: comparing L2 caption to data table]. The term 'Year-on-year' implies that each value is calculated relative to the same month/period in the preceding year [SPECULATIVE: economic definition].\",\n    \"real_world_significance\": \"This data is relevant for economists, investors, and policymakers monitoring the Dutch industrial sector [SPECULATIVE: standard stakeholders for economic data]. Fluctuations in turnover can reflect changes in consumer demand, production costs, or export dynamics [SPECULATIVE: economic factors]. The period 2007-2017 includes the aftermath of the 2008 financial crisis, which likely influenced manufacturing turnover [SPECULATIVE: historical economic context]. However, the missing data points for 2008 and 2009 prevent a detailed analysis of the crisis's immediate impact based solely on this chart [DERIVED: noting missing years in table]. The inconsistency between the caption's claimed peak and the actual data undermines the reliability of the chart for precise decision-making [DERIVED: evaluating data integrity].\",\n    \"other\": \"The data table contains significant noise with 'Dec, 31.0' entries, which appear to be parsing errors or placeholders for missing data [DERIVED: analyzing data table structure]. The L2 caption references year 2009, but the data table does not provide a value for 2009, making any claim about 2009's performance unsupported by the provided numerical data [DERIVED: cross-referencing L2 caption and data table]. The chart type is identified as an area diagram in the L1 caption [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart visualizes economic performance metrics for the food and beverage manufacturing sector in the Netherlands\",\n      \"It tracks the year-on-year percentage change in turnover from 2007 to 2017\",\n      \"The chart type is identified as an area diagram in the L1 caption\"\n    ],\n    \"derived_claims\": [\n      \"The chart is designed to show growth or contraction in sector revenue over time\",\n      \"In 2006, the change was 12.1% (0.121), and in 2007 it was 5.1% (0.051)\",\n      \"In 2010, the change was 9.8%\",\n      \"The L2 caption claims a peak in 2007 at 0.10 (10%), which contradicts the table value of 0.051 (5.1%) for that year\",\n      \"The missing data points for 2008 and 2009 prevent a detailed analysis of the crisis's immediate impact based solely on this chart\",\n      \"The inconsistency between the caption's claimed peak and the actual data undermines the reliability of the chart for precise decision-making\",\n      \"The data table contains significant noise with 'Dec, 31.0' entries, which appear to be parsing errors or placeholders for missing data\",\n      \"The L2 caption references year 2009, but the data table does not provide a value for 2009\"\n    ],\n    \"speculative_claims\": [\n      \"The data source appears to be a statistical agency or industry report\",\n      \"Turnover refers to the total value of goods sold by manufacturers\",\n      \"A positive percentage change indicates revenue growth compared to the previous year, while a negative value would indicate a decline\",\n      \"The term 'Year-on-year' implies that each value is calculated relative to the same month/period in the preceding year\",\n      \"This data is relevant for economists, investors, and policymakers monitoring the Dutch industrial sector\",\n      \"Fluctuations in turnover can reflect changes in consumer demand, production costs, or export dynamics\",\n      \"The period 2007-2017 includes the aftermath of the 2008 financial crisis, which likely influenced manufacturing turnover\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 3,\n    \"derived_count\": 8,\n    \"speculative_count\": 6\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The data table is severely corrupted. It contains placeholder values ('Dec, 31.0') for missing years and only provides specific percentage values for 2006, 2007, 2010, 2012, 2014, 2015, and 2016. Years 2008, 2009, 2011, 2013, and 2017 are missing from the table, although the L2 caption mentions 2009. The L2 caption also claims a peak in 2007 at 0.10, but the table lists 0.051 for 2007, creating a direct contradiction."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The L2 caption provides a qualitative trend ('increasing but sometimes fluctuates') and identifies a peak (though with conflicting values). However, without the full data series, calculating an accurate trend magnitude or verifying the 'peak' claim is impossible. The provided values (0.051, 0.098, 0.075, etc.) show fluctuation, but the missing data points prevent a complete analysis of the 2007-2017 period."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title clearly defines the domain: 'food and beverage manufacturing in the Netherlands'. The axes labels ('Year', 'Year-on-year percentage change') are clear. The unit of measurement is explicit."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart visualizes economic performance metrics for the food and beverage manufacturing sector in the Netherlands [DIRECT]. It tracks the year-on-year percentage change in turnover from 2007 to 2017 [DIRECT]. The data source appears to be a statistical agency or industry report, given the formal presentation of economic indicators [SPECULATIVE: economic reporting standards]. The chart is designed to show growth or contraction in sector revenue over time [DERIVED: definition of 'turnover' and 'percentage change'].",
+      "domain_specific_explanations": "Turnover refers to the total value of goods sold by manufacturers [SPECULATIVE: economic definition]. A positive percentage change indicates revenue growth compared to the previous year, while a negative value would indicate a decline [SPECULATIVE: economic definition]. The provided data points show that in 2006, the change was 12.1% (0.121), and in 2007 it was 5.1% (0.051) [DERIVED: reading values from table]. In 2010, the change was 9.8% [DERIVED: reading values from table]. The L2 caption claims a peak in 2007 at 0.10 (10%), which contradicts the table value of 0.051 (5.1%) for that year, suggesting potential data entry errors in the metadata [DERIVED: comparing L2 caption to data table]. The term 'Year-on-year' implies that each value is calculated relative to the same month/period in the preceding year [SPECULATIVE: economic definition].",
+      "real_world_significance": "This data is relevant for economists, investors, and policymakers monitoring the Dutch industrial sector [SPECULATIVE: standard stakeholders for economic data]. Fluctuations in turnover can reflect changes in consumer demand, production costs, or export dynamics [SPECULATIVE: economic factors]. The period 2007-2017 includes the aftermath of the 2008 financial crisis, which likely influenced manufacturing turnover [SPECULATIVE: historical economic context]. However, the missing data points for 2008 and 2009 prevent a detailed analysis of the crisis's immediate impact based solely on this chart [DERIVED: noting missing years in table]. The inconsistency between the caption's claimed peak and the actual data undermines the reliability of the chart for precise decision-making [DERIVED: evaluating data integrity].",
+      "other": "The data table contains significant noise with 'Dec, 31.0' entries, which appear to be parsing errors or placeholders for missing data [DERIVED: analyzing data table structure]. The L2 caption references year 2009, but the data table does not provide a value for 2009, making any claim about 2009's performance unsupported by the provided numerical data [DERIVED: cross-referencing L2 caption and data table]. The chart type is identified as an area diagram in the L1 caption [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart visualizes economic performance metrics for the food and beverage manufacturing sector in the Netherlands",
+        "It tracks the year-on-year percentage change in turnover from 2007 to 2017",
+        "The chart type is identified as an area diagram in the L1 caption"
+      ],
+      "derived_claims": [
+        "The chart is designed to show growth or contraction in sector revenue over time",
+        "In 2006, the change was 12.1% (0.121), and in 2007 it was 5.1% (0.051)",
+        "In 2010, the change was 9.8%",
+        "The L2 caption claims a peak in 2007 at 0.10 (10%), which contradicts the table value of 0.051 (5.1%) for that year",
+        "The missing data points for 2008 and 2009 prevent a detailed analysis of the crisis's immediate impact based solely on this chart",
+        "The inconsistency between the caption's claimed peak and the actual data undermines the reliability of the chart for precise decision-making",
+        "The data table contains significant noise with 'Dec, 31.0' entries, which appear to be parsing errors or placeholders for missing data",
+        "The L2 caption references year 2009, but the data table does not provide a value for 2009"
+      ],
+      "speculative_claims": [
+        "The data source appears to be a statistical agency or industry report",
+        "Turnover refers to the total value of goods sold by manufacturers",
+        "A positive percentage change indicates revenue growth compared to the previous year, while a negative value would indicate a decline",
+        "The term 'Year-on-year' implies that each value is calculated relative to the same month/period in the preceding year",
+        "This data is relevant for economists, investors, and policymakers monitoring the Dutch industrial sector",
+        "Fluctuations in turnover can reflect changes in consumer demand, production costs, or export dynamics",
+        "The period 2007-2017 includes the aftermath of the 2008 financial crisis, which likely influenced manufacturing turnover"
+      ],
+      "total_flag_count": 17,
+      "direct_count": 3,
+      "derived_count": 8,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 2962,
+    "output": 1645
+  },
+  "latency_ms": 23888.957458999357,
+  "created_at": "2026-07-20T14:04:18.077276Z"
+}

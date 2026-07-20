@@ -1,0 +1,75 @@
+{
+  "output_id": "8f90af39-ca60-46b2-9c8e-4ba550071094",
+  "chart_id": "hci_574211ab6e038ddee2e964502fb0b8a07930805a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"The data table is explicitly marked as [NOT PROVIDED], and no numerical values are present in the text metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The human-written alt text provides a qualitative description of point distribution (evenly scattered, sparse bottom, dense top line), but lacks quantitative magnitude or specific trend values.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The title references 'Exercises in Style by Raymond Queneau' and the source is a CHI (Human-Computer Interaction) paper from 2020. This places it in the domain of computational linguistics or digital humanities, specifically analyzing literary style variation.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This visualization originates from a research paper published at CHI 2020 [DIRECT: Expert Domain Story]. It analyzes 'Exercises in Style' by Raymond Queneau, a literary work famous for retelling the same short scene in 99 different stylistic variations [SPECULATIVE: General Knowledge of Literature]. The chart appears to be a scatterplot mapping these stylistic variations onto a color space, likely representing a dimensionality reduction (such as t-SNE or PCA) of linguistic features [SPECULATIVE: Domain Knowledge of Computational Linguistics/CHI].\",\n    \"domain_specific_explanations\": \"The chart plots individual retellings of the scene as points within a multi-dimensional space, represented here by color [DERIVED: Alt text description of 'scatterplot... overlaid over a color space']. The distribution of points suggests an analysis of how distinct the different styles are from one another; a 'dense line along the top border' may indicate a cluster of styles that share specific semantic or syntactic characteristics, while the 'sparse bottom third' implies that fewer styles exhibit those specific low-value traits [DERIVED: Interpretation of spatial distribution described in alt text]. In computational stylistics, such visualizations help researchers quantify and visualize the boundaries between different narrative voices or rhetorical modes [SPECULATIVE: Domain Knowledge of Digital Humanities].\",\n    \"real_world_significance\": \"This work demonstrates how computational methods can quantify subjective literary concepts like 'style' [SPECULATIVE: Domain Knowledge of NLP]. For accessibility and digital humanities, this type of analysis can help in automated text classification, improving natural language processing models to better understand narrative structure, and potentially aiding in the analysis of textual patterns for users who rely on screen readers by providing structural metadata about text density or style [SPECULATIVE: Application of HCI/NLP to Accessibility]. It highlights the intersection of creative writing and data science, showing that artistic expression can be mapped and analyzed mathematically [SPECULATIVE: General Interpretation of Academic Goals].\",\n    \"other\": \"The lack of axis labels and specific data values significantly limits the ability to interpret the exact metrics used for the color space (e.g., whether it represents sentiment, complexity, or specific lexical choices) [DERIVED: Absence of Axis Labels in Metadata]. The description of colors (blue, purple, red, yellow, green) is purely visual and, without a legend, does not convey semantic meaning to a blind user [DIRECT: Alt text mentions colors].\",\n    \"flags\": {\n      \"direct_claims\": [\n        \"This visualization originates from a research paper published at CHI 2020.\",\n        \"The chart title references 'Exercises in Style' by Raymond Queneau.\",\n        \"The alt text describes a scatterplot of points overlaid over a color space.\",\n        \"The alt text states most points are scattered evenly over the top two-thirds.\",\n        \"The alt text states the bottom third is sparse.\",\n        \"The alt text notes a dense line of points along the top border.\",\n        \"The alt text lists colors clockwise: blue, purple, red, yellow, green.\"\n      ],\n      \"derived_claims\": [\n        \"The chart maps stylistic variations onto a space, likely representing dimensionality reduction.\",\n        \"The distribution suggests an analysis of how distinct different styles are.\",\n        \"The dense line may indicate a cluster of styles sharing specific characteristics.\",\n        \"The lack of axis labels limits interpretation of the exact metrics used.\"\n      ],\n      \"speculative_claims\": [\n        \"Queneau's work retells the same scene in 99 different stylistic variations.\",\n        \"The color space likely represents a dimensionality reduction of linguistic features.\",\n        \"Such visualizations help researchers quantify boundaries between narrative voices.\",\n        \"This work demonstrates how computational methods can quantify subjective literary concepts.\",\n        \"This analysis can aid in automated text classification and NLP models.\",\n        \"This highlights the intersection of creative writing and data science.\"\n      ],\n      \"total_flag_count\": 15,\n      \"direct_count\": 8,\n      \"derived_count\": 4,\n      \"speculative_count\": 4\n    }\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The data table is explicitly marked as [NOT PROVIDED], and no numerical values are present in the text metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The human-written alt text provides a qualitative description of point distribution (evenly scattered, sparse bottom, dense top line), but lacks quantitative magnitude or specific trend values."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The title references 'Exercises in Style by Raymond Queneau' and the source is a CHI (Human-Computer Interaction) paper from 2020. This places it in the domain of computational linguistics or digital humanities, specifically analyzing literary style variation."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This visualization originates from a research paper published at CHI 2020 [DIRECT: Expert Domain Story]. It analyzes 'Exercises in Style' by Raymond Queneau, a literary work famous for retelling the same short scene in 99 different stylistic variations [SPECULATIVE: General Knowledge of Literature]. The chart appears to be a scatterplot mapping these stylistic variations onto a color space, likely representing a dimensionality reduction (such as t-SNE or PCA) of linguistic features [SPECULATIVE: Domain Knowledge of Computational Linguistics/CHI].",
+      "domain_specific_explanations": "The chart plots individual retellings of the scene as points within a multi-dimensional space, represented here by color [DERIVED: Alt text description of 'scatterplot... overlaid over a color space']. The distribution of points suggests an analysis of how distinct the different styles are from one another; a 'dense line along the top border' may indicate a cluster of styles that share specific semantic or syntactic characteristics, while the 'sparse bottom third' implies that fewer styles exhibit those specific low-value traits [DERIVED: Interpretation of spatial distribution described in alt text]. In computational stylistics, such visualizations help researchers quantify and visualize the boundaries between different narrative voices or rhetorical modes [SPECULATIVE: Domain Knowledge of Digital Humanities].",
+      "real_world_significance": "This work demonstrates how computational methods can quantify subjective literary concepts like 'style' [SPECULATIVE: Domain Knowledge of NLP]. For accessibility and digital humanities, this type of analysis can help in automated text classification, improving natural language processing models to better understand narrative structure, and potentially aiding in the analysis of textual patterns for users who rely on screen readers by providing structural metadata about text density or style [SPECULATIVE: Application of HCI/NLP to Accessibility]. It highlights the intersection of creative writing and data science, showing that artistic expression can be mapped and analyzed mathematically [SPECULATIVE: General Interpretation of Academic Goals].",
+      "other": "The lack of axis labels and specific data values significantly limits the ability to interpret the exact metrics used for the color space (e.g., whether it represents sentiment, complexity, or specific lexical choices) [DERIVED: Absence of Axis Labels in Metadata]. The description of colors (blue, purple, red, yellow, green) is purely visual and, without a legend, does not convey semantic meaning to a blind user [DIRECT: Alt text mentions colors].",
+      "flags": {
+        "direct_claims": [
+          "This visualization originates from a research paper published at CHI 2020.",
+          "The chart title references 'Exercises in Style' by Raymond Queneau.",
+          "The alt text describes a scatterplot of points overlaid over a color space.",
+          "The alt text states most points are scattered evenly over the top two-thirds.",
+          "The alt text states the bottom third is sparse.",
+          "The alt text notes a dense line of points along the top border.",
+          "The alt text lists colors clockwise: blue, purple, red, yellow, green."
+        ],
+        "derived_claims": [
+          "The chart maps stylistic variations onto a space, likely representing dimensionality reduction.",
+          "The distribution suggests an analysis of how distinct different styles are.",
+          "The dense line may indicate a cluster of styles sharing specific characteristics.",
+          "The lack of axis labels limits interpretation of the exact metrics used."
+        ],
+        "speculative_claims": [
+          "Queneau's work retells the same scene in 99 different stylistic variations.",
+          "The color space likely represents a dimensionality reduction of linguistic features.",
+          "Such visualizations help researchers quantify boundaries between narrative voices.",
+          "This work demonstrates how computational methods can quantify subjective literary concepts.",
+          "This analysis can aid in automated text classification and NLP models.",
+          "This highlights the intersection of creative writing and data science."
+        ],
+        "total_flag_count": 15,
+        "direct_count": 8,
+        "derived_count": 4,
+        "speculative_count": 4
+      }
+    }
+  },
+  "tokens_used": {
+    "input": 1393,
+    "output": 1124
+  },
+  "latency_ms": 7948.0077080006595,
+  "created_at": "2026-07-20T14:14:41.273259Z"
+}

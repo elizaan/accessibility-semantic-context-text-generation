@@ -1,0 +1,66 @@
+{
+  "output_id": "5acd41d3-29b7-4cb3-a9ad-aee9fb1beb07",
+  "chart_id": "vistext_807",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No raw data values or data tables were provided in the metadata; all values must be visually estimated from the chart.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend calculations, averages, or growth magnitudes were provided in the metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 0,\n        \"justification\": \"No domain-specific metadata or contextual descriptions were provided in text format.\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows the annual percent change of real Gross Domestic Product (GDP) in the state of Minnesota from 2000 to 2019 [DIRECT]. The subtitle indicates the data represents the percent change compared to the preceding period [DIRECT]. This type of macroeconomic data is typically compiled and published by government agencies such as the U.S. Bureau of Economic Analysis (BEA) to track regional economic performance [SPECULATIVE: Macroeconomics / US Bureau of Economic Analysis].\",\n    \"domain_specific_explanations\": \"Real GDP is an inflation-adjusted measure of the value of all goods and services produced by an economy, which allows for a more accurate comparison of economic output over time [SPECULATIVE: Economics]. The values on the y-axis represent decimal fractions of growth, where 0.08 corresponds to an 8% annual growth rate and -0.02 corresponds to a 2% contraction [DERIVED: Reading y-axis labels]. A positive value indicates economic expansion, while a negative value indicates economic contraction [SPECULATIVE: Economics]. The highest growth rate in Minnesota during this period occurred in 2000 at approximately 9% [DERIVED: Reading the peak value at the year 2000]. In 2009, Minnesota's real GDP growth dipped below zero to approximately -1.5% [DERIVED: Reading the lowest point on the chart in 2009].\",\n    \"real_world_significance\": \"The sharp decline in 2009 directly corresponds to the Great Recession, which was a major global financial crisis that severely impacted state economies across the United States [SPECULATIVE: Modern Economic History]. Following the 2009 dip, the economy rebounded in 2010 to around 4.7% and stabilized mostly between 2.5% and 5% through 2019, indicating a sustained period of recovery and moderate growth [DERIVED: Comparing post-2010 values on the chart]. These trends are crucial for state policymakers, businesses, and labor markets to understand fiscal health, project tax revenues, and make strategic investment decisions in Minnesota [SPECULATIVE: Public Policy / State Government].\",\n    \"other\": \"The chart demonstrates that while Minnesota's economy experienced volatility in the early 2000s, its post-recession growth in the 2010s was relatively stable, never falling back into negative territory prior to 2020 [DERIVED: Analyzing the trend line from 2010 to 2019].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows the annual percent change of real Gross Domestic Product (GDP) in the state of Minnesota from 2000 to 2019.\",\n      \"The subtitle indicates the data represents the percent change compared to the preceding period.\"\n    ],\n    \"derived_claims\": [\n      \"The values on the y-axis represent decimal fractions of growth, where 0.08 corresponds to an 8% annual growth rate and -0.02 corresponds to a 2% contraction, derived from reading y-axis labels.\",\n      \"The highest growth rate in Minnesota during this period occurred in 2000 at approximately 9%, derived from reading the peak value at the year 2000.\",\n      \"In 2009, Minnesota's real GDP growth dipped below zero to approximately -1.5%, derived from reading the lowest point on the chart in 2009.\",\n      \"Following the 2009 dip, the economy rebounded in 2010 to around 4.7% and stabilized mostly between 2.5% and 5% through 2019, derived from comparing post-2010 values on the chart.\",\n      \"The chart demonstrates that while Minnesota's economy experienced volatility in the early 2000s, its post-recession growth in the 2010s was relatively stable, never falling back into negative territory prior to 2020, derived from analyzing the trend line from 2010 to 2019.\"\n    ],\n    \"speculative_claims\": [\n      \"This type of macroeconomic data is typically compiled and published by government agencies such as the U.S. Bureau of Economic Analysis (BEA) to track regional economic performance, sourced from Macroeconomics / US Bureau of Economic Analysis.\",\n      \"Real GDP is an inflation-adjusted measure of the value of all goods and services produced by an economy, which allows for a more accurate comparison of economic output over time, sourced from Economics.\",\n      \"A positive value indicates economic expansion, while a negative value indicates economic contraction, sourced from Economics.\",\n      \"The sharp decline in 2009 directly corresponds to the Great Recession, which was a major global financial crisis that severely impacted state economies across the United States, sourced from Modern Economic History.\",\n      \"These trends are crucial for state policymakers, businesses, and labor markets to understand fiscal health, project tax revenues, and make strategic investment decisions in Minnesota, sourced from Public Policy / State Government.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 5,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No raw data values or data tables were provided in the metadata; all values must be visually estimated from the chart."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend calculations, averages, or growth magnitudes were provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 0,
+          "justification": "No domain-specific metadata or contextual descriptions were provided in text format."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows the annual percent change of real Gross Domestic Product (GDP) in the state of Minnesota from 2000 to 2019 [DIRECT]. The subtitle indicates the data represents the percent change compared to the preceding period [DIRECT]. This type of macroeconomic data is typically compiled and published by government agencies such as the U.S. Bureau of Economic Analysis (BEA) to track regional economic performance [SPECULATIVE: Macroeconomics / US Bureau of Economic Analysis].",
+      "domain_specific_explanations": "Real GDP is an inflation-adjusted measure of the value of all goods and services produced by an economy, which allows for a more accurate comparison of economic output over time [SPECULATIVE: Economics]. The values on the y-axis represent decimal fractions of growth, where 0.08 corresponds to an 8% annual growth rate and -0.02 corresponds to a 2% contraction [DERIVED: Reading y-axis labels]. A positive value indicates economic expansion, while a negative value indicates economic contraction [SPECULATIVE: Economics]. The highest growth rate in Minnesota during this period occurred in 2000 at approximately 9% [DERIVED: Reading the peak value at the year 2000]. In 2009, Minnesota's real GDP growth dipped below zero to approximately -1.5% [DERIVED: Reading the lowest point on the chart in 2009].",
+      "real_world_significance": "The sharp decline in 2009 directly corresponds to the Great Recession, which was a major global financial crisis that severely impacted state economies across the United States [SPECULATIVE: Modern Economic History]. Following the 2009 dip, the economy rebounded in 2010 to around 4.7% and stabilized mostly between 2.5% and 5% through 2019, indicating a sustained period of recovery and moderate growth [DERIVED: Comparing post-2010 values on the chart]. These trends are crucial for state policymakers, businesses, and labor markets to understand fiscal health, project tax revenues, and make strategic investment decisions in Minnesota [SPECULATIVE: Public Policy / State Government].",
+      "other": "The chart demonstrates that while Minnesota's economy experienced volatility in the early 2000s, its post-recession growth in the 2010s was relatively stable, never falling back into negative territory prior to 2020 [DERIVED: Analyzing the trend line from 2010 to 2019]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows the annual percent change of real Gross Domestic Product (GDP) in the state of Minnesota from 2000 to 2019.",
+        "The subtitle indicates the data represents the percent change compared to the preceding period."
+      ],
+      "derived_claims": [
+        "The values on the y-axis represent decimal fractions of growth, where 0.08 corresponds to an 8% annual growth rate and -0.02 corresponds to a 2% contraction, derived from reading y-axis labels.",
+        "The highest growth rate in Minnesota during this period occurred in 2000 at approximately 9%, derived from reading the peak value at the year 2000.",
+        "In 2009, Minnesota's real GDP growth dipped below zero to approximately -1.5%, derived from reading the lowest point on the chart in 2009.",
+        "Following the 2009 dip, the economy rebounded in 2010 to around 4.7% and stabilized mostly between 2.5% and 5% through 2019, derived from comparing post-2010 values on the chart.",
+        "The chart demonstrates that while Minnesota's economy experienced volatility in the early 2000s, its post-recession growth in the 2010s was relatively stable, never falling back into negative territory prior to 2020, derived from analyzing the trend line from 2010 to 2019."
+      ],
+      "speculative_claims": [
+        "This type of macroeconomic data is typically compiled and published by government agencies such as the U.S. Bureau of Economic Analysis (BEA) to track regional economic performance, sourced from Macroeconomics / US Bureau of Economic Analysis.",
+        "Real GDP is an inflation-adjusted measure of the value of all goods and services produced by an economy, which allows for a more accurate comparison of economic output over time, sourced from Economics.",
+        "A positive value indicates economic expansion, while a negative value indicates economic contraction, sourced from Economics.",
+        "The sharp decline in 2009 directly corresponds to the Great Recession, which was a major global financial crisis that severely impacted state economies across the United States, sourced from Modern Economic History.",
+        "These trends are crucial for state policymakers, businesses, and labor markets to understand fiscal health, project tax revenues, and make strategic investment decisions in Minnesota, sourced from Public Policy / State Government."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 5,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13385.12074999926,
+  "created_at": "2026-07-17T20:29:52.421147Z"
+}

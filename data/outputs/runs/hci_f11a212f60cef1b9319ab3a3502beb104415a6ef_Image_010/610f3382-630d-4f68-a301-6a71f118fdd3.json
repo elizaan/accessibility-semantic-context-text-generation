@@ -1,0 +1,68 @@
+{
+  "output_id": "610f3382-630d-4f68-a301-6a71f118fdd3",
+  "chart_id": "hci_f11a212f60cef1b9319ab3a3502beb104415a6ef_Image_010",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values and table are not provided in the metadata, though some general trends are mentioned in the alt text.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The alt text identifies which categories differ (ease of use, efficiency, user experience, zooming) but does not provide the statistical values or magnitudes.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story identifies the source as a CHI 2014 paper, giving clear domain context, though the provided figure title is slightly mismatched with the chart's actual axis labels.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart presents subjective questionnaire results comparing two interaction modalities, 'spatial' and 'touch', across nine usability dimensions [DERIVED: read from image labels]. The data originates from a research paper published at the CHI 2014 conference [DIRECT]. The evaluation uses a 7-point Likert scale to capture user feedback on tasks likely involving navigation and manipulation [DERIVED: read from image labels].\",\n    \"domain_specific_explanations\": \"In human-computer interaction (HCI) user studies, a 7-point Likert scale is commonly used to measure subjective user experience, where higher scores typically represent more positive evaluations [SPECULATIVE: HCI research standards]. The chart includes 95% confidence intervals and reports ANOVA F-statistics to test for statistically significant differences between the spatial and touch modalities [DERIVED: read from image annotations]. Out of the nine dimensions, four show a statistically significant advantage for spatial interaction over touch interaction, marked with asterisks: 'ease of use' (F(1,30) = 10.79, p = .002), 'efficiency to use' (F(1,30) = 9.42, p = .004), 'user experience' (F(1,30) = 16.08, p < .001), and 'zooming' (F(1,30) = 7.62, p = .009) [DERIVED: read from image annotations]. For the remaining categories—'easy to learn', 'good utility', 'easy to remember', 'horizontal panning', and 'vertical panning'—the differences between the two modalities are not statistically significant [DERIVED: read from image annotations].\",\n    \"real_world_significance\": \"These findings indicate that while basic navigation tasks like horizontal and vertical panning are perceived similarly across both modalities, spatial interaction offers a superior user experience and higher perceived efficiency for complex actions like zooming [DERIVED: read from image trends]. For interface designers and system developers, this suggests that integrating spatial or mid-air gesture controls can significantly enhance user satisfaction and operational efficiency in applications where zooming and rapid interaction are critical [SPECULATIVE: HCI design implications].\",\n    \"other\": \"The sample size for the statistical tests is indicated by the degrees of freedom in the F-statistic, suggesting a participant pool of approximately 32 users (df2 = 30) [DERIVED: calculated from F-statistic degrees of freedom].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The data originates from a research paper published at the CHI 2014 conference\"\n    ],\n    \"derived_claims\": [\n      \"This chart presents subjective questionnaire results comparing two interaction modalities, 'spatial' and 'touch', across nine usability dimensions\",\n      \"The evaluation uses a 7-point Likert scale to capture user feedback on tasks likely involving navigation and manipulation\",\n      \"The chart includes 95% confidence intervals and reports ANOVA F-statistics to test for statistically significant differences between the spatial and touch modalities\",\n      \"Out of the nine dimensions, four show a statistically significant advantage for spatial interaction over touch interaction, marked with asterisks: 'ease of use' (F(1,30) = 10.79, p = .002), 'efficiency to use' (F(1,30) = 9.42, p = .004), 'user experience' (F(1,30) = 16.08, p < .001), and 'zooming' (F(1,30) = 7.62, p = .009)\",\n      \"For the remaining categories—'easy to learn', 'good utility', 'easy to remember', 'horizontal panning', and 'vertical panning'—the differences between the two modalities are not statistically significant\",\n      \"These findings indicate that while basic navigation tasks like horizontal and vertical panning are perceived similarly across both modalities, spatial interaction offers a superior user experience and higher perceived efficiency for complex actions like zooming\",\n      \"The sample size for the statistical tests is indicated by the degrees of freedom in the F-statistic, suggesting a participant pool of approximately 32 users (df2 = 30)\"\n    ],\n    \"speculative_claims\": [\n      \"In human-computer interaction (HCI) user studies, a 7-point Likert scale is commonly used to measure subjective user experience, where higher scores typically represent more positive evaluations\",\n      \"For interface designers and system developers, this suggests that integrating spatial or mid-air gesture controls can significantly enhance user satisfaction and operational efficiency in applications where zooming and rapid interaction are critical\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 7,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values and table are not provided in the metadata, though some general trends are mentioned in the alt text."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The alt text identifies which categories differ (ease of use, efficiency, user experience, zooming) but does not provide the statistical values or magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The expert domain story identifies the source as a CHI 2014 paper, giving clear domain context, though the provided figure title is slightly mismatched with the chart's actual axis labels."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart presents subjective questionnaire results comparing two interaction modalities, 'spatial' and 'touch', across nine usability dimensions [DERIVED: read from image labels]. The data originates from a research paper published at the CHI 2014 conference [DIRECT]. The evaluation uses a 7-point Likert scale to capture user feedback on tasks likely involving navigation and manipulation [DERIVED: read from image labels].",
+      "domain_specific_explanations": "In human-computer interaction (HCI) user studies, a 7-point Likert scale is commonly used to measure subjective user experience, where higher scores typically represent more positive evaluations [SPECULATIVE: HCI research standards]. The chart includes 95% confidence intervals and reports ANOVA F-statistics to test for statistically significant differences between the spatial and touch modalities [DERIVED: read from image annotations]. Out of the nine dimensions, four show a statistically significant advantage for spatial interaction over touch interaction, marked with asterisks: 'ease of use' (F(1,30) = 10.79, p = .002), 'efficiency to use' (F(1,30) = 9.42, p = .004), 'user experience' (F(1,30) = 16.08, p < .001), and 'zooming' (F(1,30) = 7.62, p = .009) [DERIVED: read from image annotations]. For the remaining categories—'easy to learn', 'good utility', 'easy to remember', 'horizontal panning', and 'vertical panning'—the differences between the two modalities are not statistically significant [DERIVED: read from image annotations].",
+      "real_world_significance": "These findings indicate that while basic navigation tasks like horizontal and vertical panning are perceived similarly across both modalities, spatial interaction offers a superior user experience and higher perceived efficiency for complex actions like zooming [DERIVED: read from image trends]. For interface designers and system developers, this suggests that integrating spatial or mid-air gesture controls can significantly enhance user satisfaction and operational efficiency in applications where zooming and rapid interaction are critical [SPECULATIVE: HCI design implications].",
+      "other": "The sample size for the statistical tests is indicated by the degrees of freedom in the F-statistic, suggesting a participant pool of approximately 32 users (df2 = 30) [DERIVED: calculated from F-statistic degrees of freedom]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The data originates from a research paper published at the CHI 2014 conference"
+      ],
+      "derived_claims": [
+        "This chart presents subjective questionnaire results comparing two interaction modalities, 'spatial' and 'touch', across nine usability dimensions",
+        "The evaluation uses a 7-point Likert scale to capture user feedback on tasks likely involving navigation and manipulation",
+        "The chart includes 95% confidence intervals and reports ANOVA F-statistics to test for statistically significant differences between the spatial and touch modalities",
+        "Out of the nine dimensions, four show a statistically significant advantage for spatial interaction over touch interaction, marked with asterisks: 'ease of use' (F(1,30) = 10.79, p = .002), 'efficiency to use' (F(1,30) = 9.42, p = .004), 'user experience' (F(1,30) = 16.08, p < .001), and 'zooming' (F(1,30) = 7.62, p = .009)",
+        "For the remaining categories—'easy to learn', 'good utility', 'easy to remember', 'horizontal panning', and 'vertical panning'—the differences between the two modalities are not statistically significant",
+        "These findings indicate that while basic navigation tasks like horizontal and vertical panning are perceived similarly across both modalities, spatial interaction offers a superior user experience and higher perceived efficiency for complex actions like zooming",
+        "The sample size for the statistical tests is indicated by the degrees of freedom in the F-statistic, suggesting a participant pool of approximately 32 users (df2 = 30)"
+      ],
+      "speculative_claims": [
+        "In human-computer interaction (HCI) user studies, a 7-point Likert scale is commonly used to measure subjective user experience, where higher scores typically represent more positive evaluations",
+        "For interface designers and system developers, this suggests that integrating spatial or mid-air gesture controls can significantly enhance user satisfaction and operational efficiency in applications where zooming and rapid interaction are critical"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 7,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12847.063708002679,
+  "created_at": "2026-07-17T21:17:00.441122Z"
+}

@@ -1,0 +1,72 @@
+{
+  "output_id": "4c23ebb2-bcb0-4ab6-b77c-fb57f6c54c5b",
+  "chart_id": "vistext_1096",
+  "dataset_source": "vistext",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The provided data table is incomplete and malformed. It lists 15 rows, but the chart contains approximately 21 country-movie entries. Many values in the table do not correspond to the visual data (e.g., the table lists 'VIP' at 6651.11, but visually 'VIP' is a tiny bar while 'Frida 2' is the largest). The table values appear to be an incorrect extraction.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"Visual estimation from the image is required to determine the correct magnitudes because the provided data table is unreliable. The x-axis scale (0 to 7,000) and the relative bar lengths allow for approximate reading.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, axis labels, and bar labels clearly define the domain as the film industry, specifically box office attendance for Iberoamerican productions in Latin American countries in 2018.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays box office attendance figures for the most popular local or Iberoamerican film productions in various Latin American countries for the year 2018 [DIRECT: Title and Axis]. The data measures popularity in terms of ticket sales volume, expressed in thousands of viewers [DIRECT: X-axis label]. It allows for a cross-country comparison of film consumption, highlighting which local productions achieved mass appeal in their respective markets [SPECULATIVE: General analysis of film industry charts].\",\n    \"domain_specific_explanations\": \"The chart reveals a significant disparity in market size and film popularity across the region. The top-performing film is 'No manches Frida 2' from Mexico, which drew approximately 6,651,000 viewers (reading visually from the bar extending past the 6,000 mark) [DERIVED: Visual estimation of the Mexico bar]. The second most popular film is 'Nada a perder Parte 2' from Brazil, with over 6,000,000 viewers [DERIVED: Visual estimation of the Brazil bar]. In contrast, the majority of the other countries listed—such as Costa Rica, Columbia, and El Salvador—had their top films attract fewer than 500,000 viewers [DERIVED: Visual comparison of the smaller bars on the left]. The chart demonstrates that 'La odisea de los giles' was a cross-border success, appearing as the top film for both Argentina and Uruguay [DERIVED: Reading Y-axis labels].\",\n    \"real_world_significance\": \"This data is significant for understanding the economic landscape of the Latin American film industry in 2018. It highlights the dominance of the Mexican and Brazilian markets, which have large enough populations and cinema infrastructures to support blockbusters reaching multi-million attendance figures [SPECULATIVE: Film industry economics]. For smaller markets, the attendance figures reflect niche appeal compared to global Hollywood productions [SPECULATIVE: Cultural context of cinema]. The success of comedies like 'No manches Frida 2' and 'Nada a perder' suggests a strong regional preference for comedy genres [SPECULATIVE: Genres of the listed films].\",\n    \"other\": \"The provided data table text contains significant errors and should not be used for precise calculation; the values appear misaligned with the chart labels (e.g., the table lists 'VIP' as having 6651.11 viewers, but the chart shows 'VIP' as a very small bar while 'Frida 2' is the largest) [DERIVED: Comparison of provided text vs image]. The chart visualizes the top film per country, not the overall box office for that country [SPECULATIVE: Inference from 'most popular... productions' title].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"Chart title is Attendance at most popular Iberoamerican movie productions in selected Latin American countries in 2018\",\n      \"X-axis measures Number of viewers in thousands\",\n      \"Data represents the year 2018\"\n    ],\n    \"derived_claims\": [\n      \"Mexico's film 'No manches Frida 2' had the highest attendance, estimated visually at approx 6.6 million\",\n      \"Brazil's film 'Nada a perder Parte 2' had the second highest attendance, estimated visually at approx 6 million\",\n      \"Most smaller nations had top films with less than 500,000 attendees\",\n      \"The provided data table values are mismatched with the visual bars (e.g. VIP value)\"\n    ],\n    \"speculative_claims\": [\n      \"The chart allows for cross-country comparison of film consumption\",\n      \"The data highlights the dominance of Mexican and Brazilian markets due to population and infrastructure\",\n      \"Smaller markets indicate niche appeal compared to Hollywood\",\n      \"The success of specific titles suggests a regional preference for comedy\",\n      \"The chart displays the single top film for each country\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The provided data table is incomplete and malformed. It lists 15 rows, but the chart contains approximately 21 country-movie entries. Many values in the table do not correspond to the visual data (e.g., the table lists 'VIP' at 6651.11, but visually 'VIP' is a tiny bar while 'Frida 2' is the largest). The table values appear to be an incorrect extraction."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Visual estimation from the image is required to determine the correct magnitudes because the provided data table is unreliable. The x-axis scale (0 to 7,000) and the relative bar lengths allow for approximate reading."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, axis labels, and bar labels clearly define the domain as the film industry, specifically box office attendance for Iberoamerican productions in Latin American countries in 2018."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays box office attendance figures for the most popular local or Iberoamerican film productions in various Latin American countries for the year 2018 [DIRECT: Title and Axis]. The data measures popularity in terms of ticket sales volume, expressed in thousands of viewers [DIRECT: X-axis label]. It allows for a cross-country comparison of film consumption, highlighting which local productions achieved mass appeal in their respective markets [SPECULATIVE: General analysis of film industry charts].",
+      "domain_specific_explanations": "The chart reveals a significant disparity in market size and film popularity across the region. The top-performing film is 'No manches Frida 2' from Mexico, which drew approximately 6,651,000 viewers (reading visually from the bar extending past the 6,000 mark) [DERIVED: Visual estimation of the Mexico bar]. The second most popular film is 'Nada a perder Parte 2' from Brazil, with over 6,000,000 viewers [DERIVED: Visual estimation of the Brazil bar]. In contrast, the majority of the other countries listed—such as Costa Rica, Columbia, and El Salvador—had their top films attract fewer than 500,000 viewers [DERIVED: Visual comparison of the smaller bars on the left]. The chart demonstrates that 'La odisea de los giles' was a cross-border success, appearing as the top film for both Argentina and Uruguay [DERIVED: Reading Y-axis labels].",
+      "real_world_significance": "This data is significant for understanding the economic landscape of the Latin American film industry in 2018. It highlights the dominance of the Mexican and Brazilian markets, which have large enough populations and cinema infrastructures to support blockbusters reaching multi-million attendance figures [SPECULATIVE: Film industry economics]. For smaller markets, the attendance figures reflect niche appeal compared to global Hollywood productions [SPECULATIVE: Cultural context of cinema]. The success of comedies like 'No manches Frida 2' and 'Nada a perder' suggests a strong regional preference for comedy genres [SPECULATIVE: Genres of the listed films].",
+      "other": "The provided data table text contains significant errors and should not be used for precise calculation; the values appear misaligned with the chart labels (e.g., the table lists 'VIP' as having 6651.11 viewers, but the chart shows 'VIP' as a very small bar while 'Frida 2' is the largest) [DERIVED: Comparison of provided text vs image]. The chart visualizes the top film per country, not the overall box office for that country [SPECULATIVE: Inference from 'most popular... productions' title]."
+    },
+    "flags": {
+      "direct_claims": [
+        "Chart title is Attendance at most popular Iberoamerican movie productions in selected Latin American countries in 2018",
+        "X-axis measures Number of viewers in thousands",
+        "Data represents the year 2018"
+      ],
+      "derived_claims": [
+        "Mexico's film 'No manches Frida 2' had the highest attendance, estimated visually at approx 6.6 million",
+        "Brazil's film 'Nada a perder Parte 2' had the second highest attendance, estimated visually at approx 6 million",
+        "Most smaller nations had top films with less than 500,000 attendees",
+        "The provided data table values are mismatched with the visual bars (e.g. VIP value)"
+      ],
+      "speculative_claims": [
+        "The chart allows for cross-country comparison of film consumption",
+        "The data highlights the dominance of Mexican and Brazilian markets due to population and infrastructure",
+        "Smaller markets indicate niche appeal compared to Hollywood",
+        "The success of specific titles suggests a regional preference for comedy",
+        "The chart displays the single top film for each country"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 4874,
+    "output": 1195
+  },
+  "latency_ms": 42317.07287500467,
+  "created_at": "2026-07-19T06:08:26.343788Z"
+}

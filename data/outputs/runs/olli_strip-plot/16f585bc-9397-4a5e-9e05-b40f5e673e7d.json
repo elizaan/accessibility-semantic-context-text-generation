@@ -1,0 +1,65 @@
+{
+  "output_id": "16f585bc-9397-4a5e-9e05-b40f5e673e7d",
+  "chart_id": "olli_strip-plot",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No metadata or raw data values were provided with the image.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend calculations or summary statistics were provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 0,\n        \"justification\": \"No contextual metadata or domain descriptions were provided.\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a strip plot showing the relationship between the number of engine cylinders and engine horsepower [DERIVED: read from axis labels and plot style]. The y-axis represents discrete cylinder counts (3, 4, 5, 6, 8) and the x-axis represents horsepower [DIRECT]. This dataset is highly likely the classic 'cars' or 'mpg' dataset, commonly used in statistics and data visualization education [SPECULATIVE: automotive statistics / data science education].\",\n    \"domain_specific_explanations\": \"In automotive engineering, there is generally a positive correlation between the number of cylinders in an engine and its horsepower output [SPECULATIVE: automotive engineering]. This trend is visible here: 4-cylinder engines are concentrated at lower horsepower ranges (mostly 45 to 115 hp), while 8-cylinder engines are concentrated at much higher ranges (mostly 130 to 230 hp) [DERIVED: compared the distribution of 4-cylinder and 8-cylinder ticks along the x-axis]. The 3-cylinder and 5-cylinder configurations are rare in this dataset, represented by very few data points [DERIVED: counted the sparse ticks for 3 and 5 cylinders]. There is some overlap; for instance, some high-performing 4-cylinder engines have similar horsepower to lower-performing 6-cylinder or even 8-cylinder engines around 90-110 hp [DERIVED: observed overlapping x-axis regions for 4, 6, and 8 cylinders].\",\n    \"real_world_significance\": \"Historically, consumer vehicles transitioned towards fewer cylinders (like 4-cylinders) to improve fuel efficiency while using technologies like turbocharging to maintain acceptable horsepower [SPECULATIVE: automotive history and environmental policy]. Large 8-cylinder engines represent high-performance or heavy-duty vehicles where high power output is prioritized over fuel economy [SPECULATIVE: automotive market segmentation]. This data helps consumers and manufacturers understand the trade-offs between engine size (cylinders) and power (horsepower) [SPECULATIVE: consumer economics].\",\n    \"other\": \"The absence of 7-cylinder or 2-cylinder engines in this dataset reflects standard automotive manufacturing practices, where even-numbered cylinder configurations are standard [SPECULATIVE: mechanical engineering].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The y-axis represents discrete cylinder counts (3, 4, 5, 6, 8) and the x-axis represents horsepower.\"\n    ],\n    \"derived_claims\": [\n      \"The chart is a strip plot showing the relationship between the number of engine cylinders and engine horsepower.\",\n      \"4-cylinder engines are concentrated at lower horsepower ranges (mostly 45 to 115 hp), while 8-cylinder engines are concentrated at much higher ranges (mostly 130 to 230 hp).\",\n      \"The 3-cylinder and 5-cylinder configurations are rare in this dataset, represented by very few data points.\",\n      \"There is some overlap; for instance, some high-performing 4-cylinder engines have similar horsepower to lower-performing 6-cylinder or even 8-cylinder engines around 90-110 hp.\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset is highly likely the classic 'cars' or 'mpg' dataset, commonly used in statistics and data visualization education.\",\n      \"In automotive engineering, there is generally a positive correlation between the number of cylinders in an engine and its horsepower output.\",\n      \"Historically, consumer vehicles transitioned towards fewer cylinders (like 4-cylinders) to improve fuel efficiency while using technologies like turbocharging to maintain acceptable horsepower.\",\n      \"Large 8-cylinder engines represent high-performance or heavy-duty vehicles where high power output is prioritized over fuel economy.\",\n      \"This data helps consumers and manufacturers understand the trade-offs between engine size (cylinders) and power (horsepower).\",\n      \"The absence of 7-cylinder or 2-cylinder engines in this dataset reflects standard automotive manufacturing practices, where even-numbered cylinder configurations are standard.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No metadata or raw data values were provided with the image."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend calculations or summary statistics were provided."
+        },
+        "chart_subject_domain": {
+          "score": 0,
+          "justification": "No contextual metadata or domain descriptions were provided."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a strip plot showing the relationship between the number of engine cylinders and engine horsepower [DERIVED: read from axis labels and plot style]. The y-axis represents discrete cylinder counts (3, 4, 5, 6, 8) and the x-axis represents horsepower [DIRECT]. This dataset is highly likely the classic 'cars' or 'mpg' dataset, commonly used in statistics and data visualization education [SPECULATIVE: automotive statistics / data science education].",
+      "domain_specific_explanations": "In automotive engineering, there is generally a positive correlation between the number of cylinders in an engine and its horsepower output [SPECULATIVE: automotive engineering]. This trend is visible here: 4-cylinder engines are concentrated at lower horsepower ranges (mostly 45 to 115 hp), while 8-cylinder engines are concentrated at much higher ranges (mostly 130 to 230 hp) [DERIVED: compared the distribution of 4-cylinder and 8-cylinder ticks along the x-axis]. The 3-cylinder and 5-cylinder configurations are rare in this dataset, represented by very few data points [DERIVED: counted the sparse ticks for 3 and 5 cylinders]. There is some overlap; for instance, some high-performing 4-cylinder engines have similar horsepower to lower-performing 6-cylinder or even 8-cylinder engines around 90-110 hp [DERIVED: observed overlapping x-axis regions for 4, 6, and 8 cylinders].",
+      "real_world_significance": "Historically, consumer vehicles transitioned towards fewer cylinders (like 4-cylinders) to improve fuel efficiency while using technologies like turbocharging to maintain acceptable horsepower [SPECULATIVE: automotive history and environmental policy]. Large 8-cylinder engines represent high-performance or heavy-duty vehicles where high power output is prioritized over fuel economy [SPECULATIVE: automotive market segmentation]. This data helps consumers and manufacturers understand the trade-offs between engine size (cylinders) and power (horsepower) [SPECULATIVE: consumer economics].",
+      "other": "The absence of 7-cylinder or 2-cylinder engines in this dataset reflects standard automotive manufacturing practices, where even-numbered cylinder configurations are standard [SPECULATIVE: mechanical engineering]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The y-axis represents discrete cylinder counts (3, 4, 5, 6, 8) and the x-axis represents horsepower."
+      ],
+      "derived_claims": [
+        "The chart is a strip plot showing the relationship between the number of engine cylinders and engine horsepower.",
+        "4-cylinder engines are concentrated at lower horsepower ranges (mostly 45 to 115 hp), while 8-cylinder engines are concentrated at much higher ranges (mostly 130 to 230 hp).",
+        "The 3-cylinder and 5-cylinder configurations are rare in this dataset, represented by very few data points.",
+        "There is some overlap; for instance, some high-performing 4-cylinder engines have similar horsepower to lower-performing 6-cylinder or even 8-cylinder engines around 90-110 hp."
+      ],
+      "speculative_claims": [
+        "This dataset is highly likely the classic 'cars' or 'mpg' dataset, commonly used in statistics and data visualization education.",
+        "In automotive engineering, there is generally a positive correlation between the number of cylinders in an engine and its horsepower output.",
+        "Historically, consumer vehicles transitioned towards fewer cylinders (like 4-cylinders) to improve fuel efficiency while using technologies like turbocharging to maintain acceptable horsepower.",
+        "Large 8-cylinder engines represent high-performance or heavy-duty vehicles where high power output is prioritized over fuel economy.",
+        "This data helps consumers and manufacturers understand the trade-offs between engine size (cylinders) and power (horsepower).",
+        "The absence of 7-cylinder or 2-cylinder engines in this dataset reflects standard automotive manufacturing practices, where even-numbered cylinder configurations are standard."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11788.465917001304,
+  "created_at": "2026-07-20T14:22:33.838633Z"
+}

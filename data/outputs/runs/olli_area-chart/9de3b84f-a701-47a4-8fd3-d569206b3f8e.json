@@ -1,0 +1,69 @@
+{
+  "output_id": "9de3b84f-a701-47a4-8fd3-d569206b3f8e",
+  "chart_id": "olli_area-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact underlying data table is not provided, but the Olli screen reader tree provides useful aggregated statistics (averages and ranges) for specific time intervals.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The Olli tree and the chart image clearly show the overall trend, including the massive spike in unemployment starting in late 2008.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The domain is identified as unemployment across industries over time, though specific industry breakdowns are not detailed in the metadata.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is an area chart representing unemployment across industries summed over time, spanning from January 2000 to February 2010 [DIRECT]. The data tracks the total count of unemployed individuals over a ten-year period [DERIVED: read from axes and Olli tree]. This dataset is commonly used in data visualization galleries (such as the Olli gallery) to demonstrate accessible chart representations [DIRECT].\",\n    \"domain_specific_explanations\": \"In macroeconomic terms, unemployment counts reflect the health of the labor market [SPECULATIVE: Macroeconomics]. The time period from Jan 2000 to Feb 2010 covers two major economic downturns in the United States: the early 2000s recession (following the dot-com bubble burst) and the Great Recession of 2007–2009 [SPECULATIVE: US Economic History]. The dramatic spike in the count starting around late 2008 corresponds directly to the onset of the Great Recession, where the average sum count of unemployed individuals rose to 11,029 between Dec 2007 and Feb 2010, compared to 6,417 in the preceding two years [DERIVED: compared average sum counts across time intervals in the Olli tree].\",\n    \"real_world_significance\": \"High unemployment rates during the 2008-2010 period led to widespread financial distress, requiring significant government intervention such as fiscal stimulus packages and extended unemployment benefits [SPECULATIVE: Public Policy]. Understanding these trends helps policymakers, economists, and labor organizations evaluate the severity of economic crises and plan recovery strategies [SPECULATIVE: Labor Economics]. The sharp upward trajectory at the end of the chart (reaching a peak count of over 15,000 by early 2010) highlights the lagging nature of labor market recovery relative to financial market stabilization [DERIVED: observed peak value of 15,125 and the upward trend at the end of the chart].\",\n    \"other\": \"The chart's Y-axis ranges from 4,786 to 15,125, indicating that even at its lowest point in this decade, a substantial baseline of unemployment existed [DERIVED: read Y-axis range from Olli tree].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is an area chart representing unemployment across industries summed over time, spanning from January 2000 to February 2010.\",\n      \"This dataset is commonly used in data visualization galleries (such as the Olli gallery) to demonstrate accessible chart representations.\"\n    ],\n    \"derived_claims\": [\n      \"The data tracks the total count of unemployed individuals over a ten-year period.\",\n      \"The dramatic spike in the count starting around late 2008 corresponds directly to the onset of the Great Recession, where the average sum count of unemployed individuals rose to 11,029 between Dec 2007 and Feb 2010, compared to 6,417 in the preceding two years.\",\n      \"The sharp upward trajectory at the end of the chart (reaching a peak count of over 15,000 by early 2010) highlights the lagging nature of labor market recovery relative to financial market stabilization.\",\n      \"The chart's Y-axis ranges from 4,786 to 15,125, indicating that even at its lowest point in this decade, a substantial baseline of unemployment existed.\"\n    ],\n    \"speculative_claims\": [\n      \"In macroeconomic terms, unemployment counts reflect the health of the labor market.\",\n      \"The time period from Jan 2000 to Feb 2010 covers two major economic downturns in the United States: the early 2000s recession (following the dot-com bubble burst) and the Great Recession of 2007–2009.\",\n      \"High unemployment rates during the 2008-2010 period led to widespread financial distress, requiring significant government intervention such as fiscal stimulus packages and extended unemployment benefits.\",\n      \"Understanding these trends helps policymakers, economists, and labor organizations evaluate the severity of economic crises and plan recovery strategies.\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 2,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact underlying data table is not provided, but the Olli screen reader tree provides useful aggregated statistics (averages and ranges) for specific time intervals."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The Olli tree and the chart image clearly show the overall trend, including the massive spike in unemployment starting in late 2008."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The domain is identified as unemployment across industries over time, though specific industry breakdowns are not detailed in the metadata."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is an area chart representing unemployment across industries summed over time, spanning from January 2000 to February 2010 [DIRECT]. The data tracks the total count of unemployed individuals over a ten-year period [DERIVED: read from axes and Olli tree]. This dataset is commonly used in data visualization galleries (such as the Olli gallery) to demonstrate accessible chart representations [DIRECT].",
+      "domain_specific_explanations": "In macroeconomic terms, unemployment counts reflect the health of the labor market [SPECULATIVE: Macroeconomics]. The time period from Jan 2000 to Feb 2010 covers two major economic downturns in the United States: the early 2000s recession (following the dot-com bubble burst) and the Great Recession of 2007–2009 [SPECULATIVE: US Economic History]. The dramatic spike in the count starting around late 2008 corresponds directly to the onset of the Great Recession, where the average sum count of unemployed individuals rose to 11,029 between Dec 2007 and Feb 2010, compared to 6,417 in the preceding two years [DERIVED: compared average sum counts across time intervals in the Olli tree].",
+      "real_world_significance": "High unemployment rates during the 2008-2010 period led to widespread financial distress, requiring significant government intervention such as fiscal stimulus packages and extended unemployment benefits [SPECULATIVE: Public Policy]. Understanding these trends helps policymakers, economists, and labor organizations evaluate the severity of economic crises and plan recovery strategies [SPECULATIVE: Labor Economics]. The sharp upward trajectory at the end of the chart (reaching a peak count of over 15,000 by early 2010) highlights the lagging nature of labor market recovery relative to financial market stabilization [DERIVED: observed peak value of 15,125 and the upward trend at the end of the chart].",
+      "other": "The chart's Y-axis ranges from 4,786 to 15,125, indicating that even at its lowest point in this decade, a substantial baseline of unemployment existed [DERIVED: read Y-axis range from Olli tree]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is an area chart representing unemployment across industries summed over time, spanning from January 2000 to February 2010.",
+        "This dataset is commonly used in data visualization galleries (such as the Olli gallery) to demonstrate accessible chart representations."
+      ],
+      "derived_claims": [
+        "The data tracks the total count of unemployed individuals over a ten-year period.",
+        "The dramatic spike in the count starting around late 2008 corresponds directly to the onset of the Great Recession, where the average sum count of unemployed individuals rose to 11,029 between Dec 2007 and Feb 2010, compared to 6,417 in the preceding two years.",
+        "The sharp upward trajectory at the end of the chart (reaching a peak count of over 15,000 by early 2010) highlights the lagging nature of labor market recovery relative to financial market stabilization.",
+        "The chart's Y-axis ranges from 4,786 to 15,125, indicating that even at its lowest point in this decade, a substantial baseline of unemployment existed."
+      ],
+      "speculative_claims": [
+        "In macroeconomic terms, unemployment counts reflect the health of the labor market.",
+        "The time period from Jan 2000 to Feb 2010 covers two major economic downturns in the United States: the early 2000s recession (following the dot-com bubble burst) and the Great Recession of 2007–2009.",
+        "High unemployment rates during the 2008-2010 period led to widespread financial distress, requiring significant government intervention such as fiscal stimulus packages and extended unemployment benefits.",
+        "Understanding these trends helps policymakers, economists, and labor organizations evaluate the severity of economic crises and plan recovery strategies."
+      ],
+      "total_flag_count": 10,
+      "direct_count": 2,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12504.762291995576,
+  "created_at": "2026-07-20T14:20:22.054870Z"
+}

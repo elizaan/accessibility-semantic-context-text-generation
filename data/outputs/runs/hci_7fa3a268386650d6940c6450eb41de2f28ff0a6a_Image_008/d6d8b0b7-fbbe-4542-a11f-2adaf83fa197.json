@@ -1,0 +1,69 @@
+{
+  "output_id": "d6d8b0b7-fbbe-4542-a11f-2adaf83fa197",
+  "chart_id": "hci_7fa3a268386650d6940c6450eb41de2f28ff0a6a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No exact data values or table are provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The metadata mentions that error bars and statistical significance are visualized, but does not describe the actual trends or which conditions performed better.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain (Human-Computer Interaction, CHI 2020), the specific questionnaire (NASA TLX), and the seven pointing conditions are clearly identified.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart presents the mean responses for the NASA Task Load Index (TLX) attributes across seven pointing conditions in a smartphone interaction study [DIRECT]. The study was published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020) [DIRECT]. The seven pointing conditions evaluated are VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DIRECT].\",\n    \"domain_specific_explanations\": \"The NASA TLX (Task Load Index) is a widely used multidimensional assessment tool that rates subjective workload to evaluate a user's experience with a system or interface [SPECULATIVE: Human-Computer Interaction / NASA TLX]. It typically measures six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration [SPECULATIVE: Human-Computer Interaction / NASA TLX]. The pointing conditions likely represent different interaction modalities, such as Virtual Cursor (VC) or variations of device-pointing/wrist-pointing techniques (indicated by abbreviations like VBP and WDP) [DERIVED: Interpreted from the abbreviations VC, VBP, and WDP in the alt text]. Statistical significance is evaluated using the Wilcoxon rank sum test, a non-parametric statistical test used to compare two independent groups when the data is ordinal or not normally distributed [DERIVED: Extracted from the expert domain story mentioning Wilcoxon rank sum test].\",\n    \"real_world_significance\": \"Understanding subjective workload is critical for designing accessible and ergonomic smartphone interaction techniques, especially for users with motor impairments or in situations where one-handed use is required [SPECULATIVE: Human-Computer Interaction / Accessibility]. By comparing these seven pointing conditions, researchers can determine which interaction techniques minimize cognitive and physical fatigue, leading to more user-friendly mobile interfaces [SPECULATIVE: Human-Computer Interaction]. The use of standard error bars and Wilcoxon rank sum tests ensures that the differences in workload are statistically robust rather than random variations, helping designers make evidence-based decisions [DERIVED: Based on the expert domain story and alt text mentioning error bars and significance tests].\",\n    \"other\": \"The exact mean scores and specific pairwise significant differences are not provided in the metadata [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart presents the mean responses for the NASA Task Load Index (TLX) attributes across seven pointing conditions in a smartphone interaction study.\",\n      \"The study was published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020).\",\n      \"The seven pointing conditions evaluated are VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR.\",\n      \"The exact mean scores and specific pairwise significant differences are not provided in the metadata.\"\n    ],\n    \"derived_claims\": [\n      \"The pointing conditions likely represent different interaction modalities, such as Virtual Cursor (VC) or variations of device-pointing/wrist-pointing techniques (indicated by abbreviations like VBP and WDP).\",\n      \"Statistical significance is evaluated using the Wilcoxon rank sum test, a non-parametric statistical test used to compare two independent groups when the data is ordinal or not normally distributed.\",\n      \"The use of standard error bars and Wilcoxon rank sum tests ensures that the differences in workload are statistically robust rather than random variations, helping designers make evidence-based decisions.\"\n    ],\n    \"speculative_claims\": [\n      \"The NASA TLX (Task Load Index) is a widely used multidimensional assessment tool that rates subjective workload to evaluate a user's experience with a system or interface.\",\n      \"It typically measures six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration.\",\n      \"Understanding subjective workload is critical for designing accessible and ergonomic smartphone interaction techniques, especially for users with motor impairments or in situations where one-handed use is required.\",\n      \"By comparing these seven pointing conditions, researchers can determine which interaction techniques minimize cognitive and physical fatigue, leading to more user-friendly mobile interfaces.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 4,\n    \"derived_count\": 3,\n    \"speculative_count\": 4\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No exact data values or table are provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The metadata mentions that error bars and statistical significance are visualized, but does not describe the actual trends or which conditions performed better."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (Human-Computer Interaction, CHI 2020), the specific questionnaire (NASA TLX), and the seven pointing conditions are clearly identified."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart presents the mean responses for the NASA Task Load Index (TLX) attributes across seven pointing conditions in a smartphone interaction study [DIRECT]. The study was published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020) [DIRECT]. The seven pointing conditions evaluated are VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DIRECT].",
+      "domain_specific_explanations": "The NASA TLX (Task Load Index) is a widely used multidimensional assessment tool that rates subjective workload to evaluate a user's experience with a system or interface [SPECULATIVE: Human-Computer Interaction / NASA TLX]. It typically measures six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration [SPECULATIVE: Human-Computer Interaction / NASA TLX]. The pointing conditions likely represent different interaction modalities, such as Virtual Cursor (VC) or variations of device-pointing/wrist-pointing techniques (indicated by abbreviations like VBP and WDP) [DERIVED: Interpreted from the abbreviations VC, VBP, and WDP in the alt text]. Statistical significance is evaluated using the Wilcoxon rank sum test, a non-parametric statistical test used to compare two independent groups when the data is ordinal or not normally distributed [DERIVED: Extracted from the expert domain story mentioning Wilcoxon rank sum test].",
+      "real_world_significance": "Understanding subjective workload is critical for designing accessible and ergonomic smartphone interaction techniques, especially for users with motor impairments or in situations where one-handed use is required [SPECULATIVE: Human-Computer Interaction / Accessibility]. By comparing these seven pointing conditions, researchers can determine which interaction techniques minimize cognitive and physical fatigue, leading to more user-friendly mobile interfaces [SPECULATIVE: Human-Computer Interaction]. The use of standard error bars and Wilcoxon rank sum tests ensures that the differences in workload are statistically robust rather than random variations, helping designers make evidence-based decisions [DERIVED: Based on the expert domain story and alt text mentioning error bars and significance tests].",
+      "other": "The exact mean scores and specific pairwise significant differences are not provided in the metadata [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart presents the mean responses for the NASA Task Load Index (TLX) attributes across seven pointing conditions in a smartphone interaction study.",
+        "The study was published at the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020).",
+        "The seven pointing conditions evaluated are VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR.",
+        "The exact mean scores and specific pairwise significant differences are not provided in the metadata."
+      ],
+      "derived_claims": [
+        "The pointing conditions likely represent different interaction modalities, such as Virtual Cursor (VC) or variations of device-pointing/wrist-pointing techniques (indicated by abbreviations like VBP and WDP).",
+        "Statistical significance is evaluated using the Wilcoxon rank sum test, a non-parametric statistical test used to compare two independent groups when the data is ordinal or not normally distributed.",
+        "The use of standard error bars and Wilcoxon rank sum tests ensures that the differences in workload are statistically robust rather than random variations, helping designers make evidence-based decisions."
+      ],
+      "speculative_claims": [
+        "The NASA TLX (Task Load Index) is a widely used multidimensional assessment tool that rates subjective workload to evaluate a user's experience with a system or interface.",
+        "It typically measures six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration.",
+        "Understanding subjective workload is critical for designing accessible and ergonomic smartphone interaction techniques, especially for users with motor impairments or in situations where one-handed use is required.",
+        "By comparing these seven pointing conditions, researchers can determine which interaction techniques minimize cognitive and physical fatigue, leading to more user-friendly mobile interfaces."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 4,
+      "derived_count": 3,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12373.71287499991,
+  "created_at": "2026-07-17T21:45:19.977288Z"
+}

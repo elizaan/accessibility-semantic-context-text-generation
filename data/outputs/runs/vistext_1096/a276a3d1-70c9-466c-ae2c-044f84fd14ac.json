@@ -1,0 +1,72 @@
+{
+  "output_id": "a276a3d1-70c9-466c-ae2c-044f84fd14ac",
+  "chart_id": "vistext_1096",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The provided data table is incomplete and contains truncated or mismatched labels (e.g., 'VIP' for Mexico's film, 'giles' for Uruguay, and missing rows for major countries like Brazil and Argentina which are visible in the chart).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption provides some general ranges for the top-performing countries, but the exact values for several key countries are missing from the data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly define the subject (movie attendance in Latin America in 2018), though the specific definition of 'Iberoamerican movie productions' in this context is not fully detailed.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the movie theater attendance (measured in thousands of viewers) for the most popular local or Ibero-american film productions across selected Latin American countries in 2018 [DIRECT]. The data reveals a massive disparity in audience sizes across the region, dominated heavily by the two largest economies and populations: Mexico and Brazil [DERIVED: compared the multi-million viewer counts of Mexico and Brazil to the much smaller counts of other nations]. While Mexico's top film reached over 6.6 million viewers [DERIVED: read from chart and matched 'VIP' value of 6651.11 in the data table] and Brazil's reached over 6 million [DERIVED: read from chart and L2 caption], most other countries in the region saw their top Ibero-american films attract fewer than 50,000 viewers [DERIVED: compared values of smaller nations in the data table].\",\n    \"domain_specific_explanations\": \"In international film distribution, tracking 'attendance' (or admissions) rather than box office revenue is the standard method for comparing market penetration across countries, as it avoids distortions caused by fluctuating exchange rates and varying local ticket prices [SPECULATIVE: film industry economics]. The data shows that comedies and highly publicized biographical dramas tend to perform best in large commercial markets, such as Mexico's 'No manches Frida 2' and Brazil's 'Nada a perder - Parte 2' [SPECULATIVE: Latin American cinema history]. Conversely, the extremely low attendance figures for local films in smaller markets like Bolivia, Costa Rica, and Nicaragua (each drawing only around 2,000 viewers) [DERIVED: matched 'Frida', 'Yordan', and 'Parte' values of 2.0 in the data table to Bolivia, Costa Rica, and Nicaragua] illustrate the immense difficulty local productions face in securing screen time and marketing reach in regions dominated by Hollywood imports [SPECULATIVE: film distribution studies].\",\n    \"real_world_significance\": \"These stark differences in attendance highlight the cultural and economic challenges facing the Latin American film industry [SPECULATIVE: cultural policy]. For filmmakers and regional co-production funds (such as the Ibermedia program), this data underscores the necessity of cross-border co-productions to pool resources and audiences [SPECULATIVE: cultural policy]. Without state-sponsored screen quotas or distribution subsidies, local cinematic stories in smaller nations risk being entirely crowded out of commercial theaters, limiting domestic audiences' access to their own cultural narratives [SPECULATIVE: cultural policy].\",\n    \"other\": \"Argentina's 'La odisea de los giles' (Heroic Losers) was a notable mid-market success, drawing between 1.5 and 2 million viewers [DERIVED: read from chart and L2 caption], which reflects Argentina's historically strong domestic film culture and star-driven appeal [SPECULATIVE: Latin American cinema history].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the movie theater attendance (measured in thousands of viewers) for the most popular local or Ibero-american film productions across selected Latin American countries in 2018.\"\n    ],\n    \"derived_claims\": [\n      \"The data reveals a massive disparity in audience sizes across the region, dominated heavily by the two largest economies and populations: Mexico and Brazil.\",\n      \"While Mexico's top film reached over 6.6 million viewers and Brazil's reached over 6 million, most other countries in the region saw their top Ibero-american films attract fewer than 50,000 viewers.\",\n      \"Smaller markets like Bolivia, Costa Rica, and Nicaragua saw their most popular local/Ibero-american films attract only around 2,000 viewers.\",\n      \"Argentina's 'La odisea de los giles' (Heroic Losers) was a notable mid-market success, drawing between 1.5 and 2 million viewers.\"\n    ],\n    \"speculative_claims\": [\n      \"In international film distribution, tracking 'attendance' (or admissions) rather than box office revenue is the standard method for comparing market penetration across countries, as it avoids distortions caused by fluctuating exchange rates and varying local ticket prices.\",\n      \"The data shows that comedies and highly publicized biographical dramas tend to perform best in large commercial markets, such as Mexico's 'No manches Frida 2' and Brazil's 'Nada a perder - Parte 2'.\",\n      \"These figures illustrate the immense difficulty local productions face in securing screen time and marketing reach in regions dominated by Hollywood imports.\",\n      \"These stark differences in attendance highlight the cultural and economic challenges facing the Latin American film industry.\",\n      \"For filmmakers and regional co-production funds (such as the Ibermedia program), this data underscores the necessity of cross-border co-productions to pool resources and audiences.\",\n      \"Without state-sponsored screen quotas or distribution subsidies, local cinematic stories in smaller nations risk being entirely crowded out of commercial theaters, limiting domestic audiences' access to their own cultural narratives.\",\n      \"Argentina's success reflects its historically strong domestic film culture and star-driven appeal.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The provided data table is incomplete and contains truncated or mismatched labels (e.g., 'VIP' for Mexico's film, 'giles' for Uruguay, and missing rows for major countries like Brazil and Argentina which are visible in the chart)."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption provides some general ranges for the top-performing countries, but the exact values for several key countries are missing from the data table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly define the subject (movie attendance in Latin America in 2018), though the specific definition of 'Iberoamerican movie productions' in this context is not fully detailed."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the movie theater attendance (measured in thousands of viewers) for the most popular local or Ibero-american film productions across selected Latin American countries in 2018 [DIRECT]. The data reveals a massive disparity in audience sizes across the region, dominated heavily by the two largest economies and populations: Mexico and Brazil [DERIVED: compared the multi-million viewer counts of Mexico and Brazil to the much smaller counts of other nations]. While Mexico's top film reached over 6.6 million viewers [DERIVED: read from chart and matched 'VIP' value of 6651.11 in the data table] and Brazil's reached over 6 million [DERIVED: read from chart and L2 caption], most other countries in the region saw their top Ibero-american films attract fewer than 50,000 viewers [DERIVED: compared values of smaller nations in the data table].",
+      "domain_specific_explanations": "In international film distribution, tracking 'attendance' (or admissions) rather than box office revenue is the standard method for comparing market penetration across countries, as it avoids distortions caused by fluctuating exchange rates and varying local ticket prices [SPECULATIVE: film industry economics]. The data shows that comedies and highly publicized biographical dramas tend to perform best in large commercial markets, such as Mexico's 'No manches Frida 2' and Brazil's 'Nada a perder - Parte 2' [SPECULATIVE: Latin American cinema history]. Conversely, the extremely low attendance figures for local films in smaller markets like Bolivia, Costa Rica, and Nicaragua (each drawing only around 2,000 viewers) [DERIVED: matched 'Frida', 'Yordan', and 'Parte' values of 2.0 in the data table to Bolivia, Costa Rica, and Nicaragua] illustrate the immense difficulty local productions face in securing screen time and marketing reach in regions dominated by Hollywood imports [SPECULATIVE: film distribution studies].",
+      "real_world_significance": "These stark differences in attendance highlight the cultural and economic challenges facing the Latin American film industry [SPECULATIVE: cultural policy]. For filmmakers and regional co-production funds (such as the Ibermedia program), this data underscores the necessity of cross-border co-productions to pool resources and audiences [SPECULATIVE: cultural policy]. Without state-sponsored screen quotas or distribution subsidies, local cinematic stories in smaller nations risk being entirely crowded out of commercial theaters, limiting domestic audiences' access to their own cultural narratives [SPECULATIVE: cultural policy].",
+      "other": "Argentina's 'La odisea de los giles' (Heroic Losers) was a notable mid-market success, drawing between 1.5 and 2 million viewers [DERIVED: read from chart and L2 caption], which reflects Argentina's historically strong domestic film culture and star-driven appeal [SPECULATIVE: Latin American cinema history]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the movie theater attendance (measured in thousands of viewers) for the most popular local or Ibero-american film productions across selected Latin American countries in 2018."
+      ],
+      "derived_claims": [
+        "The data reveals a massive disparity in audience sizes across the region, dominated heavily by the two largest economies and populations: Mexico and Brazil.",
+        "While Mexico's top film reached over 6.6 million viewers and Brazil's reached over 6 million, most other countries in the region saw their top Ibero-american films attract fewer than 50,000 viewers.",
+        "Smaller markets like Bolivia, Costa Rica, and Nicaragua saw their most popular local/Ibero-american films attract only around 2,000 viewers.",
+        "Argentina's 'La odisea de los giles' (Heroic Losers) was a notable mid-market success, drawing between 1.5 and 2 million viewers."
+      ],
+      "speculative_claims": [
+        "In international film distribution, tracking 'attendance' (or admissions) rather than box office revenue is the standard method for comparing market penetration across countries, as it avoids distortions caused by fluctuating exchange rates and varying local ticket prices.",
+        "The data shows that comedies and highly publicized biographical dramas tend to perform best in large commercial markets, such as Mexico's 'No manches Frida 2' and Brazil's 'Nada a perder - Parte 2'.",
+        "These figures illustrate the immense difficulty local productions face in securing screen time and marketing reach in regions dominated by Hollywood imports.",
+        "These stark differences in attendance highlight the cultural and economic challenges facing the Latin American film industry.",
+        "For filmmakers and regional co-production funds (such as the Ibermedia program), this data underscores the necessity of cross-border co-productions to pool resources and audiences.",
+        "Without state-sponsored screen quotas or distribution subsidies, local cinematic stories in smaller nations risk being entirely crowded out of commercial theaters, limiting domestic audiences' access to their own cultural narratives.",
+        "Argentina's success reflects its historically strong domestic film culture and star-driven appeal."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 25773.78412500002,
+  "created_at": "2026-07-17T20:13:24.186740Z"
+}

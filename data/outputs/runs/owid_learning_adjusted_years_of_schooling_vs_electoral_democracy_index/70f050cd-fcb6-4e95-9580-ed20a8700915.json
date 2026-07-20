@@ -1,0 +1,68 @@
+{
+  "output_id": "70f050cd-fcb6-4e95-9580-ed20a8700915",
+  "chart_id": "owid_learning_adjusted_years_of_schooling_vs_electoral_democracy_index",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table is truncated and the 'Learning-adjusted years of schooling' column is entirely empty in the provided preview rows, though the Electoral Democracy Index values are present.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Because one of the primary variables (Learning-adjusted years of schooling) is missing from the data table preview, it is impossible to calculate or observe the correlation or trend magnitude between the two variables.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly define the subject matter, the metrics used, and their sources.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart explores the relationship between education quality/quantity (Learning-adjusted years of schooling) and democratic governance (Electoral Democracy Index) across various countries and world regions for the year 2025 [DIRECT]. The data is sourced from Our World in Data, utilizing the V-Dem (Varieties of Democracy) institute's index for electoral democracy [DIRECT]. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic state [DIRECT].\",\n    \"domain_specific_explanations\": \"Learning-adjusted years of schooling (LAYS) is a metric that combines access to education (quantity) with the quality of learning to reflect actual educational attainment [DIRECT]. The Electoral Democracy Index measures the extent to which a country's regime meets democratic ideals, such as free and fair elections, freedom of expression, and association [SPECULATIVE: Political Science / V-Dem methodology]. In the provided data, democratic index scores vary widely, with European nations like Belgium (0.889) and Austria (0.839) scoring high, while countries like Afghanistan (0.069) and Burkina Faso (0.134) score very low [DERIVED: compared EDI values across countries in the table].\",\n    \"real_world_significance\": \"Understanding the link between education and democracy is vital for policymakers, as higher educational attainment is often hypothesized to foster civic participation, critical thinking, and support for democratic institutions [SPECULATIVE: Sociology / Political Science]. Conversely, democratic institutions may invest more heavily or effectively in public education, creating a positive feedback loop [SPECULATIVE: Development Economics]. If democratic backsliding occurs, it could potentially impact educational freedom and funding, whereas improvements in education quality could lay the groundwork for stronger democratic governance in the future [SPECULATIVE: Political Science].\",\n    \"other\": \"The dataset includes regional population-weighted averages, such as Africa (0.357) and Asia (0.276), which provide macro-level benchmarks for democratic development [DERIVED: read regional averages from the table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart explores the relationship between education quality/quantity (Learning-adjusted years of schooling) and democratic governance (Electoral Democracy Index) across various countries and world regions for the year 2025\",\n      \"The data is sourced from Our World in Data, utilizing the V-Dem (Varieties of Democracy) institute's index for electoral democracy\",\n      \"The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic state\",\n      \"Learning-adjusted years of schooling (LAYS) is a metric that combines access to education (quantity) with the quality of learning to reflect actual educational attainment\"\n    ],\n    \"derived_claims\": [\n      \"In the provided data, democratic index scores vary widely, with European nations like Belgium (0.889) and Austria (0.839) scoring high, while countries like Afghanistan (0.069) and Burkina Faso (0.134) score very low [DERIVED: compared EDI values across countries in the table]\",\n      \"The dataset includes regional population-weighted averages, such as Africa (0.357) and Asia (0.276), which provide macro-level benchmarks for democratic development [DERIVED: read regional averages from the table]\"\n    ],\n    \"speculative_claims\": [\n      \"The Electoral Democracy Index measures the extent to which a country's regime meets democratic ideals, such as free and fair elections, freedom of expression, and association [SPECULATIVE: Political Science / V-Dem methodology]\",\n      \"Understanding the link between education and democracy is vital for policymakers, as higher educational attainment is often hypothesized to foster civic participation, critical thinking, and support for democratic institutions [SPECULATIVE: Sociology / Political Science]\",\n      \"Conversely, democratic institutions may invest more heavily or effectively in public education, creating a positive feedback loop [SPECULATIVE: Development Economics]\",\n      \"If democratic backsliding occurs, it could potentially impact educational freedom and funding, whereas improvements in education quality could lay the groundwork for stronger democratic governance in the future [SPECULATIVE: Political Science]\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 4,\n    \"derived_count\": 2,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table is truncated and the 'Learning-adjusted years of schooling' column is entirely empty in the provided preview rows, though the Electoral Democracy Index values are present."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Because one of the primary variables (Learning-adjusted years of schooling) is missing from the data table preview, it is impossible to calculate or observe the correlation or trend magnitude between the two variables."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly define the subject matter, the metrics used, and their sources."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart explores the relationship between education quality/quantity (Learning-adjusted years of schooling) and democratic governance (Electoral Democracy Index) across various countries and world regions for the year 2025 [DIRECT]. The data is sourced from Our World in Data, utilizing the V-Dem (Varieties of Democracy) institute's index for electoral democracy [DIRECT]. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic state [DIRECT].",
+      "domain_specific_explanations": "Learning-adjusted years of schooling (LAYS) is a metric that combines access to education (quantity) with the quality of learning to reflect actual educational attainment [DIRECT]. The Electoral Democracy Index measures the extent to which a country's regime meets democratic ideals, such as free and fair elections, freedom of expression, and association [SPECULATIVE: Political Science / V-Dem methodology]. In the provided data, democratic index scores vary widely, with European nations like Belgium (0.889) and Austria (0.839) scoring high, while countries like Afghanistan (0.069) and Burkina Faso (0.134) score very low [DERIVED: compared EDI values across countries in the table].",
+      "real_world_significance": "Understanding the link between education and democracy is vital for policymakers, as higher educational attainment is often hypothesized to foster civic participation, critical thinking, and support for democratic institutions [SPECULATIVE: Sociology / Political Science]. Conversely, democratic institutions may invest more heavily or effectively in public education, creating a positive feedback loop [SPECULATIVE: Development Economics]. If democratic backsliding occurs, it could potentially impact educational freedom and funding, whereas improvements in education quality could lay the groundwork for stronger democratic governance in the future [SPECULATIVE: Political Science].",
+      "other": "The dataset includes regional population-weighted averages, such as Africa (0.357) and Asia (0.276), which provide macro-level benchmarks for democratic development [DERIVED: read regional averages from the table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart explores the relationship between education quality/quantity (Learning-adjusted years of schooling) and democratic governance (Electoral Democracy Index) across various countries and world regions for the year 2025",
+        "The data is sourced from Our World in Data, utilizing the V-Dem (Varieties of Democracy) institute's index for electoral democracy",
+        "The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic state",
+        "Learning-adjusted years of schooling (LAYS) is a metric that combines access to education (quantity) with the quality of learning to reflect actual educational attainment"
+      ],
+      "derived_claims": [
+        "In the provided data, democratic index scores vary widely, with European nations like Belgium (0.889) and Austria (0.839) scoring high, while countries like Afghanistan (0.069) and Burkina Faso (0.134) score very low [DERIVED: compared EDI values across countries in the table]",
+        "The dataset includes regional population-weighted averages, such as Africa (0.357) and Asia (0.276), which provide macro-level benchmarks for democratic development [DERIVED: read regional averages from the table]"
+      ],
+      "speculative_claims": [
+        "The Electoral Democracy Index measures the extent to which a country's regime meets democratic ideals, such as free and fair elections, freedom of expression, and association [SPECULATIVE: Political Science / V-Dem methodology]",
+        "Understanding the link between education and democracy is vital for policymakers, as higher educational attainment is often hypothesized to foster civic participation, critical thinking, and support for democratic institutions [SPECULATIVE: Sociology / Political Science]",
+        "Conversely, democratic institutions may invest more heavily or effectively in public education, creating a positive feedback loop [SPECULATIVE: Development Economics]",
+        "If democratic backsliding occurs, it could potentially impact educational freedom and funding, whereas improvements in education quality could lay the groundwork for stronger democratic governance in the future [SPECULATIVE: Political Science]"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 4,
+      "derived_count": 2,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14026.585999999952,
+  "created_at": "2026-07-17T21:15:14.570377Z"
+}

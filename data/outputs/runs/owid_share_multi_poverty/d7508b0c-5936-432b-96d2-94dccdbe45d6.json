@@ -1,0 +1,72 @@
+{
+  "output_id": "d7508b0c-5936-432b-96d2-94dccdbe45d6",
+  "chart_id": "owid_share_multi_poverty",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for many countries, though some rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The geographic distribution and regional differences can be derived from the map and the provided data table.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, source, and expert domain story provide clear context on what multidimensional poverty is.\"\n      },\n      \"overall\": 3.3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a world map showing the share of the population living in multidimensional poverty across different countries, primarily based on data from 2022 and 2023 [DIRECT]. It is published by Our World in Data, using data sourced from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025 [DERIVED: read from image footer]. The map visualizes poverty not just by income, but through multiple deprivations [DIRECT].\",\n    \"domain_specific_explanations\": \"Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators [DIRECT]. Unlike traditional income-based poverty measures (like living on less than $2.15 a day), the Multidimensional Poverty Index (MPI) captures overlapping deprivations that individuals face simultaneously, such as lack of clean water, electricity, malnutrition, or school attendance [SPECULATIVE: Oxford Poverty and Human Development Initiative (OPHI) / UNDP MPI methodology]. For example, a value of 64.88% in Afghanistan [DIRECT] means nearly two-thirds of the population experiences multiple deprivations across these dimensions simultaneously.\",\n    \"real_world_significance\": \"The data reveals stark regional disparities, with Sub-Saharan Africa and parts of South Asia exhibiting the highest concentrations of multidimensional poverty [DERIVED: compared country values in the table and map colors], such as Afghanistan at 64.88% [DIRECT] and Mozambique at 60.67% [DIRECT]. In contrast, countries in North and South America, such as Mexico at 5.27% [DIRECT] and Peru at 5.63% [DIRECT], show much lower shares [DERIVED: compared country values]. These insights are critical for international development organizations, policymakers, and NGOs to target aid and resources to areas with the most severe overlapping deprivations, rather than relying solely on GDP or income metrics [SPECULATIVE: Development Economics / United Nations Sustainable Development Goals].\",\n    \"other\": \"The map shows a significant amount of 'No data' in high-income regions like North America, Western Europe, and Australia [DERIVED: read from map image], which typically do not have MPI assessments designed for developing nations [SPECULATIVE: OPHI/UNDP MPI scope].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a world map showing the share of the population living in multidimensional poverty across different countries, primarily based on data from 2022 and 2023\",\n      \"The map visualizes poverty not just by income, but through multiple deprivations\",\n      \"Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators\",\n      \"Afghanistan has a multidimensional poverty rate of 64.88%\",\n      \"Mozambique has a multidimensional poverty rate of 60.67%\",\n      \"Mexico has a multidimensional poverty rate of 5.27%\",\n      \"Peru has a multidimensional poverty rate of 5.63%\"\n    ],\n    \"derived_claims\": [\n      \"It is published by Our World in Data, using data sourced from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025\",\n      \"The data reveals stark regional disparities, with Sub-Saharan Africa and parts of South Asia exhibiting the highest concentrations of multidimensional poverty\",\n      \"In contrast, countries in North and South America show much lower shares\",\n      \"The map shows a significant amount of 'No data' in high-income regions like North America, Western Europe, and Australia\"\n    ],\n    \"speculative_claims\": [\n      \"Unlike traditional income-based poverty measures (like living on less than $2.15 a day), the Multidimensional Poverty Index (MPI) captures overlapping deprivations that individuals face simultaneously, such as lack of clean water, electricity, malnutrition, or school attendance\",\n      \"These insights are critical for international development organizations, policymakers, and NGOs to target aid and resources to areas with the most severe overlapping deprivations, rather than relying solely on GDP or income metrics\",\n      \"High-income regions typically do not have MPI assessments designed for developing nations\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 7,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for many countries, though some rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The geographic distribution and regional differences can be derived from the map and the provided data table."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, source, and expert domain story provide clear context on what multidimensional poverty is."
+        },
+        "overall": 3.3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a world map showing the share of the population living in multidimensional poverty across different countries, primarily based on data from 2022 and 2023 [DIRECT]. It is published by Our World in Data, using data sourced from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025 [DERIVED: read from image footer]. The map visualizes poverty not just by income, but through multiple deprivations [DIRECT].",
+      "domain_specific_explanations": "Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators [DIRECT]. Unlike traditional income-based poverty measures (like living on less than $2.15 a day), the Multidimensional Poverty Index (MPI) captures overlapping deprivations that individuals face simultaneously, such as lack of clean water, electricity, malnutrition, or school attendance [SPECULATIVE: Oxford Poverty and Human Development Initiative (OPHI) / UNDP MPI methodology]. For example, a value of 64.88% in Afghanistan [DIRECT] means nearly two-thirds of the population experiences multiple deprivations across these dimensions simultaneously.",
+      "real_world_significance": "The data reveals stark regional disparities, with Sub-Saharan Africa and parts of South Asia exhibiting the highest concentrations of multidimensional poverty [DERIVED: compared country values in the table and map colors], such as Afghanistan at 64.88% [DIRECT] and Mozambique at 60.67% [DIRECT]. In contrast, countries in North and South America, such as Mexico at 5.27% [DIRECT] and Peru at 5.63% [DIRECT], show much lower shares [DERIVED: compared country values]. These insights are critical for international development organizations, policymakers, and NGOs to target aid and resources to areas with the most severe overlapping deprivations, rather than relying solely on GDP or income metrics [SPECULATIVE: Development Economics / United Nations Sustainable Development Goals].",
+      "other": "The map shows a significant amount of 'No data' in high-income regions like North America, Western Europe, and Australia [DERIVED: read from map image], which typically do not have MPI assessments designed for developing nations [SPECULATIVE: OPHI/UNDP MPI scope]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a world map showing the share of the population living in multidimensional poverty across different countries, primarily based on data from 2022 and 2023",
+        "The map visualizes poverty not just by income, but through multiple deprivations",
+        "Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators",
+        "Afghanistan has a multidimensional poverty rate of 64.88%",
+        "Mozambique has a multidimensional poverty rate of 60.67%",
+        "Mexico has a multidimensional poverty rate of 5.27%",
+        "Peru has a multidimensional poverty rate of 5.63%"
+      ],
+      "derived_claims": [
+        "It is published by Our World in Data, using data sourced from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025",
+        "The data reveals stark regional disparities, with Sub-Saharan Africa and parts of South Asia exhibiting the highest concentrations of multidimensional poverty",
+        "In contrast, countries in North and South America show much lower shares",
+        "The map shows a significant amount of 'No data' in high-income regions like North America, Western Europe, and Australia"
+      ],
+      "speculative_claims": [
+        "Unlike traditional income-based poverty measures (like living on less than $2.15 a day), the Multidimensional Poverty Index (MPI) captures overlapping deprivations that individuals face simultaneously, such as lack of clean water, electricity, malnutrition, or school attendance",
+        "These insights are critical for international development organizations, policymakers, and NGOs to target aid and resources to areas with the most severe overlapping deprivations, rather than relying solely on GDP or income metrics",
+        "High-income regions typically do not have MPI assessments designed for developing nations"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 7,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11991.277375000209,
+  "created_at": "2026-07-17T20:45:51.295214Z"
+}

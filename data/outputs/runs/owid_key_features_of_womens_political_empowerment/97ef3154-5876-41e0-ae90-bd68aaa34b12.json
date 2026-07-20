@@ -1,0 +1,69 @@
+{
+  "output_id": "97ef3154-5876-41e0-ae90-bd68aaa34b12",
+  "chart_id": "owid_key_features_of_womens_political_empowerment",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides exact values for 25 entities across multiple dimensions, though the table is truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The data is a cross-sectional snapshot for the year 2025, so temporal trends cannot be analyzed, but cross-entity comparisons are possible.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly identify the subject as women's political empowerment using V-Dem indices.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart presents data on key features of women's political empowerment across various countries and regions for the year 2025 [DIRECT]. The data is sourced from the Varieties of Democracy (V-Dem) project, which uses expert estimates to construct indices ranging from 0 to 1, where 1 represents the highest level of empowerment [DIRECT]. The dataset evaluates multiple dimensions: overall political empowerment, civil liberties, civil society participation, and political participation [DIRECT].\",\n    \"domain_specific_explanations\": \"An index value close to 1 indicates robust institutional support and active involvement of women in the political sphere, whereas a value close to 0 indicates severe restrictions or lack of representation [DERIVED: Interpreted index range of 0 to 1 from the expert domain story]. For example, in 2025, Afghanistan has extremely low scores across all categories, with its overall political empowerment index at 0.028 and civil society participation at 0.006 [DIRECT]. Conversely, countries like Belgium and Australia show very high levels of empowerment, with overall scores of 0.952 and 0.906 respectively, and political participation scores near or at 1.0 [DIRECT]. The V-Dem methodology relies on expert assessments to quantify qualitative aspects of governance, such as freedom of movement, freedom of expression, and representation in legislative bodies [SPECULATIVE: V-Dem Methodology].\",\n    \"real_world_significance\": \"These indices are critical for international organizations, policymakers, and human rights advocates to monitor progress toward gender equality and identify areas where women's rights are being marginalized [SPECULATIVE: Human Rights & Policy]. The stark contrast between countries like Afghanistan (overall 0.028) and Belgium (overall 0.952) highlights the global disparity in women's rights and political agency [DERIVED: Compared Afghanistan and Belgium overall scores]. Low scores in civil liberties and civil society participation often correlate with broader democratic backsliding and authoritarian governance [SPECULATIVE: Political Science Literature].\",\n    \"other\": \"Regional aggregates, such as Africa (overall 0.663) and Asia (overall 0.592), provide a macro-level view of women's empowerment, showing moderate progress but still lagging behind highly developed nations [DERIVED: Compared regional averages to individual high-performing countries like Belgium].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart presents data on key features of women's political empowerment across various countries and regions for the year 2025\",\n      \"The data is sourced from the Varieties of Democracy (V-Dem) project, which uses expert estimates to construct indices ranging from 0 to 1, where 1 represents the highest level of empowerment\",\n      \"The dataset evaluates multiple dimensions: overall political empowerment, civil liberties, civil society participation, and political participation\",\n      \"For example, in 2025, Afghanistan has extremely low scores across all categories, with its overall political empowerment index at 0.028 and civil society participation at 0.006\",\n      \"Conversely, countries like Belgium and Australia show very high levels of empowerment, with overall scores of 0.952 and 0.906 respectively, and political participation scores near or at 1.0\"\n    ],\n    \"derived_claims\": [\n      \"An index value close to 1 indicates robust institutional support and active involvement of women in the political sphere, whereas a value close to 0 indicates severe restrictions or lack of representation [DERIVED: Interpreted index range of 0 to 1 from the expert domain story]\",\n      \"The stark contrast between countries like Afghanistan (overall 0.028) and Belgium (overall 0.952) highlights the global disparity in women's rights and political agency [DERIVED: Compared Afghanistan and Belgium overall scores]\",\n      \"Regional aggregates, such as Africa (overall 0.663) and Asia (overall 0.592), provide a macro-level view of women's empowerment, showing moderate progress but still lagging behind highly developed nations [DERIVED: Compared regional averages to individual high-performing countries like Belgium]\"\n    ],\n    \"speculative_claims\": [\n      \"The V-Dem methodology relies on expert assessments to quantify qualitative aspects of governance, such as freedom of movement, freedom of expression, and representation in legislative bodies [SPECULATIVE: V-Dem Methodology]\",\n      \"These indices are critical for international organizations, policymakers, and human rights advocates to monitor progress toward gender equality and identify areas where women's rights are being marginalized [SPECULATIVE: Human Rights & Policy]\",\n      \"Low scores in civil liberties and civil society participation often correlate with broader democratic backsliding and authoritarian governance [SPECULATIVE: Political Science Literature]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 5,\n    \"derived_count\": 3,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides exact values for 25 entities across multiple dimensions, though the table is truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The data is a cross-sectional snapshot for the year 2025, so temporal trends cannot be analyzed, but cross-entity comparisons are possible."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly identify the subject as women's political empowerment using V-Dem indices."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart presents data on key features of women's political empowerment across various countries and regions for the year 2025 [DIRECT]. The data is sourced from the Varieties of Democracy (V-Dem) project, which uses expert estimates to construct indices ranging from 0 to 1, where 1 represents the highest level of empowerment [DIRECT]. The dataset evaluates multiple dimensions: overall political empowerment, civil liberties, civil society participation, and political participation [DIRECT].",
+      "domain_specific_explanations": "An index value close to 1 indicates robust institutional support and active involvement of women in the political sphere, whereas a value close to 0 indicates severe restrictions or lack of representation [DERIVED: Interpreted index range of 0 to 1 from the expert domain story]. For example, in 2025, Afghanistan has extremely low scores across all categories, with its overall political empowerment index at 0.028 and civil society participation at 0.006 [DIRECT]. Conversely, countries like Belgium and Australia show very high levels of empowerment, with overall scores of 0.952 and 0.906 respectively, and political participation scores near or at 1.0 [DIRECT]. The V-Dem methodology relies on expert assessments to quantify qualitative aspects of governance, such as freedom of movement, freedom of expression, and representation in legislative bodies [SPECULATIVE: V-Dem Methodology].",
+      "real_world_significance": "These indices are critical for international organizations, policymakers, and human rights advocates to monitor progress toward gender equality and identify areas where women's rights are being marginalized [SPECULATIVE: Human Rights & Policy]. The stark contrast between countries like Afghanistan (overall 0.028) and Belgium (overall 0.952) highlights the global disparity in women's rights and political agency [DERIVED: Compared Afghanistan and Belgium overall scores]. Low scores in civil liberties and civil society participation often correlate with broader democratic backsliding and authoritarian governance [SPECULATIVE: Political Science Literature].",
+      "other": "Regional aggregates, such as Africa (overall 0.663) and Asia (overall 0.592), provide a macro-level view of women's empowerment, showing moderate progress but still lagging behind highly developed nations [DERIVED: Compared regional averages to individual high-performing countries like Belgium]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart presents data on key features of women's political empowerment across various countries and regions for the year 2025",
+        "The data is sourced from the Varieties of Democracy (V-Dem) project, which uses expert estimates to construct indices ranging from 0 to 1, where 1 represents the highest level of empowerment",
+        "The dataset evaluates multiple dimensions: overall political empowerment, civil liberties, civil society participation, and political participation",
+        "For example, in 2025, Afghanistan has extremely low scores across all categories, with its overall political empowerment index at 0.028 and civil society participation at 0.006",
+        "Conversely, countries like Belgium and Australia show very high levels of empowerment, with overall scores of 0.952 and 0.906 respectively, and political participation scores near or at 1.0"
+      ],
+      "derived_claims": [
+        "An index value close to 1 indicates robust institutional support and active involvement of women in the political sphere, whereas a value close to 0 indicates severe restrictions or lack of representation [DERIVED: Interpreted index range of 0 to 1 from the expert domain story]",
+        "The stark contrast between countries like Afghanistan (overall 0.028) and Belgium (overall 0.952) highlights the global disparity in women's rights and political agency [DERIVED: Compared Afghanistan and Belgium overall scores]",
+        "Regional aggregates, such as Africa (overall 0.663) and Asia (overall 0.592), provide a macro-level view of women's empowerment, showing moderate progress but still lagging behind highly developed nations [DERIVED: Compared regional averages to individual high-performing countries like Belgium]"
+      ],
+      "speculative_claims": [
+        "The V-Dem methodology relies on expert assessments to quantify qualitative aspects of governance, such as freedom of movement, freedom of expression, and representation in legislative bodies [SPECULATIVE: V-Dem Methodology]",
+        "These indices are critical for international organizations, policymakers, and human rights advocates to monitor progress toward gender equality and identify areas where women's rights are being marginalized [SPECULATIVE: Human Rights & Policy]",
+        "Low scores in civil liberties and civil society participation often correlate with broader democratic backsliding and authoritarian governance [SPECULATIVE: Political Science Literature]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 5,
+      "derived_count": 3,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11992.734041999938,
+  "created_at": "2026-07-17T20:38:57.192673Z"
+}

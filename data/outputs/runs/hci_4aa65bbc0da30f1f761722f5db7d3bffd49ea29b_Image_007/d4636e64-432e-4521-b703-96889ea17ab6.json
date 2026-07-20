@@ -1,0 +1,70 @@
+{
+  "output_id": "d4636e64-432e-4521-b703-96889ea17ab6",
+  "chart_id": "hci_4aa65bbc0da30f1f761722f5db7d3bffd49ea29b_Image_007",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No raw data values or coordinates are provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The metadata mentions a relationship and an OLS regression line, but does not specify the direction (positive/negative) or strength of the trend.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly identifiable as crowd work research (specifically HIT rewards and hourly wages) from a CHI 2018 paper.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot showing the relationship between HIT (Human Intelligence Task) reward and hourly wage [DIRECT]. It was published in a CHI 2018 paper [DIRECT]. The chart includes an ordinary least squares (OLS) linear regression line fit to the data [DIRECT]. This research likely investigates crowd work dynamics, specifically how individual task rewards translate to an effective hourly wage for crowd workers [SPECULATIVE: Human-Computer Interaction / Crowd Work].\",\n    \"domain_specific_explanations\": \"'HIT' stands for Human Intelligence Task, a term heavily associated with Amazon Mechanical Turk (MTurk) [SPECULATIVE: Crowd Work / MTurk]. 'Transformed reward' suggests the researchers applied a mathematical transformation (such as a log transform) to the raw reward values, which is common when dealing with highly skewed financial data in crowd work [SPECULATIVE: Statistics / Crowd Work]. The hourly wage represents the effective rate of pay a worker earns, which depends on both the reward per task and the time taken to complete it [SPECULATIVE: Crowd Work]. An ordinary least squares (OLS) regression line is used to model the linear relationship between these two variables to see if higher task rewards reliably predict higher hourly wages [DERIVED: analyzed the alt text and title].\",\n    \"real_world_significance\": \"Crowd workers often struggle to estimate their actual hourly earnings because tasks are paid individually (per HIT) rather than hourly [SPECULATIVE: Crowd Work Economics]. Understanding the relationship between nominal HIT rewards and actual hourly wages is crucial for designing fairer platforms and ensuring crowd workers receive ethical compensation [SPECULATIVE: Human-Computer Interaction / Labor Economics]. If the regression shows a weak relationship, it implies that high-paying tasks might take disproportionately longer, failing to guarantee a better hourly wage [SPECULATIVE: Labor Economics].\",\n    \"other\": \"No further visual details or data points are available to analyze [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is a scatter plot showing the relationship between HIT (Human Intelligence Task) reward and hourly wage.\",\n      \"It was published in a CHI 2018 paper.\",\n      \"The chart includes an ordinary least squares (OLS) linear regression line fit to the data.\",\n      \"No further visual details or data points are available to analyze.\"\n    ],\n    \"derived_claims\": [\n      \"An ordinary least squares (OLS) regression line is used to model the linear relationship between these two variables to see if higher task rewards reliably predict higher hourly wages.\"\n    ],\n    \"speculative_claims\": [\n      \"This research likely investigates crowd work dynamics, specifically how individual task rewards translate to an effective hourly wage for crowd workers.\",\n      \"'HIT' stands for Human Intelligence Task, a term heavily associated with Amazon Mechanical Turk (MTurk).\",\n      \"'Transformed reward' suggests the researchers applied a mathematical transformation (such as a log transform) to the raw reward values, which is common when dealing with highly skewed financial data in crowd work.\",\n      \"The hourly wage represents the effective rate of pay a worker earns, which depends on both the reward per task and the time taken to complete it.\",\n      \"Crowd workers often struggle to estimate their actual hourly earnings because tasks are paid individually (per HIT) rather than hourly.\",\n      \"Understanding the relationship between nominal HIT rewards and actual hourly wages is crucial for designing fairer platforms and ensuring crowd workers receive ethical compensation.\",\n      \"If the regression shows a weak relationship, it implies that high-paying tasks might take disproportionately longer, failing to guarantee a better hourly wage.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 1,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No raw data values or coordinates are provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The metadata mentions a relationship and an OLS regression line, but does not specify the direction (positive/negative) or strength of the trend."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly identifiable as crowd work research (specifically HIT rewards and hourly wages) from a CHI 2018 paper."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot showing the relationship between HIT (Human Intelligence Task) reward and hourly wage [DIRECT]. It was published in a CHI 2018 paper [DIRECT]. The chart includes an ordinary least squares (OLS) linear regression line fit to the data [DIRECT]. This research likely investigates crowd work dynamics, specifically how individual task rewards translate to an effective hourly wage for crowd workers [SPECULATIVE: Human-Computer Interaction / Crowd Work].",
+      "domain_specific_explanations": "'HIT' stands for Human Intelligence Task, a term heavily associated with Amazon Mechanical Turk (MTurk) [SPECULATIVE: Crowd Work / MTurk]. 'Transformed reward' suggests the researchers applied a mathematical transformation (such as a log transform) to the raw reward values, which is common when dealing with highly skewed financial data in crowd work [SPECULATIVE: Statistics / Crowd Work]. The hourly wage represents the effective rate of pay a worker earns, which depends on both the reward per task and the time taken to complete it [SPECULATIVE: Crowd Work]. An ordinary least squares (OLS) regression line is used to model the linear relationship between these two variables to see if higher task rewards reliably predict higher hourly wages [DERIVED: analyzed the alt text and title].",
+      "real_world_significance": "Crowd workers often struggle to estimate their actual hourly earnings because tasks are paid individually (per HIT) rather than hourly [SPECULATIVE: Crowd Work Economics]. Understanding the relationship between nominal HIT rewards and actual hourly wages is crucial for designing fairer platforms and ensuring crowd workers receive ethical compensation [SPECULATIVE: Human-Computer Interaction / Labor Economics]. If the regression shows a weak relationship, it implies that high-paying tasks might take disproportionately longer, failing to guarantee a better hourly wage [SPECULATIVE: Labor Economics].",
+      "other": "No further visual details or data points are available to analyze [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is a scatter plot showing the relationship between HIT (Human Intelligence Task) reward and hourly wage.",
+        "It was published in a CHI 2018 paper.",
+        "The chart includes an ordinary least squares (OLS) linear regression line fit to the data.",
+        "No further visual details or data points are available to analyze."
+      ],
+      "derived_claims": [
+        "An ordinary least squares (OLS) regression line is used to model the linear relationship between these two variables to see if higher task rewards reliably predict higher hourly wages."
+      ],
+      "speculative_claims": [
+        "This research likely investigates crowd work dynamics, specifically how individual task rewards translate to an effective hourly wage for crowd workers.",
+        "'HIT' stands for Human Intelligence Task, a term heavily associated with Amazon Mechanical Turk (MTurk).",
+        "'Transformed reward' suggests the researchers applied a mathematical transformation (such as a log transform) to the raw reward values, which is common when dealing with highly skewed financial data in crowd work.",
+        "The hourly wage represents the effective rate of pay a worker earns, which depends on both the reward per task and the time taken to complete it.",
+        "Crowd workers often struggle to estimate their actual hourly earnings because tasks are paid individually (per HIT) rather than hourly.",
+        "Understanding the relationship between nominal HIT rewards and actual hourly wages is crucial for designing fairer platforms and ensuring crowd workers receive ethical compensation.",
+        "If the regression shows a weak relationship, it implies that high-paying tasks might take disproportionately longer, failing to guarantee a better hourly wage."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 1,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 9452.568333999807,
+  "created_at": "2026-07-17T22:11:55.219724Z"
+}

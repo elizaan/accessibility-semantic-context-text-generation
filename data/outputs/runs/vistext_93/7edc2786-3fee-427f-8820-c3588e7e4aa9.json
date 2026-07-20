@@ -1,0 +1,71 @@
+{
+  "output_id": "7edc2786-3fee-427f-8820-c3588e7e4aa9",
+  "chart_id": "vistext_93",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated, but the L2 caption and chart image provide the overall start, peak, and end values.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L2 caption explicitly states the overall trend magnitude (reducing from 100 down to 60 per 100,000 residents).\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title and axis labels clearly define the subject domain as Canadian robbery rates over time.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the reported robbery rate in Canada from 2000 to 2019, measured as the number of robberies per 100,000 residents [DIRECT]. This data is typically compiled by Statistics Canada through the Uniform Crime Reporting (UCR) Survey, which aggregates criminal incidents reported to police services across the country [SPECULATIVE: Statistics Canada]. The overall trend shows a substantial decline in robbery rates over this two-decade period [DERIVED: Comparing the rate of ~100 in 2000 to ~60 in 2019 from the L2 caption and chart image].\",\n    \"domain_specific_explanations\": \"In criminology, robbery is defined as theft involving the use or threat of violence, distinguishing it from simple theft [SPECULATIVE: Criminal Law]. Measuring crime 'per 100,000 residents' is a standard criminological metric that allows for accurate comparison across different population sizes and time periods [SPECULATIVE: Criminology]. The rate peaked in 2005 at approximately 106.36 per 100,000 residents [DIRECT] before beginning a steady downward trajectory, reaching a low of approximately 60 per 100,000 residents by 2014, after which it stabilized through 2019 [DERIVED: Reading the trend line values from 2014 to 2019 in the chart image].\",\n    \"real_world_significance\": \"The decline in robbery rates in Canada mirrors a broader 'crime drop' observed across many Western nations starting in the late 20th century and continuing into the 2000s [SPECULATIVE: Criminology]. Criminologists often attribute this decline to various factors, including improved security technologies (such as cashless transactions, mobile tracking, and CCTV), changing demographics (an aging population), and shifts in policing strategies [SPECULATIVE: Criminology]. A lower robbery rate suggests improved public safety and can influence policy decisions regarding police resource allocation, urban planning, and social services [SPECULATIVE: Public Policy].\",\n    \"other\": \"The stabilization of the rate between 2014 and 2019 at around 60 per 100,000 residents suggests that the factors driving the initial decline may have reached a plateau [DERIVED: Observing the flat trend line from 2014 to 2019 in the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the reported robbery rate in Canada from 2000 to 2019, measured as the number of robberies per 100,000 residents\",\n      \"The rate peaked in 2005 at approximately 106.36 per 100,000 residents\"\n    ],\n    \"derived_claims\": [\n      \"The overall trend shows a substantial decline in robbery rates over this two-decade period [derived from comparing the rate of ~100 in 2000 to ~60 in 2019 from the L2 caption and chart image]\",\n      \"The rate reached a low of approximately 60 per 100,000 residents by 2014, after which it stabilized through 2019 [derived from reading the trend line values from 2014 to 2019 in the chart image]\",\n      \"The stabilization of the rate between 2014 and 2019 at around 60 per 100,000 residents suggests that the factors driving the initial decline may have reached a plateau [derived from observing the flat trend line from 2014 to 2019 in the chart image]\"\n    ],\n    \"speculative_claims\": [\n      \"This data is typically compiled by Statistics Canada through the Uniform Crime Reporting (UCR) Survey, which aggregates criminal incidents reported to police services across the country [source: Statistics Canada]\",\n      \"In criminology, robbery is defined as theft involving the use or threat of violence, distinguishing it from simple theft [source: Criminal Law]\",\n      \"Measuring crime 'per 100,000 residents' is a standard criminological metric that allows for accurate comparison across different population sizes and time periods [source: Criminology]\",\n      \"The decline in robbery rates in Canada mirrors a broader 'crime drop' observed across many Western nations starting in the late 20th century and continuing into the 2000s [source: Criminology]\",\n      \"Criminologists often attribute this decline to various factors, including improved security technologies (such as cashless transactions, mobile tracking, and CCTV), changing demographics (an aging population), and shifts in policing strategies [source: Criminology]\",\n      \"A lower robbery rate suggests improved public safety and can influence policy decisions regarding police resource allocation, urban planning, and social services [source: Public Policy]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated, but the L2 caption and chart image provide the overall start, peak, and end values."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L2 caption explicitly states the overall trend magnitude (reducing from 100 down to 60 per 100,000 residents)."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title and axis labels clearly define the subject domain as Canadian robbery rates over time."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the reported robbery rate in Canada from 2000 to 2019, measured as the number of robberies per 100,000 residents [DIRECT]. This data is typically compiled by Statistics Canada through the Uniform Crime Reporting (UCR) Survey, which aggregates criminal incidents reported to police services across the country [SPECULATIVE: Statistics Canada]. The overall trend shows a substantial decline in robbery rates over this two-decade period [DERIVED: Comparing the rate of ~100 in 2000 to ~60 in 2019 from the L2 caption and chart image].",
+      "domain_specific_explanations": "In criminology, robbery is defined as theft involving the use or threat of violence, distinguishing it from simple theft [SPECULATIVE: Criminal Law]. Measuring crime 'per 100,000 residents' is a standard criminological metric that allows for accurate comparison across different population sizes and time periods [SPECULATIVE: Criminology]. The rate peaked in 2005 at approximately 106.36 per 100,000 residents [DIRECT] before beginning a steady downward trajectory, reaching a low of approximately 60 per 100,000 residents by 2014, after which it stabilized through 2019 [DERIVED: Reading the trend line values from 2014 to 2019 in the chart image].",
+      "real_world_significance": "The decline in robbery rates in Canada mirrors a broader 'crime drop' observed across many Western nations starting in the late 20th century and continuing into the 2000s [SPECULATIVE: Criminology]. Criminologists often attribute this decline to various factors, including improved security technologies (such as cashless transactions, mobile tracking, and CCTV), changing demographics (an aging population), and shifts in policing strategies [SPECULATIVE: Criminology]. A lower robbery rate suggests improved public safety and can influence policy decisions regarding police resource allocation, urban planning, and social services [SPECULATIVE: Public Policy].",
+      "other": "The stabilization of the rate between 2014 and 2019 at around 60 per 100,000 residents suggests that the factors driving the initial decline may have reached a plateau [DERIVED: Observing the flat trend line from 2014 to 2019 in the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the reported robbery rate in Canada from 2000 to 2019, measured as the number of robberies per 100,000 residents",
+        "The rate peaked in 2005 at approximately 106.36 per 100,000 residents"
+      ],
+      "derived_claims": [
+        "The overall trend shows a substantial decline in robbery rates over this two-decade period [derived from comparing the rate of ~100 in 2000 to ~60 in 2019 from the L2 caption and chart image]",
+        "The rate reached a low of approximately 60 per 100,000 residents by 2014, after which it stabilized through 2019 [derived from reading the trend line values from 2014 to 2019 in the chart image]",
+        "The stabilization of the rate between 2014 and 2019 at around 60 per 100,000 residents suggests that the factors driving the initial decline may have reached a plateau [derived from observing the flat trend line from 2014 to 2019 in the chart image]"
+      ],
+      "speculative_claims": [
+        "This data is typically compiled by Statistics Canada through the Uniform Crime Reporting (UCR) Survey, which aggregates criminal incidents reported to police services across the country [source: Statistics Canada]",
+        "In criminology, robbery is defined as theft involving the use or threat of violence, distinguishing it from simple theft [source: Criminal Law]",
+        "Measuring crime 'per 100,000 residents' is a standard criminological metric that allows for accurate comparison across different population sizes and time periods [source: Criminology]",
+        "The decline in robbery rates in Canada mirrors a broader 'crime drop' observed across many Western nations starting in the late 20th century and continuing into the 2000s [source: Criminology]",
+        "Criminologists often attribute this decline to various factors, including improved security technologies (such as cashless transactions, mobile tracking, and CCTV), changing demographics (an aging population), and shifts in policing strategies [source: Criminology]",
+        "A lower robbery rate suggests improved public safety and can influence policy decisions regarding police resource allocation, urban planning, and social services [source: Public Policy]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13742.237375001423,
+  "created_at": "2026-07-20T14:03:38.296830Z"
+}

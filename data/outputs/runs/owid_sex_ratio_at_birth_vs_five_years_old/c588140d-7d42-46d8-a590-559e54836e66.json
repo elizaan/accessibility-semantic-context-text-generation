@@ -1,0 +1,73 @@
+{
+  "output_id": "c588140d-7d42-46d8-a590-559e54836e66",
+  "chart_id": "owid_sex_ratio_at_birth_vs_five_years_old",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table provides a solid sample of 25 countries and regions for the year 2023, though a few rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The exact differences between birth and age five ratios can be calculated for individual rows, but the overall global trendline is not explicitly summarized.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, expert story, and data columns make the demographic domain of sex ratios and early childhood survival very clear.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart compares the sex ratio at birth against the sex ratio at age five across various countries and UN regions for the year 2023 [DIRECT]. It is sourced from Our World in Data (OWID) [DIRECT]. The primary analytical purpose of this comparison is to observe how the ratio of males to females changes during the first five years of life [DERIVED: deduced from comparing birth vs age 5 ratios in the dataset].\",\n    \"domain_specific_explanations\": \"In demography, the sex ratio is expressed as the number of male births or children per 100 female births or children [DIRECT]. A natural biological sex ratio at birth is typically around 105 males per 100 females [SPECULATIVE: World Health Organization / demographic science]. If a country lies above the 1:1 equal ratio line, its sex ratio at birth is higher than at age five, meaning the male-to-female ratio decreased over the first five years [DIRECT]. This decrease is common because male infants biologically have slightly higher mortality rates under normal conditions [SPECULATIVE: pediatric medicine / demography]. Conversely, if the ratio at age five is higher than at birth—as seen in Albania going from 107.02 to 108.68, or Andorra from 105.82 to 111.97 [DERIVED: calculated from Albania and Andorra data rows]—it indicates a higher relative mortality rate for female children or other demographic anomalies [SPECULATIVE: demography].\",\n    \"real_world_significance\": \"Significant deviations from the natural sex ratio at birth, such as Azerbaijan's ratio of 111.63 [DERIVED: identified from Azerbaijan's birth ratio in the data table], often reflect active prenatal sex selection or sex-selective abortion practices [SPECULATIVE: United Nations Population Fund (UNFPA)]. Furthermore, an increasing sex ratio between birth and age five can highlight gender-biased neglect, unequal access to healthcare, or nutritional discrimination against female children [SPECULATIVE: UNICEF / gender studies]. Understanding these shifts helps international policymakers and health organizations target interventions for child survival and address systemic gender discrimination [SPECULATIVE: public policy / global health].\",\n    \"other\": \"Some small-population entities like American Samoa show dramatic shifts, dropping from 105.70 at birth to 97.07 at age five [DERIVED: calculated from American Samoa's data row], which may be heavily influenced by small sample sizes or migration patterns rather than mortality alone [SPECULATIVE: statistical demography].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart compares the sex ratio at birth against the sex ratio at age five across various countries and UN regions for the year 2023\",\n      \"It is sourced from Our World in Data (OWID)\",\n      \"In demography, the sex ratio is expressed as the number of male births or children per 100 female births or children\",\n      \"If a country lies above the 1:1 equal ratio line, its sex ratio at birth is higher than at age five, meaning the male-to-female ratio decreased over the first five years\"\n    ],\n    \"derived_claims\": [\n      \"The primary analytical purpose of this comparison is to observe how the ratio of males to females changes during the first five years of life\",\n      \"Conversely, if the ratio at age five is higher than at birth—as seen in Albania going from 107.02 to 108.68, or Andorra from 105.82 to 111.97\",\n      \"Significant deviations from the natural sex ratio at birth, such as Azerbaijan's ratio of 111.63\",\n      \"Some small-population entities like American Samoa show dramatic shifts, dropping from 105.70 at birth to 97.07 at age five\"\n    ],\n    \"speculative_claims\": [\n      \"A natural biological sex ratio at birth is typically around 105 males per 100 females\",\n      \"This decrease is common because male infants biologically have slightly higher mortality rates under normal conditions\",\n      \"it indicates a higher relative mortality rate for female children or other demographic anomalies\",\n      \"often reflect active prenatal sex selection or sex-selective abortion practices\",\n      \"Furthermore, an increasing sex ratio between birth and age five can highlight gender-biased neglect, unequal access to healthcare, or nutritional discrimination against female children\",\n      \"Understanding these shifts helps international policymakers and health organizations target interventions for child survival and address systemic gender discrimination\",\n      \"which may be heavily influenced by small sample sizes or migration patterns rather than mortality alone\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table provides a solid sample of 25 countries and regions for the year 2023, though a few rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The exact differences between birth and age five ratios can be calculated for individual rows, but the overall global trendline is not explicitly summarized."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, expert story, and data columns make the demographic domain of sex ratios and early childhood survival very clear."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart compares the sex ratio at birth against the sex ratio at age five across various countries and UN regions for the year 2023 [DIRECT]. It is sourced from Our World in Data (OWID) [DIRECT]. The primary analytical purpose of this comparison is to observe how the ratio of males to females changes during the first five years of life [DERIVED: deduced from comparing birth vs age 5 ratios in the dataset].",
+      "domain_specific_explanations": "In demography, the sex ratio is expressed as the number of male births or children per 100 female births or children [DIRECT]. A natural biological sex ratio at birth is typically around 105 males per 100 females [SPECULATIVE: World Health Organization / demographic science]. If a country lies above the 1:1 equal ratio line, its sex ratio at birth is higher than at age five, meaning the male-to-female ratio decreased over the first five years [DIRECT]. This decrease is common because male infants biologically have slightly higher mortality rates under normal conditions [SPECULATIVE: pediatric medicine / demography]. Conversely, if the ratio at age five is higher than at birth—as seen in Albania going from 107.02 to 108.68, or Andorra from 105.82 to 111.97 [DERIVED: calculated from Albania and Andorra data rows]—it indicates a higher relative mortality rate for female children or other demographic anomalies [SPECULATIVE: demography].",
+      "real_world_significance": "Significant deviations from the natural sex ratio at birth, such as Azerbaijan's ratio of 111.63 [DERIVED: identified from Azerbaijan's birth ratio in the data table], often reflect active prenatal sex selection or sex-selective abortion practices [SPECULATIVE: United Nations Population Fund (UNFPA)]. Furthermore, an increasing sex ratio between birth and age five can highlight gender-biased neglect, unequal access to healthcare, or nutritional discrimination against female children [SPECULATIVE: UNICEF / gender studies]. Understanding these shifts helps international policymakers and health organizations target interventions for child survival and address systemic gender discrimination [SPECULATIVE: public policy / global health].",
+      "other": "Some small-population entities like American Samoa show dramatic shifts, dropping from 105.70 at birth to 97.07 at age five [DERIVED: calculated from American Samoa's data row], which may be heavily influenced by small sample sizes or migration patterns rather than mortality alone [SPECULATIVE: statistical demography]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart compares the sex ratio at birth against the sex ratio at age five across various countries and UN regions for the year 2023",
+        "It is sourced from Our World in Data (OWID)",
+        "In demography, the sex ratio is expressed as the number of male births or children per 100 female births or children",
+        "If a country lies above the 1:1 equal ratio line, its sex ratio at birth is higher than at age five, meaning the male-to-female ratio decreased over the first five years"
+      ],
+      "derived_claims": [
+        "The primary analytical purpose of this comparison is to observe how the ratio of males to females changes during the first five years of life",
+        "Conversely, if the ratio at age five is higher than at birth—as seen in Albania going from 107.02 to 108.68, or Andorra from 105.82 to 111.97",
+        "Significant deviations from the natural sex ratio at birth, such as Azerbaijan's ratio of 111.63",
+        "Some small-population entities like American Samoa show dramatic shifts, dropping from 105.70 at birth to 97.07 at age five"
+      ],
+      "speculative_claims": [
+        "A natural biological sex ratio at birth is typically around 105 males per 100 females",
+        "This decrease is common because male infants biologically have slightly higher mortality rates under normal conditions",
+        "it indicates a higher relative mortality rate for female children or other demographic anomalies",
+        "often reflect active prenatal sex selection or sex-selective abortion practices",
+        "Furthermore, an increasing sex ratio between birth and age five can highlight gender-biased neglect, unequal access to healthcare, or nutritional discrimination against female children",
+        "Understanding these shifts helps international policymakers and health organizations target interventions for child survival and address systemic gender discrimination",
+        "which may be heavily influenced by small sample sizes or migration patterns rather than mortality alone"
+      ],
+      "total_flag_count": 15,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15030.663708002976,
+  "created_at": "2026-07-17T21:09:20.152544Z"
+}

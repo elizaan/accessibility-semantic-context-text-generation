@@ -1,0 +1,66 @@
+{
+  "output_id": "53edf31a-cf95-4c96-bf87-64953dbdcff4",
+  "chart_id": "owid_malaria_deaths_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The chart provides a visual stacked area representation with a y-axis up to 1 million, but exact annual death counts for individual regions are not explicitly provided in text form.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The overall trend and peak around 2004 can be estimated visually, but precise annual changes or percentage declines are not directly calculable without raw data.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, subtitle, axis labels, and data source clearly define the subject as global malaria mortality by region from 1980 to 2023.\"\n      },\n      \"overall\": 3.33\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart shows the estimated annual number of malaria deaths globally by world region from 1980 to 2023 [DIRECT]. It was produced by Our World in Data using data from the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease 2025 study [DIRECT]. The purpose is to track historical progress and regional disparities in malaria mortality over more than four decades [DERIVED: Read from title, subtitle, and axes].\",\n    \"domain_specific_explanations\": \"Malaria is a life-threatening disease spread to humans by some types of mosquitoes, primarily found in tropical countries [SPECULATIVE: Medicine/Epidemiology]. The data shows that Africa bears an overwhelming share of the global malaria burden, accounting for the vast majority of deaths throughout the entire 1980–2023 period [DERIVED: Africa's band is visually the largest by a massive margin]. The peak in global malaria deaths occurred around 2004 at over 900,000 deaths, followed by a steady decline until around 2016 [DERIVED: Read peak year 2004 and subsequent decline from the stacked area chart]. The decline after the mid-2000s corresponds historically with the scale-up of international funding, insecticide-treated bed nets, and artemisinin-based combination therapies (ACTs) [SPECULATIVE: Global Health History]. A slight uptick in deaths is visible around 2020–2021, which likely reflects disruptions to malaria prevention and treatment programs during the COVID-19 pandemic [SPECULATIVE: Global Health/COVID-19 impact].\",\n    \"real_world_significance\": \"The persistent concentration of malaria deaths in Africa highlights a critical environmental and socioeconomic justice issue, as the disease disproportionately affects low-income countries with limited healthcare infrastructure [SPECULATIVE: Public Health Policy]. The dramatic reduction in Asian malaria deaths (shrinking from a substantial band in 1980 to a very thin sliver by 2023) demonstrates the feasibility of regional elimination when targeted control measures are sustained [DERIVED: Compared the width of the Asia band in 1980 vs 2023]. If the recent stagnation or slight increase in deaths since 2016 continues, global targets for malaria eradication will not be met, risking a resurgence due to drug and insecticide resistance [SPECULATIVE: Epidemiology/WHO targets].\",\n    \"other\": \"Other regions such as Europe, North America, South America, and Oceania represent negligible fractions of the global malaria death toll throughout the entire timeframe [DERIVED: These regions appear as extremely thin, barely visible lines at the top of the chart].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart shows the estimated annual number of malaria deaths globally by world region from 1980 to 2023.\",\n      \"It was produced by Our World in Data using data from the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease 2025 study.\"\n    ],\n    \"derived_claims\": [\n      \"The purpose is to track historical progress and regional disparities in malaria mortality over more than four decades.\",\n      \"The data shows that Africa bears an overwhelming share of the global malaria burden, accounting for the vast majority of deaths throughout the entire 1980–2023 period.\",\n      \"The peak in global malaria deaths occurred around 2004 at over 900,000 deaths, followed by a steady decline until around 2016.\",\n      \"The dramatic reduction in Asian malaria deaths (shrinking from a substantial band in 1980 to a very thin sliver by 2023) demonstrates the feasibility of regional elimination when targeted control measures are sustained.\",\n      \"Other regions such as Europe, North America, South America, and Oceania represent negligible fractions of the global malaria death toll throughout the entire timeframe.\"\n    ],\n    \"speculative_claims\": [\n      \"Malaria is a life-threatening disease spread to humans by some types of mosquitoes, primarily found in tropical countries.\",\n      \"The decline after the mid-2000s corresponds historically with the scale-up of international funding, insecticide-treated bed nets, and artemisinin-based combination therapies (ACTs).\",\n      \"A slight uptick in deaths is visible around 2020–2021, which likely reflects disruptions to malaria prevention and treatment programs during the COVID-19 pandemic.\",\n      \"The persistent concentration of malaria deaths in Africa highlights a critical environmental and socioeconomic justice issue, as the disease disproportionately affects low-income countries with limited healthcare infrastructure.\",\n      \"If the recent stagnation or slight increase in deaths since 2016 continues, global targets for malaria eradication will not be met, risking a resurgence due to drug and insecticide resistance.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 2,\n    \"derived_count\": 5,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a visual stacked area representation with a y-axis up to 1 million, but exact annual death counts for individual regions are not explicitly provided in text form."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The overall trend and peak around 2004 can be estimated visually, but precise annual changes or percentage declines are not directly calculable without raw data."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, subtitle, axis labels, and data source clearly define the subject as global malaria mortality by region from 1980 to 2023."
+        },
+        "overall": 3.33
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart shows the estimated annual number of malaria deaths globally by world region from 1980 to 2023 [DIRECT]. It was produced by Our World in Data using data from the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease 2025 study [DIRECT]. The purpose is to track historical progress and regional disparities in malaria mortality over more than four decades [DERIVED: Read from title, subtitle, and axes].",
+      "domain_specific_explanations": "Malaria is a life-threatening disease spread to humans by some types of mosquitoes, primarily found in tropical countries [SPECULATIVE: Medicine/Epidemiology]. The data shows that Africa bears an overwhelming share of the global malaria burden, accounting for the vast majority of deaths throughout the entire 1980–2023 period [DERIVED: Africa's band is visually the largest by a massive margin]. The peak in global malaria deaths occurred around 2004 at over 900,000 deaths, followed by a steady decline until around 2016 [DERIVED: Read peak year 2004 and subsequent decline from the stacked area chart]. The decline after the mid-2000s corresponds historically with the scale-up of international funding, insecticide-treated bed nets, and artemisinin-based combination therapies (ACTs) [SPECULATIVE: Global Health History]. A slight uptick in deaths is visible around 2020–2021, which likely reflects disruptions to malaria prevention and treatment programs during the COVID-19 pandemic [SPECULATIVE: Global Health/COVID-19 impact].",
+      "real_world_significance": "The persistent concentration of malaria deaths in Africa highlights a critical environmental and socioeconomic justice issue, as the disease disproportionately affects low-income countries with limited healthcare infrastructure [SPECULATIVE: Public Health Policy]. The dramatic reduction in Asian malaria deaths (shrinking from a substantial band in 1980 to a very thin sliver by 2023) demonstrates the feasibility of regional elimination when targeted control measures are sustained [DERIVED: Compared the width of the Asia band in 1980 vs 2023]. If the recent stagnation or slight increase in deaths since 2016 continues, global targets for malaria eradication will not be met, risking a resurgence due to drug and insecticide resistance [SPECULATIVE: Epidemiology/WHO targets].",
+      "other": "Other regions such as Europe, North America, South America, and Oceania represent negligible fractions of the global malaria death toll throughout the entire timeframe [DERIVED: These regions appear as extremely thin, barely visible lines at the top of the chart]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart shows the estimated annual number of malaria deaths globally by world region from 1980 to 2023.",
+        "It was produced by Our World in Data using data from the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease 2025 study."
+      ],
+      "derived_claims": [
+        "The purpose is to track historical progress and regional disparities in malaria mortality over more than four decades.",
+        "The data shows that Africa bears an overwhelming share of the global malaria burden, accounting for the vast majority of deaths throughout the entire 1980–2023 period.",
+        "The peak in global malaria deaths occurred around 2004 at over 900,000 deaths, followed by a steady decline until around 2016.",
+        "The dramatic reduction in Asian malaria deaths (shrinking from a substantial band in 1980 to a very thin sliver by 2023) demonstrates the feasibility of regional elimination when targeted control measures are sustained.",
+        "Other regions such as Europe, North America, South America, and Oceania represent negligible fractions of the global malaria death toll throughout the entire timeframe."
+      ],
+      "speculative_claims": [
+        "Malaria is a life-threatening disease spread to humans by some types of mosquitoes, primarily found in tropical countries.",
+        "The decline after the mid-2000s corresponds historically with the scale-up of international funding, insecticide-treated bed nets, and artemisinin-based combination therapies (ACTs).",
+        "A slight uptick in deaths is visible around 2020–2021, which likely reflects disruptions to malaria prevention and treatment programs during the COVID-19 pandemic.",
+        "The persistent concentration of malaria deaths in Africa highlights a critical environmental and socioeconomic justice issue, as the disease disproportionately affects low-income countries with limited healthcare infrastructure.",
+        "If the recent stagnation or slight increase in deaths since 2016 continues, global targets for malaria eradication will not be met, risking a resurgence due to drug and insecticide resistance."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 2,
+      "derived_count": 5,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16471.677040997747,
+  "created_at": "2026-07-17T20:57:43.203627Z"
+}

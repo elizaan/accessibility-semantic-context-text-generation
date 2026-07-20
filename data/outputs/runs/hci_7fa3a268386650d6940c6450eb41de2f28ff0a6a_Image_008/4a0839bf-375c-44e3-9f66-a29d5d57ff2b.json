@@ -1,0 +1,70 @@
+{
+  "output_id": "4a0839bf-375c-44e3-9f66-a29d5d57ff2b",
+  "chart_id": "hci_7fa3a268386650d6940c6450eb41de2f28ff0a6a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The exact data values are not provided in a table, but the approximate values and the sequence of conditions are readable from the chart and the alt text.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"Relative differences and statistical significance can be derived from the visual elements (bars, error bars, and significance brackets), but exact magnitudes are missing.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain (HCI, smartphone pointing conditions, NASA TLX) is well-defined by the expert domain story and alt text.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is from a Human-Computer Interaction (HCI) research paper published at the ACM CHI 2020 conference [DIRECT]. It evaluates user workload across seven different smartphone pointing conditions: VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DIRECT]. The evaluation uses the NASA Task Load Index (TLX) questionnaire, which measures subjective workload across multiple dimensions [DIRECT].\",\n    \"domain_specific_explanations\": \"The NASA TLX is a widely used subjective workload assessment tool in human factors and HCI research [SPECULATIVE: Human-Computer Interaction / Human Factors]. It measures workload across six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration, plus an Overall score [DERIVED: read from X-axis labels]. In the standard NASA TLX, lower scores generally indicate lower subjective workload, with 0 being low workload/good performance and 100 being high workload/poor performance [SPECULATIVE: NASA TLX standard scoring]. The error bars represent standard error, and the asterisks indicate statistically significant differences evaluated by a Wilcoxon rank sum test [DIRECT]. Specifically, there is a statistically significant difference (p < 0.05) in the 'Performance' attribute between the VC condition and the WDP2TA condition [DERIVED: observed the significance bracket and star on the chart image over the Performance category connecting the first bar (VC) and the sixth bar (WDP2TA)].\",\n    \"real_world_significance\": \"Understanding subjective workload is crucial for designing accessible and ergonomic smartphone interaction techniques [SPECULATIVE: Human-Computer Interaction]. By comparing these pointing conditions, researchers can determine which interaction techniques minimize physical and mental fatigue, helping developers design better interfaces for users, including those with situational impairments or motor challenges [SPECULATIVE: Mobile Interaction Design]. The significant difference in self-reported performance suggests that the choice of pointing technique (such as VC versus WDP2TA) has a measurable impact on how successful users feel when performing tasks [DERIVED: based on the significant difference marked on the chart].\",\n    \"other\": \"The standard error bars across all attributes are relatively large, indicating high individual variability among the study's participants [DERIVED: observed large error bars spanning 20-30 units on the 0-100 scale].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is from a Human-Computer Interaction (HCI) research paper published at the ACM CHI 2020 conference\",\n      \"It evaluates user workload across seven different smartphone pointing conditions: VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR\",\n      \"The evaluation uses the NASA Task Load Index (TLX) questionnaire, which measures subjective workload across multiple dimensions\",\n      \"The error bars represent standard error, and the asterisks indicate statistically significant differences evaluated by a Wilcoxon rank sum test\"\n    ],\n    \"derived_claims\": [\n      \"It measures workload across six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration, plus an Overall score [DERIVED: read from X-axis labels]\",\n      \"Specifically, there is a statistically significant difference (p < 0.05) in the 'Performance' attribute between the VC condition and the WDP2TA condition [DERIVED: observed the significance bracket and star on the chart image over the Performance category connecting the first bar (VC) and the sixth bar (WDP2TA)]\",\n      \"The significant difference in self-reported performance suggests that the choice of pointing technique (such as VC versus WDP2TA) has a measurable impact on how successful users feel when performing tasks [DERIVED: based on the significant difference marked on the chart]\",\n      \"The standard error bars across all attributes are relatively large, indicating high individual variability among the study's participants [DERIVED: observed large error bars spanning 20-30 units on the 0-100 scale]\"\n    ],\n    \"speculative_claims\": [\n      \"The NASA TLX is a widely used subjective workload assessment tool in human factors and HCI research [SPECULATIVE: Human-Computer Interaction / Human Factors]\",\n      \"In the standard NASA TLX, lower scores generally indicate lower subjective workload, with 0 being low workload/good performance and 100 being high workload/poor performance [SPECULATIVE: NASA TLX standard scoring]\",\n      \"Understanding subjective workload is crucial for designing accessible and ergonomic smartphone interaction techniques [SPECULATIVE: Human-Computer Interaction]\",\n      \"By comparing these pointing conditions, researchers can determine which interaction techniques minimize physical and mental fatigue, helping developers design better interfaces for users, including those with situational impairments or motor challenges [SPECULATIVE: Mobile Interaction Design]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The exact data values are not provided in a table, but the approximate values and the sequence of conditions are readable from the chart and the alt text."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "Relative differences and statistical significance can be derived from the visual elements (bars, error bars, and significance brackets), but exact magnitudes are missing."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (HCI, smartphone pointing conditions, NASA TLX) is well-defined by the expert domain story and alt text."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is from a Human-Computer Interaction (HCI) research paper published at the ACM CHI 2020 conference [DIRECT]. It evaluates user workload across seven different smartphone pointing conditions: VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DIRECT]. The evaluation uses the NASA Task Load Index (TLX) questionnaire, which measures subjective workload across multiple dimensions [DIRECT].",
+      "domain_specific_explanations": "The NASA TLX is a widely used subjective workload assessment tool in human factors and HCI research [SPECULATIVE: Human-Computer Interaction / Human Factors]. It measures workload across six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration, plus an Overall score [DERIVED: read from X-axis labels]. In the standard NASA TLX, lower scores generally indicate lower subjective workload, with 0 being low workload/good performance and 100 being high workload/poor performance [SPECULATIVE: NASA TLX standard scoring]. The error bars represent standard error, and the asterisks indicate statistically significant differences evaluated by a Wilcoxon rank sum test [DIRECT]. Specifically, there is a statistically significant difference (p < 0.05) in the 'Performance' attribute between the VC condition and the WDP2TA condition [DERIVED: observed the significance bracket and star on the chart image over the Performance category connecting the first bar (VC) and the sixth bar (WDP2TA)].",
+      "real_world_significance": "Understanding subjective workload is crucial for designing accessible and ergonomic smartphone interaction techniques [SPECULATIVE: Human-Computer Interaction]. By comparing these pointing conditions, researchers can determine which interaction techniques minimize physical and mental fatigue, helping developers design better interfaces for users, including those with situational impairments or motor challenges [SPECULATIVE: Mobile Interaction Design]. The significant difference in self-reported performance suggests that the choice of pointing technique (such as VC versus WDP2TA) has a measurable impact on how successful users feel when performing tasks [DERIVED: based on the significant difference marked on the chart].",
+      "other": "The standard error bars across all attributes are relatively large, indicating high individual variability among the study's participants [DERIVED: observed large error bars spanning 20-30 units on the 0-100 scale]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is from a Human-Computer Interaction (HCI) research paper published at the ACM CHI 2020 conference",
+        "It evaluates user workload across seven different smartphone pointing conditions: VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR",
+        "The evaluation uses the NASA Task Load Index (TLX) questionnaire, which measures subjective workload across multiple dimensions",
+        "The error bars represent standard error, and the asterisks indicate statistically significant differences evaluated by a Wilcoxon rank sum test"
+      ],
+      "derived_claims": [
+        "It measures workload across six subscales: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration, plus an Overall score [DERIVED: read from X-axis labels]",
+        "Specifically, there is a statistically significant difference (p < 0.05) in the 'Performance' attribute between the VC condition and the WDP2TA condition [DERIVED: observed the significance bracket and star on the chart image over the Performance category connecting the first bar (VC) and the sixth bar (WDP2TA)]",
+        "The significant difference in self-reported performance suggests that the choice of pointing technique (such as VC versus WDP2TA) has a measurable impact on how successful users feel when performing tasks [DERIVED: based on the significant difference marked on the chart]",
+        "The standard error bars across all attributes are relatively large, indicating high individual variability among the study's participants [DERIVED: observed large error bars spanning 20-30 units on the 0-100 scale]"
+      ],
+      "speculative_claims": [
+        "The NASA TLX is a widely used subjective workload assessment tool in human factors and HCI research [SPECULATIVE: Human-Computer Interaction / Human Factors]",
+        "In the standard NASA TLX, lower scores generally indicate lower subjective workload, with 0 being low workload/good performance and 100 being high workload/poor performance [SPECULATIVE: NASA TLX standard scoring]",
+        "Understanding subjective workload is crucial for designing accessible and ergonomic smartphone interaction techniques [SPECULATIVE: Human-Computer Interaction]",
+        "By comparing these pointing conditions, researchers can determine which interaction techniques minimize physical and mental fatigue, helping developers design better interfaces for users, including those with situational impairments or motor challenges [SPECULATIVE: Mobile Interaction Design]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13663.819042001705,
+  "created_at": "2026-07-17T21:44:53.254232Z"
+}

@@ -1,0 +1,67 @@
+{
+  "output_id": "12aa6123-5c8a-477e-af7d-fe12bd9219c6",
+  "chart_id": "hci_7fa3a268386650d6940c6450eb41de2f28ff0a6a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No data table or exact values are provided; values must be estimated visually from the chart.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The chart shows error bars and a statistical significance marker, allowing for relative comparison of trends, but exact magnitudes are absent.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The axis labels clearly indicate the NASA-TLX workload subscales, making the domain of human-computer interaction and usability testing highly recognizable.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays subjective workload scores across seven dimensions: Mental, Physical, Temporal, Performance, Effort, Frustration, and an Overall score [DERIVED: read from X-axis labels]. The study compares seven different 'Pointing Conditions' labeled VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DERIVED: read from legend]. The y-axis represents the 'Mean of Score' ranging from 0 to 100 [DERIVED: read from Y-axis labels]. These dimensions correspond to the NASA Task Load Index (NASA-TLX), a widely used multidimensional assessment tool to rate perceived workload in human-computer interaction and ergonomics research [SPECULATIVE: Human-Computer Interaction / Ergonomics].\",\n    \"domain_specific_explanations\": \"The categories (Mental, Physical, Temporal, Performance, Effort, Frustration) are the standard subscales of the NASA-TLX [SPECULATIVE: NASA-TLX standard]. In standard NASA-TLX, higher scores typically indicate higher perceived workload, though the 'Performance' scale is sometimes inverted (where higher scores mean poorer performance/more frustration with performance) [SPECULATIVE: NASA-TLX standard scoring]. The error bars represent the variability of participant responses [DERIVED: visual inspection of error bars]. A statistically significant difference is highlighted in the 'Performance' subscale between the 'VC' condition and the 'WDP2TA' condition, indicated by a bracket with an asterisk [DERIVED: visual inspection of the significance bracket]. The 'VC' condition has the lowest mean score in Performance (around 20-25), while 'WDP2TA' has the highest mean score (around 60) [DERIVED: visual estimation of bar heights].\",\n    \"real_world_significance\": \"In human-computer interaction (HCI) and user experience (UX) research, evaluating pointing techniques (such as virtual reality pointing, mid-air pointing, or device-based pointing) is crucial for designing accessible and comfortable interfaces [SPECULATIVE: HCI research]. Lower workload scores are generally preferred as they indicate a system is easier and less tiring to use [SPECULATIVE: HCI research]. The significant difference in the 'Performance' category suggests that the 'WDP2TA' condition resulted in significantly higher perceived performance-related workload (i.e., users felt less successful or had to work harder to achieve their goals) compared to the 'VC' condition [DERIVED: interpretation of NASA-TLX performance scale and significance bracket]. Designers of these pointing systems would use this data to reject or modify the 'WDP2TA' technique in favor of more efficient techniques like 'VC' or others with lower workload profiles [SPECULATIVE: UX design decision-making].\",\n    \"other\": \"Across almost all categories, the 'VC' condition consistently shows relatively low workload scores compared to the other conditions, while 'WDP2TA' frequently shows some of the highest workload scores [DERIVED: visual comparison of bar heights across categories].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"The chart displays subjective workload scores across seven dimensions: Mental, Physical, Temporal, Performance, Effort, Frustration, and an Overall score.\",\n      \"The study compares seven different 'Pointing Conditions' labeled VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR.\",\n      \"The y-axis represents the 'Mean of Score' ranging from 0 to 100.\",\n      \"The error bars represent the variability of participant responses.\",\n      \"A statistically significant difference is highlighted in the 'Performance' subscale between the 'VC' condition and the 'WDP2TA' condition, indicated by a bracket with an asterisk.\",\n      \"The 'VC' condition has the lowest mean score in Performance (around 20-25), while 'WDP2TA' has the highest mean score (around 60).\",\n      \"The significant difference in the 'Performance' category suggests that the 'WDP2TA' condition resulted in significantly higher perceived performance-related workload (i.e., users felt less successful or had to work harder to achieve their goals) compared to the 'VC' condition.\",\n      \"Across almost all categories, the 'VC' condition consistently shows relatively low workload scores compared to the other conditions, while 'WDP2TA' frequently shows some of the highest workload scores.\"\n    ],\n    \"speculative_claims\": [\n      \"These dimensions correspond to the NASA Task Load Index (NASA-TLX), a widely used multidimensional assessment tool to rate perceived workload in human-computer interaction and ergonomics research.\",\n      \"The categories (Mental, Physical, Temporal, Performance, Effort, Frustration) are the standard subscales of the NASA-TLX.\",\n      \"In standard NASA-TLX, higher scores typically indicate higher perceived workload, though the 'Performance' scale is sometimes inverted (where higher scores mean poorer performance/more frustration with performance).\",\n      \"In human-computer interaction (HCI) and user experience (UX) research, evaluating pointing techniques (such as virtual reality pointing, mid-air pointing, or device-based pointing) is crucial for designing accessible and comfortable interfaces.\",\n      \"Lower workload scores are generally preferred as they indicate a system is easier and less tiring to use.\",\n      \"Designers of these pointing systems would use this data to reject or modify the 'WDP2TA' technique in favor of more efficient techniques like 'VC' or others with lower workload profiles.\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 0,\n    \"derived_count\": 8,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No data table or exact values are provided; values must be estimated visually from the chart."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart shows error bars and a statistical significance marker, allowing for relative comparison of trends, but exact magnitudes are absent."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The axis labels clearly indicate the NASA-TLX workload subscales, making the domain of human-computer interaction and usability testing highly recognizable."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays subjective workload scores across seven dimensions: Mental, Physical, Temporal, Performance, Effort, Frustration, and an Overall score [DERIVED: read from X-axis labels]. The study compares seven different 'Pointing Conditions' labeled VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR [DERIVED: read from legend]. The y-axis represents the 'Mean of Score' ranging from 0 to 100 [DERIVED: read from Y-axis labels]. These dimensions correspond to the NASA Task Load Index (NASA-TLX), a widely used multidimensional assessment tool to rate perceived workload in human-computer interaction and ergonomics research [SPECULATIVE: Human-Computer Interaction / Ergonomics].",
+      "domain_specific_explanations": "The categories (Mental, Physical, Temporal, Performance, Effort, Frustration) are the standard subscales of the NASA-TLX [SPECULATIVE: NASA-TLX standard]. In standard NASA-TLX, higher scores typically indicate higher perceived workload, though the 'Performance' scale is sometimes inverted (where higher scores mean poorer performance/more frustration with performance) [SPECULATIVE: NASA-TLX standard scoring]. The error bars represent the variability of participant responses [DERIVED: visual inspection of error bars]. A statistically significant difference is highlighted in the 'Performance' subscale between the 'VC' condition and the 'WDP2TA' condition, indicated by a bracket with an asterisk [DERIVED: visual inspection of the significance bracket]. The 'VC' condition has the lowest mean score in Performance (around 20-25), while 'WDP2TA' has the highest mean score (around 60) [DERIVED: visual estimation of bar heights].",
+      "real_world_significance": "In human-computer interaction (HCI) and user experience (UX) research, evaluating pointing techniques (such as virtual reality pointing, mid-air pointing, or device-based pointing) is crucial for designing accessible and comfortable interfaces [SPECULATIVE: HCI research]. Lower workload scores are generally preferred as they indicate a system is easier and less tiring to use [SPECULATIVE: HCI research]. The significant difference in the 'Performance' category suggests that the 'WDP2TA' condition resulted in significantly higher perceived performance-related workload (i.e., users felt less successful or had to work harder to achieve their goals) compared to the 'VC' condition [DERIVED: interpretation of NASA-TLX performance scale and significance bracket]. Designers of these pointing systems would use this data to reject or modify the 'WDP2TA' technique in favor of more efficient techniques like 'VC' or others with lower workload profiles [SPECULATIVE: UX design decision-making].",
+      "other": "Across almost all categories, the 'VC' condition consistently shows relatively low workload scores compared to the other conditions, while 'WDP2TA' frequently shows some of the highest workload scores [DERIVED: visual comparison of bar heights across categories]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "The chart displays subjective workload scores across seven dimensions: Mental, Physical, Temporal, Performance, Effort, Frustration, and an Overall score.",
+        "The study compares seven different 'Pointing Conditions' labeled VC, VBP2TR, VBP2TA, VBP1RR, WDP2TR, WDP2TA, and WDP1RR.",
+        "The y-axis represents the 'Mean of Score' ranging from 0 to 100.",
+        "The error bars represent the variability of participant responses.",
+        "A statistically significant difference is highlighted in the 'Performance' subscale between the 'VC' condition and the 'WDP2TA' condition, indicated by a bracket with an asterisk.",
+        "The 'VC' condition has the lowest mean score in Performance (around 20-25), while 'WDP2TA' has the highest mean score (around 60).",
+        "The significant difference in the 'Performance' category suggests that the 'WDP2TA' condition resulted in significantly higher perceived performance-related workload (i.e., users felt less successful or had to work harder to achieve their goals) compared to the 'VC' condition.",
+        "Across almost all categories, the 'VC' condition consistently shows relatively low workload scores compared to the other conditions, while 'WDP2TA' frequently shows some of the highest workload scores."
+      ],
+      "speculative_claims": [
+        "These dimensions correspond to the NASA Task Load Index (NASA-TLX), a widely used multidimensional assessment tool to rate perceived workload in human-computer interaction and ergonomics research.",
+        "The categories (Mental, Physical, Temporal, Performance, Effort, Frustration) are the standard subscales of the NASA-TLX.",
+        "In standard NASA-TLX, higher scores typically indicate higher perceived workload, though the 'Performance' scale is sometimes inverted (where higher scores mean poorer performance/more frustration with performance).",
+        "In human-computer interaction (HCI) and user experience (UX) research, evaluating pointing techniques (such as virtual reality pointing, mid-air pointing, or device-based pointing) is crucial for designing accessible and comfortable interfaces.",
+        "Lower workload scores are generally preferred as they indicate a system is easier and less tiring to use.",
+        "Designers of these pointing systems would use this data to reject or modify the 'WDP2TA' technique in favor of more efficient techniques like 'VC' or others with lower workload profiles."
+      ],
+      "total_flag_count": 14,
+      "direct_count": 0,
+      "derived_count": 8,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13856.91070899702,
+  "created_at": "2026-07-17T21:18:08.696931Z"
+}

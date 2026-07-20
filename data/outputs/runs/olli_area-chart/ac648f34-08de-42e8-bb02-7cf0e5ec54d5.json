@@ -1,0 +1,64 @@
+{
+  "output_id": "ac648f34-08de-42e8-bb02-7cf0e5ec54d5",
+  "chart_id": "olli_area-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"No data table is provided, but the y-axis and x-axis provide approximate values.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The overall trend is visible and can be estimated, but no exact magnitudes or calculations are provided in the metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 1,\n        \"justification\": \"The subject domain is not explicitly stated in the metadata, though it can be inferred from the axis labels.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays a time-series area graph representing the total count of unemployed individuals over time, spanning from late 1999 to early 2010 [DERIVED: read from x-axis 'date (year-month)' and y-axis 'count']. The dataset is highly characteristic of the 'unemployment-across-industries' dataset from the Bureau of Labor Statistics, commonly used in data visualization libraries [SPECULATIVE: Vega-Lite datasets]. The y-axis represents the count of unemployed individuals, typically measured in thousands [SPECULATIVE: US Bureau of Labor Statistics].\",\n    \"domain_specific_explanations\": \"In macroeconomics, unemployment counts are lagging indicators of economic health [SPECULATIVE: Macroeconomics]. The chart shows a rise in unemployment peaking in 2003 at approximately 9,000 thousand (9 million) people, which aligns with the aftermath of the dot-com bubble burst and the 2001 recession [SPECULATIVE: Macroeconomics]. Following a period of economic expansion where unemployment fell back to around 6,000 thousand in 2006, the chart shows an unprecedented surge starting in late 2008 [DERIVED: compared the 2006 low of ~6,000 to the late 2008 upward trend]. This massive spike peaks near 15,000 thousand (15 million) in late 2009, reflecting the severe impact of the Great Recession [SPECULATIVE: Macroeconomics].\",\n    \"real_world_significance\": \"This data is critical for policymakers, such as the Federal Reserve and government officials, who monitor unemployment to determine monetary policy, interest rates, and the necessity of economic stimulus packages [SPECULATIVE: Public Policy]. The dramatic increase from 6,000 thousand unemployed in 2006 to over 15,000 thousand in 2009 highlights the devastating scale of the 2008 financial crisis on the workforce [DERIVED: compared the low point of ~6,000 in 2006 to the peak of ~15,000 in 2009/2010]. Such high levels of unemployment signify widespread financial distress, reduced consumer spending, and increased demand for social safety nets [SPECULATIVE: Economics].\",\n    \"other\": \"The seasonal fluctuations visible as small monthly peaks and valleys throughout the decade reflect regular annual hiring cycles in industries like retail and agriculture [SPECULATIVE: Labor Economics].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"This chart displays a time-series area graph representing the total count of unemployed individuals over time, spanning from late 1999 to early 2010\",\n      \"Following a period of economic expansion where unemployment fell back to around 6,000 thousand in 2006, the chart shows an unprecedented surge starting in late 2008\",\n      \"The dramatic increase from 6,000 thousand unemployed in 2006 to over 15,000 thousand in 2009 highlights the devastating scale of the 2008 financial crisis on the workforce\"\n    ],\n    \"speculative_claims\": [\n      \"The dataset is highly characteristic of the 'unemployment-across-industries' dataset from the Bureau of Labor Statistics, commonly used in data visualization libraries\",\n      \"The y-axis represents the count of unemployed individuals, typically measured in thousands\",\n      \"In macroeconomics, unemployment counts are lagging indicators of economic health\",\n      \"The chart shows a rise in unemployment peaking in 2003 at approximately 9,000 thousand (9 million) people, which aligns with the aftermath of the dot-com bubble burst and the 2001 recession\",\n      \"This massive spike peaks near 15,000 thousand (15 million) in late 2009, reflecting the severe impact of the Great Recession\",\n      \"This data is critical for policymakers, such as the Federal Reserve and government officials, who monitor unemployment to determine monetary policy, interest rates, and the necessity of economic stimulus packages\",\n      \"Such high levels of unemployment signify widespread financial distress, reduced consumer spending, and increased demand for social safety nets\",\n      \"The seasonal fluctuations visible as small monthly peaks and valleys throughout the decade reflect regular annual hiring cycles in industries like retail and agriculture\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 0,\n    \"derived_count\": 3,\n    \"speculative_count\": 8\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "No data table is provided, but the y-axis and x-axis provide approximate values."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The overall trend is visible and can be estimated, but no exact magnitudes or calculations are provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "The subject domain is not explicitly stated in the metadata, though it can be inferred from the axis labels."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays a time-series area graph representing the total count of unemployed individuals over time, spanning from late 1999 to early 2010 [DERIVED: read from x-axis 'date (year-month)' and y-axis 'count']. The dataset is highly characteristic of the 'unemployment-across-industries' dataset from the Bureau of Labor Statistics, commonly used in data visualization libraries [SPECULATIVE: Vega-Lite datasets]. The y-axis represents the count of unemployed individuals, typically measured in thousands [SPECULATIVE: US Bureau of Labor Statistics].",
+      "domain_specific_explanations": "In macroeconomics, unemployment counts are lagging indicators of economic health [SPECULATIVE: Macroeconomics]. The chart shows a rise in unemployment peaking in 2003 at approximately 9,000 thousand (9 million) people, which aligns with the aftermath of the dot-com bubble burst and the 2001 recession [SPECULATIVE: Macroeconomics]. Following a period of economic expansion where unemployment fell back to around 6,000 thousand in 2006, the chart shows an unprecedented surge starting in late 2008 [DERIVED: compared the 2006 low of ~6,000 to the late 2008 upward trend]. This massive spike peaks near 15,000 thousand (15 million) in late 2009, reflecting the severe impact of the Great Recession [SPECULATIVE: Macroeconomics].",
+      "real_world_significance": "This data is critical for policymakers, such as the Federal Reserve and government officials, who monitor unemployment to determine monetary policy, interest rates, and the necessity of economic stimulus packages [SPECULATIVE: Public Policy]. The dramatic increase from 6,000 thousand unemployed in 2006 to over 15,000 thousand in 2009 highlights the devastating scale of the 2008 financial crisis on the workforce [DERIVED: compared the low point of ~6,000 in 2006 to the peak of ~15,000 in 2009/2010]. Such high levels of unemployment signify widespread financial distress, reduced consumer spending, and increased demand for social safety nets [SPECULATIVE: Economics].",
+      "other": "The seasonal fluctuations visible as small monthly peaks and valleys throughout the decade reflect regular annual hiring cycles in industries like retail and agriculture [SPECULATIVE: Labor Economics]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "This chart displays a time-series area graph representing the total count of unemployed individuals over time, spanning from late 1999 to early 2010",
+        "Following a period of economic expansion where unemployment fell back to around 6,000 thousand in 2006, the chart shows an unprecedented surge starting in late 2008",
+        "The dramatic increase from 6,000 thousand unemployed in 2006 to over 15,000 thousand in 2009 highlights the devastating scale of the 2008 financial crisis on the workforce"
+      ],
+      "speculative_claims": [
+        "The dataset is highly characteristic of the 'unemployment-across-industries' dataset from the Bureau of Labor Statistics, commonly used in data visualization libraries",
+        "The y-axis represents the count of unemployed individuals, typically measured in thousands",
+        "In macroeconomics, unemployment counts are lagging indicators of economic health",
+        "The chart shows a rise in unemployment peaking in 2003 at approximately 9,000 thousand (9 million) people, which aligns with the aftermath of the dot-com bubble burst and the 2001 recession",
+        "This massive spike peaks near 15,000 thousand (15 million) in late 2009, reflecting the severe impact of the Great Recession",
+        "This data is critical for policymakers, such as the Federal Reserve and government officials, who monitor unemployment to determine monetary policy, interest rates, and the necessity of economic stimulus packages",
+        "Such high levels of unemployment signify widespread financial distress, reduced consumer spending, and increased demand for social safety nets",
+        "The seasonal fluctuations visible as small monthly peaks and valleys throughout the decade reflect regular annual hiring cycles in industries like retail and agriculture"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 0,
+      "derived_count": 3,
+      "speculative_count": 8
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 25482.17741699773,
+  "created_at": "2026-07-20T14:18:04.200935Z"
+}

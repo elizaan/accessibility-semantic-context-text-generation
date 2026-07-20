@@ -1,0 +1,63 @@
+{
+  "output_id": "ffaf89e3-0343-4ee3-a0f1-af91bd2e4d99",
+  "chart_id": "owid_poverty_share_on_less_than_30_per_day",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides a visual representation of data values, but the exact values are not provided in the text.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart shows a general trend of poverty rates across different countries, but the magnitude of the trend is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart is related to poverty rates, which is a specific domain, but more context is needed to fully understand the implications.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of population living on less than $30 a day in 2025 [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. It is produced by Our World in Data [DIRECT].\",\n    \"domain_specific_explanations\": \"The data is expressed in international-$ at 2021 prices [DIRECT]. It relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT]. The poverty rate is a critical indicator of economic well-being [SPECULATIVE: Economics].\",\n    \"real_world_significance\": \"High poverty rates can affect economic growth, health outcomes, and social stability [SPECULATIVE: Economics and Sociology]. Countries with high poverty rates may require targeted interventions to improve living standards [SPECULATIVE: Policy and Economics].\",\n    \"other\": \"The chart uses a color-coded map to represent different poverty rates [DIRECT]. The data source is the World Bank Poverty and Inequality Platform (2026) [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the share of population living on less than $30 a day in 2025\",\n      \"The data is adjusted for inflation and differences in living costs between countries\",\n      \"It is produced by Our World in Data\",\n      \"The data is expressed in international-$ at 2021 prices\",\n      \"It relates to income (measured after taxes and benefits) or to consumption, per capita\",\n      \"The chart uses a color-coded map to represent different poverty rates\",\n      \"The data source is the World Bank Poverty and Inequality Platform (2026)\"\n    ],\n    \"derived_claims\": [],\n    \"speculative_claims\": [\n      \"The poverty rate is a critical indicator of economic well-being\",\n      \"High poverty rates can affect economic growth, health outcomes, and social stability\",\n      \"Countries with high poverty rates may require targeted interventions to improve living standards\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 7,\n    \"derived_count\": 0,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a visual representation of data values, but the exact values are not provided in the text."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart shows a general trend of poverty rates across different countries, but the magnitude of the trend is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart is related to poverty rates, which is a specific domain, but more context is needed to fully understand the implications."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of population living on less than $30 a day in 2025 [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. It is produced by Our World in Data [DIRECT].",
+      "domain_specific_explanations": "The data is expressed in international-$ at 2021 prices [DIRECT]. It relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT]. The poverty rate is a critical indicator of economic well-being [SPECULATIVE: Economics].",
+      "real_world_significance": "High poverty rates can affect economic growth, health outcomes, and social stability [SPECULATIVE: Economics and Sociology]. Countries with high poverty rates may require targeted interventions to improve living standards [SPECULATIVE: Policy and Economics].",
+      "other": "The chart uses a color-coded map to represent different poverty rates [DIRECT]. The data source is the World Bank Poverty and Inequality Platform (2026) [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of population living on less than $30 a day in 2025",
+        "The data is adjusted for inflation and differences in living costs between countries",
+        "It is produced by Our World in Data",
+        "The data is expressed in international-$ at 2021 prices",
+        "It relates to income (measured after taxes and benefits) or to consumption, per capita",
+        "The chart uses a color-coded map to represent different poverty rates",
+        "The data source is the World Bank Poverty and Inequality Platform (2026)"
+      ],
+      "derived_claims": [],
+      "speculative_claims": [
+        "The poverty rate is a critical indicator of economic well-being",
+        "High poverty rates can affect economic growth, health outcomes, and social stability",
+        "Countries with high poverty rates may require targeted interventions to improve living standards"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 7,
+      "derived_count": 0,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 2146,
+    "output": 614
+  },
+  "latency_ms": 1901.1399160008295,
+  "created_at": "2026-07-17T20:13:31.351536Z"
+}

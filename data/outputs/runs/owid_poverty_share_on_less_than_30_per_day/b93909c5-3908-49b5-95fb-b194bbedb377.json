@@ -1,0 +1,80 @@
+{
+  "output_id": "b93909c5-3908-49b5-95fb-b194bbedb377",
+  "chart_id": "owid_poverty_share_on_less_than_30_per_day",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides data values for the share of population living on less than $30 a day in 2025, but the exact values are not specified.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart shows a general trend of poverty rates across different countries, but the magnitude of the trend is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart subject domain is clearly identified as poverty rates, specifically the share of population living on less than $30 a day in 2025.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": [\n      \"This chart represents the share of population living on less than $30 a day in 2025 [DIRECT].\",\n      \"The data is adjusted for inflation and differences in living costs between countries [DIRECT].\",\n      \"The chart is produced by Our World in Data [DIRECT].\",\n      \"The data source is World Bank Poverty and Inequality Platform (2026) [DIRECT].\"\n    ],\n    \"domain_specific_explanations\": [\n      \"The data is expressed in international-$ at 2021 prices [DIRECT].\",\n      \"The data relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT].\",\n      \"A higher percentage indicates a larger share of the population living in poverty [DERIVED: from the chart's legend].\"\n    ],\n    \"real_world_significance\": [\n      \"This data matters because it highlights the extent of poverty across different countries [SPECULATIVE: general knowledge of poverty].\",\n      \"Countries with higher poverty rates may require targeted interventions to address poverty [SPECULATIVE: general knowledge of poverty].\",\n      \"The trend of poverty rates can inform policy decisions and resource allocation [SPECULATIVE: general knowledge of policy-making].\"\n    ],\n    \"other\": [\n      \"The chart uses a color-coded system to represent different poverty rates [DERIVED: from the chart's legend].\",\n      \"The chart does not provide information on the specific causes of poverty [DERIVED: from the chart's limitations].\"\n    ]\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart represents the share of population living on less than $30 a day in 2025\",\n      \"The data is adjusted for inflation and differences in living costs between countries\",\n      \"The chart is produced by Our World in Data\",\n      \"The data source is World Bank Poverty and Inequality Platform (2026)\",\n      \"The data is expressed in international-$ at 2021 prices\",\n      \"The data relates to income (measured after taxes and benefits) or to consumption, per capita\"\n    ],\n    \"derived_claims\": [\n      \"A higher percentage indicates a larger share of the population living in poverty\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it highlights the extent of poverty across different countries\",\n      \"Countries with higher poverty rates may require targeted interventions to address poverty\",\n      \"The trend of poverty rates can inform policy decisions and resource allocation\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides data values for the share of population living on less than $30 a day in 2025, but the exact values are not specified."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart shows a general trend of poverty rates across different countries, but the magnitude of the trend is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart subject domain is clearly identified as poverty rates, specifically the share of population living on less than $30 a day in 2025."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": [
+        "This chart represents the share of population living on less than $30 a day in 2025 [DIRECT].",
+        "The data is adjusted for inflation and differences in living costs between countries [DIRECT].",
+        "The chart is produced by Our World in Data [DIRECT].",
+        "The data source is World Bank Poverty and Inequality Platform (2026) [DIRECT]."
+      ],
+      "domain_specific_explanations": [
+        "The data is expressed in international-$ at 2021 prices [DIRECT].",
+        "The data relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT].",
+        "A higher percentage indicates a larger share of the population living in poverty [DERIVED: from the chart's legend]."
+      ],
+      "real_world_significance": [
+        "This data matters because it highlights the extent of poverty across different countries [SPECULATIVE: general knowledge of poverty].",
+        "Countries with higher poverty rates may require targeted interventions to address poverty [SPECULATIVE: general knowledge of poverty].",
+        "The trend of poverty rates can inform policy decisions and resource allocation [SPECULATIVE: general knowledge of policy-making]."
+      ],
+      "other": [
+        "The chart uses a color-coded system to represent different poverty rates [DERIVED: from the chart's legend].",
+        "The chart does not provide information on the specific causes of poverty [DERIVED: from the chart's limitations]."
+      ]
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart represents the share of population living on less than $30 a day in 2025",
+        "The data is adjusted for inflation and differences in living costs between countries",
+        "The chart is produced by Our World in Data",
+        "The data source is World Bank Poverty and Inequality Platform (2026)",
+        "The data is expressed in international-$ at 2021 prices",
+        "The data relates to income (measured after taxes and benefits) or to consumption, per capita"
+      ],
+      "derived_claims": [
+        "A higher percentage indicates a larger share of the population living in poverty"
+      ],
+      "speculative_claims": [
+        "This data matters because it highlights the extent of poverty across different countries",
+        "Countries with higher poverty rates may require targeted interventions to address poverty",
+        "The trend of poverty rates can inform policy decisions and resource allocation"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 1927,
+    "output": 729
+  },
+  "latency_ms": 2201.4191250000295,
+  "created_at": "2026-07-17T20:14:15.261890Z"
+}

@@ -1,0 +1,66 @@
+{
+  "output_id": "7a6d9d26-a5d4-4161-8bdc-8f95923ac1f4",
+  "chart_id": "hci_574211ab6e038ddee2e964502fb0b8a07930805a_Image_008",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"The data table is marked as [NOT PROVIDED], so no specific coordinates or data points can be accessed.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The human-written alt text describes the general distribution of points (e.g., 'denser than average line of points shows up along the top border'), but provides no numeric scale or magnitude.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 2,\n        \"justification\": \"The title references 'Exercises in Style' by Raymond Queneau, and the alt text describes a 'scatterplot... over a color space,' indicating a literary analysis or computational linguistics domain, but specific variable definitions are missing.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a scatterplot overlaid on a color space, sourced from a paper published at the CHI (ACM Conference on Human Factors in Computing Systems) in 2020 [DIRECT]. The chart visualizes a literary analysis of Raymond Queneau's book 'Exercises in Style' [DIRECT]. The x-axis and y-axis labels are not provided in the metadata [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart plots stylistic variations of a single scene from Raymond Queneau's 'Exercises in Style' against a color space [DERIVED: Combining the title reference to the book with the alt text description of a color space]. The distribution of points indicates how different stylistic retellings of the scene map onto specific visual or semantic attributes represented by the color gradients [SPECULATIVE: General knowledge of how such literature-mining visualizations typically function in computational linguistics].\",\n    \"real_world_significance\": \"This visualization demonstrates the application of Natural Language Processing (NLP) and information visualization techniques to literary studies, a field often referred to as 'Distant Reading' or 'Stylometry' [SPECULATIVE: Knowledge of CHI conference scope and computational literary analysis]. By mapping text to color spaces, researchers can identify subtle semantic shifts or stylistic clusters that might be difficult to detect through manual reading alone [SPECULATIVE: General knowledge of the purpose of dimensionality reduction in text analysis].\",\n    \"other\": \"The human-written alt text notes that points are scattered relatively evenly over the top two-thirds of the space, while the bottom third is sparse, with a denser concentration along the top border [DERIVED: Reading the provided alt text description].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a scatterplot overlaid on a color space, sourced from a paper published at the CHI (ACM Conference on Human Factors in Computing Systems) in 2020 [DIRECT]\",\n      \"The chart visualizes a literary analysis of Raymond Queneau's book 'Exercises in Style' [DIRECT]\",\n      \"The x-axis and y-axis labels are not provided in the metadata [DIRECT]\"\n    ],\n    \"derived_claims\": [\n      \"The chart plots stylistic variations of a single scene from Raymond Queneau's 'Exercises in Style' against a color space [DERIVED: Combining the title reference to the book with the alt text description of a color space]\",\n      \"The human-written alt text notes that points are scattered relatively evenly over the top two-thirds of the space, while the bottom third is sparse, with a denser concentration along the top border [DERIVED: Reading the provided alt text description]\"\n    ],\n    \"speculative_claims\": [\n      \"The distribution of points indicates how different stylistic retellings of the scene map onto specific visual or semantic attributes represented by the color gradients [SPECULATIVE: General knowledge of how such literature-mining visualizations typically function in computational linguistics]\",\n      \"This visualization demonstrates the application of Natural Language Processing (NLP) and information visualization techniques to literary studies, a field often referred to as 'Distant Reading' or 'Stylometry' [SPECULATIVE: Knowledge of CHI conference scope and computational literary analysis]\",\n      \"By mapping text to color spaces, researchers can identify subtle semantic shifts or stylistic clusters that might be difficult to detect through manual reading alone [SPECULATIVE: General knowledge of the purpose of dimensionality reduction in text analysis]\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 3,\n    \"derived_count\": 2,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The data table is marked as [NOT PROVIDED], so no specific coordinates or data points can be accessed."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The human-written alt text describes the general distribution of points (e.g., 'denser than average line of points shows up along the top border'), but provides no numeric scale or magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 2,
+          "justification": "The title references 'Exercises in Style' by Raymond Queneau, and the alt text describes a 'scatterplot... over a color space,' indicating a literary analysis or computational linguistics domain, but specific variable definitions are missing."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a scatterplot overlaid on a color space, sourced from a paper published at the CHI (ACM Conference on Human Factors in Computing Systems) in 2020 [DIRECT]. The chart visualizes a literary analysis of Raymond Queneau's book 'Exercises in Style' [DIRECT]. The x-axis and y-axis labels are not provided in the metadata [DIRECT].",
+      "domain_specific_explanations": "The chart plots stylistic variations of a single scene from Raymond Queneau's 'Exercises in Style' against a color space [DERIVED: Combining the title reference to the book with the alt text description of a color space]. The distribution of points indicates how different stylistic retellings of the scene map onto specific visual or semantic attributes represented by the color gradients [SPECULATIVE: General knowledge of how such literature-mining visualizations typically function in computational linguistics].",
+      "real_world_significance": "This visualization demonstrates the application of Natural Language Processing (NLP) and information visualization techniques to literary studies, a field often referred to as 'Distant Reading' or 'Stylometry' [SPECULATIVE: Knowledge of CHI conference scope and computational literary analysis]. By mapping text to color spaces, researchers can identify subtle semantic shifts or stylistic clusters that might be difficult to detect through manual reading alone [SPECULATIVE: General knowledge of the purpose of dimensionality reduction in text analysis].",
+      "other": "The human-written alt text notes that points are scattered relatively evenly over the top two-thirds of the space, while the bottom third is sparse, with a denser concentration along the top border [DERIVED: Reading the provided alt text description]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a scatterplot overlaid on a color space, sourced from a paper published at the CHI (ACM Conference on Human Factors in Computing Systems) in 2020 [DIRECT]",
+        "The chart visualizes a literary analysis of Raymond Queneau's book 'Exercises in Style' [DIRECT]",
+        "The x-axis and y-axis labels are not provided in the metadata [DIRECT]"
+      ],
+      "derived_claims": [
+        "The chart plots stylistic variations of a single scene from Raymond Queneau's 'Exercises in Style' against a color space [DERIVED: Combining the title reference to the book with the alt text description of a color space]",
+        "The human-written alt text notes that points are scattered relatively evenly over the top two-thirds of the space, while the bottom third is sparse, with a denser concentration along the top border [DERIVED: Reading the provided alt text description]"
+      ],
+      "speculative_claims": [
+        "The distribution of points indicates how different stylistic retellings of the scene map onto specific visual or semantic attributes represented by the color gradients [SPECULATIVE: General knowledge of how such literature-mining visualizations typically function in computational linguistics]",
+        "This visualization demonstrates the application of Natural Language Processing (NLP) and information visualization techniques to literary studies, a field often referred to as 'Distant Reading' or 'Stylometry' [SPECULATIVE: Knowledge of CHI conference scope and computational literary analysis]",
+        "By mapping text to color spaces, researchers can identify subtle semantic shifts or stylistic clusters that might be difficult to detect through manual reading alone [SPECULATIVE: General knowledge of the purpose of dimensionality reduction in text analysis]"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 3,
+      "derived_count": 2,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2668,
+    "output": 1025
+  },
+  "latency_ms": 2551.792917001876,
+  "created_at": "2026-07-20T14:14:19.240220Z"
+}

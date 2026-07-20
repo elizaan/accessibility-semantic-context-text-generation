@@ -1,0 +1,70 @@
+{
+  "output_id": "c0b486c3-d6ba-45fe-a2af-f21013aaec98",
+  "chart_id": "hci_c798e119140274c1d642488b9681ceb8dae1906b_Image_004",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact raw data points are missing, but summary statistics (min, max, median, average) for the four boxplots are provided in the alt text.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The summary statistics allow for clear comparisons of medians and averages across the groups, though individual data distributions are not fully visible.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly identified as Human-Computer Interaction (HCI) from a 2015 paper, focusing on animation platform comprehension.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart represents comprehension scores comparing an 'OLD' and a 'NEW' animation platform, published in an HCI (Human-Computer Interaction) conference paper in 2015 [DIRECT]. The data is split into four distinct groups: Expr(OLD), Non(OLD), Expr(NEW), and Non(NEW) [DIRECT]. In the context of animation and user interface research, 'Expr' likely refers to experienced users or expressive animations, while 'Non' likely refers to non-experienced users or non-expressive animations [SPECULATIVE: Human-Computer Interaction / Animation research].\",\n    \"domain_specific_explanations\": \"Comprehension scores in this study range from a minimum of 0.0 to a maximum of 1.0 [DIRECT]. For the NEW platform, the 'Expr' group achieved a substantially higher median score (0.83) and average score (0.63) compared to the 'Non' group, which had a median of 0.33 and an average of 0.4 [DERIVED: Compared Expr(NEW) and Non(NEW) statistics from the alt text]. In contrast, performance on the OLD platform was much closer between the two groups, with 'Expr' having a median of 0.5 (average 0.51) and 'Non' having a median of 0.5 (average 0.46) [DERIVED: Compared Expr(OLD) and Non(OLD) statistics from the alt text]. The highest overall median comprehension score is observed in the Expr(NEW) group (0.83) [DERIVED: Compared medians across all four groups from the alt text], while the lowest median comprehension score is observed in the Non(NEW) group (0.33) [DERIVED: Compared medians across all four groups from the alt text].\",\n    \"real_world_significance\": \"In HCI research, evaluating comprehension scores helps designers understand if a new interface or platform improves user understanding [SPECULATIVE: HCI Research Methods]. The results suggest that the NEW platform significantly benefits the 'Expr' group (improving median comprehension from 0.5 to 0.83) but might actually hinder or not help the 'Non' group (where median comprehension dropped from 0.5 to 0.33) [DERIVED: Compared OLD vs NEW for both Expr and Non groups from the alt text]. This indicates a potential usability gap or steep learning curve for the NEW platform, where experienced/expressive users thrive but non-experienced/non-expressive users struggle more than they did on the legacy system [SPECULATIVE: HCI Usability Engineering].\",\n    \"other\": \"All four groups span the entire possible range of scores from 0.0 to 1.0, indicating high individual variability regardless of the platform or user group [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart represents comprehension scores comparing an 'OLD' and a 'NEW' animation platform, published in an HCI (Human-Computer Interaction) conference paper in 2015.\",\n      \"The data is split into four distinct groups: Expr(OLD), Non(OLD), Expr(NEW), and Non(NEW).\",\n      \"Comprehension scores in this study range from a minimum of 0.0 to a maximum of 1.0.\",\n      \"All four groups span the entire possible range of scores from 0.0 to 1.0, indicating high individual variability regardless of the platform or user group.\"\n    ],\n    \"derived_claims\": [\n      \"For the NEW platform, the 'Expr' group achieved a substantially higher median score (0.83) and average score (0.63) compared to the 'Non' group, which had a median of 0.33 and an average of 0.4 [derived from comparing Expr(NEW) and Non(NEW) statistics from the alt text].\",\n      \"In contrast, performance on the OLD platform was much closer between the two groups, with 'Expr' having a median of 0.5 (average 0.51) and 'Non' having a median of 0.5 (average 0.46) [derived from comparing Expr(OLD) and Non(OLD) statistics from the alt text].\",\n      \"The highest overall median comprehension score is observed in the Expr(NEW) group (0.83) [derived from comparing medians across all four groups from the alt text].\",\n      \"The lowest median comprehension score is observed in the Non(NEW) group (0.33) [derived from comparing medians across all four groups from the alt text].\",\n      \"The results suggest that the NEW platform significantly benefits the 'Expr' group (improving median comprehension from 0.5 to 0.83) but might actually hinder or not help the 'Non' group (where median comprehension dropped from 0.5 to 0.33) [derived from comparing OLD vs NEW for both Expr and Non groups from the alt text].\"\n    ],\n    \"speculative_claims\": [\n      \"'Expr' likely refers to experienced users or expressive animations, while 'Non' likely refers to non-experienced users or non-expressive animations [source: Human-Computer Interaction / Animation research].\",\n      \"In HCI research, evaluating comprehension scores helps designers understand if a new interface or platform improves user understanding [source: HCI Research Methods].\",\n      \"This indicates a potential usability gap or steep learning curve for the NEW platform, where experienced/expressive users thrive but non-experienced/non-expressive users struggle more than they did on the legacy system [source: HCI Usability Engineering].\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 5,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact raw data points are missing, but summary statistics (min, max, median, average) for the four boxplots are provided in the alt text."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The summary statistics allow for clear comparisons of medians and averages across the groups, though individual data distributions are not fully visible."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly identified as Human-Computer Interaction (HCI) from a 2015 paper, focusing on animation platform comprehension."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart represents comprehension scores comparing an 'OLD' and a 'NEW' animation platform, published in an HCI (Human-Computer Interaction) conference paper in 2015 [DIRECT]. The data is split into four distinct groups: Expr(OLD), Non(OLD), Expr(NEW), and Non(NEW) [DIRECT]. In the context of animation and user interface research, 'Expr' likely refers to experienced users or expressive animations, while 'Non' likely refers to non-experienced users or non-expressive animations [SPECULATIVE: Human-Computer Interaction / Animation research].",
+      "domain_specific_explanations": "Comprehension scores in this study range from a minimum of 0.0 to a maximum of 1.0 [DIRECT]. For the NEW platform, the 'Expr' group achieved a substantially higher median score (0.83) and average score (0.63) compared to the 'Non' group, which had a median of 0.33 and an average of 0.4 [DERIVED: Compared Expr(NEW) and Non(NEW) statistics from the alt text]. In contrast, performance on the OLD platform was much closer between the two groups, with 'Expr' having a median of 0.5 (average 0.51) and 'Non' having a median of 0.5 (average 0.46) [DERIVED: Compared Expr(OLD) and Non(OLD) statistics from the alt text]. The highest overall median comprehension score is observed in the Expr(NEW) group (0.83) [DERIVED: Compared medians across all four groups from the alt text], while the lowest median comprehension score is observed in the Non(NEW) group (0.33) [DERIVED: Compared medians across all four groups from the alt text].",
+      "real_world_significance": "In HCI research, evaluating comprehension scores helps designers understand if a new interface or platform improves user understanding [SPECULATIVE: HCI Research Methods]. The results suggest that the NEW platform significantly benefits the 'Expr' group (improving median comprehension from 0.5 to 0.83) but might actually hinder or not help the 'Non' group (where median comprehension dropped from 0.5 to 0.33) [DERIVED: Compared OLD vs NEW for both Expr and Non groups from the alt text]. This indicates a potential usability gap or steep learning curve for the NEW platform, where experienced/expressive users thrive but non-experienced/non-expressive users struggle more than they did on the legacy system [SPECULATIVE: HCI Usability Engineering].",
+      "other": "All four groups span the entire possible range of scores from 0.0 to 1.0, indicating high individual variability regardless of the platform or user group [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart represents comprehension scores comparing an 'OLD' and a 'NEW' animation platform, published in an HCI (Human-Computer Interaction) conference paper in 2015.",
+        "The data is split into four distinct groups: Expr(OLD), Non(OLD), Expr(NEW), and Non(NEW).",
+        "Comprehension scores in this study range from a minimum of 0.0 to a maximum of 1.0.",
+        "All four groups span the entire possible range of scores from 0.0 to 1.0, indicating high individual variability regardless of the platform or user group."
+      ],
+      "derived_claims": [
+        "For the NEW platform, the 'Expr' group achieved a substantially higher median score (0.83) and average score (0.63) compared to the 'Non' group, which had a median of 0.33 and an average of 0.4 [derived from comparing Expr(NEW) and Non(NEW) statistics from the alt text].",
+        "In contrast, performance on the OLD platform was much closer between the two groups, with 'Expr' having a median of 0.5 (average 0.51) and 'Non' having a median of 0.5 (average 0.46) [derived from comparing Expr(OLD) and Non(OLD) statistics from the alt text].",
+        "The highest overall median comprehension score is observed in the Expr(NEW) group (0.83) [derived from comparing medians across all four groups from the alt text].",
+        "The lowest median comprehension score is observed in the Non(NEW) group (0.33) [derived from comparing medians across all four groups from the alt text].",
+        "The results suggest that the NEW platform significantly benefits the 'Expr' group (improving median comprehension from 0.5 to 0.83) but might actually hinder or not help the 'Non' group (where median comprehension dropped from 0.5 to 0.33) [derived from comparing OLD vs NEW for both Expr and Non groups from the alt text]."
+      ],
+      "speculative_claims": [
+        "'Expr' likely refers to experienced users or expressive animations, while 'Non' likely refers to non-experienced users or non-expressive animations [source: Human-Computer Interaction / Animation research].",
+        "In HCI research, evaluating comprehension scores helps designers understand if a new interface or platform improves user understanding [source: HCI Research Methods].",
+        "This indicates a potential usability gap or steep learning curve for the NEW platform, where experienced/expressive users thrive but non-experienced/non-expressive users struggle more than they did on the legacy system [source: HCI Usability Engineering]."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 5,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11675.755374999426,
+  "created_at": "2026-07-17T22:14:29.440137Z"
+}

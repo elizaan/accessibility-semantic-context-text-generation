@@ -1,0 +1,72 @@
+{
+  "output_id": "3cbfb051-3fd2-409c-a310-ca68a4c6ca72",
+  "chart_id": "owid_share_multi_poverty",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"A partial data table with 25 rows is provided, though 5 rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The data represents a cross-sectional snapshot of countries in 2022 and 2023, allowing for country-to-country comparisons but not long-term trend analysis.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and expert domain story clearly define the subject of multidimensional poverty and its indicators.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the share of the population living in multidimensional poverty across various countries and world regions, primarily focusing on data from 2022 and 2023 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Among the listed countries, Afghanistan (2022) has the highest recorded share of multidimensional poverty at approximately 64.88% [DERIVED: compared all values in the provided data table], followed closely by Mozambique (2022) at 60.67% [DERIVED: compared all values in the provided data table]. Conversely, countries like Azerbaijan (2023) and Thailand (2022) show very low shares, both below 0.5% [DERIVED: compared all values in the provided data table].\",\n    \"domain_specific_explanations\": \"Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators [DIRECT]. This metric goes beyond simple income-based poverty measures to capture the actual overlapping deprivations individuals experience daily [SPECULATIVE: development economics]. For instance, an individual might not be classified as poor by income alone but could still suffer from poor health, lack of schooling, and inadequate living conditions [SPECULATIVE: development economics]. The regional classifications provided in the data help researchers analyze how these deprivations cluster geographically [DERIVED: observed the 'World region according to OWID' column].\",\n    \"real_world_significance\": \"This data is vital for policymakers and international development organizations to design targeted social programs and allocate resources effectively [SPECULATIVE: public policy]. High rates of multidimensional poverty, such as those seen in Afghanistan (64.88%) and Mozambique (60.67%) [DERIVED: read from data table], indicate that a majority of their populations face severe, compounding deprivations that hinder human capital development [SPECULATIVE: development economics]. Addressing these issues is central to achieving the United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [SPECULATIVE: United Nations SDGs].\",\n    \"other\": \"The dataset shows a stark contrast between regions, with African nations in the sample generally exhibiting much higher shares of multidimensional poverty compared to Asian nations like Azerbaijan and Thailand [DERIVED: compared regional averages and individual country values in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the share of the population living in multidimensional poverty across various countries and world regions, primarily focusing on data from 2022 and 2023\",\n      \"The data is sourced from Our World in Data\",\n      \"Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators\"\n    ],\n    \"derived_claims\": [\n      \"Among the listed countries, Afghanistan (2022) has the highest recorded share of multidimensional poverty at approximately 64.88% [derived from comparing all values in the provided data table]\",\n      \"followed closely by Mozambique (2022) at 60.67% [derived from comparing all values in the provided data table]\",\n      \"Conversely, countries like Azerbaijan (2023) and Thailand (2022) show very low shares, both below 0.5% [derived from comparing all values in the provided data table]\",\n      \"The regional classifications provided in the data help researchers analyze how these deprivations cluster geographically [derived from observing the 'World region according to OWID' column]\",\n      \"High rates of multidimensional poverty, such as those seen in Afghanistan (64.88%) and Mozambique (60.67%) [derived from reading from data table]\",\n      \"The dataset shows a stark contrast between regions, with African nations in the sample generally exhibiting much higher shares of multidimensional poverty compared to Asian nations like Azerbaijan and Thailand [derived from comparing regional averages and individual country values in the data table]\"\n    ],\n    \"speculative_claims\": [\n      \"This metric goes beyond simple income-based poverty measures to capture the actual overlapping deprivations individuals experience daily [source: development economics]\",\n      \"For instance, an individual might not be classified as poor by income alone but could still suffer from poor health, lack of schooling, and inadequate living conditions [source: development economics]\",\n      \"This data is vital for policymakers and international development organizations to design targeted social programs and allocate resources effectively [source: public policy]\",\n      \"indicate that a majority of their populations face severe, compounding deprivations that hinder human capital development [source: development economics]\",\n      \"Addressing these issues is central to achieving the United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [source: United Nations SDGs]\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 3,\n    \"derived_count\": 6,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "A partial data table with 25 rows is provided, though 5 rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The data represents a cross-sectional snapshot of countries in 2022 and 2023, allowing for country-to-country comparisons but not long-term trend analysis."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and expert domain story clearly define the subject of multidimensional poverty and its indicators."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the share of the population living in multidimensional poverty across various countries and world regions, primarily focusing on data from 2022 and 2023 [DIRECT]. The data is sourced from Our World in Data [DIRECT]. Among the listed countries, Afghanistan (2022) has the highest recorded share of multidimensional poverty at approximately 64.88% [DERIVED: compared all values in the provided data table], followed closely by Mozambique (2022) at 60.67% [DERIVED: compared all values in the provided data table]. Conversely, countries like Azerbaijan (2023) and Thailand (2022) show very low shares, both below 0.5% [DERIVED: compared all values in the provided data table].",
+      "domain_specific_explanations": "Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators [DIRECT]. This metric goes beyond simple income-based poverty measures to capture the actual overlapping deprivations individuals experience daily [SPECULATIVE: development economics]. For instance, an individual might not be classified as poor by income alone but could still suffer from poor health, lack of schooling, and inadequate living conditions [SPECULATIVE: development economics]. The regional classifications provided in the data help researchers analyze how these deprivations cluster geographically [DERIVED: observed the 'World region according to OWID' column].",
+      "real_world_significance": "This data is vital for policymakers and international development organizations to design targeted social programs and allocate resources effectively [SPECULATIVE: public policy]. High rates of multidimensional poverty, such as those seen in Afghanistan (64.88%) and Mozambique (60.67%) [DERIVED: read from data table], indicate that a majority of their populations face severe, compounding deprivations that hinder human capital development [SPECULATIVE: development economics]. Addressing these issues is central to achieving the United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [SPECULATIVE: United Nations SDGs].",
+      "other": "The dataset shows a stark contrast between regions, with African nations in the sample generally exhibiting much higher shares of multidimensional poverty compared to Asian nations like Azerbaijan and Thailand [DERIVED: compared regional averages and individual country values in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the share of the population living in multidimensional poverty across various countries and world regions, primarily focusing on data from 2022 and 2023",
+        "The data is sourced from Our World in Data",
+        "Multidimensional poverty is defined as being deprived in a range of health, education, and living standards indicators"
+      ],
+      "derived_claims": [
+        "Among the listed countries, Afghanistan (2022) has the highest recorded share of multidimensional poverty at approximately 64.88% [derived from comparing all values in the provided data table]",
+        "followed closely by Mozambique (2022) at 60.67% [derived from comparing all values in the provided data table]",
+        "Conversely, countries like Azerbaijan (2023) and Thailand (2022) show very low shares, both below 0.5% [derived from comparing all values in the provided data table]",
+        "The regional classifications provided in the data help researchers analyze how these deprivations cluster geographically [derived from observing the 'World region according to OWID' column]",
+        "High rates of multidimensional poverty, such as those seen in Afghanistan (64.88%) and Mozambique (60.67%) [derived from reading from data table]",
+        "The dataset shows a stark contrast between regions, with African nations in the sample generally exhibiting much higher shares of multidimensional poverty compared to Asian nations like Azerbaijan and Thailand [derived from comparing regional averages and individual country values in the data table]"
+      ],
+      "speculative_claims": [
+        "This metric goes beyond simple income-based poverty measures to capture the actual overlapping deprivations individuals experience daily [source: development economics]",
+        "For instance, an individual might not be classified as poor by income alone but could still suffer from poor health, lack of schooling, and inadequate living conditions [source: development economics]",
+        "This data is vital for policymakers and international development organizations to design targeted social programs and allocate resources effectively [source: public policy]",
+        "indicate that a majority of their populations face severe, compounding deprivations that hinder human capital development [source: development economics]",
+        "Addressing these issues is central to achieving the United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [source: United Nations SDGs]"
+      ],
+      "total_flag_count": 14,
+      "direct_count": 3,
+      "derived_count": 6,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15317.86033300159,
+  "created_at": "2026-07-17T20:46:11.071484Z"
+}

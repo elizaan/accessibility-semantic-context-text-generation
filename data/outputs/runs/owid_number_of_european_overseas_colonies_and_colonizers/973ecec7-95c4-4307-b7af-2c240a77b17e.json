@@ -1,0 +1,70 @@
+{
+  "output_id": "973ecec7-95c4-4307-b7af-2c240a77b17e",
+  "chart_id": "owid_number_of_european_overseas_colonies_and_colonizers",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact data table for the year 2022 is provided with all categories, though it represents a single-year snapshot of a dataset that likely has historical depth.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Only data for the year 2022 is provided, making it impossible to calculate temporal trends or historical changes directly from the metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, source URL, and expert domain story provide clear context about the historical and political nature of the dataset.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is from Our World in Data and is titled \\\"Number of European overseas colonies and colonizers\\\" [DIRECT]. It presents data for the year 2022 across various geographic regions and income groups [DIRECT]. In 2022, the number of active European overseas colonies and active colonizers is recorded as zero across all regions, with all 195 countries in the world classified as \\\"Neither colonized nor colonizer\\\" [DERIVED: observed that 'European colonizers' and 'Colonized' columns are 0, and 'Neither colonized nor colonizer' is 195 for the World row in 2022]. This indicates a state of formal global decolonization by the year 2022 [SPECULATIVE: History/Political Science].\",\n    \"domain_specific_explanations\": \"The dataset defines \\\"colonizers\\\" specifically as the United Kingdom, France, Spain, Portugal, Netherlands, Germany, Belgium, and Italy [DIRECT]. It only considers colonized countries that have achieved independence today [DIRECT]. The value of 195 for the \\\"World\\\" entity under \\\"Neither colonized nor colonizer\\\" represents the total number of recognized independent nations in 2022 that do not currently hold overseas colonies nor are currently colonized by the specified European powers [DERIVED: interpreted from the World row values where 'Neither' is 195 and others are 0]. In historical datasets of this nature, these numbers would change dramatically if looking at the 19th or early 20th centuries, where many of these nations would be classified as \\\"Colonized\\\" or \\\"European colonizers\\\" [SPECULATIVE: History].\",\n    \"real_world_significance\": \"The data reflects the end of formal European colonial empires, showing that by 2022, formal colonial rule by the specified European nations has transitioned to independent statehood for former colonies [SPECULATIVE: History/De-colonial studies]. This transition is crucial for understanding modern geopolitics, state sovereignty, and international relations [SPECULATIVE: Political Science]. While formal colonization has ended (as shown by the zeroes in 2022), legacy effects of colonialism continue to influence the economic classifications shown in the table, such as the distribution of countries across low-income and high-income categories [SPECULATIVE: Development Economics].\",\n    \"other\": \"The regional breakdown shows Africa has 54 countries, Asia has 47, Europe has 45, North America has 23, Oceania has 14, and South America has 12, all of which are classified as independent (\\\"Neither\\\") in 2022 [DERIVED: read from the respective regional rows in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is from Our World in Data and is titled \\\"Number of European overseas colonies and colonizers\\\"\",\n      \"It presents data for the year 2022 across various geographic regions and income groups\",\n      \"The dataset defines \\\"colonizers\\\" specifically as the United Kingdom, France, Spain, Portugal, Netherlands, Germany, Belgium, and Italy\",\n      \"It only considers colonized countries that have achieved independence today\"\n    ],\n    \"derived_claims\": [\n      \"In 2022, the number of active European overseas colonies and active colonizers is recorded as zero across all regions, with all 195 countries in the world classified as \\\"Neither colonized nor colonizer\\\" [derived from observing that 'European colonizers' and 'Colonized' columns are 0, and 'Neither colonized nor colonizer' is 195 for the World row in 2022]\",\n      \"The value of 195 for the \\\"World\\\" entity under \\\"Neither colonized nor colonizer\\\" represents the total number of recognized independent nations in 2022 that do not currently hold overseas colonies nor are currently colonized by the specified European powers [derived from interpreting the World row values where 'Neither' is 195 and others are 0]\",\n      \"The regional breakdown shows Africa has 54 countries, Asia has 47, Europe has 45, North America has 23, Oceania has 14, and South America has 12, all of which are classified as independent (\\\"Neither\\\") in 2022 [derived from reading the respective regional rows in the data table]\"\n    ],\n    \"speculative_claims\": [\n      \"This indicates a state of formal global decolonization by the year 2022 [source: History/Political Science]\",\n      \"In historical datasets of this nature, these numbers would change dramatically if looking at the 19th or early 20th centuries, where many of these nations would be classified as \\\"Colonized\\\" or \\\"European colonizers\\\" [source: History]\",\n      \"The data reflects the end of formal European colonial empires, showing that by 2022, formal colonial rule by the specified European nations has transitioned to independent statehood for former colonies [source: History/De-colonial studies]\",\n      \"This transition is crucial for understanding modern geopolitics, state sovereignty, and international relations [source: Political Science]\",\n      \"While formal colonization has ended (as shown by the zeroes in 2022), legacy effects of colonialism continue to influence the economic classifications shown in the table, such as the distribution of countries across low-income and high-income categories [source: Development Economics]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact data table for the year 2022 is provided with all categories, though it represents a single-year snapshot of a dataset that likely has historical depth."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Only data for the year 2022 is provided, making it impossible to calculate temporal trends or historical changes directly from the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, source URL, and expert domain story provide clear context about the historical and political nature of the dataset."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is from Our World in Data and is titled \"Number of European overseas colonies and colonizers\" [DIRECT]. It presents data for the year 2022 across various geographic regions and income groups [DIRECT]. In 2022, the number of active European overseas colonies and active colonizers is recorded as zero across all regions, with all 195 countries in the world classified as \"Neither colonized nor colonizer\" [DERIVED: observed that 'European colonizers' and 'Colonized' columns are 0, and 'Neither colonized nor colonizer' is 195 for the World row in 2022]. This indicates a state of formal global decolonization by the year 2022 [SPECULATIVE: History/Political Science].",
+      "domain_specific_explanations": "The dataset defines \"colonizers\" specifically as the United Kingdom, France, Spain, Portugal, Netherlands, Germany, Belgium, and Italy [DIRECT]. It only considers colonized countries that have achieved independence today [DIRECT]. The value of 195 for the \"World\" entity under \"Neither colonized nor colonizer\" represents the total number of recognized independent nations in 2022 that do not currently hold overseas colonies nor are currently colonized by the specified European powers [DERIVED: interpreted from the World row values where 'Neither' is 195 and others are 0]. In historical datasets of this nature, these numbers would change dramatically if looking at the 19th or early 20th centuries, where many of these nations would be classified as \"Colonized\" or \"European colonizers\" [SPECULATIVE: History].",
+      "real_world_significance": "The data reflects the end of formal European colonial empires, showing that by 2022, formal colonial rule by the specified European nations has transitioned to independent statehood for former colonies [SPECULATIVE: History/De-colonial studies]. This transition is crucial for understanding modern geopolitics, state sovereignty, and international relations [SPECULATIVE: Political Science]. While formal colonization has ended (as shown by the zeroes in 2022), legacy effects of colonialism continue to influence the economic classifications shown in the table, such as the distribution of countries across low-income and high-income categories [SPECULATIVE: Development Economics].",
+      "other": "The regional breakdown shows Africa has 54 countries, Asia has 47, Europe has 45, North America has 23, Oceania has 14, and South America has 12, all of which are classified as independent (\"Neither\") in 2022 [DERIVED: read from the respective regional rows in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is from Our World in Data and is titled \"Number of European overseas colonies and colonizers\"",
+        "It presents data for the year 2022 across various geographic regions and income groups",
+        "The dataset defines \"colonizers\" specifically as the United Kingdom, France, Spain, Portugal, Netherlands, Germany, Belgium, and Italy",
+        "It only considers colonized countries that have achieved independence today"
+      ],
+      "derived_claims": [
+        "In 2022, the number of active European overseas colonies and active colonizers is recorded as zero across all regions, with all 195 countries in the world classified as \"Neither colonized nor colonizer\" [derived from observing that 'European colonizers' and 'Colonized' columns are 0, and 'Neither colonized nor colonizer' is 195 for the World row in 2022]",
+        "The value of 195 for the \"World\" entity under \"Neither colonized nor colonizer\" represents the total number of recognized independent nations in 2022 that do not currently hold overseas colonies nor are currently colonized by the specified European powers [derived from interpreting the World row values where 'Neither' is 195 and others are 0]",
+        "The regional breakdown shows Africa has 54 countries, Asia has 47, Europe has 45, North America has 23, Oceania has 14, and South America has 12, all of which are classified as independent (\"Neither\") in 2022 [derived from reading the respective regional rows in the data table]"
+      ],
+      "speculative_claims": [
+        "This indicates a state of formal global decolonization by the year 2022 [source: History/Political Science]",
+        "In historical datasets of this nature, these numbers would change dramatically if looking at the 19th or early 20th centuries, where many of these nations would be classified as \"Colonized\" or \"European colonizers\" [source: History]",
+        "The data reflects the end of formal European colonial empires, showing that by 2022, formal colonial rule by the specified European nations has transitioned to independent statehood for former colonies [source: History/De-colonial studies]",
+        "This transition is crucial for understanding modern geopolitics, state sovereignty, and international relations [source: Political Science]",
+        "While formal colonization has ended (as shown by the zeroes in 2022), legacy effects of colonialism continue to influence the economic classifications shown in the table, such as the distribution of countries across low-income and high-income categories [source: Development Economics]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13017.01333299934,
+  "created_at": "2026-07-17T21:02:22.023270Z"
+}

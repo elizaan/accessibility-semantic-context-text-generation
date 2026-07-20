@@ -1,0 +1,71 @@
+{
+  "output_id": "2390220a-79c2-4f13-b8db-a65fd02d883e",
+  "chart_id": "owid_key_features_of_womens_political_empowerment",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The provided data table is truncated and only shows 2025 values for other countries, but the chart image specifically focuses on the historical timeline for China, which must be read directly from the visual.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The trends over time (1789–2025) are visible in the image but are not described or quantified in the provided metadata.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain (V-Dem gender empowerment indices) and the specific country context (China) are clearly identifiable from the image title and expert domain story.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays four distinct indices tracking women's political empowerment in China from 1789 to 2025 [DERIVED: read from image title and x-axes]. The data is sourced from the Varieties of Democracy (V-Dem) project and published by Our World in Data [DIRECT]. The four dimensions analyzed are: Women's political empowerment overall, Women's civil liberties, Women's civil society participation, and Women's political participation [DERIVED: read from image sub-panel titles].\",\n    \"domain_specific_explanations\": \"The V-Dem indices range from 0 to 1, where 1 represents the highest level of empowerment [DIRECT]. Across all four panels, China's scores remain completely flat and near zero from 1789 until the early 20th century [DERIVED: read from the line charts in the image]. A small upward step occurs around 1911, followed by a massive, sharp increase around 1949 across all indicators [DERIVED: read from the line charts in the image]. Women's political participation shows the highest score, peaking near 0.9 in the late 20th century before experiencing a slight decline to around 0.8 by 2025 [DERIVED: read from the bottom-right panel]. Conversely, women's civil liberties remain the lowest-scoring dimension, plateauing below 0.4 [DERIVED: read from the top-right panel].\",\n    \"real_world_significance\": \"The historical inflection points align closely with major political shifts in modern Chinese history [SPECULATIVE: Chinese History]. The initial rise in 1911 corresponds to the fall of the Qing Dynasty and the establishment of the Republic of China [SPECULATIVE: Chinese History]. The dramatic surge in 1949 reflects the founding of the People's Republic of China and the Communist Party's early state-led mobilization of women into the workforce and political sphere, codified by reforms like the 1950 Marriage Law [SPECULATIVE: Chinese History]. However, the persistent gap between high political participation (around 0.8) and low civil liberties (below 0.4) highlights a critical nuance in authoritarian contexts: state-mobilized inclusion and representation do not necessarily translate to individual civil freedoms or autonomous civil society space [SPECULATIVE: Political Science].\",\n    \"other\": \"The overall political empowerment index for China currently stands at approximately 0.6, reflecting a composite of these highly uneven sub-dimensions [DERIVED: read from the top-left panel].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The data is sourced from the Varieties of Democracy (V-Dem) project and published by Our World in Data\",\n      \"The V-Dem indices range from 0 to 1, where 1 represents the highest level of empowerment\"\n    ],\n    \"derived_claims\": [\n      \"The chart displays four distinct indices tracking women's political empowerment in China from 1789 to 2025\",\n      \"The four dimensions analyzed are: Women's political empowerment overall, Women's civil liberties, Women's civil society participation, and Women's political participation\",\n      \"Across all four panels, China's scores remain completely flat and near zero from 1789 until the early 20th century\",\n      \"A small upward step occurs around 1911, followed by a massive, sharp increase around 1949 across all indicators\",\n      \"Women's political participation shows the highest score, peaking near 0.9 in the late 20th century before experiencing a slight decline to around 0.8 by 2025\",\n      \"Conversely, women's civil liberties remain the lowest-scoring dimension, plateauing below 0.4\",\n      \"The overall political empowerment index for China currently stands at approximately 0.6, reflecting a composite of these highly uneven sub-dimensions\"\n    ],\n    \"speculative_claims\": [\n      \"The historical inflection points align closely with major political shifts in modern Chinese history\",\n      \"The initial rise in 1911 corresponds to the fall of the Qing Dynasty and the establishment of the Republic of China\",\n      \"The dramatic surge in 1949 reflects the founding of the People's Republic of China and the Communist Party's early state-led mobilization of women into the workforce and political sphere, codified by reforms like the 1950 Marriage Law\",\n      \"However, the persistent gap between high political participation (around 0.8) and low civil liberties (below 0.4) highlights a critical nuance in authoritarian contexts: state-mobilized inclusion and representation do not necessarily translate to individual civil freedoms or autonomous civil society space\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 2,\n    \"derived_count\": 7,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The provided data table is truncated and only shows 2025 values for other countries, but the chart image specifically focuses on the historical timeline for China, which must be read directly from the visual."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The trends over time (1789–2025) are visible in the image but are not described or quantified in the provided metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (V-Dem gender empowerment indices) and the specific country context (China) are clearly identifiable from the image title and expert domain story."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays four distinct indices tracking women's political empowerment in China from 1789 to 2025 [DERIVED: read from image title and x-axes]. The data is sourced from the Varieties of Democracy (V-Dem) project and published by Our World in Data [DIRECT]. The four dimensions analyzed are: Women's political empowerment overall, Women's civil liberties, Women's civil society participation, and Women's political participation [DERIVED: read from image sub-panel titles].",
+      "domain_specific_explanations": "The V-Dem indices range from 0 to 1, where 1 represents the highest level of empowerment [DIRECT]. Across all four panels, China's scores remain completely flat and near zero from 1789 until the early 20th century [DERIVED: read from the line charts in the image]. A small upward step occurs around 1911, followed by a massive, sharp increase around 1949 across all indicators [DERIVED: read from the line charts in the image]. Women's political participation shows the highest score, peaking near 0.9 in the late 20th century before experiencing a slight decline to around 0.8 by 2025 [DERIVED: read from the bottom-right panel]. Conversely, women's civil liberties remain the lowest-scoring dimension, plateauing below 0.4 [DERIVED: read from the top-right panel].",
+      "real_world_significance": "The historical inflection points align closely with major political shifts in modern Chinese history [SPECULATIVE: Chinese History]. The initial rise in 1911 corresponds to the fall of the Qing Dynasty and the establishment of the Republic of China [SPECULATIVE: Chinese History]. The dramatic surge in 1949 reflects the founding of the People's Republic of China and the Communist Party's early state-led mobilization of women into the workforce and political sphere, codified by reforms like the 1950 Marriage Law [SPECULATIVE: Chinese History]. However, the persistent gap between high political participation (around 0.8) and low civil liberties (below 0.4) highlights a critical nuance in authoritarian contexts: state-mobilized inclusion and representation do not necessarily translate to individual civil freedoms or autonomous civil society space [SPECULATIVE: Political Science].",
+      "other": "The overall political empowerment index for China currently stands at approximately 0.6, reflecting a composite of these highly uneven sub-dimensions [DERIVED: read from the top-left panel]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The data is sourced from the Varieties of Democracy (V-Dem) project and published by Our World in Data",
+        "The V-Dem indices range from 0 to 1, where 1 represents the highest level of empowerment"
+      ],
+      "derived_claims": [
+        "The chart displays four distinct indices tracking women's political empowerment in China from 1789 to 2025",
+        "The four dimensions analyzed are: Women's political empowerment overall, Women's civil liberties, Women's civil society participation, and Women's political participation",
+        "Across all four panels, China's scores remain completely flat and near zero from 1789 until the early 20th century",
+        "A small upward step occurs around 1911, followed by a massive, sharp increase around 1949 across all indicators",
+        "Women's political participation shows the highest score, peaking near 0.9 in the late 20th century before experiencing a slight decline to around 0.8 by 2025",
+        "Conversely, women's civil liberties remain the lowest-scoring dimension, plateauing below 0.4",
+        "The overall political empowerment index for China currently stands at approximately 0.6, reflecting a composite of these highly uneven sub-dimensions"
+      ],
+      "speculative_claims": [
+        "The historical inflection points align closely with major political shifts in modern Chinese history",
+        "The initial rise in 1911 corresponds to the fall of the Qing Dynasty and the establishment of the Republic of China",
+        "The dramatic surge in 1949 reflects the founding of the People's Republic of China and the Communist Party's early state-led mobilization of women into the workforce and political sphere, codified by reforms like the 1950 Marriage Law",
+        "However, the persistent gap between high political participation (around 0.8) and low civil liberties (below 0.4) highlights a critical nuance in authoritarian contexts: state-mobilized inclusion and representation do not necessarily translate to individual civil freedoms or autonomous civil society space"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 2,
+      "derived_count": 7,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10998.237874999177,
+  "created_at": "2026-07-17T20:38:39.989173Z"
+}

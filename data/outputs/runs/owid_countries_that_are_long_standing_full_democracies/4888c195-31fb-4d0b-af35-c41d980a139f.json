@@ -1,0 +1,72 @@
+{
+  "output_id": "4888c195-31fb-4d0b-af35-c41d980a139f",
+  "chart_id": "owid_countries_that_are_long_standing_full_democracies",
+  "dataset_source": "our_world_data",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The metadata provides a comprehensive data table with exact country counts for the year 2025 across all regions and age cohorts. However, it lacks the historical time-series data required to calculate the percentages shown on the chart's Y-axis for the entire timeline (1789–2025).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The provided data is limited to a single snapshot (2025). While the chart image visually depicts a strong upward trend in the global proportion of democracies over time, the metadata table does not contain the historical values needed to numerically quantify this trend magnitude.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The domain is clearly defined as political science and global democracy tracking. The 'Expert Domain Story' provides the specific definition of 'Full democracies' and attributes the data to the Lexical Index of Electoral Democracy.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart, produced by Our World in Data using the Lexical Index of Electoral Democracy, tracks the proportion of the world's countries that are classified as 'full democracies' versus 'not full democracies' [DIRECT]. The data is visualized as a stacked area chart spanning from 1789 to 2025, where the purple area represents non-democracies and the colored bands below represent democracies of varying ages [DERIVED: Visual interpretation of chart structure]. The chart highlights that while the vast majority of the world's history (1789–1900) was dominated by non-democracies, there has been a significant expansion of democratic nations since 1950 [DERIVED: Visual trend analysis].\",\n    \"domain_specific_explanations\": \"In this dataset, a 'full democracy' is defined as a political system where citizens can choose their executive and legislature in multi-party, uncertain elections, while enjoying freedoms of expression, assembly, and association [DIRECT]. The chart differentiates democracies by 'age'—how many years they have maintained this status—ranging from 1-18 years (light yellow) to 61-90 years (dark blue) [DIRECT]. For the year 2025, the data indicates that 24 countries have been full democracies for between 61 and 90 years [DIRECT]. Additionally, 35 countries have maintained this status for 31 to 60 years [DIRECT]. The remaining democracies are 'younger,' with 10 countries aged 1-18 years and 8 countries aged 19-30 years [DIRECT].\",\n    \"real_world_significance\": \"This data is significant for understanding the durability and spread of democratic governance globally. The fact that 24 countries have sustained full democracy for over 60 years suggests a consolidation of democratic institutions in specific regions, likely in Europe and Oceania [SPECULATIVE: Political Science / Historical Context]. Conversely, the presence of 10 'young' democracies (aged 1-18 years) indicates ongoing political transitions and the fragility of new democratic systems [SPECULATIVE: Political Science]. The chart underscores the relatively recent nature of global democracy, serving as a benchmark for human rights and political stability [SPECULATIVE: International Relations].\",\n    \"other\": \"The 2025 data reveals a regional disparity in the maturity of democracies. Europe accounts for the highest number of long-standing democracies, with 15 countries aged 61-90 years [DIRECT]. In contrast, Africa has no countries in the oldest category (61-90 years) and only 3 countries in the youngest category (1-18 years) [DIRECT]. This highlights a geographic concentration of historical democratic stability in Europe and Oceania compared to other regions [DERIVED: Comparison of regional rows].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart, produced by Our World in Data using the Lexical Index of Electoral Democracy, tracks the proportion of the world's countries that are classified as 'full democracies' versus 'not full democracies'\",\n      \"In this dataset, a 'full democracy' is defined as a political system where citizens can choose their executive and legislature in multi-party, uncertain elections, while enjoying freedoms of expression, assembly, and association\",\n      \"The chart differentiates democracies by 'age'—how many years they have maintained this status—ranging from 1-18 years (light yellow) to 61-90 years (dark blue)\",\n      \"For the year 2025, the data indicates that 24 countries have been full democracies for between 61 and 90 years\",\n      \"Additionally, 35 countries have maintained this status for 31 to 60 years\",\n      \"The remaining democracies are 'younger,' with 10 countries aged 1-18 years and 8 countries aged 19-30 years\",\n      \"Europe accounts for the highest number of long-standing democracies, with 15 countries aged 61-90 years\",\n      \"Africa has no countries in the oldest category (61-90 years) and only 3 countries in the youngest category (1-18 years)\"\n    ],\n    \"derived_claims\": [\n      \"The data is visualized as a stacked area chart spanning from 1789 to 2025, where the purple area represents non-democracies and the colored bands below represent democracies of varying ages\",\n      \"The chart highlights that while the vast majority of the world's history (1789–1900) was dominated by non-democracies, there has been a significant expansion of democratic nations since 1950\",\n      \"This highlights a geographic concentration of historical democratic stability in Europe and Oceania compared to other regions\"\n    ],\n    \"speculative_claims\": [\n      \"The fact that 24 countries have sustained full democracy for over 60 years suggests a consolidation of democratic institutions in specific regions, likely in Europe and Oceania\",\n      \"The presence of 10 'young' democracies (aged 1-18 years) indicates ongoing political transitions and the fragility of new democratic systems\",\n      \"The chart underscores the relatively recent nature of global democracy, serving as a benchmark for human rights and political stability\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 8,\n    \"derived_count\": 3,\n    \"speculative_count\": 3\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The metadata provides a comprehensive data table with exact country counts for the year 2025 across all regions and age cohorts. However, it lacks the historical time-series data required to calculate the percentages shown on the chart's Y-axis for the entire timeline (1789–2025)."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The provided data is limited to a single snapshot (2025). While the chart image visually depicts a strong upward trend in the global proportion of democracies over time, the metadata table does not contain the historical values needed to numerically quantify this trend magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The domain is clearly defined as political science and global democracy tracking. The 'Expert Domain Story' provides the specific definition of 'Full democracies' and attributes the data to the Lexical Index of Electoral Democracy."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart, produced by Our World in Data using the Lexical Index of Electoral Democracy, tracks the proportion of the world's countries that are classified as 'full democracies' versus 'not full democracies' [DIRECT]. The data is visualized as a stacked area chart spanning from 1789 to 2025, where the purple area represents non-democracies and the colored bands below represent democracies of varying ages [DERIVED: Visual interpretation of chart structure]. The chart highlights that while the vast majority of the world's history (1789–1900) was dominated by non-democracies, there has been a significant expansion of democratic nations since 1950 [DERIVED: Visual trend analysis].",
+      "domain_specific_explanations": "In this dataset, a 'full democracy' is defined as a political system where citizens can choose their executive and legislature in multi-party, uncertain elections, while enjoying freedoms of expression, assembly, and association [DIRECT]. The chart differentiates democracies by 'age'—how many years they have maintained this status—ranging from 1-18 years (light yellow) to 61-90 years (dark blue) [DIRECT]. For the year 2025, the data indicates that 24 countries have been full democracies for between 61 and 90 years [DIRECT]. Additionally, 35 countries have maintained this status for 31 to 60 years [DIRECT]. The remaining democracies are 'younger,' with 10 countries aged 1-18 years and 8 countries aged 19-30 years [DIRECT].",
+      "real_world_significance": "This data is significant for understanding the durability and spread of democratic governance globally. The fact that 24 countries have sustained full democracy for over 60 years suggests a consolidation of democratic institutions in specific regions, likely in Europe and Oceania [SPECULATIVE: Political Science / Historical Context]. Conversely, the presence of 10 'young' democracies (aged 1-18 years) indicates ongoing political transitions and the fragility of new democratic systems [SPECULATIVE: Political Science]. The chart underscores the relatively recent nature of global democracy, serving as a benchmark for human rights and political stability [SPECULATIVE: International Relations].",
+      "other": "The 2025 data reveals a regional disparity in the maturity of democracies. Europe accounts for the highest number of long-standing democracies, with 15 countries aged 61-90 years [DIRECT]. In contrast, Africa has no countries in the oldest category (61-90 years) and only 3 countries in the youngest category (1-18 years) [DIRECT]. This highlights a geographic concentration of historical democratic stability in Europe and Oceania compared to other regions [DERIVED: Comparison of regional rows]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart, produced by Our World in Data using the Lexical Index of Electoral Democracy, tracks the proportion of the world's countries that are classified as 'full democracies' versus 'not full democracies'",
+        "In this dataset, a 'full democracy' is defined as a political system where citizens can choose their executive and legislature in multi-party, uncertain elections, while enjoying freedoms of expression, assembly, and association",
+        "The chart differentiates democracies by 'age'—how many years they have maintained this status—ranging from 1-18 years (light yellow) to 61-90 years (dark blue)",
+        "For the year 2025, the data indicates that 24 countries have been full democracies for between 61 and 90 years",
+        "Additionally, 35 countries have maintained this status for 31 to 60 years",
+        "The remaining democracies are 'younger,' with 10 countries aged 1-18 years and 8 countries aged 19-30 years",
+        "Europe accounts for the highest number of long-standing democracies, with 15 countries aged 61-90 years",
+        "Africa has no countries in the oldest category (61-90 years) and only 3 countries in the youngest category (1-18 years)"
+      ],
+      "derived_claims": [
+        "The data is visualized as a stacked area chart spanning from 1789 to 2025, where the purple area represents non-democracies and the colored bands below represent democracies of varying ages",
+        "The chart highlights that while the vast majority of the world's history (1789–1900) was dominated by non-democracies, there has been a significant expansion of democratic nations since 1950",
+        "This highlights a geographic concentration of historical democratic stability in Europe and Oceania compared to other regions"
+      ],
+      "speculative_claims": [
+        "The fact that 24 countries have sustained full democracy for over 60 years suggests a consolidation of democratic institutions in specific regions, likely in Europe and Oceania",
+        "The presence of 10 'young' democracies (aged 1-18 years) indicates ongoing political transitions and the fragility of new democratic systems",
+        "The chart underscores the relatively recent nature of global democracy, serving as a benchmark for human rights and political stability"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 8,
+      "derived_count": 3,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 3270,
+    "output": 1502
+  },
+  "latency_ms": 3933.056875001057,
+  "created_at": "2026-07-19T06:57:41.941624Z"
+}

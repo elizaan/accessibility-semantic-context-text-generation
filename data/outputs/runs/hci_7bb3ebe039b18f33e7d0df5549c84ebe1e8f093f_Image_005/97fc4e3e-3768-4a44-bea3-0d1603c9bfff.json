@@ -1,0 +1,65 @@
+{
+  "output_id": "97fc4e3e-3768-4a44-bea3-0d1603c9bfff",
+  "chart_id": "hci_7bb3ebe039b18f33e7d0df5549c84ebe1e8f093f_Image_005",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gemini-3.5-flash",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No data table or raw values were provided in the metadata.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The trend can be visually estimated from the image, but no quantitative trend metrics or statistical summaries were provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 1,\n        \"justification\": \"The domain is not specified in the metadata, though the axis labels 'Values' and 'Produced Values' suggest a sensorimotor or psychophysical production task.\"\n      },\n      \"overall\": 1\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is a scatter plot illustrating the relationship between target reference stimuli, labeled as 'Values' on the horizontal axis, and the corresponding responses, labeled as 'Produced Values' on the vertical axis [DERIVED: read from axis labels]. This experimental design is characteristic of psychophysical, cognitive, or sensorimotor production tasks where participants are asked to reproduce a physical quantity like force, duration, or distance [SPECULATIVE: psychophysics]. A vertical grey shaded band is positioned centrally around the zero mark on the horizontal axis, highlighting a baseline or control region [DERIVED: visual inspection of the shaded region].\",\n    \"domain_specific_explanations\": \"The horizontal axis spans from -200 to 200, while the vertical axis spans from -150 to 150 [DERIVED: read from axis limits]. The data points are clustered in distinct vertical columns, indicating that the experiment tested participants at specific, discrete target values rather than across a continuous range [DERIVED: observation of vertical clustering of data points]. Near the center (within the grey band around zero), the produced values are tightly clustered with very low variance [DERIVED: observation of point density near zero]. As the target values move further from zero in both positive and negative directions, the vertical spread of the produced values increases significantly [DERIVED: comparison of vertical spread at X=0 vs X=200 and X=-200]. This pattern of increasing variance with stimulus magnitude is a classic demonstration of scalar variability, often associated with Weber's Law in sensory perception [SPECULATIVE: psychophysics].\",\n    \"real_world_significance\": \"Understanding the limits of human sensorimotor precision is vital for designing ergonomic interfaces, virtual reality controllers, and medical prosthetics [SPECULATIVE: human-computer interaction]. The increased variability at larger target magnitudes suggests that human control becomes less precise at extreme values, meaning system designers must implement software-level smoothing or scaling to assist users when high-magnitude inputs are required [SPECULATIVE: control systems engineering]. Conversely, the high precision near zero indicates that small-scale adjustments are highly reliable and require less assistive correction [SPECULATIVE: ergonomics].\",\n    \"other\": \"The overall relationship between the target values and produced values is positive and monotonic, showing that participants successfully scaled their outputs to match the direction and relative magnitude of the targets [DERIVED: visual trend analysis].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [],\n    \"derived_claims\": [\n      \"The chart is a scatter plot illustrating the relationship between target reference stimuli, labeled as 'Values' on the horizontal axis, and the corresponding responses, labeled as 'Produced Values' on the vertical axis\",\n      \"A vertical grey shaded band is positioned centrally around the zero mark on the horizontal axis, highlighting a baseline or control region\",\n      \"The horizontal axis spans from -200 to 200, while the vertical axis spans from -150 to 150\",\n      \"The data points are clustered in distinct vertical columns, indicating that the experiment tested participants at specific, discrete target values rather than across a continuous range\",\n      \"Near the center (within the grey band around zero), the produced values are tightly clustered with very low variance\",\n      \"As the target values move further from zero in both positive and negative directions, the vertical spread of the produced values increases significantly\",\n      \"The overall relationship between the target values and produced values is positive and monotonic, showing that participants successfully scaled their outputs to match the direction and relative magnitude of the targets\"\n    ],\n    \"speculative_claims\": [\n      \"This experimental design is characteristic of psychophysical, cognitive, or sensorimotor production tasks where participants are asked to reproduce a physical quantity like force, duration, or distance\",\n      \"This pattern of increasing variance with stimulus magnitude is a classic demonstration of scalar variability, often associated with Weber's Law in sensory perception\",\n      \"Understanding the limits of human sensorimotor precision is vital for designing ergonomic interfaces, virtual reality controllers, and medical prosthetics\",\n      \"The increased variability at larger target magnitudes suggests that human control becomes less precise at extreme values, meaning system designers must implement software-level smoothing or scaling to assist users when high-magnitude inputs are required\",\n      \"Conversely, the high precision near zero indicates that small-scale adjustments are highly reliable and require less assistive correction\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 0,\n    \"derived_count\": 7,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No data table or raw values were provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The trend can be visually estimated from the image, but no quantitative trend metrics or statistical summaries were provided."
+        },
+        "chart_subject_domain": {
+          "score": 1,
+          "justification": "The domain is not specified in the metadata, though the axis labels 'Values' and 'Produced Values' suggest a sensorimotor or psychophysical production task."
+        },
+        "overall": 1
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is a scatter plot illustrating the relationship between target reference stimuli, labeled as 'Values' on the horizontal axis, and the corresponding responses, labeled as 'Produced Values' on the vertical axis [DERIVED: read from axis labels]. This experimental design is characteristic of psychophysical, cognitive, or sensorimotor production tasks where participants are asked to reproduce a physical quantity like force, duration, or distance [SPECULATIVE: psychophysics]. A vertical grey shaded band is positioned centrally around the zero mark on the horizontal axis, highlighting a baseline or control region [DERIVED: visual inspection of the shaded region].",
+      "domain_specific_explanations": "The horizontal axis spans from -200 to 200, while the vertical axis spans from -150 to 150 [DERIVED: read from axis limits]. The data points are clustered in distinct vertical columns, indicating that the experiment tested participants at specific, discrete target values rather than across a continuous range [DERIVED: observation of vertical clustering of data points]. Near the center (within the grey band around zero), the produced values are tightly clustered with very low variance [DERIVED: observation of point density near zero]. As the target values move further from zero in both positive and negative directions, the vertical spread of the produced values increases significantly [DERIVED: comparison of vertical spread at X=0 vs X=200 and X=-200]. This pattern of increasing variance with stimulus magnitude is a classic demonstration of scalar variability, often associated with Weber's Law in sensory perception [SPECULATIVE: psychophysics].",
+      "real_world_significance": "Understanding the limits of human sensorimotor precision is vital for designing ergonomic interfaces, virtual reality controllers, and medical prosthetics [SPECULATIVE: human-computer interaction]. The increased variability at larger target magnitudes suggests that human control becomes less precise at extreme values, meaning system designers must implement software-level smoothing or scaling to assist users when high-magnitude inputs are required [SPECULATIVE: control systems engineering]. Conversely, the high precision near zero indicates that small-scale adjustments are highly reliable and require less assistive correction [SPECULATIVE: ergonomics].",
+      "other": "The overall relationship between the target values and produced values is positive and monotonic, showing that participants successfully scaled their outputs to match the direction and relative magnitude of the targets [DERIVED: visual trend analysis]."
+    },
+    "flags": {
+      "direct_claims": [],
+      "derived_claims": [
+        "The chart is a scatter plot illustrating the relationship between target reference stimuli, labeled as 'Values' on the horizontal axis, and the corresponding responses, labeled as 'Produced Values' on the vertical axis",
+        "A vertical grey shaded band is positioned centrally around the zero mark on the horizontal axis, highlighting a baseline or control region",
+        "The horizontal axis spans from -200 to 200, while the vertical axis spans from -150 to 150",
+        "The data points are clustered in distinct vertical columns, indicating that the experiment tested participants at specific, discrete target values rather than across a continuous range",
+        "Near the center (within the grey band around zero), the produced values are tightly clustered with very low variance",
+        "As the target values move further from zero in both positive and negative directions, the vertical spread of the produced values increases significantly",
+        "The overall relationship between the target values and produced values is positive and monotonic, showing that participants successfully scaled their outputs to match the direction and relative magnitude of the targets"
+      ],
+      "speculative_claims": [
+        "This experimental design is characteristic of psychophysical, cognitive, or sensorimotor production tasks where participants are asked to reproduce a physical quantity like force, duration, or distance",
+        "This pattern of increasing variance with stimulus magnitude is a classic demonstration of scalar variability, often associated with Weber's Law in sensory perception",
+        "Understanding the limits of human sensorimotor precision is vital for designing ergonomic interfaces, virtual reality controllers, and medical prosthetics",
+        "The increased variability at larger target magnitudes suggests that human control becomes less precise at extreme values, meaning system designers must implement software-level smoothing or scaling to assist users when high-magnitude inputs are required",
+        "Conversely, the high precision near zero indicates that small-scale adjustments are highly reliable and require less assistive correction"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 0,
+      "derived_count": 7,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12943.754750000153,
+  "created_at": "2026-07-17T20:08:06.721580Z"
+}

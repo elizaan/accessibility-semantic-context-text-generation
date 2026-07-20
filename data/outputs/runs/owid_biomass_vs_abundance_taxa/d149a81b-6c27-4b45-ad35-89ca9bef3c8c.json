@@ -1,0 +1,64 @@
+{
+  "output_id": "d149a81b-6c27-4b45-ad35-89ca9bef3c8c",
+  "chart_id": "owid_biomass_vs_abundance_taxa",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image provides data values, but the exact values are not provided in the text.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart image shows a trend, but the magnitude is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart subject domain is ecology or biology, which is partially sufficient.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares the global biomass and abundance of different taxonomic groups [DIRECT]. The chart is from a study by Bar-On, Y. M., Phillips, R., & Milo, R. (2018) [DIRECT]. The data is presented on a logarithmic axis [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart shows that plants have the highest global biomass, while viruses have the highest abundance [DERIVED: from chart image]. The biomass is measured in tonnes of carbon [DIRECT]. The abundance is measured in the number of individuals [DIRECT].\",\n    \"real_world_significance\": \"This data matters because it shows the distribution of biomass and abundance across different taxonomic groups [SPECULATIVE: ecology]. It can inform conservation efforts and understanding of ecosystem dynamics [SPECULATIVE: ecology].\",\n    \"other\": \"The chart is produced by Our World in Data [DIRECT]. The data is presented as order-of-magnitude estimates [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares the global biomass and abundance of different taxonomic groups\",\n      \"The chart is from a study by Bar-On, Y. M., Phillips, R., & Milo, R. (2018)\",\n      \"The data is presented on a logarithmic axis\",\n      \"The biomass is measured in tonnes of carbon\",\n      \"The abundance is measured in the number of individuals\",\n      \"The chart is produced by Our World in Data\",\n      \"The data is presented as order-of-magnitude estimates\"\n    ],\n    \"derived_claims\": [\n      \"Plants have the highest global biomass\",\n      \"Viruses have the highest abundance\"\n    ],\n    \"speculative_claims\": [\n      \"It can inform conservation efforts and understanding of ecosystem dynamics\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 7,\n    \"derived_count\": 2,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image provides data values, but the exact values are not provided in the text."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart image shows a trend, but the magnitude is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart subject domain is ecology or biology, which is partially sufficient."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares the global biomass and abundance of different taxonomic groups [DIRECT]. The chart is from a study by Bar-On, Y. M., Phillips, R., & Milo, R. (2018) [DIRECT]. The data is presented on a logarithmic axis [DIRECT].",
+      "domain_specific_explanations": "The chart shows that plants have the highest global biomass, while viruses have the highest abundance [DERIVED: from chart image]. The biomass is measured in tonnes of carbon [DIRECT]. The abundance is measured in the number of individuals [DIRECT].",
+      "real_world_significance": "This data matters because it shows the distribution of biomass and abundance across different taxonomic groups [SPECULATIVE: ecology]. It can inform conservation efforts and understanding of ecosystem dynamics [SPECULATIVE: ecology].",
+      "other": "The chart is produced by Our World in Data [DIRECT]. The data is presented as order-of-magnitude estimates [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares the global biomass and abundance of different taxonomic groups",
+        "The chart is from a study by Bar-On, Y. M., Phillips, R., & Milo, R. (2018)",
+        "The data is presented on a logarithmic axis",
+        "The biomass is measured in tonnes of carbon",
+        "The abundance is measured in the number of individuals",
+        "The chart is produced by Our World in Data",
+        "The data is presented as order-of-magnitude estimates"
+      ],
+      "derived_claims": [
+        "Plants have the highest global biomass",
+        "Viruses have the highest abundance"
+      ],
+      "speculative_claims": [
+        "It can inform conservation efforts and understanding of ecosystem dynamics"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 7,
+      "derived_count": 2,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 2146,
+    "output": 557
+  },
+  "latency_ms": 1771.433750000142,
+  "created_at": "2026-07-17T20:22:56.588518Z"
+}

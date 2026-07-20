@@ -1,0 +1,74 @@
+{
+  "output_id": "24bea8c9-7125-4f76-8850-fe3ad52a5ca0",
+  "chart_id": "olli_area-chart",
+  "dataset_source": "olli",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The exact data table is marked [NOT PROVIDED]. However, the OLLI screen reader tree provides segmented statistics (average sums for specific date ranges) and axis ranges. This is incomplete because precise monthly values are missing, making it impossible to describe specific peaks, troughs, or exact month-over-month changes, only general averages per period.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"Trends can be partially inferred from the segmented averages in the OLLI tree (e.g., a significant jump in average count from the 2005-2007 period to the 2007-2010 period). However, without the raw data, the magnitude of specific events (like the peak unemployment month) is approximate.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The chart title, axis labels, and expert domain story clearly identify the subject as 'Unemployment across industries' over time. The domain is labor economics/macroeconomics.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart visualizes the total number of unemployed individuals across various industries in the United States from January 2000 to February 2010 [DIRECT]. The data is aggregated monthly, showing the sum of unemployment counts rather than rates or percentages [DERIVED: axis label 'count' and expert story 'summed over time']. The chart spans a decade that includes the dot-com bubble burst, the post-9/11 recession, and the Great Recession [SPECULATIVE: historical knowledge of US economic periods between 2000 and 2010].\",\n    \"domain_specific_explanations\": \"The Y-axis represents the absolute count of unemployed persons, ranging from approximately 4,786 to 15,125 [DIRECT: OLLI tree Y-axis range]. Note: These values appear to be in thousands or represent a specific subset/sample, as total US unemployment is typically much higher (in millions); however, based strictly on the provided metadata, the values are treated as raw counts [SPECULATIVE: general knowledge of US labor statistics scales vs provided data magnitude]. The data is segmented into four distinct periods in the metadata: Jan 2000–Dec 2003, Dec 2003–Dec 2005, Dec 2005–Dec 2007, and Dec 2007–Feb 2010 [DIRECT]. The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029) [DERIVED: comparison of average sums provided in OLLI tree].\",\n    \"real_world_significance\": \"The sharp increase in average unemployment count starting in late 2007 (rising from an average of 6,417 to 11,029) correlates with the onset of the Great Recession [SPECULATIVE: historical correlation of 2007-2009 economic crisis]. This trend indicates a period of significant job loss and economic instability affecting workers across industries [SPECULATIVE: general economic interpretation of rising unemployment]. Policy makers and economists use such data to assess the severity of recessions and the effectiveness of stimulus packages [SPECULATIVE: standard use of unemployment data in macroeconomic policy]. For individuals, this data reflects periods of high difficulty in finding employment [SPECULATIVE: general social impact of unemployment].\",\n    \"other\": \"The data source is identified as 'umwelt-data.github.io/olli/gallery', suggesting this may be a sample dataset for testing accessibility tools rather than primary government statistical release [DIRECT: source URL provided in expert domain story]. The chart uses an area chart format, which emphasizes the volume or magnitude of the total unemployment over time [DIRECT: chart title and type].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart visualizes the total number of unemployed individuals across various industries in the United States from January 2000 to February 2010\",\n      \"The data is aggregated monthly\",\n      \"The Y-axis represents the absolute count of unemployed persons, ranging from approximately 4,786 to 15,125\",\n      \"The data is segmented into four distinct periods: Jan 2000–Dec 2003, Dec 2003–Dec 2005, Dec 2005–Dec 2007, and Dec 2007–Feb 2010\",\n      \"The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029)\",\n      \"The chart uses an area chart format\",\n      \"The data source is identified as 'umwelt-data.github.io/olli/gallery'\"\n    ],\n    \"derived_claims\": [\n      \"The data is aggregated monthly, showing the sum of unemployment counts rather than rates or percentages\",\n      \"The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029)\"\n    ],\n    \"speculative_claims\": [\n      \"The chart spans a decade that includes the dot-com bubble burst, the post-9/11 recession, and the Great Recession\",\n      \"These values appear to be in thousands or represent a specific subset/sample, as total US unemployment is typically much higher\",\n      \"The sharp increase in average unemployment count starting in late 2007 correlates with the onset of the Great Recession\",\n      \"This trend indicates a period of significant job loss and economic instability affecting workers across industries\",\n      \"Policy makers and economists use such data to assess the severity of recessions and the effectiveness of stimulus packages\",\n      \"For individuals, this data reflects periods of high difficulty in finding employment\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 7,\n    \"derived_count\": 2,\n    \"speculative_count\": 3\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The exact data table is marked [NOT PROVIDED]. However, the OLLI screen reader tree provides segmented statistics (average sums for specific date ranges) and axis ranges. This is incomplete because precise monthly values are missing, making it impossible to describe specific peaks, troughs, or exact month-over-month changes, only general averages per period."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "Trends can be partially inferred from the segmented averages in the OLLI tree (e.g., a significant jump in average count from the 2005-2007 period to the 2007-2010 period). However, without the raw data, the magnitude of specific events (like the peak unemployment month) is approximate."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart title, axis labels, and expert domain story clearly identify the subject as 'Unemployment across industries' over time. The domain is labor economics/macroeconomics."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart visualizes the total number of unemployed individuals across various industries in the United States from January 2000 to February 2010 [DIRECT]. The data is aggregated monthly, showing the sum of unemployment counts rather than rates or percentages [DERIVED: axis label 'count' and expert story 'summed over time']. The chart spans a decade that includes the dot-com bubble burst, the post-9/11 recession, and the Great Recession [SPECULATIVE: historical knowledge of US economic periods between 2000 and 2010].",
+      "domain_specific_explanations": "The Y-axis represents the absolute count of unemployed persons, ranging from approximately 4,786 to 15,125 [DIRECT: OLLI tree Y-axis range]. Note: These values appear to be in thousands or represent a specific subset/sample, as total US unemployment is typically much higher (in millions); however, based strictly on the provided metadata, the values are treated as raw counts [SPECULATIVE: general knowledge of US labor statistics scales vs provided data magnitude]. The data is segmented into four distinct periods in the metadata: Jan 2000–Dec 2003, Dec 2003–Dec 2005, Dec 2005–Dec 2007, and Dec 2007–Feb 2010 [DIRECT]. The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029) [DERIVED: comparison of average sums provided in OLLI tree].",
+      "real_world_significance": "The sharp increase in average unemployment count starting in late 2007 (rising from an average of 6,417 to 11,029) correlates with the onset of the Great Recession [SPECULATIVE: historical correlation of 2007-2009 economic crisis]. This trend indicates a period of significant job loss and economic instability affecting workers across industries [SPECULATIVE: general economic interpretation of rising unemployment]. Policy makers and economists use such data to assess the severity of recessions and the effectiveness of stimulus packages [SPECULATIVE: standard use of unemployment data in macroeconomic policy]. For individuals, this data reflects periods of high difficulty in finding employment [SPECULATIVE: general social impact of unemployment].",
+      "other": "The data source is identified as 'umwelt-data.github.io/olli/gallery', suggesting this may be a sample dataset for testing accessibility tools rather than primary government statistical release [DIRECT: source URL provided in expert domain story]. The chart uses an area chart format, which emphasizes the volume or magnitude of the total unemployment over time [DIRECT: chart title and type]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart visualizes the total number of unemployed individuals across various industries in the United States from January 2000 to February 2010",
+        "The data is aggregated monthly",
+        "The Y-axis represents the absolute count of unemployed persons, ranging from approximately 4,786 to 15,125",
+        "The data is segmented into four distinct periods: Jan 2000–Dec 2003, Dec 2003–Dec 2005, Dec 2005–Dec 2007, and Dec 2007–Feb 2010",
+        "The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029)",
+        "The chart uses an area chart format",
+        "The data source is identified as 'umwelt-data.github.io/olli/gallery'"
+      ],
+      "derived_claims": [
+        "The data is aggregated monthly, showing the sum of unemployment counts rather than rates or percentages",
+        "The average unemployment count was lowest in the Dec 2005–Dec 2007 period (avg 6,417) and highest in the Dec 2007–Feb 2010 period (avg 11,029)"
+      ],
+      "speculative_claims": [
+        "The chart spans a decade that includes the dot-com bubble burst, the post-9/11 recession, and the Great Recession",
+        "These values appear to be in thousands or represent a specific subset/sample, as total US unemployment is typically much higher",
+        "The sharp increase in average unemployment count starting in late 2007 correlates with the onset of the Great Recession",
+        "This trend indicates a period of significant job loss and economic instability affecting workers across industries",
+        "Policy makers and economists use such data to assess the severity of recessions and the effectiveness of stimulus packages",
+        "For individuals, this data reflects periods of high difficulty in finding employment"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 7,
+      "derived_count": 2,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 1558,
+    "output": 1480
+  },
+  "latency_ms": 3683.51999999868,
+  "created_at": "2026-07-20T14:21:43.047903Z"
+}

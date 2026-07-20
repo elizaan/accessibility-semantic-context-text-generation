@@ -1,0 +1,69 @@
+{
+  "output_id": "96a25694-be70-462e-9cc2-9e2fdaf27fc3",
+  "chart_id": "olli_area-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The raw data table is missing, but the Olli screen reader tree provides aggregated data ranges, counts, and averages for both axes.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The Olli tree breaks down the timeline into four distinct periods, allowing for a clear derivation of the trend's magnitude over time.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject (unemployment across industries) and the exact timeline (Jan 2000 to Feb 2010) are clearly specified in the Olli tree and expert domain story.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart is an area chart tracking unemployment counts across various industries over a ten-year period, from January 2000 to February 2010 [DIRECT]. This dataset is highly likely to represent United States labor market data, given the timeline and typical economic research benchmarks [SPECULATIVE: US Bureau of Labor Statistics]. The decade-long span captures two distinct economic cycles, most notably the transition into the global financial crisis of the late 2000s [SPECULATIVE: Macroeconomic History].\",\n    \"domain_specific_explanations\": \"In labor economics, 'count' typically refers to the number of unemployed individuals, often measured in thousands; here, the values range from a low of 4,786 to a peak of 15,125, which aligns with US historical unemployment levels of approximately 4.7 million to 15.1 million people [DERIVED: Comparing the Y-axis range of 4,786 to 15,125 with historical US unemployment counts]. Between January 2000 and December 2007, the labor market remained relatively stable, with the average monthly unemployment count fluctuating moderately between 6,417 and 7,194 [DERIVED: Comparing the average sum counts of the first three time intervals in the Olli tree]. However, a massive structural shift occurred after December 2007, where the average monthly unemployment count surged to 11,029 [DERIVED: Reading the fourth time interval average from the Olli tree].\",\n    \"real_world_significance\": \"The dramatic escalation in unemployment starting in late 2007 directly corresponds to the onset of the Great Recession, which officially began in December 2007 [SPECULATIVE: National Bureau of Economic Research (NBER)]. The peak of over 15,000 (representing roughly 15 million individuals) highlights the severity of job losses across industries during this crisis [SPECULATIVE: Labor Economics]. This period of high unemployment led to widespread economic distress, necessitating unprecedented federal interventions such as extended unemployment benefits and economic stimulus packages [SPECULATIVE: US Economic Policy History].\",\n    \"other\": \"Out of the 122 months recorded in this dataset, only 15 months experienced extreme unemployment levels exceeding 10,000, indicating that these critical conditions were heavily concentrated during the height of the Great Recession between 2008 and 2010 [DERIVED: Comparing the 15 values in the 10,000-15,125 range to the total 122 values across the timeline].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart is an area chart tracking unemployment counts across various industries over a ten-year period, from January 2000 to February 2010\"\n    ],\n    \"derived_claims\": [\n      \"In labor economics, 'count' typically refers to the number of unemployed individuals, often measured in thousands; here, the values range from a low of 4,786 to a peak of 15,125, which aligns with US historical unemployment levels of approximately 4.7 million to 15.1 million people [derived from comparing the Y-axis range of 4,786 to 15,125 with historical US unemployment counts]\",\n      \"Between January 2000 and December 2007, the labor market remained relatively stable, with the average monthly unemployment count fluctuating moderately between 6,417 and 7,194 [derived from comparing the average sum counts of the first three time intervals in the Olli tree]\",\n      \"However, a massive structural shift occurred after December 2007, where the average monthly unemployment count surged to 11,029 [derived from reading the fourth time interval average from the Olli tree]\",\n      \"Out of the 122 months recorded in this dataset, only 15 months experienced extreme unemployment levels exceeding 10,000, indicating that these critical conditions were heavily concentrated during the height of the Great Recession between 2008 and 2010 [derived from comparing the 15 values in the 10,000-15,125 range to the total 122 values across the timeline]\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset is highly likely to represent United States labor market data, given the timeline and typical economic research benchmarks [source: US Bureau of Labor Statistics]\",\n      \"The decade-long span captures two distinct economic cycles, most notably the transition into the global financial crisis of the late 2000s [source: Macroeconomic History]\",\n      \"The dramatic escalation in unemployment starting in late 2007 directly corresponds to the onset of the Great Recession, which officially began in December 2007 [source: National Bureau of Economic Research (NBER)]\",\n      \"The peak of over 15,000 (representing roughly 15 million individuals) highlights the severity of job losses across industries during this crisis [source: Labor Economics]\",\n      \"This period of high unemployment led to widespread economic distress, necessitating unprecedented federal interventions such as extended unemployment benefits and economic stimulus packages [source: US Economic Policy History]\"\n    ],\n    \"total_flag_count\": 10,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The raw data table is missing, but the Olli screen reader tree provides aggregated data ranges, counts, and averages for both axes."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The Olli tree breaks down the timeline into four distinct periods, allowing for a clear derivation of the trend's magnitude over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject (unemployment across industries) and the exact timeline (Jan 2000 to Feb 2010) are clearly specified in the Olli tree and expert domain story."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart is an area chart tracking unemployment counts across various industries over a ten-year period, from January 2000 to February 2010 [DIRECT]. This dataset is highly likely to represent United States labor market data, given the timeline and typical economic research benchmarks [SPECULATIVE: US Bureau of Labor Statistics]. The decade-long span captures two distinct economic cycles, most notably the transition into the global financial crisis of the late 2000s [SPECULATIVE: Macroeconomic History].",
+      "domain_specific_explanations": "In labor economics, 'count' typically refers to the number of unemployed individuals, often measured in thousands; here, the values range from a low of 4,786 to a peak of 15,125, which aligns with US historical unemployment levels of approximately 4.7 million to 15.1 million people [DERIVED: Comparing the Y-axis range of 4,786 to 15,125 with historical US unemployment counts]. Between January 2000 and December 2007, the labor market remained relatively stable, with the average monthly unemployment count fluctuating moderately between 6,417 and 7,194 [DERIVED: Comparing the average sum counts of the first three time intervals in the Olli tree]. However, a massive structural shift occurred after December 2007, where the average monthly unemployment count surged to 11,029 [DERIVED: Reading the fourth time interval average from the Olli tree].",
+      "real_world_significance": "The dramatic escalation in unemployment starting in late 2007 directly corresponds to the onset of the Great Recession, which officially began in December 2007 [SPECULATIVE: National Bureau of Economic Research (NBER)]. The peak of over 15,000 (representing roughly 15 million individuals) highlights the severity of job losses across industries during this crisis [SPECULATIVE: Labor Economics]. This period of high unemployment led to widespread economic distress, necessitating unprecedented federal interventions such as extended unemployment benefits and economic stimulus packages [SPECULATIVE: US Economic Policy History].",
+      "other": "Out of the 122 months recorded in this dataset, only 15 months experienced extreme unemployment levels exceeding 10,000, indicating that these critical conditions were heavily concentrated during the height of the Great Recession between 2008 and 2010 [DERIVED: Comparing the 15 values in the 10,000-15,125 range to the total 122 values across the timeline]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart is an area chart tracking unemployment counts across various industries over a ten-year period, from January 2000 to February 2010"
+      ],
+      "derived_claims": [
+        "In labor economics, 'count' typically refers to the number of unemployed individuals, often measured in thousands; here, the values range from a low of 4,786 to a peak of 15,125, which aligns with US historical unemployment levels of approximately 4.7 million to 15.1 million people [derived from comparing the Y-axis range of 4,786 to 15,125 with historical US unemployment counts]",
+        "Between January 2000 and December 2007, the labor market remained relatively stable, with the average monthly unemployment count fluctuating moderately between 6,417 and 7,194 [derived from comparing the average sum counts of the first three time intervals in the Olli tree]",
+        "However, a massive structural shift occurred after December 2007, where the average monthly unemployment count surged to 11,029 [derived from reading the fourth time interval average from the Olli tree]",
+        "Out of the 122 months recorded in this dataset, only 15 months experienced extreme unemployment levels exceeding 10,000, indicating that these critical conditions were heavily concentrated during the height of the Great Recession between 2008 and 2010 [derived from comparing the 15 values in the 10,000-15,125 range to the total 122 values across the timeline]"
+      ],
+      "speculative_claims": [
+        "This dataset is highly likely to represent United States labor market data, given the timeline and typical economic research benchmarks [source: US Bureau of Labor Statistics]",
+        "The decade-long span captures two distinct economic cycles, most notably the transition into the global financial crisis of the late 2000s [source: Macroeconomic History]",
+        "The dramatic escalation in unemployment starting in late 2007 directly corresponds to the onset of the Great Recession, which officially began in December 2007 [source: National Bureau of Economic Research (NBER)]",
+        "The peak of over 15,000 (representing roughly 15 million individuals) highlights the severity of job losses across industries during this crisis [source: Labor Economics]",
+        "This period of high unemployment led to widespread economic distress, necessitating unprecedented federal interventions such as extended unemployment benefits and economic stimulus packages [source: US Economic Policy History]"
+      ],
+      "total_flag_count": 10,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14310.160707995237,
+  "created_at": "2026-07-20T14:21:34.912917Z"
+}

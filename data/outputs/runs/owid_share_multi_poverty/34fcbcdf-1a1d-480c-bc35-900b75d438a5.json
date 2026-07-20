@@ -1,0 +1,68 @@
+{
+  "output_id": "34fcbcdf-1a1d-480c-bc35-900b75d438a5",
+  "chart_id": "owid_share_multi_poverty",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The chart provides a color-coded map with percentage ranges (e.g., 10% intervals), allowing the user to estimate poverty rates for regions, but exact country-level numerical values are not directly accessible.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"The chart note mentions that a separate dataset is produced to monitor trends over time, but no historical or trend data is presented in this specific visualization.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, subtitle, data source, and notes clearly define the subject (Multidimensional Poverty Index) and its components (health, education, and living standards).\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a global choropleth map showing the share of the population living in multidimensional poverty across different countries [DIRECT]. It was produced by Our World in Data [DIRECT] using data from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025 [DIRECT]. The map relies on household survey data collected between 2013 and 2023 [DIRECT]. Its purpose is to illustrate the geographic distribution and severity of non-monetary poverty globally [DIRECT].\",\n    \"domain_specific_explanations\": \"Multidimensional poverty measures deprivations across three key dimensions: health, education, and living standards [DIRECT]. Unlike traditional monetary poverty metrics (e.g., living on less than $2.15 a day), the MPI captures overlapping deprivations that individuals experience simultaneously, such as malnutrition, lack of school attendance, and lack of clean drinking water or electricity [SPECULATIVE: Oxford Poverty and Human Development Initiative (OPHI)]. High-income regions (such as North America, Europe, and Australia) are marked as 'No data' [DERIVED: visual inspection of striped regions on the map] because the Global MPI is specifically designed to measure acute poverty in developing nations and is typically not calculated for high-income economies [SPECULATIVE: UNDP/OPHI MPI methodology].\",\n    \"real_world_significance\": \"The data reveals severe geographic disparities, with Sub-Saharan Africa and parts of South Asia (such as Afghanistan) experiencing the highest rates of multidimensional poverty, often exceeding 70% to 80% of their populations [DERIVED: visual comparison of country colors to the map legend]. This highlights critical systemic deficits in infrastructure, healthcare, and education in these regions [SPECULATIVE: Development Economics]. These insights are vital for international aid organizations, governments, and NGOs to target resources effectively and monitor progress toward United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [SPECULATIVE: United Nations SDGs]. If these high rates of deprivation persist, they will continue to hinder human capital development and economic mobility across generations [SPECULATIVE: Development Economics].\",\n    \"other\": \"The reliance on household surveys spanning a ten-year window (2013–2023) means that data points for different countries may not represent the exact same year, which is an important consideration when comparing neighboring nations [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a global choropleth map showing the share of the population living in multidimensional poverty across different countries.\",\n      \"It was produced by Our World in Data.\",\n      \"The data source is Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025.\",\n      \"The map relies on household survey data collected between 2013 and 2023.\",\n      \"Its purpose is to illustrate the geographic distribution and severity of non-monetary poverty globally.\",\n      \"Multidimensional poverty measures deprivations across three key dimensions: health, education, and living standards.\",\n      \"The reliance on household surveys spanning a ten-year window (2013–2023) means that data points for different countries may not represent the exact same year, which is an important consideration when comparing neighboring nations.\"\n    ],\n    \"derived_claims\": [\n      \"High-income regions (such as North America, Europe, and Australia) are marked as 'No data'.\",\n      \"Sub-Saharan Africa and parts of South Asia (such as Afghanistan) experience the highest rates of multidimensional poverty, often exceeding 70% to 80% of their populations.\"\n    ],\n    \"speculative_claims\": [\n      \"Unlike traditional monetary poverty metrics (e.g., living on less than $2.15 a day), the MPI captures overlapping deprivations that individuals experience simultaneously, such as malnutrition, lack of school attendance, and lack of clean drinking water or electricity.\",\n      \"The Global MPI is specifically designed to measure acute poverty in developing nations and is typically not calculated for high-income economies.\",\n      \"This highlights critical systemic deficits in infrastructure, healthcare, and education in these regions.\",\n      \"These insights are vital for international aid organizations, governments, and NGOs to target resources effectively and monitor progress toward United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere.\",\n      \"If these high rates of deprivation persist, they will continue to hinder human capital development and economic mobility across generations.\"\n    ],\n    \"total_flag_count\": 14,\n    \"direct_count\": 7,\n    \"derived_count\": 2,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a color-coded map with percentage ranges (e.g., 10% intervals), allowing the user to estimate poverty rates for regions, but exact country-level numerical values are not directly accessible."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart note mentions that a separate dataset is produced to monitor trends over time, but no historical or trend data is presented in this specific visualization."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, subtitle, data source, and notes clearly define the subject (Multidimensional Poverty Index) and its components (health, education, and living standards)."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a global choropleth map showing the share of the population living in multidimensional poverty across different countries [DIRECT]. It was produced by Our World in Data [DIRECT] using data from Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025 [DIRECT]. The map relies on household survey data collected between 2013 and 2023 [DIRECT]. Its purpose is to illustrate the geographic distribution and severity of non-monetary poverty globally [DIRECT].",
+      "domain_specific_explanations": "Multidimensional poverty measures deprivations across three key dimensions: health, education, and living standards [DIRECT]. Unlike traditional monetary poverty metrics (e.g., living on less than $2.15 a day), the MPI captures overlapping deprivations that individuals experience simultaneously, such as malnutrition, lack of school attendance, and lack of clean drinking water or electricity [SPECULATIVE: Oxford Poverty and Human Development Initiative (OPHI)]. High-income regions (such as North America, Europe, and Australia) are marked as 'No data' [DERIVED: visual inspection of striped regions on the map] because the Global MPI is specifically designed to measure acute poverty in developing nations and is typically not calculated for high-income economies [SPECULATIVE: UNDP/OPHI MPI methodology].",
+      "real_world_significance": "The data reveals severe geographic disparities, with Sub-Saharan Africa and parts of South Asia (such as Afghanistan) experiencing the highest rates of multidimensional poverty, often exceeding 70% to 80% of their populations [DERIVED: visual comparison of country colors to the map legend]. This highlights critical systemic deficits in infrastructure, healthcare, and education in these regions [SPECULATIVE: Development Economics]. These insights are vital for international aid organizations, governments, and NGOs to target resources effectively and monitor progress toward United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere [SPECULATIVE: United Nations SDGs]. If these high rates of deprivation persist, they will continue to hinder human capital development and economic mobility across generations [SPECULATIVE: Development Economics].",
+      "other": "The reliance on household surveys spanning a ten-year window (2013–2023) means that data points for different countries may not represent the exact same year, which is an important consideration when comparing neighboring nations [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a global choropleth map showing the share of the population living in multidimensional poverty across different countries.",
+        "It was produced by Our World in Data.",
+        "The data source is Alkire et al. (2025) - The Global Multidimensional Poverty Index (MPI) 2025.",
+        "The map relies on household survey data collected between 2013 and 2023.",
+        "Its purpose is to illustrate the geographic distribution and severity of non-monetary poverty globally.",
+        "Multidimensional poverty measures deprivations across three key dimensions: health, education, and living standards.",
+        "The reliance on household surveys spanning a ten-year window (2013–2023) means that data points for different countries may not represent the exact same year, which is an important consideration when comparing neighboring nations."
+      ],
+      "derived_claims": [
+        "High-income regions (such as North America, Europe, and Australia) are marked as 'No data'.",
+        "Sub-Saharan Africa and parts of South Asia (such as Afghanistan) experience the highest rates of multidimensional poverty, often exceeding 70% to 80% of their populations."
+      ],
+      "speculative_claims": [
+        "Unlike traditional monetary poverty metrics (e.g., living on less than $2.15 a day), the MPI captures overlapping deprivations that individuals experience simultaneously, such as malnutrition, lack of school attendance, and lack of clean drinking water or electricity.",
+        "The Global MPI is specifically designed to measure acute poverty in developing nations and is typically not calculated for high-income economies.",
+        "This highlights critical systemic deficits in infrastructure, healthcare, and education in these regions.",
+        "These insights are vital for international aid organizations, governments, and NGOs to target resources effectively and monitor progress toward United Nations Sustainable Development Goal 1, which aims to end poverty in all its forms everywhere.",
+        "If these high rates of deprivation persist, they will continue to hinder human capital development and economic mobility across generations."
+      ],
+      "total_flag_count": 14,
+      "direct_count": 7,
+      "derived_count": 2,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 15668.58370800037,
+  "created_at": "2026-07-17T20:45:35.732918Z"
+}

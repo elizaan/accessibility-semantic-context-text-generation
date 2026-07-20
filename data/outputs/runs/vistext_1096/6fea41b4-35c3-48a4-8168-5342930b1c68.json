@@ -1,0 +1,74 @@
+{
+  "output_id": "6fea41b4-35c3-48a4-8168-5342930b1c68",
+  "chart_id": "vistext_1096",
+  "dataset_source": "vistext",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"The data table provides numerical values and partial labels, but the mapping between 'Country' and 'Movie title' is broken in the raw text (e.g., 'giles,33.93' vs L2 caption 'Argentina: La odisea de los giles'). The L2 caption helps reconstruct the pairs, but the raw data is incomplete/ambiguous without external parsing.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption provides specific magnitude comparisons (e.g., Mexico had 6000-7000, Brazil second with ~6000), allowing for a clear understanding of the hierarchy, despite the raw data table's fragmentation.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and L2 caption clearly identify the domain as Ibero-American cinema attendance in Latin America for the year 2018.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays the attendance figures for the most popular Ibero-American movie productions in selected Latin American countries during 2018 [DIRECT]. The data is presented in thousands of viewers [DIRECT]. The chart highlights a significant disparity in viewership between top-performing films in major markets like Mexico and Brazil compared to other entries [DERIVED: comparison of values 6651.11 and 59.22 in data table/L2 caption]. The L2 caption identifies the top performer as 'No manches Frida 2' in Mexico, followed by 'Nada a perder Parte 2' in Brazil [DERIVED: synthesis of L2 caption text and data values].\",\n    \"domain_specific_explanations\": \"In the context of the Latin American film industry, these figures represent domestic box office performance for local productions [SPECULATIVE: film industry knowledge]. The term 'Iberoamerican' refers to countries with shared linguistic and cultural heritage (primarily Spanish and Portuguese speaking) [SPECULATIVE: definitions of Iberoamerica]. The high numbers for Mexico and Brazil reflect their status as the largest film markets in the region, often driving the success of blockbuster comedies like the 'Frida' franchise [SPECULATIVE: knowledge of Latin American cinema market dynamics]. The lower numbers for other entries (e.g., 'La odisea de los giles' in Argentina with ~33.93k or ~1000-2000k depending on interpretation) suggest either smaller market sizes or less blockbuster appeal compared to the top two [DERIVED: comparison of lower data points against top points].\",\n    \"real_world_significance\": \"This data is significant for film distributors and investors in the region, indicating where the highest return on investment for local content lies [SPECULATIVE: business logic of film distribution]. The dominance of Mexican and Brazilian films suggests a concentration of audience preferences or distribution power in these two nations [DERIVED: inference from top two values being orders of magnitude higher than others]. For cultural policymakers, this highlights the commercial viability of local productions versus Hollywood imports in specific national contexts [SPECULATIVE: cultural policy context]. The note in the L2 caption suggesting 'Latin American films are not popular in 2020' appears to be an error in the caption text (as the data is for 2018) or a speculative trend projection not supported by the 2018 data provided [DERIVED: analysis of L2 caption text vs chart title date].\",\n    \"other\": \"The data table contains fragmented labels (e.g., 'giles', 'Frida') that require cross-referencing with the L2 caption to fully identify the country-movie pairs [DERIVED: analysis of data table structure]. The L2 caption contains a factual inconsistency regarding the year (claiming popularity trends for 2020 in a 2018 chart) [DERIVED: comparison of title year and caption text].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays the attendance figures for the most popular Ibero-American movie productions in selected Latin American countries during 2018\",\n      \"The data is presented in thousands of viewers\",\n      \"The L2 caption identifies the top performer as 'No manches Frida 2' in Mexico\",\n      \"The L2 caption identifies the second performer as 'Nada a perder Parte 2' in Brazil\"\n    ],\n    \"derived_claims\": [\n      \"The chart highlights a significant disparity in viewership between top-performing films in major markets like Mexico and Brazil compared to other entries\",\n      \"The lower numbers for other entries suggest either smaller market sizes or less blockbuster appeal compared to the top two\",\n      \"The data table contains fragmented labels that require cross-referencing with the L2 caption\",\n      \"The L2 caption contains a factual inconsistency regarding the year\"\n    ],\n    \"speculative_claims\": [\n      \"In the context of the Latin American film industry, these figures represent domestic box office performance for local productions\",\n      \"The term 'Iberoamerican' refers to countries with shared linguistic and cultural heritage\",\n      \"The high numbers for Mexico and Brazil reflect their status as the largest film markets in the region\",\n      \"This data is significant for film distributors and investors in the region\",\n      \"The dominance of Mexican and Brazilian films suggests a concentration of audience preferences or distribution power\",\n      \"For cultural policymakers, this highlights the commercial viability of local productions versus Hollywood imports\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 4,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides numerical values and partial labels, but the mapping between 'Country' and 'Movie title' is broken in the raw text (e.g., 'giles,33.93' vs L2 caption 'Argentina: La odisea de los giles'). The L2 caption helps reconstruct the pairs, but the raw data is incomplete/ambiguous without external parsing."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption provides specific magnitude comparisons (e.g., Mexico had 6000-7000, Brazil second with ~6000), allowing for a clear understanding of the hierarchy, despite the raw data table's fragmentation."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and L2 caption clearly identify the domain as Ibero-American cinema attendance in Latin America for the year 2018."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays the attendance figures for the most popular Ibero-American movie productions in selected Latin American countries during 2018 [DIRECT]. The data is presented in thousands of viewers [DIRECT]. The chart highlights a significant disparity in viewership between top-performing films in major markets like Mexico and Brazil compared to other entries [DERIVED: comparison of values 6651.11 and 59.22 in data table/L2 caption]. The L2 caption identifies the top performer as 'No manches Frida 2' in Mexico, followed by 'Nada a perder Parte 2' in Brazil [DERIVED: synthesis of L2 caption text and data values].",
+      "domain_specific_explanations": "In the context of the Latin American film industry, these figures represent domestic box office performance for local productions [SPECULATIVE: film industry knowledge]. The term 'Iberoamerican' refers to countries with shared linguistic and cultural heritage (primarily Spanish and Portuguese speaking) [SPECULATIVE: definitions of Iberoamerica]. The high numbers for Mexico and Brazil reflect their status as the largest film markets in the region, often driving the success of blockbuster comedies like the 'Frida' franchise [SPECULATIVE: knowledge of Latin American cinema market dynamics]. The lower numbers for other entries (e.g., 'La odisea de los giles' in Argentina with ~33.93k or ~1000-2000k depending on interpretation) suggest either smaller market sizes or less blockbuster appeal compared to the top two [DERIVED: comparison of lower data points against top points].",
+      "real_world_significance": "This data is significant for film distributors and investors in the region, indicating where the highest return on investment for local content lies [SPECULATIVE: business logic of film distribution]. The dominance of Mexican and Brazilian films suggests a concentration of audience preferences or distribution power in these two nations [DERIVED: inference from top two values being orders of magnitude higher than others]. For cultural policymakers, this highlights the commercial viability of local productions versus Hollywood imports in specific national contexts [SPECULATIVE: cultural policy context]. The note in the L2 caption suggesting 'Latin American films are not popular in 2020' appears to be an error in the caption text (as the data is for 2018) or a speculative trend projection not supported by the 2018 data provided [DERIVED: analysis of L2 caption text vs chart title date].",
+      "other": "The data table contains fragmented labels (e.g., 'giles', 'Frida') that require cross-referencing with the L2 caption to fully identify the country-movie pairs [DERIVED: analysis of data table structure]. The L2 caption contains a factual inconsistency regarding the year (claiming popularity trends for 2020 in a 2018 chart) [DERIVED: comparison of title year and caption text]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays the attendance figures for the most popular Ibero-American movie productions in selected Latin American countries during 2018",
+        "The data is presented in thousands of viewers",
+        "The L2 caption identifies the top performer as 'No manches Frida 2' in Mexico",
+        "The L2 caption identifies the second performer as 'Nada a perder Parte 2' in Brazil"
+      ],
+      "derived_claims": [
+        "The chart highlights a significant disparity in viewership between top-performing films in major markets like Mexico and Brazil compared to other entries",
+        "The lower numbers for other entries suggest either smaller market sizes or less blockbuster appeal compared to the top two",
+        "The data table contains fragmented labels that require cross-referencing with the L2 caption",
+        "The L2 caption contains a factual inconsistency regarding the year"
+      ],
+      "speculative_claims": [
+        "In the context of the Latin American film industry, these figures represent domestic box office performance for local productions",
+        "The term 'Iberoamerican' refers to countries with shared linguistic and cultural heritage",
+        "The high numbers for Mexico and Brazil reflect their status as the largest film markets in the region",
+        "This data is significant for film distributors and investors in the region",
+        "The dominance of Mexican and Brazilian films suggests a concentration of audience preferences or distribution power",
+        "For cultural policymakers, this highlights the commercial viability of local productions versus Hollywood imports"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 4,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 3087,
+    "output": 1294
+  },
+  "latency_ms": 32918.73483300151,
+  "created_at": "2026-07-19T06:09:03.679303Z"
+}

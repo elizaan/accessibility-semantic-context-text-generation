@@ -1,0 +1,86 @@
+{
+  "output_id": "a43b5863-ef2a-4eea-9e9f-579d9da46791",
+  "chart_id": "owid_opinions_young_people_climate",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "Here is the response:\n\n```\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 5, \"justification\": \"The data table provides exact values for each entity and year, including various statements about climate change.\"},\n      \"trend_magnitude\": {\"score\": 0, \"justification\": \"There is no information about trend magnitude, such as rates of change or comparisons over time.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title and expert domain story provide context about the subject domain, which is climate change and opinions of young people. However, some details are missing.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": [\n      \"This chart presents opinions of young people on the threats of climate change [DIRECT].\",\n      \"The data is based on a survey of 1,000 young people, aged 16 to 25 years old, in each country [DIRECT].\",\n      \"The survey was conducted in 2021 [DIRECT].\",\n      \"The chart likely aims to raise awareness about the concerns of young people regarding climate change [SPECULATIVE: general knowledge about climate change and youth activism].\"\n    ],\n    \"domain_specific_explanations\": [\n      \"The data shows the share of young people in each surveyed country that responded 'yes' to statements about climate change [DIRECT].\",\n      \"The statements include 'Humanity is doomed', 'Family security is threatened', 'Less opportunity than their parents', 'Hesitant to have children', 'Future is frightening', and 'People have failed to take care of the planet' [DIRECT].\",\n      \"The values range from 23% to 92% across countries and statements [DERIVED: calculated from data table].\",\n      \"The data suggests that young people have varying levels of concern about climate change across different countries [SPECULATIVE: general knowledge about climate change and its impacts].\"\n    ],\n    \"real_world_significance\": [\n      \"The data matters because it highlights the concerns of young people about climate change, which can inform policy decisions and climate action [SPECULATIVE: general knowledge about climate change and policy].\",\n      \"The findings can be used to support climate education and awareness-raising efforts [SPECULATIVE: general knowledge about climate change and education].\",\n      \"The data may influence decisions about climate mitigation and adaptation strategies [SPECULATIVE: general knowledge about climate change and policy].\"\n    ],\n    \"other\": [\n      \"The data table provides a comprehensive overview of young people's opinions on climate change across various countries [DIRECT].\",\n      \"Further analysis could explore correlations between country-specific concerns and climate-related policies or actions [SPECULATIVE: general knowledge about climate change and policy].\"\n    ]\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart presents opinions of young people on the threats of climate change\",\n      \"The data is based on a survey of 1,000 young people, aged 16 to 25 years old, in each country\",\n      \"The survey was conducted in 2021\",\n      \"The data shows the share of young people in each surveyed country that responded 'yes' to statements about climate change\",\n      \"The statements include 'Humanity is doomed', 'Family security is threatened', 'Less opportunity than their parents', 'Hesitant to have children', 'Future is frightening', and 'People have failed to take care of the planet'\",\n      \"The data table provides a comprehensive overview of young people's opinions on climate change across various countries\"\n    ],\n    \"derived_claims\": [\n      \"The values range from 23% to 92% across countries and statements\"\n    ],\n    \"speculative_claims\": [\n      \"The chart likely aims to raise awareness about the concerns of young people regarding climate change\",\n      \"The findings can be used to support climate education and awareness-raising efforts\",\n      \"The data may influence decisions about climate mitigation and adaptation strategies\",\n      \"Further analysis could explore correlations between country-specific concerns and climate-related policies or actions\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 10\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The data table provides exact values for each entity and year, including various statements about climate change."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "There is no information about trend magnitude, such as rates of change or comparisons over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title and expert domain story provide context about the subject domain, which is climate change and opinions of young people. However, some details are missing."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": [
+        "This chart presents opinions of young people on the threats of climate change [DIRECT].",
+        "The data is based on a survey of 1,000 young people, aged 16 to 25 years old, in each country [DIRECT].",
+        "The survey was conducted in 2021 [DIRECT].",
+        "The chart likely aims to raise awareness about the concerns of young people regarding climate change [SPECULATIVE: general knowledge about climate change and youth activism]."
+      ],
+      "domain_specific_explanations": [
+        "The data shows the share of young people in each surveyed country that responded 'yes' to statements about climate change [DIRECT].",
+        "The statements include 'Humanity is doomed', 'Family security is threatened', 'Less opportunity than their parents', 'Hesitant to have children', 'Future is frightening', and 'People have failed to take care of the planet' [DIRECT].",
+        "The values range from 23% to 92% across countries and statements [DERIVED: calculated from data table].",
+        "The data suggests that young people have varying levels of concern about climate change across different countries [SPECULATIVE: general knowledge about climate change and its impacts]."
+      ],
+      "real_world_significance": [
+        "The data matters because it highlights the concerns of young people about climate change, which can inform policy decisions and climate action [SPECULATIVE: general knowledge about climate change and policy].",
+        "The findings can be used to support climate education and awareness-raising efforts [SPECULATIVE: general knowledge about climate change and education].",
+        "The data may influence decisions about climate mitigation and adaptation strategies [SPECULATIVE: general knowledge about climate change and policy]."
+      ],
+      "other": [
+        "The data table provides a comprehensive overview of young people's opinions on climate change across various countries [DIRECT].",
+        "Further analysis could explore correlations between country-specific concerns and climate-related policies or actions [SPECULATIVE: general knowledge about climate change and policy]."
+      ]
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart presents opinions of young people on the threats of climate change",
+        "The data is based on a survey of 1,000 young people, aged 16 to 25 years old, in each country",
+        "The survey was conducted in 2021",
+        "The data shows the share of young people in each surveyed country that responded 'yes' to statements about climate change",
+        "The statements include 'Humanity is doomed', 'Family security is threatened', 'Less opportunity than their parents', 'Hesitant to have children', 'Future is frightening', and 'People have failed to take care of the planet'",
+        "The data table provides a comprehensive overview of young people's opinions on climate change across various countries"
+      ],
+      "derived_claims": [
+        "The values range from 23% to 92% across countries and statements"
+      ],
+      "speculative_claims": [
+        "The chart likely aims to raise awareness about the concerns of young people regarding climate change",
+        "The findings can be used to support climate education and awareness-raising efforts",
+        "The data may influence decisions about climate mitigation and adaptation strategies",
+        "Further analysis could explore correlations between country-specific concerns and climate-related policies or actions"
+      ],
+      "total_flag_count": 17,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 10
+    }
+  },
+  "tokens_used": {
+    "input": 1430,
+    "output": 906
+  },
+  "latency_ms": 2528.542791998916,
+  "created_at": "2026-07-17T20:38:41.008906Z"
+}

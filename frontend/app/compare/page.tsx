@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getOutputsForChart, listCharts } from "@/lib/api";
+import { modelDisplayLabel } from "@/lib/types";
 import type { Chart, GenerationOutput } from "@/lib/types";
 import { GitCompare } from "lucide-react";
 import { ParsedOutputView } from "@/components/output/ParsedOutputView";
@@ -82,7 +83,7 @@ export default function ComparePage() {
           {modelIds.map((modelId) => (
             <div key={modelId} className="border rounded-xl overflow-hidden">
               <div className="bg-muted/50 px-4 py-2.5 border-b">
-                <div className="font-mono text-sm font-semibold">{modelId}</div>
+                <div className="font-mono text-sm font-semibold">{modelDisplayLabel(modelId)}</div>
                 <div className="text-xs text-muted-foreground">{byModel[modelId].length} runs</div>
               </div>
               <div className="p-4 space-y-4 max-h-[60vh] overflow-y-auto">

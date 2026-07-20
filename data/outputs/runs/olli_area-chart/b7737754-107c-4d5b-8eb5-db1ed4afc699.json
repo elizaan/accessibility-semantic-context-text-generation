@@ -1,0 +1,68 @@
+{
+  "output_id": "b7737754-107c-4d5b-8eb5-db1ed4afc699",
+  "chart_id": "olli_area-chart",
+  "dataset_source": "olli",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 2,\n        \"justification\": \"Exact row-by-row data is missing, but the OLLI tree provides segmented averages and ranges (e.g., Avg sum count: 11029 for 2007-2010), which allows for a strong understanding of the trend without raw data.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The OLLI tree explicitly breaks down the timeline into four distinct periods with average counts, allowing for a clear calculation of the trend magnitude (from ~6900 to ~11000).\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The ARIA label and Expert Domain Story explicitly identify the domain as 'Unemployment across industries' and the metric as a sum over time.\"\n      },\n      \"overall\": 20\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays the total volume of unemployment across various industries over a decade, specifically from January 2000 to February 2010 [DIRECT]. The data tracks monthly fluctuations in the number of unemployed individuals [DERIVED: inferred from 'yearmonth' frequency and 'count' metric]. The timeline covers the economic boom of the early 2000s, the subsequent stability, and the severe downturn associated with the 2008 global financial crisis [SPECULATIVE: historical economic timeline alignment].\",\n    \"domain_specific_explanations\": \"The values represent the absolute number of unemployed people summed across all sectors, rather than a percentage rate [DERIVED: based on the 'sum count' terminology in the metadata]. The data indicates that prior to late 2007, unemployment levels generally fluctuated between roughly 5,000 and 9,000 [DERIVED: calculated from the first three OLLI segments showing averages of 6894, 7194, and 6417]. A structural break occurs around late 2007/early 2008, where the baseline unemployment count rises sharply, averaging over 11,000 individuals in the final period [DERIVED: calculated from the final OLLI segment average of 11029]. The peak unemployment reached approximately 15,125 individuals [DIRECT].\",\n    \"real_world_significance\": \"The sharp rise in unemployment starting in late 2007 signals a major economic contraction, likely corresponding to the 'Great Recession' [SPECULATIVE: historical knowledge]. This data is critical for policymakers to assess the severity of labor market distress and to justify stimulus interventions or unemployment benefits expansion [SPECULATIVE: standard economic policy response]. The fact that the count remains high through 2010 indicates a slow recovery phase where job losses outpaced new hires for an extended period [DERIVED: trend observation from the sustained high numbers in the final segment].\",\n    \"other\": \"The data shows a 'double-dip' or volatile pattern in the years 2001-2002, suggesting a prior recessionary event (likely the dot-com bubble burst), followed by a recovery before the 2008 crash [SPECULATIVE: historical economic context]. The chart highlights the cumulative nature of the metric, meaning an increase in one industry is not offset by a decrease in another; it represents the total burden on the labor market [DERIVED: interpretation of 'summed over time'].\",\n    \"flags\": {\n      \"direct_claims\": [\n        \"Chart displays unemployment across industries from Jan 2000 to Feb 2010\",\n        \"Peak unemployment reached approximately 15,125 individuals\"\n      ],\n      \"derived_claims\": [\n        \"Data tracks monthly fluctuations (inferred from yearmonth frequency)\",\n        \"Pre-2007 unemployment fluctuated between roughly 5,000 and 9,000 (calculated from first three OLLI averages)\",\n        \"Post-2007 average unemployment exceeded 11,000 (calculated from final OLLI segment)\",\n        \"The metric represents an absolute sum, not a percentage (inferred from 'sum count')\"\n      ],\n      \"speculative_claims\": [\n        \"Timeline corresponds to the 2008 Global Financial Crisis (historical alignment)\",\n        \"Data is used for policy intervention decisions (economic policy knowledge)\",\n        \"The 2001-2002 volatility suggests the dot-com bubble burst (historical economic context)\"\n      ],\n      \"total_flag_count\": 9,\n      \"direct_count\": 2,\n      \"derived_count\": 4,\n      \"speculative_count\": 3\n    }\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Exact row-by-row data is missing, but the OLLI tree provides segmented averages and ranges (e.g., Avg sum count: 11029 for 2007-2010), which allows for a strong understanding of the trend without raw data."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The OLLI tree explicitly breaks down the timeline into four distinct periods with average counts, allowing for a clear calculation of the trend magnitude (from ~6900 to ~11000)."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The ARIA label and Expert Domain Story explicitly identify the domain as 'Unemployment across industries' and the metric as a sum over time."
+        },
+        "overall": 20
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays the total volume of unemployment across various industries over a decade, specifically from January 2000 to February 2010 [DIRECT]. The data tracks monthly fluctuations in the number of unemployed individuals [DERIVED: inferred from 'yearmonth' frequency and 'count' metric]. The timeline covers the economic boom of the early 2000s, the subsequent stability, and the severe downturn associated with the 2008 global financial crisis [SPECULATIVE: historical economic timeline alignment].",
+      "domain_specific_explanations": "The values represent the absolute number of unemployed people summed across all sectors, rather than a percentage rate [DERIVED: based on the 'sum count' terminology in the metadata]. The data indicates that prior to late 2007, unemployment levels generally fluctuated between roughly 5,000 and 9,000 [DERIVED: calculated from the first three OLLI segments showing averages of 6894, 7194, and 6417]. A structural break occurs around late 2007/early 2008, where the baseline unemployment count rises sharply, averaging over 11,000 individuals in the final period [DERIVED: calculated from the final OLLI segment average of 11029]. The peak unemployment reached approximately 15,125 individuals [DIRECT].",
+      "real_world_significance": "The sharp rise in unemployment starting in late 2007 signals a major economic contraction, likely corresponding to the 'Great Recession' [SPECULATIVE: historical knowledge]. This data is critical for policymakers to assess the severity of labor market distress and to justify stimulus interventions or unemployment benefits expansion [SPECULATIVE: standard economic policy response]. The fact that the count remains high through 2010 indicates a slow recovery phase where job losses outpaced new hires for an extended period [DERIVED: trend observation from the sustained high numbers in the final segment].",
+      "other": "The data shows a 'double-dip' or volatile pattern in the years 2001-2002, suggesting a prior recessionary event (likely the dot-com bubble burst), followed by a recovery before the 2008 crash [SPECULATIVE: historical economic context]. The chart highlights the cumulative nature of the metric, meaning an increase in one industry is not offset by a decrease in another; it represents the total burden on the labor market [DERIVED: interpretation of 'summed over time'].",
+      "flags": {
+        "direct_claims": [
+          "Chart displays unemployment across industries from Jan 2000 to Feb 2010",
+          "Peak unemployment reached approximately 15,125 individuals"
+        ],
+        "derived_claims": [
+          "Data tracks monthly fluctuations (inferred from yearmonth frequency)",
+          "Pre-2007 unemployment fluctuated between roughly 5,000 and 9,000 (calculated from first three OLLI averages)",
+          "Post-2007 average unemployment exceeded 11,000 (calculated from final OLLI segment)",
+          "The metric represents an absolute sum, not a percentage (inferred from 'sum count')"
+        ],
+        "speculative_claims": [
+          "Timeline corresponds to the 2008 Global Financial Crisis (historical alignment)",
+          "Data is used for policy intervention decisions (economic policy knowledge)",
+          "The 2001-2002 volatility suggests the dot-com bubble burst (historical economic context)"
+        ],
+        "total_flag_count": 9,
+        "direct_count": 2,
+        "derived_count": 4,
+        "speculative_count": 3
+      }
+    }
+  },
+  "tokens_used": {
+    "input": 2833,
+    "output": 1091
+  },
+  "latency_ms": 7107.4828330019955,
+  "created_at": "2026-07-20T14:20:38.265522Z"
+}

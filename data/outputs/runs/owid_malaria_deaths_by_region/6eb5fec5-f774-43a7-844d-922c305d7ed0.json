@@ -1,0 +1,70 @@
+{
+  "output_id": "6eb5fec5-f774-43a7-844d-922c305d7ed0",
+  "chart_id": "owid_malaria_deaths_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The raw data table is not provided, but approximate values can be read from the chart's Y-axis (0 to 1 million) and X-axis (1980 to 2023).\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 2,\n        \"justification\": \"The overall trend of rising, peaking, and declining malaria deaths is clearly visible in the stacked area chart, though exact numerical changes are not explicitly detailed in text.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, expert domain story, and data source are provided, clearly establishing the domain as global health and epidemiology.\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This stacked area chart, titled 'Malaria deaths by world region', tracks the estimated annual number of deaths from malaria across all ages and both sexes from 1980 to 2023 [DERIVED: read from chart image]. The visualization is produced by Our World in Data using data compiled by the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease (2025) [DIRECT]. Its primary purpose is to monitor long-term global and regional progress in combating malaria mortality [SPECULATIVE: public health epidemiology].\",\n    \"domain_specific_explanations\": \"Malaria is a life-threatening disease transmitted to humans through the bites of infected female Anopheles mosquitoes [SPECULATIVE: medical biology]. The data shows that global malaria deaths rose from approximately 680,000 in 1980 to a peak of over 900,000 in the early 2000s (around 2003–2004), before declining to around 640,000 in 2016 and ending near 670,000 in 2023 [DERIVED: read from chart image]. Throughout this entire period, Africa represents the overwhelming majority of global malaria deaths [DERIVED: read from chart image]. Conversely, Asia's share of malaria deaths has shrunk significantly over the decades [DERIVED: read from chart image], while regions like Europe, North America, South America, and Oceania represent negligible fractions of the global total [DERIVED: read from chart image].\",\n    \"real_world_significance\": \"The peak in malaria deaths in the early 2000s and the subsequent decline reflects the massive scale-up of global malaria interventions—such as insecticide-treated bed nets, indoor residual spraying, and artemisinin-based combination therapies (ACTs)—heavily funded by international initiatives like the Global Fund and the President's Malaria Initiative [SPECULATIVE: global health history]. The stagnation and slight uptick in deaths around 2020–2021 likely reflects disruptions to healthcare delivery and malaria prevention campaigns caused by the COVID-19 pandemic [SPECULATIVE: global health history]. The persistent concentration of deaths in Africa highlights the critical need for targeted resources, infrastructure development, and the deployment of newer tools like malaria vaccines (RTS,S and R21) in sub-Saharan Africa to achieve eradication goals [SPECULATIVE: public health policy].\",\n    \"other\": \"The chart demonstrates that while global efforts have successfully reduced malaria mortality from its historic peak, progress has stalled in recent years, leaving Africa disproportionately affected [DERIVED: read from chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The visualization is produced by Our World in Data using data compiled by the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease (2025).\",\n      \"The chart's expert domain story defines the data as the estimated annual number of deaths from malaria across all ages and both sexes.\"\n    ],\n    \"derived_claims\": [\n      \"This stacked area chart, titled 'Malaria deaths by world region', tracks the estimated annual number of deaths from malaria across all ages and both sexes from 1980 to 2023.\",\n      \"Global malaria deaths rose from approximately 680,000 in 1980 to a peak of over 900,000 in the early 2000s (around 2003–2004), before declining to around 640,000 in 2016 and ending near 670,000 in 2023.\",\n      \"Throughout this entire period, Africa represents the overwhelming majority of global malaria deaths.\",\n      \"Asia's share of malaria deaths has shrunk significantly over the decades.\",\n      \"Regions like Europe, North America, South America, and Oceania represent negligible fractions of the global total.\",\n      \"The chart demonstrates that while global efforts have successfully reduced malaria mortality from its historic peak, progress has stalled in recent years, leaving Africa disproportionately affected.\"\n    ],\n    \"speculative_claims\": [\n      \"Its primary purpose is to monitor long-term global and regional progress in combating malaria mortality. [Source: public health epidemiology]\",\n      \"Malaria is a life-threatening disease transmitted to humans through the bites of infected female Anopheles mosquitoes. [Source: medical biology]\",\n      \"The peak in malaria deaths in the early 2000s and the subsequent decline reflects the massive scale-up of global malaria interventions—such as insecticide-treated bed nets, indoor residual spraying, and artemisinin-based combination therapies (ACTs)—heavily funded by international initiatives like the Global Fund and the President's Malaria Initiative. [Source: global health history]\",\n      \"The stagnation and slight uptick in deaths around 2020–2021 likely reflects disruptions to healthcare delivery and malaria prevention campaigns caused by the COVID-19 pandemic. [Source: global health history]\",\n      \"The persistent concentration of deaths in Africa highlights the critical need for targeted resources, infrastructure development, and the deployment of newer tools like malaria vaccines (RTS,S and R21) in sub-Saharan Africa to achieve eradication goals. [Source: public health policy]\"\n    ],\n    \"total_flag_count\": 13,\n    \"direct_count\": 2,\n    \"derived_count\": 6,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The raw data table is not provided, but approximate values can be read from the chart's Y-axis (0 to 1 million) and X-axis (1980 to 2023)."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The overall trend of rising, peaking, and declining malaria deaths is clearly visible in the stacked area chart, though exact numerical changes are not explicitly detailed in text."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, expert domain story, and data source are provided, clearly establishing the domain as global health and epidemiology."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This stacked area chart, titled 'Malaria deaths by world region', tracks the estimated annual number of deaths from malaria across all ages and both sexes from 1980 to 2023 [DERIVED: read from chart image]. The visualization is produced by Our World in Data using data compiled by the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease (2025) [DIRECT]. Its primary purpose is to monitor long-term global and regional progress in combating malaria mortality [SPECULATIVE: public health epidemiology].",
+      "domain_specific_explanations": "Malaria is a life-threatening disease transmitted to humans through the bites of infected female Anopheles mosquitoes [SPECULATIVE: medical biology]. The data shows that global malaria deaths rose from approximately 680,000 in 1980 to a peak of over 900,000 in the early 2000s (around 2003–2004), before declining to around 640,000 in 2016 and ending near 670,000 in 2023 [DERIVED: read from chart image]. Throughout this entire period, Africa represents the overwhelming majority of global malaria deaths [DERIVED: read from chart image]. Conversely, Asia's share of malaria deaths has shrunk significantly over the decades [DERIVED: read from chart image], while regions like Europe, North America, South America, and Oceania represent negligible fractions of the global total [DERIVED: read from chart image].",
+      "real_world_significance": "The peak in malaria deaths in the early 2000s and the subsequent decline reflects the massive scale-up of global malaria interventions—such as insecticide-treated bed nets, indoor residual spraying, and artemisinin-based combination therapies (ACTs)—heavily funded by international initiatives like the Global Fund and the President's Malaria Initiative [SPECULATIVE: global health history]. The stagnation and slight uptick in deaths around 2020–2021 likely reflects disruptions to healthcare delivery and malaria prevention campaigns caused by the COVID-19 pandemic [SPECULATIVE: global health history]. The persistent concentration of deaths in Africa highlights the critical need for targeted resources, infrastructure development, and the deployment of newer tools like malaria vaccines (RTS,S and R21) in sub-Saharan Africa to achieve eradication goals [SPECULATIVE: public health policy].",
+      "other": "The chart demonstrates that while global efforts have successfully reduced malaria mortality from its historic peak, progress has stalled in recent years, leaving Africa disproportionately affected [DERIVED: read from chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The visualization is produced by Our World in Data using data compiled by the Institute for Health Metrics and Evaluation (IHME), Global Burden of Disease (2025).",
+        "The chart's expert domain story defines the data as the estimated annual number of deaths from malaria across all ages and both sexes."
+      ],
+      "derived_claims": [
+        "This stacked area chart, titled 'Malaria deaths by world region', tracks the estimated annual number of deaths from malaria across all ages and both sexes from 1980 to 2023.",
+        "Global malaria deaths rose from approximately 680,000 in 1980 to a peak of over 900,000 in the early 2000s (around 2003–2004), before declining to around 640,000 in 2016 and ending near 670,000 in 2023.",
+        "Throughout this entire period, Africa represents the overwhelming majority of global malaria deaths.",
+        "Asia's share of malaria deaths has shrunk significantly over the decades.",
+        "Regions like Europe, North America, South America, and Oceania represent negligible fractions of the global total.",
+        "The chart demonstrates that while global efforts have successfully reduced malaria mortality from its historic peak, progress has stalled in recent years, leaving Africa disproportionately affected."
+      ],
+      "speculative_claims": [
+        "Its primary purpose is to monitor long-term global and regional progress in combating malaria mortality. [Source: public health epidemiology]",
+        "Malaria is a life-threatening disease transmitted to humans through the bites of infected female Anopheles mosquitoes. [Source: medical biology]",
+        "The peak in malaria deaths in the early 2000s and the subsequent decline reflects the massive scale-up of global malaria interventions—such as insecticide-treated bed nets, indoor residual spraying, and artemisinin-based combination therapies (ACTs)—heavily funded by international initiatives like the Global Fund and the President's Malaria Initiative. [Source: global health history]",
+        "The stagnation and slight uptick in deaths around 2020–2021 likely reflects disruptions to healthcare delivery and malaria prevention campaigns caused by the COVID-19 pandemic. [Source: global health history]",
+        "The persistent concentration of deaths in Africa highlights the critical need for targeted resources, infrastructure development, and the deployment of newer tools like malaria vaccines (RTS,S and R21) in sub-Saharan Africa to achieve eradication goals. [Source: public health policy]"
+      ],
+      "total_flag_count": 13,
+      "direct_count": 2,
+      "derived_count": 6,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 14598.240625000471,
+  "created_at": "2026-07-17T20:58:38.930735Z"
+}

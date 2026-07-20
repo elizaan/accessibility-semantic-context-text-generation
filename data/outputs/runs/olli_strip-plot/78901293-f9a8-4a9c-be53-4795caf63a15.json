@@ -1,0 +1,70 @@
+{
+  "output_id": "78901293-f9a8-4a9c-be53-4795caf63a15",
+  "chart_id": "olli_strip-plot",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The raw data table is missing, but the Olli screen reader tree provides highly detailed aggregated statistics, including counts and average horsepower for each cylinder category and horsepower bin.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The relationship between cylinder count and horsepower can be clearly derived from the provided category averages.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject domain (automotive specifications, specifically engine performance) is clearly identifiable from the axis labels and expert domain story.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a strip plot showing the relationship between engine horsepower and the number of cylinders across a dataset of vehicles [DIRECT]. The dataset contains a total of 400 vehicles [DERIVED: summed the counts of vehicles across all cylinder categories from the Olli tree]. The source of this visualization is the Olli accessibility gallery, which demonstrates accessible data structures for screen readers [DIRECT].\",\n    \"domain_specific_explanations\": \"In automotive engineering, cylinders are the power-producing chambers of an engine, and horsepower measures the engine's power output [SPECULATIVE: automotive engineering]. Generally, engines with more cylinders can burn more fuel and generate more power; this physical relationship is reflected in the data, where 8-cylinder engines have the highest average horsepower at 158, while 4-cylinder engines average 78 horsepower [DERIVED: compared average horsepower across cylinder categories from the Olli tree]. Interestingly, the 3-cylinder engines in this dataset have a higher average horsepower (99) than both 4-cylinder (78) and 5-cylinder (82) engines, which is unusual and likely due to a very small sample size of only 4 vehicles in that category [DERIVED: compared average horsepower and sample sizes of 3, 4, and 5-cylinder engines].\",\n    \"real_world_significance\": \"This data is highly relevant to automotive manufacturers, consumers, and environmental regulators [SPECULATIVE: automotive industry]. Consumers seeking fuel efficiency typically favor 4-cylinder engines, which represent the largest segment in this dataset with 202 vehicles [DERIVED: identified 4-cylinder engines as the largest category with 202 values]. Conversely, performance-oriented buyers or heavy-duty vehicle manufacturers focus on 8-cylinder engines, which offer significantly higher power but typically lower fuel economy [SPECULATIVE: automotive industry]. As global emissions regulations tighten, understanding the trade-offs between cylinder count and horsepower helps engineers design more efficient turbocharged smaller engines that mimic the power of larger engines [SPECULATIVE: environmental policy and automotive engineering].\",\n    \"other\": \"The distribution of horsepower is heavily skewed towards lower values, with 226 out of 400 vehicles falling in the 46 to 100 horsepower range [DERIVED: calculated proportion of vehicles in the 46-100 horsepower range].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a strip plot showing the relationship between engine horsepower and the number of cylinders across a dataset of vehicles\",\n      \"The source of this visualization is the Olli accessibility gallery, which demonstrates accessible data structures for screen readers\"\n    ],\n    \"derived_claims\": [\n      \"The dataset contains a total of 400 vehicles [DERIVED: summed the counts of vehicles across all cylinder categories from the Olli tree]\",\n      \"Generally, engines with more cylinders can burn more fuel and generate more power; this physical relationship is reflected in the data, where 8-cylinder engines have the highest average horsepower at 158, while 4-cylinder engines average 78 horsepower [DERIVED: compared average horsepower across cylinder categories from the Olli tree]\",\n      \"Interestingly, the 3-cylinder engines in this dataset have a higher average horsepower (99) than both 4-cylinder (78) and 5-cylinder (82) engines, which is unusual and likely due to a very small sample size of only 4 vehicles in that category [DERIVED: compared average horsepower and sample sizes of 3, 4, and 5-cylinder engines]\",\n      \"Consumers seeking fuel efficiency typically favor 4-cylinder engines, which represent the largest segment in this dataset with 202 vehicles [DERIVED: identified 4-cylinder engines as the largest category with 202 values]\",\n      \"The distribution of horsepower is heavily skewed towards lower values, with 226 out of 400 vehicles falling in the 46 to 100 horsepower range [DERIVED: calculated proportion of vehicles in the 46-100 horsepower range]\"\n    ],\n    \"speculative_claims\": [\n      \"In automotive engineering, cylinders are the power-producing chambers of an engine, and horsepower measures the engine's power output [SPECULATIVE: automotive engineering]\",\n      \"This data is highly relevant to automotive manufacturers, consumers, and environmental regulators [SPECULATIVE: automotive industry]\",\n      \"Performance-oriented buyers or heavy-duty vehicle manufacturers focus on 8-cylinder engines, which offer significantly higher power but typically lower fuel economy [SPECULATIVE: automotive industry]\",\n      \"As global emissions regulations tighten, understanding the trade-offs between cylinder count and horsepower helps engineers design more efficient turbocharged smaller engines that mimic the power of larger engines [SPECULATIVE: environmental policy and automotive engineering]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The raw data table is missing, but the Olli screen reader tree provides highly detailed aggregated statistics, including counts and average horsepower for each cylinder category and horsepower bin."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The relationship between cylinder count and horsepower can be clearly derived from the provided category averages."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject domain (automotive specifications, specifically engine performance) is clearly identifiable from the axis labels and expert domain story."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a strip plot showing the relationship between engine horsepower and the number of cylinders across a dataset of vehicles [DIRECT]. The dataset contains a total of 400 vehicles [DERIVED: summed the counts of vehicles across all cylinder categories from the Olli tree]. The source of this visualization is the Olli accessibility gallery, which demonstrates accessible data structures for screen readers [DIRECT].",
+      "domain_specific_explanations": "In automotive engineering, cylinders are the power-producing chambers of an engine, and horsepower measures the engine's power output [SPECULATIVE: automotive engineering]. Generally, engines with more cylinders can burn more fuel and generate more power; this physical relationship is reflected in the data, where 8-cylinder engines have the highest average horsepower at 158, while 4-cylinder engines average 78 horsepower [DERIVED: compared average horsepower across cylinder categories from the Olli tree]. Interestingly, the 3-cylinder engines in this dataset have a higher average horsepower (99) than both 4-cylinder (78) and 5-cylinder (82) engines, which is unusual and likely due to a very small sample size of only 4 vehicles in that category [DERIVED: compared average horsepower and sample sizes of 3, 4, and 5-cylinder engines].",
+      "real_world_significance": "This data is highly relevant to automotive manufacturers, consumers, and environmental regulators [SPECULATIVE: automotive industry]. Consumers seeking fuel efficiency typically favor 4-cylinder engines, which represent the largest segment in this dataset with 202 vehicles [DERIVED: identified 4-cylinder engines as the largest category with 202 values]. Conversely, performance-oriented buyers or heavy-duty vehicle manufacturers focus on 8-cylinder engines, which offer significantly higher power but typically lower fuel economy [SPECULATIVE: automotive industry]. As global emissions regulations tighten, understanding the trade-offs between cylinder count and horsepower helps engineers design more efficient turbocharged smaller engines that mimic the power of larger engines [SPECULATIVE: environmental policy and automotive engineering].",
+      "other": "The distribution of horsepower is heavily skewed towards lower values, with 226 out of 400 vehicles falling in the 46 to 100 horsepower range [DERIVED: calculated proportion of vehicles in the 46-100 horsepower range]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a strip plot showing the relationship between engine horsepower and the number of cylinders across a dataset of vehicles",
+        "The source of this visualization is the Olli accessibility gallery, which demonstrates accessible data structures for screen readers"
+      ],
+      "derived_claims": [
+        "The dataset contains a total of 400 vehicles [DERIVED: summed the counts of vehicles across all cylinder categories from the Olli tree]",
+        "Generally, engines with more cylinders can burn more fuel and generate more power; this physical relationship is reflected in the data, where 8-cylinder engines have the highest average horsepower at 158, while 4-cylinder engines average 78 horsepower [DERIVED: compared average horsepower across cylinder categories from the Olli tree]",
+        "Interestingly, the 3-cylinder engines in this dataset have a higher average horsepower (99) than both 4-cylinder (78) and 5-cylinder (82) engines, which is unusual and likely due to a very small sample size of only 4 vehicles in that category [DERIVED: compared average horsepower and sample sizes of 3, 4, and 5-cylinder engines]",
+        "Consumers seeking fuel efficiency typically favor 4-cylinder engines, which represent the largest segment in this dataset with 202 vehicles [DERIVED: identified 4-cylinder engines as the largest category with 202 values]",
+        "The distribution of horsepower is heavily skewed towards lower values, with 226 out of 400 vehicles falling in the 46 to 100 horsepower range [DERIVED: calculated proportion of vehicles in the 46-100 horsepower range]"
+      ],
+      "speculative_claims": [
+        "In automotive engineering, cylinders are the power-producing chambers of an engine, and horsepower measures the engine's power output [SPECULATIVE: automotive engineering]",
+        "This data is highly relevant to automotive manufacturers, consumers, and environmental regulators [SPECULATIVE: automotive industry]",
+        "Performance-oriented buyers or heavy-duty vehicle manufacturers focus on 8-cylinder engines, which offer significantly higher power but typically lower fuel economy [SPECULATIVE: automotive industry]",
+        "As global emissions regulations tighten, understanding the trade-offs between cylinder count and horsepower helps engineers design more efficient turbocharged smaller engines that mimic the power of larger engines [SPECULATIVE: environmental policy and automotive engineering]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 12982.763583000633,
+  "created_at": "2026-07-20T14:23:30.867752Z"
+}

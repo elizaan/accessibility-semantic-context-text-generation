@@ -1,0 +1,71 @@
+{
+  "output_id": "40525992-478b-4d52-8d20-468b6154028d",
+  "chart_id": "vistext_125",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is partially provided with 25 rows, but 19 rows are truncated.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The top states and their exact values are clear, but the full distribution is incomplete due to truncation.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axes clearly define the domain of U.S. Class I freight railroads by state in 2015.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the mileage of Class I freight railroads operated in various U.S. states in 2015 [DIRECT]. Texas has the highest mileage at 7,877 miles, followed by Illinois with 5,241 miles [DIRECT]. These two states represent major hubs in the U.S. rail network [SPECULATIVE: US Transportation Geography].\",\n    \"domain_specific_explanations\": \"Class I railroads are the largest category of freight railroads in the United States, defined by operating revenue thresholds [SPECULATIVE: Association of American Railroads]. The high mileage in Texas and Illinois reflects their roles as critical transit corridors and logistics hubs; Chicago, Illinois, is historically the nation's busiest rail interchange point, while Texas serves as a massive gateway for international trade with Mexico and Gulf Coast ports [SPECULATIVE: US Transportation Geography]. Agricultural states like Minnesota (4,131 miles), Kansas (3,623 miles), and Iowa (3,265 miles) rank highly in the dataset [DERIVED: Compared agricultural states' values to others in the dataset], which is typically to support bulk commodity transport [SPECULATIVE: US Agricultural Logistics].\",\n    \"real_world_significance\": \"Freight rail infrastructure is vital for economic supply chains, reducing highway congestion, and lowering carbon emissions compared to long-haul trucking [SPECULATIVE: US Department of Transportation]. States with extensive Class I rail networks require significant infrastructure maintenance and face unique safety and regulatory challenges, such as managing grade crossings and hazardous material transport [SPECULATIVE: Federal Railroad Administration]. Decisions regarding infrastructure funding, trade policies, and industrial zoning are heavily influenced by where these rail networks are concentrated [SPECULATIVE: Public Policy / Urban Planning].\",\n    \"other\": \"The dataset contains some truncated or simplified state names like 'York', 'Carolina', and 'Dakota' [DERIVED: Noticed naming anomalies in the provided data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the mileage of Class I freight railroads operated in various U.S. states in 2015\",\n      \"Texas has the highest mileage at 7,877 miles, followed by Illinois with 5,241 miles\"\n    ],\n    \"derived_claims\": [\n      \"Agricultural states like Minnesota (4,131 miles), Kansas (3,623 miles), and Iowa (3,265 miles) rank highly in the dataset [derived from: Compared agricultural states' values to others in the dataset]\",\n      \"The dataset contains some truncated or simplified state names like 'York', 'Carolina', and 'Dakota' [derived from: Noticed naming anomalies in the provided data table]\"\n    ],\n    \"speculative_claims\": [\n      \"These two states represent major hubs in the U.S. rail network [source: US Transportation Geography]\",\n      \"Class I railroads are the largest category of freight railroads in the United States, defined by operating revenue thresholds [source: Association of American Railroads]\",\n      \"The high mileage in Texas and Illinois reflects their roles as critical transit corridors and logistics hubs; Chicago, Illinois, is historically the nation's busiest rail interchange point, while Texas serves as a massive gateway for international trade with Mexico and Gulf Coast ports [source: US Transportation Geography]\",\n      \"which is typically to support bulk commodity transport [source: US Agricultural Logistics]\",\n      \"Freight rail infrastructure is vital for economic supply chains, reducing highway congestion, and lowering carbon emissions compared to long-haul trucking [source: US Department of Transportation]\",\n      \"States with extensive Class I rail networks require significant infrastructure maintenance and face unique safety and regulatory challenges, such as managing grade crossings and hazardous material transport [source: Federal Railroad Administration]\",\n      \"Decisions regarding infrastructure funding, trade policies, and industrial zoning are heavily influenced by where these rail networks are concentrated [source: Public Policy / Urban Planning]\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 2,\n    \"derived_count\": 2,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is partially provided with 25 rows, but 19 rows are truncated."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The top states and their exact values are clear, but the full distribution is incomplete due to truncation."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axes clearly define the domain of U.S. Class I freight railroads by state in 2015."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the mileage of Class I freight railroads operated in various U.S. states in 2015 [DIRECT]. Texas has the highest mileage at 7,877 miles, followed by Illinois with 5,241 miles [DIRECT]. These two states represent major hubs in the U.S. rail network [SPECULATIVE: US Transportation Geography].",
+      "domain_specific_explanations": "Class I railroads are the largest category of freight railroads in the United States, defined by operating revenue thresholds [SPECULATIVE: Association of American Railroads]. The high mileage in Texas and Illinois reflects their roles as critical transit corridors and logistics hubs; Chicago, Illinois, is historically the nation's busiest rail interchange point, while Texas serves as a massive gateway for international trade with Mexico and Gulf Coast ports [SPECULATIVE: US Transportation Geography]. Agricultural states like Minnesota (4,131 miles), Kansas (3,623 miles), and Iowa (3,265 miles) rank highly in the dataset [DERIVED: Compared agricultural states' values to others in the dataset], which is typically to support bulk commodity transport [SPECULATIVE: US Agricultural Logistics].",
+      "real_world_significance": "Freight rail infrastructure is vital for economic supply chains, reducing highway congestion, and lowering carbon emissions compared to long-haul trucking [SPECULATIVE: US Department of Transportation]. States with extensive Class I rail networks require significant infrastructure maintenance and face unique safety and regulatory challenges, such as managing grade crossings and hazardous material transport [SPECULATIVE: Federal Railroad Administration]. Decisions regarding infrastructure funding, trade policies, and industrial zoning are heavily influenced by where these rail networks are concentrated [SPECULATIVE: Public Policy / Urban Planning].",
+      "other": "The dataset contains some truncated or simplified state names like 'York', 'Carolina', and 'Dakota' [DERIVED: Noticed naming anomalies in the provided data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the mileage of Class I freight railroads operated in various U.S. states in 2015",
+        "Texas has the highest mileage at 7,877 miles, followed by Illinois with 5,241 miles"
+      ],
+      "derived_claims": [
+        "Agricultural states like Minnesota (4,131 miles), Kansas (3,623 miles), and Iowa (3,265 miles) rank highly in the dataset [derived from: Compared agricultural states' values to others in the dataset]",
+        "The dataset contains some truncated or simplified state names like 'York', 'Carolina', and 'Dakota' [derived from: Noticed naming anomalies in the provided data table]"
+      ],
+      "speculative_claims": [
+        "These two states represent major hubs in the U.S. rail network [source: US Transportation Geography]",
+        "Class I railroads are the largest category of freight railroads in the United States, defined by operating revenue thresholds [source: Association of American Railroads]",
+        "The high mileage in Texas and Illinois reflects their roles as critical transit corridors and logistics hubs; Chicago, Illinois, is historically the nation's busiest rail interchange point, while Texas serves as a massive gateway for international trade with Mexico and Gulf Coast ports [source: US Transportation Geography]",
+        "which is typically to support bulk commodity transport [source: US Agricultural Logistics]",
+        "Freight rail infrastructure is vital for economic supply chains, reducing highway congestion, and lowering carbon emissions compared to long-haul trucking [source: US Department of Transportation]",
+        "States with extensive Class I rail networks require significant infrastructure maintenance and face unique safety and regulatory challenges, such as managing grade crossings and hazardous material transport [source: Federal Railroad Administration]",
+        "Decisions regarding infrastructure funding, trade policies, and industrial zoning are heavily influenced by where these rail networks are concentrated [source: Public Policy / Urban Planning]"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 2,
+      "derived_count": 2,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13454.127916998914,
+  "created_at": "2026-07-17T20:02:57.569448Z"
+}

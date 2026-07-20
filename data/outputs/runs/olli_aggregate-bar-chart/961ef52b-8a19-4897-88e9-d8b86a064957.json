@@ -1,0 +1,71 @@
+{
+  "output_id": "961ef52b-8a19-4897-88e9-d8b86a064957",
+  "chart_id": "olli_aggregate-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact monthly precipitation values are provided in the Olli screen reader tree, though a formal data table is missing.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The complete monthly sequence allows for precise calculation of seasonal trends, minimums, maximums, and totals.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The expert domain story clearly identifies the chart as representing mean monthly precipitation in Seattle.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart represents the mean monthly precipitation in Seattle [DIRECT]. The data is structured as an aggregate bar chart showing precipitation levels for each month of the year, from January to December [DIRECT]. The source of this visualization is the Olli accessibility gallery [DIRECT].\",\n    \"domain_specific_explanations\": \"Seattle is known for its temperate marine climate, characterized by wet winters and dry summers [SPECULATIVE: Climatology]. The data shows a clear seasonal pattern: precipitation is highest in late autumn and winter, peaking in November at 5.21 [DERIVED: compared monthly values to find the maximum], and lowest in mid-summer, bottoming out in July at 0.39 [DERIVED: compared monthly values to find the minimum]. The transition between seasons is quite sharp, with precipitation dropping significantly from 3.08 in April to 1.76 in May [DERIVED: calculated difference between April and May values], and rising rapidly from 1.98 in September to 4.30 in October [DERIVED: calculated difference between September and October values].\",\n    \"real_world_significance\": \"This seasonal precipitation cycle is crucial for Seattle's water resource management, as the dry summer months require reliance on water stored in reservoirs from winter rains and mountain snowpack [SPECULATIVE: Urban Water Management]. The low summer rainfall, especially July's 0.39, increases the risk of wildfires and water usage restrictions in the Pacific Northwest [SPECULATIVE: Environmental Science]. Conversely, the heavy late-fall and winter rains, averaging over 4.7 inches per month from October through December, can lead to urban flooding and landslide risks in hilly areas [SPECULATIVE: Civil Engineering].\",\n    \"other\": \"The total annual mean precipitation represented by summing all monthly values is approximately 36.39 inches [DERIVED: summed all 12 monthly values: 3.90+3.62+4.90+3.08+1.76+1.01+0.39+1.37+1.98+4.30+5.21+4.87 = 36.39].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart represents the mean monthly precipitation in Seattle\",\n      \"The data is structured as an aggregate bar chart showing precipitation levels for each month of the year, from January to December\",\n      \"The source of this visualization is the Olli accessibility gallery\"\n    ],\n    \"derived_claims\": [\n      \"precipitation is highest in late autumn and winter, peaking in November at 5.21 [derived from comparing monthly values to find the maximum]\",\n      \"lowest in mid-summer, bottoming out in July at 0.39 [derived from comparing monthly values to find the minimum]\",\n      \"precipitation dropping significantly from 3.08 in April to 1.76 in May [derived from calculating difference between April and May values]\",\n      \"rising rapidly from 1.98 in September to 4.30 in October [derived from calculating difference between September and October values]\",\n      \"The total annual mean precipitation represented by summing all monthly values is approximately 36.39 inches [derived from summing all 12 monthly values: 3.90+3.62+4.90+3.08+1.76+1.01+0.39+1.37+1.98+4.30+5.21+4.87 = 36.39]\"\n    ],\n    \"speculative_claims\": [\n      \"Seattle is known for its temperate marine climate, characterized by wet winters and dry summers [source: Climatology]\",\n      \"This seasonal precipitation cycle is crucial for Seattle's water resource management, as the dry summer months require reliance on water stored in reservoirs from winter rains and mountain snowpack [source: Urban Water Management]\",\n      \"The low summer rainfall, especially July's 0.39, increases the risk of wildfires and water usage restrictions in the Pacific Northwest [source: Environmental Science]\",\n      \"Conversely, the heavy late-fall and winter rains, averaging over 4.7 inches per month from October through December, can lead to urban flooding and landslide risks in hilly areas [source: Civil Engineering]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 5,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact monthly precipitation values are provided in the Olli screen reader tree, though a formal data table is missing."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The complete monthly sequence allows for precise calculation of seasonal trends, minimums, maximums, and totals."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The expert domain story clearly identifies the chart as representing mean monthly precipitation in Seattle."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart represents the mean monthly precipitation in Seattle [DIRECT]. The data is structured as an aggregate bar chart showing precipitation levels for each month of the year, from January to December [DIRECT]. The source of this visualization is the Olli accessibility gallery [DIRECT].",
+      "domain_specific_explanations": "Seattle is known for its temperate marine climate, characterized by wet winters and dry summers [SPECULATIVE: Climatology]. The data shows a clear seasonal pattern: precipitation is highest in late autumn and winter, peaking in November at 5.21 [DERIVED: compared monthly values to find the maximum], and lowest in mid-summer, bottoming out in July at 0.39 [DERIVED: compared monthly values to find the minimum]. The transition between seasons is quite sharp, with precipitation dropping significantly from 3.08 in April to 1.76 in May [DERIVED: calculated difference between April and May values], and rising rapidly from 1.98 in September to 4.30 in October [DERIVED: calculated difference between September and October values].",
+      "real_world_significance": "This seasonal precipitation cycle is crucial for Seattle's water resource management, as the dry summer months require reliance on water stored in reservoirs from winter rains and mountain snowpack [SPECULATIVE: Urban Water Management]. The low summer rainfall, especially July's 0.39, increases the risk of wildfires and water usage restrictions in the Pacific Northwest [SPECULATIVE: Environmental Science]. Conversely, the heavy late-fall and winter rains, averaging over 4.7 inches per month from October through December, can lead to urban flooding and landslide risks in hilly areas [SPECULATIVE: Civil Engineering].",
+      "other": "The total annual mean precipitation represented by summing all monthly values is approximately 36.39 inches [DERIVED: summed all 12 monthly values: 3.90+3.62+4.90+3.08+1.76+1.01+0.39+1.37+1.98+4.30+5.21+4.87 = 36.39]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart represents the mean monthly precipitation in Seattle",
+        "The data is structured as an aggregate bar chart showing precipitation levels for each month of the year, from January to December",
+        "The source of this visualization is the Olli accessibility gallery"
+      ],
+      "derived_claims": [
+        "precipitation is highest in late autumn and winter, peaking in November at 5.21 [derived from comparing monthly values to find the maximum]",
+        "lowest in mid-summer, bottoming out in July at 0.39 [derived from comparing monthly values to find the minimum]",
+        "precipitation dropping significantly from 3.08 in April to 1.76 in May [derived from calculating difference between April and May values]",
+        "rising rapidly from 1.98 in September to 4.30 in October [derived from calculating difference between September and October values]",
+        "The total annual mean precipitation represented by summing all monthly values is approximately 36.39 inches [derived from summing all 12 monthly values: 3.90+3.62+4.90+3.08+1.76+1.01+0.39+1.37+1.98+4.30+5.21+4.87 = 36.39]"
+      ],
+      "speculative_claims": [
+        "Seattle is known for its temperate marine climate, characterized by wet winters and dry summers [source: Climatology]",
+        "This seasonal precipitation cycle is crucial for Seattle's water resource management, as the dry summer months require reliance on water stored in reservoirs from winter rains and mountain snowpack [source: Urban Water Management]",
+        "The low summer rainfall, especially July's 0.39, increases the risk of wildfires and water usage restrictions in the Pacific Northwest [source: Environmental Science]",
+        "Conversely, the heavy late-fall and winter rains, averaging over 4.7 inches per month from October through December, can lead to urban flooding and landslide risks in hilly areas [source: Civil Engineering]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 5,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11385.737625001639,
+  "created_at": "2026-07-20T14:19:09.234921Z"
+}

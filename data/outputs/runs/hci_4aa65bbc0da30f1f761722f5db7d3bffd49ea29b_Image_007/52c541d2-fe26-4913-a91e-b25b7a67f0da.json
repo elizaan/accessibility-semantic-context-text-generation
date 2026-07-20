@@ -1,0 +1,66 @@
+{
+  "output_id": "52c541d2-fe26-4913-a91e-b25b7a67f0da",
+  "chart_id": "hci_4aa65bbc0da30f1f761722f5db7d3bffd49ea29b_Image_007",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "alt_text",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 0, \"justification\": \"The data table with exact values underlying the chart is not provided.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart image shows a scatter plot with a clear positive trend, but the magnitude of the trend is not explicitly stated in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart appears to be related to the field of human-computer interaction (HCI) or economics, as indicated by the expert domain story from a CHI 2018 paper.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the relationship between the transformed reward and hourly wage [DERIVED: from the chart title and axis labels]. It was produced for a paper published at CHI 2018 [DIRECT]. The chart uses a scatter plot to display the data, with a black dashed line representing the model fit using ordinary least squares regression [DIRECT].\",\n    \"domain_specific_explanations\": \"The transformed reward and hourly wage are likely variables used in the context of human-computer interaction or economics to analyze the relationship between rewards and wages [SPECULATIVE: CHI 2018 paper, HCI or economics domain]. The use of a logarithmic scale on the y-axis suggests that the relationship may be non-linear [DERIVED: from the chart image].\",\n    \"real_world_significance\": \"This data likely informs decisions about reward structures and their impact on hourly wages in various contexts [SPECULATIVE: CHI 2018 paper, HCI or economics domain]. Understanding this relationship can help researchers or policymakers design more effective compensation systems [SPECULATIVE: general knowledge of HCI and economics].\",\n    \"other\": \"The chart suggests a positive correlation between transformed reward and hourly wage [DERIVED: from the chart image]. The ordinary least squares regression line indicates a linear relationship between the two variables, but the scatter plot shows significant variability [DERIVED: from the chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the relationship between the transformed reward and hourly wage\",\n      \"The chart uses a scatter plot to display the data, with a black dashed line representing the model fit using ordinary least squares regression\",\n      \"It was produced for a paper published at CHI 2018\"\n    ],\n    \"derived_claims\": [\n      \"The use of a logarithmic scale on the y-axis suggests that the relationship may be non-linear\",\n      \"The chart suggests a positive correlation between transformed reward and hourly wage\",\n      \"The ordinary least squares regression line indicates a linear relationship between the two variables, but the scatter plot shows significant variability\"\n    ],\n    \"speculative_claims\": [\n      \"The transformed reward and hourly wage are likely variables used in the context of human-computer interaction or economics to analyze the relationship between rewards and wages\",\n      \"Understanding this relationship can help researchers or policymakers design more effective compensation systems\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "The data table with exact values underlying the chart is not provided."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart image shows a scatter plot with a clear positive trend, but the magnitude of the trend is not explicitly stated in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart appears to be related to the field of human-computer interaction (HCI) or economics, as indicated by the expert domain story from a CHI 2018 paper."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the relationship between the transformed reward and hourly wage [DERIVED: from the chart title and axis labels]. It was produced for a paper published at CHI 2018 [DIRECT]. The chart uses a scatter plot to display the data, with a black dashed line representing the model fit using ordinary least squares regression [DIRECT].",
+      "domain_specific_explanations": "The transformed reward and hourly wage are likely variables used in the context of human-computer interaction or economics to analyze the relationship between rewards and wages [SPECULATIVE: CHI 2018 paper, HCI or economics domain]. The use of a logarithmic scale on the y-axis suggests that the relationship may be non-linear [DERIVED: from the chart image].",
+      "real_world_significance": "This data likely informs decisions about reward structures and their impact on hourly wages in various contexts [SPECULATIVE: CHI 2018 paper, HCI or economics domain]. Understanding this relationship can help researchers or policymakers design more effective compensation systems [SPECULATIVE: general knowledge of HCI and economics].",
+      "other": "The chart suggests a positive correlation between transformed reward and hourly wage [DERIVED: from the chart image]. The ordinary least squares regression line indicates a linear relationship between the two variables, but the scatter plot shows significant variability [DERIVED: from the chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the relationship between the transformed reward and hourly wage",
+        "The chart uses a scatter plot to display the data, with a black dashed line representing the model fit using ordinary least squares regression",
+        "It was produced for a paper published at CHI 2018"
+      ],
+      "derived_claims": [
+        "The use of a logarithmic scale on the y-axis suggests that the relationship may be non-linear",
+        "The chart suggests a positive correlation between transformed reward and hourly wage",
+        "The ordinary least squares regression line indicates a linear relationship between the two variables, but the scatter plot shows significant variability"
+      ],
+      "speculative_claims": [
+        "The transformed reward and hourly wage are likely variables used in the context of human-computer interaction or economics to analyze the relationship between rewards and wages",
+        "Understanding this relationship can help researchers or policymakers design more effective compensation systems"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 1374,
+    "output": 692
+  },
+  "latency_ms": 1884.5815419990686,
+  "created_at": "2026-07-17T20:16:42.086839Z"
+}

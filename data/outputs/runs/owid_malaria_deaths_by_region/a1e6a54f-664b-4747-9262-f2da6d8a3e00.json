@@ -1,0 +1,67 @@
+{
+  "output_id": "a1e6a54f-664b-4747-9262-f2da6d8a3e00",
+  "chart_id": "owid_malaria_deaths_by_region",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image provides data values but the exact values are not provided in the metadata.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart image shows trends and the magnitude of malaria deaths, but specific trend values are not detailed in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The domain is identified as malaria deaths by world region, with a clear focus on epidemiology.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart displays the estimated annual number of deaths from malaria across all ages and both sexes, categorized by world region. [DIRECT] The data source is IHME, Global Burden of Disease (2025). [DIRECT] The chart is produced by Our World in Data. [DIRECT]\",\n    \"domain_specific_explanations\": \"The chart measures malaria deaths across different world regions, including Africa, Asia, Europe, North America, South America, and Oceania. [DIRECT] The data indicates that Africa has the highest number of malaria deaths, with a significant decrease over the years. [DERIVED: from the chart image] The graph shows an increase in malaria deaths from 1980 to around 2005, followed by a decline. [DERIVED: from the chart image]\",\n    \"real_world_significance\": \"Malaria deaths have a significant impact on public health, especially in regions like Africa. [SPECULATIVE: Epidemiology and Public Health] The decline in malaria deaths over the years indicates successful interventions and control measures. [SPECULATIVE: Epidemiology and Public Health] Continued monitoring of malaria deaths is crucial for evaluating the effectiveness of health policies and interventions. [SPECULATIVE: Epidemiology and Public Health]\",\n    \"other\": \"The chart provides a visual representation of the global burden of malaria, highlighting regional disparities. [DERIVED: from the chart image] The data can be used to inform health policy and resource allocation. [SPECULATIVE: Health Policy]\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart displays the estimated annual number of deaths from malaria across all ages and both sexes, categorized by world region.\",\n      \"The data source is IHME, Global Burden of Disease (2025).\",\n      \"The chart is produced by Our World in Data.\"\n    ],\n    \"derived_claims\": [\n      \"Africa has the highest number of malaria deaths, with a significant decrease over the years.\",\n      \"The graph shows an increase in malaria deaths from 1980 to around 2005, followed by a decline.\",\n      \"The chart provides a visual representation of the global burden of malaria, highlighting regional disparities.\"\n    ],\n    \"speculative_claims\": [\n      \"Malaria deaths have a significant impact on public health, especially in regions like Africa.\",\n      \"The decline in malaria deaths over the years indicates successful interventions and control measures.\",\n      \"Continued monitoring of malaria deaths is crucial for evaluating the effectiveness of health policies and interventions.\",\n      \"The data can be used to inform health policy and resource allocation.\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 3,\n    \"derived_count\": 3,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image provides data values but the exact values are not provided in the metadata."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart image shows trends and the magnitude of malaria deaths, but specific trend values are not detailed in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is identified as malaria deaths by world region, with a clear focus on epidemiology."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart displays the estimated annual number of deaths from malaria across all ages and both sexes, categorized by world region. [DIRECT] The data source is IHME, Global Burden of Disease (2025). [DIRECT] The chart is produced by Our World in Data. [DIRECT]",
+      "domain_specific_explanations": "The chart measures malaria deaths across different world regions, including Africa, Asia, Europe, North America, South America, and Oceania. [DIRECT] The data indicates that Africa has the highest number of malaria deaths, with a significant decrease over the years. [DERIVED: from the chart image] The graph shows an increase in malaria deaths from 1980 to around 2005, followed by a decline. [DERIVED: from the chart image]",
+      "real_world_significance": "Malaria deaths have a significant impact on public health, especially in regions like Africa. [SPECULATIVE: Epidemiology and Public Health] The decline in malaria deaths over the years indicates successful interventions and control measures. [SPECULATIVE: Epidemiology and Public Health] Continued monitoring of malaria deaths is crucial for evaluating the effectiveness of health policies and interventions. [SPECULATIVE: Epidemiology and Public Health]",
+      "other": "The chart provides a visual representation of the global burden of malaria, highlighting regional disparities. [DERIVED: from the chart image] The data can be used to inform health policy and resource allocation. [SPECULATIVE: Health Policy]"
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart displays the estimated annual number of deaths from malaria across all ages and both sexes, categorized by world region.",
+        "The data source is IHME, Global Burden of Disease (2025).",
+        "The chart is produced by Our World in Data."
+      ],
+      "derived_claims": [
+        "Africa has the highest number of malaria deaths, with a significant decrease over the years.",
+        "The graph shows an increase in malaria deaths from 1980 to around 2005, followed by a decline.",
+        "The chart provides a visual representation of the global burden of malaria, highlighting regional disparities."
+      ],
+      "speculative_claims": [
+        "Malaria deaths have a significant impact on public health, especially in regions like Africa.",
+        "The decline in malaria deaths over the years indicates successful interventions and control measures.",
+        "Continued monitoring of malaria deaths is crucial for evaluating the effectiveness of health policies and interventions.",
+        "The data can be used to inform health policy and resource allocation."
+      ],
+      "total_flag_count": 11,
+      "direct_count": 3,
+      "derived_count": 3,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 2173,
+    "output": 722
+  },
+  "latency_ms": 2022.7632079986506,
+  "created_at": "2026-07-17T20:37:34.348556Z"
+}

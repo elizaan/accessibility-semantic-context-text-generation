@@ -1,0 +1,73 @@
+{
+  "output_id": "14bfe3cb-58c1-4261-8797-bdb4beb7e835",
+  "chart_id": "owid_learning_adjusted_years_of_schooling_vs_electoral_democracy_index",
+  "dataset_source": "our_world_data",
+  "model_id": "qwen/qwen3.6-27b",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 1,\n        \"justification\": \"The data table is present but critically incomplete. The 'Learning-adjusted years of schooling' column, which is central to the chart's title and x-axis implication, contains no values for any listed entity. Only the Electoral Democracy Index values are provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 0,\n        \"justification\": \"No trend information is available. The data represents a single cross-sectional year (2025) and lacks the primary variable (schooling) needed to assess correlation or magnitude of relationship.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain (political science/education metrics) is clearly identified by the title and the Expert Domain Story, which explains the metrics and their source (V-Dem, OWID).\"\n      },\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset is intended to visualize the relationship between educational quality (Learning-adjusted years of schooling) and political freedom (Electoral Democracy Index) globally for the year 2025 [DIRECT]. The data is sourced from Our World in Data and utilizes metrics from V-Dem [DIRECT]. The primary independent variable, Learning-adjusted years of schooling, is entirely missing from the provided metadata, rendering the chart's core comparison impossible to analyze quantitatively [DERIVED: Observation of empty column in data table]. The available data only confirms the Electoral Democracy Index scores for various countries and regions [DIRECT].\",\n    \"domain_specific_explanations\": \"The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic system [DIRECT]. This index is based on expert estimates provided by V-Dem [DIRECT]. Learning-adjusted years of schooling is a metric that combines the quantity of schooling with the quality of learning outcomes, acknowledging that time spent in school does not always equal learning acquired [DIRECT]. Without the schooling data, one cannot determine if higher democracy scores correlate with higher education quality in this specific dataset [DERIVED: Logical inference from missing data]. For example, Belgium has a high democracy score of 0.889, while Afghanistan has a very low score of 0.069 [DIRECT].\",\n    \"real_world_significance\": \"This type of analysis is typically used to investigate the 'education-democracy nexus,' a theory suggesting that higher quality education fosters democratic participation and stability [SPECULATIVE: Political Science Theory]. However, with the schooling data absent, the specific real-world significance of this chart cannot be fully assessed [DERIVED: Observation of missing data]. The available democracy data highlights significant global disparities in political freedom, with European nations like Belgium (0.889) and Australia (0.844) scoring much higher than nations in Asia and Africa such as Azerbaijan (0.171) or Burkina Faso (0.134) [DERIVED: Comparison of provided EDI values]. These disparities inform international policy decisions regarding political development and human rights interventions [SPECULATIVE: General knowledge of international relations].\",\n    \"other\": \"The data includes population-weighted averages for continents like Africa and Asia, which provide a broader regional context compared to individual country data [DIRECT]. The year 2025 indicates this is likely projected or estimated data, as V-Dem often releases estimates for future years based on expert consensus [SPECULATIVE: Knowledge of V-Dem publication cycles].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The dataset is intended to visualize the relationship between educational quality and political freedom globally for the year 2025.\",\n      \"The data is sourced from Our World in Data and utilizes metrics from V-Dem.\",\n      \"The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic system.\",\n      \"This index is based on expert estimates provided by V-Dem.\",\n      \"Learning-adjusted years of schooling is a metric that combines the quantity of schooling with the quality of learning outcomes.\",\n      \"Belgium has a high democracy score of 0.889.\",\n      \"Afghanistan has a very low score of 0.069.\",\n      \"The data includes population-weighted averages for continents like Africa and Asia.\"\n    ],\n    \"derived_claims\": [\n      \"The primary independent variable, Learning-adjusted years of schooling, is entirely missing from the provided metadata, rendering the chart's core comparison impossible to analyze quantitatively.\",\n      \"Without the schooling data, one cannot determine if higher democracy scores correlate with higher education quality in this specific dataset.\",\n      \"The available data only confirms the Electoral Democracy Index scores for various countries and regions.\",\n      \"European nations like Belgium (0.889) and Australia (0.844) scoring much higher than nations in Asia and Africa such as Azerbaijan (0.171) or Burkina Faso (0.134).\"\n    ],\n    \"speculative_claims\": [\n      \"This type of analysis is typically used to investigate the 'education-democracy nexus,' a theory suggesting that higher quality education fosters democratic participation and stability.\",\n      \"These disparities inform international policy decisions regarding political development and human rights interventions.\",\n      \"The year 2025 indicates this is likely projected or estimated data, as V-Dem often releases estimates for future years based on expert consensus.\"\n    ],\n    \"total_flag_count\": 15,\n    \"direct_count\": 8,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 1,
+          "justification": "The data table is present but critically incomplete. The 'Learning-adjusted years of schooling' column, which is central to the chart's title and x-axis implication, contains no values for any listed entity. Only the Electoral Democracy Index values are provided."
+        },
+        "trend_magnitude": {
+          "score": 0,
+          "justification": "No trend information is available. The data represents a single cross-sectional year (2025) and lacks the primary variable (schooling) needed to assess correlation or magnitude of relationship."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain (political science/education metrics) is clearly identified by the title and the Expert Domain Story, which explains the metrics and their source (V-Dem, OWID)."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset is intended to visualize the relationship between educational quality (Learning-adjusted years of schooling) and political freedom (Electoral Democracy Index) globally for the year 2025 [DIRECT]. The data is sourced from Our World in Data and utilizes metrics from V-Dem [DIRECT]. The primary independent variable, Learning-adjusted years of schooling, is entirely missing from the provided metadata, rendering the chart's core comparison impossible to analyze quantitatively [DERIVED: Observation of empty column in data table]. The available data only confirms the Electoral Democracy Index scores for various countries and regions [DIRECT].",
+      "domain_specific_explanations": "The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic system [DIRECT]. This index is based on expert estimates provided by V-Dem [DIRECT]. Learning-adjusted years of schooling is a metric that combines the quantity of schooling with the quality of learning outcomes, acknowledging that time spent in school does not always equal learning acquired [DIRECT]. Without the schooling data, one cannot determine if higher democracy scores correlate with higher education quality in this specific dataset [DERIVED: Logical inference from missing data]. For example, Belgium has a high democracy score of 0.889, while Afghanistan has a very low score of 0.069 [DIRECT].",
+      "real_world_significance": "This type of analysis is typically used to investigate the 'education-democracy nexus,' a theory suggesting that higher quality education fosters democratic participation and stability [SPECULATIVE: Political Science Theory]. However, with the schooling data absent, the specific real-world significance of this chart cannot be fully assessed [DERIVED: Observation of missing data]. The available democracy data highlights significant global disparities in political freedom, with European nations like Belgium (0.889) and Australia (0.844) scoring much higher than nations in Asia and Africa such as Azerbaijan (0.171) or Burkina Faso (0.134) [DERIVED: Comparison of provided EDI values]. These disparities inform international policy decisions regarding political development and human rights interventions [SPECULATIVE: General knowledge of international relations].",
+      "other": "The data includes population-weighted averages for continents like Africa and Asia, which provide a broader regional context compared to individual country data [DIRECT]. The year 2025 indicates this is likely projected or estimated data, as V-Dem often releases estimates for future years based on expert consensus [SPECULATIVE: Knowledge of V-Dem publication cycles]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The dataset is intended to visualize the relationship between educational quality and political freedom globally for the year 2025.",
+        "The data is sourced from Our World in Data and utilizes metrics from V-Dem.",
+        "The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic system.",
+        "This index is based on expert estimates provided by V-Dem.",
+        "Learning-adjusted years of schooling is a metric that combines the quantity of schooling with the quality of learning outcomes.",
+        "Belgium has a high democracy score of 0.889.",
+        "Afghanistan has a very low score of 0.069.",
+        "The data includes population-weighted averages for continents like Africa and Asia."
+      ],
+      "derived_claims": [
+        "The primary independent variable, Learning-adjusted years of schooling, is entirely missing from the provided metadata, rendering the chart's core comparison impossible to analyze quantitatively.",
+        "Without the schooling data, one cannot determine if higher democracy scores correlate with higher education quality in this specific dataset.",
+        "The available data only confirms the Electoral Democracy Index scores for various countries and regions.",
+        "European nations like Belgium (0.889) and Australia (0.844) scoring much higher than nations in Asia and Africa such as Azerbaijan (0.171) or Burkina Faso (0.134)."
+      ],
+      "speculative_claims": [
+        "This type of analysis is typically used to investigate the 'education-democracy nexus,' a theory suggesting that higher quality education fosters democratic participation and stability.",
+        "These disparities inform international policy decisions regarding political development and human rights interventions.",
+        "The year 2025 indicates this is likely projected or estimated data, as V-Dem often releases estimates for future years based on expert consensus."
+      ],
+      "total_flag_count": 15,
+      "direct_count": 8,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 1783,
+    "output": 1248
+  },
+  "latency_ms": 3297.9972079992876,
+  "created_at": "2026-07-19T18:14:28.639196Z"
+}

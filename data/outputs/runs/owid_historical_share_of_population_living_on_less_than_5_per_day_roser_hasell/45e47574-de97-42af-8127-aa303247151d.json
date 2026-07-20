@@ -1,0 +1,70 @@
+{
+  "output_id": "45e47574-de97-42af-8127-aa303247151d",
+  "chart_id": "owid_historical_share_of_population_living_on_less_than_5_per_day_roser_hasell",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact data values for the year 2017 are provided for all regions and key countries, though the 'historical' aspect implied by the title is limited to this single year.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Because data is only provided for the year 2017, no historical trends over time can be analyzed, though cross-sectional regional comparisons are possible.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, data table, and expert domain story provide excellent context regarding global poverty metrics, national accounts, and SDG1 monitoring.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset represents the share of the world's population living on less than $5 per day in 2017, broken down by region and key countries like China and India [DIRECT]. The data is based on historical national accounts estimates rather than traditional household surveys [DIRECT]. It is hosted by Our World in Data and references research by Roser and Hasell (2021) [DIRECT].\",\n    \"domain_specific_explanations\": \"National accounts estimates of average income tend to be higher than those from household surveys [DIRECT]. Consequently, the poverty rates shown here are lower than official World Bank estimates used to monitor Sustainable Development Goal 1 (SDG1) [DIRECT]. In 2017, Sub-Saharan Africa had the largest share of the world's population living on less than $5 per day at approximately 7.78% [DERIVED: read and rounded the value 7.776118 from the data table]. South Asia as a whole accounted for about 3.76% of the world's population living under this threshold, with India alone representing 2.42% [DIRECT]. In contrast, Western Europe (0.0001%) and Western Offshoots (0.0005%) had negligible shares of the global population living under this poverty line [DERIVED: compared values to show they are extremely close to zero].\",\n    \"real_world_significance\": \"Understanding the discrepancy between national accounts and survey data is crucial for policymakers tracking progress toward SDG1 (No Poverty) [SPECULATIVE: Development Economics]. If national accounts overestimate average incomes or fail to capture inequality, poverty rates may appear artificially low, potentially leading to underfunded social safety nets [SPECULATIVE: Public Policy]. The high concentration of global poverty in Sub-Saharan Africa and South Asia highlights where international aid and development efforts remain most urgently needed [SPECULATIVE: International Development].\",\n    \"other\": \"Sub-Saharan Africa, South Asia, and East Asia & Pacific collectively account for approximately 90% of the total global population share living under $5 a day represented in this dataset [DERIVED: summed the regional shares (7.78% + 3.76% + 2.70% = 14.24%) and divided by the total sum of all non-overlapping regions (~15.85%)].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset represents the share of the world's population living on less than $5 per day in 2017, broken down by region and key countries like China and India\",\n      \"The data is based on historical national accounts estimates rather than traditional household surveys\",\n      \"It is hosted by Our World in Data and references research by Roser and Hasell (2021)\",\n      \"National accounts estimates of average income tend to be higher than those from household surveys\",\n      \"Consequently, the poverty rates shown here are lower than official World Bank estimates used to monitor Sustainable Development Goal 1 (SDG1)\",\n      \"South Asia as a whole accounted for about 3.76% of the world's population living under this threshold, with India alone representing 2.42%\"\n    ],\n    \"derived_claims\": [\n      \"In 2017, Sub-Saharan Africa had the largest share of the world's population living on less than $5 per day at approximately 7.78% [DERIVED: read and rounded the value 7.776118 from the data table]\",\n      \"In contrast, Western Europe (0.0001%) and Western Offshoots (0.0005%) had negligible shares of the global population living under this poverty line [DERIVED: compared values to show they are extremely close to zero]\",\n      \"Sub-Saharan Africa, South Asia, and East Asia & Pacific collectively account for approximately 90% of the total global population share living under $5 a day represented in this dataset [DERIVED: summed the regional shares (7.78% + 3.76% + 2.70% = 14.24%) and divided by the total sum of all non-overlapping regions (~15.85%)]\"\n    ],\n    \"speculative_claims\": [\n      \"Understanding the discrepancy between national accounts and survey data is crucial for policymakers tracking progress toward SDG1 (No Poverty) [SPECULATIVE: Development Economics]\",\n      \"If national accounts overestimate average incomes or fail to capture inequality, poverty rates may appear artificially low, potentially leading to underfunded social safety nets [SPECULATIVE: Public Policy]\",\n      \"The high concentration of global poverty in Sub-Saharan Africa and South Asia highlights where international aid and development efforts remain most urgently needed [SPECULATIVE: International Development]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 6,\n    \"derived_count\": 3,\n    \"speculative_count\": 3\n  }\n}",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact data values for the year 2017 are provided for all regions and key countries, though the 'historical' aspect implied by the title is limited to this single year."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Because data is only provided for the year 2017, no historical trends over time can be analyzed, though cross-sectional regional comparisons are possible."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, data table, and expert domain story provide excellent context regarding global poverty metrics, national accounts, and SDG1 monitoring."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset represents the share of the world's population living on less than $5 per day in 2017, broken down by region and key countries like China and India [DIRECT]. The data is based on historical national accounts estimates rather than traditional household surveys [DIRECT]. It is hosted by Our World in Data and references research by Roser and Hasell (2021) [DIRECT].",
+      "domain_specific_explanations": "National accounts estimates of average income tend to be higher than those from household surveys [DIRECT]. Consequently, the poverty rates shown here are lower than official World Bank estimates used to monitor Sustainable Development Goal 1 (SDG1) [DIRECT]. In 2017, Sub-Saharan Africa had the largest share of the world's population living on less than $5 per day at approximately 7.78% [DERIVED: read and rounded the value 7.776118 from the data table]. South Asia as a whole accounted for about 3.76% of the world's population living under this threshold, with India alone representing 2.42% [DIRECT]. In contrast, Western Europe (0.0001%) and Western Offshoots (0.0005%) had negligible shares of the global population living under this poverty line [DERIVED: compared values to show they are extremely close to zero].",
+      "real_world_significance": "Understanding the discrepancy between national accounts and survey data is crucial for policymakers tracking progress toward SDG1 (No Poverty) [SPECULATIVE: Development Economics]. If national accounts overestimate average incomes or fail to capture inequality, poverty rates may appear artificially low, potentially leading to underfunded social safety nets [SPECULATIVE: Public Policy]. The high concentration of global poverty in Sub-Saharan Africa and South Asia highlights where international aid and development efforts remain most urgently needed [SPECULATIVE: International Development].",
+      "other": "Sub-Saharan Africa, South Asia, and East Asia & Pacific collectively account for approximately 90% of the total global population share living under $5 a day represented in this dataset [DERIVED: summed the regional shares (7.78% + 3.76% + 2.70% = 14.24%) and divided by the total sum of all non-overlapping regions (~15.85%)]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset represents the share of the world's population living on less than $5 per day in 2017, broken down by region and key countries like China and India",
+        "The data is based on historical national accounts estimates rather than traditional household surveys",
+        "It is hosted by Our World in Data and references research by Roser and Hasell (2021)",
+        "National accounts estimates of average income tend to be higher than those from household surveys",
+        "Consequently, the poverty rates shown here are lower than official World Bank estimates used to monitor Sustainable Development Goal 1 (SDG1)",
+        "South Asia as a whole accounted for about 3.76% of the world's population living under this threshold, with India alone representing 2.42%"
+      ],
+      "derived_claims": [
+        "In 2017, Sub-Saharan Africa had the largest share of the world's population living on less than $5 per day at approximately 7.78% [DERIVED: read and rounded the value 7.776118 from the data table]",
+        "In contrast, Western Europe (0.0001%) and Western Offshoots (0.0005%) had negligible shares of the global population living under this poverty line [DERIVED: compared values to show they are extremely close to zero]",
+        "Sub-Saharan Africa, South Asia, and East Asia & Pacific collectively account for approximately 90% of the total global population share living under $5 a day represented in this dataset [DERIVED: summed the regional shares (7.78% + 3.76% + 2.70% = 14.24%) and divided by the total sum of all non-overlapping regions (~15.85%)]"
+      ],
+      "speculative_claims": [
+        "Understanding the discrepancy between national accounts and survey data is crucial for policymakers tracking progress toward SDG1 (No Poverty) [SPECULATIVE: Development Economics]",
+        "If national accounts overestimate average incomes or fail to capture inequality, poverty rates may appear artificially low, potentially leading to underfunded social safety nets [SPECULATIVE: Public Policy]",
+        "The high concentration of global poverty in Sub-Saharan Africa and South Asia highlights where international aid and development efforts remain most urgently needed [SPECULATIVE: International Development]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 6,
+      "derived_count": 3,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13853.191333000723,
+  "created_at": "2026-07-17T20:55:54.783636Z"
+}

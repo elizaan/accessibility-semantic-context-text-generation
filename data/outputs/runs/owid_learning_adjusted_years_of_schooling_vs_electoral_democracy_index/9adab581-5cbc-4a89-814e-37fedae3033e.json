@@ -1,0 +1,65 @@
+{
+  "output_id": "9adab581-5cbc-4a89-814e-37fedae3033e",
+  "chart_id": "owid_learning_adjusted_years_of_schooling_vs_electoral_democracy_index",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 3,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 3,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart provides a scatter plot with data points representing various countries, but the exact values are not provided in the text.\"},\n      \"trend_magnitude\": {\"score\": 2, \"justification\": \"The chart shows a general trend but does not provide specific trend magnitudes.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The chart relates to education and democracy, which are clearly indicated.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020. The learning-adjusted years of schooling combine the quantity and quality of education into one metric. The Electoral Democracy Index is provided by V-Dem and measures how democratic a country's electoral process is [DIRECT].\",\n    \"domain_specific_explanations\": \"The learning-adjusted years of schooling take into account that similar durations of schooling can yield different learning outcomes. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic [DIRECT]. Countries with higher learning-adjusted years of schooling tend to have higher Electoral Democracy Index scores, suggesting a relationship between education quality and democratic processes [DERIVED: from the general trend observed in the chart].\",\n    \"real_world_significance\": \"This data matters because it highlights the interplay between education and democracy. Countries with better education systems tend to have more democratic electoral processes. For instance, countries like Singapore and Hong Kong, which have high learning-adjusted years of schooling, also have high Electoral Democracy Index scores. Conversely, countries with lower education levels, such as Chad and Central African Republic, have lower democracy index scores [DERIVED: from the chart]. This relationship suggests that improving education could be a pathway to enhancing democratic processes [SPECULATIVE: based on general knowledge of political science and education].\",\n    \"other\": \"The chart uses data from the World Bank and V-Dem, indicating a reliable source for the information [DIRECT]. The scatter plot allows for a visual comparison of the relationship between education and democracy across different countries [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020.\",\n      \"The learning-adjusted years of schooling combine the quantity and quality of education into one metric.\",\n      \"The Electoral Democracy Index is provided by V-Dem and measures how democratic a country's electoral process is.\",\n      \"The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic.\",\n      \"The chart uses data from the World Bank and V-Dem, indicating a reliable source for the information.\",\n      \"The scatter plot allows for a visual comparison of the relationship between education and democracy across different countries.\"\n    ],\n    \"derived_claims\": [\n      \"Countries with higher learning-adjusted years of schooling tend to have higher Electoral Democracy Index scores, suggesting a relationship between education quality and democratic processes.\",\n      \"Countries like Singapore and Hong Kong, which have high learning-adjusted years of schooling, also have high Electoral Democracy Index scores.\",\n      \"Countries with lower education levels, such as Chad and Central African Republic, have lower democracy index scores.\",\n      \"This relationship suggests that improving education could be a pathway to enhancing democratic processes.\"\n    ],\n    \"speculative_claims\": [\n      \"Improving education could be a pathway to enhancing democratic processes.\"\n    ],\n    \"total_flag_count\": 17,\n    \"direct_count\": 6,\n    \"derived_count\": 4,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 3,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart provides a scatter plot with data points representing various countries, but the exact values are not provided in the text."
+        },
+        "trend_magnitude": {
+          "score": 2,
+          "justification": "The chart shows a general trend but does not provide specific trend magnitudes."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The chart relates to education and democracy, which are clearly indicated."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020. The learning-adjusted years of schooling combine the quantity and quality of education into one metric. The Electoral Democracy Index is provided by V-Dem and measures how democratic a country's electoral process is [DIRECT].",
+      "domain_specific_explanations": "The learning-adjusted years of schooling take into account that similar durations of schooling can yield different learning outcomes. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic [DIRECT]. Countries with higher learning-adjusted years of schooling tend to have higher Electoral Democracy Index scores, suggesting a relationship between education quality and democratic processes [DERIVED: from the general trend observed in the chart].",
+      "real_world_significance": "This data matters because it highlights the interplay between education and democracy. Countries with better education systems tend to have more democratic electoral processes. For instance, countries like Singapore and Hong Kong, which have high learning-adjusted years of schooling, also have high Electoral Democracy Index scores. Conversely, countries with lower education levels, such as Chad and Central African Republic, have lower democracy index scores [DERIVED: from the chart]. This relationship suggests that improving education could be a pathway to enhancing democratic processes [SPECULATIVE: based on general knowledge of political science and education].",
+      "other": "The chart uses data from the World Bank and V-Dem, indicating a reliable source for the information [DIRECT]. The scatter plot allows for a visual comparison of the relationship between education and democracy across different countries [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020.",
+        "The learning-adjusted years of schooling combine the quantity and quality of education into one metric.",
+        "The Electoral Democracy Index is provided by V-Dem and measures how democratic a country's electoral process is.",
+        "The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic.",
+        "The chart uses data from the World Bank and V-Dem, indicating a reliable source for the information.",
+        "The scatter plot allows for a visual comparison of the relationship between education and democracy across different countries."
+      ],
+      "derived_claims": [
+        "Countries with higher learning-adjusted years of schooling tend to have higher Electoral Democracy Index scores, suggesting a relationship between education quality and democratic processes.",
+        "Countries like Singapore and Hong Kong, which have high learning-adjusted years of schooling, also have high Electoral Democracy Index scores.",
+        "Countries with lower education levels, such as Chad and Central African Republic, have lower democracy index scores.",
+        "This relationship suggests that improving education could be a pathway to enhancing democratic processes."
+      ],
+      "speculative_claims": [
+        "Improving education could be a pathway to enhancing democratic processes."
+      ],
+      "total_flag_count": 17,
+      "direct_count": 6,
+      "derived_count": 4,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 2146,
+    "output": 787
+  },
+  "latency_ms": 2358.410708999145,
+  "created_at": "2026-07-17T20:26:24.398105Z"
+}

@@ -1,0 +1,71 @@
+{
+  "output_id": "7bdad351-a290-4f01-ab5f-f8e8a2bd86ec",
+  "chart_id": "olli_aggregate-bar-chart",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 4,\n        \"justification\": \"The exact mean precipitation values for all 12 months are fully provided in the Olli screen reader tree, though the raw data table itself is marked as not provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The monthly values allow for clear calculation of seasonal trends, minimums, maximums, and rate of change between months.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 3,\n        \"justification\": \"The expert domain story identifies the subject as Seattle's monthly precipitation, but there is no additional stakeholder context or metadata.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is an aggregate bar chart showing the mean monthly precipitation in Seattle [DIRECT]. The data is plotted with months on the x-axis and precipitation values on the y-axis [DIRECT]. The dataset is sourced from the Olli accessibility gallery, which showcases accessible chart representations [DIRECT].\",\n    \"domain_specific_explanations\": \"In meteorology, precipitation is typically measured in inches or millimeters; given Seattle's climate, these values (ranging from 0.39 to 5.21) are almost certainly in inches [SPECULATIVE: meteorology]. The data reveals a strong oceanic seasonal precipitation pattern typical of the Pacific Northwest, characterized by wet winters and dry summers [SPECULATIVE: climatology]. The driest month is July with a mean of 0.39 [DERIVED: identified the minimum value from the dataset], while the wettest month is November with a mean of 5.21 [DERIVED: identified the maximum value from the dataset]. There is a steady decline in precipitation from March (4.90) through July (0.39), followed by a rapid increase in autumn [DERIVED: analyzed the month-to-month trend from spring to autumn].\",\n    \"real_world_significance\": \"This precipitation cycle has significant implications for Seattle's municipal water supply, which relies on winter snowpack and rainfall to fill reservoirs for the dry summer months [SPECULATIVE: water resource management]. The extremely low rainfall in July (0.39) and August (1.37) highlights a period of high vulnerability to wildfires and drought in the region [SPECULATIVE: environmental science]. Additionally, local businesses, agricultural planning, and tourism heavily depend on these predictable seasonal shifts to schedule operations and events [SPECULATIVE: regional economics].\",\n    \"other\": \"The precipitation more than doubles between September (1.98) and October (4.30), marking a rapid transition into the autumn wet season [DERIVED: compared September and October values].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is an aggregate bar chart showing the mean monthly precipitation in Seattle\",\n      \"The data is plotted with months on the x-axis and precipitation values on the y-axis\",\n      \"The dataset is sourced from the Olli accessibility gallery, which showcases accessible chart representations\"\n    ],\n    \"derived_claims\": [\n      \"The driest month is July with a mean of 0.39, derived from identifying the minimum value from the dataset\",\n      \"the wettest month is November with a mean of 5.21, derived from identifying the maximum value from the dataset\",\n      \"There is a steady decline in precipitation from March (4.90) through July (0.39), followed by a rapid increase in autumn, derived from analyzing the month-to-month trend from spring to autumn\",\n      \"The precipitation more than doubles between September (1.98) and October (4.30), marking a rapid transition into the autumn wet season, derived from comparing September and October values\"\n    ],\n    \"speculative_claims\": [\n      \"In meteorology, precipitation is typically measured in inches or millimeters; given Seattle's climate, these values (ranging from 0.39 to 5.21) are almost certainly in inches, sourced from meteorology\",\n      \"The data reveals a strong oceanic seasonal precipitation pattern typical of the Pacific Northwest, characterized by wet winters and dry summers, sourced from climatology\",\n      \"This precipitation cycle has significant implications for Seattle's municipal water supply, which relies on winter snowpack and rainfall to fill reservoirs for the dry summer months, sourced from water resource management\",\n      \"The extremely low rainfall in July (0.39) and August (1.37) highlights a period of high vulnerability to wildfires and drought in the region, sourced from environmental science\",\n      \"Additionally, local businesses, agricultural planning, and tourism heavily depend on these predictable seasonal shifts to schedule operations and events, sourced from regional economics\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 3,\n    \"derived_count\": 4,\n    \"speculative_count\": 5\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The exact mean precipitation values for all 12 months are fully provided in the Olli screen reader tree, though the raw data table itself is marked as not provided."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The monthly values allow for clear calculation of seasonal trends, minimums, maximums, and rate of change between months."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The expert domain story identifies the subject as Seattle's monthly precipitation, but there is no additional stakeholder context or metadata."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is an aggregate bar chart showing the mean monthly precipitation in Seattle [DIRECT]. The data is plotted with months on the x-axis and precipitation values on the y-axis [DIRECT]. The dataset is sourced from the Olli accessibility gallery, which showcases accessible chart representations [DIRECT].",
+      "domain_specific_explanations": "In meteorology, precipitation is typically measured in inches or millimeters; given Seattle's climate, these values (ranging from 0.39 to 5.21) are almost certainly in inches [SPECULATIVE: meteorology]. The data reveals a strong oceanic seasonal precipitation pattern typical of the Pacific Northwest, characterized by wet winters and dry summers [SPECULATIVE: climatology]. The driest month is July with a mean of 0.39 [DERIVED: identified the minimum value from the dataset], while the wettest month is November with a mean of 5.21 [DERIVED: identified the maximum value from the dataset]. There is a steady decline in precipitation from March (4.90) through July (0.39), followed by a rapid increase in autumn [DERIVED: analyzed the month-to-month trend from spring to autumn].",
+      "real_world_significance": "This precipitation cycle has significant implications for Seattle's municipal water supply, which relies on winter snowpack and rainfall to fill reservoirs for the dry summer months [SPECULATIVE: water resource management]. The extremely low rainfall in July (0.39) and August (1.37) highlights a period of high vulnerability to wildfires and drought in the region [SPECULATIVE: environmental science]. Additionally, local businesses, agricultural planning, and tourism heavily depend on these predictable seasonal shifts to schedule operations and events [SPECULATIVE: regional economics].",
+      "other": "The precipitation more than doubles between September (1.98) and October (4.30), marking a rapid transition into the autumn wet season [DERIVED: compared September and October values]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is an aggregate bar chart showing the mean monthly precipitation in Seattle",
+        "The data is plotted with months on the x-axis and precipitation values on the y-axis",
+        "The dataset is sourced from the Olli accessibility gallery, which showcases accessible chart representations"
+      ],
+      "derived_claims": [
+        "The driest month is July with a mean of 0.39, derived from identifying the minimum value from the dataset",
+        "the wettest month is November with a mean of 5.21, derived from identifying the maximum value from the dataset",
+        "There is a steady decline in precipitation from March (4.90) through July (0.39), followed by a rapid increase in autumn, derived from analyzing the month-to-month trend from spring to autumn",
+        "The precipitation more than doubles between September (1.98) and October (4.30), marking a rapid transition into the autumn wet season, derived from comparing September and October values"
+      ],
+      "speculative_claims": [
+        "In meteorology, precipitation is typically measured in inches or millimeters; given Seattle's climate, these values (ranging from 0.39 to 5.21) are almost certainly in inches, sourced from meteorology",
+        "The data reveals a strong oceanic seasonal precipitation pattern typical of the Pacific Northwest, characterized by wet winters and dry summers, sourced from climatology",
+        "This precipitation cycle has significant implications for Seattle's municipal water supply, which relies on winter snowpack and rainfall to fill reservoirs for the dry summer months, sourced from water resource management",
+        "The extremely low rainfall in July (0.39) and August (1.37) highlights a period of high vulnerability to wildfires and drought in the region, sourced from environmental science",
+        "Additionally, local businesses, agricultural planning, and tourism heavily depend on these predictable seasonal shifts to schedule operations and events, sourced from regional economics"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 3,
+      "derived_count": 4,
+      "speculative_count": 5
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13708.410624996759,
+  "created_at": "2026-07-20T14:20:50.902885Z"
+}

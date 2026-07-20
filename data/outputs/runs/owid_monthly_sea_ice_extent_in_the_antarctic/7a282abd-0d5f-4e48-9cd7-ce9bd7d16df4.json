@@ -1,0 +1,67 @@
+{
+  "output_id": "7a282abd-0d5f-4e48-9cd7-ce9bd7d16df4",
+  "chart_id": "owid_monthly_sea_ice_extent_in_the_antarctic",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides some values but not a complete set for all years and months.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart image shows the trend and magnitude of monthly sea ice extent over time.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart is about monthly sea ice extent in the Antarctic, which is a specific and well-defined domain.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the monthly sea ice extent in the Antarctic over several decades [DIRECT]. The data is presented as a line graph with each point representing the monthly average sea ice extent [DIRECT]. The chart is produced by Our World in Data, a reputable source for data visualization [SPECULATIVE: https://ourworldindata.org/grapher/monthly-sea-ice-extent-in-the-antarctic].\",\n    \"domain_specific_explanations\": \"The monthly sea ice extent in the Antarctic varies over time, with a general pattern of increasing extent from January to September and then decreasing [DERIVED: from chart image]. The data values range from around 2 million km² to 18 million km² [DIRECT]. The years in the current decade are highlighted in red, with the current year highlighted in black [DIRECT].\",\n    \"real_world_significance\": \"This data matters because changes in sea ice extent can have significant impacts on global climate patterns, marine ecosystems, and human activities such as shipping and fishing [SPECULATIVE: general knowledge of climate science]. The trend of sea ice extent over time can inform climate models and policy decisions [SPECULATIVE: general knowledge of climate policy].\",\n    \"other\": \"The chart notes that all years have data for all 12 months, except 1987 and 1988 (each missing one month) and the current year [DIRECT]. The data source is the National Snow and Ice Data Center - Sea Ice Index (2026) [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the monthly sea ice extent in the Antarctic over several decades\",\n      \"The data is presented as a line graph with each point representing the monthly average sea ice extent\",\n      \"The data values range from around 2 million km² to 18 million km²\",\n      \"The years in the current decade are highlighted in red, with the current year highlighted in black\",\n      \"All years have data for all 12 months, except 1987 and 1988 (each missing one month) and the current year\",\n      \"The data source is the National Snow and Ice Data Center - Sea Ice Index (2026)\"\n    ],\n    \"derived_claims\": [\n      \"The monthly sea ice extent in the Antarctic varies over time, with a general pattern of increasing extent from January to September and then decreasing\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because changes in sea ice extent can have significant impacts on global climate patterns, marine ecosystems, and human activities such as shipping and fishing\",\n      \"The trend of sea ice extent over time can inform climate models and policy decisions\"\n    ],\n    \"total_flag_count\": 8,\n    \"direct_count\": 6,\n    \"derived_count\": 1,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides some values but not a complete set for all years and months."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart image shows the trend and magnitude of monthly sea ice extent over time."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart is about monthly sea ice extent in the Antarctic, which is a specific and well-defined domain."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the monthly sea ice extent in the Antarctic over several decades [DIRECT]. The data is presented as a line graph with each point representing the monthly average sea ice extent [DIRECT]. The chart is produced by Our World in Data, a reputable source for data visualization [SPECULATIVE: https://ourworldindata.org/grapher/monthly-sea-ice-extent-in-the-antarctic].",
+      "domain_specific_explanations": "The monthly sea ice extent in the Antarctic varies over time, with a general pattern of increasing extent from January to September and then decreasing [DERIVED: from chart image]. The data values range from around 2 million km² to 18 million km² [DIRECT]. The years in the current decade are highlighted in red, with the current year highlighted in black [DIRECT].",
+      "real_world_significance": "This data matters because changes in sea ice extent can have significant impacts on global climate patterns, marine ecosystems, and human activities such as shipping and fishing [SPECULATIVE: general knowledge of climate science]. The trend of sea ice extent over time can inform climate models and policy decisions [SPECULATIVE: general knowledge of climate policy].",
+      "other": "The chart notes that all years have data for all 12 months, except 1987 and 1988 (each missing one month) and the current year [DIRECT]. The data source is the National Snow and Ice Data Center - Sea Ice Index (2026) [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the monthly sea ice extent in the Antarctic over several decades",
+        "The data is presented as a line graph with each point representing the monthly average sea ice extent",
+        "The data values range from around 2 million km² to 18 million km²",
+        "The years in the current decade are highlighted in red, with the current year highlighted in black",
+        "All years have data for all 12 months, except 1987 and 1988 (each missing one month) and the current year",
+        "The data source is the National Snow and Ice Data Center - Sea Ice Index (2026)"
+      ],
+      "derived_claims": [
+        "The monthly sea ice extent in the Antarctic varies over time, with a general pattern of increasing extent from January to September and then decreasing"
+      ],
+      "speculative_claims": [
+        "This data matters because changes in sea ice extent can have significant impacts on global climate patterns, marine ecosystems, and human activities such as shipping and fishing",
+        "The trend of sea ice extent over time can inform climate models and policy decisions"
+      ],
+      "total_flag_count": 8,
+      "direct_count": 6,
+      "derived_count": 1,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2434,
+    "output": 747
+  },
+  "latency_ms": 2297.0347500013304,
+  "created_at": "2026-07-17T20:43:55.891163Z"
+}

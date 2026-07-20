@@ -1,0 +1,66 @@
+{
+  "output_id": "4d0b7942-7953-4c5c-bd20-6e437afcef64",
+  "chart_id": "owid_poverty_share_on_less_than_30_per_day",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 4, \"justification\": \"The data table provides share of population in poverty for various regions and countries, but some years and regions are missing.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"No information on trend magnitude is provided.\"},\n      \"chart_subject_domain\": {\"score\": 5, \"justification\": \"The chart subject domain is clearly identified as poverty rates.\"},\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the share of population living on less than $30 a day across different regions and countries [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. The data source is the World Bank Poverty and Inequality Platform (2026) [DIRECT].\",\n    \"domain_specific_explanations\": \"The data represents the percentage of the population living on less than $30 a day, expressed in international-$ at 2021 prices [DIRECT]. This metric relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT].\",\n    \"real_world_significance\": \"This data matters because it highlights the extent of poverty globally, showing which regions and countries have the highest percentages of their population living in poverty [SPECULATIVE: poverty and inequality]. Policymakers and researchers use this data to understand poverty trends and develop targeted interventions [SPECULATIVE: economic development].\",\n    \"other\": \"The chart uses a color-coded map to visually represent the data, with darker shades indicating higher percentages of the population in poverty [DERIVED: visual representation].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the share of population living on less than $30 a day across different regions and countries\",\n      \"The data is adjusted for inflation and differences in living costs between countries\",\n      \"The data source is the World Bank Poverty and Inequality Platform (2026)\",\n      \"The data represents the percentage of the population living on less than $30 a day, expressed in international-$ at 2021 prices\",\n      \"This metric relates to income (measured after taxes and benefits) or to consumption, per capita\"\n    ],\n    \"derived_claims\": [\n      \"The chart uses a color-coded map to visually represent the data, with darker shades indicating higher percentages of the population in poverty\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it highlights the extent of poverty globally, showing which regions and countries have the highest percentages of their population living in poverty\",\n      \"Policymakers and researchers use this data to understand poverty trends and develop targeted interventions\"\n    ],\n    \"total_flag_count\": 9,\n    \"direct_count\": 5,\n    \"derived_count\": 1,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 4,
+          "justification": "The data table provides share of population in poverty for various regions and countries, but some years and regions are missing."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "No information on trend magnitude is provided."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The chart subject domain is clearly identified as poverty rates."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the share of population living on less than $30 a day across different regions and countries [DIRECT]. The data is adjusted for inflation and differences in living costs between countries [DIRECT]. The data source is the World Bank Poverty and Inequality Platform (2026) [DIRECT].",
+      "domain_specific_explanations": "The data represents the percentage of the population living on less than $30 a day, expressed in international-$ at 2021 prices [DIRECT]. This metric relates to income (measured after taxes and benefits) or to consumption, per capita [DIRECT].",
+      "real_world_significance": "This data matters because it highlights the extent of poverty globally, showing which regions and countries have the highest percentages of their population living in poverty [SPECULATIVE: poverty and inequality]. Policymakers and researchers use this data to understand poverty trends and develop targeted interventions [SPECULATIVE: economic development].",
+      "other": "The chart uses a color-coded map to visually represent the data, with darker shades indicating higher percentages of the population in poverty [DERIVED: visual representation]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the share of population living on less than $30 a day across different regions and countries",
+        "The data is adjusted for inflation and differences in living costs between countries",
+        "The data source is the World Bank Poverty and Inequality Platform (2026)",
+        "The data represents the percentage of the population living on less than $30 a day, expressed in international-$ at 2021 prices",
+        "This metric relates to income (measured after taxes and benefits) or to consumption, per capita"
+      ],
+      "derived_claims": [
+        "The chart uses a color-coded map to visually represent the data, with darker shades indicating higher percentages of the population in poverty"
+      ],
+      "speculative_claims": [
+        "This data matters because it highlights the extent of poverty globally, showing which regions and countries have the highest percentages of their population living in poverty",
+        "Policymakers and researchers use this data to understand poverty trends and develop targeted interventions"
+      ],
+      "total_flag_count": 9,
+      "direct_count": 5,
+      "derived_count": 1,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2589,
+    "output": 625
+  },
+  "latency_ms": 2108.068749999802,
+  "created_at": "2026-07-17T20:14:35.742863Z"
+}

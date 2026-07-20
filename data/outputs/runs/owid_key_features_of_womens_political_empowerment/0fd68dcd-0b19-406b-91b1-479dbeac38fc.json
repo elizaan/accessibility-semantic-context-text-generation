@@ -1,0 +1,66 @@
+{
+  "output_id": "0fd68dcd-0b19-406b-91b1-479dbeac38fc",
+  "chart_id": "owid_key_features_of_womens_political_empowerment",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides exact values for various countries and years, but not for all countries or years.\"},\n      \"trend_magnitude\": {\"score\": 1, \"justification\": \"The chart image shows trends, but the exact magnitude is not provided in the metadata.\"},\n      \"chart_subject_domain\": {\"score\": 3, \"justification\": \"The domain is women's political empowerment, with specific aspects such as civil liberties, civil society participation, and political participation.\"},\n      \"overall\": 2\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows key features of women's political empowerment across various countries, including women's political empowerment overall, civil liberties, civil society participation, and political participation [DIRECT]. The data is based on expert estimates by V-Dem and ranges from 0 to 1, with 1 being the most empowered [DIRECT].\",\n    \"domain_specific_explanations\": \"The indices provided measure different aspects of women's political empowerment. Women's political empowerment overall is a comprehensive measure, while women's civil liberties, civil society participation, and political participation are specific components [DIRECT]. The values range from 0 to 1, with higher values indicating greater empowerment [DIRECT].\",\n    \"real_world_significance\": \"This data matters because it tracks progress in women's political empowerment over time and across different countries [SPECULATIVE: general knowledge of gender studies]. It can inform policy decisions and advocacy efforts aimed at improving women's political participation and empowerment [SPECULATIVE: general knowledge of policy-making].\",\n    \"other\": \"The data source is V-Dem, and the estimates are based on expert opinions [DIRECT]. The chart provides a visual representation of the trends in women's political empowerment over time [DERIVED: from chart image].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows key features of women's political empowerment across various countries, including women's political empowerment overall, civil liberties, civil society participation, and political participation\",\n      \"The data is based on expert estimates by V-Dem and ranges from 0 to 1, with 1 being the most empowered\",\n      \"The indices provided measure different aspects of women's political empowerment. Women's political empowerment overall is a comprehensive measure, while women's civil liberties, civil society participation, and political participation are specific components\",\n      \"The values range from 0 to 1, with higher values indicating greater empowerment\",\n      \"The data source is V-Dem, and the estimates are based on expert opinions\"\n    ],\n    \"derived_claims\": [\n      \"The chart provides a visual representation of the trends in women's political empowerment over time\"\n    ],\n    \"speculative_claims\": [\n      \"This data matters because it tracks progress in women's political empowerment over time and across different countries\",\n      \"It can inform policy decisions and advocacy efforts aimed at improving women's political participation and empowerment\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 5,\n    \"derived_count\": 1,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides exact values for various countries and years, but not for all countries or years."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "The chart image shows trends, but the exact magnitude is not provided in the metadata."
+        },
+        "chart_subject_domain": {
+          "score": 3,
+          "justification": "The domain is women's political empowerment, with specific aspects such as civil liberties, civil society participation, and political participation."
+        },
+        "overall": 2
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows key features of women's political empowerment across various countries, including women's political empowerment overall, civil liberties, civil society participation, and political participation [DIRECT]. The data is based on expert estimates by V-Dem and ranges from 0 to 1, with 1 being the most empowered [DIRECT].",
+      "domain_specific_explanations": "The indices provided measure different aspects of women's political empowerment. Women's political empowerment overall is a comprehensive measure, while women's civil liberties, civil society participation, and political participation are specific components [DIRECT]. The values range from 0 to 1, with higher values indicating greater empowerment [DIRECT].",
+      "real_world_significance": "This data matters because it tracks progress in women's political empowerment over time and across different countries [SPECULATIVE: general knowledge of gender studies]. It can inform policy decisions and advocacy efforts aimed at improving women's political participation and empowerment [SPECULATIVE: general knowledge of policy-making].",
+      "other": "The data source is V-Dem, and the estimates are based on expert opinions [DIRECT]. The chart provides a visual representation of the trends in women's political empowerment over time [DERIVED: from chart image]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows key features of women's political empowerment across various countries, including women's political empowerment overall, civil liberties, civil society participation, and political participation",
+        "The data is based on expert estimates by V-Dem and ranges from 0 to 1, with 1 being the most empowered",
+        "The indices provided measure different aspects of women's political empowerment. Women's political empowerment overall is a comprehensive measure, while women's civil liberties, civil society participation, and political participation are specific components",
+        "The values range from 0 to 1, with higher values indicating greater empowerment",
+        "The data source is V-Dem, and the estimates are based on expert opinions"
+      ],
+      "derived_claims": [
+        "The chart provides a visual representation of the trends in women's political empowerment over time"
+      ],
+      "speculative_claims": [
+        "This data matters because it tracks progress in women's political empowerment over time and across different countries",
+        "It can inform policy decisions and advocacy efforts aimed at improving women's political participation and empowerment"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 5,
+      "derived_count": 1,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 2808,
+    "output": 679
+  },
+  "latency_ms": 2122.780417001195,
+  "created_at": "2026-07-17T20:46:35.137799Z"
+}

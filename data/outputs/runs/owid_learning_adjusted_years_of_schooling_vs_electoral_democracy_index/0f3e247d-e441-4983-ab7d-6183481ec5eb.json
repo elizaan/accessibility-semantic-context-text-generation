@@ -1,0 +1,61 @@
+{
+  "output_id": "0f3e247d-e441-4983-ab7d-6183481ec5eb",
+  "chart_id": "owid_learning_adjusted_years_of_schooling_vs_electoral_democracy_index",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"Data values are present but some country labels are hard to read or missing.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The trend appears to show a positive correlation but with significant scatter.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart appears to relate to education and political science.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020. The learning-adjusted years of schooling metric combines the quantity and quality of education. The Electoral Democracy Index is provided by V-Dem and measures the level of democracy [DIRECT].\",\n    \"domain_specific_explanations\": \"The learning-adjusted years of schooling take into account that similar durations of schooling can lead to different learning outcomes. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic [DIRECT].\",\n    \"real_world_significance\": \"Countries with higher learning-adjusted years of schooling tend to have a higher Electoral Democracy Index, suggesting a relationship between education quality and democratic governance [DERIVED: from observed trend]. This relationship can inform policy decisions aimed at improving democracy through education [SPECULATIVE: education policy].\",\n    \"other\": \"The data source is the World Bank, and the methodology is based on Filmer et al. (2018) for education and V-Dem (2026) for democracy [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020.\",\n      \"The learning-adjusted years of schooling metric combines the quantity and quality of education.\",\n      \"The Electoral Democracy Index is provided by V-Dem and measures the level of democracy.\",\n      \"The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic.\",\n      \"The data source is the World Bank, and the methodology is based on Filmer et al. (2018) for education and V-Dem (2026) for democracy.\"\n    ],\n    \"derived_claims\": [\n      \"Countries with higher learning-adjusted years of schooling tend to have a higher Electoral Democracy Index.\"\n    ],\n    \"speculative_claims\": [\n      \"This relationship can inform policy decisions aimed at improving democracy through education.\"\n    ],\n    \"total_flag_count\": 6,\n    \"direct_count\": 5,\n    \"derived_count\": 1,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "Data values are present but some country labels are hard to read or missing."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The trend appears to show a positive correlation but with significant scatter."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart appears to relate to education and political science."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020. The learning-adjusted years of schooling metric combines the quantity and quality of education. The Electoral Democracy Index is provided by V-Dem and measures the level of democracy [DIRECT].",
+      "domain_specific_explanations": "The learning-adjusted years of schooling take into account that similar durations of schooling can lead to different learning outcomes. The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic [DIRECT].",
+      "real_world_significance": "Countries with higher learning-adjusted years of schooling tend to have a higher Electoral Democracy Index, suggesting a relationship between education quality and democratic governance [DERIVED: from observed trend]. This relationship can inform policy decisions aimed at improving democracy through education [SPECULATIVE: education policy].",
+      "other": "The data source is the World Bank, and the methodology is based on Filmer et al. (2018) for education and V-Dem (2026) for democracy [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart compares learning-adjusted years of schooling with the Electoral Democracy Index across various countries in 2020.",
+        "The learning-adjusted years of schooling metric combines the quantity and quality of education.",
+        "The Electoral Democracy Index is provided by V-Dem and measures the level of democracy.",
+        "The Electoral Democracy Index ranges from 0 to 1, where 1 represents the most democratic.",
+        "The data source is the World Bank, and the methodology is based on Filmer et al. (2018) for education and V-Dem (2026) for democracy."
+      ],
+      "derived_claims": [
+        "Countries with higher learning-adjusted years of schooling tend to have a higher Electoral Democracy Index."
+      ],
+      "speculative_claims": [
+        "This relationship can inform policy decisions aimed at improving democracy through education."
+      ],
+      "total_flag_count": 6,
+      "direct_count": 5,
+      "derived_count": 1,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 1927,
+    "output": 585
+  },
+  "latency_ms": 1805.8667500008596,
+  "created_at": "2026-07-17T20:26:33.527217Z"
+}

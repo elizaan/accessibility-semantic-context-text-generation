@@ -1,0 +1,66 @@
+{
+  "output_id": "f7f64837-6a10-4a0a-80f5-3146c421088e",
+  "chart_id": "vistext_428",
+  "dataset_source": "vistext",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The data table provides some values but seems incomplete.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart and L2 caption provide information on the trend and magnitude.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart title clearly states the domain (treasury bills of the United States).\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the average annual percent change in total return of treasury bills of the United States from 2001 to 2018 [DIRECT]. The data is presented as a line graph with year on the x-axis and percent change on the y-axis [DIRECT].\",\n    \"domain_specific_explanations\": \"The chart measures the performance of treasury bills, which are short-term government securities [SPECULATIVE: finance domain]. The percent change in total return indicates how much the value of these securities changed over the year [DERIVED: from chart title and axis labels].\",\n    \"real_world_significance\": \"This data is important for investors and financial analysts to understand the performance of short-term government securities [SPECULATIVE: finance domain]. A high percent change indicates a good return on investment, while a low percent change indicates a poor return [DERIVED: from understanding of finance].\",\n    \"other\": \"The highest percent change occurred in 2006, with a value of 0.05 [DERIVED: from L2 caption]. There was a very low rate of change between 2009 and 2015 [DERIVED: from L2 caption].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the average annual percent change in total return of treasury bills of the United States from 2001 to 2018\",\n      \"The data is presented as a line graph with year on the x-axis and percent change on the y-axis\"\n    ],\n    \"derived_claims\": [\n      \"The percent change in total return indicates how much the value of these securities changed over the year\",\n      \"The highest percent change occurred in 2006, with a value of 0.05\",\n      \"There was a very low rate of change between 2009 and 2015\"\n    ],\n    \"speculative_claims\": [\n      \"This data is important for investors and financial analysts to understand the performance of short-term government securities\"\n    ],\n    \"total_flag_count\": 7,\n    \"direct_count\": 2,\n    \"derived_count\": 3,\n    \"speculative_count\": 1\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The data table provides some values but seems incomplete."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart and L2 caption provide information on the trend and magnitude."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart title clearly states the domain (treasury bills of the United States)."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the average annual percent change in total return of treasury bills of the United States from 2001 to 2018 [DIRECT]. The data is presented as a line graph with year on the x-axis and percent change on the y-axis [DIRECT].",
+      "domain_specific_explanations": "The chart measures the performance of treasury bills, which are short-term government securities [SPECULATIVE: finance domain]. The percent change in total return indicates how much the value of these securities changed over the year [DERIVED: from chart title and axis labels].",
+      "real_world_significance": "This data is important for investors and financial analysts to understand the performance of short-term government securities [SPECULATIVE: finance domain]. A high percent change indicates a good return on investment, while a low percent change indicates a poor return [DERIVED: from understanding of finance].",
+      "other": "The highest percent change occurred in 2006, with a value of 0.05 [DERIVED: from L2 caption]. There was a very low rate of change between 2009 and 2015 [DERIVED: from L2 caption]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the average annual percent change in total return of treasury bills of the United States from 2001 to 2018",
+        "The data is presented as a line graph with year on the x-axis and percent change on the y-axis"
+      ],
+      "derived_claims": [
+        "The percent change in total return indicates how much the value of these securities changed over the year",
+        "The highest percent change occurred in 2006, with a value of 0.05",
+        "There was a very low rate of change between 2009 and 2015"
+      ],
+      "speculative_claims": [
+        "This data is important for investors and financial analysts to understand the performance of short-term government securities"
+      ],
+      "total_flag_count": 7,
+      "direct_count": 2,
+      "derived_count": 3,
+      "speculative_count": 1
+    }
+  },
+  "tokens_used": {
+    "input": 4597,
+    "output": 591
+  },
+  "latency_ms": 1953.8199589987926,
+  "created_at": "2026-07-17T20:47:49.735615Z"
+}

@@ -1,0 +1,77 @@
+{
+  "output_id": "805f079d-352b-4ddc-b2ac-d68c3f16f5f9",
+  "chart_id": "owid_opinions_young_people_climate",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The exact data table containing all countries, years, and percentages for all six survey questions is fully provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"While no visual trend lines are present, the complete dataset allows for direct calculation of ranges, averages, and comparative magnitudes across countries.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 5,\n        \"justification\": \"The title, column headers, and expert domain story provide clear context regarding the survey's subject, target demographic, and source.\"\n      },\n      \"overall\": 4.5\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset represents a 2021 survey of young people's opinions on climate change threats across 10 countries and an overall average [DIRECT]. The survey polled 1,000 young people aged 16 to 25 in each country [DIRECT]. The data is published by Our World in Data [DIRECT]. This study is widely used to analyze the psychological and social phenomenon of climate anxiety among the global youth population [SPECULATIVE: Environmental Psychology].\",\n    \"domain_specific_explanations\": \"The data points represent the percentage of young respondents who agreed with specific statements about climate change [DIRECT]. Globally, the sentiment that 'People have failed to take care of the planet' has the highest agreement at 83% [DIRECT], followed closely by 'Future is frightening' at 75% [DIRECT]. The statement with the lowest global agreement is 'Hesitant to have children' at 39% [DIRECT], which still represents more than one-third of the surveyed youth [DERIVED: calculated that 39% is greater than 33.3%]. There is a notable geographic variance: youth in developing nations like the Philippines and India express higher levels of doom and threat compared to wealthier European nations like Finland [DERIVED: compared Philippines (73% doomed, 77% family threatened) and India (74% doomed, 65% family threatened) to Finland (43% doomed, 30% family threatened)].\",\n    \"real_world_significance\": \"The high levels of climate anxiety documented here suggest that climate change is not just an environmental crisis but a mental health crisis for the younger generation [SPECULATIVE: Public Health]. The fact that nearly half of the youth in Brazil (48%) and the Philippines (47%) are hesitant to have children due to climate change [DIRECT] highlights how environmental concerns are actively shaping major life decisions and future global demographics [SPECULATIVE: Demography]. The widespread belief that humanity is doomed (56% globally [DIRECT]) and that governments or older generations have failed them could fuel increased youth climate activism, political polarization, or systemic distrust [SPECULATIVE: Political Science].\",\n    \"other\": \"Finland consistently shows the lowest levels of agreement with these negative outlooks, such as only 30% believing family security is threatened [DIRECT], which may reflect higher trust in national climate adaptation strategies or social safety nets [SPECULATIVE: Sociology]. Conversely, the Philippines shows the highest level of fear, with 92% stating the future is frightening [DIRECT], likely correlated with the country's high vulnerability to extreme weather events like typhoons [SPECULATIVE: Climate Science].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset represents a 2021 survey of young people's opinions on climate change threats across 10 countries and an overall average\",\n      \"The survey polled 1,000 young people aged 16 to 25 in each country\",\n      \"The data is published by Our World in Data\",\n      \"The data points represent the percentage of young respondents who agreed with specific statements about climate change\",\n      \"Globally, the sentiment that 'People have failed to take care of the planet' has the highest agreement at 83%\",\n      \"followed closely by 'Future is frightening' at 75%\",\n      \"The statement with the lowest global agreement is 'Hesitant to have children' at 39%\",\n      \"nearly half of the youth in Brazil (48%) and the Philippines (47%) are hesitant to have children due to climate change\",\n      \"The widespread belief that humanity is doomed (56% globally)\",\n      \"Finland consistently shows the lowest levels of agreement with these negative outlooks, such as only 30% believing family security is threatened\",\n      \"the Philippines shows the highest level of fear, with 92% stating the future is frightening\"\n    ],\n    \"derived_claims\": [\n      \"which still represents more than one-third of the surveyed youth [derived from calculating that 39% is greater than 33.3%]\",\n      \"There is a notable geographic variance: youth in developing nations like the Philippines and India express higher levels of doom and threat compared to wealthier European nations like Finland [derived from comparing Philippines (73% doomed, 77% family threatened) and India (74% doomed, 65% family threatened) to Finland (43% doomed, 30% family threatened)]\"\n    ],\n    \"speculative_claims\": [\n      \"This study is widely used to analyze the psychological and social phenomenon of climate anxiety among the global youth population [named source: Environmental Psychology]\",\n      \"The high levels of climate anxiety documented here suggest that climate change is not just an environmental crisis but a mental health crisis for the younger generation [named source: Public Health]\",\n      \"highlights how environmental concerns are actively shaping major life decisions and future global demographics [named source: Demography]\",\n      \"could fuel increased youth climate activism, political polarization, or systemic distrust [named source: Political Science]\",\n      \"which may reflect higher trust in national climate adaptation strategies or social safety nets [named source: Sociology]\",\n      \"likely correlated with the country's high vulnerability to extreme weather events like typhoons [named source: Climate Science]\"\n    ],\n    \"total_flag_count\": 19,\n    \"direct_count\": 11,\n    \"derived_count\": 2,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The exact data table containing all countries, years, and percentages for all six survey questions is fully provided."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "While no visual trend lines are present, the complete dataset allows for direct calculation of ranges, averages, and comparative magnitudes across countries."
+        },
+        "chart_subject_domain": {
+          "score": 5,
+          "justification": "The title, column headers, and expert domain story provide clear context regarding the survey's subject, target demographic, and source."
+        },
+        "overall": 4.5
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset represents a 2021 survey of young people's opinions on climate change threats across 10 countries and an overall average [DIRECT]. The survey polled 1,000 young people aged 16 to 25 in each country [DIRECT]. The data is published by Our World in Data [DIRECT]. This study is widely used to analyze the psychological and social phenomenon of climate anxiety among the global youth population [SPECULATIVE: Environmental Psychology].",
+      "domain_specific_explanations": "The data points represent the percentage of young respondents who agreed with specific statements about climate change [DIRECT]. Globally, the sentiment that 'People have failed to take care of the planet' has the highest agreement at 83% [DIRECT], followed closely by 'Future is frightening' at 75% [DIRECT]. The statement with the lowest global agreement is 'Hesitant to have children' at 39% [DIRECT], which still represents more than one-third of the surveyed youth [DERIVED: calculated that 39% is greater than 33.3%]. There is a notable geographic variance: youth in developing nations like the Philippines and India express higher levels of doom and threat compared to wealthier European nations like Finland [DERIVED: compared Philippines (73% doomed, 77% family threatened) and India (74% doomed, 65% family threatened) to Finland (43% doomed, 30% family threatened)].",
+      "real_world_significance": "The high levels of climate anxiety documented here suggest that climate change is not just an environmental crisis but a mental health crisis for the younger generation [SPECULATIVE: Public Health]. The fact that nearly half of the youth in Brazil (48%) and the Philippines (47%) are hesitant to have children due to climate change [DIRECT] highlights how environmental concerns are actively shaping major life decisions and future global demographics [SPECULATIVE: Demography]. The widespread belief that humanity is doomed (56% globally [DIRECT]) and that governments or older generations have failed them could fuel increased youth climate activism, political polarization, or systemic distrust [SPECULATIVE: Political Science].",
+      "other": "Finland consistently shows the lowest levels of agreement with these negative outlooks, such as only 30% believing family security is threatened [DIRECT], which may reflect higher trust in national climate adaptation strategies or social safety nets [SPECULATIVE: Sociology]. Conversely, the Philippines shows the highest level of fear, with 92% stating the future is frightening [DIRECT], likely correlated with the country's high vulnerability to extreme weather events like typhoons [SPECULATIVE: Climate Science]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset represents a 2021 survey of young people's opinions on climate change threats across 10 countries and an overall average",
+        "The survey polled 1,000 young people aged 16 to 25 in each country",
+        "The data is published by Our World in Data",
+        "The data points represent the percentage of young respondents who agreed with specific statements about climate change",
+        "Globally, the sentiment that 'People have failed to take care of the planet' has the highest agreement at 83%",
+        "followed closely by 'Future is frightening' at 75%",
+        "The statement with the lowest global agreement is 'Hesitant to have children' at 39%",
+        "nearly half of the youth in Brazil (48%) and the Philippines (47%) are hesitant to have children due to climate change",
+        "The widespread belief that humanity is doomed (56% globally)",
+        "Finland consistently shows the lowest levels of agreement with these negative outlooks, such as only 30% believing family security is threatened",
+        "the Philippines shows the highest level of fear, with 92% stating the future is frightening"
+      ],
+      "derived_claims": [
+        "which still represents more than one-third of the surveyed youth [derived from calculating that 39% is greater than 33.3%]",
+        "There is a notable geographic variance: youth in developing nations like the Philippines and India express higher levels of doom and threat compared to wealthier European nations like Finland [derived from comparing Philippines (73% doomed, 77% family threatened) and India (74% doomed, 65% family threatened) to Finland (43% doomed, 30% family threatened)]"
+      ],
+      "speculative_claims": [
+        "This study is widely used to analyze the psychological and social phenomenon of climate anxiety among the global youth population [named source: Environmental Psychology]",
+        "The high levels of climate anxiety documented here suggest that climate change is not just an environmental crisis but a mental health crisis for the younger generation [named source: Public Health]",
+        "highlights how environmental concerns are actively shaping major life decisions and future global demographics [named source: Demography]",
+        "could fuel increased youth climate activism, political polarization, or systemic distrust [named source: Political Science]",
+        "which may reflect higher trust in national climate adaptation strategies or social safety nets [named source: Sociology]",
+        "likely correlated with the country's high vulnerability to extreme weather events like typhoons [named source: Climate Science]"
+      ],
+      "total_flag_count": 19,
+      "direct_count": 11,
+      "derived_count": 2,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 16336.315875003493,
+  "created_at": "2026-07-17T20:54:21.442207Z"
+}

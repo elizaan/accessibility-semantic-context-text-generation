@@ -1,0 +1,71 @@
+{
+  "output_id": "bb4f7d90-a674-4ad3-a835-fea40621c35e",
+  "chart_id": "vistext_869",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is truncated, but the initial values and the overall trend are described in the captions and visible in the chart.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The L1 and L2 captions provide a clear description of the overall trend and the magnitude of growth over the years.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The subject of mobile cellular subscriptions in Chad is clearly defined in the title and axis labels.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the growth of mobile cellular subscriptions in Chad from 2000 to 2016 [DIRECT]. This dataset represents the expansion of telecommunications infrastructure in a developing nation [SPECULATIVE: Telecommunications Development]. Such data is typically compiled by international organizations like the International Telecommunication Union (ITU) or national regulatory bodies to monitor digital inclusion and infrastructure development [SPECULATIVE: Telecommunications Development].\",\n    \"domain_specific_explanations\": \"In telecommunications, 'mobile cellular subscriptions' refer to the number of active SIM cards or registered users on mobile networks, rather than unique individuals [SPECULATIVE: Telecommunications Development]. In Chad, the number of subscriptions grew from nearly zero (0.02 million in 2000) to over 6 million by 2016 [DERIVED: Comparing the 2000 data value of 0.02 million with the 2016 peak of approximately 6.2 million shown on the chart]. This rapid growth reflects a common trend in developing nations where communities bypass traditional landline infrastructure entirely to adopt mobile technology directly, a phenomenon known as 'leapfrogging' [SPECULATIVE: Telecommunications Development].\",\n    \"real_world_significance\": \"The dramatic rise in mobile subscriptions, especially after 2005, indicates a significant increase in connectivity for Chad's population [DERIVED: Observing the sharp upward trend starting around 2005 on the chart]. This expansion of mobile networks has profound social and economic implications, enabling mobile banking, access to market information for farmers, and improved emergency communication in remote areas [SPECULATIVE: Development Economics]. However, because many individuals hold multiple SIM cards to navigate different network coverages and tariffs, the number of subscriptions does not directly equate to the number of unique users [SPECULATIVE: Telecommunications Development]. While this growth highlights Chad's integration into the global digital economy, challenges in internet quality, coverage, and affordability likely persist [SPECULATIVE: Development Economics].\",\n    \"other\": \"The chart shows a relatively flat line from 2000 to 2004, followed by an exponential-like increase starting around 2005 [DERIVED: Analyzing the slope of the curve across different time intervals on the chart].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the growth of mobile cellular subscriptions in Chad from 2000 to 2016\"\n    ],\n    \"derived_claims\": [\n      \"In Chad, the number of subscriptions grew from nearly zero (0.02 million in 2000) to over 6 million by 2016\",\n      \"The dramatic rise in mobile subscriptions, especially after 2005, indicates a significant increase in connectivity for Chad's population\",\n      \"The chart shows a relatively flat line from 2000 to 2004, followed by an exponential-like increase starting around 2005\"\n    ],\n    \"speculative_claims\": [\n      \"This dataset represents the expansion of telecommunications infrastructure in a developing nation\",\n      \"Such data is typically compiled by international organizations like the International Telecommunication Union (ITU) or national regulatory bodies to monitor digital inclusion and infrastructure development\",\n      \"In telecommunications, 'mobile cellular subscriptions' refer to the number of active SIM cards or registered users on mobile networks, rather than unique individuals\",\n      \"This rapid growth reflects a common trend in developing nations where communities bypass traditional landline infrastructure entirely to adopt mobile technology directly, a phenomenon known as 'leapfrogging'\",\n      \"This expansion of mobile networks has profound social and economic implications, enabling mobile banking, access to market information for farmers, and improved emergency communication in remote areas\",\n      \"Because many individuals hold multiple SIM cards to navigate different network coverages and tariffs, the number of subscriptions does not directly equate to the number of unique users\",\n      \"While this growth highlights Chad's integration into the global digital economy, challenges in internet quality, coverage, and affordability likely persist\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 3,\n    \"speculative_count\": 7\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is truncated, but the initial values and the overall trend are described in the captions and visible in the chart."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The L1 and L2 captions provide a clear description of the overall trend and the magnitude of growth over the years."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The subject of mobile cellular subscriptions in Chad is clearly defined in the title and axis labels."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the growth of mobile cellular subscriptions in Chad from 2000 to 2016 [DIRECT]. This dataset represents the expansion of telecommunications infrastructure in a developing nation [SPECULATIVE: Telecommunications Development]. Such data is typically compiled by international organizations like the International Telecommunication Union (ITU) or national regulatory bodies to monitor digital inclusion and infrastructure development [SPECULATIVE: Telecommunications Development].",
+      "domain_specific_explanations": "In telecommunications, 'mobile cellular subscriptions' refer to the number of active SIM cards or registered users on mobile networks, rather than unique individuals [SPECULATIVE: Telecommunications Development]. In Chad, the number of subscriptions grew from nearly zero (0.02 million in 2000) to over 6 million by 2016 [DERIVED: Comparing the 2000 data value of 0.02 million with the 2016 peak of approximately 6.2 million shown on the chart]. This rapid growth reflects a common trend in developing nations where communities bypass traditional landline infrastructure entirely to adopt mobile technology directly, a phenomenon known as 'leapfrogging' [SPECULATIVE: Telecommunications Development].",
+      "real_world_significance": "The dramatic rise in mobile subscriptions, especially after 2005, indicates a significant increase in connectivity for Chad's population [DERIVED: Observing the sharp upward trend starting around 2005 on the chart]. This expansion of mobile networks has profound social and economic implications, enabling mobile banking, access to market information for farmers, and improved emergency communication in remote areas [SPECULATIVE: Development Economics]. However, because many individuals hold multiple SIM cards to navigate different network coverages and tariffs, the number of subscriptions does not directly equate to the number of unique users [SPECULATIVE: Telecommunications Development]. While this growth highlights Chad's integration into the global digital economy, challenges in internet quality, coverage, and affordability likely persist [SPECULATIVE: Development Economics].",
+      "other": "The chart shows a relatively flat line from 2000 to 2004, followed by an exponential-like increase starting around 2005 [DERIVED: Analyzing the slope of the curve across different time intervals on the chart]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the growth of mobile cellular subscriptions in Chad from 2000 to 2016"
+      ],
+      "derived_claims": [
+        "In Chad, the number of subscriptions grew from nearly zero (0.02 million in 2000) to over 6 million by 2016",
+        "The dramatic rise in mobile subscriptions, especially after 2005, indicates a significant increase in connectivity for Chad's population",
+        "The chart shows a relatively flat line from 2000 to 2004, followed by an exponential-like increase starting around 2005"
+      ],
+      "speculative_claims": [
+        "This dataset represents the expansion of telecommunications infrastructure in a developing nation",
+        "Such data is typically compiled by international organizations like the International Telecommunication Union (ITU) or national regulatory bodies to monitor digital inclusion and infrastructure development",
+        "In telecommunications, 'mobile cellular subscriptions' refer to the number of active SIM cards or registered users on mobile networks, rather than unique individuals",
+        "This rapid growth reflects a common trend in developing nations where communities bypass traditional landline infrastructure entirely to adopt mobile technology directly, a phenomenon known as 'leapfrogging'",
+        "This expansion of mobile networks has profound social and economic implications, enabling mobile banking, access to market information for farmers, and improved emergency communication in remote areas",
+        "Because many individuals hold multiple SIM cards to navigate different network coverages and tariffs, the number of subscriptions does not directly equate to the number of unique users",
+        "While this growth highlights Chad's integration into the global digital economy, challenges in internet quality, coverage, and affordability likely persist"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 3,
+      "speculative_count": 7
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 10832.988624999416,
+  "created_at": "2026-07-17T20:27:04.193830Z"
+}

@@ -69,10 +69,24 @@ def get_llm(model_id: str) -> BaseChatModel:
         or m.startswith("qwen")
     ):
         from langchain_groq import ChatGroq
+        model_kwargs = {}
+        if m.startswith("qwen"):
+            # qwen3.6-27b is a reasoning model that otherwise emits a
+            # <think>...</think> chain-of-thought as part of response.content
+            # before the actual JSON answer — long enough that it was
+            # exhausting the turn before the JSON ever got emitted, breaking
+            # _extract_json downstream. "none" skips thinking mode entirely
+            # rather than just hiding it, since this task needs a direct
+            # structured answer, not step-by-step reasoning. Installed groq
+            # SDK (0.9.0) predates reasoning_effort as a typed create() param,
+            # so it has to go through extra_body (its documented passthrough
+            # for provider-specific params) rather than as a bare model_kwarg.
+            model_kwargs["extra_body"] = {"reasoning_effort": "none"}
         return ChatGroq(
             model=model_id,
             api_key=settings.groq_api_key,
             max_tokens=None,
+            model_kwargs=model_kwargs,
         )
 
     # ── OpenAI (paid) ──────────────────────────────────────────────────────────

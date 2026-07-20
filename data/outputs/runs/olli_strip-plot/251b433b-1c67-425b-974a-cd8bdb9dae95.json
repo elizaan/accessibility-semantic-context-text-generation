@@ -1,0 +1,70 @@
+{
+  "output_id": "251b433b-1c67-425b-974a-cd8bdb9dae95",
+  "chart_id": "olli_strip-plot",
+  "dataset_source": "olli",
+  "model_id": "gemini-3.5-flash",
+  "variant": 1,
+  "enabled_features": [
+    "olli_tree",
+    "vega_lite_spec",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 1,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The exact data table is missing, but the OLLI screen reader tree provides highly detailed summary statistics, including counts and average horsepower for each cylinder category.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 4,\n        \"justification\": \"The positive correlation between cylinder count and horsepower is clearly quantifiable using the average horsepower values provided for each cylinder group.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The domain is clearly automotive specifications (horsepower and cylinders), likely originating from a classic benchmark dataset like 'cars' or 'mpg'.\"\n      },\n      \"overall\": 3.7\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart is a strip plot (or tick chart) showing the distribution of engine horsepower across different cylinder counts [DIRECT]. The dataset contains a total of 400 vehicles [DERIVED: Summed the counts of vehicles across all cylinder categories: 4 + 202 + 3 + 83 + 108 = 400]. Based on the variables and ranges, this chart likely utilizes a classic automotive dataset (such as the 'cars' or 'mpg' dataset) commonly used in data science education and statistical software tutorials [SPECULATIVE: Data Science Education].\",\n    \"domain_specific_explanations\": \"In automotive engineering, cylinders represent the power-producing chambers of an internal combustion engine, while horsepower measures the engine's overall power output [SPECULATIVE: Automotive Engineering]. Generally, engines with more cylinders have larger displacement and can burn more fuel, which typically translates to higher horsepower [SPECULATIVE: Automotive Engineering]. This physical relationship is clearly demonstrated in the data: 4-cylinder engines have the lowest average horsepower at 78 HP, 6-cylinder engines average 102 HP, and 8-cylinder engines have the highest average horsepower at 158 HP [DERIVED: Compared the average horsepower values across the 4, 6, and 8 cylinder categories from the OLLI tree]. Additionally, alternative engine configurations like 3-cylinder (4 vehicles) and 5-cylinder (3 vehicles) are extremely rare in this dataset [DERIVED: Identified that 3-cylinder and 5-cylinder categories have very low counts compared to the standard 4, 6, and 8 cylinder configurations].\",\n    \"real_world_significance\": \"This relationship is fundamental to consumer choice and automotive manufacturing, where buyers must balance fuel efficiency (typically associated with fewer cylinders and lower horsepower) against performance and towing capacity (associated with more cylinders and higher horsepower) [SPECULATIVE: Consumer Economics]. Historically, the high concentration of 4-cylinder vehicles in datasets from the late 20th century reflects market shifts toward fuel economy following global oil crises, while 8-cylinder vehicles remained prominent in heavy-duty trucks and luxury sports cars [SPECULATIVE: Automotive History]. Understanding these distributions helps market analysts categorize vehicle classes and predict consumer trends based on performance baselines [SPECULATIVE: Market Analysis].\",\n    \"other\": \"The overall distribution of horsepower is heavily skewed towards lower-powered vehicles, with 226 out of 400 vehicles (56.5%) possessing a horsepower rating between 46 and 100 HP [DERIVED: Calculated that 226 out of 400 vehicles is 56.5%, which represents the majority of the dataset falling in the 46-100 HP range].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart is a strip plot (or tick chart) showing the distribution of engine horsepower across different cylinder counts\"\n    ],\n    \"derived_claims\": [\n      \"The dataset contains a total of 400 vehicles\",\n      \"4-cylinder engines have the lowest average horsepower at 78 HP, 6-cylinder engines average 102 HP, and 8-cylinder engines have the highest average horsepower at 158 HP\",\n      \"alternative engine configurations like 3-cylinder (4 vehicles) and 5-cylinder (3 vehicles) are extremely rare in this dataset\",\n      \"The overall distribution of horsepower is heavily skewed towards lower-powered vehicles, with 226 out of 400 vehicles (56.5%) possessing a horsepower rating between 46 and 100 HP\"\n    ],\n    \"speculative_claims\": [\n      \"Based on the variables and ranges, this chart likely utilizes a classic automotive dataset (such as the 'cars' or 'mpg' dataset) commonly used in data science education and statistical software tutorials\",\n      \"In automotive engineering, cylinders represent the power-producing chambers of an internal combustion engine, while horsepower measures the engine's overall power output\",\n      \"Generally, engines with more cylinders have larger displacement and can burn more fuel, which typically translates to higher horsepower\",\n      \"This relationship is fundamental to consumer choice and automotive manufacturing, where buyers must balance fuel efficiency (typically associated with fewer cylinders and lower horsepower) against performance and towing capacity (associated with more cylinders and higher horsepower)\",\n      \"Historically, the high concentration of 4-cylinder vehicles in datasets from the late 20th century reflects market shifts toward fuel economy following global oil crises, while 8-cylinder vehicles remained prominent in heavy-duty trucks and luxury sports cars\",\n      \"Understanding these distributions helps market analysts categorize vehicle classes and predict consumer trends based on performance baselines\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 1,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The exact data table is missing, but the OLLI screen reader tree provides highly detailed summary statistics, including counts and average horsepower for each cylinder category."
+        },
+        "trend_magnitude": {
+          "score": 4,
+          "justification": "The positive correlation between cylinder count and horsepower is clearly quantifiable using the average horsepower values provided for each cylinder group."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The domain is clearly automotive specifications (horsepower and cylinders), likely originating from a classic benchmark dataset like 'cars' or 'mpg'."
+        },
+        "overall": 3.7
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart is a strip plot (or tick chart) showing the distribution of engine horsepower across different cylinder counts [DIRECT]. The dataset contains a total of 400 vehicles [DERIVED: Summed the counts of vehicles across all cylinder categories: 4 + 202 + 3 + 83 + 108 = 400]. Based on the variables and ranges, this chart likely utilizes a classic automotive dataset (such as the 'cars' or 'mpg' dataset) commonly used in data science education and statistical software tutorials [SPECULATIVE: Data Science Education].",
+      "domain_specific_explanations": "In automotive engineering, cylinders represent the power-producing chambers of an internal combustion engine, while horsepower measures the engine's overall power output [SPECULATIVE: Automotive Engineering]. Generally, engines with more cylinders have larger displacement and can burn more fuel, which typically translates to higher horsepower [SPECULATIVE: Automotive Engineering]. This physical relationship is clearly demonstrated in the data: 4-cylinder engines have the lowest average horsepower at 78 HP, 6-cylinder engines average 102 HP, and 8-cylinder engines have the highest average horsepower at 158 HP [DERIVED: Compared the average horsepower values across the 4, 6, and 8 cylinder categories from the OLLI tree]. Additionally, alternative engine configurations like 3-cylinder (4 vehicles) and 5-cylinder (3 vehicles) are extremely rare in this dataset [DERIVED: Identified that 3-cylinder and 5-cylinder categories have very low counts compared to the standard 4, 6, and 8 cylinder configurations].",
+      "real_world_significance": "This relationship is fundamental to consumer choice and automotive manufacturing, where buyers must balance fuel efficiency (typically associated with fewer cylinders and lower horsepower) against performance and towing capacity (associated with more cylinders and higher horsepower) [SPECULATIVE: Consumer Economics]. Historically, the high concentration of 4-cylinder vehicles in datasets from the late 20th century reflects market shifts toward fuel economy following global oil crises, while 8-cylinder vehicles remained prominent in heavy-duty trucks and luxury sports cars [SPECULATIVE: Automotive History]. Understanding these distributions helps market analysts categorize vehicle classes and predict consumer trends based on performance baselines [SPECULATIVE: Market Analysis].",
+      "other": "The overall distribution of horsepower is heavily skewed towards lower-powered vehicles, with 226 out of 400 vehicles (56.5%) possessing a horsepower rating between 46 and 100 HP [DERIVED: Calculated that 226 out of 400 vehicles is 56.5%, which represents the majority of the dataset falling in the 46-100 HP range]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart is a strip plot (or tick chart) showing the distribution of engine horsepower across different cylinder counts"
+      ],
+      "derived_claims": [
+        "The dataset contains a total of 400 vehicles",
+        "4-cylinder engines have the lowest average horsepower at 78 HP, 6-cylinder engines average 102 HP, and 8-cylinder engines have the highest average horsepower at 158 HP",
+        "alternative engine configurations like 3-cylinder (4 vehicles) and 5-cylinder (3 vehicles) are extremely rare in this dataset",
+        "The overall distribution of horsepower is heavily skewed towards lower-powered vehicles, with 226 out of 400 vehicles (56.5%) possessing a horsepower rating between 46 and 100 HP"
+      ],
+      "speculative_claims": [
+        "Based on the variables and ranges, this chart likely utilizes a classic automotive dataset (such as the 'cars' or 'mpg' dataset) commonly used in data science education and statistical software tutorials",
+        "In automotive engineering, cylinders represent the power-producing chambers of an internal combustion engine, while horsepower measures the engine's overall power output",
+        "Generally, engines with more cylinders have larger displacement and can burn more fuel, which typically translates to higher horsepower",
+        "This relationship is fundamental to consumer choice and automotive manufacturing, where buyers must balance fuel efficiency (typically associated with fewer cylinders and lower horsepower) against performance and towing capacity (associated with more cylinders and higher horsepower)",
+        "Historically, the high concentration of 4-cylinder vehicles in datasets from the late 20th century reflects market shifts toward fuel economy following global oil crises, while 8-cylinder vehicles remained prominent in heavy-duty trucks and luxury sports cars",
+        "Understanding these distributions helps market analysts categorize vehicle classes and predict consumer trends based on performance baselines"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 11950.254666000546,
+  "created_at": "2026-07-20T14:23:18.139767Z"
+}

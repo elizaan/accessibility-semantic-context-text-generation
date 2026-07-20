@@ -1,0 +1,70 @@
+{
+  "output_id": "5cb1944a-abfb-4202-aa1b-fe014dbf576c",
+  "chart_id": "owid_countries_that_are_long_standing_full_democracies",
+  "dataset_source": "our_world_data",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "data_table",
+    "domain_context",
+    "source_url"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 5,\n        \"justification\": \"The exact data table for all regions and the world total in 2025 is fully provided.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"We can compare regional distributions for the year 2025, but there is no historical trend over time as only one year is provided.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title, source (Lexical Index of Electoral Democracy), and a clear definition of 'full democracy' are provided.\"\n      },\n      \"overall\": 4\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This dataset presents the global state of democratic longevity in the year 2025, categorized by world regions [DIRECT]. The data is compiled by the Lexical Index of Electoral Democracy and hosted by Our World in Data [DIRECT]. It tracks which countries are classified as 'Not full democracies' versus those that are 'Full democracies' of varying age cohorts, ranging from newly established (1-18 years) to long-standing (61-90 years) [DIRECT].\",\n    \"domain_specific_explanations\": \"In political science, a 'full democracy' is defined by the Lexical Index as a system where citizens choose their chief executive and legislature through competitive, multi-party elections with uncertain outcomes, while enjoying robust protections for expression, assembly, and association [DIRECT]. The age brackets indicate the uninterrupted duration of these democratic institutions [DERIVED: Interpreted from the column headers and domain definition]. For instance, Europe leads the world in democratic longevity with 15 countries having maintained full democracy for 61 to 90 years [DERIVED: Comparing the 'aged 61-90' column across regions], whereas Africa and South America have zero countries in this oldest bracket [DERIVED: Reading the 'aged 61-90' column for Africa and South America].\",\n    \"real_world_significance\": \"The data reveals that full democracy is not the global norm; out of 199 countries evaluated globally, 122 (approximately 61%) are classified as 'Not full democracies' in 2025 [DERIVED: Calculating 122 / 199 total countries]. This concentration of non-democracies is highly regionalized, with Africa (49 out of 56) and Asia (45 out of 49) containing the highest counts of non-full democracies [DERIVED: Summing regional rows and comparing non-democracy counts]. Political scientists often associate democratic longevity with institutional resilience, suggesting that countries in the 61-90 year bracket are much less susceptible to democratic backsliding than those in the 1-18 year bracket [SPECULATIVE: Political Science / Democratic Consolidation Theory]. These regional disparities heavily influence global geopolitical alliances, foreign aid policies, and international human rights monitoring [SPECULATIVE: International Relations].\",\n    \"other\": \"Oceania stands out as having the lowest absolute number of 'Not full democracies' with only 1 country out of its 14 represented in the dataset [DERIVED: Summing Oceania's row to get 14 and identifying 1 as the 'Not full democracies' value].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This dataset presents the global state of democratic longevity in the year 2025, categorized by world regions\",\n      \"The data is compiled by the Lexical Index of Electoral Democracy and hosted by Our World in Data\",\n      \"It tracks which countries are classified as 'Not full democracies' versus those that are 'Full democracies' of varying age cohorts, ranging from newly established (1-18 years) to long-standing (61-90 years)\",\n      \"In political science, a 'full democracy' is defined by the Lexical Index as a system where citizens choose their chief executive and legislature through competitive, multi-party elections with uncertain outcomes, while enjoying robust protections for expression, assembly, and association\"\n    ],\n    \"derived_claims\": [\n      \"The age brackets indicate the uninterrupted duration of these democratic institutions [derived from column headers and domain definition]\",\n      \"Europe leads the world in democratic longevity with 15 countries having maintained full democracy for 61 to 90 years [derived from comparing the 'aged 61-90' column across regions]\",\n      \"Africa and South America have zero countries in this oldest bracket [derived from reading the 'aged 61-90' column for Africa and South America]\",\n      \"out of 199 countries evaluated globally, 122 (approximately 61%) are classified as 'Not full democracies' in 2025 [derived from calculating 122 / 199 total countries]\",\n      \"Africa (49 out of 56) and Asia (45 out of 49) containing the highest counts of non-full democracies [derived from summing regional rows and comparing non-democracy counts]\",\n      \"Oceania stands out as having the lowest absolute number of 'Not full democracies' with only 1 country out of its 14 represented in the dataset [derived from summing Oceania's row to get 14 and identifying 1 as the 'Not full democracies' value]\"\n    ],\n    \"speculative_claims\": [\n      \"Political scientists often associate democratic longevity with institutional resilience, suggesting that countries in the 61-90 year bracket are much less susceptible to democratic backsliding than those in the 1-18 year bracket [source: Political Science / Democratic Consolidation Theory]\",\n      \"These regional disparities heavily influence global geopolitical alliances, foreign aid policies, and international human rights monitoring [source: International Relations]\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 4,\n    \"derived_count\": 6,\n    \"speculative_count\": 2\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 5,
+          "justification": "The exact data table for all regions and the world total in 2025 is fully provided."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "We can compare regional distributions for the year 2025, but there is no historical trend over time as only one year is provided."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title, source (Lexical Index of Electoral Democracy), and a clear definition of 'full democracy' are provided."
+        },
+        "overall": 4
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This dataset presents the global state of democratic longevity in the year 2025, categorized by world regions [DIRECT]. The data is compiled by the Lexical Index of Electoral Democracy and hosted by Our World in Data [DIRECT]. It tracks which countries are classified as 'Not full democracies' versus those that are 'Full democracies' of varying age cohorts, ranging from newly established (1-18 years) to long-standing (61-90 years) [DIRECT].",
+      "domain_specific_explanations": "In political science, a 'full democracy' is defined by the Lexical Index as a system where citizens choose their chief executive and legislature through competitive, multi-party elections with uncertain outcomes, while enjoying robust protections for expression, assembly, and association [DIRECT]. The age brackets indicate the uninterrupted duration of these democratic institutions [DERIVED: Interpreted from the column headers and domain definition]. For instance, Europe leads the world in democratic longevity with 15 countries having maintained full democracy for 61 to 90 years [DERIVED: Comparing the 'aged 61-90' column across regions], whereas Africa and South America have zero countries in this oldest bracket [DERIVED: Reading the 'aged 61-90' column for Africa and South America].",
+      "real_world_significance": "The data reveals that full democracy is not the global norm; out of 199 countries evaluated globally, 122 (approximately 61%) are classified as 'Not full democracies' in 2025 [DERIVED: Calculating 122 / 199 total countries]. This concentration of non-democracies is highly regionalized, with Africa (49 out of 56) and Asia (45 out of 49) containing the highest counts of non-full democracies [DERIVED: Summing regional rows and comparing non-democracy counts]. Political scientists often associate democratic longevity with institutional resilience, suggesting that countries in the 61-90 year bracket are much less susceptible to democratic backsliding than those in the 1-18 year bracket [SPECULATIVE: Political Science / Democratic Consolidation Theory]. These regional disparities heavily influence global geopolitical alliances, foreign aid policies, and international human rights monitoring [SPECULATIVE: International Relations].",
+      "other": "Oceania stands out as having the lowest absolute number of 'Not full democracies' with only 1 country out of its 14 represented in the dataset [DERIVED: Summing Oceania's row to get 14 and identifying 1 as the 'Not full democracies' value]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This dataset presents the global state of democratic longevity in the year 2025, categorized by world regions",
+        "The data is compiled by the Lexical Index of Electoral Democracy and hosted by Our World in Data",
+        "It tracks which countries are classified as 'Not full democracies' versus those that are 'Full democracies' of varying age cohorts, ranging from newly established (1-18 years) to long-standing (61-90 years)",
+        "In political science, a 'full democracy' is defined by the Lexical Index as a system where citizens choose their chief executive and legislature through competitive, multi-party elections with uncertain outcomes, while enjoying robust protections for expression, assembly, and association"
+      ],
+      "derived_claims": [
+        "The age brackets indicate the uninterrupted duration of these democratic institutions [derived from column headers and domain definition]",
+        "Europe leads the world in democratic longevity with 15 countries having maintained full democracy for 61 to 90 years [derived from comparing the 'aged 61-90' column across regions]",
+        "Africa and South America have zero countries in this oldest bracket [derived from reading the 'aged 61-90' column for Africa and South America]",
+        "out of 199 countries evaluated globally, 122 (approximately 61%) are classified as 'Not full democracies' in 2025 [derived from calculating 122 / 199 total countries]",
+        "Africa (49 out of 56) and Asia (45 out of 49) containing the highest counts of non-full democracies [derived from summing regional rows and comparing non-democracy counts]",
+        "Oceania stands out as having the lowest absolute number of 'Not full democracies' with only 1 country out of its 14 represented in the dataset [derived from summing Oceania's row to get 14 and identifying 1 as the 'Not full democracies' value]"
+      ],
+      "speculative_claims": [
+        "Political scientists often associate democratic longevity with institutional resilience, suggesting that countries in the 61-90 year bracket are much less susceptible to democratic backsliding than those in the 1-18 year bracket [source: Political Science / Democratic Consolidation Theory]",
+        "These regional disparities heavily influence global geopolitical alliances, foreign aid policies, and international human rights monitoring [source: International Relations]"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 4,
+      "derived_count": 6,
+      "speculative_count": 2
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 13701.506707999215,
+  "created_at": "2026-07-17T21:05:11.230238Z"
+}

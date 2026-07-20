@@ -1,0 +1,71 @@
+{
+  "output_id": "a2884f9a-8f12-409a-83df-7e87b38f121c",
+  "chart_id": "vistext_1096",
+  "dataset_source": "vistext",
+  "model_id": "gemini-3.5-flash",
+  "variant": 2,
+  "enabled_features": [
+    "scene_graph",
+    "data_table",
+    "vega_lite_spec",
+    "l1_caption",
+    "l2_caption"
+  ],
+  "include_image": false,
+  "generated_description": "```json\n{\n  \"variant\": 2,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 3,\n        \"justification\": \"The data table is provided but contains truncated movie titles (e.g., 'giles', 'Frida', 'Parte', 'VIP') which require cross-referencing with the captions to fully understand.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 3,\n        \"justification\": \"The L2 caption provides some comparative context regarding the top-performing films, but the overall trend analysis is limited.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 4,\n        \"justification\": \"The title and axis labels clearly define the subject as movie attendance for Iberoamerican films in Latin American countries in 2018.\"\n      },\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"The chart displays the attendance (in thousands of viewers) for the most popular Iberoamerican film productions across selected Latin American countries in 2018 [DIRECT]. The data highlights a massive disparity in viewership, with only a couple of films reaching millions of viewers, while the majority of selected films had very low attendance [DERIVED: Comparing the peak value of ~6.65 million to the rest of the data points, many of which are under 50.0 (50,000 viewers)]. The film with the highest recorded attendance in the dataset is 'No manches Frida 2' in Mexico, drawing over 6.6 million viewers (represented as 6651.11 thousand in the data table under the label 'VIP') [DERIVED: Mapping the L2 caption's mention of 'Mexico: No manches Frida 2' with 6000-7000 viewers to the data table value of 6651.11].\",\n    \"domain_specific_explanations\": \"In the film industry, theatrical attendance (admissions) is a key metric of commercial success, often preferred over box office revenue in international comparisons because it avoids currency fluctuation issues [SPECULATIVE: Film Industry Economics]. 'Iberoamerican' refers to films produced in Spanish- and Portuguese-speaking countries of Latin America and Europe (primarily Spain and Portugal) [SPECULATIVE: Cultural Studies]. The data shows that local blockbusters like 'No manches Frida 2' (Mexico) and 'Nada a perder Parte 2' (Brazil) dominate their respective domestic markets, whereas smaller regional films struggle to find cross-border audiences in Latin America [SPECULATIVE: Latin American Cinema Studies]. The low attendance numbers for many films (e.g., 'giles' at 33.93 thousand, 'paseo' at 5.0 thousand) indicate the difficulty of distributing and promoting Latin American films outside their home countries [DERIVED: Observing that most films in the table have very low viewer counts, such as 2.0 or 5.0 thousand].\",\n    \"real_world_significance\": \"The dominance of a few major commercial hits highlights the highly centralized nature of film distribution in Latin America, where Hollywood imports and a few massive local comedies or religious biopics capture the vast majority of screens [SPECULATIVE: Media and Cultural Policy]. This concentration of viewership makes it difficult for independent and culturally diverse Iberoamerican films to sustain theatrical runs, often requiring government subsidies or film festival circuits to survive [SPECULATIVE: Film Industry Economics]. The L2 caption's claim that 'Latin American films are not popular in 2020' reflects a broader concern about the long-term viability of local cinema, especially following the 2018-2020 period which saw shifting consumer habits toward streaming platforms [SPECULATIVE: Media Studies].\",\n    \"other\": \"There are multiple entries with very low viewer counts of exactly 2.0 thousand (e.g., 'Frida', 'Parte', 'Yordan', 'machos'), suggesting a baseline threshold or minimum reporting limit for some of these countries [DERIVED: Identifying multiple identical low values of 2.0 in the data table].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"The chart displays the attendance (in thousands of viewers) for the most popular Iberoamerican film productions across selected Latin American countries in 2018\"\n    ],\n    \"derived_claims\": [\n      \"The data highlights a massive disparity in viewership, with only a couple of films reaching millions of viewers, while the majority of selected films had very low attendance\",\n      \"The film with the highest recorded attendance in the dataset is 'No manches Frida 2' in Mexico, drawing over 6.6 million viewers (represented as 6651.11 thousand in the data table under the label 'VIP')\",\n      \"The low attendance numbers for many films (e.g., 'giles' at 33.93 thousand, 'paseo' at 5.0 thousand) indicate the difficulty of distributing and promoting Latin American films outside their home countries\",\n      \"There are multiple entries with very low viewer counts of exactly 2.0 thousand (e.g., 'Frida', 'Parte', 'Yordan', 'machos'), suggesting a baseline threshold or minimum reporting limit for some of these countries\"\n    ],\n    \"speculative_claims\": [\n      \"In the film industry, theatrical attendance (admissions) is a key metric of commercial success, often preferred over box office revenue in international comparisons because it avoids currency fluctuation issues\",\n      \"Iberoamerican refers to films produced in Spanish- and Portuguese-speaking countries of Latin America and Europe (primarily Spain and Portugal)\",\n      \"The data shows that local blockbusters like 'No manches Frida 2' (Mexico) and 'Nada a perder Parte 2' (Brazil) dominate their respective domestic markets, whereas smaller regional films struggle to find cross-border audiences in Latin America\",\n      \"The dominance of a few major commercial hits highlights the highly centralized nature of film distribution in Latin America, where Hollywood imports and a few massive local comedies or religious biopics capture the vast majority of screens\",\n      \"This concentration of viewership makes it difficult for independent and culturally diverse Iberoamerican films to sustain theatrical runs, often requiring government subsidies or film festival circuits to survive\",\n      \"The L2 caption's claim that 'Latin American films are not popular in 2020' reflects a broader concern about the long-term viability of local cinema, especially following the 2018-2020 period which saw shifting consumer habits toward streaming platforms\"\n    ],\n    \"total_flag_count\": 11,\n    \"direct_count\": 1,\n    \"derived_count\": 4,\n    \"speculative_count\": 6\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 2,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 3,
+          "justification": "The data table is provided but contains truncated movie titles (e.g., 'giles', 'Frida', 'Parte', 'VIP') which require cross-referencing with the captions to fully understand."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The L2 caption provides some comparative context regarding the top-performing films, but the overall trend analysis is limited."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The title and axis labels clearly define the subject as movie attendance for Iberoamerican films in Latin American countries in 2018."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "The chart displays the attendance (in thousands of viewers) for the most popular Iberoamerican film productions across selected Latin American countries in 2018 [DIRECT]. The data highlights a massive disparity in viewership, with only a couple of films reaching millions of viewers, while the majority of selected films had very low attendance [DERIVED: Comparing the peak value of ~6.65 million to the rest of the data points, many of which are under 50.0 (50,000 viewers)]. The film with the highest recorded attendance in the dataset is 'No manches Frida 2' in Mexico, drawing over 6.6 million viewers (represented as 6651.11 thousand in the data table under the label 'VIP') [DERIVED: Mapping the L2 caption's mention of 'Mexico: No manches Frida 2' with 6000-7000 viewers to the data table value of 6651.11].",
+      "domain_specific_explanations": "In the film industry, theatrical attendance (admissions) is a key metric of commercial success, often preferred over box office revenue in international comparisons because it avoids currency fluctuation issues [SPECULATIVE: Film Industry Economics]. 'Iberoamerican' refers to films produced in Spanish- and Portuguese-speaking countries of Latin America and Europe (primarily Spain and Portugal) [SPECULATIVE: Cultural Studies]. The data shows that local blockbusters like 'No manches Frida 2' (Mexico) and 'Nada a perder Parte 2' (Brazil) dominate their respective domestic markets, whereas smaller regional films struggle to find cross-border audiences in Latin America [SPECULATIVE: Latin American Cinema Studies]. The low attendance numbers for many films (e.g., 'giles' at 33.93 thousand, 'paseo' at 5.0 thousand) indicate the difficulty of distributing and promoting Latin American films outside their home countries [DERIVED: Observing that most films in the table have very low viewer counts, such as 2.0 or 5.0 thousand].",
+      "real_world_significance": "The dominance of a few major commercial hits highlights the highly centralized nature of film distribution in Latin America, where Hollywood imports and a few massive local comedies or religious biopics capture the vast majority of screens [SPECULATIVE: Media and Cultural Policy]. This concentration of viewership makes it difficult for independent and culturally diverse Iberoamerican films to sustain theatrical runs, often requiring government subsidies or film festival circuits to survive [SPECULATIVE: Film Industry Economics]. The L2 caption's claim that 'Latin American films are not popular in 2020' reflects a broader concern about the long-term viability of local cinema, especially following the 2018-2020 period which saw shifting consumer habits toward streaming platforms [SPECULATIVE: Media Studies].",
+      "other": "There are multiple entries with very low viewer counts of exactly 2.0 thousand (e.g., 'Frida', 'Parte', 'Yordan', 'machos'), suggesting a baseline threshold or minimum reporting limit for some of these countries [DERIVED: Identifying multiple identical low values of 2.0 in the data table]."
+    },
+    "flags": {
+      "direct_claims": [
+        "The chart displays the attendance (in thousands of viewers) for the most popular Iberoamerican film productions across selected Latin American countries in 2018"
+      ],
+      "derived_claims": [
+        "The data highlights a massive disparity in viewership, with only a couple of films reaching millions of viewers, while the majority of selected films had very low attendance",
+        "The film with the highest recorded attendance in the dataset is 'No manches Frida 2' in Mexico, drawing over 6.6 million viewers (represented as 6651.11 thousand in the data table under the label 'VIP')",
+        "The low attendance numbers for many films (e.g., 'giles' at 33.93 thousand, 'paseo' at 5.0 thousand) indicate the difficulty of distributing and promoting Latin American films outside their home countries",
+        "There are multiple entries with very low viewer counts of exactly 2.0 thousand (e.g., 'Frida', 'Parte', 'Yordan', 'machos'), suggesting a baseline threshold or minimum reporting limit for some of these countries"
+      ],
+      "speculative_claims": [
+        "In the film industry, theatrical attendance (admissions) is a key metric of commercial success, often preferred over box office revenue in international comparisons because it avoids currency fluctuation issues",
+        "Iberoamerican refers to films produced in Spanish- and Portuguese-speaking countries of Latin America and Europe (primarily Spain and Portugal)",
+        "The data shows that local blockbusters like 'No manches Frida 2' (Mexico) and 'Nada a perder Parte 2' (Brazil) dominate their respective domestic markets, whereas smaller regional films struggle to find cross-border audiences in Latin America",
+        "The dominance of a few major commercial hits highlights the highly centralized nature of film distribution in Latin America, where Hollywood imports and a few massive local comedies or religious biopics capture the vast majority of screens",
+        "This concentration of viewership makes it difficult for independent and culturally diverse Iberoamerican films to sustain theatrical runs, often requiring government subsidies or film festival circuits to survive",
+        "The L2 caption's claim that 'Latin American films are not popular in 2020' reflects a broader concern about the long-term viability of local cinema, especially following the 2018-2020 period which saw shifting consumer habits toward streaming platforms"
+      ],
+      "total_flag_count": 11,
+      "direct_count": 1,
+      "derived_count": 4,
+      "speculative_count": 6
+    }
+  },
+  "tokens_used": {
+    "input": 0,
+    "output": 0
+  },
+  "latency_ms": 17239.553957999306,
+  "created_at": "2026-07-17T20:13:50.992852Z"
+}

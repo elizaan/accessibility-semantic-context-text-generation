@@ -1,0 +1,65 @@
+{
+  "output_id": "1fe0a748-ceba-4b6f-a3ce-5aec0584770b",
+  "chart_id": "owid_historical_share_of_population_living_on_less_than_5_per_day_roser_hasell",
+  "dataset_source": "our_world_data",
+  "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "```json\n{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\"score\": 2, \"justification\": \"The chart image provides data values for the share of the world's population living on less than $5 per day, but the exact values are not provided in the text.\"},\n      \"trend_magnitude\": {\"score\": 3, \"justification\": \"The chart image shows a clear downward trend in the share of the world's population living on less than $5 per day over time, but the magnitude of the trend is not explicitly stated.\"},\n      \"chart_subject_domain\": {\"score\": 4, \"justification\": \"The chart image appears to be related to poverty rates and economic history, but the specific domain is not explicitly stated.\"},\n      \"overall\": 3\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This chart shows the historical national accounts estimates of the share of the world's population living on less than $5 per day, by region, from 1820 to 2017 [DIRECT]. The data is sourced from the Maddison Project Database, van Zanden et al., and de la Escosura (2020) [DIRECT]. The chart is produced by Our World in Data [DIRECT]. The purpose of the chart is to monitor progress against SDG1 (Sustainable Development Goal 1) [SPECULATIVE: Sustainable Development Goals].\",\n    \"domain_specific_explanations\": \"The chart measures the share of the world's population living on less than $5 per day, which is a common indicator of poverty [DIRECT]. The data is based on national accounts estimates, which may be different from survey-based estimates [DIRECT]. The chart shows a downward trend in poverty rates over time, with some regions experiencing more rapid declines than others [DERIVED: from the chart image].\",\n    \"real_world_significance\": \"The data matters because it shows progress towards reducing poverty, which is a key development goal [SPECULATIVE: Sustainable Development Goals]. The decline in poverty rates over time suggests that economic growth and development efforts have been effective in reducing poverty [SPECULATIVE: economic development]. However, the persistence of high poverty rates in some regions suggests that more work needs to be done to address poverty and inequality [SPECULATIVE: poverty and inequality].\",\n    \"other\": \"The chart notes that average incomes measured in national accounts are often much higher than those observed in survey data [DIRECT]. The poverty rates shown are lower than corresponding estimates based on survey data [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This chart shows the historical national accounts estimates of the share of the world's population living on less than $5 per day, by region, from 1820 to 2017\",\n      \"The data is sourced from the Maddison Project Database, van Zanden et al., and de la Escosura (2020)\",\n      \"The chart is produced by Our World in Data\",\n      \"The chart measures the share of the world's population living on less than $5 per day, which is a common indicator of poverty\",\n      \"The data is based on national accounts estimates, which may be different from survey-based estimates\",\n      \"Average incomes measured in national accounts are often much higher than those observed in survey data\",\n      \"The poverty rates shown are lower than corresponding estimates based on survey data\"\n    ],\n    \"derived_claims\": [\n      \"The chart shows a downward trend in poverty rates over time, with some regions experiencing more rapid declines than others\"\n    ],\n    \"speculative_claims\": [\n      \"The purpose of the chart is to monitor progress against SDG1 (Sustainable Development Goals)\",\n      \"The decline in poverty rates over time suggests that economic growth and development efforts have been effective in reducing poverty\",\n      \"The persistence of high poverty rates in some regions suggests that more work needs to be done to address poverty and inequality\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 7,\n    \"derived_count\": 1,\n    \"speculative_count\": 4\n  }\n}\n```",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 2,
+          "justification": "The chart image provides data values for the share of the world's population living on less than $5 per day, but the exact values are not provided in the text."
+        },
+        "trend_magnitude": {
+          "score": 3,
+          "justification": "The chart image shows a clear downward trend in the share of the world's population living on less than $5 per day over time, but the magnitude of the trend is not explicitly stated."
+        },
+        "chart_subject_domain": {
+          "score": 4,
+          "justification": "The chart image appears to be related to poverty rates and economic history, but the specific domain is not explicitly stated."
+        },
+        "overall": 3
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This chart shows the historical national accounts estimates of the share of the world's population living on less than $5 per day, by region, from 1820 to 2017 [DIRECT]. The data is sourced from the Maddison Project Database, van Zanden et al., and de la Escosura (2020) [DIRECT]. The chart is produced by Our World in Data [DIRECT]. The purpose of the chart is to monitor progress against SDG1 (Sustainable Development Goal 1) [SPECULATIVE: Sustainable Development Goals].",
+      "domain_specific_explanations": "The chart measures the share of the world's population living on less than $5 per day, which is a common indicator of poverty [DIRECT]. The data is based on national accounts estimates, which may be different from survey-based estimates [DIRECT]. The chart shows a downward trend in poverty rates over time, with some regions experiencing more rapid declines than others [DERIVED: from the chart image].",
+      "real_world_significance": "The data matters because it shows progress towards reducing poverty, which is a key development goal [SPECULATIVE: Sustainable Development Goals]. The decline in poverty rates over time suggests that economic growth and development efforts have been effective in reducing poverty [SPECULATIVE: economic development]. However, the persistence of high poverty rates in some regions suggests that more work needs to be done to address poverty and inequality [SPECULATIVE: poverty and inequality].",
+      "other": "The chart notes that average incomes measured in national accounts are often much higher than those observed in survey data [DIRECT]. The poverty rates shown are lower than corresponding estimates based on survey data [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This chart shows the historical national accounts estimates of the share of the world's population living on less than $5 per day, by region, from 1820 to 2017",
+        "The data is sourced from the Maddison Project Database, van Zanden et al., and de la Escosura (2020)",
+        "The chart is produced by Our World in Data",
+        "The chart measures the share of the world's population living on less than $5 per day, which is a common indicator of poverty",
+        "The data is based on national accounts estimates, which may be different from survey-based estimates",
+        "Average incomes measured in national accounts are often much higher than those observed in survey data",
+        "The poverty rates shown are lower than corresponding estimates based on survey data"
+      ],
+      "derived_claims": [
+        "The chart shows a downward trend in poverty rates over time, with some regions experiencing more rapid declines than others"
+      ],
+      "speculative_claims": [
+        "The purpose of the chart is to monitor progress against SDG1 (Sustainable Development Goals)",
+        "The decline in poverty rates over time suggests that economic growth and development efforts have been effective in reducing poverty",
+        "The persistence of high poverty rates in some regions suggests that more work needs to be done to address poverty and inequality"
+      ],
+      "total_flag_count": 12,
+      "direct_count": 7,
+      "derived_count": 1,
+      "speculative_count": 4
+    }
+  },
+  "tokens_used": {
+    "input": 1927,
+    "output": 863
+  },
+  "latency_ms": 2852.9434590000164,
+  "created_at": "2026-07-17T20:28:36.336712Z"
+}
