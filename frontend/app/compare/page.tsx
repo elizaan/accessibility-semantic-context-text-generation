@@ -13,6 +13,7 @@ export default function ComparePage() {
   const [outputs, setOutputs] = useState<GenerationOutput[]>([]);
   const [loadingCharts, setLoadingCharts] = useState(true);
   const [loadingOutputs, setLoadingOutputs] = useState(false);
+  const [variantFilter, setVariantFilter] = useState<number | "all">("all");
 
   useEffect(() => {
     listCharts({ page_size: 200 })
@@ -30,8 +31,15 @@ export default function ComparePage() {
       .finally(() => setLoadingOutputs(false));
   }, [selectedChartId]);
 
+  // Reset the variant filter whenever the chart changes — a variant that
+  // was valid for the old chart may not exist for the new one.
+  useEffect(() => { setVariantFilter("all"); }, [selectedChartId]);
+
+  const filteredOutputs =
+    variantFilter === "all" ? outputs : outputs.filter((o) => o.variant === variantFilter);
+
   // Group outputs by model
-  const byModel = outputs.reduce<Record<string, GenerationOutput[]>>((acc, o) => {
+  const byModel = filteredOutputs.reduce<Record<string, GenerationOutput[]>>((acc, o) => {
     (acc[o.model_id] ??= []).push(o);
     return acc;
   }, {});
@@ -66,6 +74,33 @@ export default function ComparePage() {
           ))}
         </select>
       </div>
+
+      {/* Variant filter — lines up the same variant across all model columns
+          instead of needing to scroll each column independently to find it. */}
+      {!loadingOutputs && outputs.length > 0 && (
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="text-sm font-medium">Variant:</span>
+          <button
+            onClick={() => setVariantFilter("all")}
+            className={`text-xs rounded-full px-3 py-1 border transition-colors ${
+              variantFilter === "all" ? "bg-primary text-primary-foreground border-primary" : "hover:bg-accent"
+            }`}
+          >
+            All
+          </button>
+          {[1, 2, 3, 4].map((v) => (
+            <button
+              key={v}
+              onClick={() => setVariantFilter(v)}
+              className={`text-xs rounded-full px-3 py-1 border transition-colors ${
+                variantFilter === v ? "bg-primary text-primary-foreground border-primary" : "hover:bg-accent"
+              }`}
+            >
+              V{v}
+            </button>
+          ))}
+        </div>
+      )}
 
       {loadingOutputs && (
         <div className="text-muted-foreground text-sm">Loading outputs…</div>
