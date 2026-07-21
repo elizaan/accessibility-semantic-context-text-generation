@@ -2,10 +2,25 @@
 
 import { useEffect, useState } from "react";
 import { getChartImageUrl, getOutputsForChart, listCharts } from "@/lib/api";
-import { modelDisplayLabel } from "@/lib/types";
-import type { Chart, GenerationOutput } from "@/lib/types";
+import { modelDisplayLabel, METADATA_FEATURE_CONFIG } from "@/lib/types";
+import type { Chart, GenerationOutput, SelectableMetadataKey } from "@/lib/types";
 import { GitCompare } from "lucide-react";
 import { ParsedOutputView } from "@/components/output/ParsedOutputView";
+
+// Same grouping METADATA_FEATURE_CONFIG uses elsewhere (e.g. MetadataFeaturePanel
+// on the chart detail page) — reused here so "available metadata" reads
+// consistently across the app.
+function groupedAvailableMetadata(chart: Chart): [string, string[]][] {
+  const groups: Record<string, string[]> = {};
+  for (const [key, config] of Object.entries(METADATA_FEATURE_CONFIG) as [
+    SelectableMetadataKey,
+    (typeof METADATA_FEATURE_CONFIG)[SelectableMetadataKey],
+  ][]) {
+    if (chart.metadata[key] === null) continue; // only show what's actually available
+    (groups[config.group] ??= []).push(config.label);
+  }
+  return Object.entries(groups);
+}
 
 export default function ComparePage() {
   const [charts, setCharts] = useState<Chart[]>([]);
@@ -106,6 +121,32 @@ export default function ComparePage() {
               <div className="text-xs text-muted-foreground text-center p-4">
                 <div className="font-mono">{selectedChart.image_path}</div>
                 <div className="mt-1">Image not found locally</div>
+              </div>
+            )}
+          </div>
+
+          {/* Available metadata for this chart — only fields that actually
+              have data, grouped the same way MetadataFeaturePanel groups
+              them on the chart detail page, so you can see at a glance what
+              each model did/didn't have access to when generating. */}
+          <div className="mt-3 pt-3 border-t">
+            <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+              Available Metadata
+            </div>
+            {groupedAvailableMetadata(selectedChart).length === 0 ? (
+              <div className="text-xs text-muted-foreground">None — image only.</div>
+            ) : (
+              <div className="flex flex-wrap gap-x-5 gap-y-2">
+                {groupedAvailableMetadata(selectedChart).map(([group, labels]) => (
+                  <div key={group} className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-xs text-muted-foreground">{group}:</span>
+                    {labels.map((label) => (
+                      <span key={label} className="text-xs bg-green-50 text-green-700 rounded px-1.5 py-0.5">
+                        {label}
+                      </span>
+                    ))}
+                  </div>
+                ))}
               </div>
             )}
           </div>
