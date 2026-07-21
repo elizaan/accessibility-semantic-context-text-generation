@@ -1,0 +1,66 @@
+{
+  "output_id": "405d5eab-f32b-468f-a32b-8f5b2ec8db88",
+  "chart_id": "hci_1bd67672e9376feaac80770695717b13ece2c47b_Image_007_png",
+  "dataset_source": "hci_alt_texts",
+  "model_id": "gpt-5.4",
+  "variant": 4,
+  "enabled_features": [],
+  "include_image": true,
+  "generated_description": "{\n  \"variant\": 4,\n  \"identification\": {\n    \"metadata_completeness\": {\n      \"data_values\": {\n        \"score\": 0,\n        \"justification\": \"No accessibility metadata or underlying numeric values were provided; only a chart image is available.\"\n      },\n      \"trend_magnitude\": {\n        \"score\": 1,\n        \"justification\": \"Some relative variation appears visible in the image, but exact magnitudes and reliable trend interpretation are inadequate without metadata or readable axis details.\"\n      },\n      \"chart_subject_domain\": {\n        \"score\": 0,\n        \"justification\": \"The chart image does not provide enough legible contextual text to identify the subject domain with confidence.\"\n      },\n      \"overall\": 0\n    }\n  },\n  \"generated_description\": {\n    \"contextual_insights\": \"This is a chart image without accompanying accessibility metadata or readable contextual text identifying the topic, source, or purpose [DIRECT]. The image appears to show many grouped statistical summaries aligned to lettered categories on the horizontal axis [DERIVED: read the visible structure of repeated box-and-whisker forms across labeled categories]. Because the title, units, and source are not legible, the chart’s domain and intended use cannot be identified confidently from the provided material alone [DIRECT].\",\n    \"domain_specific_explanations\": \"The plotted marks appear consistent with box-and-whisker summaries, which typically represent a distribution for each category using a median, interquartile range, whiskers, and possible outliers [SPECULATIVE: statistics/data visualization knowledge]. If this interpretation is correct, the chart is likely comparing how values differ across multiple categorical groups rather than showing a single continuous trend over time [DERIVED: inferred from repeated category-based distribution summaries]. Without readable units, axis definitions, or category names beyond small letter labels, the practical meaning of the values cannot be interpreted safely [DIRECT].\",\n    \"real_world_significance\": \"Because the chart’s subject matter is unknown, no reliable claim can be made about who is affected, what policy or operational decisions depend on it, or what would happen if the pattern continues [DIRECT]. In general, charts that compare distributions across categories are often used to identify variability, typical values, and unusually high or low observations within groups [SPECULATIVE: statistics/data analysis practice]. If this chart were used in a real decision context, missing metadata would significantly limit accessibility and increase the risk of misinterpretation for blind users and for anyone needing exact values or domain context [SPECULATIVE: accessibility and data literacy practice].\",\n    \"other\": \"There are many categories along the horizontal axis, apparently labeled with single letters, and the vertical axis shows numeric ticks that are too small to read with confidence from this image [DERIVED: read visible axis structure and label format]. Several categories appear to include points beyond the whiskers, suggesting possible outliers if this is indeed a boxplot [DERIVED: read visible point markers beyond whisker extents]. The absence of legible title, source, units, and explanatory text makes this chart insufficiently accessible for semantic interpretation [DIRECT].\"\n  },\n  \"flags\": {\n    \"direct_claims\": [\n      \"This is a chart image without accompanying accessibility metadata or readable contextual text identifying the topic, source, or purpose.\",\n      \"Because the title, units, and source are not legible, the chart’s domain and intended use cannot be identified confidently from the provided material alone.\",\n      \"Without readable units, axis definitions, or category names beyond small letter labels, the practical meaning of the values cannot be interpreted safely.\",\n      \"Because the chart’s subject matter is unknown, no reliable claim can be made about who is affected, what policy or operational decisions depend on it, or what would happen if the pattern continues.\",\n      \"The absence of legible title, source, units, and explanatory text makes this chart insufficiently accessible for semantic interpretation.\"\n    ],\n    \"derived_claims\": [\n      \"The image appears to show many grouped statistical summaries aligned to lettered categories on the horizontal axis — derived from reading the visible structure of repeated box-and-whisker forms across labeled categories.\",\n      \"If this interpretation is correct, the chart is likely comparing how values differ across multiple categorical groups rather than showing a single continuous trend over time — derived from the repeated category-based distribution summaries.\",\n      \"There are many categories along the horizontal axis, apparently labeled with single letters, and the vertical axis shows numeric ticks that are too small to read with confidence from this image — derived from visible axis structure and label format.\",\n      \"Several categories appear to include points beyond the whiskers, suggesting possible outliers if this is indeed a boxplot — derived from visible point markers beyond whisker extents.\"\n    ],\n    \"speculative_claims\": [\n      \"The plotted marks appear consistent with box-and-whisker summaries, which typically represent a distribution for each category using a median, interquartile range, whiskers, and possible outliers — source: statistics/data visualization knowledge.\",\n      \"In general, charts that compare distributions across categories are often used to identify variability, typical values, and unusually high or low observations within groups — source: statistics/data analysis practice.\",\n      \"If this chart were used in a real decision context, missing metadata would significantly limit accessibility and increase the risk of misinterpretation for blind users and for anyone needing exact values or domain context — source: accessibility and data literacy practice.\"\n    ],\n    \"total_flag_count\": 12,\n    \"direct_count\": 5,\n    \"derived_count\": 4,\n    \"speculative_count\": 3\n  }\n}",
+  "parsed_output": {
+    "variant": 4,
+    "identification": {
+      "metadata_completeness": {
+        "data_values": {
+          "score": 0,
+          "justification": "No accessibility metadata or underlying numeric values were provided; only a chart image is available."
+        },
+        "trend_magnitude": {
+          "score": 1,
+          "justification": "Some relative variation appears visible in the image, but exact magnitudes and reliable trend interpretation are inadequate without metadata or readable axis details."
+        },
+        "chart_subject_domain": {
+          "score": 0,
+          "justification": "The chart image does not provide enough legible contextual text to identify the subject domain with confidence."
+        },
+        "overall": 0
+      }
+    },
+    "generated_description": {
+      "contextual_insights": "This is a chart image without accompanying accessibility metadata or readable contextual text identifying the topic, source, or purpose [DIRECT]. The image appears to show many grouped statistical summaries aligned to lettered categories on the horizontal axis [DERIVED: read the visible structure of repeated box-and-whisker forms across labeled categories]. Because the title, units, and source are not legible, the chart’s domain and intended use cannot be identified confidently from the provided material alone [DIRECT].",
+      "domain_specific_explanations": "The plotted marks appear consistent with box-and-whisker summaries, which typically represent a distribution for each category using a median, interquartile range, whiskers, and possible outliers [SPECULATIVE: statistics/data visualization knowledge]. If this interpretation is correct, the chart is likely comparing how values differ across multiple categorical groups rather than showing a single continuous trend over time [DERIVED: inferred from repeated category-based distribution summaries]. Without readable units, axis definitions, or category names beyond small letter labels, the practical meaning of the values cannot be interpreted safely [DIRECT].",
+      "real_world_significance": "Because the chart’s subject matter is unknown, no reliable claim can be made about who is affected, what policy or operational decisions depend on it, or what would happen if the pattern continues [DIRECT]. In general, charts that compare distributions across categories are often used to identify variability, typical values, and unusually high or low observations within groups [SPECULATIVE: statistics/data analysis practice]. If this chart were used in a real decision context, missing metadata would significantly limit accessibility and increase the risk of misinterpretation for blind users and for anyone needing exact values or domain context [SPECULATIVE: accessibility and data literacy practice].",
+      "other": "There are many categories along the horizontal axis, apparently labeled with single letters, and the vertical axis shows numeric ticks that are too small to read with confidence from this image [DERIVED: read visible axis structure and label format]. Several categories appear to include points beyond the whiskers, suggesting possible outliers if this is indeed a boxplot [DERIVED: read visible point markers beyond whisker extents]. The absence of legible title, source, units, and explanatory text makes this chart insufficiently accessible for semantic interpretation [DIRECT]."
+    },
+    "flags": {
+      "direct_claims": [
+        "This is a chart image without accompanying accessibility metadata or readable contextual text identifying the topic, source, or purpose.",
+        "Because the title, units, and source are not legible, the chart’s domain and intended use cannot be identified confidently from the provided material alone.",
+        "Without readable units, axis definitions, or category names beyond small letter labels, the practical meaning of the values cannot be interpreted safely.",
+        "Because the chart’s subject matter is unknown, no reliable claim can be made about who is affected, what policy or operational decisions depend on it, or what would happen if the pattern continues.",
+        "The absence of legible title, source, units, and explanatory text makes this chart insufficiently accessible for semantic interpretation."
+      ],
+      "derived_claims": [
+        "The image appears to show many grouped statistical summaries aligned to lettered categories on the horizontal axis — derived from reading the visible structure of repeated box-and-whisker forms across labeled categories.",
+        "If this interpretation is correct, the chart is likely comparing how values differ across multiple categorical groups rather than showing a single continuous trend over time — derived from the repeated category-based distribution summaries.",
+        "There are many categories along the horizontal axis, apparently labeled with single letters, and the vertical axis shows numeric ticks that are too small to read with confidence from this image — derived from visible axis structure and label format.",
+        "Several categories appear to include points beyond the whiskers, suggesting possible outliers if this is indeed a boxplot — derived from visible point markers beyond whisker extents."
+      ],
+      "speculative_claims": [
+        "The plotted marks appear consistent with box-and-whisker summaries, which typically represent a distribution for each category using a median, interquartile range, whiskers, and possible outliers — source: statistics/data visualization knowledge.",
+        "In general, charts that compare distributions across categories are often used to identify variability, typical values, and unusually high or low observations within groups — source: statistics/data analysis practice.",
+        "If this chart were used in a real decision context, missing metadata would significantly limit accessibility and increase the risk of misinterpretation for blind users and for anyone needing exact values or domain context — source: accessibility and data literacy practice."
+      ],
+      "total_flag_count": 12,
+      "direct_count": 5,
+      "derived_count": 4,
+      "speculative_count": 3
+    }
+  },
+  "tokens_used": {
+    "input": 989,
+    "output": 1159
+  },
+  "latency_ms": 13799.288874986814,
+  "created_at": "2026-07-21T16:12:02.732646Z"
+}

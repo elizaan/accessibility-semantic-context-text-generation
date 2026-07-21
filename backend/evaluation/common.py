@@ -51,6 +51,20 @@ REQUIRED_MODELS: frozenset[str] = frozenset({
     "meta-llama/llama-4-scout-17b-16e-instruct",
 })
 
+# llama-4-scout-17b-16e-instruct was shut down by its provider on
+# 2026-07-17; qwen/qwen3.6-27b is its live free-tier replacement (see
+# frontend/lib/types.ts's LLM_MODELS entry, which already displays it as
+# "Llama 4 Scout 17B (Vision)" in the UI for the same reason — the model_id
+# and display name deliberately diverge there). Every script in this
+# package groups by model_id, so post-cutover records need to land in the
+# same bucket as the pre-cutover ones instead of forming an unhandled 4th
+# group — normalized once here, at load time, rather than special-cased in
+# every downstream script (several of which hardcode a 3-model list, e.g.
+# section_speculation.py's WORD_LENGTH_LEGEND).
+MODEL_ALIASES: dict[str, str] = {
+    "qwen/qwen3.6-27b": "meta-llama/llama-4-scout-17b-16e-instruct",
+}
+
 VARIANT_LABELS: dict[int, str] = {
     0: "Custom/Partial",
     1: "Full Metadata + Image",
@@ -200,7 +214,7 @@ def _record_from_output(chart: Chart, raw: dict) -> EvalRecord:
         chart_type=chart.chart_type,
         domain=chart.domain,
         chart_title=chart.title,
-        model_id=raw["model_id"],
+        model_id=MODEL_ALIASES.get(raw["model_id"], raw["model_id"]),
         variant=raw["variant"],
         enabled_features=list(raw.get("enabled_features", [])),
         include_image=raw["include_image"],
@@ -235,7 +249,7 @@ def load_records(require_complete_coverage: bool = True, verbose: bool = True) -
         outputs = load_outputs_for_chart(chart.chart_id)
         if not outputs:
             continue
-        models_by_chart[chart.chart_id] = {o.model_id for o in outputs}
+        models_by_chart[chart.chart_id] = {MODEL_ALIASES.get(o.model_id, o.model_id) for o in outputs}
         for o in outputs:
             all_records.append(_record_from_output(chart, o.model_dump(mode="json")))
 
@@ -276,3 +290,23 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
         writer.writeheader()
         writer.writerows(rows)
     print(f"[evaluation.common] wrote {len(rows)} rows -> {path.relative_to(_BACKEND_DIR)}")
+
+
+def read_csv(path: Path) -> list[dict]:
+    """Promoted from report.py's private _read_csv — paired_contrasts.py
+    also needs to read another script's CSV output (value_fidelity_claims.csv),
+    the same "treat a prior script's CSV as the interface" pattern report.py
+    already uses for everything it assembles."""
+    if not path.exists():
+        raise SystemExit(f"[evaluation] missing {path.relative_to(_BACKEND_DIR)} — "
+                          f"run the corresponding script first (see run_all.py).")
+    with path.open(newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def word_count(text: str) -> int:
+    """len(text.split()) — promoted from output_length.py's private
+    _word_count so caution_measures.py and paired_contrasts.py (claims per
+    100 words) can share the exact same definition instead of each
+    reimplementing it."""
+    return len(text.split())

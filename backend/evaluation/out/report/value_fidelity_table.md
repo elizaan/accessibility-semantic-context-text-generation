@@ -1,32 +1,30 @@
 # Value Fidelity — DIRECT/DERIVED numeric claims vs. real ground truth
 
-Scope: only the 62/87 charts with a resolvable data table (native data_table, or for 6 of 7 Olli charts, the external vega-datasets table their vega_lite_spec references), every variant. accuracy_pct = share of extracted numbers that match the real data table (raw cells for DIRECT; raw cells + simple computed quantities for DERIVED) or a scene_graph axis tick label. SPECULATIVE claims excluded — they don't claim grounding. Checked even in V3/V4, where the model never saw the table but we still know the truth. No noise filter — every number-like token (whole numbers, decimals, percentages, x/y fractions) is assessed, regardless of magnitude. n_matches_axis_label is a separate, weaker tier: matches a real value visible on the chart's axis (scene_graph, vistext only), not a confirmed per-category data point — not counted toward accuracy_pct.
+Scope: only the 75/102 charts with a resolvable data table (native data_table, or for 6 of 7 Olli charts, the external vega-datasets table their vega_lite_spec references), every variant. accuracy_pct = share of extracted numbers that match the real data table (raw cells for DIRECT; raw cells + simple computed quantities for DERIVED) or a scene_graph axis tick label. SPECULATIVE claims excluded — they don't claim grounding. Checked even in V3/V4, where the model never saw the table but we still know the truth. No noise filter — every number-like token (whole numbers, decimals, percentages, x/y fractions) is assessed, regardless of magnitude. n_matches_axis_label is a separate, weaker tier: matches a real value visible on the chart's axis (scene_graph, vistext only), not a confirmed per-category data point — not counted toward accuracy_pct.
 
 | model_id | variant | flag_kind | n_numbers | n_correct | n_matches_axis_label | n_fabricated | accuracy_pct |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gemini-3.5-flash | 1 | derived | 496 | 448 | 0 | 48 | 90.3 |
-| gemini-3.5-flash | 1 | direct | 288 | 240 | 7 | 41 | 83.3 |
-| gemini-3.5-flash | 2 | derived | 482 | 470 | 0 | 12 | 97.5 |
-| gemini-3.5-flash | 2 | direct | 291 | 243 | 5 | 43 | 83.5 |
-| gemini-3.5-flash | 3 | derived | 530 | 467 | 0 | 63 | 88.1 |
-| gemini-3.5-flash | 3 | direct | 161 | 119 | 3 | 39 | 73.9 |
-| gemini-3.5-flash | 4 | derived | 490 | 438 | 1 | 51 | 89.4 |
-| gemini-3.5-flash | 4 | direct | 200 | 150 | 1 | 49 | 75.0 |
-| gpt-5.4 | 1 | derived | 714 | 685 | 0 | 29 | 95.9 |
-| gpt-5.4 | 1 | direct | 741 | 613 | 8 | 120 | 82.7 |
-| gpt-5.4 | 2 | derived | 866 | 847 | 1 | 18 | 97.8 |
-| gpt-5.4 | 2 | direct | 534 | 473 | 7 | 54 | 88.6 |
-| gpt-5.4 | 3 | derived | 349 | 312 | 2 | 35 | 89.4 |
-| gpt-5.4 | 3 | direct | 245 | 176 | 7 | 62 | 71.8 |
-| gpt-5.4 | 4 | derived | 233 | 216 | 0 | 17 | 92.7 |
-| gpt-5.4 | 4 | direct | 269 | 194 | 5 | 70 | 72.1 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 1 | derived | 86 | 83 | 0 | 3 | 96.5 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 1 | direct | 242 | 177 | 7 | 58 | 73.1 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 2 | derived | 48 | 48 | 0 | 0 | 100.0 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 2 | direct | 143 | 112 | 1 | 30 | 78.3 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 3 | derived | 80 | 69 | 0 | 11 | 86.2 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 3 | direct | 184 | 126 | 1 | 57 | 68.5 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 4 | derived | 65 | 58 | 0 | 7 | 89.2 |
-| meta-llama/llama-4-scout-17b-16e-instruct | 4 | direct | 171 | 128 | 3 | 40 | 74.9 |
-| qwen/qwen3.6-27b | 2 | derived | 4 | 4 | 0 | 0 | 100.0 |
-| qwen/qwen3.6-27b | 2 | direct | 6 | 6 | 0 | 0 | 100.0 |
+| gemini-3.5-flash | 1 | derived | 635 | 576 | 0 | 59 | 90.7 |
+| gemini-3.5-flash | 1 | direct | 322 | 261 | 7 | 54 | 81.1 |
+| gemini-3.5-flash | 2 | derived | 598 | 576 | 0 | 22 | 96.3 |
+| gemini-3.5-flash | 2 | direct | 334 | 277 | 5 | 52 | 82.9 |
+| gemini-3.5-flash | 3 | derived | 644 | 570 | 0 | 74 | 88.5 |
+| gemini-3.5-flash | 3 | direct | 194 | 141 | 5 | 48 | 72.7 |
+| gemini-3.5-flash | 4 | derived | 607 | 543 | 1 | 63 | 89.5 |
+| gemini-3.5-flash | 4 | direct | 241 | 174 | 2 | 65 | 72.2 |
+| gpt-5.4 | 1 | derived | 958 | 915 | 0 | 43 | 95.5 |
+| gpt-5.4 | 1 | direct | 907 | 700 | 12 | 195 | 77.2 |
+| gpt-5.4 | 2 | derived | 1104 | 1075 | 1 | 28 | 97.4 |
+| gpt-5.4 | 2 | direct | 697 | 582 | 9 | 106 | 83.5 |
+| gpt-5.4 | 3 | derived | 458 | 410 | 3 | 45 | 89.5 |
+| gpt-5.4 | 3 | direct | 271 | 198 | 7 | 66 | 73.1 |
+| gpt-5.4 | 4 | derived | 291 | 267 | 0 | 24 | 91.8 |
+| gpt-5.4 | 4 | direct | 315 | 221 | 6 | 88 | 70.2 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 1 | derived | 187 | 173 | 0 | 14 | 92.5 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 1 | direct | 294 | 208 | 7 | 79 | 70.7 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 2 | derived | 192 | 187 | 0 | 5 | 97.4 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 2 | direct | 185 | 132 | 2 | 51 | 71.4 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 3 | derived | 170 | 145 | 1 | 24 | 85.3 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 3 | direct | 221 | 147 | 4 | 70 | 66.5 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 4 | derived | 175 | 158 | 1 | 16 | 90.3 |
+| meta-llama/llama-4-scout-17b-16e-instruct | 4 | direct | 212 | 149 | 4 | 59 | 70.3 |

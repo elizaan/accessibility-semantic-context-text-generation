@@ -22,7 +22,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from evaluation.common import OUT_DIR, SECTION_KEYS, load_records, write_csv
+from evaluation.common import OUT_DIR, SECTION_KEYS, load_records, word_count, write_csv
 
 REPORT_DIR = OUT_DIR / "report"
 REPORT_DIR.mkdir(exist_ok=True)
@@ -33,10 +33,6 @@ SECTION_TITLES = {
     "real_world_significance": "Real-World Significance (L4)",
     "other": "Other",
 }
-
-
-def _word_count(text: str) -> int:
-    return len(text.split())
 
 
 def main() -> None:
@@ -50,7 +46,7 @@ def main() -> None:
     for r in records:
         total = 0
         for section in SECTION_KEYS:
-            wc = _word_count(r.sections.get(section, ""))
+            wc = word_count(r.sections.get(section, ""))
             by_section[(r.model_id, r.variant, section)].append(wc)
             total += wc
         totals[(r.model_id, r.variant)].append(total)
