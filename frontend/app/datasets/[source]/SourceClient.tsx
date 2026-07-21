@@ -51,6 +51,11 @@ export default function SourceClient() {
     return acc;
   }, {});
 
+  // Stable "#N within this dataset" number, based on position in the
+  // full per-source list (not per chart-type group) — matches the numbering
+  // shown for the same chart on the Compare page's chart picker.
+  const chartNumber = new Map(allCharts.map((c, i) => [c.chart_id, i + 1]));
+
   // Charts shown in the current view
   const charts = activeType === "all" ? allCharts : (byType[activeType] ?? []);
 
@@ -196,7 +201,10 @@ export default function SourceClient() {
                           )}
                         </div>
                         <div className="p-2">
-                          <div className="text-xs font-medium line-clamp-2 leading-snug">{chart.title ?? chart.chart_id}</div>
+                          <div className="text-xs font-medium line-clamp-2 leading-snug">
+                            <span className="text-muted-foreground font-mono">#{chartNumber.get(chart.chart_id)}</span>{" "}
+                            {chart.title ?? chart.chart_id}
+                          </div>
                           <div className="flex gap-1 mt-1 flex-wrap">
                             <span className="text-xs bg-muted rounded px-1 py-0.5">{chart.domain}</span>
                           </div>
@@ -219,7 +227,10 @@ export default function SourceClient() {
                         )}
                       </div>
                       <div className="p-2">
-                        <div className="text-xs font-medium line-clamp-2 leading-snug">{chart.title ?? chart.chart_id}</div>
+                        <div className="text-xs font-medium line-clamp-2 leading-snug">
+                          <span className="text-muted-foreground font-mono">#{chartNumber.get(chart.chart_id)}</span>{" "}
+                          {chart.title ?? chart.chart_id}
+                        </div>
                         <div className="flex gap-1 mt-1 flex-wrap">
                           <span className="text-xs bg-muted rounded px-1 py-0.5">{chart.domain}</span>
                           {(Object.entries(chart.metadata) as [string, unknown][])

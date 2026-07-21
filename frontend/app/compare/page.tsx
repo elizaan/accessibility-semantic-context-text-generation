@@ -46,6 +46,16 @@ export default function ComparePage() {
 
   const modelIds = Object.keys(byModel);
 
+  // Stable "#N within its dataset" number per chart, based on position
+  // within its own source's block of the (source-grouped) charts list —
+  // matches the numbering shown for the same chart on the Datasets page.
+  const chartNumber = new Map<string, number>();
+  const perSourceCounter: Record<string, number> = {};
+  for (const c of charts) {
+    perSourceCounter[c.source] = (perSourceCounter[c.source] ?? 0) + 1;
+    chartNumber.set(c.chart_id, perSourceCounter[c.source]);
+  }
+
   return (
     <div className="space-y-6">
       <div>
@@ -69,7 +79,7 @@ export default function ComparePage() {
           <option value="">— choose a chart —</option>
           {charts.map((c) => (
             <option key={c.chart_id} value={c.chart_id}>
-              [{c.source}] {c.title ?? c.chart_id}
+              [{c.source}] #{chartNumber.get(c.chart_id)} {c.title ?? c.chart_id}
             </option>
           ))}
         </select>
