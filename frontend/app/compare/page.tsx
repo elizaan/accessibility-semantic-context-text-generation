@@ -1,25 +1,62 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getChartImageUrl, getOutputsForChart, listCharts } from "@/lib/api";
+import { getChart, getChartImageUrl, getOutputsForChart, listCharts } from "@/lib/api";
 import { modelDisplayLabel, METADATA_FEATURE_CONFIG } from "@/lib/types";
 import type { Chart, GenerationOutput, SelectableMetadataKey } from "@/lib/types";
-import { GitCompare } from "lucide-react";
+import { GitCompare, ChevronDown, ChevronUp } from "lucide-react";
 import { ParsedOutputView } from "@/components/output/ParsedOutputView";
 
 // Same grouping METADATA_FEATURE_CONFIG uses elsewhere (e.g. MetadataFeaturePanel
 // on the chart detail page) — reused here so "available metadata" reads
-// consistently across the app.
-function groupedAvailableMetadata(chart: Chart): [string, string[]][] {
-  const groups: Record<string, string[]> = {};
+// consistently across the app. Requires the FULL (non-summarized) chart:
+// listCharts()'s summarized records replace heavy fields (data_table,
+// scene_graph, vega_lite_spec) with a bare `true`, so previewing their
+// actual content needs a separate getChart() fetch — see fullChart below.
+function groupedAvailableMetadata(chart: Chart): [string, { key: SelectableMetadataKey; label: string }[]][] {
+  const groups: Record<string, { key: SelectableMetadataKey; label: string }[]> = {};
   for (const [key, config] of Object.entries(METADATA_FEATURE_CONFIG) as [
     SelectableMetadataKey,
     (typeof METADATA_FEATURE_CONFIG)[SelectableMetadataKey],
   ][]) {
     if (chart.metadata[key] === null) continue; // only show what's actually available
-    (groups[config.group] ??= []).push(config.label);
+    (groups[config.group] ??= []).push({ key, label: config.label });
   }
   return Object.entries(groups);
+}
+
+const COLLAPSED_LINES = 6;
+
+// Shows the actual metadata value (not just that it exists) — same
+// collapse/expand pattern as MetadataFeaturePanel's preview on the chart
+// detail page.
+function MetadataValuePreview({ value }: { value: unknown }) {
+  const [expanded, setExpanded] = useState(false);
+  const formatted = typeof value === "string" ? value : JSON.stringify(value, null, 2);
+  const lines = formatted.split("\n");
+  const isLong = lines.length > COLLAPSED_LINES;
+  const displayed = expanded ? formatted : lines.slice(0, COLLAPSED_LINES).join("\n");
+
+  return (
+    <div className="mt-2 rounded-md border border-green-200 bg-green-50/50 overflow-hidden">
+      <pre className="text-xs font-mono text-green-900 px-3 py-2 whitespace-pre-wrap break-words overflow-x-auto leading-relaxed max-h-80 overflow-y-auto">
+        {displayed}
+        {!expanded && isLong && <span className="text-green-500 not-italic"> …</span>}
+      </pre>
+      {isLong && (
+        <button
+          onClick={() => setExpanded((v) => !v)}
+          className="w-full flex items-center justify-center gap-1 py-1 border-t border-green-200 text-xs text-green-700 hover:bg-green-100 transition-colors"
+        >
+          {expanded ? (
+            <><ChevronUp className="h-3 w-3" /> Show less</>
+          ) : (
+            <><ChevronDown className="h-3 w-3" /> Show all {lines.length} lines</>
+          )}
+        </button>
+      )}
+    </div>
+  );
 }
 
 export default function ComparePage() {
@@ -30,6 +67,8 @@ export default function ComparePage() {
   const [loadingOutputs, setLoadingOutputs] = useState(false);
   const [variantFilter, setVariantFilter] = useState<number | "all">("all");
   const [imgError, setImgError] = useState(false);
+  const [fullChart, setFullChart] = useState<Chart | null>(null);
+  const [expandedMetaKey, setExpandedMetaKey] = useState<SelectableMetadataKey | null>(null);
 
   useEffect(() => {
     listCharts({ page_size: 200 })
@@ -47,10 +86,20 @@ export default function ComparePage() {
       .finally(() => setLoadingOutputs(false));
   }, [selectedChartId]);
 
+  // Full (non-summarized) chart, needed to preview actual metadata
+  // content — the list-view Chart objects have heavy fields collapsed to
+  // `true` (see getChartImageUrl comment above groupedAvailableMetadata).
+  useEffect(() => {
+    setFullChart(null);
+    if (!selectedChartId) return;
+    getChart(selectedChartId).then(setFullChart).catch(console.error);
+  }, [selectedChartId]);
+
   // Reset the variant filter whenever the chart changes — a variant that
   // was valid for the old chart may not exist for the new one.
   useEffect(() => { setVariantFilter("all"); }, [selectedChartId]);
   useEffect(() => { setImgError(false); }, [selectedChartId]);
+  useEffect(() => { setExpandedMetaKey(null); }, [selectedChartId]);
 
   const selectedChart = charts.find((c) => c.chart_id === selectedChartId);
 
@@ -127,27 +176,42 @@ export default function ComparePage() {
 
           {/* Available metadata for this chart — only fields that actually
               have data, grouped the same way MetadataFeaturePanel groups
-              them on the chart detail page, so you can see at a glance what
-              each model did/didn't have access to when generating. */}
+              them on the chart detail page. Click a field to see its
+              actual content, not just that it exists. */}
           <div className="mt-3 pt-3 border-t">
             <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
               Available Metadata
             </div>
-            {groupedAvailableMetadata(selectedChart).length === 0 ? (
+            {!fullChart ? (
+              <div className="text-xs text-muted-foreground">Loading…</div>
+            ) : groupedAvailableMetadata(fullChart).length === 0 ? (
               <div className="text-xs text-muted-foreground">None — image only.</div>
             ) : (
-              <div className="flex flex-wrap gap-x-5 gap-y-2">
-                {groupedAvailableMetadata(selectedChart).map(([group, labels]) => (
-                  <div key={group} className="flex items-center gap-1.5 flex-wrap">
-                    <span className="text-xs text-muted-foreground">{group}:</span>
-                    {labels.map((label) => (
-                      <span key={label} className="text-xs bg-green-50 text-green-700 rounded px-1.5 py-0.5">
-                        {label}
-                      </span>
-                    ))}
-                  </div>
-                ))}
-              </div>
+              <>
+                <div className="flex flex-wrap gap-x-5 gap-y-2">
+                  {groupedAvailableMetadata(fullChart).map(([group, fields]) => (
+                    <div key={group} className="flex items-center gap-1.5 flex-wrap">
+                      <span className="text-xs text-muted-foreground">{group}:</span>
+                      {fields.map(({ key, label }) => (
+                        <button
+                          key={key}
+                          onClick={() => setExpandedMetaKey((k) => (k === key ? null : key))}
+                          className={`text-xs rounded px-1.5 py-0.5 transition-colors ${
+                            expandedMetaKey === key
+                              ? "bg-green-600 text-white"
+                              : "bg-green-50 text-green-700 hover:bg-green-100"
+                          }`}
+                        >
+                          {label}
+                        </button>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+                {expandedMetaKey && (
+                  <MetadataValuePreview value={fullChart.metadata[expandedMetaKey]} />
+                )}
+              </>
             )}
           </div>
         </div>
