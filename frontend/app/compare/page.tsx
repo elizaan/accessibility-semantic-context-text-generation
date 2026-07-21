@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getOutputsForChart, listCharts } from "@/lib/api";
+import { getChartImageUrl, getOutputsForChart, listCharts } from "@/lib/api";
 import { modelDisplayLabel } from "@/lib/types";
 import type { Chart, GenerationOutput } from "@/lib/types";
 import { GitCompare } from "lucide-react";
@@ -14,6 +14,7 @@ export default function ComparePage() {
   const [loadingCharts, setLoadingCharts] = useState(true);
   const [loadingOutputs, setLoadingOutputs] = useState(false);
   const [variantFilter, setVariantFilter] = useState<number | "all">("all");
+  const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
     listCharts({ page_size: 200 })
@@ -34,6 +35,9 @@ export default function ComparePage() {
   // Reset the variant filter whenever the chart changes — a variant that
   // was valid for the old chart may not exist for the new one.
   useEffect(() => { setVariantFilter("all"); }, [selectedChartId]);
+  useEffect(() => { setImgError(false); }, [selectedChartId]);
+
+  const selectedChart = charts.find((c) => c.chart_id === selectedChartId);
 
   const filteredOutputs =
     variantFilter === "all" ? outputs : outputs.filter((o) => o.variant === variantFilter);
@@ -84,6 +88,29 @@ export default function ComparePage() {
           ))}
         </select>
       </div>
+
+      {/* Chart image — shown once, above the per-model columns, so the
+          descriptions can be checked against what the models actually saw. */}
+      {selectedChart && (
+        <div className="border rounded-xl p-4">
+          <div className="bg-muted rounded-lg flex items-center justify-center overflow-hidden max-h-[50vh]">
+            {!imgError ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={getChartImageUrl(selectedChart.image_path)}
+                alt={selectedChart.title ?? selectedChart.chart_id}
+                className="object-contain max-w-full max-h-[50vh]"
+                onError={() => setImgError(true)}
+              />
+            ) : (
+              <div className="text-xs text-muted-foreground text-center p-4">
+                <div className="font-mono">{selectedChart.image_path}</div>
+                <div className="mt-1">Image not found locally</div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Variant filter — lines up the same variant across all model columns
           instead of needing to scroll each column independently to find it. */}
