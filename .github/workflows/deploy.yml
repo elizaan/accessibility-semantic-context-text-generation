@@ -30,7 +30,7 @@ jobs:
         working-directory: frontend
         env:
           NEXT_PUBLIC_STATIC_MODE: "true"
-          NEXT_PUBLIC_BASE_PATH: /accessibility-text-generation-benchmark
+          NEXT_PUBLIC_BASE_PATH: /accessibility-semantic-context-text-generation
       - uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/out
