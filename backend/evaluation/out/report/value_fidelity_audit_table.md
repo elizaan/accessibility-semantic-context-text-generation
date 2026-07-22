@@ -4,4 +4,4 @@ False-positive rate: sampled claims the automated checker called `correct` that 
 
 | n_double_annotated | cohens_kappa | false_positive_rate | false_positive_n | false_negative_rate | false_negative_n | fp_rate_tuple_verified_yes | fp_rate_tuple_verified_not_yes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10 | 1.0 | 0.0 | 10 |  | 0 | 0.0 | 0.0 |
+|  |  | 0.0 | 90 | 0.889 | 90 | 0.0 | 0.0 |

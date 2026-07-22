@@ -13,7 +13,7 @@ Charts were purposively sampled, not randomly drawn from a defined population. T
 | gemini-3.5-flash | caution_abstention_per_100_words | 102 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | gemini-3.5-flash | caution_missing_info_per_100_words | 102 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | gemini-3.5-flash | caution_unsupported_causal_per_100_words | 102 | 0.1175 | 0.1317 | 0.0143 | -0.0313 | 0.0595 |
-| gemini-3.5-flash | numeric_value_match_rate | 75 | 0.8781 | 0.867 | -0.0111 | -0.0375 | 0.0156 |
+| gemini-3.5-flash | numeric_value_match_rate | 76 | 0.8665 | 0.8555 | -0.011 | -0.0367 | 0.0157 |
 | gpt-5.4 | direct_proportion | 102 | 0.3702 | 0.3009 | -0.0692 | -0.0932 | -0.0452 |
 | gpt-5.4 | derived_proportion | 102 | 0.3412 | 0.3485 | 0.0073 | -0.0177 | 0.0332 |
 | gpt-5.4 | speculative_proportion | 102 | 0.2886 | 0.3506 | 0.0619 | 0.0453 | 0.0791 |
@@ -23,7 +23,7 @@ Charts were purposively sampled, not randomly drawn from a defined population. T
 | gpt-5.4 | caution_abstention_per_100_words | 102 | 0.0131 | 0.0399 | 0.0269 | 0.01 | 0.0443 |
 | gpt-5.4 | caution_missing_info_per_100_words | 102 | 0.0075 | 0.0201 | 0.0125 | 0.0013 | 0.0247 |
 | gpt-5.4 | caution_unsupported_causal_per_100_words | 102 | 0.2869 | 0.2932 | 0.0063 | -0.0372 | 0.0498 |
-| gpt-5.4 | numeric_value_match_rate | 73 | 0.8945 | 0.8332 | -0.0613 | -0.1037 | -0.0198 |
+| gpt-5.4 | numeric_value_match_rate | 74 | 0.8824 | 0.8219 | -0.0605 | -0.1017 | -0.0202 |
 | meta-llama/llama-4-scout-17b-16e-instruct | direct_proportion | 101 | 0.3685 | 0.3541 | -0.0144 | -0.0508 | 0.0214 |
 | meta-llama/llama-4-scout-17b-16e-instruct | derived_proportion | 101 | 0.279 | 0.2803 | 0.0013 | -0.0318 | 0.0361 |
 | meta-llama/llama-4-scout-17b-16e-instruct | speculative_proportion | 101 | 0.3525 | 0.3656 | 0.0131 | -0.0149 | 0.0419 |
@@ -33,4 +33,4 @@ Charts were purposively sampled, not randomly drawn from a defined population. T
 | meta-llama/llama-4-scout-17b-16e-instruct | caution_abstention_per_100_words | 102 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | meta-llama/llama-4-scout-17b-16e-instruct | caution_missing_info_per_100_words | 102 | 0.0 | 0.0115 | 0.0115 | 0.0 | 0.0262 |
 | meta-llama/llama-4-scout-17b-16e-instruct | caution_unsupported_causal_per_100_words | 102 | 0.1697 | 0.1339 | -0.0357 | -0.0923 | 0.0212 |
-| meta-llama/llama-4-scout-17b-16e-instruct | numeric_value_match_rate | 66 | 0.8114 | 0.7769 | -0.0344 | -0.0809 | 0.0129 |
+| meta-llama/llama-4-scout-17b-16e-instruct | numeric_value_match_rate | 67 | 0.7993 | 0.7653 | -0.0339 | -0.0787 | 0.0118 |

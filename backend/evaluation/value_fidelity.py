@@ -7,11 +7,14 @@ against the chart's REAL data table — the ground truth we (the
 evaluators) always have access to, regardless of whether it was actually
 in the prompt the model received.
 
-Scope: restricted to charts that actually HAVE a real data_table in
-metadata (checked once per chart, applied across every variant for that
-chart — including V3/V4, where the table wasn't in the prompt but we
-still have it). Charts with no table at all are dropped entirely, not
-kept around in a separate "unscoreable" bucket.
+Scope: restricted to charts with a resolvable ground truth source of any
+strength — data_table, olli_tree, or scene_graph (see the scope-selection
+comment in main() for exactly what each contributes and why scene_graph
+alone still only earns the weaker matches_axis_label tier, never
+"correct") — checked once per chart, applied across every variant for
+that chart, including V3/V4, where the table wasn't in the prompt but we
+still have it. Charts with NONE of those are dropped entirely, not kept
+around in a separate "unscoreable" bucket.
 
 Every number-like token gets assessed — no magnitude-based noise filter.
 Whole numbers, decimals, percentages, and x/y fractions are all in scope;
@@ -61,10 +64,10 @@ import json
 import random
 import re
 import urllib.request
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
-from evaluation.common import OUT_DIR, SECTION_KEYS, load_records, split_into_flagged_claims, write_csv
+from evaluation.common import OUT_DIR, SECTION_KEYS, load_records, read_csv, split_into_flagged_claims, write_csv
 from evaluation.provenance_audit import _cohens_kappa
 
 REPORT_DIR = OUT_DIR / "report"
@@ -670,18 +673,30 @@ def run_automated() -> None:
     all_records = [r for r in load_records() if r.parse_ok]
 
     # Scope restriction: only charts with a real, resolvable ground truth
-    # source — native chart.metadata.data_table, (for 6 of 7 Olli charts)
-    # the external vega-datasets table their vega_lite_spec references, or
-    # (for all 7 Olli charts, including the choropleth map that has
-    # neither of the above) the olli_tree accessible-summary text, which
-    # contains real aggregate statistics (avg/min/max/count per group).
-    # Applied at the chart level, across every variant for that chart
-    # (including V3/V4, where the ground truth wasn't in the prompt but we
-    # still have it as evaluators). Charts with nothing at all are dropped
-    # entirely rather than kept around in an "unscoreable" bucket.
+    # source of ANY strength — native chart.metadata.data_table, (for 6 of
+    # 7 Olli charts) the external vega-datasets table their
+    # vega_lite_spec references (vega_lite_spec itself isn't a separate
+    # ground-truth source — it's a rendering spec, not data — this is
+    # already folded into _resolve_data_table's external-dataset
+    # resolution, not a distinct scope condition), the olli_tree
+    # accessible-summary text (real aggregate statistics — avg/min/max/
+    # count per group), OR scene_graph (real axis tick labels — weaker
+    # than the others since it only confirms a value is within the
+    # chart's visible scale, not that it's a specific category's data
+    # point, which is exactly why it feeds only the separate
+    # matches_axis_label tier inside _ground_truth_pools/main's per-claim
+    # loop below — but a chart with ONLY scene_graph and nothing else
+    # should still get that weaker check applied, not be skipped
+    # entirely). Applied at the chart level, across every variant for
+    # that chart (including V3/V4, where the ground truth wasn't in the
+    # prompt but we still have it as evaluators). Charts with NONE of the
+    # four are dropped entirely rather than kept around in an
+    # "unscoreable" bucket.
     chart_ids_with_table = {
         r.chart_id for r in all_records
-        if r.chart and (_resolve_data_table(r.chart) or r.chart.metadata.olli_tree)
+        if r.chart and (
+            _resolve_data_table(r.chart) or r.chart.metadata.olli_tree or r.chart.metadata.scene_graph
+        )
     }
     records = [r for r in all_records if r.chart_id in chart_ids_with_table]
     n_charts_total = len({r.chart_id for r in all_records})
@@ -936,6 +951,13 @@ def run_sample(cap_per_stratum: int = 30, seed: int = 0) -> None:
     sample_rows = []
     sample_id = 0
     for (model_id, verdict), pool in sorted(strata.items()):
+        # rng.sample()'s result depends on the input sequence's order, not
+        # just the seed — value_fidelity_claims.csv's row order isn't
+        # pinned to anything stable across `automated` re-runs, so without
+        # this sort, re-running with the same seed silently draws a
+        # different subset (confirmed: only 88/180 overlapped across two
+        # otherwise-identical re-runs before this fix).
+        pool = sorted(pool, key=lambda r: (r["chart_id"], r["model_id"], r["variant"], r["claim_text"]))
         chosen = rng.sample(pool, min(cap_per_stratum, len(pool)))
         for row in chosen:
             sample_id += 1
@@ -1009,53 +1031,89 @@ def run_sample(cap_per_stratum: int = 30, seed: int = 0) -> None:
 def run_score(path: str) -> None:
     """
     False-positive rate: among sampled verdict=="correct" rows, the
-    fraction where both annotators agree the claim is actually "invalid".
-    False-negative rate: among sampled verdict=="fabricated" rows, the
-    fraction where both annotators agree the claim is actually "valid".
-    Both rates also recomputed restricted to tuple_verified=="yes" vs.
-    not, reported side by side — the direct, quantified answer to "did
-    the tuple-verification upgrade actually help."
+    fraction judged actually "invalid". False-negative rate: among
+    sampled verdict=="fabricated" rows, the fraction judged actually
+    "valid". Both rates also recomputed restricted to
+    tuple_verified=="yes" vs. not, reported side by side — the direct,
+    quantified answer to "did the tuple-verification upgrade actually
+    help."
+
+    Supports two annotation modes, auto-detected per row:
+      double  both annotator1_valid and annotator2_valid filled in (the
+              intended human-annotator workflow) — Cohen's kappa is
+              computed, and a row only counts as "agreed X" when both
+              annotators independently say X.
+      single  only annotator1_valid filled in (e.g. a single LLM-judge
+              pass, or one human working alone) — no kappa (needs 2
+              raters), rates computed directly from annotator1 alone.
+              `notes` should say who/what annotator1 was (this package
+              never assumes "annotator1_valid filled in" means "human
+              verified" — say so explicitly wherever these numbers are
+              reported downstream).
+    Rows with only one of the two filled in but not eligible for either
+    mode (e.g. only annotator2 filled) are excluded, same as before.
     """
     with open(path, newline="", encoding="utf-8") as f:
         rows = list(csv_module.DictReader(f))
 
-    both_rated = [r for r in rows if r["annotator1_valid"].strip() and r["annotator2_valid"].strip()]
-    if not both_rated:
-        print("No rows have both annotator1_valid and annotator2_valid filled in yet — nothing to score.")
+    double_rated = [r for r in rows if r["annotator1_valid"].strip() and r["annotator2_valid"].strip()]
+    single_rated = [r for r in rows if r["annotator1_valid"].strip() and not r["annotator2_valid"].strip()]
+
+    if not double_rated and not single_rated:
+        print("No rows have annotator1_valid filled in yet — nothing to score.")
         return
 
-    r1 = [r["annotator1_valid"].strip().lower() for r in both_rated]
-    r2 = [r["annotator2_valid"].strip().lower() for r in both_rated]
-    kappa = _cohens_kappa(r1, r2)
-    print(f"Cohen's kappa ({len(both_rated)} double-annotated claims): {kappa:.3f}" if kappa is not None else "n/a")
+    mode = "double" if double_rated else "single"
+    rated = double_rated if mode == "double" else single_rated
+    print(f"Scoring in '{mode}' mode ({len(rated)} rows).")
+
+    kappa = None
+    if mode == "double":
+        r1 = [r["annotator1_valid"].strip().lower() for r in rated]
+        r2 = [r["annotator2_valid"].strip().lower() for r in rated]
+        kappa = _cohens_kappa(r1, r2)
+        print(f"Cohen's kappa ({len(rated)} double-annotated claims): {kappa:.3f}" if kappa is not None else "n/a")
+
+    def _agrees(row: dict, label: str) -> bool:
+        if mode == "double":
+            return row["annotator1_valid"].strip().lower() == label and row["annotator2_valid"].strip().lower() == label
+        return row["annotator1_valid"].strip().lower() == label
 
     def _rate(subset: list[dict], verdict: str, agreed_label: str) -> tuple[int, int, float | None]:
         pool = [r for r in subset if r["verdict"] == verdict]
         n = len(pool)
-        agreed = sum(
-            1 for r in pool
-            if r["annotator1_valid"].strip().lower() == agreed_label
-            and r["annotator2_valid"].strip().lower() == agreed_label
-        )
+        agreed = sum(1 for r in pool if _agrees(r, agreed_label))
         return agreed, n, round(agreed / n, 3) if n else None
 
-    fp_agreed, fp_n, fp_rate = _rate(both_rated, "correct", "invalid")
-    fn_agreed, fn_n, fn_rate = _rate(both_rated, "fabricated", "valid")
+    def _rate_by_model(subset: list[dict], verdict: str, agreed_label: str) -> dict[str, tuple[int, int, float | None]]:
+        models = sorted({r["model_id"] for r in subset if r["verdict"] == verdict})
+        return {m: _rate([r for r in subset if r["model_id"] == m], verdict, agreed_label) for m in models}
 
-    tuple_yes = [r for r in both_rated if r["tuple_verified"] == "yes"]
-    tuple_not_yes = [r for r in both_rated if r["tuple_verified"] != "yes"]
+    fp_agreed, fp_n, fp_rate = _rate(rated, "correct", "invalid")
+    fn_agreed, fn_n, fn_rate = _rate(rated, "fabricated", "valid")
+
+    tuple_yes = [r for r in rated if r["tuple_verified"] == "yes"]
+    tuple_not_yes = [r for r in rated if r["tuple_verified"] != "yes"]
     fp_tv_agreed, fp_tv_n, fp_tv_rate = _rate(tuple_yes, "correct", "invalid")
     fp_ntv_agreed, fp_ntv_n, fp_ntv_rate = _rate(tuple_not_yes, "correct", "invalid")
 
-    print(f"\nFalse-positive rate (verdict=correct but both annotators say invalid): "
-          f"{fp_agreed}/{fp_n} = {fp_rate}")
-    print(f"False-negative rate (verdict=fabricated but both annotators say valid): "
-          f"{fn_agreed}/{fn_n} = {fn_rate}")
+    print(f"\nFalse-positive rate (verdict=correct but judged invalid): {fp_agreed}/{fp_n} = {fp_rate}")
+    print(f"False-negative rate (verdict=fabricated but judged valid): {fn_agreed}/{fn_n} = {fn_rate}")
     print(f"\n  ...restricted to tuple_verified=='yes':     {fp_tv_agreed}/{fp_tv_n} = {fp_tv_rate}")
     print(f"  ...restricted to tuple_verified!='yes':     {fp_ntv_agreed}/{fp_ntv_n} = {fp_ntv_rate}")
 
+    # Per-model breakdown of the false-negative rate specifically — this is
+    # the number that feeds compute_corrected_accuracy() below, and it's
+    # the one most worth seeing broken out, since a uniform aggregate rate
+    # would hide real per-model differences.
+    fn_by_model = _rate_by_model(rated, "fabricated", "valid")
+    print("\nFalse-negative rate by model (i.e. share of 'fabricated'-verdict claims that are actually correct):")
+    for model_id, (agreed, n, rate) in fn_by_model.items():
+        print(f"  {model_id:45s} {agreed}/{n} = {rate}")
+
     result_rows = [{
-        "n_double_annotated": len(both_rated),
+        "annotation_mode": mode,
+        "n_rated": len(rated),
         "cohens_kappa": round(kappa, 3) if kappa is not None else "",
         "false_positive_agreed": fp_agreed, "false_positive_n": fp_n, "false_positive_rate": fp_rate,
         "false_negative_agreed": fn_agreed, "false_negative_n": fn_n, "false_negative_rate": fn_rate,
@@ -1067,6 +1125,165 @@ def run_score(path: str) -> None:
         list(result_rows[0].keys()),
         result_rows,
     )
+
+    fn_model_rows = [
+        {"model_id": model_id, "false_negative_agreed": agreed, "false_negative_n": n, "false_negative_rate": rate}
+        for model_id, (agreed, n, rate) in fn_by_model.items()
+    ]
+    write_csv(
+        OUT_DIR / "value_fidelity_scored_audit_by_model.csv",
+        ["model_id", "false_negative_agreed", "false_negative_n", "false_negative_rate"],
+        fn_model_rows,
+    )
+
+    compute_confusion_matrix(rated)
+
+    if mode == "single":
+        compute_corrected_accuracy(rated, fn_by_model)
+
+
+def compute_confusion_matrix(rated_rows: list[dict]) -> None:
+    """
+    The checker's verdict (correct/fabricated) treated as a binary
+    predictor of "is this claim's number actually right", scored against
+    the reviewed annotation as ground truth — combining BOTH reviewed
+    buckets, not just one:
+
+      TP  verdict=="correct"    AND judged "valid"    (checker right)
+      FP  verdict=="correct"    AND judged "invalid"   (checker wrong —
+                                  a spurious pool match)
+      FN  verdict=="fabricated" AND judged "valid"     (checker wrong —
+                                  real ground-truth gap, see README)
+      TN  verdict=="fabricated" AND judged "invalid"   (checker right)
+
+    Rows judged "unsure" are excluded from all four cells (neither
+    confirmed right nor wrong) — reported separately as n_unsure per
+    verdict bucket, not silently dropped from the total. The "correct"
+    bucket in particular had a much higher unsure rate in the review that
+    produced the numbers currently on file (see README) — precision here
+    is a best estimate from the *decided* subset, not a claim that the
+    unsure claims are known to lean either way.
+    """
+    TP = sum(1 for r in rated_rows if r["verdict"] == "correct" and r["annotator1_valid"].strip().lower() == "valid")
+    FP = sum(1 for r in rated_rows if r["verdict"] == "correct" and r["annotator1_valid"].strip().lower() == "invalid")
+    FN = sum(1 for r in rated_rows if r["verdict"] == "fabricated" and r["annotator1_valid"].strip().lower() == "valid")
+    TN = sum(1 for r in rated_rows if r["verdict"] == "fabricated" and r["annotator1_valid"].strip().lower() == "invalid")
+
+    n_correct_unsure = sum(1 for r in rated_rows if r["verdict"] == "correct" and r["annotator1_valid"].strip().lower() == "unsure")
+    n_fabricated_unsure = sum(1 for r in rated_rows if r["verdict"] == "fabricated" and r["annotator1_valid"].strip().lower() == "unsure")
+
+    precision = TP / (TP + FP) if (TP + FP) else None
+    recall = TP / (TP + FN) if (TP + FN) else None
+    specificity = TN / (TN + FP) if (TN + FP) else None
+    checker_accuracy = (TP + TN) / (TP + TN + FP + FN) if (TP + TN + FP + FN) else None
+    f1 = (2 * precision * recall / (precision + recall)) if (precision and recall and (precision + recall)) else None
+
+    print(f"\nConfusion matrix (checker verdict vs. reviewed ground truth): "
+          f"TP={TP} FP={FP} FN={FN} TN={TN}  "
+          f"(n_decided={TP + FP + FN + TN}, n_unsure={n_correct_unsure + n_fabricated_unsure})")
+    print(f"  precision={precision:.3f}  recall={recall:.3f}  specificity={specificity:.3f}  "
+          f"checker_accuracy={checker_accuracy:.3f}  f1={f1:.3f}" if all(
+              v is not None for v in (precision, recall, specificity, checker_accuracy, f1)) else "  (insufficient data)")
+
+    write_csv(
+        OUT_DIR / "value_fidelity_confusion_matrix.csv",
+        ["TP", "FP", "FN", "TN", "n_correct_unsure", "n_fabricated_unsure",
+         "precision", "recall", "specificity", "checker_accuracy", "f1"],
+        [{
+            "TP": TP, "FP": FP, "FN": FN, "TN": TN,
+            "n_correct_unsure": n_correct_unsure, "n_fabricated_unsure": n_fabricated_unsure,
+            "precision": round(precision, 3) if precision is not None else "",
+            "recall": round(recall, 3) if recall is not None else "",
+            "specificity": round(specificity, 3) if specificity is not None else "",
+            "checker_accuracy": round(checker_accuracy, 3) if checker_accuracy is not None else "",
+            "f1": round(f1, 3) if f1 is not None else "",
+        }],
+    )
+
+
+def compute_corrected_accuracy(rated_rows: list[dict], fn_by_model: dict[str, tuple[int, int, float | None]]) -> None:
+    """
+    Applies the measured false-negative rate (share of 'fabricated'
+    verdicts that are actually correct on inspection) as a per-model
+    correction to value_fidelity_summary.csv's accuracy_pct, producing a
+    second, corrected estimate — NOT a full recomputation, since only a
+    stratified sample was reviewed, not every fabricated claim. Bootstrap
+    CI on the correction itself (resampling the sample's binary
+    correct/incorrect outcomes) makes the sample-size-driven uncertainty
+    explicit rather than presenting a single point estimate as exact.
+
+    Deliberately does NOT touch verdict in value_fidelity_claims.csv —
+    that column stays exactly what the automated checker produced. This
+    writes a clearly-separate corrected-estimate file instead, so the raw
+    and corrected numbers are both always available side by side.
+    """
+    from evaluation.bootstrap import bootstrap_ci
+
+    summary_rows = read_csv(OUT_DIR / "value_fidelity_summary.csv")
+
+    # Per-model binary outcome list (1 = actually correct, 0 = actually
+    # wrong) among the reviewed "fabricated" sample, for bootstrapping.
+    outcomes_by_model: dict[str, list[float]] = defaultdict(list)
+    for r in rated_rows:
+        if r["verdict"] != "fabricated":
+            continue
+        val = r["annotator1_valid"].strip().lower()
+        if val not in ("valid", "invalid"):
+            continue  # "unsure" excluded from the rate — neither confirmed right nor wrong
+        outcomes_by_model[r["model_id"]].append(1.0 if val == "valid" else 0.0)
+
+    corrected_rows = []
+    for row in summary_rows:
+        model_id = row["model_id"]
+        n_numbers = int(row["n_numbers"])
+        n_correct = int(row["n_correct"])
+        n_fabricated = int(row["n_fabricated"])
+        outcomes = outcomes_by_model.get(model_id, [])
+
+        if not outcomes or n_fabricated == 0:
+            corrected_rows.append({
+                **{k: row[k] for k in ("model_id", "variant", "flag_kind", "n_numbers", "n_correct", "n_fabricated", "accuracy_pct")},
+                "fn_rate_used": "", "fn_rate_n": len(outcomes),
+                "corrected_n_correct": row["n_correct"], "corrected_accuracy_pct": row["accuracy_pct"],
+                "corrected_accuracy_ci_lo": "", "corrected_accuracy_ci_hi": "",
+            })
+            continue
+
+        fn_rate = sum(outcomes) / len(outcomes)
+        corrected_n_correct = n_correct + n_fabricated * fn_rate
+        corrected_pct = 100 * corrected_n_correct / n_numbers if n_numbers else 0
+
+        # Bootstrap the fn_rate itself (resampling this model's reviewed
+        # fabricated-claim outcomes), propagate through the same formula,
+        # to get a CI on the corrected accuracy — not just a point estimate.
+        ci = bootstrap_ci(outcomes, n_resamples=10000, seed=0)
+        if ci["ci_lo"] is not None:
+            lo_pct = 100 * (n_correct + n_fabricated * ci["ci_lo"]) / n_numbers if n_numbers else 0
+            hi_pct = 100 * (n_correct + n_fabricated * ci["ci_hi"]) / n_numbers if n_numbers else 0
+        else:
+            lo_pct = hi_pct = ""
+
+        corrected_rows.append({
+            "model_id": model_id, "variant": row["variant"], "flag_kind": row["flag_kind"],
+            "n_numbers": n_numbers, "n_correct": n_correct, "n_fabricated": n_fabricated,
+            "accuracy_pct": row["accuracy_pct"],
+            "fn_rate_used": round(fn_rate, 3), "fn_rate_n": len(outcomes),
+            "corrected_n_correct": round(corrected_n_correct, 1),
+            "corrected_accuracy_pct": round(corrected_pct, 1),
+            "corrected_accuracy_ci_lo": round(lo_pct, 1) if lo_pct != "" else "",
+            "corrected_accuracy_ci_hi": round(hi_pct, 1) if hi_pct != "" else "",
+        })
+
+    write_csv(
+        OUT_DIR / "value_fidelity_corrected_accuracy.csv",
+        ["model_id", "variant", "flag_kind", "n_numbers", "n_correct", "n_fabricated", "accuracy_pct",
+         "fn_rate_used", "fn_rate_n", "corrected_n_correct", "corrected_accuracy_pct",
+         "corrected_accuracy_ci_lo", "corrected_accuracy_ci_hi"],
+        corrected_rows,
+    )
+    print(f"\n[value_fidelity] wrote {OUT_DIR / 'value_fidelity_corrected_accuracy.csv'} "
+          f"(one fn_rate per model, applied uniformly across that model's variant x flag_kind rows — "
+          f"the sample wasn't stratified finely enough to estimate a separate rate per variant/flag_kind).")
 
 
 def main() -> None:

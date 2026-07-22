@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { getChart, getChartImageUrl, getOutputsForChart, listCharts } from "@/lib/api";
 import { modelDisplayLabel, METADATA_FEATURE_CONFIG } from "@/lib/types";
 import type { Chart, GenerationOutput, SelectableMetadataKey } from "@/lib/types";
-import { GitCompare, ChevronDown, ChevronUp } from "lucide-react";
-import { ParsedOutputView } from "@/components/output/ParsedOutputView";
+import { GitCompare, ChevronDown, ChevronUp, Download } from "lucide-react";
+import { ParsedOutputView, parseOutputData, SECTION_LABELS } from "@/components/output/ParsedOutputView";
 
 // Same grouping METADATA_FEATURE_CONFIG uses elsewhere (e.g. MetadataFeaturePanel
 // on the chart detail page) — reused here so "available metadata" reads
@@ -23,6 +23,82 @@ function groupedAvailableMetadata(chart: Chart): [string, { key: SelectableMetad
     (groups[config.group] ??= []).push({ key, label: config.label });
   }
   return Object.entries(groups);
+}
+
+// Renders the same content shown on a model card — metadata completeness
+// scores/justifications, every description section (with its [DIRECT] /
+// [DERIVED] / [SPECULATIVE] tags left inline, exactly as displayed), and
+// the flag summary — as a plain-text/Markdown document for download.
+// Reuses parseOutputData so this can never drift from what the card
+// actually renders.
+function buildOutputMarkdown(chart: Chart | undefined, modelId: string, output: GenerationOutput): string {
+  const lines: string[] = [];
+  const title = chart?.title ?? chart?.chart_id ?? output.chart_id;
+
+  lines.push(`# ${title}`);
+  lines.push("");
+  lines.push(`- Chart ID: ${output.chart_id}`);
+  if (chart?.source) lines.push(`- Source: ${chart.source}`);
+  lines.push(`- Model: ${modelDisplayLabel(modelId)} (${modelId})`);
+  lines.push(`- Variant: V${output.variant}`);
+  lines.push(`- Enabled features: ${output.enabled_features.length ? output.enabled_features.join(", ") : "none"}`);
+  lines.push(`- Image included: ${output.include_image ? "yes" : "no"}`);
+  lines.push(`- Tokens: ${output.tokens_used.input} in / ${output.tokens_used.output} out`);
+  lines.push(`- Latency: ${(output.latency_ms / 1000).toFixed(1)}s`);
+  lines.push(`- Generated at: ${output.created_at}`);
+  lines.push("");
+
+  const data = parseOutputData(output.parsed_output);
+
+  if (!data) {
+    lines.push("## Raw output");
+    lines.push("");
+    lines.push("_Could not parse structured JSON from this response — showing raw output._");
+    lines.push("");
+    lines.push(output.generated_description);
+    return lines.join("\n");
+  }
+
+  const { dimEntries, overall, description, flags } = data;
+
+  if (dimEntries.length > 0) {
+    lines.push(`## Metadata Completeness${overall !== undefined ? ` (Overall ${overall.toFixed(1)}/5)` : ""}`);
+    lines.push("");
+    for (const [key, v] of dimEntries) {
+      lines.push(`- ${key.replace(/_/g, " ")}: ${v.score}/5`);
+      if (v.justification?.trim()) lines.push(`  - ${v.justification.trim()}`);
+    }
+    lines.push("");
+  }
+
+  for (const [key, text] of Object.entries(description)) {
+    if (!text) continue;
+    lines.push(`## ${SECTION_LABELS[key] ?? key.replace(/_/g, " ")}`);
+    lines.push("");
+    lines.push(text);
+    lines.push("");
+  }
+
+  if (flags) {
+    lines.push("## Flag Summary");
+    lines.push("");
+    lines.push(`- direct: ${flags.direct_count ?? 0}`);
+    lines.push(`- derived: ${flags.derived_count ?? 0}`);
+    lines.push(`- speculative: ${flags.speculative_count ?? 0}`);
+    if (flags.unverified_count) lines.push(`- unverified: ${flags.unverified_count}`);
+  }
+
+  return lines.join("\n");
+}
+
+function downloadTextFile(filename: string, content: string) {
+  const blob = new Blob([content], { type: "text/markdown;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 const COLLAPSED_LINES = 6;
@@ -285,6 +361,19 @@ export default function ComparePage() {
                       >
                         {output.include_image ? "+image" : "no image"}
                       </span>
+                      <button
+                        onClick={() => {
+                          const modelSlug = modelId.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
+                          downloadTextFile(
+                            `${output.chart_id}_${modelSlug}_v${output.variant}.md`,
+                            buildOutputMarkdown(selectedChart, modelId, output)
+                          );
+                        }}
+                        title="Download this card as Markdown"
+                        className="ml-auto flex items-center gap-1 text-xs rounded px-1.5 py-0.5 text-muted-foreground hover:bg-accent hover:text-foreground transition-colors"
+                      >
+                        <Download className="h-3 w-3" /> Download
+                      </button>
                     </div>
                     <ParsedOutputView parsed={output.parsed_output} rawText={output.generated_description} />
                     <div className="text-xs text-muted-foreground border-t pt-1">

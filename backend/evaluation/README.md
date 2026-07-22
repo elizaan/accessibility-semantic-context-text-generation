@@ -33,6 +33,138 @@ metacognition rates (`caution_total_per_100_words` plus its 4 sub-
 categories). See `paired_contrasts.py`'s module docstring for the exact
 pairing/bootstrap mechanics and why `n_pairs` varies per row.
 
+## Value fidelity: checker verdict as a binary predictor — confusion matrix
+
+**Headline finding: the raw `value_fidelity.py` accuracy numbers substantially
+understate true model accuracy — but only in one specific way.** A
+stratified sample of 180 claims — 90 verdicted `"correct"` and 90
+verdicted `"fabricated"` by the automated checker (30 of each per model)
+— was manually reviewed against real ground truth (data tables,
+`olli_tree` accessible-summary stats, and — where the table alone was
+ambiguous — the actual chart image), treating the checker's verdict as a
+binary predictor ("is this claim's number actually right") scored against
+that review as ground truth:
+
+| | judged actually right | judged actually wrong | judged unsure |
+|---|---|---|---|
+| **verdict = correct** | TP = 54 | FP = 0 | 36 |
+| **verdict = fabricated** | FN = 80 | TN = 1 | 9 |
+
+**Precision = 1.00, recall = 0.40, specificity = 1.00, checker accuracy =
+0.41** (computed on the 135 decided cases; see `value_fidelity_confusion_matrix.csv`,
+`compute_confusion_matrix()`). In plain terms: **whenever the checker says
+a claim is correct, it is (in this sample) always actually correct — but
+it misses the majority of claims that are actually correct**, mislabeling
+them `"fabricated"` because of ground-truth gaps, not model error. This is
+a high-precision, low-recall detector, not a low-accuracy one — reporting
+a single "accuracy %" number without this distinction would be
+misleading in a different way than under-reporting accuracy is.
+
+**Caveat specific to the FP/precision side**: the `"correct"`-bucket
+review had a much higher `unsure` rate (36/90, 40%) than the
+`"fabricated"`-bucket review (9/90, 10%) — many "correct" verdicts
+involve descriptive/definitional numbers (years, category boundaries,
+axis ranges) that weren't independently re-verified against the full
+underlying dataset in this pass, only judged for plausibility. **Precision
+= 1.00 is an estimate from the decided subset, not a proof that zero of
+the 36 unsure claims would turn out to be false positives** — treat it as
+an upper bound pending further review, not a settled number.
+
+Applying the measured false-negative rate (recall's complement, within
+the `"fabricated"` bucket specifically) as a per-model correction (see
+`value_fidelity_corrected_accuracy.csv`, computed by
+`value_fidelity.compute_corrected_accuracy()`) moves DIRECT-claim accuracy
+from a raw ~66–83% to a corrected **~96.5–99.2%**, and DERIVED-claim
+accuracy from ~85–97% to **~99.0–100%**, across all three models.
+
+**Why the raw checker undercounts so badly** — three concrete, verified
+root causes, not a single fix:
+1. **Ground-truth extraction gaps.** Several long-run OWID time-series
+   charts (e.g. `owid_earthquake_deaths`, `owid_lighting_sources_uk`) only
+   have a recent-year snapshot in `chart.metadata.data_table`, even though
+   the real chart image spans centuries. A model correctly reading the
+   real image (e.g. citing the real 1556 Shaanxi earthquake's ~830K death
+   toll) gets flagged "fabricated" because the snapshot table can't
+   confirm it.
+2. **Ground-truth data bugs.** `vistext_1060`'s `data_table` has its
+   column headers swapped (the "value" column holds region names and vice
+   versa) — a real digitization error, not a model error. The real chart
+   image shows Emilia-Romagna's bar close to 5; the broken table stores
+   4.2. A model reading the actual image accurately gets penalized by a
+   broken reference.
+3. **Flat, category-blind matching (pre-existing, partially addressed by
+   `tuple_verified` — see below) plus a candidate pool that doesn't cover
+   every legitimate computation** — e.g. exact multi-column arithmetic
+   like `agriculture_growth − real_GDP_growth` for a specific year wasn't
+   in the precomputed derived pool, even though the claim's arithmetic
+   was exactly correct against the one real row available.
+
+**How this was done, concretely, and what it is NOT:**
+- The reviewer was **Claude (Sonnet 5), acting as a single LLM judge** —
+  explicitly NOT a human annotator, despite reusing the
+  `annotator1_valid` column built for human annotation. `run_score()` now
+  detects this ("single" mode: only `annotator1_valid` filled in) and
+  skips Cohen's kappa (which needs two independent raters) accordingly.
+  `notes` on every reviewed row says `claude_llm_judge` explicitly, so
+  this is never confusable with real human verification downstream.
+- **This is Step 3's "LLM-as-a-judge" arm**, applied specifically to the
+  subset the automated pool-matching flagged as wrong — a cheap
+  pattern-match pass first, then judgment only on the disagreements. This
+  is a reasonable, standard two-stage design (matches how FActScore-style
+  pipelines are actually used in practice), not a replacement for the
+  automated check.
+- **This reviewed a sample (180 claims total: 90 correct + 90
+  fabricated), not the full population** (which is in the thousands
+  across all 102 charts x 3 models x 4 variants x direct/derived). The
+  correction in `value_fidelity_corrected_accuracy.csv` is a **per-model
+  estimate**, extrapolated from the `"fabricated"`-bucket recall rate
+  applied uniformly across all of that model's variant x flag_kind rows
+  (the sample wasn't stratified finely enough to estimate a separate rate
+  per variant), with a bootstrap 95% CI (`evaluation.bootstrap`, same
+  method as `paired_contrasts.py`) making the sample-size-driven
+  uncertainty explicit. `gemini-3.5-flash` and `llama`'s CIs are
+  degenerate (zero-width) in the current sample specifically because 0 of
+  their 27 decided (non-`unsure`) reviewed fabricated-bucket claims were
+  judged genuinely wrong — that reflects sample luck at n=30, not a
+  provable 0% true error rate; a larger re-sample would very likely
+  surface a small nonzero rate, similar to gpt-5.4's 1/26.
+- **Does not touch `verdict` in `value_fidelity_claims.csv`** — that
+  column stays exactly what the automated checker produced, so the raw
+  and corrected numbers are always both available, never silently merged.
+- The `"matches_axis_label"` tier was not reviewed this pass (only
+  `"correct"` and `"fabricated"`) — its own reliability remains
+  unassessed by an LLM judge.
+- `scene_graph`-only charts (currently just `vistext_560`) can only ever
+  land in `"matches_axis_label"` or `"fabricated"` — they have no
+  `data_table`/`olli_tree`, so `raw_pool`/`derived_pool` are empty for
+  them and a `"correct"` verdict is structurally impossible regardless of
+  how accurate the claim actually is. Their claims are still checked (as
+  of the scope fix below), just capped at the weaker tier.
+
+**Reproducing or extending this**: `python -m evaluation.value_fidelity
+sample` regenerates a fresh stratified sample (blank annotations).
+`python -m evaluation.value_fidelity score <path>` auto-detects single-
+vs. double-annotator mode from which columns are filled in, and (in
+single mode) automatically also writes `value_fidelity_corrected_accuracy.csv`.
+Re-running `run_all.py` regenerates `value_fidelity_audit_sample.csv` from
+scratch (blank) — **back up an already-annotated copy first** if you want
+to preserve review work across a re-run (this is exactly the trap hit
+while producing the numbers above; recovered via a plain file backup/
+restore, not by re-annotating).
+
+**The `seed` does not make `sample` reproducible across an `automated`
+re-run.** Confirmed empirically doing the backup/restore above: two
+`automated` → `sample` passes with identical `seed=0` and identical
+per-stratum counts (30/30/30 for `correct`/`fabricated` per model) still
+only overlapped on 88 of 180 sampled claims. `rng.sample()` is
+deterministic given a fixed input *order*, but `value_fidelity_claims.csv`'s
+row order isn't pinned to anything stable across runs — so a re-run
+silently draws a different subset even though every number that looks
+like it should force reproducibility (seed, stratum sizes) is unchanged.
+Practical upshot: **the only reliable way to preserve a specific reviewed
+sample is the file backup/restore above, never "just re-run with the same
+seed."**
+
 ## Setup
 
 ```
@@ -40,13 +172,13 @@ cd backend
 .venv/bin/pip install -r requirements.txt   # adds matplotlib, used only by report.py
 ```
 
-## Scope: 101 of 103 charts have complete 3-model coverage
+## Scope: 102 of 103 charts have complete 3-model coverage
 
 `data/outputs/runs/` currently has output for 103 charts. Every script
 here defaults to charts with complete coverage across `REQUIRED_MODELS`
 (`gemini-3.5-flash`, `gpt-5.4`, `meta-llama/llama-4-scout-17b-16e-instruct`
 — see `common.py`) and prints exactly what it excluded and why. As of this
-writing that's 101/103 — the 2 exceptions:
+writing that's 102/103 — the 1 exception:
   - `vistext_1`: only has `gemini-3.5-flash` output (`gpt-5.4` and Llama
     were never run on it).
   - `owid_sex_ratio_at_birth_vs_five_years_old`: missing `gpt-5.4`.
@@ -79,7 +211,7 @@ per-model scripts will just keep silently running on 3.
 | `flag_distribution.py` | [DIRECT]/[DERIVED]/[SPECULATIVE] counts/proportions per model x variant x section. | `flag_distribution_by_section.csv`, `flag_distribution_summary.csv` |
 | `section_speculation.py` | Same flags, broken out per section, with 2x2-grid-ready subplot figures — "is L4 speculative everywhere?" | `section_speculation_variant_summary.csv`, `report/subplot_*.png/.pdf`, `report/global_legend.*` |
 | `output_length.py` | Word count per section x variant x model — a second, semantics-free "unfaltering fluency" check. | `output_length_summary.csv`, `output_length_by_section.csv`, `report/output_length_*.png` |
-| `value_fidelity.py` | Numeric fidelity: does a DIRECT/DERIVED claim's number match real ground truth? Plus an additive category/series-aware tuple check and a human-audit sample/score workflow for estimating the checker's own false-positive/negative rate. Subcommands: `automated`, `sample`, `score`. | `value_fidelity_claims.csv`, `value_fidelity_summary.csv`, `value_fidelity_audit_sample.csv`, `value_fidelity_scored_audit.csv`, `report/value_fidelity_accuracy.png` |
+| `value_fidelity.py` | Numeric fidelity: does a DIRECT/DERIVED claim's number match real ground truth? Plus an additive category/series-aware tuple check and an audit sample/score workflow (human OR single LLM-judge, auto-detected) for estimating the checker's own false-positive/negative rate, with a per-model corrected-accuracy estimate derived from that audit. Subcommands: `automated`, `sample`, `score`. | `value_fidelity_claims.csv`, `value_fidelity_summary.csv`, `value_fidelity_audit_sample.csv`, `value_fidelity_scored_audit.csv`, `value_fidelity_scored_audit_by_model.csv`, `value_fidelity_confusion_matrix.csv`, `value_fidelity_corrected_accuracy.csv`, `report/value_fidelity_accuracy.png` |
 | `value_fidelity_embedding.py` | A genuinely different, complementary check: does a claim's overall *meaning* semantically match real ground truth (OpenAI embeddings), independent of whether the specific number is correct. Run side by side with `value_fidelity.py`, not as a replacement. | `value_fidelity_embedding_claims.csv`, `value_fidelity_embedding_summary.csv` |
 | `caution_measures.py` | Direct measurement of RQ3's caution/metacognition construct: predefined regex/keyword markers (hedging, abstention, missing-info requests, unsupported-causal-in-SPECULATIVE) per record. | `caution_measures_by_record.csv`, `caution_measures_summary.csv` |
 | `paired_contrasts.py` | Chart-paired, bootstrap-CI'd estimates for RQ1/RQ2/RQ3 (see above), plus a plain per-variant descriptive table. | `paired_contrasts_bootstrap.csv`, `paired_contrasts_by_variant.csv` |
@@ -122,7 +254,7 @@ per-model scripts will just keep silently running on 3.
 - **L4 ground truth doesn't exist yet**: `chart.ground_truth_description`
   and `chart.metadata.l4_caption` are empty for all charts (vistext's own
   notes call L4 "the gap to fill"). `l4_fidelity.py` uses
-  `metadata.domain_context` as a proxy instead, available for 71/101
+  `metadata.domain_context` as a proxy instead, available for 72/102
   charts (every source except vistext). This is a proxy, not the real
   thing — say so if you cite these numbers.
 - **Some model outputs return lists instead of strings** for
@@ -137,9 +269,15 @@ per-model scripts will just keep silently running on 3.
   actually references (fetched once and cached to `evaluation/cache/`);
   for all 7 Olli charts including the one with neither of the above
   (`olli_choropleth-map`), `olli_tree`'s accessible-summary statistics
-  (avg/min/max/count per group) go into the DERIVED pool; and for vistext
-  charts, real axis tick labels pulled from `scene_graph` (a separate,
-  weaker `matches_axis_label` tier). Scope: 74/101 charts. Read
+  (avg/min/max/count per group) go into the DERIVED pool; and real axis
+  tick labels pulled from `scene_graph` feed a separate, weaker
+  `matches_axis_label` tier — which also, since a recent scope fix, is
+  enough on its own to bring a `data_table`/`olli_tree`-less chart (e.g.
+  `vistext_560`) into scope for that weaker tier, even though it can
+  never earn a full `"correct"` verdict there. Scope: 76/102 charts have
+  *some* resolvable ground truth (any of `data_table`, `olli_tree`,
+  `scene_graph`); `vega_lite_spec` isn't a separate scope condition — see
+  the confusion-matrix section above for why. Read
   `value_fidelity_claims.csv` before citing a rate regardless — this is
   pattern matching over a candidate space, not a verified re-derivation
   of the model's reasoning.
@@ -238,7 +376,17 @@ human:
    .venv/bin/python -m evaluation.value_fidelity score evaluation/out/value_fidelity_audit_sample.csv
    ```
    Prints Cohen's κ, false-positive/negative rates (overall and split by
-   `tuple_verified`), writes `out/value_fidelity_scored_audit.csv`.
+   `tuple_verified`), writes `out/value_fidelity_scored_audit.csv`. `score`
+   auto-detects single- vs. double-annotator mode: if only
+   `annotator1_valid` is filled in (no kappa possible with one rater),
+   it also writes `out/value_fidelity_scored_audit_by_model.csv` and
+   `out/value_fidelity_corrected_accuracy.csv` (a per-model corrected
+   accuracy estimate — see "Value fidelity: raw vs. LLM-judge-corrected
+   accuracy" above for the numbers currently on file and exactly what
+   they do and don't mean). `annotator1_valid` is currently filled in by
+   an LLM judge, not a human — a real human `annotator2_valid` pass is
+   still open and would upgrade this to double-annotator mode with a
+   real kappa.
 
 3. **L4 rubric.** Fill in `topically_relevant` / `correct_domain` /
    `invented_stakes` in `out/l4_fidelity_human_rubric.csv`.
@@ -273,9 +421,9 @@ Auto-generated (safe to delete and regenerate via `run_all.py`):
 | File | Filled in by |
 |---|---|
 | `provenance_audit_sample.csv` (after annotation) | two human annotators |
-| `value_fidelity_audit_sample.csv` (after annotation) | two human annotators |
+| `value_fidelity_audit_sample.csv` (after annotation) | **currently: a single LLM judge (Claude Sonnet 5), not human annotators** — see "Value fidelity: raw vs. LLM-judge-corrected accuracy" above. `annotator2_valid` is still open for a real human pass; re-running `run_sample` wipes this file back to blank, so back it up first (see that section for the exact recovery step used once already). |
 | `l4_fidelity_human_rubric.csv` (after annotation) | human annotator |
-| `provenance_scored_misattribution.csv`, `value_fidelity_scored_audit.csv` | derived from the above, but the κ/rate calc is cheap to rerun — the annotations underneath it aren't |
+| `provenance_scored_misattribution.csv`, `value_fidelity_scored_audit.csv`, `value_fidelity_scored_audit_by_model.csv`, `value_fidelity_confusion_matrix.csv`, `value_fidelity_corrected_accuracy.csv` | derived from the above via `score` — cheap to rerun once the annotation exists, but the annotation itself isn't |
 
 `out/` is *not* gitignored for exactly this reason — the auto-generated
 CSVs and the annotated ones live side by side, and blanket-ignoring the

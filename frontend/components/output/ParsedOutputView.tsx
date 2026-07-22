@@ -126,24 +126,35 @@ function ScoreRow({
   );
 }
 
-const SECTION_LABELS: Record<string, string> = {
+export const SECTION_LABELS: Record<string, string> = {
   contextual_insights: "Contextual Insights",
   domain_specific_explanations: "Domain-Specific Explanations",
   real_world_significance: "Real-World Significance",
   other: "Other",
 };
 
-export function ParsedOutputView({ parsed, rawText }: Props) {
-  if (!parsed) {
-    return (
-      <div className="space-y-2">
-        <p className="text-xs text-amber-600 bg-amber-50 rounded px-2 py-1">
-          Could not parse structured JSON from this response — showing raw output.
-        </p>
-        <p className="text-sm leading-relaxed whitespace-pre-wrap">{rawText}</p>
-      </div>
-    );
-  }
+export interface ParsedOutputData {
+  dimEntries: [string, { score: number; justification?: string }][];
+  overall: number | undefined;
+  description: Record<string, string>;
+  flags:
+    | {
+        direct_count?: number;
+        derived_count?: number;
+        speculative_count?: number;
+        unverified_count?: number;
+        total_flag_count?: number;
+      }
+    | undefined;
+}
+
+// Shared by ParsedOutputView (rendering) and anything else that needs the
+// same structured view of a parsed output (e.g. the Compare page's
+// per-card download builder) — kept as one function so the
+// EXCLUDED_DIMENSIONS filtering and "overall" recompute can't drift
+// between the two call sites.
+export function parseOutputData(parsed: Record<string, unknown> | null): ParsedOutputData | null {
+  if (!parsed) return null;
 
   const identification = parsed.identification as
     | { metadata_completeness?: Record<string, unknown> }
@@ -167,15 +178,26 @@ export function ParsedOutputView({ parsed, rawText }: Props) {
 
   const description = (parsed.generated_description ?? {}) as Record<string, string>;
 
-  const flags = parsed.flags as
-    | {
-        direct_count?: number;
-        derived_count?: number;
-        speculative_count?: number;
-        unverified_count?: number; // legacy — pre-DIRECT/DERIVED/SPECULATIVE outputs
-        total_flag_count?: number;
-      }
-    | undefined;
+  const flags = parsed.flags as ParsedOutputData["flags"];
+
+  return { dimEntries, overall, description, flags };
+}
+
+export function ParsedOutputView({ parsed, rawText }: Props) {
+  const data = parseOutputData(parsed);
+
+  if (!data) {
+    return (
+      <div className="space-y-2">
+        <p className="text-xs text-amber-600 bg-amber-50 rounded px-2 py-1">
+          Could not parse structured JSON from this response — showing raw output.
+        </p>
+        <p className="text-sm leading-relaxed whitespace-pre-wrap">{rawText}</p>
+      </div>
+    );
+  }
+
+  const { dimEntries, overall, description, flags } = data;
 
   return (
     <div className="space-y-4">
