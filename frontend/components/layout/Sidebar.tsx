@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart2, Database, GitCompare, Home, Bookmark } from "lucide-react";
+import { Database, GitCompare, Home, Bookmark } from "lucide-react";
 import { IS_STATIC_BUILD } from "@/lib/config";
 
 const NAV = [
@@ -17,11 +17,6 @@ export function Sidebar() {
 
   return (
     <aside className="w-56 shrink-0 border-r bg-muted/20 flex flex-col py-4 px-3 gap-1">
-      {/* Logo */}
-      <div className="flex items-center gap-2 px-2 py-3 mb-3">
-        <BarChart2 className="h-5 w-5 text-primary" />
-      </div>
-
       {NAV.map(({ href, label, icon: Icon }) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
         return (
