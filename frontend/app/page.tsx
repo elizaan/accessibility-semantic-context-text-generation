@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Database, Zap, GitCompare, FileText } from "lucide-react";
 import { getDatasetStats } from "@/lib/api";
-import { IS_STATIC_BUILD } from "@/lib/config";
+import { IS_STATIC_BUILD, BASE_PATH } from "@/lib/config";
 import type { DatasetSource, DatasetStats } from "@/lib/types";
 
 const DATASET_META: Record<DatasetSource, {
@@ -75,13 +75,6 @@ const QUICK_ACTIONS = [
   },
   {
     icon: FileText,
-    title: "View All Outputs",
-    description: "Browse saved generation history",
-    href: "/outputs",
-    color: "text-orange-600",
-  },
-  {
-    icon: FileText,
     title: "Collections",
     description: "Create and review shared chart sets",
     href: "/collections",
@@ -101,6 +94,16 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
+      {/* Teaser */}
+      <div className="border rounded-xl overflow-hidden bg-muted/10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${BASE_PATH}/teaser.png`}
+          alt="Teaser figure: source inputs collected, MLLM input conditions, and MLLM-generated texts with model-attributed source labels"
+          className="w-full h-auto"
+        />
+      </div>
+
       {/* Quick actions */}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">Quick Actions</h2>

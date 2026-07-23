@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AccessViz — Semantic Chart Description Benchmark",
+  title: "MLLM-Generated Claims for Accessible Visualization",
   description:
     "Benchmark LLM-generated chart descriptions for semantic meaning and real-world significance across accessibility feature variants.",
 };

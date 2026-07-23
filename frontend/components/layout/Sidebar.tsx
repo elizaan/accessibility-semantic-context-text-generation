@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart2, Database, GitCompare, FileText, Home, Bookmark } from "lucide-react";
+import { BarChart2, Database, GitCompare, Home, Bookmark } from "lucide-react";
 import { IS_STATIC_BUILD } from "@/lib/config";
 
 const NAV = [
   { href: "/",            label: "Home",        icon: Home },
   { href: "/datasets",    label: "Datasets",    icon: Database },
   { href: "/collections", label: "Collections", icon: Bookmark },
-  { href: "/outputs",     label: "Outputs",     icon: FileText },
   { href: "/compare",  label: "Compare",        icon: GitCompare },
 ].filter((item) => !IS_STATIC_BUILD || item.href !== "/collections");
 
@@ -22,8 +21,8 @@ export function Sidebar() {
       <div className="flex items-center gap-2 px-2 py-3 mb-3">
         <BarChart2 className="h-5 w-5 text-primary" />
         <div>
-          <div className="font-bold text-sm leading-tight">AccessViz</div>
-          <div className="text-xs text-muted-foreground">Semantic Benchmark</div>
+          <div className="font-bold text-sm leading-tight">MLLM-Generated Claims</div>
+          <div className="text-xs text-muted-foreground">for Accessible Visualization</div>
         </div>
       </div>
 
