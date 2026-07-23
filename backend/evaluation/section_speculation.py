@@ -9,7 +9,7 @@ independent horizontal global legend file, optimized with large typography for 2
 from __future__ import annotations
 from collections import defaultdict
 import os
-from evaluation.common import OUT_DIR, SECTION_KEYS, count_inline_flags, load_records, write_csv
+from evaluation.common import OUT_DIR, SECTION_KEYS, count_inline_flags, load_records, word_count, write_csv
 
 SECTION_TITLES = {
     "contextual_insights": "Contextual Insights",
@@ -32,12 +32,6 @@ MODEL_DISPLAY_NAMES = {
     "meta-llama/llama-4-scout-17b-16e-instruct": "Llama 4 Scout"
 }
 
-# Factual mean output words from output_length_table.md
-WORD_LENGTH_LEGEND = {
-    "gemini-3.5-flash": {"V1": 344.9, "V2": 330.7, "V3": 351.4, "V4": 361.5},
-    "gpt-5.4": {"V1": 616.5, "V2": 557.9, "V3": 553.8, "V4": 539.4},
-    "meta-llama/llama-4-scout-17b-16e-instruct": {"V1": 201.4, "V2": 177.6, "V3": 198.7, "V4": 217.5}
-}
 
 def _aggregate() -> dict[tuple[str, str, str], dict[str, int]]:
     records = [r for r in load_records() if r.parse_ok]
@@ -59,6 +53,24 @@ def _aggregate() -> dict[tuple[str, str, str], dict[str, int]]:
                 bucket[kind] += n
     return counts
 
+def _mean_word_lengths() -> dict[tuple[str, str], float]:
+    """
+    Mean total output word count per (model, variant) — the dashed
+    overlay line in build_subplots. Computed live from load_records()
+    (same method as output_length.py's mean_total_words), not a copy-
+    pasted snapshot, so it can't silently go stale as the dataset grows
+    (confirmed this had drifted: a prior hardcoded version showed
+    Llama's V1 mean as 201.4 words when the current data is 215.5).
+    """
+    records = [r for r in load_records() if r.parse_ok]
+    totals: dict[tuple[str, str], list[int]] = defaultdict(list)
+    for r in records:
+        v_label = getattr(r, 'variant_label', None) or r.variant
+        variant_v = VARIANT_MAP.get(v_label, f"V{v_label}")
+        total = sum(word_count(r.sections.get(section, "")) for section in SECTION_KEYS)
+        totals[(r.model_id, variant_v)].append(total)
+    return {key: sum(lengths) / len(lengths) for key, lengths in totals.items() if lengths}
+
 def build_subplots(counts: dict[tuple[str, str, str], dict[str, int]]) -> None:
     import matplotlib
     matplotlib.use("Agg")
@@ -70,6 +82,7 @@ def build_subplots(counts: dict[tuple[str, str, str], dict[str, int]]) -> None:
     flag_kinds = ["direct", "derived", "speculative"]
     
     colors = {"direct": "#2e7d32", "derived": "#1565c0", "speculative": "#e65100"}
+    word_lengths = _mean_word_lengths()
 
     # 1. Loop through and export each of the 4 data sections cleanly
     for section in SECTION_KEYS:
@@ -89,7 +102,7 @@ def build_subplots(counts: dict[tuple[str, str, str], dict[str, int]]) -> None:
             
             # --- Secondary Axis: Line Plot (Mean Word Length Trend) ---
             ax_twin = ax.twinx()
-            row_words = [WORD_LENGTH_LEGEND[model][v] for v in variants]
+            row_words = [word_lengths.get((model, v), 0) for v in variants]
             line_handle = ax_twin.plot(x, row_words, color='#444444', linestyle='--', 
                                        marker='o', markersize=6, linewidth=2.0, label='MEAN OUTPUT LENGTH')
             
