@@ -96,9 +96,7 @@ export default function HomePage() {
     <div className="space-y-6">
       {/* Title */}
       <h1 className="text-2xl font-bold leading-tight text-center pt-2">
-        MLLM-Generated Claims
-        <br />
-        for Accessible Visualization
+        MLLM-Generated Claims for Accessible Visualization
       </h1>
 
       {/* Teaser */}
