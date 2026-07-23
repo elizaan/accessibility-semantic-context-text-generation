@@ -94,6 +94,13 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
+      {/* Title */}
+      <h1 className="text-2xl font-bold leading-tight text-center pt-2">
+        MLLM-Generated Claims
+        <br />
+        for Accessible Visualization
+      </h1>
+
       {/* Teaser */}
       <div className="border rounded-xl overflow-hidden bg-muted/10">
         {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -20,10 +20,6 @@ export function Sidebar() {
       {/* Logo */}
       <div className="flex items-center gap-2 px-2 py-3 mb-3">
         <BarChart2 className="h-5 w-5 text-primary" />
-        <div>
-          <div className="font-bold text-sm leading-tight">MLLM-Generated Claims</div>
-          <div className="text-xs text-muted-foreground">for Accessible Visualization</div>
-        </div>
       </div>
 
       {NAV.map(({ href, label, icon: Icon }) => {
