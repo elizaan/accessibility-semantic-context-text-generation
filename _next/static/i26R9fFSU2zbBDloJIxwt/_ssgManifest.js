@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcollections\u002F[id]","\u002Fdatasets\u002F[source]","\u002Fdatasets\u002F[source]\u002F[chartType]\u002F[chartId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
